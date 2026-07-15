@@ -1,0 +1,380 @@
+/* ============================================================
+   COLORS — "Território Cívico"
+   Petróleo (institucional) · Terracota (acento quente) ·
+   Ocre/Ouro (secundário) · Areia (superfícies) · Ardósia (neutros)
+   ============================================================ */
+:root {
+  /* —— Petróleo / teal (primária institucional) —— */
+  --petrol-900: #0E2E2B;
+  --petrol-800: #133D39;
+  --petrol-700: #16433F;
+  --petrol-600: #1F5D5A;
+  --petrol-500: #2E7A75;
+  --petrol-400: #5BA39D;
+  --petrol-300: #87BEB9;
+  --petrol-200: #AFD4D0;
+  --petrol-100: #D6E8E6;
+  --petrol-50:  #EAF3F1;
+
+  /* —— Terracota (acento quente) —— */
+  --terra-800: #7E2F18;
+  --terra-700: #9E3D20;
+  --terra-600: #C4502E;
+  --terra-500: #D9633F;
+  --terra-400: #E5856A;
+  --terra-300: #ECA98E;
+  --terra-200: #F3C8B6;
+  --terra-100: #F7E0D5;
+  --terra-50:  #FBEFE8;
+
+  /* —— Ocre / ouro (secundária — herança Cívico) —— */
+  --ochre-800: #7E5610;
+  --ochre-700: #9A6A14;
+  --ochre-600: #C8922A;
+  --ochre-500: #D6A23C;
+  --ochre-400: #E0B45F;
+  --ochre-300: #EBC988;
+  --ochre-200: #F0DCAC;
+  --ochre-100: #F7EDD3;
+  --ochre-50:  #FBF5E6;
+
+  /* —— Verde (status sucesso / mapas) —— */
+  --green-700: #245C3D;
+  --green-600: #2F7D52;
+  --green-400: #5FA97E;
+  --green-100: #DDEEE2;
+
+  /* —— Ardósia (neutros frios) —— */
+  --slate-800: #2A343B;
+  --slate-700: #3A4750;
+  --slate-600: #5A6B7B;
+  --slate-500: #76858F;
+  --slate-400: #8C9AA6;
+  --slate-300: #B0BAC2;
+  --slate-200: #C9D2D9;
+  --slate-100: #E3E9ED;
+
+  /* —— Areia (neutros quentes / superfícies de destaque) —— */
+  --sand-300: #E0D2B8;
+  --sand-200: #EBE0CC;
+  --sand-100: #F4ECDD;
+  --sand-50:  #FBF7EF;
+
+  /* —— Nuvem (neutros quentes near-white / fundo de página — mais claros que sand-50) —— */
+  --cloud-200: #FCFAF5;
+  --cloud-100: #FDFBF7;
+  --cloud-50:  #FEFDFB;
+
+  /* —— Tinta (texto) —— */
+  --ink-900: #1C2420;
+  --ink-800: #232D28;
+  --ink-700: #2E3A36;
+  --ink-500: #515C57;
+  --ink-400: #6B756F;
+  --ink-300: #7E8884;
+
+  --white: #FFFFFF;
+
+  /* ============ SEMÂNTICOS ============ */
+  /* Superfícies / fundos — página fria-clara ("Nuvem neutra"), cards brancos */
+  --color-bg: var(--cloud-100);
+  --color-surface: var(--white);
+  /* Blocos de destaque: superfície quente-neutra (areia dessaturada) */
+  --color-surface-warm: #ECE4D3;           /* areia clara — boxes, reflexão, timeline, tabelas */
+  --color-surface-muted: #ECE4D3;          /* alias semântico para a superfície quente */
+  --color-surface-cool: var(--cloud-200);  /* superfície fria neutra */
+  --color-surface-sunken: var(--cloud-200);
+  --color-surface-inverse: var(--petrol-800);
+
+  /* Texto */
+  --text-strong: var(--ink-900);
+  --text-body: var(--ink-700);
+  --text-muted: var(--ink-500);
+  --text-faint: var(--ink-300);
+  --text-on-dark: #EDE7DA;
+  --text-on-dark-muted: rgba(237, 231, 218, 0.72);
+
+  /* Marca */
+  --color-primary: var(--petrol-600);
+  --color-primary-strong: var(--petrol-700);
+  --color-primary-hover: var(--petrol-700);
+  --color-primary-soft: var(--petrol-50);
+  --color-on-primary: #F2F8F7;
+
+  --color-accent: var(--terra-600);
+  --color-accent-strong: var(--terra-700);
+  --color-accent-soft: var(--terra-100);
+  --color-on-accent: #FCF2ED;
+
+  --color-secondary: var(--ochre-600);
+  --color-secondary-strong: var(--ochre-700);
+  --color-secondary-soft: var(--ochre-100);
+
+  /* Linhas e bordas */
+  --color-border: rgba(28, 36, 32, 0.12);
+  --color-border-strong: rgba(28, 36, 32, 0.22);
+  --color-border-light: rgba(28, 36, 32, 0.07);
+  --color-divider: var(--sand-200);
+
+  /* Links */
+  --color-link: var(--petrol-700);
+  --color-link-hover: var(--terra-700);
+
+  /* Estados / callouts semânticos (info, atenção, alerta, sucesso, nota) */
+  --status-info: var(--petrol-600);
+  --status-info-soft: var(--petrol-50);
+  --status-attention: var(--ochre-600);
+  --status-attention-soft: var(--ochre-100);
+  --status-warning: var(--terra-600);
+  --status-warning-soft: var(--terra-50);
+  --status-success: var(--green-600);
+  --status-success-soft: var(--green-100);
+  --status-note: var(--slate-600);
+  --status-note-soft: var(--slate-100);
+
+  /* Realce de seleção/foco */
+  --color-focus-ring: rgba(31, 93, 90, 0.45);
+  --color-selection: var(--ochre-200);
+}
+/* ============================================================
+   TYPOGRAPHY — display marcante + corpo humanista
+   ============================================================ */
+:root {
+  /* Famílias */
+  --font-display: 'Red Hat Display', 'Archivo', system-ui, sans-serif;
+  --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Spectral', Georgia, 'Times New Roman', serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* Escala de tamanhos (rem, base 16px) */
+  --fs-eyebrow: 0.78rem;   /* rótulos mono, caixa-alta */
+  --fs-caption: 0.84rem;   /* legendas, fontes de imagem */
+  --fs-small: 0.92rem;
+  --fs-body: 1.0625rem;    /* 17px — corpo confortável */
+  --fs-body-lg: 1.1875rem; /* 19px — lead / introdução */
+  --fs-h6: 1.0625rem;
+  --fs-h5: 1.3rem;
+  --fs-h4: 1.6rem;
+  --fs-h3: 2.05rem;
+  --fs-h2: 2.7rem;
+  --fs-h1: 3.5rem;
+  --fs-display: clamp(3rem, 6vw, 5rem); /* @kind font */
+
+  /* Altura de linha */
+  --lh-tight: 1.08;    /* @kind font */
+  --lh-snug: 1.22;     /* @kind font */
+  --lh-heading: 1.16;  /* @kind font */
+  --lh-body: 1.65;     /* @kind font */
+  --lh-relaxed: 1.8;   /* @kind font */
+
+  /* Pesos */
+  --fw-regular: 400;   /* @kind font */
+  --fw-medium: 500;    /* @kind font */
+  --fw-semibold: 600;  /* @kind font */
+  --fw-bold: 700;      /* @kind font */
+  --fw-black: 800;     /* @kind font */
+
+  /* Tracking */
+  --ls-display: -0.018em; /* @kind font */
+  --ls-heading: -0.012em; /* @kind font */
+  --ls-body: 0em;         /* @kind font */
+  --ls-eyebrow: 0.16em;   /* @kind font */
+  --ls-mono: 0.02em;      /* @kind font */
+
+  /* Medida de leitura */
+  --measure: 74ch;        /* @kind other */
+  --measure-narrow: 54ch; /* @kind other */
+  --measure-wide: 78ch;   /* @kind other */
+}
+/* ============================================================
+   SPACING & LAYOUT — escala base 4px
+   ============================================================ */
+:root {
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4 */
+  --space-2: 0.5rem;    /* 8 */
+  --space-3: 0.75rem;   /* 12 */
+  --space-4: 1rem;      /* 16 */
+  --space-5: 1.25rem;   /* 20 */
+  --space-6: 1.5rem;    /* 24 */
+  --space-8: 2rem;      /* 32 */
+  --space-10: 2.5rem;   /* 40 */
+  --space-12: 3rem;     /* 48 */
+  --space-16: 4rem;     /* 64 */
+  --space-20: 5rem;     /* 80 */
+  --space-24: 6rem;     /* 96 */
+  --space-32: 8rem;     /* 128 */
+
+  /* Containers de conteúdo one-page */
+  --container-prose: 52rem;   /* coluna de leitura */
+  --container-content: 60rem; /* conteúdo + mídia lateral */
+  --container-wide: 75rem;    /* full-bleed contido */
+  --gutter: clamp(1.25rem, 5vw, 4rem); /* @kind spacing */
+
+  /* Ritmo vertical entre blocos de conteúdo */
+  --flow-block: clamp(2rem, 5vw, 3.5rem); /* @kind spacing */
+  --flow-text: 1.1em;                      /* @kind spacing */
+}
+/* ============================================================
+   ELEVATION — raios, bordas e sombras quentes (sutis)
+   ============================================================ */
+:root {
+  /* Raios de canto — cards moderados, nada exagerado */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* Larguras de borda */
+  --border-hair: 1px;
+  --border-thick: 2px;
+  --border-accent: 3px;   /* faixa de acento (callouts, olhos) */
+
+  /* Sombras — tinta quente, difusão suave */
+  --shadow-xs: 0 1px 2px rgba(28, 36, 32, 0.06);
+  --shadow-sm: 0 1px 2px rgba(28, 36, 32, 0.06), 0 1px 3px rgba(28, 36, 32, 0.05);
+  --shadow: 0 2px 6px rgba(28, 36, 32, 0.07), 0 6px 18px rgba(28, 36, 32, 0.06);
+  --shadow-md: 0 4px 12px rgba(28, 36, 32, 0.08), 0 12px 30px rgba(28, 36, 32, 0.08);
+  --shadow-lg: 0 10px 24px rgba(28, 36, 32, 0.10), 0 28px 60px rgba(28, 36, 32, 0.12);
+  --shadow-inset: inset 0 1px 2px rgba(28, 36, 32, 0.06);
+
+  /* Anel de foco acessível */
+  --focus-ring: 0 0 0 3px var(--color-focus-ring);
+}
+/* ============================================================
+   MOTION — suave e curto (foco no conteúdo)
+   ============================================================ */
+:root {
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);   /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+  --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);    /* @kind other */
+
+  --dur-instant: 90ms; /* @kind other */
+  --dur-fast: 150ms;   /* @kind other */
+  --dur: 240ms;        /* @kind other */
+  --dur-slow: 380ms;   /* @kind other */
+  --dur-slower: 560ms; /* @kind other */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* ============================================================
+   BASE — padrões de elemento + texturas de marca
+   Consumido junto com os tokens. Mantém leitura confortável
+   e o pano de fundo "papel + linhas topográficas".
+   ============================================================ */
+:root {
+  /* Texturas de marca desativadas — visual flat (sem ondinhas topográficas nem grão) */
+  --texture-topo: none; /* @kind other */
+  --texture-grain: none; /* @kind other */
+  /* Pano de fundo de papel: cor sólida quente-clara (flat) */
+  --bg-paper: var(--cloud-100);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--text-body);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: var(--fw-regular);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga", "calt";
+}
+
+::selection { background: var(--color-selection); color: var(--ink-900); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--text-strong);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  margin: 0 0 0.4em;
+  text-wrap: balance;
+}
+h1 { font-size: var(--fs-h1); letter-spacing: var(--ls-display); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+h5 { font-size: var(--fs-h5); }
+h6 { font-size: var(--fs-h6); }
+
+p { margin: 0 0 var(--flow-text); text-wrap: pretty; }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--color-link); text-decoration-color: var(--color-border-strong); text-underline-offset: 0.16em; transition: color var(--dur-fast) var(--ease-out); }
+a:hover { color: var(--color-link-hover); }
+
+strong, b { font-weight: var(--fw-bold); color: var(--text-strong); }
+
+small { font-size: var(--fs-small); }
+
+hr { border: none; border-top: var(--border-hair) solid var(--color-divider); margin: var(--space-8) 0; }
+
+code, kbd, samp { font-family: var(--font-mono); font-size: 0.9em; }
+
+img, svg, video { max-width: 100%; height: auto; display: block; }
+
+:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }
+
+/* —— Utilitários de marca reutilizáveis —— */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--color-primary-strong);
+}
+.measure { max-width: var(--measure); }
+.surface-paper { background: var(--bg-paper); }
+.surface-topo {
+  background-color: var(--color-surface-warm);
+  background-image: var(--texture-topo);
+  background-size: 420px;
+}
+
+/* —— Movimento: surgimento suave de cards e destaques (scroll-driven) —— */
+@keyframes spu-reveal-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.spu-motion-reveal,
+.spu-callout, .spu-panel, .spu-examplecard,
+.spu-feature--card, .spu-stat--card, .spu-ab, .spu-quiz {
+  animation: spu-reveal-up var(--dur-slow) var(--ease-out) both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 22%;
+}
+@supports not (animation-timeline: view()) {
+  .spu-motion-reveal,
+  .spu-callout, .spu-panel, .spu-examplecard,
+  .spu-feature--card, .spu-stat--card, .spu-ab, .spu-quiz {
+    animation: spu-reveal-up var(--dur-slow) var(--ease-out) both;
+  }
+}
+@media (prefers-reduced-motion: reduce), print {
+  .spu-motion-reveal,
+  .spu-callout, .spu-panel, .spu-examplecard,
+  .spu-feature--card, .spu-stat--card, .spu-ab, .spu-quiz {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}

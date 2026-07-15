@@ -1,0 +1,56 @@
+/* ============================================================
+   PAGE GLUE — regras específicas desta página.
+   Usa somente tokens do DS (nenhuma cor/medida fora do sistema).
+   ============================================================ */
+
+[hidden]{display:none !important}
+
+/* Ritmo vertical dentro das seções (mesmo gap do builder) */
+.pg-flow > * + *{margin-top:var(--flow-block)}
+.pg-flow--tight > * + *{margin-top:var(--space-6)}
+
+/* Cabeçalho de seção: kicker + título + lead */
+.pg-sechead h2{margin-top:var(--space-3)}
+.pg-lead{font-size:var(--fs-body-lg);color:var(--text-muted);max-width:var(--measure);margin:0}
+.spu-section--dark .pg-lead{color:var(--text-on-dark-muted)}
+
+/* Grade dos "quatro fios" (FeatureGrid) */
+.pg-fios{grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr))}
+
+/* Grade de estatísticas */
+.pg-stats{grid-template-columns:repeat(auto-fit,minmax(min(175px,100%),1fr))}
+
+/* —— Linha do tempo: conteúdos por era —— */
+.pg-era-figure .spu-figure{margin-top:var(--space-2)}
+.pg-era-extra{display:flex;flex-direction:column;gap:var(--space-6);margin-top:var(--space-6)}
+
+/* —— Heranças (seção escura): interiores dos cards —— */
+.pg-herancas-grid{grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr))}
+.pg-heranca__et{display:block;font-family:var(--font-mono);font-size:var(--fs-eyebrow);font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:var(--space-2)}
+.pg-heranca__seta{display:flex;align-items:center;gap:.5em;font-family:var(--font-mono);font-size:var(--fs-eyebrow);letter-spacing:.08em;text-transform:uppercase;color:var(--_hc,var(--color-accent));margin:var(--space-3) 0 var(--space-2)}
+.pg-heranca__seta::after{content:"";flex:1;height:1px;background:var(--color-border)}
+.pg-heranca__gestao{margin-top:var(--space-4);padding-top:var(--space-3);border-top:1px dashed var(--color-border-strong);font-size:var(--fs-small);color:var(--text-muted)}
+.pg-heranca__gestao b{display:block;font-family:var(--font-mono);font-size:var(--fs-eyebrow);font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--_hc,var(--color-accent-strong));margin-bottom:var(--space-1)}
+.pg-heranca .spu-feature__icon{background:color-mix(in srgb, var(--_hc,var(--color-primary)) 14%, var(--color-surface));color:var(--_hc,var(--color-primary-strong))}
+
+/* —— Mapa mental: engrenagem de conceitos —— */
+.pg-chips{display:flex;flex-wrap:wrap;gap:var(--space-3);margin:var(--space-6) 0 0}
+.pg-chips .spu-tag{font-family:var(--font-display)}
+.pg-chips .spu-tag--active{background:var(--_cc,var(--color-primary));border-color:var(--_cc,var(--color-primary))}
+.pg-mapa-panel .spu-panel__title{font-size:var(--fs-h4)}
+.pg-mapa-panel p{max-width:var(--measure)}
+
+/* —— Nota sobre os boxes de fonte —— */
+.pg-nota-fontes{font-size:var(--fs-caption);color:var(--text-faint);font-family:var(--font-mono);letter-spacing:.02em;max-width:var(--measure)}
+
+/* —— Voltar ao topo da linha do tempo em telas pequenas —— */
+@media (max-width:640px){
+  .spu-tl__eras{position:sticky;top:0;z-index:20;background:var(--color-surface-warm);padding:var(--space-3) 0;margin-inline:calc(-1 * var(--space-2));padding-inline:var(--space-2)}
+}
+
+/* —— Impressão: tudo aberto —— */
+@media print{
+  .spu-tl__content{display:block !important}
+  .spu-tl__era-block[hidden]{display:block !important}
+  .spu-refs__list{display:block !important}
+}
