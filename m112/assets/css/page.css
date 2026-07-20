@@ -31,7 +31,7 @@
 .pg-era-slide__media::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 65%,rgba(14,46,43,.12));pointer-events:none}
 .pg-era-slide__media img{width:100%;height:100%;object-fit:cover;display:block}
 .pg-era-slide__media figcaption{position:absolute;left:var(--space-4);bottom:var(--space-4);z-index:1;padding:.55em .8em;border-radius:var(--radius);background:rgba(18,35,31,.84);color:#fff;font-family:var(--font-mono);font-size:var(--fs-caption);letter-spacing:.04em}
-.pg-era-slide__body{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(var(--space-6),5vw,var(--space-9));border-top:5px solid var(--_slide)}
+.pg-era-slide__body{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(var(--space-6),5vw,var(--space-9))}
 .pg-era-slide__number{display:inline-flex;padding:.35em .65em;border-radius:var(--radius-pill);background:color-mix(in srgb,var(--_slide) 12%,var(--color-surface));color:var(--_slide);font-family:var(--font-mono);font-size:var(--fs-eyebrow);font-weight:700;letter-spacing:.09em;text-transform:uppercase}
 .pg-era-slide__period{margin:var(--space-4) 0 var(--space-1);font-family:var(--font-mono);font-size:var(--fs-small);font-weight:600;color:var(--_slide)}
 .pg-era-slide__body h3{margin:0;font-family:var(--font-display);font-size:clamp(1.75rem,3.5vw,var(--fs-h2));line-height:1.02;letter-spacing:var(--ls-heading);color:var(--text-strong)}
@@ -77,7 +77,7 @@
 @media (min-width:761px){
   .pg-era-slide{gap:var(--space-6);padding:var(--space-5)}
   .pg-era-slide__media{border-radius:var(--radius-md)}
-  .pg-era-slide__body{padding:clamp(var(--space-6),4vw,var(--space-8));border:1px solid var(--color-border);border-top:5px solid var(--_slide);border-radius:var(--radius-md)}
+  .pg-era-slide__body{padding:clamp(var(--space-6),4vw,var(--space-8));border:1px solid var(--color-border);border-radius:var(--radius-md)}
   .spu-period__trigger{padding-inline:clamp(var(--space-6),4vw,var(--space-9))}
 }
 
