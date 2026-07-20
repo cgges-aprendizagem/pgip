@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Breve histórico da propriedade no Brasil — SPU</title>
+<title>Breve histórico da propriedade no Brasil, SPU</title>
 <meta name="description" content="Conteúdo didático: como a formação histórica da propriedade da terra no Brasil ajuda a entender a gestão de imóveis públicos. Linha do tempo interativa em quatro períodos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,7 +55,7 @@
     <div class="pg-sechead">
       <span class="spu-kicker"><span class="spu-kicker__rule"></span>Objetivo do material</span>
       <h2>Conectar quatro fios da mesma história</h2>
-      <p class="pg-lead">Este material liga a <strong>história fundiária</strong> do Brasil à <strong>propriedade pública</strong>, às <strong>terras públicas</strong> e à <strong>gestão patrimonial imobiliária</strong> — mostrando, em cada marco, por que ele importa para quem trabalha hoje com imóveis públicos.</p>
+      <p class="pg-lead">Este material liga a <strong>história fundiária</strong> do Brasil à <strong>propriedade pública</strong>, às <strong>terras públicas</strong> e à <strong>gestão patrimonial imobiliária</strong>, mostrando, em cada marco, por que ele importa para quem trabalha hoje com imóveis públicos.</p>
     </div>
 
     <div class="spu-features pg-fios">
@@ -71,7 +71,7 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
         </div>
         <h3 class="spu-feature__title">Propriedade pública</h3>
-        <p class="spu-feature__text">De onde vem o domínio do Estado sobre a terra — e por que ele antecede a propriedade privada.</p>
+        <p class="spu-feature__text">De onde vem o domínio do Estado sobre a terra, e por que ele antecede a propriedade privada.</p>
       </div>
       <div class="spu-feature spu-feature--card">
         <div class="spu-feature__icon" style="background:var(--petrol-100);color:var(--petrol-700)">
@@ -130,34 +130,60 @@
       <p class="pg-lead">Toda a narrativa se organiza a partir de quatro grandes marcos. Selecione um período para explorar seus marcos jurídicos, as consequências fundiárias e o impacto na gestão pública de hoje.</p>
     </div>
 
-    <div class="spu-tl">
-      <div class="spu-tl__eras" role="tablist" aria-label="Períodos históricos">
-        <button type="button" class="spu-tl__era spu-tl__era--active" data-era="p1" style="--_era:var(--terra-600)" role="tab" aria-selected="true">
-          <span class="spu-tl__eralabel">Regime Sesmarial</span>
-          <span class="spu-tl__eraperiod">1500 – 1822</span>
-        </button>
-        <button type="button" class="spu-tl__era" data-era="p2" style="--_era:var(--ochre-600)" role="tab" aria-selected="false">
-          <span class="spu-tl__eralabel">Regime de Posse</span>
-          <span class="spu-tl__eraperiod">1822 – 1850</span>
-        </button>
-        <button type="button" class="spu-tl__era" data-era="p3" style="--_era:var(--petrol-600)" role="tab" aria-selected="false">
-          <span class="spu-tl__eralabel">Lei de Terras</span>
-          <span class="spu-tl__eraperiod">1850 – 1889</span>
-        </button>
-        <button type="button" class="spu-tl__era" data-era="p4" style="--_era:var(--green-600)" role="tab" aria-selected="false">
-          <span class="spu-tl__eralabel">Período Republicano</span>
-          <span class="spu-tl__eraperiod">1889 – hoje</span>
-        </button>
+    <div class="pg-era-carousel" data-era-carousel style="--_era:var(--terra-600)" aria-roledescription="carrossel" aria-label="Apresentação dos quatro períodos históricos">
+      <div class="pg-era-carousel__topline">
+        <span class="pg-era-carousel__hint">Explore as eras <span aria-hidden="true">← →</span></span>
+        <span class="pg-era-carousel__count"><strong data-carousel-current>01</strong> / 04</span>
       </div>
+      <p class="sr-only" aria-live="polite" data-carousel-status>Era 1 de 4: Regime Sesmarial</p>
+      <div class="pg-era-carousel__viewport">
+        <div class="pg-era-carousel__track" data-carousel-track>
+          <article class="pg-era-slide is-active" data-era-slide="p1">
+            <figure class="pg-era-slide__media"><img src="images/p1-regime-sesmarial.png" alt="Representação do regime de sesmarias no território colonial."><figcaption>Regime Sesmarial</figcaption></figure>
+            <div class="pg-era-slide__body"><span class="pg-era-slide__number">Era 01</span><p class="pg-era-slide__period">1500 a 1821/1822</p><h3>Na origem, toda a terra era pública</h3><p class="pg-era-slide__thesis">Terra como concessão condicionada</p><p>O território pertencia à Coroa. O acesso formal ocorria por cartas de sesmaria, com exigência de cultivo e aproveitamento.</p><button type="button" class="pg-era-slide__cta" data-open-era="p1">Ver detalhes desta era <span aria-hidden="true">↓</span></button></div>
+          </article>
+          <article class="pg-era-slide" data-era-slide="p2" aria-hidden="true">
+            <figure class="pg-era-slide__media"><img src="images/p2-regime-de-posse.png" alt="Representação de posses rurais sobrepostas no século XIX."><figcaption>Regime de Posse</figcaption></figure>
+            <div class="pg-era-slide__body"><span class="pg-era-slide__number">Era 02</span><p class="pg-era-slide__period">1822 a 1850</p><h3>Ocupar passa a valer mais do que conceder</h3><p class="pg-era-slide__thesis">A posse vira a regra de acesso</p><p>Com o fim das sesmarias e sem uma lei substituta, a ocupação de fato avança mais rápido do que o direito.</p><button type="button" class="pg-era-slide__cta" data-open-era="p2">Ver detalhes desta era <span aria-hidden="true">↓</span></button></div>
+          </article>
+          <article class="pg-era-slide" data-era-slide="p3" aria-hidden="true">
+            <figure class="pg-era-slide__media"><img src="images/p3-lei-de-terras.png" alt="Documento e demarcações representam a Lei de Terras de 1850."><figcaption>Lei de Terras</figcaption></figure>
+            <div class="pg-era-slide__body"><span class="pg-era-slide__number">Era 03</span><p class="pg-era-slide__period">1850 a 1889</p><h3>A terra vira mercadoria</h3><p class="pg-era-slide__thesis">Comprar passa a ser a via formal</p><p>A Lei nº 601 separa terras públicas e particulares, institui a compra e define juridicamente as terras devolutas.</p><button type="button" class="pg-era-slide__cta" data-open-era="p3">Ver detalhes desta era <span aria-hidden="true">↓</span></button></div>
+          </article>
+          <article class="pg-era-slide" data-era-slide="p4" aria-hidden="true">
+            <figure class="pg-era-slide__media"><img src="images/p4-periodo-republicano.png" alt="Mapa e equipamentos públicos representam a organização republicana da terra pública."><figcaption>Período Republicano</figcaption></figure>
+            <div class="pg-era-slide__body"><span class="pg-era-slide__number">Era 04</span><p class="pg-era-slide__period">1889 aos dias atuais</p><h3>A terra pública se organiza</h3><p class="pg-era-slide__thesis">Federação, registro e função social</p><p>O patrimônio é distribuído entre os entes federativos, ganha instrumentos de registro e passa a servir a finalidades socioambientais.</p><button type="button" class="pg-era-slide__cta" data-open-era="p4">Ver detalhes desta era <span aria-hidden="true">↓</span></button></div>
+          </article>
+        </div>
+      </div>
+      <div class="pg-era-carousel__controls">
+        <button type="button" class="pg-era-carousel__arrow" data-carousel-prev aria-label="Era anterior">← <span>Anterior</span></button>
+        <div class="pg-era-carousel__nav" role="tablist" aria-label="Selecionar era">
+          <button type="button" class="is-active" data-carousel-go="0" role="tab" aria-selected="true"><span>01</span><b>Sesmarias</b></button>
+          <button type="button" data-carousel-go="1" role="tab" aria-selected="false"><span>02</span><b>Posse</b></button>
+          <button type="button" data-carousel-go="2" role="tab" aria-selected="false"><span>03</span><b>Lei de Terras</b></button>
+          <button type="button" data-carousel-go="3" role="tab" aria-selected="false"><span>04</span><b>República</b></button>
+        </div>
+        <button type="button" class="pg-era-carousel__arrow" data-carousel-next aria-label="Próxima era"><span>Próxima</span> →</button>
+      </div>
+    </div>
+
+    <div class="pg-timeline-details-head">
+      <span class="spu-kicker"><span class="spu-kicker__rule"></span>Linha do tempo detalhada</span>
+      <h3>Abra uma era e acompanhe seus marcos</h3>
+      <p>Os marcos jurídicos, as consequências fundiárias e os impactos na gestão pública aparecem abertos para facilitar a leitura.</p>
+    </div>
+
+    <div class="spu-tl">
 
       <!-- ─────────── ERA 1 · REGIME SESMARIAL ─────────── -->
       <div class="spu-tl__era-block" data-era="p1" style="--_era:var(--terra-600)">
         <div class="spu-tl__head">
           <h3 class="spu-tl__title">Na origem, toda a terra era pública</h3>
-          <span class="spu-tl__period">1500 – 1821/1822</span>
+          <span class="spu-tl__period">1500 a 1821/1822</span>
         </div>
         <div class="spu-richtext">
-          <p>O território colonial pertencia à Coroa Portuguesa. O acesso à terra se dava por <strong>concessão</strong> — as sesmarias —, condicionada ao cultivo, ao uso e à ocupação efetiva. Quem não cumprisse as condições deveria, em tese, devolver a terra. Importante: o modelo partia da ficção de que o território estava "vazio", ignorando os povos indígenas que já o ocupavam — essa exclusão original também é parte da história fundiária brasileira.</p>
+          <p>O território colonial pertencia à Coroa Portuguesa. O acesso à terra se dava por <strong>concessão</strong>, por meio das sesmarias, condicionada ao cultivo, ao uso e à ocupação efetiva. Quem não cumprisse as condições deveria, em tese, devolver a terra. Importante: o modelo partia da ficção de que o território estava "vazio" e ignorava os povos indígenas que já o ocupavam. Essa exclusão original também é parte da história fundiária brasileira.</p>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════
@@ -172,7 +198,7 @@
             </button>
             <figcaption class="spu-figure__cap">
               <span class="spu-figure__title">Concessões sobre o território</span>
-              Grandes faixas doadas sob condição de cultivo — condições raramente fiscalizadas, limites vagos.
+              Grandes faixas doadas sob condição de cultivo, condições raramente fiscalizadas, limites vagos.
               <span class="spu-figure__credit">Fonte: Montagem autoral estilizada com IA.</span>
             </figcaption>
           </figure>
@@ -189,7 +215,7 @@
               <svg class="spu-tl__chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             <div class="spu-tl__content">
-              <p>Concessão condicionada: cultivar, ocupar e aproveitar — sob pena de a terra retornar à Coroa. Não existia "dono" no sentido moderno: existia concessão de uso, condicionada e revogável.</p>
+              <p>Concessão condicionada: cultivar, ocupar e aproveitar, sob pena de a terra retornar à Coroa. Não existia "dono" no sentido moderno: existia concessão de uso, condicionada e revogável.</p>
             </div>
           </div>
           <div class="spu-tl__item">
@@ -226,7 +252,7 @@
               <div class="spu-ab__hd" style="background:var(--petrol-600)"><p class="spu-ab__label">Antes</p></div>
               <div class="spu-ab__bd">
                 <p class="spu-ab__title">Terra = bem da Coroa</p>
-                <div class="spu-ab__body"><p>A propriedade privada plena não era a regra. O acesso à terra dependia de concessão condicionada — e, em tese, revogável.</p></div>
+                <div class="spu-ab__body"><p>A propriedade privada plena não era a regra. O acesso à terra dependia de concessão condicionada, e, em tese, revogável.</p></div>
               </div>
             </div>
             <span class="spu-ab__vs">VS</span>
@@ -234,14 +260,14 @@
               <div class="spu-ab__hd" style="background:var(--terra-600)"><p class="spu-ab__label">Depois</p></div>
               <div class="spu-ab__bd">
                 <p class="spu-ab__title">Latifúndios em embrião</p>
-                <div class="spu-ab__body"><p>Concessões enormes, cultivo exigido mas não verificado, limites vagos — e um Estado sem instrumentos para controlar o que havia concedido.</p></div>
+                <div class="spu-ab__body"><p>Concessões enormes, cultivo exigido mas não verificado, limites vagos, e um Estado sem instrumentos para controlar o que havia concedido.</p></div>
               </div>
             </div>
           </div>
 
           <figure class="spu-quote spu-quote--block" style="margin:0">
             <span class="spu-quote__glyph" style="color:var(--terra-600)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2.5a.5.5 0 0 1 .5.5v.5a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2.5a.5.5 0 0 1 .5.5v.5a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V5a2 2 0 0 0-2-2z"/></svg></span>
-            <blockquote class="spu-quote__text" style="border:0;margin:0;padding:0">A sesmaria era concessão condicionada ao aproveitamento, e não propriedade plena — e é dessa matriz, herdada das Ordenações do Reino, que deriva boa parte do ordenamento fundiário posterior. As grandes concessões sesmariais projetaram a estrutura concentrada que o Brasil República herdou.</blockquote>
+            <blockquote class="spu-quote__text" style="border:0;margin:0;padding:0">A sesmaria era concessão condicionada ao aproveitamento, e não propriedade plena, e é dessa matriz, herdada das Ordenações do Reino, que deriva boa parte do ordenamento fundiário posterior. As grandes concessões sesmariais projetaram a estrutura concentrada que o Brasil República herdou.</blockquote>
             <figcaption class="spu-quote__cite"><b>Ideia-chave</b> · a partir de PEREIRA (2021) e de "A influência das sesmarias na estrutura fundiária do Brasil República"</figcaption>
           </figure>
 
@@ -250,7 +276,7 @@
             <div class="spu-callout__bd">
               <p class="spu-callout__title">Por que isso importa hoje?</p>
               <div class="spu-callout__body">
-                <p>Ao analisar a titularidade de um imóvel, é comum que a cadeia de domínio remonte a uma sesmaria: saber se ela foi validamente concedida e cumprida define se a terra é pública ou privada. E o princípio permanece: <strong>o que nunca saiu validamente do domínio público continua público</strong> — base da arrecadação de terras devolutas e da defesa do patrimônio.</p>
+                <p>Ao analisar a titularidade de um imóvel, é comum que a cadeia de domínio remonte a uma sesmaria: saber se ela foi validamente concedida e cumprida define se a terra é pública ou privada. E o princípio permanece: <strong>o que nunca saiu validamente do domínio público continua público</strong>, base da arrecadação de terras devolutas e da defesa do patrimônio.</p>
               </div>
             </div>
           </div>
@@ -261,10 +287,10 @@
       <div class="spu-tl__era-block" data-era="p2" style="--_era:var(--ochre-600)" hidden>
         <div class="spu-tl__head">
           <h3 class="spu-tl__title">Trinta anos sem regra geral</h3>
-          <span class="spu-tl__period">1822 – 1850</span>
+          <span class="spu-tl__period">1822 a 1850</span>
         </div>
         <div class="spu-richtext">
-          <p>Em 1822, às vésperas da Independência, a concessão de sesmarias foi <strong>suspensa</strong> — e nenhuma norma geral a substituiu por quase três décadas. Na prática, o acesso à terra passou a ocorrer pelo <strong>apossamento</strong>: ocupar e usar, sem título.</p>
+          <p>Em 1822, às vésperas da Independência, a concessão de sesmarias foi <strong>suspensa</strong>, e nenhuma norma geral a substituiu por quase três décadas. Na prática, o acesso à terra passou a ocorrer pelo <strong>apossamento</strong>: ocupar e usar, sem título.</p>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════
@@ -279,7 +305,7 @@
             </button>
             <figcaption class="spu-figure__cap">
               <span class="spu-figure__title">Ocupação sem título</span>
-              Posses que se sobrepõem, limites em disputa — a informalidade fundiária vira padrão nacional.
+              Posses que se sobrepõem, limites em disputa, a informalidade fundiária vira padrão nacional.
               <span class="spu-figure__credit">Fonte: Montagem autoral estilizada com IA.</span>
             </figcaption>
           </figure>
@@ -322,7 +348,7 @@
               <svg class="spu-tl__chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             <div class="spu-tl__content" hidden>
-              <p>O Estado perde ainda mais a referência do que é seu. A indefinição dominial se aprofunda — quem ocupa × quem tem título × o que é público. Quando a Lei de Terras chegar, terá que "arrumar" retroativamente esse mosaico.</p>
+              <p>O Estado perde ainda mais a referência do que é seu. A indefinição dominial se aprofunda, quem ocupa × quem tem título × o que é público. Quando a Lei de Terras chegar, terá que "arrumar" retroativamente esse mosaico.</p>
             </div>
           </div>
         </div>
@@ -341,7 +367,7 @@
               <div class="spu-ab__hd" style="background:var(--ochre-600)"><p class="spu-ab__label">Depois</p></div>
               <div class="spu-ab__bd">
                 <p class="spu-ab__title">A posse vira regra</p>
-                <div class="spu-ab__body"><p>Ocupar antes de titular torna-se o padrão nacional — um padrão que a legislação posterior precisará legitimar, e que a gestão pública administra até hoje.</p></div>
+                <div class="spu-ab__body"><p>Ocupar antes de titular torna-se o padrão nacional, um padrão que a legislação posterior precisará legitimar, e que a gestão pública administra até hoje.</p></div>
               </div>
             </div>
           </div>
@@ -357,7 +383,7 @@
             <div class="spu-callout__bd">
               <p class="spu-callout__title">Por que isso importa hoje?</p>
               <div class="spu-callout__body">
-                <p><strong>Posse e domínio seguem sendo coisas diferentes</strong> — e essa diferença estrutura o trabalho patrimonial: ocupações consolidadas em áreas públicas, regularização fundiária, cessões e termos de uso lidam com a herança de um país em que ocupar veio antes de titular. A informalidade fundiária não é acidente recente, é padrão histórico.</p>
+                <p><strong>Posse e domínio seguem sendo coisas diferentes</strong>, e essa diferença estrutura o trabalho patrimonial: ocupações consolidadas em áreas públicas, regularização fundiária, cessões e termos de uso lidam com a herança de um país em que ocupar veio antes de titular. A informalidade fundiária não é acidente recente, é padrão histórico.</p>
               </div>
             </div>
           </div>
@@ -368,10 +394,10 @@
       <div class="spu-tl__era-block" data-era="p3" style="--_era:var(--petrol-600)" hidden>
         <div class="spu-tl__head">
           <h3 class="spu-tl__title">A terra vira mercadoria</h3>
-          <span class="spu-tl__period">1850 – 1889</span>
+          <span class="spu-tl__period">1850 a 1889</span>
         </div>
         <div class="spu-richtext">
-          <p>A <strong>Lei nº 601, de 1850</strong>, muda a lógica do acesso: daqui em diante, terra pública só se adquire <strong>pela compra</strong>. É também a primeira tentativa de separar <strong>terras públicas</strong> e <strong>terras particulares</strong> — nascem, juridicamente, as <strong>terras devolutas</strong>.</p>
+          <p>A <strong>Lei nº 601, de 1850</strong>, muda a lógica do acesso: daqui em diante, terra pública só se adquire <strong>pela compra</strong>. É também a primeira tentativa de separar <strong>terras públicas</strong> e <strong>terras particulares</strong>, nascem, juridicamente, as <strong>terras devolutas</strong>.</p>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════
@@ -381,7 +407,7 @@
         <div class="pg-era-figure">
           <figure class="spu-figure spu-figure--lg spu-figure--framed">
             <button type="button" class="spu-figure__frame" data-zoom aria-label="Ampliar imagem">
-              <img src="images/p3-lei-de-terras.png" alt="Colagem: o registro e o título entram em cena — documento, fazenda de café e trabalhadores excluídos do acesso à terra, em destaque petróleo.">
+              <img src="images/p3-lei-de-terras.png" alt="Colagem: o registro e o título entram em cena, documento, fazenda de café e trabalhadores excluídos do acesso à terra, em destaque petróleo.">
               <span class="spu-figure__zoom" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg></span>
             </button>
             <figcaption class="spu-figure__cap">
@@ -398,12 +424,12 @@
             <button type="button" class="spu-tl__mbtn" aria-expanded="true">
               <span>
                 <span class="spu-tl__date">Marco jurídico</span>
-                <p class="spu-tl__mtitle">Lei nº 601/1850 — a Lei de Terras</p>
+                <p class="spu-tl__mtitle">Lei nº 601/1850, a Lei de Terras</p>
               </span>
               <svg class="spu-tl__chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             <div class="spu-tl__content">
-              <p>Proíbe a aquisição por posse; institui a compra como via de acesso; revalida sesmarias cumpridas; legitima posses "mansas e pacíficas"; e define as <strong>terras devolutas</strong> — o que não é particular, nem destinado a uso público, é da nação.</p>
+              <p>Proíbe a aquisição por posse; institui a compra como via de acesso; revalida sesmarias cumpridas; legitima posses "mansas e pacíficas"; e define as <strong>terras devolutas</strong>, o que não é particular, nem destinado a uso público, é da nação.</p>
             </div>
           </div>
           <div class="spu-tl__item">
@@ -416,7 +442,7 @@
               <svg class="spu-tl__chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             <div class="spu-tl__content" hidden>
-              <p>A lei é aprovada no mesmo ano em que se extingue o tráfico de africanos escravizados (Lei Eusébio de Queirós). Com o trabalho livre no horizonte, fechar o acesso gratuito à terra garantia mão de obra disponível para as fazendas — e mantinha a terra concentrada. A exclusão fundiária deixa de ser apenas prática e vira desenho legal.</p>
+              <p>A lei é aprovada no mesmo ano em que se extingue o tráfico de africanos escravizados (Lei Eusébio de Queirós). Com o trabalho livre no horizonte, fechar o acesso gratuito à terra garantia mão de obra disponível para as fazendas, e mantinha a terra concentrada. A exclusão fundiária deixa de ser apenas prática e vira desenho legal.</p>
             </div>
           </div>
           <div class="spu-tl__item">
@@ -442,7 +468,7 @@
               <svg class="spu-tl__chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             <div class="spu-tl__content" hidden>
-              <p>Nasce o conceito jurídico central para o patrimônio público — mas a discriminação das terras devolutas nunca foi concluída, deixando um passivo que atravessa até hoje o trabalho patrimonial.</p>
+              <p>Nasce o conceito jurídico central para o patrimônio público, mas a discriminação das terras devolutas nunca foi concluída, deixando um passivo que atravessa até hoje o trabalho patrimonial.</p>
             </div>
           </div>
         </div>
@@ -468,7 +494,7 @@
 
           <figure class="spu-quote spu-quote--block" style="margin:0">
             <span class="spu-quote__glyph" style="color:var(--petrol-600)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2.5a.5.5 0 0 1 .5.5v.5a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2.5a.5.5 0 0 1 .5.5v.5a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V5a2 2 0 0 0-2-2z"/></svg></span>
-            <blockquote class="spu-quote__text" style="border:0;margin:0;padding:0">Ao condicionar o acesso à terra à compra, a Lei de 1850 oficializou a opção do Brasil pelos latifúndios — e funcionou como elo coercitivo sobre as famílias livres e pobres: sem acesso à terra própria, restava-lhes trabalhar na terra dos outros.</blockquote>
+            <blockquote class="spu-quote__text" style="border:0;margin:0;padding:0">Ao condicionar o acesso à terra à compra, a Lei de 1850 oficializou a opção do Brasil pelos latifúndios, e funcionou como elo coercitivo sobre as famílias livres e pobres: sem acesso à terra própria, restava-lhes trabalhar na terra dos outros.</blockquote>
             <figcaption class="spu-quote__cite"><b>Ideia-chave</b> · a partir de "Há 170 anos, Lei de Terras oficializou opção do Brasil pelos latifúndios" e "A Lei de Terras de 1850 no centro da discussão"</figcaption>
           </figure>
 
@@ -487,11 +513,11 @@
       <!-- ─────────── ERA 4 · PERÍODO REPUBLICANO ─────────── -->
       <div class="spu-tl__era-block" data-era="p4" style="--_era:var(--green-600)" hidden>
         <div class="spu-tl__head">
-          <h3 class="spu-tl__title">A terra pública se organiza — e herda os problemas</h3>
-          <span class="spu-tl__period">1889 – dias atuais</span>
+          <h3 class="spu-tl__title">A terra pública se organiza, e herda os problemas</h3>
+          <span class="spu-tl__period">1889 a dias atuais</span>
         </div>
         <div class="spu-richtext">
-          <p>A República <strong>redistribui</strong> a terra pública entre os entes federativos e constrói, aos poucos, o patrimônio público moderno: registro, titulação, cadastro — e, com a Constituição de 1988, a <strong>função social e socioambiental</strong> da propriedade.</p>
+          <p>A República <strong>redistribui</strong> a terra pública entre os entes federativos e constrói, aos poucos, o patrimônio público moderno: registro, titulação, cadastro, e, com a Constituição de 1988, a <strong>função social e socioambiental</strong> da propriedade.</p>
         </div>
 
         <!-- ═══════════════════════════════════════════════════════════
@@ -506,7 +532,7 @@
             </button>
             <figcaption class="spu-figure__cap">
               <span class="spu-figure__title">O patrimônio público federativo</span>
-              Registro, titulação e destinação com finalidade — carregando as heranças dos períodos anteriores.
+              Registro, titulação e destinação com finalidade, carregando as heranças dos períodos anteriores.
               <span class="spu-figure__credit">Fonte: Montagem autoral estilizada com IA.</span>
             </figcaption>
           </figure>
@@ -536,7 +562,7 @@
               <svg class="spu-tl__chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             <div class="spu-tl__content" hidden>
-              <p>Código Civil de 1916, sistema registral e instrumentos de discriminação consolidam a propriedade titulada e registrada — e formam os patrimônios imobiliários da União, dos estados e dos municípios, com órgãos próprios de gestão.</p>
+              <p>Código Civil de 1916, sistema registral e instrumentos de discriminação consolidam a propriedade titulada e registrada, e formam os patrimônios imobiliários da União, dos estados e dos municípios, com órgãos próprios de gestão.</p>
             </div>
           </div>
           <div class="spu-tl__item">
@@ -549,7 +575,7 @@
               <svg class="spu-tl__chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
             </button>
             <div class="spu-tl__content" hidden>
-              <p>A Constituição de 1988 define os bens da União (art. 20) e exige que a propriedade — inclusive a pública — cumpra função social. A gestão patrimonial passa a ser instrumento de política pública socioambiental: destinar é cumprir a Constituição.</p>
+              <p>A Constituição de 1988 define os bens da União (art. 20) e exige que a propriedade, inclusive a pública, cumpra função social. A gestão patrimonial passa a ser instrumento de política pública socioambiental: destinar é cumprir a Constituição.</p>
             </div>
           </div>
         </div>
@@ -568,14 +594,14 @@
               <div class="spu-ab__hd" style="background:var(--green-600)"><p class="spu-ab__label">Depois</p></div>
               <div class="spu-ab__bd">
                 <p class="spu-ab__title">Patrimônio federativo e finalístico</p>
-                <div class="spu-ab__body"><p>Terras devolutas estaduais, bens da União na Constituição, registro como regra — e a exigência de que cada imóvel público sirva a uma finalidade social e ambiental. A moldura se organizou; as heranças seguem dentro dela.</p></div>
+                <div class="spu-ab__body"><p>Terras devolutas estaduais, bens da União na Constituição, registro como regra, e a exigência de que cada imóvel público sirva a uma finalidade social e ambiental. A moldura se organizou; as heranças seguem dentro dela.</p></div>
               </div>
             </div>
           </div>
 
           <figure class="spu-quote spu-quote--block" style="margin:0">
             <span class="spu-quote__glyph" style="color:var(--green-600)"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2.5a.5.5 0 0 1 .5.5v.5a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V5a2 2 0 0 0-2-2z"/><path d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2.5a.5.5 0 0 1 .5.5v.5a2 2 0 0 1-2 2 1 1 0 0 0 0 2 4 4 0 0 0 4-4V5a2 2 0 0 0-2-2z"/></svg></span>
-            <blockquote class="spu-quote__text" style="border:0;margin:0;padding:0">Os terrenos de marinha — faixa sob domínio da União desde as origens coloniais e preservada pela República — têm relevância socioambiental estratégica: sua gestão conecta patrimônio público, proteção da zona costeira e interesse coletivo.</blockquote>
+            <blockquote class="spu-quote__text" style="border:0;margin:0;padding:0">Os terrenos de marinha, faixa sob domínio da União desde as origens coloniais e preservada pela República, têm relevância socioambiental estratégica: sua gestão conecta patrimônio público, proteção da zona costeira e interesse coletivo.</blockquote>
             <figcaption class="spu-quote__cite"><b>Ideia-chave</b> · a partir de NUNES (2019)</figcaption>
           </figure>
 
@@ -600,7 +626,7 @@
     <div class="pg-sechead">
       <span class="spu-kicker" style="color:var(--ochre-300)"><span class="spu-kicker__rule" style="background:var(--ochre-400)"></span>Conexão com os imóveis públicos</span>
       <h2>O que a gestão patrimonial herdou dessa história</h2>
-      <p class="pg-lead">Cada problema histórico deixou um efeito ativo no presente — e cada efeito exige uma resposta da gestão patrimonial imobiliária pública.</p>
+      <p class="pg-lead">Cada problema histórico deixou um efeito ativo no presente, e cada efeito exige uma resposta da gestão patrimonial imobiliária pública.</p>
     </div>
 
     <!-- ═══════════════════════════════════════════════════════════
@@ -609,7 +635,7 @@
          ═══════════════════════════════════════════════════════════ -->
     <figure class="spu-figure spu-figure--full spu-figure--framed" style="margin:0">
       <button type="button" class="spu-figure__frame" data-zoom aria-label="Ampliar imagem">
-        <img src="images/herancas-gestao-patrimonial.png" alt="Colagem: heranças fundiárias no presente — orla com terrenos de marinha, ocupações consolidadas, instrumentos de demarcação e registro.">
+        <img src="images/herancas-gestao-patrimonial.png" alt="Colagem: heranças fundiárias no presente, orla com terrenos de marinha, ocupações consolidadas, instrumentos de demarcação e registro.">
         <span class="spu-figure__zoom" aria-hidden="true"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg></span>
       </button>
       <figcaption class="spu-figure__cap">
@@ -634,14 +660,14 @@
         <h3 class="spu-feature__title">Ocupar antes de titular virou padrão nacional</h3>
         <span class="pg-heranca__seta">Efeito atual</span>
         <p class="spu-feature__text">Ocupações particulares consolidadas em áreas públicas, urbanas e rurais.</p>
-        <p class="pg-heranca__gestao"><b>O que exige da gestão</b>Regularização fundiária, cessões, termos de uso — ou retomada, conforme o caso.</p>
+        <p class="pg-heranca__gestao"><b>O que exige da gestão</b>Regularização fundiária, cessões, termos de uso, ou retomada, conforme o caso.</p>
       </div>
       <div class="spu-feature spu-feature--card pg-heranca" style="--_hc:var(--petrol-500)">
         <div class="spu-feature__icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg></div>
         <span class="pg-heranca__et">Herança da Lei de Terras</span>
         <h3 class="spu-feature__title">A discriminação das terras devolutas nunca foi concluída</h3>
         <span class="pg-heranca__seta">Efeito atual</span>
-        <p class="spu-feature__text">Terras devolutas sem identificação, arrecadação ou destinação — fronteira público × privado ainda aberta.</p>
+        <p class="spu-feature__text">Terras devolutas sem identificação, arrecadação ou destinação, fronteira público × privado ainda aberta.</p>
         <p class="pg-heranca__gestao"><b>O que exige da gestão</b>Demarcação, arrecadação, incorporação ao patrimônio e destinação com finalidade pública.</p>
       </div>
       <div class="spu-feature spu-feature--card pg-heranca" style="--_hc:var(--petrol-500)">
@@ -681,18 +707,22 @@
       <p class="pg-lead">Propriedade, posse, título, terras públicas e função socioambiental não são temas separados: são engrenagens do mesmo mecanismo. Selecione um conceito para ver a conexão.</p>
     </div>
 
-    <div class="pg-chips" role="group" aria-label="Conceitos do mapa mental">
-      <button type="button" class="spu-tag spu-tag--active" data-conceito="propriedade" aria-pressed="true" style="--_cc:var(--petrol-600)">Propriedade</button>
-      <button type="button" class="spu-tag" data-conceito="posse" aria-pressed="false">Posse</button>
-      <button type="button" class="spu-tag" data-conceito="titulo" aria-pressed="false">Título</button>
-      <button type="button" class="spu-tag" data-conceito="publicas" aria-pressed="false">Terras públicas</button>
-      <button type="button" class="spu-tag" data-conceito="funcao" aria-pressed="false">Função socioambiental</button>
-    </div>
+    <div class="pg-gear-explorer">
+      <div class="pg-gear" role="tablist" aria-label="Cinco conceitos da gestão fundiária">
+        <span class="pg-gear__ring" aria-hidden="true"></span>
+        <span class="pg-gear__hub" aria-hidden="true">Gestão<br>fundiária</span>
+        <button type="button" class="pg-gear__tooth is-active" data-conceito="propriedade" role="tab" aria-selected="true">Propriedade<span class="pg-gear__print-def">Domínio pleno reconhecido pelo direito, cuja cadeia histórica precisa ser comprovada.</span></button>
+        <button type="button" class="pg-gear__tooth" data-conceito="posse" role="tab" aria-selected="false">Posse<span class="pg-gear__print-def">Ocupação de fato, com ou sem título, central para a regularização fundiária.</span></button>
+        <button type="button" class="pg-gear__tooth" data-conceito="titulo" role="tab" aria-selected="false">Título<span class="pg-gear__print-def">Documento e registro que formalizam a propriedade e sua cadeia dominial.</span></button>
+        <button type="button" class="pg-gear__tooth" data-conceito="publicas" role="tab" aria-selected="false">Terras públicas<span class="pg-gear__print-def">Áreas que permanecem sob domínio dos entes federativos e servem às políticas públicas.</span></button>
+        <button type="button" class="pg-gear__tooth" data-conceito="funcao" role="tab" aria-selected="false">Função socioambiental<span class="pg-gear__print-def">Finalidade constitucional que orienta a destinação do patrimônio público.</span></button>
+      </div>
 
-    <div class="spu-panel spu-panel--accent pg-mapa-panel" id="mapa-panel" style="--_pc:var(--petrol-600); margin:0">
-      <span class="spu-kicker spu-panel__kicker"><span class="spu-kicker__rule"></span>Conceito</span>
-      <h3 class="spu-panel__title" id="mapa-titulo">Propriedade</h3>
-      <p id="mapa-texto">É o domínio pleno reconhecido pelo direito. No Brasil, ela nasce de concessões (sesmarias) e, depois, da compra (Lei de Terras) — nunca de um ponto zero neutro. Desde 1988, só se justifica se cumprir função social. Para a gestão pública, provar propriedade é reconstruir essa cadeia histórica.</p>
+      <div class="spu-panel spu-panel--accent pg-mapa-panel" id="mapa-panel" style="--_pc:var(--petrol-600); margin:0" role="tabpanel" aria-live="polite">
+        <span class="spu-kicker spu-panel__kicker"><span class="spu-kicker__rule"></span>Conceito selecionado</span>
+        <h3 class="spu-panel__title" id="mapa-titulo">Propriedade</h3>
+        <p id="mapa-texto">É o domínio pleno reconhecido pelo direito. No Brasil, ele nasce das concessões de sesmarias e, posteriormente, da compra prevista na Lei de Terras. Desde 1988, a propriedade deve cumprir uma função social. Para a gestão pública, provar o domínio exige reconstruir essa cadeia histórica.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -712,7 +742,7 @@
     </div>
     <h2 class="spu-fullbleed__title">Conhecer essa história não é um exercício acadêmico</h2>
     <div class="spu-fullbleed__body spu-conclusion__body">
-      <p>É condição para atuar com mais segurança, visão crítica e responsabilidade na gestão dos imóveis públicos. Os imóveis públicos são parte de uma longa história de conquista, concessão, posse, titulação, concentração, descentralização federativa, controle estatal e disputa sobre o uso do território. Quem conhece essa história lê melhor cada processo, cada ocupação e cada destinação — e gere o patrimônio público com mais consciência do que ele representa.</p>
+      <p>É condição para atuar com mais segurança, visão crítica e responsabilidade na gestão dos imóveis públicos. Os imóveis públicos são parte de uma longa história de conquista, concessão, posse, titulação, concentração, descentralização federativa, controle estatal e disputa sobre o uso do território. Quem conhece essa história lê melhor cada processo, cada ocupação e cada destinação, e gere o patrimônio público com mais consciência do que ele representa.</p>
     </div>
   </div>
 </section>
@@ -724,12 +754,12 @@
       <details class="spu-refs__details" open>
         <summary class="spu-refs__summary">Referências</summary>
         <ul class="spu-refs__list">
-          <li class="spu-refs__item"><b>NUNES, Cassandra Maroni.</b> A relevância socioambiental dos terrenos e acrescidos de marinha no Brasil. Dissertação de Mestrado, UFABC, 2019.</li>
-          <li class="spu-refs__item"><b>MOURA, Jéssica Morais de.</b> Patrimônio imobiliário público brasileiro: panorama histórico e situação atual de uso e ocupação. XIX ENANPUR, 2022.</li>
-          <li class="spu-refs__item"><b>PEREIRA, Gislene.</b> Das Ordenações ao Ordenamento: a trajetória do direito de propriedade no Brasil. Revista Brasileira de Estudos Urbanos e Regionais, 2021.</li>
-          <li class="spu-refs__item">A influência das sesmarias na estrutura fundiária do Brasil República.</li>
-          <li class="spu-refs__item">Há 170 anos, Lei de Terras oficializou opção do Brasil pelos latifúndios.</li>
-          <li class="spu-refs__item">A Lei de Terras de 1850 no centro da discussão: um elo coercitivo sobre as famílias livres e pobres.</li>
+          <li class="spu-refs__item"><b>NUNES, Cassandra Maroni.</b> <i>A relevância socioambiental dos terrenos e acrescidos de marinha no Brasil</i>. 2019. Dissertação (Mestrado em Planejamento e Gestão do Território), Universidade Federal do ABC, Santo André, 2019. Disponível em: <a href="http://biblioteca.ufabc.edu.br/index.php?codigo_sophia=120608&amp;midiaext=77980" target="_blank" rel="noopener">Repositório Institucional da UFABC</a>. Acesso em: 20 jul. 2026.</li>
+          <li class="spu-refs__item"><b>MOURA, Jéssica Morais de.</b> Patrimônio imobiliário público brasileiro: panorama histórico e situação atual de uso e ocupação. In: ENCONTRO NACIONAL DA ANPUR, 19., 2022, Blumenau. <i>Anais [...].</i> Blumenau: ANPUR, 2022. Disponível em: <a href="https://www.sisgeenco.com.br/anais/enanpur/2022/arquivos/GT10_SEM_944_659_20211215235501.pdf" target="_blank" rel="noopener">Anais do XIX ENANPUR</a>. Acesso em: 20 jul. 2026.</li>
+          <li class="spu-refs__item"><b>PEREIRA, Gislene.</b> Das ordenações ao ordenamento: a trajetória do direito de propriedade no Brasil. <i>Revista Brasileira de Estudos Urbanos e Regionais</i>, v. 23, e202105pt, 2021. DOI: <a href="https://doi.org/10.22296/2317-1529.rbeur.202105pt" target="_blank" rel="noopener">10.22296/2317-1529.rbeur.202105pt</a>.</li>
+          <li class="spu-refs__item"><b>CRUZ, Aline da; GHIDORSI, Josiane Dillor Brugnera.</b> A influência das sesmarias na estrutura fundiária do Brasil República. <i>Revista Internacional Consinter de Direito</i>, n. 16, 2023. DOI: <a href="https://doi.org/10.19135/revista.consinter.00016.04" target="_blank" rel="noopener">10.19135/revista.consinter.00016.04</a>.</li>
+          <li class="spu-refs__item"><b>WESTIN, Ricardo.</b> Há 170 anos, Lei de Terras desprezou camponeses e oficializou apoio do Brasil aos latifúndios. <i>Senado Notícias</i>, Brasília, 14 set. 2020. Disponível em: <a href="https://www12.senado.leg.br/noticias/infomaterias/especiais/arquivo-s/ha-170-anos-lei-de-terras-desprezou-camponeses-e-oficializou-apoio-do-brasil-aos-latifundios" target="_blank" rel="noopener">Senado Federal</a>. Acesso em: 20 jul. 2026.</li>
+          <li class="spu-refs__item"><b>DINIZ, Leandro Neves.</b> A Lei de Terras de 1850 no centro da discussão: um elo coercitivo sobre as famílias livres e pobres. In: SIMPÓSIO NACIONAL DE HISTÓRIA, 30., 2019, Recife. <i>Anais [...].</i> Recife: ANPUH-Brasil, 2019.</li>
         </ul>
       </details>
     </div>
@@ -744,7 +774,7 @@
   <div class="spu-pagefooter__inner">
     <div>
       <p class="spu-pagefooter__code">Breve histórico da propriedade no Brasil</p>
-      <p class="spu-pagefooter__context">Conteúdo didático sobre a formação histórica da propriedade da terra no Brasil e sua relação com a gestão do patrimônio imobiliário público — do regime sesmarial à função socioambiental da Constituição de 1988.</p>
+      <p class="spu-pagefooter__context">Conteúdo didático sobre a formação histórica da propriedade da terra no Brasil e sua relação com a gestão do patrimônio imobiliário público, do regime sesmarial à função socioambiental da Constituição de 1988.</p>
       <div class="spu-license spu-license--dark" style="margin-top:var(--space-5)">
         <div class="spu-license__icons">
           <span class="spu-license__chip">CC</span>
@@ -752,12 +782,12 @@
           <span class="spu-license__chip">NC</span>
           <span class="spu-license__chip">SA</span>
         </div>
-        <p class="spu-license__text"><span><b>"Breve histórico da propriedade no Brasil"</b> — </span><span>SPU, 2026. </span>Licenciado sob <b>CC BY-NC-SA 4.0</b>. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR" target="_blank" rel="noopener">Ver licença</a></p>
+        <p class="spu-license__text"><span><b>"Breve histórico da propriedade no Brasil"</b>, </span><span>SPU, 2026. </span>Licenciado sob <b>CC BY-NC-SA 4.0</b>. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.pt_BR" target="_blank" rel="noopener">Ver licença</a></p>
       </div>
     </div>
     <ul class="spu-pagefooter__credits">
       <li><b>Produção</b>[preencher]</li>
-      <li><b>Revisão</b>—</li>
+      <li><b>Revisão</b>Não informado</li>
       <li><b>Design</b>SPU</li>
     </ul>
   </div>
