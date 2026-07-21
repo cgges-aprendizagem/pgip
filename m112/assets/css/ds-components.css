@@ -132,7 +132,7 @@ button.spu-tag:hover{border-color:var(--color-primary);color:var(--color-primary
 .spu-panel__kicker{margin-bottom:var(--space-3)}
 .spu-panel__title{margin:0 0 var(--space-4)}
 .spu-panel>:last-child{margin-bottom:0}
-.spu-panel--accent{border-left:var(--border-accent) solid var(--_pc, var(--color-accent))}
+.spu-panel--accent{/*border-left:var(--border-accent) solid var(--_pc, var(--color-accent))*/}
 /* Card que extravasa a coluna de leitura (mais largo, centrado na viewport) */
 .spu-panel--wide{width:min(var(--container-wide), calc(100vw - 2 * var(--gutter)));margin-left:50%;transform:translateX(-50%)}
 /* Faixa full-bleed — largura total (como o hero) */

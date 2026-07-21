@@ -9,27 +9,36 @@
     var trigger = block.querySelector(":scope > .spu-period__trigger");
     if (!trigger) return;
     trigger.addEventListener("click", function () {
-      if (!block.classList.contains("is-open")) {
-        openEra(era, false);
+      if (block.classList.contains("is-open")) {
+        setEraState(era, false, false);
+      } else {
+        setEraState(era, true, false);
         goToEra(index);
       }
     });
   });
 
-  function openEra(era, shouldScroll) {
+  function setEraState(era, open, shouldScroll) {
     eraBlocks.forEach(function (block) {
-      var open = block.getAttribute("data-era") === era;
+      var isTarget = block.getAttribute("data-era") === era;
+      var shouldBeOpen = open && isTarget;
       var trigger = block.querySelector(":scope > .spu-period__trigger");
       var body = block.querySelector(":scope > .spu-period__body");
-      block.classList.toggle("is-open", open);
-      if (trigger) trigger.setAttribute("aria-expanded", open ? "true" : "false");
-      if (body) body.hidden = !open;
+      block.classList.toggle("is-open", shouldBeOpen);
+      if (trigger) trigger.setAttribute("aria-expanded", shouldBeOpen ? "true" : "false");
+      if (body) body.hidden = !shouldBeOpen;
     });
-    if (shouldScroll) {
+    if (shouldScroll && open) {
       var target = eraBlocks.find(function (block) { return block.getAttribute("data-era") === era; });
       if (target) target.scrollIntoView({ behavior: prefersReduced() ? "auto" : "smooth", block: "start" });
     }
   }
+
+  function openEra(era, shouldScroll) {
+    setEraState(era, true, shouldScroll);
+  }
+
+  setEraState(null, false, false);
 
   var carousel = document.querySelector("[data-era-carousel]");
   var track = carousel && carousel.querySelector("[data-carousel-track]");
