@@ -1,0 +1,675 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M152 - Noções básicas de registro imobiliário",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "cwtk9uso",
+          "text": "O que é o registro de imóveis?",
+          "hidden": true
+        },
+        {
+          "id": "cn7wwa51",
+          "text": "Organização dos cartórios de registro de imóveis",
+          "hidden": true
+        },
+        {
+          "id": "coa55gm2",
+          "text": "Prenotação e prioridade registral",
+          "hidden": true
+        }
+      ],
+      "enabled": false
+    }
+  },
+  "blocks": [
+    {
+      "id": "byvzfbmz",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b4t6xyjp",
+      "type": "hero",
+      "props": {
+        "kicker": "Processos, sistemas e instrumentos de gestão de imóveis públicos",
+        "kickerIcon": "compass",
+        "title": "Registro imobiliário aplicado à gestão de imóveis públicos",
+        "byline": "Noções básicas de registro imobiliário",
+        "slot": "b4t6xyjp__slot"
+      }
+    },
+    {
+      "id": "b5heas2e",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cwtk9uso",
+          "type": "titulo",
+          "props": {
+            "text": "O que é o registro de imóveis?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "chf0cfnm",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Registro de Imóveis é um serviço público essencial que confere publicidade, autenticidade, segurança e eficácia aos atos jurídicos sobre bens imóveis. No âmbito da gestão pública, é o instrumento pelo qual o Estado formaliza seus direitos reais perante a sociedade e o Poder Judiciário.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bs28jspk",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "none"
+      },
+      "children": [
+        {
+          "id": "b148v7l0",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Princípios registrais e seu impacto na gestão pública",
+            "kickerIcon": "map-pin",
+            "title": "",
+            "color": "",
+            "bg": "",
+            "body": " "
+          },
+          "children": [
+            {
+              "id": "bq6rpd1v",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b9jw5xfa",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "icon",
+                    "icon": "arrow-big-right",
+                    "accent": "",
+                    "items": [
+                      {
+                        "title": "Publicidade",
+                        "text": "Garante transparência e controle social sobre o patrimônio público."
+                      },
+                      {
+                        "title": "Continuidade",
+                        "text": "A cadeia dominial deve ser ininterrupta; essencial para regularizar imóveis fragmentados."
+                      },
+                      {
+                        "title": "Especialidade",
+                        "text": "Imóvel e titulares devem ser perfeitamente identificados, evitando sobreposições."
+                      },
+                      {
+                        "title": "Legalidade",
+                        "text": "O registrador filtra atos administrativos com vícios formais ou materiais."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b_mrwlfwxa_pkbk",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "icon",
+                    "icon": "arrow-big-right",
+                    "accent": "",
+                    "items": [
+                      {
+                        "title": "Prioridade",
+                        "text": "Quem protocola primeiro tem preferência; defende o patrimônio de registros fraudulentos."
+                      },
+                      {
+                        "title": "Presunção de Veracidade",
+                        "text": "O registro público cria presunção de domínio oponível a terceiros."
+                      },
+                      {
+                        "title": "Concentração na Matrícula",
+                        "text": "Todos os atos relevantes devem constar da matrícula; evita dispersão de informações."
+                      },
+                      {
+                        "title": "Instância / Rogação",
+                        "text": "O gestor deve formalizar o requerimento de registro dos atos administrativos."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bf8r2l30",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cn7wwa51",
+          "type": "titulo",
+          "props": {
+            "text": "Organização dos cartórios de registro de imóveis",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cg6q3b8a",
+          "type": "prose",
+          "props": {
+            "html": "<p>Os cartórios são serviços públicos delegados a particulares (Oficiais aprovados em concurso), com natureza pública e efeitos <i><span data-term=\"erga omnes\" title=\"expressão para indicar que os efeitos de algum ato ou lei atingem todos os indivíduos de uma determinada população ou membros de uma organização, para o direito nacional\">erga omnes</span></i>. Estão sujeitos à fiscalização do <span data-term=\"CNJ\" title=\"Conselho Nacional de Justiça\">CNJ</span>, das Corregedorias Estaduais e do Poder Judiciário.</p><p>Cada Cartório de Registro de Imóveis possui competência exclusiva sobre uma determinada área geográfica denominada <b>circunscrição imobiliária</b>. A territorialidade é um requisito de validade do ato registral: <mark data-hl=\"terra\">um imóvel somente pode ser registrado no cartório da circunscrição onde está localizado</mark>. O registro praticado por cartório incompetente é nulo.</p><p>Para imóveis que abrangem mais de uma circunscrição, a <a href=\"https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm\">Lei nº 6.015/1973 (art. 169, § 1º)</a> determina que o registro seja feito em todos os cartórios com competência sobre as áreas abrangidas, devendo os registros se referir uns aos outros.</p>"
+          }
+        },
+        {
+          "id": "bik9abix",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "map-pinned",
+            "title": "Setores internos relevantes para o gestor público",
+            "heading": "",
+            "children": "<p><ul><li><b><span data-color=\"terra\">Protocolo: </span></b>realiza a prenotação do título, garantindo prioridade registral.</li><li><b></b><b></b><b><span data-color=\"terra\">Qualificação Registral:</span></b> analisa a legalidade e regularidade dos documentos.</li><li><b><span data-color=\"terra\">Certidões:</span> </b>emite documentos probatórios com validade jurídica.</li><li><b><span data-color=\"terra\">Arquivo:</span></b> guarda títulos e documentos que fundamentaram os registros.</li></ul></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "br8i08ug",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "md"
+      },
+      "children": [
+        {
+          "id": "cdzny1qg",
+          "type": "titulo",
+          "props": {
+            "text": "Evolução do sistema: da transcrição à matrícula",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bbiczgli",
+          "type": "prose",
+          "props": {
+            "html": "<p>A evolução do registro imobiliário, da transcrição à matrícula, tornou as informações mais organizadas, acessíveis e seguras para a gestão dos imóveis públicos, como demonstrado no comparativo a seguir.</p>"
+          }
+        },
+        {
+          "id": "bfwnml80",
+          "type": "datatable",
+          "props": {
+            "caption": "",
+            "columns": [
+              {
+                "key": "c0",
+                "label": "Aspecto"
+              },
+              {
+                "key": "c1",
+                "label": "Descrição"
+              }
+            ],
+            "rows": [
+              {
+                "c0": "Sistema de Transcrição (pré-1973)",
+                "c1": "Foco no ato jurídico; histórico disperso em múltiplos livros; pesquisa complexa; menor segurança jurídica."
+              },
+              {
+                "c0": "Sistema de Matrícula (Lei 6.015/1973)",
+                "c1": "Número único e permanente por imóvel; histórico concentrado; segurança jurídica elevada; pesquisa simplificada."
+              },
+              {
+                "c0": "Imóveis públicos antigos",
+                "c1": "Muitos têm origem em transcrições. A pesquisa das transcrições de origem é etapa obrigatória na regularização, pois registros fraudulentos eram comuns no período pré-matrícula."
+              }
+            ],
+            "dense": false,
+            "highlightFirst": true,
+            "striped": false,
+            "tone": "",
+            "className": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "bxx0uw00",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c55j4b8y",
+          "type": "titulo",
+          "props": {
+            "text": "Matrícula imobiliária: estrutura e funções",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cr302bli",
+          "type": "prose",
+          "props": {
+            "html": "<p>A matrícula é o cadastro jurídico individualizado do imóvel. Ela identifica o <b>bem</b> (especialidade objetiva), identifica o <b>titular</b> (especialidade subjetiva) e concentra todo o histórico jurídico.</p>"
+          }
+        },
+        {
+          "id": "bhir4j55",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"color: inherit;\"><b>Quando se abre uma matrícula:</b></span><br><ul><li>No primeiro registro do imóvel (art. 228 da Lei nº 6.015/1973).</li><li>Por unificação de imóveis contíguos do mesmo titular.</li><li>Por desmembramento ou determinação judicial (usucapião, adjudicação).</li><li>Por incorporação de área ao patrimônio público</li></ul></p><p></p>"
+          }
+        },
+        {
+          "id": "biz0orzc",
+          "type": "compareab",
+          "props": {
+            "a": {
+              "label": "Registro (R)",
+              "icon": "building",
+              "title": "",
+              "content": "<p>Cria, modifica ou transfere direito real. Ex.: compra e venda, doação, CDRU, CUEM, desapropriação, aforamento, servidão.</p>"
+            },
+            "b": {
+              "label": "Averbação (AV)",
+              "icon": "scale",
+              "title": "",
+              "content": "<p>Anota fatos que alteram informações, sem criar direito real. Ex.: construção, demolição, tombamento, afetação/desafetação, cancelamento de ônus.</p>"
+            }
+          }
+        },
+        {
+          "id": "btkp5el0",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "attention",
+            "icon": "alert-triangle",
+            "title": "Recomendação",
+            "heading": "",
+            "children": "<p>Averbar os atos de afetação e desafetação para que o regime jurídico do bem (se pode ou não ser alienado) conste da matrícula pelo princípio da Concentração.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bz454sse",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "coa55gm2",
+          "type": "titulo",
+          "props": {
+            "text": "Prenotação e prioridade registral",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "blobchsf",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "last-wide",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "cmeua1r4",
+              "type": "prose",
+              "props": {
+                "html": "<p>A prenotação é o lançamento do título no Livro Protocolo, com data e hora (até segundos, conforme Provimento CNJ nº 149/2023). É o marco que determina a prioridade entre títulos concorrentes. Vigência: 30 dias — após esse prazo, caduca se o registro não for concluído.</p>"
+              }
+            },
+            {
+              "id": "b8c5cshv",
+              "type": "callout",
+              "props": {
+                "variant": "ear",
+                "tone": "warning",
+                "icon": "alert-triangle",
+                "title": "Para a gestão pública",
+                "heading": "",
+                "children": "<p>O registro proativo em nome do ente público protege o patrimônio contra registros fraudulentos. Imóveis não registrados ficam vulneráveis a titulações irregulares por particulares.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bpinv49c",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cquviluh",
+          "type": "titulo",
+          "props": {
+            "text": "Qualificação registral",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c4qf6uup",
+          "type": "prose",
+          "props": {
+            "html": "<p>A qualificação registral é o juízo de legalidade realizado pelo Oficial antes de praticar o ato, verificando: competência territorial, continuidade da cadeia dominial, especialidade objetiva e subjetiva, capacidade das partes, regularidade formal, legitimidade, fiscalidade e cumprimento normativo.</p>"
+          }
+        },
+        {
+          "id": "bg0nebf7",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Resultado E Descrição",
+            "kickerIcon": "map-pin",
+            "title": "",
+            "color": "",
+            "bg": "var(--petrol-50)",
+            "body": " "
+          },
+          "children": [
+            {
+              "id": "bhw2dv11",
+              "type": "feature",
+              "props": {
+                "columns": 2,
+                "card": true,
+                "accent": "var(--green-600)",
+                "items": [
+                  {
+                    "icon": "file-check",
+                    "title": "<span data-color=\"petrol\"><span data-color=\"green\">Aprovação</span></span>",
+                    "text": "Ato praticado; registro ou averbação lavrado na matrícula."
+                  },
+                  {
+                    "icon": "file-exclamation-point",
+                    "title": "<span data-color=\"petrol\"><span data-color=\"green\">Nota Devolutiva</span></span>",
+                    "text": "Irregularidade sanável; prazo de prenotação suspenso até cumprimento das exigências."
+                  },
+                  {
+                    "icon": "scale",
+                    "title": "<span data-color=\"petrol\"><span data-color=\"green\">Suscitação de Dúvida</span></span>",
+                    "text": "Discordância do apresentante; caso levado ao juiz competente (art. 198 da Lei nº 6.015/1973)."
+                  },
+                  {
+                    "icon": "ban",
+                    "title": "<span data-color=\"petrol\"><span data-color=\"green\">Recusa Definitiva</span></span>",
+                    "text": "Vício insanável (ex.: imóvel fora da circunscrição); registro negado."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "cyfw9t2q",
+          "type": "titulo",
+          "props": {
+            "text": "Certidões imobiliárias: tipos e usos na gestão pública",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cypzy6hr",
+          "type": "prose",
+          "props": {
+            "html": "<p>As certidões têm valor probatório em licitações, contratos, processos judiciais e auditorias. Não há prazo de validade legalmente fixado, mas na prática: cartórios aceitam certidões com até 30 dias; editais de licitação exigem até 90 dias; processos judiciais podem exigir atualização recente.</p>"
+          }
+        },
+        {
+          "id": "bm73ov2y",
+          "type": "markerlist",
+          "props": {
+            "variant": "icon",
+            "icon": "file",
+            "accent": "var(--terra-600)",
+            "items": [
+              {
+                "title": "Certidão de Matrícula (situação atual)",
+                "text": "Estado atual da matrícula. Uso: alienações, concessões, regularização."
+              },
+              {
+                "title": "Certidão de Inteiro Teor",
+                "text": "Reproduz todo o conteúdo, incluindo atos cancelados. Uso: reconstituição de cadeia dominial e investigação de fraudes."
+              },
+              {
+                "title": "Certidão de Ônus Reais",
+                "text": "Gravames e restrições ativos. Uso: <i>due diligence</i> antes de aquisições; verificação de passivos em desapropriações."
+              },
+              {
+                "title": "Certidão de Propriedade",
+                "text": "Comprova titularidade atual. Uso: comprovação do domínio público em processos judiciais."
+              },
+              {
+                "title": "Certidão Negativa de Ônus e Alienações",
+                "text": "Atesta inexistência de ônus. Uso: alienações e concessões onerosas de imóveis públicos."
+              },
+              {
+                "title": "Certidão de Transcrição",
+                "text": "Reproduz transcrições anteriores a 1973. Uso: pesquisa de origem e investigação de fraudes históricas."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bwjwx6oq",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "terra-dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cyeumbsd",
+          "type": "titulo",
+          "props": {
+            "text": "Modernização: ONR, SREI E SERP",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "ce4a6tms",
+          "type": "prose",
+          "props": {
+            "html": "<p>A tabela a seguir apresenta os principais sistemas que estruturam a modernização dos registros públicos imobiliários e seus impactos na gestão pública.</p>"
+          }
+        },
+        {
+          "id": "b5d2fume",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "ONR — Operador Nacional do Registro Eletrônico",
+                "content": "<p>Conecta todos os cartórios ao sistema eletrônico nacional. Permite envio digital de títulos, emissão de certidões com assinatura digital e QR Code, e interoperabilidade com o Poder Judiciário e a Administração Pública. (Prov. CNJ nº 89/2019 e Lei nº 14.382/2022)</p>",
+                "imageSlot": "c_0he1rr5__imageSlot"
+              },
+              {
+                "title": "SREI — Sistema de Registro Eletrônico de Imóveis",
+                "content": "Ambiente digital em que os cartórios praticam atos registrais com assinatura eletrônica do Oficial. Documentos assinados digitalmente dispensam reconhecimento de firma.",
+                "imageSlot": "c_og2p3xh__imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "SERP — Sistema Eletrônico dos Registros Públicos",
+                "content": "Criado pela Lei nº 14.382/2022. Integra Registro de Imóveis, Registro Civil de PJ e Registro de Títulos e Documentos. Inova com: usucapião extrajudicial simplificada; retificação administrativa facilitada; integração com Receita Federal para qualificação automática de titulares.",
+                "imageSlot": "c_xad30r3__imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmgeh2ti",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c04yai0l",
+          "type": "titulo",
+          "props": {
+            "text": "Principais normas de referência",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cboggsbb",
+          "type": "prose",
+          "props": {
+            "html": "<p>As normas indicadas na tabela a seguir reúnem as principais bases legais que orientam os serviços notariais e de registro, a organização dos registros públicos e a modernização dos procedimentos imobiliários, servindo como referência para consulta, interpretação e aplicação prática na gestão pública.</p>"
+          }
+        },
+        {
+          "id": "bi604q09",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "by4um9ss",
+              "type": "markerlist",
+              "props": {
+                "variant": "check",
+                "icon": "link",
+                "accent": "var(--petrol-600)",
+                "items": [
+                  {
+                    "title": "CF/1988, art. 236 ",
+                    "text": "Delegação dos serviços notariais e de registro."
+                  },
+                  {
+                    "title": "Lei nº 6.015/1973",
+                    "text": "Lei de Registros Públicos — norma central do sistema."
+                  },
+                  {
+                    "title": "Lei nº 8.935/1994",
+                    "text": "Serviços notariais e de registro."
+                  },
+                  {
+                    "title": "Código Civil — Lei nº 10.406/2002",
+                    "text": "Direitos reais e aquisição/perda da propriedade."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "b_mrwoy06e_agq3",
+              "type": "markerlist",
+              "props": {
+                "variant": "check",
+                "icon": "check",
+                "accent": "var(--petrol-600)",
+                "items": [
+                  {
+                    "title": "Lei nº 13.097/2015",
+                    "text": "Concentração na matrícula; fé pública registral."
+                  },
+                  {
+                    "title": "Lei nº 14.382/2022",
+                    "text": "SERP — modernização dos registros públicos."
+                  },
+                  {
+                    "title": "Provimento CNJ nº 89/2019",
+                    "text": "Implantação do ONR e do SREI."
+                  },
+                  {
+                    "title": "Provimento CNJ nº 149/2023",
+                    "text": "Código Nacional de Normas dos Registros Públicos."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bhni9nrf",
+      "type": "pagefooter",
+      "props": {
+        "code": "Registro imobiliário aplicado à gestão de imóveis públicos [M152]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Andréa Cassoli"
+          },
+          {
+            "role": "Revisão",
+            "name": "-"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Julho 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
