@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M122 - O patrimônio imobiliário público</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"blsk9qyt__slot":{"u":"assets/images/img-0-blsk9qyt__slot.webp","s":1,"x":0,"y":0},"bxuhk133__slot":{"u":"assets/images/img-1-bxuhk133__slot.webp","s":1,"x":0,"y":0},"c_fsvit0d__imageSlot":{"u":"assets/images/img-2-c_fsvit0d__imageslot.webp","s":1,"x":0,"y":0},"br7ttpso__slot":{"u":"assets/images/img-3-br7ttpso__slot.webp","s":1,"x":0,"y":0},"c_os1f63k__imageSlot":{"u":"assets/images/img-4-c_os1f63k__imageslot.webp","s":1,"x":0,"y":0},"c_67z2mbw__imageSlot":{"u":"assets/images/img-5-c_67z2mbw__imageslot.webp","s":1,"x":0,"y":0},"b1lsqjhf__slot":{"u":"assets/images/img-6-b1lsqjhf__slot.webp","s":1,"x":0,"y":0},"bzq65cn2__slot":{"u":"assets/images/img-7-bzq65cn2__slot.webp","s":1,"x":0,"y":0},"b_mrv7w0m6_pnqk__slot":{"u":"assets/images/img-8-b_mrv7w0m6_pnqk__slot.webp","s":1,"x":0,"y":0},"b_mrv7vzdg_hx8b__slot":{"s":1,"x":4.5427203475685785,"y":0,"u":"assets/images/img-9-b_mrv7vzdg_hx8b__slot.webp"},"b_mrv7vvo3_4l90__slot":{"u":"assets/images/img-10-b_mrv7vvo3_4l90__slot.webp","s":1,"x":0,"y":0},"b3vrzyti__slot":{"u":"assets/images/img-11-b3vrzyti__slot.webp","s":1,"x":0,"y":0},"bkpl7yif__slides_0_slot":{"u":"assets/images/img-12-bkpl7yif__slides_0_slot.webp","s":1,"x":0,"y":0},"bkpl7yif__slides_1_slot":{"u":"assets/images/img-13-bkpl7yif__slides_1_slot.webp","s":1,"x":0,"y":0},"c_2d918y3__imageSlot":{"u":"assets/images/img-14-c_2d918y3__imageslot.webp","s":1,"x":0,"y":0},"c_qatu8kd__imageSlot":{"u":"assets/images/img-15-c_qatu8kd__imageslot.webp","s":1,"x":0,"y":0},"c_9b1wj2f__imageSlot":{"u":"assets/images/img-16-c_9b1wj2f__imageslot.webp","s":1,"x":0,"y":0},"c_vduu69o__imageSlot":{"u":"assets/images/img-17-c_vduu69o__imageslot.webp","s":1,"x":0,"y":0},"c_w05m1cf__imageSlot":{"u":"assets/images/img-18-c_w05m1cf__imageslot.webp","s":1,"x":0,"y":0},"c_zrie3xa__imageSlot":{"u":"assets/images/img-19-c_zrie3xa__imageslot.webp","s":1,"x":0,"y":0}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M122 - O patrimônio imobiliário público","lang":"pt-BR","toc":{"items":[{"id":"bgg0hpz5","text":"Infraestrutura territorial de Estado","hidden":false},{"id":"c06ptvau","text":"Desafios do século XXI","hidden":false},{"id":"cs59kdmn","text":"Políticas ambientais e conservação da biodiversidade","hidden":false},{"id":"cvex19d1","text":"Planejamento territorial e desenvolvimento urbano","hidden":false},{"id":"co3r1yko","text":"Inclusão social, habitação e regularização fundiária","hidden":false},{"id":"cvwz6uit","text":"Agenda climática, transição ecológica e resiliência territorial","hidden":false}]}},"blocks":[{"id":"b3qiay51","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"br7ttpso","type":"hero","props":{"kicker":"Fundamentos da Propriedade Pública no Brasil","kickerIcon":"book-open","title":"O patrimônio imobiliário público: \u003cspan style=\"font-weight: normal;\">panorama, relevância e potencial transformador\u003c/span>","byline":"Eixo 1 · Competência 2","slot":"br7ttpso__slot"}},{"id":"bzg2ujvg","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"bqr6y7nt","type":"kicker","props":{"icon":"home","children":"Mais do que ativos imobiliários"}},{"id":"cqovb4of","type":"prose","props":{"html":"\u003cp>Os imóveis públicos constituem uma das mais importantes infraestruturas do Estado brasileiro. Presentes em cidades, áreas rurais, florestas, rios, ilhas, zonas costeiras e regiões de fronteira, esses bens sustentam a prestação de serviços públicos, viabilizam políticas sociais, protegem ecossistemas estratégicos e contribuem para o desenvolvimento econômico e territorial.\u003c/p>\u003cp>Quando se fala em patrimônio público, é comum que a atenção se concentre em escolas, hospitais, prédios administrativos e equipamentos governamentais. Entretanto, \u003cmark data-hl=\"green\">o universo dos imóveis públicos é muito mais amplo\u003c/mark>. Ele inclui áreas destinadas à conservação ambiental, terras ocupadas por comunidades tradicionais, imóveis utilizados para habitação social, infraestrutura urbana, pesquisa científica, defesa nacional, cultura, lazer e diversas outras finalidades de interesse coletivo.\u003c/p>\u003cp>\u003cmark data-hl=\"terra\">Mais do que ativos imobiliários\u003c/mark>, esses bens são instrumentos permanentes de atuação do Estado sobre o território. Sua relevância não decorre apenas do valor financeiro a ser contabilizado, mas principalmente da sua capacidade de gerar benefícios para a sociedade.\u003c/p>"}},{"id":"blsk9qyt","type":"figure","props":{"slot":"blsk9qyt__slot","src":"","fit":"cover","size":"full","title":"O que são imóveis públicos?","caption":"","credit":""}}]},{"id":"bbikdifk","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"bgg0hpz5","type":"titulo","props":{"text":"Infraestrutura territorial de Estado","level":"h2"}},{"id":"b_mrv38r6y_rxkb","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Normalmente, quando se fala em infraestrutura pública, pensa-se em rodovias, portos, aeroportos, sistemas de energia ou saneamento. Existe, contudo, outra infraestrutura igualmente importante: \u003cb>o patrimônio imobiliário público\u003c/b>.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Os imóveis públicos constituem a base física necessária para que o Estado implemente políticas públicas e exerça suas funções constitucionais. São eles que permitem construir escolas, hospitais, universidades, parques, unidades de conservação, moradias populares, centros culturais, instalações de segurança pública e inúmeros outros equipamentos indispensáveis ao funcionamento da sociedade.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Por essa razão, os imóveis públicos devem ser compreendidos como uma verdadeira \u003cb>\u003cmark>infraestrutura territorial de Estado\u003c/mark>\u003c/b>. Eles oferecem suporte material para a execução de políticas públicas, ajudam a organizar o território e permitem que governos atuem na promoção do desenvolvimento econômico, da inclusão social e da sustentabilidade ambiental.\u003c/span>\u003c/p>"}},{"id":"b3zashkg","type":"callout","props":{"variant":"header","tone":"info","icon":"lightbulb","title":"CASO DA UNIÃO","heading":"Muito além de prédios públicos","children":"A experiência da União ilustra bem essa realidade. Seu patrimônio imobiliário compreende centenas de milhares de imóveis distribuídos em todas as regiões do país, abrangendo desde terrenos urbanos até praias. Estamos falando de incluindo terrenos de marinha, terrenos marginais de rios federais, praias marítimas, ilhas oceânicas, cavernas, florestas públicas, terras indígenas, áreas militares e demais prédios públicos e imóveis destinados a universidades, portos, aeroportos e infraestrutura."}},{"id":"bro0nove","type":"prose","props":{"html":"\u003cp>Pela sua dimensão territorial, diversidade de tipologias e distribuição em todo o país, o patrimônio imobiliário da União constitui um dos \u003cb>maiores acervos imobiliários públicos do mundo \u003c/b>e oferece um excelente exemplo para compreender a importância estratégica dos imóveis públicos na promoção do desenvolvimento sustentável, da justiça social e da proteção ambiental.\u003c/p>"}},{"id":"bxuhk133","type":"figure","props":{"slot":"bxuhk133__slot","src":"","fit":"cover","size":"full","title":"Uma ideia da escala do patrimônio imobiliário da União","caption":"Para você ter uma ideia, só a extensão dos terrenos de marinha equivale a mais de uma volta completa no planeta Terra. E a extensão dos terrenos marginais de rios federais é ainda maior: é quase igual a distância entre a Terra e a Lua.","credit":""}}]},{"id":"badf4wwd","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b96fqf1e","type":"callout","props":{"variant":"ear","tone":"success","icon":"alert-circle","title":"Dimensões estratégicas","heading":"Social, econômica e ambiental","children":"Navegue pelas dimensões abaixo compreender como a gestão de imóveis públicos pode contribuir na promoção do desenvolvimento econômico, da inclusão social e da sustentabilidade ambiental."}},{"id":"bqqtaf9m","type":"accordion","props":{"numbered":false,"items":[{"title":"Dimensão Social","content":"\u003cp>O patrimônio público também desempenha papel fundamental na promoção da cidadania e na garantia de direitos. Milhões de brasileiros utilizam diariamente imóveis públicos para estudar, trabalhar, receber atendimento de saúde, praticar esportes, acessar serviços governamentais ou participar de atividades culturais. Além disso, inúmeros imóveis públicos servem de base territorial para povos indígenas, comunidades quilombolas, pescadores artesanais, ribeirinhos e outras populações tradicionais.\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A destinação qualificada desse acervo patrimonial tem o potencial de contribuir de maneira significativa para a redução das desigualdades sociais, funcionando como suporte material para políticas de provisão habitacional, regularização fundiária e implementação de programas estratégicos em territórios urbanos e rurais. Esses bens, quando bem utilizados, viabilizam a instalação de equipamentos comunitários, ampliam a oferta de serviços públicos e fortalecem redes de proteção social.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O uso social do patrimônio imobiliário público também permite enfrentar situações de vulnerabilidade, prevenindo ocupações precárias em áreas de risco, ampliando oportunidades de acesso a direitos básicos e promovendo maior integração entre políticas habitacionais, educacionais, de saúde e de assistência social. Assim, ao servir de alicerce para políticas públicas estruturantes, esse patrimônio público consolida \u003c/span>\u003cmark data-hl=\"green\" style=\"text-wrap-mode: initial;\">sua função social e contribui para uma sociedade mais justa, inclusiva e sustentável\u003c/mark>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">.\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>","imageSlot":"c_qatu8kd__imageSlot"},{"title":"Dimensão Econômica","content":"Embora frequentemente associados a custos de manutenção, os imóveis públicos também possuem enorme \u003cb>relevância econômica\u003c/b>. Eles representam ativos de elevado valor patrimonial e funcionam como suporte para atividades essenciais ao desenvolvimento do país. Rodovias, portos, aeroportos, sistemas de energia, saneamento, telecomunicações e um novo e crescente setor relacionado à economia verde, como mercado de carbono, por exemplo. Todos esses setores dependem da existência de áreas públicas adequadamente destinadas. A gestão patrimonial moderna busca maximizar esse valor público, promovendo usos capazes de gerar benefícios econômicos, sociais e ambientais simultaneamente.\u003cp>\u003cp>\u003cdiv>\u003cspan style=\"color: inherit;\">Áreas públicas são utilizados como suporte para infraestrutura de saneamento, energia, telecomunicações, transporte e logística, setores que respondem diretamente pela competitividade econômica do país. Quando destinados de forma planejada, tornam-se catalisadores do desenvolvimento urbano e regional, estimulando atividades produtivas, atraindo investimentos privados e fomentando cadeias locais de emprego e renda. Essa contribuição não se limita ao uso imediato, mas também envolve a valorização indireta de áreas urbanas e rurais, que passam a receber serviços públicos, regularização fundiária e equipamentos coletivos.\u003c/span>\u003cdiv>\u003cspan style=\"color: inherit;\">\u003cp>\u003c/span>\u003c/div>\u003cdiv>\u003cspan style=\"color: inherit;\">A dimensão econômica, portanto, \u003c/span>\u003cmark data-hl=\"terra\">não deve ser vista apenas pela ótica fiscal ou contábil\u003c/mark>\u003cspan style=\"color: inherit;\">, mas pela capacidade do patrimônio imobiliário público de funcionar como \u003cb>infraestrutura de Estado a serviço do desenvolvimento sustentável\u003c/b>. Gerir esses ativos de forma eficiente e articulada com outras políticas públicas significa ampliar sua função multiplicadora e reforçar seu caráter estratégico para a economia nacional.\u003c/span>\u003cspan style=\"color: inherit;\">\u003c/span>\u003c/div>\u003cdiv>\u003cspan style=\"color: inherit;\">\u003c/span>\u003c/div>\u003c/div>","imageSlot":"c_9b1wj2f__imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Dimensão Ambiental","content":"Os imóveis públicos possuem uma relação direta com a \u003cb>proteção do meio ambiente\u003c/b>. Grande parte deles está localizada em áreas de elevada relevância ecológica, como zonas costeiras, margens de rios, florestas, áreas úmidas, manguezais, restingas e regiões de recarga hídrica. Essas áreas desempenham funções essenciais para a conservação da biodiversidade, a manutenção dos recursos hídricos, a regulação do clima e a proteção das populações contra eventos extremos.\u003cp>\u003cdiv>\u003cspan style=\"color: inherit;\">Por isso, a gestão patrimonial moderna deve incorporar preocupações ambientais em suas decisões. A destinação, utilização ou ocupação de imóveis públicos pode contribuir para preservar ecossistemas, recuperar áreas degradadas, ampliar áreas verdes urbanas e fortalecer a adaptação às mudanças climáticas.\u003cbr>\u003cbr>\u003c/span>\u003c/div>\u003cdiv>\u003cspan style=\"color: inherit;\">Os efeitos das mudanças climáticas reforçam ainda mais essa importância. Enchentes, secas prolongadas, erosão costeira e elevação do nível do mar afetam diretamente diversos imóveis públicos, exigindo planejamento territorial e ações preventivas. Nesse contexto, os imóveis públicos deixam de ser apenas objetos de administração patrimonial para se tornarem\u003cmark data-hl=\"petrol\"> instrumentos ativos de proteção ambiental e resiliência climática\u003c/mark>.\u003cbr>\u003cbr>\u003c/span>\u003c/div>","imageSlot":"c_vduu69o__imageSlot","linkHref":"","linkLabel":"","linkButton":""}]}}]},{"id":"bfxgq6mp","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b0gz15zr","type":"kicker","props":{"icon":"compass","children":"Patrimônio público e biodiversidade"}},{"id":"be4jywzh","type":"statblock","props":{"variant":"card","columns":3,"stats":[{"value":"336","unit":"+","label":"unidades de conservação federais","description":"atualmente, em todo o país"},{"value":"166","unit":"mi","label":"hectares protegidos","description":"correspondem a uma área maior que muitos países do mundo"}]}},{"id":"c18o1f1p","type":"prose","props":{"html":"\u003cp>O patrimônio da União está diretamente relacionado à gestão de ecossistemas estratégicos. Muitas dessas áreas estão associadas a imóveis sob domínio da União, contribuindo para:\u003c/p>\u003cp>\u003cul>\u003cli>conservação da biodiversidade;\u003c/li>\u003cli>proteção de mananciais;\u003c/li>\u003cli>manutenção de serviços ecossistêmicos;\u003c/li>\u003cli>mitigação dos efeitos das mudanças climáticas.\u003c/li>\u003c/ul>\u003c/p>"}}]},{"id":"b8hrzsx3","type":"section","props":{"width":"content","surface":"dark","pad":"lg"},"children":[{"id":"c06ptvau","type":"titulo","props":{"text":"Desafios do século XXI","level":"h2"}},{"id":"ck55xcy0","type":"prose","props":{"html":"\u003cp>A gestão dos imóveis públicos ocorre em um ambiente institucional cada vez mais influenciado pelos desafios sociais, ambientais, climáticos e territoriais do século XXI. Questões como mudanças climáticas, déficit habitacional, conservação da biodiversidade, segurança hídrica, transição energética, regularização fundiária e redução das desigualdades passaram a ocupar posição central nas agendas governamentais. Nesse contexto, os imóveis públicos deixaram de ser percebidos apenas como bens administrativos e passaram a ser reconhecidos como instrumentos estratégicos para a implementação de políticas públicas.\u003c/p>"}},{"id":"bn9wadsu","type":"pullquote","props":{"variant":"block","children":"Independentemente da esfera de governo (federal, distrital/estadual ou municipal), o patrimônio imobiliário público possui potencial para apoiar uma ampla variedade de programas e iniciativas voltados ao desenvolvimento sustentável. Terras, edifícios, áreas urbanas, imóveis rurais, espaços costeiros e equipamentos públicos podem ser mobilizados para promover inclusão social, proteção ambiental, adaptação climática e desenvolvimento econômico. Assim, a gestão patrimonial passa a dialogar diretamente com políticas setoriais de habitação, meio ambiente, infraestrutura, desenvolvimento urbano, assistência social, cultura, educação e segurança pública.","cite":""}}]},{"id":"bjjji7jt","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cs59kdmn","type":"titulo","props":{"text":"Políticas ambientais e conservação da biodiversidade","level":"h2"}},{"id":"cbk0gjx2","type":"prose","props":{"html":"\u003cp>A relação entre imóveis públicos e políticas ambientais é uma das mais evidentes. Muitos bens públicos localizam-se em áreas ambientalmente sensíveis, como florestas, margens de rios, zonas costeiras, áreas úmidas, manguezais e regiões de elevada biodiversidade. \u003cmark data-hl=\"green\">Essas características fazem com que a gestão patrimonial exerça papel relevante na conservação dos recursos naturais e na manutenção dos serviços ecossistêmicos\u003c/mark>.\u003c/p>"}},{"id":"bphsz65k","type":"callout","props":{"variant":"ear","tone":"attention","icon":"lightbulb","title":"POtencial","heading":"","children":"\u003cp>Imóveis públicos podem apoiar a criação e consolidação de unidades de conservação, a recuperação de áreas degradadas, a implantação de corredores ecológicos e a proteção de mananciais. Também podem servir de suporte para programas de reflorestamento, restauração ambiental e adaptação às mudanças climáticas.\u003c/p>","color":""}},{"id":"bosuqpwu","type":"accordion","props":{"numbered":false,"items":[{"title":"Experiência da União","content":"\u003cp>No âmbito federal, por exemplo, diversos imóveis da União estão associados a políticas de proteção ambiental, especialmente em áreas costeiras, margens de rios federais e florestas públicas. Iniciativas como o Projeto Orla demonstram como a gestão patrimonial pode atuar de forma integrada à conservação ambiental, conciliando proteção dos ecossistemas, ordenamento territorial e desenvolvimento local.\u003c/p>\u003cp>Desenvolvido em parceria entre União, estados e municípios, o \u003cb>Projeto Orla\u003c/b> busca ordenar o uso das áreas costeiras brasileiras, conciliando proteção ambiental, atividades econômicas e inclusão social. Os terrenos de marinha administrados pela União constituem um dos principais instrumentos para implementação dessa política.\u003c/p>","imageSlot":"c_w05m1cf__imageSlot","linkHref":"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/arquivos-anteriores-privados/projeto-orla/projeto-orla","linkButton":"secondary","linkLabel":"Saiba mais sobre o Projeto Orla"}]}}]},{"id":"bjey3qec","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cvex19d1","type":"titulo","props":{"text":"Planejamento territorial e desenvolvimento urbano","level":"h2"}},{"id":"c0y5runt","type":"prose","props":{"html":"\u003cp>A gestão dos imóveis públicos também possui forte conexão com o planejamento urbano e territorial. Cidades brasileiras enfrentam desafios complexos relacionados ao crescimento desordenado, déficit habitacional, ocupação de áreas de risco, escassez de áreas verdes e carência de equipamentos públicos. Nesse contexto, a disponibilidade de áreas públicas representa um ativo estratégico para qualificar o desenvolvimento urbano.\u003c/p>"}},{"id":"b_mrwaky0v_3plc","type":"callout","props":{"variant":"ear","tone":"","icon":"lightbulb","title":"POtencial","heading":"","children":"\u003cp>Imóveis públicos podem ser utilizados para implantação de moradias, parques urbanos, escolas, unidades de saúde, equipamentos culturais, sistemas de mobilidade e projetos de requalificação urbana.\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Além de viabilizar investimentos públicos, a adequada utilização desses imóveis permite reduzir desigualdades territoriais, fortalecer centralidades urbanas e melhorar a qualidade de vida da população. O patrimônio público torna-se, assim, um elemento estruturador das cidades.\u003c/span>\u003c/p>","color":""}}]},{"id":"bc81tk9p","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"co3r1yko","type":"titulo","props":{"text":"Inclusão social, habitação e regularização fundiária","level":"h2"}},{"id":"cyebv6tv","type":"prose","props":{"html":"\u003cp>A conexão entre gestão patrimonial e políticas sociais é particularmente importante em países marcados por desigualdades territoriais e fundiárias.\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Muitos imóveis públicos encontram-se ocupados por populações de baixa renda, comunidades tradicionais, povos indígenas, quilombolas, pescadores artesanais e outros grupos socialmente vulneráveis. A gestão desses territórios influencia diretamente o acesso à moradia, à segurança jurídica e a diversos direitos fundamentais.\u003c/span>\u003c/p>"}},{"id":"b4jg568s","type":"callout","props":{"variant":"ear","tone":"attention","icon":"lightbulb","title":"Potencial","heading":"","children":"\u003cp>Quando articulada a programas habitacionais e de regularização fundiária, a gestão patrimonial pode transformar passivos fundiários em oportunidades de inclusão social. A destinação de imóveis públicos para habitação de interesse social, por exemplo, contribui para reduzir o déficit habitacional e ampliar o acesso à cidade. Da mesma forma, a regularização de territórios ocupados por comunidades tradicionais fortalece a proteção cultural, a segurança jurídica e a preservação ambiental associada a esses modos de vida.\u003c/p>","color":""}},{"id":"bdh5d9ao","type":"accordion","props":{"numbered":false,"items":[{"title":"Experiência da União","content":"\u003cp>No caso da União, programas de destinação imobiliária têm sido utilizados para apoiar a provisão habitacional, a regularização fundiária e a proteção de comunidades tradicionais, demonstrando como a gestão patrimonial pode atuar diretamente na promoção da justiça territorial.\u003c/p>\u003cp>Programas como o \u003cb>Imóvel da Gente\u003c/b> têm utilizado imóveis da União para apoiar políticas habitacionais, regularização fundiária e implantação de equipamentos públicos, contribuindo para o desenvolvimento urbano e a inclusão territorial.  Entre 2023 e 2025, destinações realizadas pela União beneficiaram mais de 300 mil famílias por meio de ações de habitação de interesse social e regularização fundiária. O valor patrimonial associado a essas destinações ultrapassa R$ 16 trilhões.\u003c/p>\u003cp>\u003cbr>\u003c/p>","imageSlot":"c_zrie3xa__imageSlot","linkHref":"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/imoveldagente/sobre-o-programa/programa-em-numeros","linkButton":"secondary","linkLabel":"Saiba mais sobre o programa"}]}}]},{"id":"bskhb93y","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cvwz6uit","type":"titulo","props":{"text":"Agenda climática, transição ecológica e resiliência territorial","level":"h2"}},{"id":"ck4ya42y","type":"prose","props":{"html":"\u003cp>As mudanças climáticas vêm ampliando a importância estratégica dos imóveis públicos. Enchentes, secas prolongadas, incêndios florestais, erosão costeira e eventos extremos exigem novas formas de planejamento e gestão do território.\u003c/p>"}},{"id":"bgfoa7et","type":"callout","props":{"variant":"ear","tone":"","icon":"lightbulb","title":"Potencial","heading":"","children":"\u003cp>Nesse cenário, os imóveis públicos podem desempenhar diferentes funções. Alguns atuam como áreas de proteção ambiental e infraestrutura verde. Outros podem servir como espaços de drenagem urbana, corredores ecológicos ou áreas destinadas ao reassentamento de populações expostas a riscos. Também existe crescente potencial para utilização de imóveis públicos em projetos de energia renovável, infraestrutura resiliente e soluções baseadas na natureza.\u003c/p>","color":""}},{"id":"b_mrwb93ol_we9a","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Além das ações preventivas, os imóveis públicos podem desempenhar papel fundamental em \u003cb>situações de emergência\u003c/b>. Dependendo de suas características e localização, podem ser utilizados como centros de apoio, abrigos temporários, bases logísticas ou áreas destinadas à reconstrução de comunidades afetadas por desastres.\u003c/span>\u003c/p>\u003cp>A experiência recente de eventos climáticos extremos no Brasil tem demonstrado que a gestão patrimonial precisa estar cada vez mais integrada às estratégias de adaptação e resiliência territorial.\u003c/p>"}}]},{"id":"b3u6yy0c","type":"section","props":{"width":"content","surface":"terra-dark","pad":"lg"},"children":[{"id":"b4vzzdqz","type":"panel","props":{"variant":"box","kicker":"Articulação","kickerIcon":"handshake","title":"Governança, cooperação e financiamento","color":"","bg":"var(--bg-paper)","children":"\u003cp>A crescente complexidade dos desafios socioambientais exige que a gestão patrimonial seja desenvolvida \u003cb>de forma colaborativa\u003c/b>. A utilização estratégica dos imóveis públicos depende da articulação entre diferentes órgãos governamentais, entes federativos, instituições de pesquisa e organizações da sociedade civil. Nenhuma instituição, isoladamente, possui capacidade para enfrentar todos os desafios relacionados ao território.\u003c/p>\u003cp>Além disso, diversas iniciativas ambientais, climáticas e urbanas dependem de fontes de financiamento específicas. Os imóveis públicos podem servir como infraestrutura de suporte para projetos financiados por fundos climáticos, organismos multilaterais e programas de cooperação internacional. Essa capacidade de articulação amplia o potencial de transformação dos patrimônios públicos e fortalece sua contribuição para o desenvolvimento sustentável.\u003c/p>"}}]},{"id":"book8vj7","type":"conclusion","props":{"kicker":"Para fechar","kickerIcon":"check","title":"Conclusão","body":"\u003cp>A gestão patrimonial contemporânea não se restringe ao controle administrativo de imóveis. Trata-se de uma atividade estratégica, diretamente conectada às principais agendas públicas do nosso tempo.\u003c/p>\u003cp>Sejam pertencentes à União, aos estados, aos municípios ou a outras entidades públicas, os imóveis públicos constituem uma infraestrutura territorial capaz de apoiar políticas ambientais, urbanas, habitacionais, climáticas e sociais. Quando geridos de forma integrada, tornam-se instrumentos de transformação do território e de promoção do bem-estar coletivo.\u003c/p>"},"children":[{"id":"bp5i4v4b","type":"prose","props":{"html":"\u003cp>As dimensõ\u003cspan data-color=\"light\">es ambiental, social e econômica dos i\u003c/span>móveis públicos estão profundamente interligadas. Um mesmo imóvel pode simultaneamente proteger ecossistemas, apoiar políticas habitacionais, estimular o desenvolvimento econômico e promover segurança jurídica. Essa capacidade de gerar múltiplos benefícios torna o patrimônio público \u003cb>\u003cspan data-color=\"ochre-light\">um dos mais importantes instrumentos disponíveis para a atuação do Estado\u003c/span>\u003c/b>.\u003c/p>\u003cp>A experiência do patrimônio da União demonstra que os imóveis públicos não devem ser vistos apenas como bens administrativos ou ativos financeiros. Eles constituem uma infraestrutura territorial estratégica, capaz de promover inclusão social, conservação ambiental, desenvolvimento econômico e melhoria da qualidade de vida.\u003c/p>\u003cp>Compreender essa dimensão é o primeiro passo para uma gestão patrimonial moderna, integrada e orientada à geração de valor público.\u003c/p>"}}]},{"id":"bhdl8rj0","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b7c35f6m","type":"pullquote","props":{"variant":"block","children":"Mais do que administrar bens, a gestão patrimonial contemporânea consiste em gerar valor público por meio do uso sustentável, eficiente e socialmente relevante do patrimônio imobiliário. ","cite":""}},{"id":"b098ig3a","type":"referencias","props":{"title":"Referências","defaultOpen":false,"items":["BARBOZA CARNEIRO, J. C. \u003cb>Proposta de tema\u003c/b>: agenda ambiental para projetos de interesse da SPU. [S. l.]: Secretaria do Patrimônio da União, 2023. Documento interno para discussão.\u003cdiv>\u003cbr>\u003c/div>\u003cdiv>BARBOZA CARNEIRO, J. C. \u003cb>Anotações sobre a Agenda Ambiental\u003c/b>. [S. l.]: Secretaria do Patrimônio da União, 2024. Apresentação interna.\u003c/div>\u003cdiv>\u003cbr>\u003c/div>\u003cdiv>BRASIL. Instituto Chico Mendes de Conservação da Biodiversidade. \u003cb>Mapa temático e dados geoestatísticos das Unidades de Conservação Federais\u003c/b>. [S. l.]: ICMBio, 2025. Disponível em: https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais. Acesso em: 22 jul. 2026.\u003c/div>\u003cdiv>\u003cbr>\u003c/div>\u003cdiv>BRASIL. Secretaria do Patrimônio da União. \u003cb>Documento de entendimento da CT AMB\u003c/b>: temas x produtos. [S. l.]: Secretaria do Patrimônio da União, 2025a. Documento de trabalho interno da Câmara Técnica da Agenda Ambiental.\u003c/div>\u003cdiv>\u003cbr>\u003c/div>\u003cdiv>BRASIL. Secretaria do Patrimônio da União. \u003cb>Links de documentos de referência compartilhados na Câmara Técnica da Agenda Ambiental\u003c/b>. [S. l.]: Secretaria do Patrimônio da União, 2025b. Documento interno.\u003c/div>\u003cdiv>\u003cbr>\u003c/div>\u003cdiv>BRASIL. Secretaria do Patrimônio da União. \u003cb>Relatório 02\u003c/b>: benchmarking de políticas públicas internacionais exitosas de valorização e potencialização da função socioambiental de terras públicas e proposta conceitual da agenda socioambiental da SPU. [S. l.]: PNUD, 2025c. Consultoria PNUD, produto 2.\u003c/div>\u003cdiv>\u003cbr>\u003c/div>"]}}]},{"id":"bq6buamg","type":"pagefooter","props":{"code":"Fundamentos da Propriedade Pública no Brasil [M122]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União - SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Claudson Moreira"},{"role":"Revisão","name":"Ana Tulia de Macedo"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Julho de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"blsk9qyt__slot":{"u":"assets/images/img-0-blsk9qyt__slot.webp","s":1,"x":0,"y":0},"bxuhk133__slot":{"u":"assets/images/img-1-bxuhk133__slot.webp","s":1,"x":0,"y":0},"c_fsvit0d__imageSlot":{"u":"assets/images/img-2-c_fsvit0d__imageslot.webp","s":1,"x":0,"y":0},"br7ttpso__slot":{"u":"assets/images/img-3-br7ttpso__slot.webp","s":1,"x":0,"y":0},"c_os1f63k__imageSlot":{"u":"assets/images/img-4-c_os1f63k__imageslot.webp","s":1,"x":0,"y":0},"c_67z2mbw__imageSlot":{"u":"assets/images/img-5-c_67z2mbw__imageslot.webp","s":1,"x":0,"y":0},"b1lsqjhf__slot":{"u":"assets/images/img-6-b1lsqjhf__slot.webp","s":1,"x":0,"y":0},"bzq65cn2__slot":{"u":"assets/images/img-7-bzq65cn2__slot.webp","s":1,"x":0,"y":0},"b_mrv7w0m6_pnqk__slot":{"u":"assets/images/img-8-b_mrv7w0m6_pnqk__slot.webp","s":1,"x":0,"y":0},"b_mrv7vzdg_hx8b__slot":{"s":1,"x":4.5427203475685785,"y":0,"u":"assets/images/img-9-b_mrv7vzdg_hx8b__slot.webp"},"b_mrv7vvo3_4l90__slot":{"u":"assets/images/img-10-b_mrv7vvo3_4l90__slot.webp","s":1,"x":0,"y":0},"b3vrzyti__slot":{"u":"assets/images/img-11-b3vrzyti__slot.webp","s":1,"x":0,"y":0},"bkpl7yif__slides_0_slot":{"u":"assets/images/img-12-bkpl7yif__slides_0_slot.webp","s":1,"x":0,"y":0},"bkpl7yif__slides_1_slot":{"u":"assets/images/img-13-bkpl7yif__slides_1_slot.webp","s":1,"x":0,"y":0},"c_2d918y3__imageSlot":{"u":"assets/images/img-14-c_2d918y3__imageslot.webp","s":1,"x":0,"y":0},"c_qatu8kd__imageSlot":{"u":"assets/images/img-15-c_qatu8kd__imageslot.webp","s":1,"x":0,"y":0},"c_9b1wj2f__imageSlot":{"u":"assets/images/img-16-c_9b1wj2f__imageslot.webp","s":1,"x":0,"y":0},"c_vduu69o__imageSlot":{"u":"assets/images/img-17-c_vduu69o__imageslot.webp","s":1,"x":0,"y":0},"c_w05m1cf__imageSlot":{"u":"assets/images/img-18-c_w05m1cf__imageslot.webp","s":1,"x":0,"y":0},"c_zrie3xa__imageSlot":{"u":"assets/images/img-19-c_zrie3xa__imageslot.webp","s":1,"x":0,"y":0}}</script>
+<script id="spu-lucide-icons" type="application/json">{"book-open":"\u003cpath d=\"M12 7v14\"/>\u003cpath d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","handshake":"\u003cpath d=\"m11 17 2 2a1 1 0 1 0 3-3\"/>\u003cpath d=\"m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4\"/>\u003cpath d=\"m21 3 1 11h-2\"/>\u003cpath d=\"M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3\"/>\u003cpath d=\"M3 4h8\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/_ds_bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>
