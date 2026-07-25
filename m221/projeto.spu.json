@@ -1,0 +1,749 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M221 - Due diligence aplicada à gestão de imóveis públicos",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "cg10ukjg",
+          "text": "Introdução",
+          "hidden": true
+        },
+        {
+          "id": "cfvevqx2",
+          "text": "Diferentes formas de atuação na gestão dos imóveis",
+          "hidden": false
+        },
+        {
+          "id": "c24brp04",
+          "text": "<i>Due diligence</i> na gestão de imóveis públicos",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "befebsxa",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "bvtgtbn8",
+      "type": "hero",
+      "props": {
+        "kicker": "Análise técnico-jurídica preventiva de imóveis públicos",
+        "kickerIcon": "compass",
+        "title": "<i>Due diligence</i> aplicada à gestão de imóveis públicos",
+        "byline": "Análise preventiva para a tomada de decisões seguras",
+        "slot": "bvtgtbn8__slot"
+      }
+    },
+    {
+      "id": "b9g9172n",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cg10ukjg",
+          "type": "titulo",
+          "props": {
+            "text": "Introdução",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cw75mh1r",
+          "type": "prose",
+          "props": {
+            "html": "<p>O objetivo do presente texto é demonstrar como a <i>due diligence</i>, técnica geralmente aplicada no âmbito das transações particulares, pode também ser aplicada à gestão dos imóveis públicos, favorecendo a tomada de decisões mais seguras, através do reconhecimento dos principais elementos técnico-jurídicos envolvidos na análise preventiva.</p><p>Quando pensamos em imóveis públicos, é comum imaginar apenas uma praça, ruas ou demais logradouros de acesso franco e coletivo. Porém, o Estado possui três categorias de bens, que comportam análises e cuidados distintos: <b>os bens de uso especial</b> (voltados ao funcionamento da própria Administração Pública, como hospitais, escolas e repartições públicas), <b>os bens de uso comum</b> (aqueles de uso e fruição coletiva, como praças, praias e demais áreas congêneres) e <b>os bens dominiais</b> (que compõem o patrimônio das pessoas jurídicas de direito público e sobre os quais o Estado possui maior amplitude de disposição, inclusive para destiná-los a particulares ou até mesmo aliená-los, observados os requisitos legais).</p><p>Em especial quanto aos bens da classe dominial, é preciso saber que, na prática, um imóvel público não “nasce pronto”. <span style=\"text-wrap-mode: initial; color: inherit;\">Antes de ser incorporado, regularizado, destinado ou utilizado pelo Estado, ele precisa ser compreendido juridicamente, territorialmente e administrativamente.</span></p><p>É nesse contexto que surge a importância da análise preventiva — ou, em linguagem contemporânea, da <i>due diligence</i> aplicada aos imóveis públicos.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bdpnlo5x",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cfvevqx2",
+          "type": "titulo",
+          "props": {
+            "text": "Diferentes formas de atuação na gestão dos imóveis",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cem1vib6",
+          "type": "prose",
+          "props": {
+            "html": "<p>A tomada de decisões envolvendo imóveis, sejam eles públicos ou privados, normalmente não se resume a um único trabalho técnico. Antes que um imóvel seja adquirido, incorporado ao patrimônio público, destinado a determinada finalidade ou regularizado, diferentes perguntas precisam ser respondidas:</p>"
+          }
+        },
+        {
+          "id": "b8da4721",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Cada pergunta corresponde a uma forma distinta de atuação<br>",
+            "kickerIcon": "circle-question-mark",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-200)",
+            "body": "<p><br></p>",
+            "__pullUp": false
+          },
+          "children": [
+            {
+              "id": "bf2340li",
+              "type": "feature",
+              "props": {
+                "columns": 1,
+                "card": false,
+                "accent": "var(--terra-800)",
+                "layout": "side",
+                "items": [
+                  {
+                    "icon": "alert-triangle",
+                    "title": "Existem riscos ou inconsistências envolvendo esse imóvel?",
+                    "text": "análise preventiva"
+                  },
+                  {
+                    "icon": "clipboard-clock",
+                    "title": "Caso existam pendências, como elas podem ser solucionadas?",
+                    "text": "regularização imobiliária"
+                  },
+                  {
+                    "icon": "book-search",
+                    "title": "Quais cautelas devem ser observadas para formalizar adequadamente o ato ou negócio jurídico pretendido?",
+                    "text": "assessoria contratual"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "bszp5ior",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A</span><b style=\"text-wrap-mode: initial;\"> análise preventiva</b><span style=\"text-wrap-mode: initial; color: inherit;\"> busca identificar riscos e inconsistências antes da tomada de decisão. A </span><b style=\"text-wrap-mode: initial;\">regularização imobiliária </b><span style=\"text-wrap-mode: initial; color: inherit;\">tem por finalidade solucionar as pendências encontradas durante essa investigação. Já a </span><b style=\"text-wrap-mode: initial;\">assessoria contratual</b><span style=\"text-wrap-mode: initial; color: inherit;\"> procura conferir segurança jurídica à formalização do negócio ou do ato pretendido.</span></p><p>Embora complementares, trata-se de atividades distintas, que exigem métodos, estratégias e competências próprias.</p>",
+            "__pullDown": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "btsw72dk",
+      "type": "section",
+      "props": {
+        "width": "wide",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bd2qyvb0",
+          "type": "figure",
+          "props": {
+            "slot": "bd2qyvb0__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "processo de gestão imobiliária",
+            "caption": "",
+            "credit": "",
+            "__pullUp": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "bjpcjx0j",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cqc9p0lf",
+          "type": "titulo",
+          "props": {
+            "text": "Análise preventiva de riscos",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cvrgz5v4",
+          "type": "prose",
+          "props": {
+            "html": "<p>Imagine que a Administração Pública precisa incorporar determinado imóvel ao patrimônio público, com a pretensão de destiná-lo a uma política pública ou regularizá-lo em favor de seus ocupantes.</p><p>Antes que qualquer decisão seja tomada, algumas perguntas precisam ser respondidas:</p>"
+          }
+        },
+        {
+          "id": "bo7u3el9",
+          "type": "markerlist",
+          "props": {
+            "variant": "icon",
+            "icon": "message-circle-question-mark",
+            "accent": "var(--terra-500)",
+            "items": [
+              {
+                "title": "Quem é o titular do imóvel? A pessoa política ou outras entidades públicas?",
+                "text": ""
+              },
+              {
+                "title": "Seus limites físicos estão corretamente identificados?",
+                "text": ""
+              },
+              {
+                "title": "Existem divergências entre o cadastro e o registro imobiliário?",
+                "text": ""
+              },
+              {
+                "title": "Há restrições urbanísticas ou ambientais que precisam ser consideradas?",
+                "text": ""
+              },
+              {
+                "title": "Existem processos administrativos ou judiciais capazes de afetar sua utilização?",
+                "text": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "bfph5xgj",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "note",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>A análise preventiva consiste justamente em investigar essas questões antes da tomada de decisão. Seu principal objetivo não é resolver os problemas encontrados, mas identificá-los antecipadamente para reduzir riscos e subsidiar decisões mais seguras. Em outras palavras, trata-se de compreender o imóvel antes de decidir sobre ele.</p>"
+          }
+        },
+        {
+          "id": "b3s5w3o2",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Nenhum imóvel está imune à existência de riscos ou inconsistências. Muitas vezes, eles não são percebidos em uma primeira análise documental e somente aparecem quando diferentes fontes de informação são confrontadas, como o cadastro, o registro imobiliário, documentos históricos, informações territoriais e dados administrativos.</span></p><p>Por essa razão, <b><mark data-hl=\"terra\">a análise preventiva pode ser compreendida como um verdadeiro diagnóstico do imóvel</mark></b>. Seu propósito é identificar situações capazes de comprometer a finalidade que se pretende atribuir ao bem ou levantar hipóteses que podem dificultar a produção dos efeitos jurídicos esperados pelo negócio ou ato jurídico a ser celebrado.</p>"
+          }
+        },
+        {
+          "id": "bg5uoqng",
+          "type": "figure",
+          "props": {
+            "slot": "bg5uoqng__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "by9lhhoo",
+          "type": "prose",
+          "props": {
+            "html": "<p>Em determinadas situações, por exemplo, a análise preventiva poderá identificar a existência de conflitos entre informações cadastrais e registrais, restrições ambientais não observadas ou a necessidade de complementação documental antes da prática do ato pretendido.</p><p>O que se espera do profissional responsável por essa etapa não é, necessariamente, apresentar a solução para todos os problemas identificados, mas apontar os riscos existentes e fornecer os elementos necessários para uma tomada de decisão mais consciente e segura.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bws1s10t",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cd11adts",
+          "type": "titulo",
+          "props": {
+            "text": "Regularização imobiliária</span>",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cw1p60m8",
+          "type": "prose",
+          "props": {
+            "html": "<p>Uma vez identificadas as pendências existentes, inicia-se uma nova etapa do trabalho.</p>"
+          }
+        },
+        {
+          "id": "b91bdl21",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "children": "Se a análise preventiva pode ser comparada ao diagnóstico realizado antes de um tratamento médico, a regularização imobiliária corresponde ao conjunto de medidas adotadas para solucionar os problemas encontrados, ou seja, corresponde ao tratamento em si.",
+            "cite": ""
+          }
+        },
+        {
+          "id": "b2oom5ql",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "square-mouse-pointer",
+            "title": "",
+            "heading": "",
+            "children": "<p>O objetivo é promover a adequação jurídica, registral, cadastral, urbanística ou administrativa do imóvel, removendo obstáculos que possam comprometer sua adequada utilização ou a produção dos efeitos jurídicos pretendidos.</p>"
+          }
+        },
+        {
+          "id": "b_mrzh5g18_rcsr",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Trata-se, portanto, de um serviço distinto da análise preventiva. Enquanto esta procura responder à pergunta \"quais são os riscos?\", a regularização imobiliária busca solucionar uma nova questão: \"como esses problemas podem ser resolvidos?\".</span></p><p>Cada pendência identificada exigirá uma estratégia própria de atuação, razão pela qual a regularização imobiliária constitui atividade autônoma e complementar à análise preventiva.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bdd8yi32",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c4jo84vl",
+          "type": "titulo",
+          "props": {
+            "text": "Assessoria contratual</span>",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c0j2m5em",
+          "type": "prose",
+          "props": {
+            "html": "<p>Superadas as etapas anteriores, pode ser necessário formalizar juridicamente a decisão tomada.</p>"
+          }
+        },
+        {
+          "id": "biufix00",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "warning",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>A assessoria contratual corresponde ao trabalho de acompanhamento e assistência técnica prestado durante a celebração do ato ou do negócio jurídico relacionado ao imóvel.</p>"
+          }
+        },
+        {
+          "id": "b_mrzhgv1t_lag9",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Nesse momento, o profissional responsável atua para garantir que os instrumentos jurídicos produzidos reflitam adequadamente as cautelas identificadas nas etapas preliminares, observando as exigências legais aplicáveis e os interesses envolvidos.</span></p><p>Mais do que redigir um documento, a assessoria contratual procura garantir que a decisão tomada seja corretamente traduzida para o plano jurídico, conferindo maior segurança à sua execução.</p><p>Assim, embora análise preventiva, a regularização imobiliária e a assessoria contratual possam coexistir em uma mesma demanda, elas representam momentos distintos do processo decisório relacionado ao imóvel, cada qual desempenhando papel próprio na construção de decisões patrimoniais mais seguras.</p>"
+          }
+        },
+        {
+          "id": "bqjkgh84",
+          "type": "datatable",
+          "props": {
+            "caption": "",
+            "columns": [
+              {
+                "key": "c0",
+                "label": "Etapa"
+              },
+              {
+                "key": "c1",
+                "label": "Pergunta"
+              },
+              {
+                "key": "c2",
+                "label": "Resultado esperado"
+              }
+            ],
+            "rows": [
+              {
+                "c0": "Análise preventiva",
+                "c1": "Existem riscos?",
+                "c2": "Diagnóstico do imóvel"
+              },
+              {
+                "c0": "Regularização imobiliária",
+                "c1": "Como solucionar as pendências?",
+                "c2": "Adequação do imóvel"
+              },
+              {
+                "c0": "Assessoria contratual",
+                "c1": "Como formalizar a decisão tomada sobre o imóvel <br> (vender, permutar, doar, ceder etc)?",
+                "c2": "Segurança jurídica do ato"
+              }
+            ],
+            "dense": false,
+            "highlightFirst": true,
+            "striped": false,
+            "tone": "petrol",
+            "className": "spu-table-wrap--tone-petrol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ba6i60l5",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "terra-dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c24brp04",
+          "type": "titulo",
+          "props": {
+            "text": "<i>Due diligence</i> na gestão de imóveis públicos",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c7nw4em9",
+          "type": "prose",
+          "props": {
+            "html": "<p>No setor privado, o termo <i>due diligence</i> é utilizado para designar uma investigação prévia realizada antes da aquisição de um imóvel ou de uma empresa. Como já foi explicado anteriormente, o objetivo é identificar riscos, inconsistências ou problemas capazes de comprometer a segurança da operação. Na gestão de imóveis públicos, a lógica é – ou poderia ser – semelhante.</p>"
+          }
+        },
+        {
+          "id": "bngsnwrk",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "alert-circle",
+            "title": "",
+            "heading": "",
+            "children": "<p>Antes de reconhecer a dominialidade pública, incorporar um imóvel ao patrimônio público ou praticar atos de gestão patrimonial, é necessário realizar uma análise preventiva integrada. Essa análise envolve aspectos dominiais, registrais, cadastrais, territoriais, urbanísticos, ambientais e administrativos.</p>"
+          }
+        },
+        {
+          "id": "b_mrzc9z4f_bzwj",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A finalidade não é apenas conferir documentos, mas produzir segurança técnica e jurídica para a tomada de decisão administrativa – qual a melhor vocação ou destinação para aquele imóvel público, considerando, entre outros fatores, a análise preventiva dos aspectos integrados citados.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b0a6o131",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg",
+        "__pullUp": false
+      },
+      "children": [
+        {
+          "id": "cxercvuq",
+          "type": "titulo",
+          "props": {
+            "text": "O imóvel público não existe apenas com o registro",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c2gkqs1h",
+          "type": "prose",
+          "props": {
+            "html": "<p>Um dos pontos mais importantes da gestão patrimonial pública é compreender que o registro imobiliário, embora essencial para assegurar a legitimidade e a confiança das transações imobiliárias, possui limites quando estamos falando de bens públicos.</p><p>O fato de um imóvel estar matriculado em nome de um particular não significa, necessariamente, a inexistência de domínio público sobre ele. Grande parte dos bens públicos possui origem na teoria do direito de conquista, a qual, em síntese, estabelece que o território nacional foi arrecadado pela coroa portuguesa e transmitido às pessoas públicas que a sucederam. </p><p>Por isso, o domínio de grande parte dos bens públicos provém diretamente da lei, não de transações como ocorre entre os particulares. Assim, as Constituições federais estabeleceram, ao longo da história do país, quais bens pertencem aos Estados, aos Municípios e ao ente político nacional – a União Federal.</p>",
+            "__pullUp": false
+          }
+        },
+        {
+          "id": "bezy3en8",
+          "type": "figure",
+          "props": {
+            "slot": "bezy3en8__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "b_mrzhodlc_311e",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Com efeito, aquele ditado muito usual no Direito Registral Imobiliário </span><i style=\"text-wrap-mode: initial; color: inherit;\">“só é dono quem registra (em cartório)”</i><span style=\"text-wrap-mode: initial; color: inherit;\"> não é tão aplicável aos imóveis públicos, pois o fundamento constitutivo do direito do Estado sobre esses bens provém, em sua grande parte, diretamente da lei.</span></p><p>Desse modo, a ausência de matrícula em nome do ente público não impede, por si só, a existência de domínio público. Em regra, repete-se, o domínio público sobre determinado imóvel deriva diretamente da lei, não do registro em cartório. Este, é bem verdade, serve para “alargar” o domínio do ente público sobre os bens que integram o seu patrimônio imobiliário, dando conhecimento desse direito às demais pessoas.</p><p>Nesse contexto, a análise preventiva exige integração entre diferentes sistemas de informação: registro imobiliário, cadastro patrimonial, dados geoespaciais, memoriais descritivos, plantas e documentos históricos.</p>",
+            "__pullUp": false
+          }
+        },
+        {
+          "id": "bn9elnnm",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "warning",
+            "icon": "lightbulb",
+            "title": "Em outras palavras",
+            "heading": "",
+            "children": "<p>A análise preventiva patrimonial não pode depender exclusivamente do cartório nem exclusivamente do cadastro ou de sistemas corporativos.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bqmr439r",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c280ul88",
+          "type": "titulo",
+          "props": {
+            "text": "O que deve ser analisado? ",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cjsdfm4s",
+          "type": "prose",
+          "props": {
+            "html": "<p>A <i>due diligence</i> aplicada aos imóveis públicos pode envolver <b>cinco grandes dimensões de análise</b>:</p>"
+          }
+        },
+        {
+          "id": "bxs5lyh2",
+          "type": "contentslider",
+          "props": {
+            "hint": "Dimensões de análise",
+            "accent": "var(--terra-600)",
+            "slides": [
+              {
+                "showImage": false,
+                "slot": "bxs5lyh2__slides_1_slot",
+                "alt": "",
+                "caption": "",
+                "label": "<br>",
+                "title": "<span data-fs=\"h4\">Titularidade e cadeia dominial</span>",
+                "subtitle": "Afinal, de quem é esse imóvel?",
+                "description": "No caso dos bens públicos, essa resposta nem sempre pode ser encontrada apenas na matrícula imobiliária, pois muitos imóveis possuem origens históricas específicas decorrentes de sucessões legislativas, antigas formas de aquisição patrimonial ou de outros mecanismos previstos em lei. Por essa razão, a análise preventiva deve investigar a origem da propriedade e a cadeia dominial do imóvel, confrontando informações históricas, registrais e administrativas que permitam compreender como a titularidade foi constituída ao longo do tempo e se ela é compatível com a realidade patrimonial apresentada.",
+                "linkHref": "",
+                "linkLabel": "",
+                "tabLabel": "01",
+                "labelIcon": "award"
+              },
+              {
+                "showImage": false,
+                "slot": "c_up3h3r7__imageSlot",
+                "alt": "",
+                "caption": "",
+                "label": "<br>",
+                "title": "<span data-fs=\"h4\">Cadastro e territorialidade</span>",
+                "subtitle": "As informações jurídicas e territoriais do imóvel correspondem entre si?",
+                "description": "A análise preventiva deve confrontar dados cadastrais, registrais e geoespaciais para verificar se a descrição jurídica do imóvel coincide com sua representação física no território, identificando eventuais sobreposições, divergências documentais ou inconsistências relacionadas aos seus limites. A integração dessas informações é essencial para que a tomada de decisão administrativa esteja apoiada em bases patrimoniais confiáveis.",
+                "linkHref": "",
+                "linkLabel": "",
+                "tabLabel": "02",
+                "labelIcon": "move-3d"
+              },
+              {
+                "showImage": false,
+                "slot": "c_dyi2jvr__imageSlot",
+                "alt": "",
+                "caption": "",
+                "label": "<br>",
+                "title": "<span data-fs=\"h4\">Situação urbanística e ambiental</span>",
+                "subtitle": "A utilização pretendida para o imóvel é compatível com suas características urbanísticas e ambientais?",
+                "description": "Para isso, devem ser observadas as restrições legais incidentes sobre o bem, sua inserção territorial, as formas de ocupação existentes e a compatibilidade entre sua destinação e o interesse público envolvido. Mais do que identificar impedimentos formais, essa análise permite avaliar se o imóvel poderá cumprir adequadamente a função que dele se espera, reduzindo riscos relacionados à sua utilização futura.",
+                "linkHref": "",
+                "linkLabel": "",
+                "tabLabel": "03",
+                "labelIcon": "trees"
+              },
+              {
+                "showImage": false,
+                "slot": "c_9qayema__imageSlot",
+                "alt": "",
+                "caption": "",
+                "label": "<br>",
+                "title": "<span data-fs=\"h4\">Aspectos administrativos e judiciais</span>",
+                "subtitle": "Existem processos administrativos ou judiciais capazes de afetar a situação jurídica do imóvel ou comprometer a decisão pretendida?",
+                "description": "Litígios possessórios, ações reivindicatórias, procedimentos administrativos pendentes ou entendimentos consolidados pelos tribunais podem influenciar significativamente a estratégia de atuação da Administração Pública. Conhecer previamente esses elementos permite antecipar riscos e evitar decisões fundadas em informações incompletas ou fragmentadas.",
+                "linkHref": "",
+                "linkLabel": "",
+                "tabLabel": "04",
+                "labelIcon": "scale"
+              },
+              {
+                "showImage": false,
+                "slot": "c_8hscdf7__imageSlot",
+                "alt": "",
+                "caption": "",
+                "label": "<br>",
+                "title": "<span data-fs=\"h4\">Relatório de riscos e tomada de decisão</span>",
+                "subtitle": "",
+                "description": "Todas as informações obtidas nas etapas anteriores convergem para a elaboração de um relatório de riscos, cuja finalidade é subsidiar a tomada de decisão patrimonial. Esse documento sintetiza as potencialidades, limitações e inconsistências identificadas durante a análise preventiva, permitindo avaliar a viabilidade da incorporação, destinação, regularização ou utilização pretendida para o imóvel. Mais do que apontar problemas, o relatório oferece ao gestor os elementos necessários para decidir de maneira mais consciente, segura e alinhada ao interesse público.",
+                "linkHref": "",
+                "linkLabel": "",
+                "tabLabel": "05",
+                "labelIcon": "sticky-note-check"
+              }
+            ],
+            "showTabNumbers": false
+          }
+        },
+        {
+          "id": "bqv7kaj0",
+          "type": "prose",
+          "props": {
+            "html": "<p>O objetivo final da análise preventiva é identificar inconsistências cadastrais, fragilidade dominial, judicialização, sobreposição territorial, conflitos registrais e passivos ambientais.</p>",
+            "__pullDown": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "bv8rwkgp",
+      "type": "section",
+      "props": {
+        "width": "wide",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "ber5ecni",
+          "type": "figure",
+          "props": {
+            "slot": "ber5ecni__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": "",
+            "__pullDown": true,
+            "__pullUp": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "bp4a72rb",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b10w44os",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo",
+            "icon": "map-pin",
+            "color": "",
+            "slot": "b10w44os__slot",
+            "collapse": "none",
+            "title": "Caso prático simplificado",
+            "children": "<p>Imagine uma área ocupada há décadas por particulares. Em que pese essa ocupação, o cadastro patrimonial indica tratar-se de área pertencente a determinado ente público. <span style=\"text-wrap-mode: initial; color: inherit;\">Por outro lado, o cartório apresenta matrícula em nome de terceiros.</span></p><p><b>E agora? <span style=\"text-wrap-mode: initial; color: inherit;\">Como regularizar esta área, preservando a titularidade do ente público, sem prejudicar o direito daqueles que construíram seus imóveis naquele espaço? </span></b></p><p>A resposta não pode surgir apenas do que consta no registro ou no cadastro patrimonial isoladamente.<span style=\"text-wrap-mode: initial; color: inherit;\">Será necessário examinar a cadeia dominial, confrontar plantas e memoriais, analisar dados territoriais, impedimentos urbanísticos ou ambientais e verificar o perfil socioeconômico dos particulares, até compreender o histórico jurídico da área e quais regimes de regularização são aplicáveis à situação.</span></p><p>Esse é um exemplo típico de análise técnico-jurídica preventiva aplicada à gestão de imóveis públicos.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b6t2ly0s",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para fechar",
+        "kickerIcon": "check",
+        "title": "Considerações finais",
+        "body": "<p>A gestão de imóveis públicos exige mais do que o conhecimento isolado da legislação administrativa, do direito registral, urbanístico ou ambiental. <span style=\"text-wrap-mode: initial; color: inherit;\">Ela depende da integração entre todos esses ramos, pois só assim será possível conjugar direito, território, cadastro e informação administrativa.</span></p><p><b></b></p><span data-color=\"ochre-light\"><p><b></b></p></span><span data-fs=\"body-lg\"><span data-color=\"ochre-light\"><p><b>A <i>due diligence</i> aplicada aos imóveis públicos representa justamente essa visão integrada: compreender o imóvel antes da decisão.</b></p><p></p></span><p></p></span><p>Mais do que definir os limites físicos e incorporar imóveis ao patrimônio público, trata-se de produzir segurança, legitimidade e qualidade na atuação estatal.</p><p>Em conclusão, a gestão patrimonial pública exige uma análise preventiva integrada, combinando elementos jurídicos, registrais, cadastrais, territoriais e administrativos para subsidiar decisões seguras sobre imóveis públicos.</p><p><br></p>"
+      },
+      "children": [
+        {
+          "id": "bf5pa75l",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "notebook-pen",
+            "title": "",
+            "heading": "",
+            "children": "<p><span data-fs=\"body\">Este material foi adaptado a partir da publicação \"<a href=\"https://jus.com.br/artigos/119627/due-diligence-de-imoveis-publicos-analise-preventiva-para-a-tomada-de-decisoes-seguras\">Due Diligence de Imóveis Públicos: análise preventiva para a tomada de decisões seguras</a>\", do mesmo autor.</span></p>"
+          }
+        },
+        {
+          "id": "by4k99o9",
+          "type": "referencias",
+          "props": {
+            "title": "Referências",
+            "defaultOpen": false,
+            "items": [
+              "<p>SCAVONE JUNIOR, Luiz Antonio. <b>Direito imobiliário</b> – Teoria e prática. 9. ed. rev., atual. e ampl. Rio de Janeiro: Forense, 2015.</p><p>BANDEIRA DE MELLO, Celso Antônio. <b>Curso de direito administrativo</b>. 17. ed. rev. ampl. e atual. São Paulo: Malheiros, 2004.</p><p>BRANDELLI, Leonardo. <b>Registro de imóveis</b>: eficácia material. Rio de Janeiro: Forense, 2016.</p><p>LEÃO JUNIOR, Paulo da Silva Martins. As formas previstas na legislação estadual e a competência para administração do patrimônio púbico imobiliário do Estado do Rio de Janeiro. <i>In</i>: COUTINHO, José Roberto de Andrade (Org.). <b>Direito Imobiliário Público</b>. Rio de Janeiro, Lumes Juris, 1997.</p><p>ABE, Nilma de Castro. <b>Gestão do patrimônio público imobiliário: </b>aspectos jurídicos da destinação, delimitação, fiscalização e responsabilidade. 2. ed. rev. e atual. Belo Horizonte: Fórum, 2013.</p>"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b34td5p4",
+      "type": "pagefooter",
+      "props": {
+        "code": "Due diligence aplicada à gestão de imóveis públicos [M221]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncnd",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Carlos Alberto Sobral Coimbra Junior"
+          },
+          {
+            "role": "Revisão",
+            "name": "—"
+          },
+          {
+            "role": "design educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "versão",
+            "name": "Julho 2026"
+          }
+        ],
+        "__pullUp": false
+      }
+    }
+  ]
+}
