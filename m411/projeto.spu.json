@@ -1,0 +1,203 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M411 - A função socioambiental dos imóveis públicos",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "bhauz8uh",
+          "text": "Sobre o manual",
+          "hidden": false
+        },
+        {
+          "id": "cjpjvsej",
+          "text": "O que significa função socioambiental? ",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "bz5clsam",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "bn913j0t",
+      "type": "hero",
+      "props": {
+        "kicker": "Fundamentos. estratégias e instrumentos de destinação patrimonial",
+        "kickerIcon": "compass",
+        "title": "A função socioambiental dos imóveis públicos",
+        "byline": "Manual de Regularização Fundiária em Terras da União",
+        "slot": "bn913j0t__slot"
+      }
+    },
+    {
+      "id": "bt71qcej",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bhauz8uh",
+          "type": "titulo",
+          "props": {
+            "text": "Sobre o manual",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b1qf3sm2",
+          "type": "prose",
+          "props": {
+            "html": "<p>Como resultado de um longo processo de aprendizado foi elaborado pela <b>Secretaria do Patrimônio da União</b>, no ano de 2006, o <b><mark data-hl=\"terra\"><a href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/\">Manual de Regularização Fundiária em Terras da União</a></mark></b>, com a finalidade de oferecer subsídios, diretrizes e recomendações a agentes públicos, especialistas, lideranças civis e demais atores envolvidos na promoção da inclusão socioterritorial e na defesa do patrimônio público do Brasil.</p>"
+          }
+        },
+        {
+          "id": "b47mx4jg",
+          "type": "figure",
+          "props": {
+            "slot": "b47mx4jg__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "Manual de Regularização Fundiária em Terras da União",
+            "caption": "<a href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/\">Clique aqui para acessar o material na íntegra</a>&nbsp;",
+            "credit": "",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_ms3my3xg_pash",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Embora os capítulos B1 e B2 do Manual sejam redigidos com foco específico nos bens imóveis da </span><b style=\"text-wrap-mode: initial;\">União</b><span style=\"text-wrap-mode: initial; color: inherit;\">, os </span><b style=\"text-wrap-mode: initial;\">princípios legais e constitucionais apresentados </b><span style=\"text-wrap-mode: initial; color: inherit;\">neles se aplicam a </span><b style=\"text-wrap-mode: initial;\">qualquer ente da federação</b><span style=\"text-wrap-mode: initial; color: inherit;\"> (Estados, Distrito Federal e Municípios). Isso ocorre pelos seguintes motivos detalhados nos textos:</span></p>"
+          }
+        },
+        {
+          "id": "bwk3tg4x",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": true,
+            "accent": "var(--terra-500)",
+            "layout": "side",
+            "items": [
+              {
+                "icon": "scale",
+                "title": "Princípio Constitucional Universal",
+                "text": "<span data-fs=\"body\">O capítulo B1 esclarece que, com a promulgação da Constituição Federal de 1988, <b>toda propriedade - seja ela pública ou privada - passou a ter o dever de cumprir uma função social.</b> O cumprimento dessa função está associado às responsabilidades e obrigações do Estado brasileiro como um todo para com a sociedade. Portanto, usar bens públicos para promover a justiça social, garantir o direito à moradia e fomentar o desenvolvimento local é uma meta aplicável aos patrimônios estaduais e municipais também.</span>"
+              },
+              {
+                "icon": "notebook-pen",
+                "title": "Aplicação do Estatuto da Cidade",
+                "text": "<span data-fs=\"body\">O capítulo B2 detalha que o cumprimento da função socioambiental exige a interpretação integrada da legislação urbana e ambiental. Para verificar o uso adequado da propriedade urbana pública, deve ser aplicado o <b>Estatuto da Cidade</b>, que estabelece exigências fundamentais de ordenação e diretrizes gerais que proíbem a retenção especulativa e exigem o respeito ao direito a cidades sustentáveis. Essas são leis federais que regem a política urbana em todo o território nacional, independentemente de quem seja o titular da terra pública.</span>"
+              },
+              {
+                "icon": "pencil-ruler",
+                "title": "Subordinação ao Plano Diretor Municipal",
+                "text": "<span data-fs=\"body\">O texto reforça que é o <b>Plano Diretor do Município</b> que define o conteúdo da função social da propriedade. O uso de bens imóveis inseridos no território do município, independentemente de qual ente federativo seja o proprietário, deverá <b>sempre observar as diretrizes do Plano Diretor</b>.</span>"
+              },
+              {
+                "icon": "handshake",
+                "title": "Cooperação Obrigatória",
+                "text": "<span data-fs=\"body\">O manual ainda destaca em sua seção de gestão compartilhada que a cooperação entre os governos para garantir a função social da propriedade é uma diretriz geral do Estatuto da Cidade e, portanto, é<b> obrigatória para a União, Estados, Distrito Federal e Municípios.</b></span><b></b>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bwgy56mh",
+          "type": "prose",
+          "props": {
+            "html": "<p>Em suma, as \"trilhas\" e os marcos legais apresentados nos capítulos B1 e B2 refletem o paradigma jurídico-urbanístico brasileiro que obriga todos os entes federativos a darem um destino socioambiental adequado aos seus respectivos patrimônios imobiliários.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "by0h729e",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cjpjvsej",
+          "type": "titulo",
+          "props": {
+            "text": "O que significa função socioambiental? ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cpkkzmgy",
+          "type": "prose",
+          "props": {
+            "html": "<p>A função socioambiental dos imóveis públicos corresponde à obrigação de utilizar o patrimônio estatal em benefício da coletividade. Ela se concretiza quando os imóveis públicos contribuem para a promoção de direitos, a proteção ambiental, o desenvolvimento territorial, a inclusão social, a preservação cultural ou a geração de valor econômico para a sociedade. </p>"
+          }
+        },
+        {
+          "id": "bekv9g9x",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo prático",
+            "icon": "map-pin",
+            "color": "",
+            "slot": "bekv9g9x__slot",
+            "collapse": "none",
+            "title": "A experiência da União ",
+            "children": "<p>A aplicação do conceito de função socioambiental ganhou destaque na gestão dos imóveis da União a partir dos anos 2000, quando a Secretaria do Patrimônio da União passou a incorporar de forma mais explícita objetivos relacionados à regularização fundiária, habitação de interesse social, proteção ambiental, desenvolvimento territorial e apoio a políticas públicas. </p><p>Essa experiência contribuiu para consolidar uma visão mais ampla do patrimônio público como instrumento de desenvolvimento, cidadania e sustentabilidade, influenciando debates e iniciativas em diferentes esferas da administração pública brasileira.</p>"
+          }
+        },
+        {
+          "id": "bx6sr0q3",
+          "type": "markerlist",
+          "props": {
+            "variant": "icon",
+            "icon": "link",
+            "accent": "var(--slate-200)",
+            "items": [
+              {
+                "title": "Manual de Regularização Fundiária em Terras da União",
+                "text": "<a href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/\" data-btn=\"secondary\">Clique aqui para acessar o material</a>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bbo8ndwj",
+      "type": "pagefooter",
+      "props": {
+        "code": "A função socioambiental dos imóveis públicos [M411]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Resumo",
+            "name": "Angélia Faddoul&nbsp;"
+          },
+          {
+            "role": "Versão",
+            "name": "Julho de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}

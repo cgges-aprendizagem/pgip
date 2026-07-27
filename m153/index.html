@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M153 - Sistemas estruturantes</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"bqi7ap1p__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bqi7ap1p__slot.png"},"b6xjf083__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-b6xjf083__slot.png"},"bok79ziu__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bok79ziu__slot.png"},"bofapznb__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bofapznb__slot.png"},"bjemmckh__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-bjemmckh__slot.png"},"bxg8kmtr__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-5-bxg8kmtr__slot.png"},"b8uu43we__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-6-b8uu43we__slot.png"},"bgt024ws__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-7-bgt024ws__slot.png"},"bmedo8dz__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-8-bmedo8dz__slot.png"},"bvf3wldo__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-9-bvf3wldo__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M153 - Sistemas estruturantes","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"c5mzm79r","text":"Plataforma Integrada de Gestão do Patrimônio da União (SPUnet)","hidden":false},{"id":"b_mrxz1ovl_h44s","text":"Sistema Nacional de Gestão de Informações Territoriais (SINTER)","hidden":false},{"id":"b_mrxraqz0_xks1","text":"Cadastro Imobiliário Brasileiro (CIB)","hidden":false},{"id":"b_mrxrht4a_ojez","text":"Sistema de Gestão Fundiária (SIGEF)","hidden":false},{"id":"cdbyjc1j","text":"Sistema de Cadastro Ambiental Rural (SICAR)","hidden":false},{"id":"b_mrxzb39x_871j","text":"Sistema Nacional de Cadastro Rural (SNCR)","hidden":false},{"id":"b_mrxzkpu3_m5pc","text":"Catálogo de dados geoespaciais da Secretaria do Patrimônio da União (GeoPortal-SPU)","hidden":false},{"id":"c4u5vckm","text":"GeoVisão ","hidden":false},{"id":"c31yb4e6","text":"Portal Brasileiro de Dados Geoespaciais","hidden":false}]}},"blocks":[{"id":"bddxu1hq","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"bvf3wldo","type":"hero","props":{"kicker":"Processos, sistemas e instrumentos de gestão de imóveis públicos","kickerIcon":"compass","title":"Sistemas estruturantes de gestão territorial e patrimonial no Brasil","byline":"","slot":"bvf3wldo__slot"}},{"id":"b37lcvv0","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b7htw0ne","type":"prose","props":{"html":"\u003cp>A gestão de imóveis públicos depende cada vez menos de documentos isolados e cada vez mais da integração de informações produzidas por diferentes órgãos, instituições e sistemas. Para decidir sobre a destinação de um imóvel, promover sua regularização fundiária, realizar uma fiscalização, avaliar restrições ambientais ou simplesmente confirmar sua situação jurídica, o gestor público precisa acessar e interpretar informações de diversas naturezas: cadastrais, registrais, geográficas, ambientais, fundiárias e patrimoniais.\u003c/p>\u003cp>Nas últimas décadas, o Estado brasileiro desenvolveu um conjunto de sistemas e plataformas voltados à organização dessas informações. Embora tenham sido criados por diferentes instituições e para finalidades específicas, esses sistemas formam hoje uma verdadeira infraestrutura nacional de informações territoriais e patrimoniais. Alguns são voltados à gestão de imóveis públicos; outros tratam do cadastro rural, do registro de imóveis, das informações ambientais ou da representação geográfica do território. Em conjunto, permitem compreender quem ocupa determinado imóvel, quais são seus limites, sua situação registral, suas restrições ambientais, sua utilização atual e sua inserção no território.\u003c/p>"}},{"id":"bu7fb5n1","type":"callout","props":{"variant":"ear","tone":"attention","icon":"lightbulb","title":"Vale destacar","heading":"","children":"\u003cp>Estados, municípios e outras instituições públicas também possuem sistemas, cadastros e soluções próprias de gestão territorial e patrimonial, muitas vezes essenciais para a atuação em seus respectivos contextos. Esses instrumentos não são menos relevantes do que os apresentados neste material. Entretanto, considerando o caráter introdutório e abrangente deste programa de aprendizagem, o foco será direcionado aos principais sistemas estruturantes de alcance nacional e às plataformas que exercem papel estratégico na integração, produção e compartilhamento de informações territoriais e patrimoniais no país.\u003c/p>"}},{"id":"bdn5h874","type":"prose","props":{"html":"\u003cp>Para os profissionais que atuam na gestão patrimonial imobiliária, \u003cmark data-hl=\"petrol\">conhecer esses sistemas é tão importante quanto compreender conceitos jurídicos ou procedimentos administrativos\u003c/mark>. Mais do que ferramentas tecnológicas, eles representam fontes estratégicas de informação que apoiam o planejamento, a fiscalização, a regularização fundiária, a destinação de imóveis, a arrecadação patrimonial e a tomada de decisões baseada em evidências.\u003c/p>\u003cp>O objetivo deste material não é ensinar a operar cada sistema, mas apresentar seus principais \u003cb>objetivos\u003c/b>, \u003cb>funcionalidades\u003c/b>, \u003cb>responsáveis institucionais\u003c/b>, \u003cb>formas de utilização\u003c/b> e \u003cb>aplicações práticas\u003c/b> na gestão territorial e patrimonial pública, contribuindo para que o participante compreenda como as diferentes bases de informação se complementam e apoiam a atuação do Estado sobre o território e o patrimônio público.\u003c/p>"}}]},{"id":"be0yo82j","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"c5mzm79r","type":"titulo","props":{"text":"Plataforma Integrada de Gestão do Patrimônio da União (SPUnet)","level":"h2"}},{"id":"c6ej847c","type":"prose","props":{"html":"\u003cp>O SPUnet é o principal sistema corporativo utilizado pela Secretaria do Patrimônio da União (SPU) para cadastro e gestão dos imóveis da União e das entidades autárquicas e fundacionais federais. \u003c/p>"}},{"id":"bqi7ap1p","type":"figure","props":{"slot":"bqi7ap1p__slot","src":"","fit":"contain","size":"full","title":"Visão geral da Plataforma SPUnet","caption":"Módulos que compõem o SPUnet em sua totalidade","credit":"Imagem: \u003ca href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/o-que-e-o-spunet-1\">MGI/SPU - O que é o SPUnet\u003c/a>"}},{"id":"bdakd717","type":"prose","props":{"html":"\u003cp>Mais do que um simples cadastro, o sistema funciona como a principal base de informações patrimoniais do Governo Federal, apoiando atividades operacionais, gerenciais e estratégicas. Por meio dele é possível registrar características físicas e dominiais dos imóveis, acompanhar contratos de destinação, controlar receitas patrimoniais e subsidiar processos de regularização fundiária e fiscalização.\u003c/p>\u003cp>A evolução do SPUnet reflete a transformação da gestão patrimonial pública no Brasil, que \u003cmark>passou de uma lógica predominantemente documental para uma gestão baseada em dados, indicadores e integração com ferramentas geoespaciais\u003c/mark>.\u003c/p>"}},{"id":"b04ygxdm","type":"panel","props":{"variant":"box","kicker":"Módulos já implantados","kickerIcon":"map-pin","title":"","color":"","bg":"var(--bg-paper)","body":""},"children":[{"id":"b43m3837","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bikmn1f7","type":"markerlist","props":{"variant":"icon","icon":"monitor-check","accent":"","items":[{"title":"Acessos (2016)","text":"Gerenciamento de permissões para acesso a módulos e funcionalidades. "},{"title":"Serviços/Portal e Módulo de Atendimento (2016)","text":"Portal para protocolo de requerimentos e área interna de atendimento.  "},{"title":"Acervo (2017)","text":"Gestão do acervo histórico.  "},{"title":"Cadastro (2022)","text":"Cadastramento de imóveis e informações de incorporação.  "},{"title":"GEOdados (2024)","text":"gestão especializada de dados geoespaciais.  "}]}},{"id":"b_mrxpzkpt_sjgs","type":"markerlist","props":{"variant":"icon","icon":"monitor-check","accent":"","items":[{"title":"GEOportal (2024)","text":"Catálogo de dados geoespaciais e mapas temáticos.  "},{"title":"Contratos (2024)","text":"Formalização e assinatura de atos e contratos de destinação."},{"title":"Receitas (2025)","text":"Gestão de receitas de contratos onerosos (fase 1: acompanhamento financeiro de contratos onerosos)."},{"title":"Avaliação (2026)","text":"Avaliação de imóveis da União."},{"title":"Destinação (2026)","text":"Destinação e gestão da utilização de imóveis."}]}}]}]}]},{"id":"byk1ixur","type":"section","props":{"width":"content","surface":"dark","pad":"lg"},"children":[{"id":"b3mdizcj","type":"kicker","props":{"icon":"compass","children":"SPUNET"}},{"id":"b91mziwk","type":"accordion","props":{"numbered":false,"items":[{"title":"Órgão gestor","content":"Secretaria do Patrimônio da União (SPU/MGI), órgão integrante do Ministério da Gestão e da Inovação em Serviços Públicos (MGI)","linkHref":"","linkLabel":"","linkButton":""},{"title":"Quem utiliza?","content":"\u003cul>\u003cli>Unidade Central da SPU;\u003c/li>\u003cli>Superintendências do Patrimônio da União nos estados;\u003c/li>\u003cli>Destinatários de imóveis da União (caso do Portal de Serviços)\u003c/li>\u003cli>Órgãos federais autorizados;\u003c/li>\u003c/ul>","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com a gestão patrimonial","content":"Constitui o principal sistema de apoio à gestão dos imóveis da União, sendo utilizado em praticamente todas as funções finalísticas da SPU.","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"b_mry1rxjn_klex","type":"feature","props":{"columns":1,"card":true,"accent":"","layout":"top","items":[{"icon":"link","title":"Plataforma Integrada de Gestão do Patrimônio da União (SPUnet)","text":"\u003cp>\u003ca href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/o-que-e-o-spunet-1\">\u003cspan data-color=\"petrol\">Mais informações - SPUnet\u003c/span>\u003c/a>\u003c/p>\u003cp>\u003c/p>"}]}}]},{"id":"b_mrxz1ovl_huup","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_mrxz1ovl_h44s","type":"titulo","props":{"text":"Sistema Nacional de Gestão de Informações Territoriais (SINTER)","level":"h2"}},{"id":"b_mrxz1ovl_0efg","type":"prose","props":{"html":"\u003cp>O SINTER foi criado para enfrentar um dos maiores desafios da gestão territorial brasileira: a fragmentação das informações sobre imóveis. Tradicionalmente, dados registrais, cadastrais, fiscais e geoespaciais eram produzidos e armazenados por instituições diferentes, dificultando a construção de uma visão integrada do território.\u003c/p>\u003cp>Desenvolvido pela Receita Federal, o SINTER funciona como uma plataforma nacional de integração de informações territoriais. Seu objetivo não é substituir os sistemas existentes, mas permitir que diferentes bases conversem entre si, promovendo interoperabilidade e compartilhamento de informações entre órgãos públicos e entidades parceiras. Sua implementação foi impulsionada pela Lei Complementar nº 214/2025, que regulamentou a Reforma Tributária e vinculou o CIB à arrecadação do Imposto sobre Bens e Serviços (IBS) e da Contribuição sobre Bens e Serviços (CBS).\u003c/p>"}},{"id":"bxydgfzg","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b6xjf083","type":"figure","props":{"slot":"b6xjf083__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}},{"id":"bt292o09","type":"prose","props":{"html":"\u003cp>A iniciativa busca aproximar o universo dos registros imobiliários, dos cadastros territoriais e das bases geoespaciais, contribuindo para aumentar a segurança jurídica, reduzir inconsistências cadastrais e apoiar políticas públicas relacionadas à tributação, regularização fundiária, planejamento urbano e gestão patrimonial.\u003c/p>\u003cp>Para os gestores de imóveis públicos, o SINTER representa uma importante ferramenta de \u003cb>integração entre cadastro e registro\u003c/b>, auxiliando na \u003cmark data-hl=\"green\">identificação de conflitos dominiais, inconsistências registrais e sobreposições de informações territoriais\u003c/mark>.\u003c/p>"}}]},{"id":"b1rinfre","type":"kicker","props":{"icon":"compass","children":"SINTER"}},{"id":"b_mrxz1ovl_oad0","type":"accordion","props":{"numbered":false,"items":[{"title":"Ato de instituição / fundamento principal","content":"\u003cp>\u003ca href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11208.htm\">Decreto nº 11.208, de 26 de setembro de 2022\u003c/a>\u003c/p>","imageSlot":"b_mrxz1ovl_oad0__items_0_imageSlot"},{"title":"Órgão gestor","content":"Receita Federal do Brasil.","imageSlot":"b_mrxz1ovl_oad0__items_1_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Quem utiliza?","content":"\u003cp>\u003c/p>\u003cul>\u003cli> Receita Federal;\u003c/li>\u003cli> Cartórios de Registro de Imóveis;\u003c/li>\u003cli> Municípios conveniados;\u003c/li>\u003cli> Órgãos fundiários;\u003c/li>\u003cli> Órgãos patrimoniais;\u003c/li>\u003cli> Instituições de controle;\u003c/li>\u003cli> Órgãos de planejamento territorial.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"b_mrxz1ovl_oad0__items_2_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com a gestão patrimonial","content":"Apoia a regularização fundiária, a identificação de inconsistências dominiais, a integração entre cadastro e registro e o fortalecimento da governança territorial.","imageSlot":"b_mrxz1ovl_oad0__items_3_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com outros sistemas","content":"\u003cp>\u003c/p>\u003cul>\u003cli> Cartórios de Registro de Imóveis;\u003c/li>\u003cli> SIGEF;\u003c/li>\u003cli> SNCR;\u003c/li>\u003cli> Cadastros municipais;\u003c/li>\u003cli> Sistemas tributários;\u003c/li>\u003cli> Bases geoespaciais federais.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"b_mrxz1ovl_oad0__items_4_imageSlot","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"b_mry1uty2_o2uk","type":"feature","props":{"columns":1,"card":true,"accent":"","layout":"top","items":[{"icon":"link","title":"Sistema Nacional de Gestão de Informações Territoriais (SINTER)","text":"\u003cp>\u003ca href=\"https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/sinter\">Mais informações - SINTER\u003c/a>\u003c/p>\u003cp>\u003c/p>"}]}}]},{"id":"b_mrxraqz0_7e27","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"b_mrxraqz0_xks1","type":"titulo","props":{"text":"Cadastro Imobiliário Brasileiro (CIB)","level":"h2"}},{"id":"b_mrxraqz0_xhl5","type":"prose","props":{"html":"\u003cp>O Cadastro Imobiliário Brasileiro (CIB) é um sistema nacional de identificação de imóveis instituído pelo Decreto nº 11.208/2022, no âmbito do SINTER, com o objetivo de promover a integração entre diferentes bases cadastrais territoriais do país. O CIB atribui um código único às unidades imobiliárias e aos \u003cb>\u003cmark data-hl=\"sand\">Bens Imóveis Cadastrados e Identificados (BICE)\u003c/mark>\u003c/b>, que correspondem os bens públicos ou privados de uso especial e os bens do patrimônio cultural integrantes do domínio da União, dos Estados, do Distrito Federal e dos Municípios, incluído o espaço aéreo sobre esses bens, o subsolo e as áreas do mar territorial, da zona econômica exclusiva e da plataforma continental. A iniciativa busca garantir que um mesmo imóvel possa ser reconhecido de forma padronizada por diferentes instituições e sistemas. \u003c/p>"}},{"id":"bfdxwbs6","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bfaby831","type":"prose","props":{"html":"\u003cp>Para a gestão patrimonial pública, o CIB possui grande potencial estratégico ao facilitar a integração entre informações registrais, ambientais, fundiárias e patrimoniais, contribuindo para a qualificação dos inventários de imóveis públicos, a regularização fundiária, a interoperabilidade entre sistemas e o fortalecimento da governança territorial.\u003c/p>"}},{"id":"bok79ziu","type":"figure","props":{"slot":"bok79ziu__slot","src":"","fit":"contain","size":"full","title":"","caption":"Ele funciona como um identificador único para cada imóvel do país, similar ao CPF (para pessoas físicas) e ao CNPJ (para as empresas). Sua estrutura é um código alfanumérico de 7 caracteres + dígito verificador:  ABC1234-5","credit":""}}]},{"id":"bbz0kywo","type":"kicker","props":{"icon":"compass","children":"CIB"}},{"id":"b_mrxraqz0_bkcw","type":"accordion","props":{"numbered":false,"items":[{"title":"Ato de instituição / fundamento principal","content":"\u003cp>\u003ca href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11208.htm\">Decreto nº 11.208, de 26 de setembro de 2022\u003c/a>\u003c/p>","imageSlot":"b_mrxraqz0_bkcw__items_0_imageSlot"},{"title":"Objetivos","content":"\u003cp>\u003c/p>\u003cul>\u003cli> Identificar univocamente cada imóvel brasileiro; \u003c/li>\u003cli> Integrar informações territoriais; \u003c/li>\u003cli> Facilitar interoperabilidade entre sistemas; \u003c/li>\u003cli> Reduzir inconsistências cadastrais; \u003c/li>\u003cli> Fortalecer governança territorial; \u003c/li>\u003cli> Apoiar políticas públicas.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"c_b8du3ho__imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Órgão gestor","content":"Receita Federal do Brasil (no âmbito do SINTER).","imageSlot":"b_mrxraqz0_bkcw__items_1_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Quem utiliza?","content":"\u003cp>\u003c/p>\u003cul>\u003cli> Receita Federal; \u003c/li>\u003cli> Municípios; \u003c/li>\u003cli> Estados; \u003c/li>\u003cli> Cartórios; \u003c/li>\u003cli> INCRA; \u003c/li>\u003cli> SPU; \u003c/li>\u003cli> órgãos ambientais; \u003c/li>\u003cli> instituições financeiras; \u003c/li>\u003cli> demais órgãos produtores de informação territorial.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"b_mrxraqz0_bkcw__items_2_imageSlot","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"b_mry1u52k_5yj8","type":"feature","props":{"columns":1,"card":true,"accent":"","layout":"top","items":[{"icon":"link","title":"Cadastro Imobiliário Brasileiro (CIB)","text":"\u003cul>\u003cli>\u003ca href=\"https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/sinter/cib\">Mais informações - CIB\u003c/a>\u003c/li>\u003cli>\u003ca href=\"https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/cadastros/cib\">Perguntas frequentes sobre o CIB\u003c/a>\u003c/li>\u003c/ul>"}]}}]},{"id":"b_mrxrht4a_1cgz","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_mrxrht4a_ojez","type":"titulo","props":{"text":"Sistema de Gestão Fundiária (SIGEF)","level":"h2"}},{"id":"b_mrxrht4a_biuo","type":"prose","props":{"html":"\u003cp>O SIGEF é o sistema responsável pela recepção, validação, certificação e disponibilização das informações georreferenciadas dos imóveis rurais brasileiros. Criado pelo Instituto Nacional de Colonização e Reforma Agrária (INCRA) em atendimento à legislação de georreferenciamento de imóveis rurais, o sistema representa um marco na modernização da gestão fundiária nacional, substituindo descrições imprecisas por representações cartográficas precisas dos limites dos imóveis.\u003c/p>\u003cp>Por meio do SIGEF, profissionais habilitados submetem peças técnicas contendo os vértices e limites dos imóveis rurais, que são automaticamente confrontados com a base nacional de imóveis certificados. Esse processo reduz sobreposições, amplia a segurança jurídica e fortalece a governança territorial.\u003c/p>"}},{"id":"bofapznb","type":"figure","props":{"slot":"bofapznb__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}},{"id":"bfbjdbp2","type":"panel","props":{"variant":"box","kicker":"Certificação e gestão de dados georreferenciados no SIGEF","kickerIcon":"map-pin","title":"","color":"","bg":"var(--bg-paper)","body":"\u003cp>No SIGEF são realizadas a certificação de dados referentes a limites de imóveis rurais (§ 5º do art. 176 da Lei nº 6.015, de 31 de dezembro de 1973) e a gestão de contratos de serviços de georreferenciamento com a administração pública, compreendendo:\u003c/p>"},"children":[{"id":"b1cdqpj4","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bb2sdzgd","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--green-600)","items":[{"title":"","text":"Credenciamento de profissional apto(a) a requerer certificação."},{"title":"","text":"Autenticidade de usuários(as) do sistema com certificação digital, seguindo padrões da Infraestrutura de Chaves Públicas (ICP-Brasil)."},{"title":"","text":"Recepção de dados georreferenciados padronizados, via internet."},{"title":"","text":"Validação rápida, impessoal, automatizada e precisa, de acordo com os parâmetros técnicos vigentes."},{"title":"","text":"Geração automática de peças técnicas (planta e memorial descritivo), com a possibilidade de verificação de autenticidade online."}],"__pullDown":true}},{"id":"b_mrxyksc6_fvra","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--green-600)","items":[{"title":"","text":"Gerência eletrônica de requerimentos relativos a parcelas: certificação, registro, desmembramento, remembramento, retificação e cancelamento."},{"title":"","text":"Possibilidade de inclusão de informações atualizadas do registro de imóveis (matrícula e proprietário) via internet, permitindo a efetiva sincronização entre os dados cadastrais e registrais."},{"title":"","text":"Gestão de contratos de serviços de georreferenciamento com a administração pública, com acesso para órgãos públicos, empresas, responsáveis técnicos(as) e fiscais."},{"title":"","text":"Pesquisa pública de parcelas certificadas, requerimentos e credenciados(as)."}]}}]}]},{"id":"b9peopxa","type":"prose","props":{"html":"\u003cp>Para a gestão patrimonial pública, especialmente em áreas rurais, o SIGEF tornou-se uma ferramenta fundamental para identificação de limites, regularização fundiária, arrecadação de terras públicas e resolução de conflitos territoriais.\u003c/p>"}},{"id":"buq6vj39","type":"kicker","props":{"icon":"compass","children":"SIGEF"}},{"id":"b_mrxrht4a_aeb3","type":"accordion","props":{"numbered":false,"items":[{"title":"Ato de instituição / fundamento principal","content":"\u003cp>É resultado da implementação de um conjunto de normas relacionadas ao georreferenciamento de imóveis rurais.\u003c/p>","imageSlot":"b_mrxrht4a_aeb3__items_0_imageSlot"},{"title":"Órgão gestor","content":"Instituto Nacional de Colonização e Reforma Agrária (INCRA)","imageSlot":"b_mrxrht4a_aeb3__items_1_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Quem utiliza?","content":"\u003cp>\u003c/p>\u003cul>\u003cli> INCRA;\u003c/li>\u003cli> Cartórios de Registro de Imóveis;\u003c/li>\u003cli> Profissionais de georreferenciamento;\u003c/li>\u003cli> Proprietários rurais;\u003c/li>\u003cli> Órgãos fundiários;\u003c/li>\u003cli> Estados e municípios.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"b_mrxrht4a_aeb3__items_2_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com a gestão patrimonial","content":"Apoia a regularização fundiária, a identificação de terras públicas, a arrecadação de imóveis rurais e a delimitação territorial de imóveis públicos.","imageSlot":"b_mrxrht4a_aeb3__items_3_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com outros sistemas","content":"\u003cp>\u003c/p>\u003cul>\u003cli> SNCR;\u003c/li>\u003cli> SICAR;\u003c/li>\u003cli> Cartórios de Registro de Imóveis;\u003c/li>\u003cli> SINTER.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"b_mrxrht4a_aeb3__items_4_imageSlot","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"b_mry1tize_da06","type":"feature","props":{"columns":2,"card":true,"accent":"","layout":"top","items":[{"icon":"link","title":"Sistema de Gestão Fundiária","text":"\u003ca href=\"https://sigef.incra.gov.br\">Mais informações - SIGEF\u003c/a>"},{"icon":"link","title":"Manual do SIGEF","text":"\u003ca href=\"https://sigef.incra.gov.br/documentos/manual/\">Acesse aqui o manual do SIGE\u003c/a>F"}]}}]},{"id":"bayfn1sx","type":"section","props":{"width":"content","surface":"terra-dark","pad":"lg"},"children":[{"id":"cdbyjc1j","type":"titulo","props":{"text":"Sistema de Cadastro Ambiental Rural (SICAR)","level":"h2"}},{"id":"ccplldrc","type":"prose","props":{"html":"\u003cp>O SICAR é a principal base nacional de informações ambientais dos imóveis rurais brasileiros. Criado pela\u003ca href=\"https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm\"> Lei nº 12.651/2012\u003c/a>\u003ca href=\"https://sigef.incra.gov.br/documentos/manual/\">\u003c/a>, no âmbito do Sistema Nacional de Informação sobre Meio Ambiente (SINIMA), e regulamentado pelo \u003ca href=\"https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7830.htm\">Decreto nº 7.830, de 17 de outubro de 2012\u003c/a> e pela \u003ca href=\"https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7830.htm\">Instrução Normativa MMA nº 2, de 5 de maio de 2014\u003c/a>, o \u003cb>Cadastro Ambiental Rural (CAR)\u003c/b> é um registro público eletrônico de âmbito nacional, obrigatório para todos os imóveis rurais, com a finalidade de integrar as informações ambientais das propriedades e posses rurais referentes às Áreas de Preservação Permanente (APP), de uso restrito, de Reserva Legal, de remanescentes de florestas e demais formas de vegetação nativa, e das áreas consolidadas, compondo base de dados para controle, monitoramento, planejamento ambiental e econômico e combate ao desmatamento.\u003c/p>"}},{"id":"bjemmckh","type":"figure","props":{"slot":"bjemmckh__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}},{"id":"bjfrvcw8","type":"prose","props":{"html":"\u003cp>Ao longo dos anos, o SICAR transformou-se em uma das maiores bases geoespaciais do país, permitindo a realização de análises ambientais em escala nacional. Além de apoiar a regularização ambiental dos imóveis rurais, o sistema tornou-se referência para planejamento territorial, monitoramento ambiental e formulação de políticas públicas.\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A inscrição no CAR é o primeiro passo para obtenção da regularidade ambiental do imóvel, e contempla: dados do proprietário, possuidor rural ou responsável direto pelo imóvel rural; dados sobre os documentos de comprovação de propriedade e ou posse; e informações georreferenciadas do perímetro do imóvel, das áreas de interesse social e das áreas de utilidade pública, com a informação da localização dos remanescentes de vegetação nativa, das Áreas de Preservação Permanente, das áreas de Uso Restrito, das áreas consolidadas e das Reservas Legais.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Para a gestão patrimonial pública, o SICAR fornece informações essenciais sobre restrições e características ambientais dos imóveis rurais.\u003c/span>\u003c/p>"}},{"id":"bpws3z3m","type":"kicker","props":{"icon":"compass","children":"SICAR"}},{"id":"bs10l6dv","type":"accordion","props":{"numbered":false,"items":[{"title":"Órgão gestor","content":"Serviço Florestal Brasileiro (Ministério do Meio Ambiente).","imageSlot":"c_s2pkogs__imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Quem utiliza?","content":"\u003cp>\u003c/p>\u003cul>\u003cli> Proprietários rurais;\u003c/li>\u003cli> Órgãos ambientais federais;\u003c/li>\u003cli> Órgãos ambientais estaduais;\u003c/li>\u003cli> Municípios;\u003c/li>\u003cli> INCRA;\u003c/li>\u003cli> SPU;\u003c/li>\u003cli> Instituições de pesquisa.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"c_bv2ev3h__imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com a gestão patrimonial","content":"Apoia análises ambientais, regularização fundiária, fiscalização e destinação de imóveis públicos rurais.","imageSlot":"c_1jn56e2__imageSlot","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"byrs8x10","type":"feature","props":{"columns":1,"card":true,"accent":"var(--terra-600)","layout":"top","items":[{"icon":"link","title":"O que é o CAR?","text":"\u003cp>\u003ca href=\"https://www.car.gov.br/#/sobre\">\u003cspan data-color=\"terra\">Mais informações - CAR\u003c/span>\u003c/a>\u003c/p>\u003cp>\u003c/p>"}]}}]},{"id":"b_mrxzb39x_7qye","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"b_mrxzb39x_871j","type":"titulo","props":{"text":"Sistema Nacional de Cadastro Rural (SNCR)","level":"h2"}},{"id":"b_mrxzb39x_rhm8","type":"prose","props":{"html":"\u003cp>O Sistema Nacional de Cadastro Rural (SNCR) foi instituído pela \u003cb>\u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/l5868.htm\">Lei nº 5.868, de 12 de dezembro de 1972\u003c/a>\u003c/b>, com a finalidade de promover o levantamento sistemático, a identificação e a organização das informações relacionadas aos imóveis rurais brasileiros e aos seus detentores. Concebido como instrumento de apoio ao planejamento governamental, o sistema busca fornecer informações confiáveis sobre a estrutura fundiária nacional, subsidiando políticas públicas voltadas à reforma agrária, tributação, regularização fundiária, desenvolvimento rural e ordenamento territorial.\u003c/p>"}},{"id":"bo344kio","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg","__pullUp":false},"children":[{"id":"b0hlgmj6","type":"prose","props":{"html":"\u003cp>Mais do que um simples cadastro de imóveis, o SNCR constitui uma importante base nacional de informações fundiárias, reunindo dados sobre localização, área, titularidade, exploração e utilização dos imóveis rurais. Ao longo de sua trajetória, tornou-se uma das principais referências para a gestão territorial rural no país e passou a se articular com sistemas mais recentes, como o SIGEF e o SICAR.\u003c/p>\u003cp>Para a gestão patrimonial pública, o SNCR representa uma fonte relevante de informações para identificação de imóveis rurais, análise da ocupação do território, regularização fundiária e reconhecimento de áreas públicas e privadas.\u003c/p>"}},{"id":"bxg8kmtr","type":"figure","props":{"slot":"bxg8kmtr__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":"","__pullUp":false,"__pullDown":false}}]},{"id":"bwmaokve","type":"kicker","props":{"icon":"compass","children":"SNCR"}},{"id":"b_mry2cpy1_zlw9","type":"accordion","props":{"numbered":false,"items":[{"title":"Órgão gestor","content":"INCRA","imageSlot":"b_mry2cpy1_zlw9__items_0_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Legislação associada","content":"\u003cp>\u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/l5868.htm\">Lei nº 5.868/72\u003c/a>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">; Lei nº 4.504/64; Lei nº 8.629/93\u003c/span>\u003c/p>","imageSlot":"b_mry2cpy1_zlw9__items_1_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com a gestão patrimonial","content":"Apoia regularização fundiária, arrecadação de terras públicas e análise de ocupações rurais.","imageSlot":"b_mry2cpy1_zlw9__items_2_imageSlot","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"b_mry2cs45_t38m","type":"feature","props":{"columns":2,"card":true,"accent":"var(--ochre-600)","layout":"top","items":[{"icon":"link","title":"Sistema Nacional de Cadastro Rural - SNCR","text":"\u003cspan data-color=\"petrol\">\u003cspan data-color=\"ochre-light\">\u003cspan data-color=\"ochre\">\u003ca href=\"https://www.gov.br/conecta/catalogo/apis/sncr-sistema-nacional-de-cadastro-rural\">Mais informações\u003c/a>\u003c/span>\u003c/span>\u003c/span> \u003cbr>"},{"icon":"link","title":"Catálogo ","text":"\u003cspan data-color=\"ochre\">\u003ca href=\"https://www.gov.br/conecta/catalogo/apis/sncr-sistema-nacional-de-cadastro-rural\">Mais informações\u003c/a>\u003c/span>"}]}}]},{"id":"b_mrxzkpu3_sy8k","type":"section","props":{"width":"content","surface":"dark","pad":"lg"},"children":[{"id":"b_mrxzkpu3_m5pc","type":"titulo","props":{"text":"Catálogo de dados geoespaciais da Secretaria do Patrimônio da União (GeoPortal-SPU)","level":"h2"}},{"id":"bwsrjznx","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_mrxzkpu3_bptf","type":"prose","props":{"html":"\u003cp>O GeoPortal SPU é a principal plataforma geoespacial da Secretaria do Patrimônio da União. Desenvolvido para ampliar a dimensão territorial da gestão patrimonial, o sistema permite visualizar imóveis da União em conjunto com diversas camadas de informação geográfica, ambiental, fundiária e administrativa, \u003cspan style=\"text-wrap-mode: initial; color: inherit;\"> de forma prática e integrada, dados sobre a localização, características e uso dos bens públicos, oferecendo mapas interativos e camadas temáticas que facilitam a compreensão do território.\u003c/span>\u003c/p>\u003cp>Pode ser útil para gestores públicos, pesquisadores e cidadãos em geral, pois possibilita o acesso fácil e transparente às informações; ajuda na tomada de decisão mais qualificada; apoia estudos e pesquisas e contribui na integração com outras políticas públicas.\u003c/p>"}},{"id":"b8uu43we","type":"figure","props":{"slot":"b8uu43we__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]},{"id":"bj9csax7","type":"prose","props":{"html":"\u003cp>Além de apoiar as atividades internas da SPU/MGI, o GeoPortal-SPU também amplia a transparência das informações patrimoniais e facilita o acesso público aos dados territoriais relacionados aos imóveis da União.\u003c/p>"}},{"id":"bu3f7x3m","type":"kicker","props":{"icon":"compass","children":"GEOSPU"}},{"id":"b_mrxzb39x_vtw5","type":"accordion","props":{"numbered":false,"items":[{"title":"Órgão gestor","content":"Secretaria do Patrimônio da União (SPU/MGI).","imageSlot":"b_mrxzb39x_vtw5__items_0_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Quem utiliza?","content":"\u003cp>\u003c/p>\u003cul>\u003cli>SPU;\u003c/li>\u003cli>Órgãos federais;\u003c/li>\u003cli>Estados;\u003c/li>\u003cli>Municípios;\u003c/li>\u003cli>Universidades;\u003c/li>\u003cli>Pesquisadores;\u003c/li>\u003cli>Sociedade em geral.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"b_mrxzb39x_vtw5__items_1_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com a gestão patrimonial","content":"Apoia fiscalização, destinação, regularização fundiária, avaliação e planejamento territorial.","imageSlot":"b_mrxzb39x_vtw5__items_2_imageSlot","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"bggx2ly3","type":"feature","props":{"columns":1,"card":true,"accent":"var(--petrol-600)","layout":"top","items":[{"icon":"link","title":"Catálogo de dados geoespaciais da Secretaria do Patrimônio da União","text":"\u003ca href=\"https://geoportal-spunet.gestao.gov.br\">\u003cspan data-color=\"ochre-light\">\u003cspan data-color=\"petrol\">Mais informações - GeoSPU\u003c/span>\u003c/span>\u003c/a>\u003cbr>"}]}}]},{"id":"blsr6s23","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c4u5vckm","type":"titulo","props":{"text":"GeoVisão ","level":"h2"}},{"id":"cd8u7qlj","type":"prose","props":{"html":"\u003cp>O GeoVisão compreende solução corporativa de inteligência geoespacial integrada à plataforma SPUnet para transformar grandes volumes de dados geográficos em informações úteis para a tomada de decisão, tendo sido concebido para ampliar o acesso, a visualização e a confiabilidade das informações territoriais e patrimoniais da União.\u003c/p>"}},{"id":"bgt024ws","type":"figure","props":{"slot":"bgt024ws__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}},{"id":"bo210muw","type":"prose","props":{"html":"\u003cp>A ferramenta permite integrar dados de diversas fontes, gerar painéis temáticos e apoiar atividades relacionadas à fiscalização, regularização fundiária, avaliação patrimonial e planejamento das destinações. Por meio de uma interface web moderna e interoperável, o GEOvisão consolida mapas, imagens, indicadores e serviços geoespaciais em uma visão espacial unificada, promovendo maior eficiência, transparência e visão integrada do território.\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Na versão atual, a solução apresenta camadas de dados provenientes do Banco de Dados Geoespaciais da SPU/MGI, o BDGEO-SPU, e dados de áreas territoriais da União sob gestão de diferentes órgãos da administração pública federal. A integração desses dados fundiários em uma visão espacial única apoiará a gestão patrimonial, a análise territorial, a tomada de decisão e a governança de dados geoespaciais.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Sua principal contribuição é ampliar a capacidade analítica dos gestores, permitindo decisões mais orientadas por evidências.\u003c/span>\u003c/p>"}},{"id":"bbx6yp7k","type":"kicker","props":{"icon":"compass","children":"GEOVISÃO"}},{"id":"b_mry1glct_lwgi","type":"accordion","props":{"numbered":false,"items":[{"title":"Órgão gestor","content":"Secretaria do Patrimônio da União (SPU/MGI).","imageSlot":"b_mry1glct_lwgi__items_0_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com a gestão patrimonial","content":"Apoia planejamento, fiscalização, avaliação de imóveis e identificação de oportunidades de destinação.","imageSlot":"b_mry1glct_lwgi__items_2_imageSlot","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"b_mry09xva_sixb","type":"feature","props":{"columns":2,"card":true,"accent":"var(--terra-600)","layout":"top","items":[{"icon":"link","title":"SPUnet","text":"\u003cspan data-color=\"petrol\">\u003cspan data-color=\"ochre-light\">\u003cspan data-color=\"terra\">\u003ca href=\"https://spunet.sistema.gov.br/\">Mais informações - SPUnet\u003c/a>\u003c/span>\u003c/span>\u003c/span>\u003cbr>"},{"icon":"link","title":"Guia completo ","text":"\u003ca href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/capacitacao-1/arquivos/guia-completo-geovisao-v01.pdf\">Acessar guia completo GeoVisão\u003c/a>"}]}}]},{"id":"bhrce3we","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"c31yb4e6","type":"titulo","props":{"text":"Portal Brasileiro de Dados Geoespaciais","level":"h2"}},{"id":"bmedo8dz","type":"figure","props":{"slot":"bmedo8dz__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}},{"id":"b7j0yxu0","type":"prose","props":{"html":"\u003cp>A Infraestrutura Nacional de Dados Espaciais (INDE) é uma rede nacional destinada ao compartilhamento de dados geoespaciais produzidos pelos órgãos públicos brasileiros. Em vez de funcionar como um sistema único, a INDE atua como um conjunto integrado de tecnologias, políticas, mecanismos e procedimentos de coordenação e monitoramento, padrões e acordos necessários que permite localizar, acessar e utilizar informações geográficas produzidas por diferentes instituições.\u003c/p>\u003cp>A INDE foi concebida com o propósito de catalogar, integrar e harmonizar dados geoespaciais produzidos ou mantidos e geridos nas instituições de governo brasileiras, de modo que possam ser facilmente localizados, explorados em suas características e acessados para os mais variados fins por qualquer usuário com acesso à Internet. A catalogação dos dados geoespaciais é feita mediante seus respectivos metadados pelos próprios produtores e/ou gestores dos dados.\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A iniciativa busca evitar duplicidade de esforços, ampliar a interoperabilidade entre órgãos e promover o uso compartilhado de dados espaciais oficiais. Hoje, a INDE reúne milhares de conjuntos de dados relacionados ao território brasileiro, incluindo informações cartográficas, ambientais, fundiárias, urbanas e socioeconômicas.\u003c/span>\u003c/p>"}},{"id":"b8mc2z8s","type":"kicker","props":{"icon":"compass","children":"INDE"}},{"id":"b_mry1i3ft_80yg","type":"accordion","props":{"numbered":false,"items":[{"title":"Órgão gestor","content":"Instituto Brasileiro de Geografia e Estatística (IBGE), como entidade responsável pelo apoio técnico e administrativo à Comissão Nacional de Geoinformação (Congeo)","imageSlot":"b_mry1i3ft_80yg__items_1_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Ato de instituição / fundamento principal","content":"\u003cp>Decreto nº 6.666, de 27/11/2008 \u003c/p>","imageSlot":"b_mry1i3ft_80yg__items_0_imageSlot"},{"title":"Quem utiliza?","content":"\u003cp>\u003c/p>\u003cul>\u003cli>Órgãos federais;\u003c/li>\u003cli>Estados;\u003c/li>\u003cli>Municípios;\u003c/li>\u003cli>Universidades;\u003c/li>\u003cli>Institutos de pesquisa;\u003c/li>\u003cli>Empresas;\u003c/li>\u003cli>Gestores territoriais.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"b_mry1i3ft_80yg__items_2_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com a gestão patrimonial","content":"Fornece bases cartográficas e geoespaciais utilizadas em atividades de cadastro, georreferenciamento, fiscalização e planejamento territorial.","imageSlot":"b_mry1i3ft_80yg__items_3_imageSlot","linkHref":"","linkLabel":"","linkButton":""},{"title":"Interface com outros sistemas","content":"\u003cp>\u003c/p>\u003cul>\u003cli>Funciona como infraestrutura de referência para praticamente todos os sistemas geoespaciais governamentais.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","imageSlot":"b_mry1i3ft_80yg__items_4_imageSlot","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"b_mry0sllf_xexh","type":"feature","props":{"columns":1,"card":true,"accent":"var(--terra-600)","layout":"top","items":[{"icon":"link","title":"Infraestrutura Nacional de Dados Espaciais – INDE","text":"\u003cspan data-color=\"petrol\">\u003cspan data-color=\"ochre-light\">\u003ca href=\"https://inde.gov.br\">Mais informações - INDE\u003c/a>\u003c/span>\u003c/span>\u003cbr>"}]}}]},{"id":"b7pyzxim","type":"pagefooter","props":{"code":"Sistemas estruturantes de gestão territorial e patrimonial no Brasil [M153]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Claudson Moreira"},{"role":"Revisão","name":"-"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Julho de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"bqi7ap1p__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bqi7ap1p__slot.png"},"b6xjf083__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-b6xjf083__slot.png"},"bok79ziu__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bok79ziu__slot.png"},"bofapznb__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bofapznb__slot.png"},"bjemmckh__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-bjemmckh__slot.png"},"bxg8kmtr__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-5-bxg8kmtr__slot.png"},"b8uu43we__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-6-b8uu43we__slot.png"},"bgt024ws__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-7-bgt024ws__slot.png"},"bmedo8dz__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-8-bmedo8dz__slot.png"},"bvf3wldo__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-9-bvf3wldo__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","link":"\u003cpath d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"/>\u003cpath d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"/>","map-pin":"\u003cpath d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/>\u003ccircle cx=\"12\" cy=\"10\" r=\"3\"/>","monitor-check":"\u003cpath d=\"m9 10 2 2 4-4\"/>\u003crect width=\"20\" height=\"14\" x=\"2\" y=\"3\" rx=\"2\"/>\u003cpath d=\"M12 17v4\"/>\u003cpath d=\"M8 21h8\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return html;
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      return html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+    }
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

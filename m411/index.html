@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M411 - A função socioambiental dos imóveis públicos</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"b47mx4jg__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-b47mx4jg__slot.png"},"bn913j0t__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bn913j0t__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M411 - A função socioambiental dos imóveis públicos","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"bhauz8uh","text":"Sobre o manual","hidden":false},{"id":"cjpjvsej","text":"O que significa função socioambiental? ","hidden":false}]}},"blocks":[{"id":"bz5clsam","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"bn913j0t","type":"hero","props":{"kicker":"Fundamentos. estratégias e instrumentos de destinação patrimonial","kickerIcon":"compass","title":"A função socioambiental dos imóveis públicos","byline":"Manual de Regularização Fundiária em Terras da União","slot":"bn913j0t__slot"}},{"id":"bt71qcej","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"bhauz8uh","type":"titulo","props":{"text":"Sobre o manual","level":"h2"}},{"id":"b1qf3sm2","type":"prose","props":{"html":"\u003cp>Como resultado de um longo processo de aprendizado foi elaborado pela \u003cb>Secretaria do Patrimônio da União\u003c/b>, no ano de 2006, o \u003cb>\u003cmark data-hl=\"terra\">\u003ca href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/\">Manual de Regularização Fundiária em Terras da União\u003c/a>\u003c/mark>\u003c/b>, com a finalidade de oferecer subsídios, diretrizes e recomendações a agentes públicos, especialistas, lideranças civis e demais atores envolvidos na promoção da inclusão socioterritorial e na defesa do patrimônio público do Brasil.\u003c/p>"}},{"id":"b47mx4jg","type":"figure","props":{"slot":"b47mx4jg__slot","src":"","fit":"contain","size":"full","title":"Manual de Regularização Fundiária em Terras da União","caption":"\u003ca href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/\">Clique aqui para acessar o material na íntegra\u003c/a>&nbsp;","credit":"","__pullDown":false}},{"id":"b_ms3my3xg_pash","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Embora os capítulos B1 e B2 do Manual sejam redigidos com foco específico nos bens imóveis da \u003c/span>\u003cb style=\"text-wrap-mode: initial;\">União\u003c/b>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">, os \u003c/span>\u003cb style=\"text-wrap-mode: initial;\">princípios legais e constitucionais apresentados \u003c/b>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">neles se aplicam a \u003c/span>\u003cb style=\"text-wrap-mode: initial;\">qualquer ente da federação\u003c/b>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\"> (Estados, Distrito Federal e Municípios). Isso ocorre pelos seguintes motivos detalhados nos textos:\u003c/span>\u003c/p>"}},{"id":"bwk3tg4x","type":"feature","props":{"columns":1,"card":true,"accent":"var(--terra-500)","layout":"side","items":[{"icon":"scale","title":"Princípio Constitucional Universal","text":"\u003cspan data-fs=\"body\">O capítulo B1 esclarece que, com a promulgação da Constituição Federal de 1988, \u003cb>toda propriedade - seja ela pública ou privada - passou a ter o dever de cumprir uma função social.\u003c/b> O cumprimento dessa função está associado às responsabilidades e obrigações do Estado brasileiro como um todo para com a sociedade. Portanto, usar bens públicos para promover a justiça social, garantir o direito à moradia e fomentar o desenvolvimento local é uma meta aplicável aos patrimônios estaduais e municipais também.\u003c/span>"},{"icon":"notebook-pen","title":"Aplicação do Estatuto da Cidade","text":"\u003cspan data-fs=\"body\">O capítulo B2 detalha que o cumprimento da função socioambiental exige a interpretação integrada da legislação urbana e ambiental. Para verificar o uso adequado da propriedade urbana pública, deve ser aplicado o \u003cb>Estatuto da Cidade\u003c/b>, que estabelece exigências fundamentais de ordenação e diretrizes gerais que proíbem a retenção especulativa e exigem o respeito ao direito a cidades sustentáveis. Essas são leis federais que regem a política urbana em todo o território nacional, independentemente de quem seja o titular da terra pública.\u003c/span>"},{"icon":"pencil-ruler","title":"Subordinação ao Plano Diretor Municipal","text":"\u003cspan data-fs=\"body\">O texto reforça que é o \u003cb>Plano Diretor do Município\u003c/b> que define o conteúdo da função social da propriedade. O uso de bens imóveis inseridos no território do município, independentemente de qual ente federativo seja o proprietário, deverá \u003cb>sempre observar as diretrizes do Plano Diretor\u003c/b>.\u003c/span>"},{"icon":"handshake","title":"Cooperação Obrigatória","text":"\u003cspan data-fs=\"body\">O manual ainda destaca em sua seção de gestão compartilhada que a cooperação entre os governos para garantir a função social da propriedade é uma diretriz geral do Estatuto da Cidade e, portanto, é\u003cb> obrigatória para a União, Estados, Distrito Federal e Municípios.\u003c/b>\u003c/span>\u003cb>\u003c/b>"}]}},{"id":"bwgy56mh","type":"prose","props":{"html":"\u003cp>Em suma, as \"trilhas\" e os marcos legais apresentados nos capítulos B1 e B2 refletem o paradigma jurídico-urbanístico brasileiro que obriga todos os entes federativos a darem um destino socioambiental adequado aos seus respectivos patrimônios imobiliários.\u003c/p>"}}]},{"id":"by0h729e","type":"section","props":{"width":"content","surface":"dark","pad":"lg"},"children":[{"id":"cjpjvsej","type":"titulo","props":{"text":"O que significa função socioambiental? ","level":"h2"}},{"id":"cpkkzmgy","type":"prose","props":{"html":"\u003cp>A função socioambiental dos imóveis públicos corresponde à obrigação de utilizar o patrimônio estatal em benefício da coletividade. Ela se concretiza quando os imóveis públicos contribuem para a promoção de direitos, a proteção ambiental, o desenvolvimento territorial, a inclusão social, a preservação cultural ou a geração de valor econômico para a sociedade. \u003c/p>"}},{"id":"bekv9g9x","type":"examplecard","props":{"label":"Exemplo prático","icon":"map-pin","color":"","slot":"bekv9g9x__slot","collapse":"none","title":"A experiência da União ","children":"\u003cp>A aplicação do conceito de função socioambiental ganhou destaque na gestão dos imóveis da União a partir dos anos 2000, quando a Secretaria do Patrimônio da União passou a incorporar de forma mais explícita objetivos relacionados à regularização fundiária, habitação de interesse social, proteção ambiental, desenvolvimento territorial e apoio a políticas públicas. \u003c/p>\u003cp>Essa experiência contribuiu para consolidar uma visão mais ampla do patrimônio público como instrumento de desenvolvimento, cidadania e sustentabilidade, influenciando debates e iniciativas em diferentes esferas da administração pública brasileira.\u003c/p>"}},{"id":"bx6sr0q3","type":"markerlist","props":{"variant":"icon","icon":"link","accent":"var(--slate-200)","items":[{"title":"Manual de Regularização Fundiária em Terras da União","text":"\u003ca href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/\" data-btn=\"secondary\">Clique aqui para acessar o material\u003c/a>"}]}}]},{"id":"bbo8ndwj","type":"pagefooter","props":{"code":"A função socioambiental dos imóveis públicos [M411]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Resumo","name":"Angélia Faddoul&nbsp;"},{"role":"Versão","name":"Julho de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"b47mx4jg__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-b47mx4jg__slot.png"},"bn913j0t__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bn913j0t__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","handshake":"\u003cpath d=\"m11 17 2 2a1 1 0 1 0 3-3\"/>\u003cpath d=\"m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4\"/>\u003cpath d=\"m21 3 1 11h-2\"/>\u003cpath d=\"M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3\"/>\u003cpath d=\"M3 4h8\"/>","link":"\u003cpath d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"/>\u003cpath d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"/>","map-pin":"\u003cpath d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/>\u003ccircle cx=\"12\" cy=\"10\" r=\"3\"/>","notebook-pen":"\u003cpath d=\"M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4\"/>\u003cpath d=\"M2 6h4\"/>\u003cpath d=\"M2 10h4\"/>\u003cpath d=\"M2 14h4\"/>\u003cpath d=\"M2 18h4\"/>\u003cpath d=\"M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z\"/>","pencil-ruler":"\u003cpath d=\"M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13\"/>\u003cpath d=\"m8 6 2-2\"/>\u003cpath d=\"m18 16 2-2\"/>\u003cpath d=\"m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17\"/>\u003cpath d=\"M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z\"/>\u003cpath d=\"m15 5 4 4\"/>","scale":"\u003cpath d=\"M12 3v18\"/>\u003cpath d=\"m19 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1\"/>\u003cpath d=\"m5 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M7 21h10\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return html;
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      return html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+    }
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

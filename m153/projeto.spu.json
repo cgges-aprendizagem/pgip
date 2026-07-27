@@ -1,0 +1,1351 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M153 - Sistemas estruturantes",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "c5mzm79r",
+          "text": "Plataforma Integrada de Gestão do Patrimônio da União (SPUnet)",
+          "hidden": false
+        },
+        {
+          "id": "b_mrxz1ovl_h44s",
+          "text": "Sistema Nacional de Gestão de Informações Territoriais (SINTER)",
+          "hidden": false
+        },
+        {
+          "id": "b_mrxraqz0_xks1",
+          "text": "Cadastro Imobiliário Brasileiro (CIB)",
+          "hidden": false
+        },
+        {
+          "id": "b_mrxrht4a_ojez",
+          "text": "Sistema de Gestão Fundiária (SIGEF)",
+          "hidden": false
+        },
+        {
+          "id": "cdbyjc1j",
+          "text": "Sistema de Cadastro Ambiental Rural (SICAR)",
+          "hidden": false
+        },
+        {
+          "id": "b_mrxzb39x_871j",
+          "text": "Sistema Nacional de Cadastro Rural (SNCR)",
+          "hidden": false
+        },
+        {
+          "id": "b_mrxzkpu3_m5pc",
+          "text": "Catálogo de dados geoespaciais da Secretaria do Patrimônio da União (GeoPortal-SPU)",
+          "hidden": false
+        },
+        {
+          "id": "c4u5vckm",
+          "text": "GeoVisão ",
+          "hidden": false
+        },
+        {
+          "id": "c31yb4e6",
+          "text": "Portal Brasileiro de Dados Geoespaciais",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "bddxu1hq",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "bvf3wldo",
+      "type": "hero",
+      "props": {
+        "kicker": "Processos, sistemas e instrumentos de gestão de imóveis públicos",
+        "kickerIcon": "compass",
+        "title": "Sistemas estruturantes de gestão territorial e patrimonial no Brasil",
+        "byline": "",
+        "slot": "bvf3wldo__slot"
+      }
+    },
+    {
+      "id": "b37lcvv0",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b7htw0ne",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão de imóveis públicos depende cada vez menos de documentos isolados e cada vez mais da integração de informações produzidas por diferentes órgãos, instituições e sistemas. Para decidir sobre a destinação de um imóvel, promover sua regularização fundiária, realizar uma fiscalização, avaliar restrições ambientais ou simplesmente confirmar sua situação jurídica, o gestor público precisa acessar e interpretar informações de diversas naturezas: cadastrais, registrais, geográficas, ambientais, fundiárias e patrimoniais.</p><p>Nas últimas décadas, o Estado brasileiro desenvolveu um conjunto de sistemas e plataformas voltados à organização dessas informações. Embora tenham sido criados por diferentes instituições e para finalidades específicas, esses sistemas formam hoje uma verdadeira infraestrutura nacional de informações territoriais e patrimoniais. Alguns são voltados à gestão de imóveis públicos; outros tratam do cadastro rural, do registro de imóveis, das informações ambientais ou da representação geográfica do território. Em conjunto, permitem compreender quem ocupa determinado imóvel, quais são seus limites, sua situação registral, suas restrições ambientais, sua utilização atual e sua inserção no território.</p>"
+          }
+        },
+        {
+          "id": "bu7fb5n1",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "Vale destacar",
+            "heading": "",
+            "children": "<p>Estados, municípios e outras instituições públicas também possuem sistemas, cadastros e soluções próprias de gestão territorial e patrimonial, muitas vezes essenciais para a atuação em seus respectivos contextos. Esses instrumentos não são menos relevantes do que os apresentados neste material. Entretanto, considerando o caráter introdutório e abrangente deste programa de aprendizagem, o foco será direcionado aos principais sistemas estruturantes de alcance nacional e às plataformas que exercem papel estratégico na integração, produção e compartilhamento de informações territoriais e patrimoniais no país.</p>"
+          }
+        },
+        {
+          "id": "bdn5h874",
+          "type": "prose",
+          "props": {
+            "html": "<p>Para os profissionais que atuam na gestão patrimonial imobiliária, <mark data-hl=\"petrol\">conhecer esses sistemas é tão importante quanto compreender conceitos jurídicos ou procedimentos administrativos</mark>. Mais do que ferramentas tecnológicas, eles representam fontes estratégicas de informação que apoiam o planejamento, a fiscalização, a regularização fundiária, a destinação de imóveis, a arrecadação patrimonial e a tomada de decisões baseada em evidências.</p><p>O objetivo deste material não é ensinar a operar cada sistema, mas apresentar seus principais <b>objetivos</b>, <b>funcionalidades</b>, <b>responsáveis institucionais</b>, <b>formas de utilização</b> e <b>aplicações práticas</b> na gestão territorial e patrimonial pública, contribuindo para que o participante compreenda como as diferentes bases de informação se complementam e apoiam a atuação do Estado sobre o território e o patrimônio público.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "be0yo82j",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c5mzm79r",
+          "type": "titulo",
+          "props": {
+            "text": "Plataforma Integrada de Gestão do Patrimônio da União (SPUnet)",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c6ej847c",
+          "type": "prose",
+          "props": {
+            "html": "<p>O SPUnet é o principal sistema corporativo utilizado pela Secretaria do Patrimônio da União (SPU) para cadastro e gestão dos imóveis da União e das entidades autárquicas e fundacionais federais. </p>"
+          }
+        },
+        {
+          "id": "bqi7ap1p",
+          "type": "figure",
+          "props": {
+            "slot": "bqi7ap1p__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "Visão geral da Plataforma SPUnet",
+            "caption": "Módulos que compõem o SPUnet em sua totalidade",
+            "credit": "Imagem: <a href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/o-que-e-o-spunet-1\">MGI/SPU - O que é o SPUnet</a>"
+          }
+        },
+        {
+          "id": "bdakd717",
+          "type": "prose",
+          "props": {
+            "html": "<p>Mais do que um simples cadastro, o sistema funciona como a principal base de informações patrimoniais do Governo Federal, apoiando atividades operacionais, gerenciais e estratégicas. Por meio dele é possível registrar características físicas e dominiais dos imóveis, acompanhar contratos de destinação, controlar receitas patrimoniais e subsidiar processos de regularização fundiária e fiscalização.</p><p>A evolução do SPUnet reflete a transformação da gestão patrimonial pública no Brasil, que <mark>passou de uma lógica predominantemente documental para uma gestão baseada em dados, indicadores e integração com ferramentas geoespaciais</mark>.</p>"
+          }
+        },
+        {
+          "id": "b04ygxdm",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Módulos já implantados",
+            "kickerIcon": "map-pin",
+            "title": "",
+            "color": "",
+            "bg": "var(--bg-paper)",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "b43m3837",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "bikmn1f7",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "icon",
+                    "icon": "monitor-check",
+                    "accent": "",
+                    "items": [
+                      {
+                        "title": "Acessos (2016)",
+                        "text": "Gerenciamento de permissões para acesso a módulos e funcionalidades. "
+                      },
+                      {
+                        "title": "Serviços/Portal e Módulo de Atendimento (2016)",
+                        "text": "Portal para protocolo de requerimentos e área interna de atendimento.  "
+                      },
+                      {
+                        "title": "Acervo (2017)",
+                        "text": "Gestão do acervo histórico.  "
+                      },
+                      {
+                        "title": "Cadastro (2022)",
+                        "text": "Cadastramento de imóveis e informações de incorporação.  "
+                      },
+                      {
+                        "title": "GEOdados (2024)",
+                        "text": "gestão especializada de dados geoespaciais.  "
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b_mrxpzkpt_sjgs",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "icon",
+                    "icon": "monitor-check",
+                    "accent": "",
+                    "items": [
+                      {
+                        "title": "GEOportal (2024)",
+                        "text": "Catálogo de dados geoespaciais e mapas temáticos.  "
+                      },
+                      {
+                        "title": "Contratos (2024)",
+                        "text": "Formalização e assinatura de atos e contratos de destinação."
+                      },
+                      {
+                        "title": "Receitas (2025)",
+                        "text": "Gestão de receitas de contratos onerosos (fase 1: acompanhamento financeiro de contratos onerosos)."
+                      },
+                      {
+                        "title": "Avaliação (2026)",
+                        "text": "Avaliação de imóveis da União."
+                      },
+                      {
+                        "title": "Destinação (2026)",
+                        "text": "Destinação e gestão da utilização de imóveis."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "byk1ixur",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b3mdizcj",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "SPUNET"
+          }
+        },
+        {
+          "id": "b91mziwk",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Órgão gestor",
+                "content": "Secretaria do Patrimônio da União (SPU/MGI), órgão integrante do Ministério da Gestão e da Inovação em Serviços Públicos (MGI)",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Quem utiliza?",
+                "content": "<ul><li>Unidade Central da SPU;</li><li>Superintendências do Patrimônio da União nos estados;</li><li>Destinatários de imóveis da União (caso do Portal de Serviços)</li><li>Órgãos federais autorizados;</li></ul>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com a gestão patrimonial",
+                "content": "Constitui o principal sistema de apoio à gestão dos imóveis da União, sendo utilizado em praticamente todas as funções finalísticas da SPU.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mry1rxjn_klex",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": true,
+            "accent": "",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "link",
+                "title": "Plataforma Integrada de Gestão do Patrimônio da União (SPUnet)",
+                "text": "<p><a href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/o-que-e-o-spunet-1\"><span data-color=\"petrol\">Mais informações - SPUnet</span></a></p><p></p>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mrxz1ovl_huup",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mrxz1ovl_h44s",
+          "type": "titulo",
+          "props": {
+            "text": "Sistema Nacional de Gestão de Informações Territoriais (SINTER)",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_mrxz1ovl_0efg",
+          "type": "prose",
+          "props": {
+            "html": "<p>O SINTER foi criado para enfrentar um dos maiores desafios da gestão territorial brasileira: a fragmentação das informações sobre imóveis. Tradicionalmente, dados registrais, cadastrais, fiscais e geoespaciais eram produzidos e armazenados por instituições diferentes, dificultando a construção de uma visão integrada do território.</p><p>Desenvolvido pela Receita Federal, o SINTER funciona como uma plataforma nacional de integração de informações territoriais. Seu objetivo não é substituir os sistemas existentes, mas permitir que diferentes bases conversem entre si, promovendo interoperabilidade e compartilhamento de informações entre órgãos públicos e entidades parceiras. Sua implementação foi impulsionada pela Lei Complementar nº 214/2025, que regulamentou a Reforma Tributária e vinculou o CIB à arrecadação do Imposto sobre Bens e Serviços (IBS) e da Contribuição sobre Bens e Serviços (CBS).</p>"
+          }
+        },
+        {
+          "id": "bxydgfzg",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "b6xjf083",
+              "type": "figure",
+              "props": {
+                "slot": "b6xjf083__slot",
+                "src": "",
+                "fit": "contain",
+                "size": "full",
+                "title": "",
+                "caption": "",
+                "credit": ""
+              }
+            },
+            {
+              "id": "bt292o09",
+              "type": "prose",
+              "props": {
+                "html": "<p>A iniciativa busca aproximar o universo dos registros imobiliários, dos cadastros territoriais e das bases geoespaciais, contribuindo para aumentar a segurança jurídica, reduzir inconsistências cadastrais e apoiar políticas públicas relacionadas à tributação, regularização fundiária, planejamento urbano e gestão patrimonial.</p><p>Para os gestores de imóveis públicos, o SINTER representa uma importante ferramenta de <b>integração entre cadastro e registro</b>, auxiliando na <mark data-hl=\"green\">identificação de conflitos dominiais, inconsistências registrais e sobreposições de informações territoriais</mark>.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b1rinfre",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "SINTER"
+          }
+        },
+        {
+          "id": "b_mrxz1ovl_oad0",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Ato de instituição / fundamento principal",
+                "content": "<p><a href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11208.htm\">Decreto nº 11.208, de 26 de setembro de 2022</a></p>",
+                "imageSlot": "b_mrxz1ovl_oad0__items_0_imageSlot"
+              },
+              {
+                "title": "Órgão gestor",
+                "content": "Receita Federal do Brasil.",
+                "imageSlot": "b_mrxz1ovl_oad0__items_1_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Quem utiliza?",
+                "content": "<p></p><ul><li> Receita Federal;</li><li> Cartórios de Registro de Imóveis;</li><li> Municípios conveniados;</li><li> Órgãos fundiários;</li><li> Órgãos patrimoniais;</li><li> Instituições de controle;</li><li> Órgãos de planejamento territorial.</li></ul><p></p>",
+                "imageSlot": "b_mrxz1ovl_oad0__items_2_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com a gestão patrimonial",
+                "content": "Apoia a regularização fundiária, a identificação de inconsistências dominiais, a integração entre cadastro e registro e o fortalecimento da governança territorial.",
+                "imageSlot": "b_mrxz1ovl_oad0__items_3_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com outros sistemas",
+                "content": "<p></p><ul><li> Cartórios de Registro de Imóveis;</li><li> SIGEF;</li><li> SNCR;</li><li> Cadastros municipais;</li><li> Sistemas tributários;</li><li> Bases geoespaciais federais.</li></ul><p></p>",
+                "imageSlot": "b_mrxz1ovl_oad0__items_4_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mry1uty2_o2uk",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": true,
+            "accent": "",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "link",
+                "title": "Sistema Nacional de Gestão de Informações Territoriais (SINTER)",
+                "text": "<p><a href=\"https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/sinter\">Mais informações - SINTER</a></p><p></p>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mrxraqz0_7e27",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mrxraqz0_xks1",
+          "type": "titulo",
+          "props": {
+            "text": "Cadastro Imobiliário Brasileiro (CIB)",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_mrxraqz0_xhl5",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Cadastro Imobiliário Brasileiro (CIB) é um sistema nacional de identificação de imóveis instituído pelo Decreto nº 11.208/2022, no âmbito do SINTER, com o objetivo de promover a integração entre diferentes bases cadastrais territoriais do país. O CIB atribui um código único às unidades imobiliárias e aos <b><mark data-hl=\"sand\">Bens Imóveis Cadastrados e Identificados (BICE)</mark></b>, que correspondem os bens públicos ou privados de uso especial e os bens do patrimônio cultural integrantes do domínio da União, dos Estados, do Distrito Federal e dos Municípios, incluído o espaço aéreo sobre esses bens, o subsolo e as áreas do mar territorial, da zona econômica exclusiva e da plataforma continental. A iniciativa busca garantir que um mesmo imóvel possa ser reconhecido de forma padronizada por diferentes instituições e sistemas. </p>"
+          }
+        },
+        {
+          "id": "bfdxwbs6",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bfaby831",
+              "type": "prose",
+              "props": {
+                "html": "<p>Para a gestão patrimonial pública, o CIB possui grande potencial estratégico ao facilitar a integração entre informações registrais, ambientais, fundiárias e patrimoniais, contribuindo para a qualificação dos inventários de imóveis públicos, a regularização fundiária, a interoperabilidade entre sistemas e o fortalecimento da governança territorial.</p>"
+              }
+            },
+            {
+              "id": "bok79ziu",
+              "type": "figure",
+              "props": {
+                "slot": "bok79ziu__slot",
+                "src": "",
+                "fit": "contain",
+                "size": "full",
+                "title": "",
+                "caption": "Ele funciona como um identificador único para cada imóvel do país, similar ao CPF (para pessoas físicas) e ao CNPJ (para as empresas). Sua estrutura é um código alfanumérico de 7 caracteres + dígito verificador:  ABC1234-5",
+                "credit": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "bbz0kywo",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "CIB"
+          }
+        },
+        {
+          "id": "b_mrxraqz0_bkcw",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Ato de instituição / fundamento principal",
+                "content": "<p><a href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11208.htm\">Decreto nº 11.208, de 26 de setembro de 2022</a></p>",
+                "imageSlot": "b_mrxraqz0_bkcw__items_0_imageSlot"
+              },
+              {
+                "title": "Objetivos",
+                "content": "<p></p><ul><li> Identificar univocamente cada imóvel brasileiro; </li><li> Integrar informações territoriais; </li><li> Facilitar interoperabilidade entre sistemas; </li><li> Reduzir inconsistências cadastrais; </li><li> Fortalecer governança territorial; </li><li> Apoiar políticas públicas.</li></ul><p></p>",
+                "imageSlot": "c_b8du3ho__imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Órgão gestor",
+                "content": "Receita Federal do Brasil (no âmbito do SINTER).",
+                "imageSlot": "b_mrxraqz0_bkcw__items_1_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Quem utiliza?",
+                "content": "<p></p><ul><li> Receita Federal; </li><li> Municípios; </li><li> Estados; </li><li> Cartórios; </li><li> INCRA; </li><li> SPU; </li><li> órgãos ambientais; </li><li> instituições financeiras; </li><li> demais órgãos produtores de informação territorial.</li></ul><p></p>",
+                "imageSlot": "b_mrxraqz0_bkcw__items_2_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mry1u52k_5yj8",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": true,
+            "accent": "",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "link",
+                "title": "Cadastro Imobiliário Brasileiro (CIB)",
+                "text": "<ul><li><a href=\"https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/acoes-e-programas/programas-e-atividades/sinter/cib\">Mais informações - CIB</a></li><li><a href=\"https://www.gov.br/receitafederal/pt-br/acesso-a-informacao/perguntas-frequentes/cadastros/cib\">Perguntas frequentes sobre o CIB</a></li></ul>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mrxrht4a_1cgz",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mrxrht4a_ojez",
+          "type": "titulo",
+          "props": {
+            "text": "Sistema de Gestão Fundiária (SIGEF)",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_mrxrht4a_biuo",
+          "type": "prose",
+          "props": {
+            "html": "<p>O SIGEF é o sistema responsável pela recepção, validação, certificação e disponibilização das informações georreferenciadas dos imóveis rurais brasileiros. Criado pelo Instituto Nacional de Colonização e Reforma Agrária (INCRA) em atendimento à legislação de georreferenciamento de imóveis rurais, o sistema representa um marco na modernização da gestão fundiária nacional, substituindo descrições imprecisas por representações cartográficas precisas dos limites dos imóveis.</p><p>Por meio do SIGEF, profissionais habilitados submetem peças técnicas contendo os vértices e limites dos imóveis rurais, que são automaticamente confrontados com a base nacional de imóveis certificados. Esse processo reduz sobreposições, amplia a segurança jurídica e fortalece a governança territorial.</p>"
+          }
+        },
+        {
+          "id": "bofapznb",
+          "type": "figure",
+          "props": {
+            "slot": "bofapznb__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "bfbjdbp2",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Certificação e gestão de dados georreferenciados no SIGEF",
+            "kickerIcon": "map-pin",
+            "title": "",
+            "color": "",
+            "bg": "var(--bg-paper)",
+            "body": "<p>No SIGEF são realizadas a certificação de dados referentes a limites de imóveis rurais (§ 5º do art. 176 da Lei nº 6.015, de 31 de dezembro de 1973) e a gestão de contratos de serviços de georreferenciamento com a administração pública, compreendendo:</p>"
+          },
+          "children": [
+            {
+              "id": "b1cdqpj4",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "bb2sdzgd",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--green-600)",
+                    "items": [
+                      {
+                        "title": "",
+                        "text": "Credenciamento de profissional apto(a) a requerer certificação."
+                      },
+                      {
+                        "title": "",
+                        "text": "Autenticidade de usuários(as) do sistema com certificação digital, seguindo padrões da Infraestrutura de Chaves Públicas (ICP-Brasil)."
+                      },
+                      {
+                        "title": "",
+                        "text": "Recepção de dados georreferenciados padronizados, via internet."
+                      },
+                      {
+                        "title": "",
+                        "text": "Validação rápida, impessoal, automatizada e precisa, de acordo com os parâmetros técnicos vigentes."
+                      },
+                      {
+                        "title": "",
+                        "text": "Geração automática de peças técnicas (planta e memorial descritivo), com a possibilidade de verificação de autenticidade online."
+                      }
+                    ],
+                    "__pullDown": true
+                  }
+                },
+                {
+                  "id": "b_mrxyksc6_fvra",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--green-600)",
+                    "items": [
+                      {
+                        "title": "",
+                        "text": "Gerência eletrônica de requerimentos relativos a parcelas: certificação, registro, desmembramento, remembramento, retificação e cancelamento."
+                      },
+                      {
+                        "title": "",
+                        "text": "Possibilidade de inclusão de informações atualizadas do registro de imóveis (matrícula e proprietário) via internet, permitindo a efetiva sincronização entre os dados cadastrais e registrais."
+                      },
+                      {
+                        "title": "",
+                        "text": "Gestão de contratos de serviços de georreferenciamento com a administração pública, com acesso para órgãos públicos, empresas, responsáveis técnicos(as) e fiscais."
+                      },
+                      {
+                        "title": "",
+                        "text": "Pesquisa pública de parcelas certificadas, requerimentos e credenciados(as)."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b9peopxa",
+          "type": "prose",
+          "props": {
+            "html": "<p>Para a gestão patrimonial pública, especialmente em áreas rurais, o SIGEF tornou-se uma ferramenta fundamental para identificação de limites, regularização fundiária, arrecadação de terras públicas e resolução de conflitos territoriais.</p>"
+          }
+        },
+        {
+          "id": "buq6vj39",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "SIGEF"
+          }
+        },
+        {
+          "id": "b_mrxrht4a_aeb3",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Ato de instituição / fundamento principal",
+                "content": "<p>É resultado da implementação de um conjunto de normas relacionadas ao georreferenciamento de imóveis rurais.</p>",
+                "imageSlot": "b_mrxrht4a_aeb3__items_0_imageSlot"
+              },
+              {
+                "title": "Órgão gestor",
+                "content": "Instituto Nacional de Colonização e Reforma Agrária (INCRA)",
+                "imageSlot": "b_mrxrht4a_aeb3__items_1_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Quem utiliza?",
+                "content": "<p></p><ul><li> INCRA;</li><li> Cartórios de Registro de Imóveis;</li><li> Profissionais de georreferenciamento;</li><li> Proprietários rurais;</li><li> Órgãos fundiários;</li><li> Estados e municípios.</li></ul><p></p>",
+                "imageSlot": "b_mrxrht4a_aeb3__items_2_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com a gestão patrimonial",
+                "content": "Apoia a regularização fundiária, a identificação de terras públicas, a arrecadação de imóveis rurais e a delimitação territorial de imóveis públicos.",
+                "imageSlot": "b_mrxrht4a_aeb3__items_3_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com outros sistemas",
+                "content": "<p></p><ul><li> SNCR;</li><li> SICAR;</li><li> Cartórios de Registro de Imóveis;</li><li> SINTER.</li></ul><p></p>",
+                "imageSlot": "b_mrxrht4a_aeb3__items_4_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mry1tize_da06",
+          "type": "feature",
+          "props": {
+            "columns": 2,
+            "card": true,
+            "accent": "",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "link",
+                "title": "Sistema de Gestão Fundiária",
+                "text": "<a href=\"https://sigef.incra.gov.br\">Mais informações - SIGEF</a>"
+              },
+              {
+                "icon": "link",
+                "title": "Manual do SIGEF",
+                "text": "<a href=\"https://sigef.incra.gov.br/documentos/manual/\">Acesse aqui o manual do SIGE</a>F"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bayfn1sx",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "terra-dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cdbyjc1j",
+          "type": "titulo",
+          "props": {
+            "text": "Sistema de Cadastro Ambiental Rural (SICAR)",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "ccplldrc",
+          "type": "prose",
+          "props": {
+            "html": "<p>O SICAR é a principal base nacional de informações ambientais dos imóveis rurais brasileiros. Criado pela<a href=\"https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm\"> Lei nº 12.651/2012</a><a href=\"https://sigef.incra.gov.br/documentos/manual/\"></a>, no âmbito do Sistema Nacional de Informação sobre Meio Ambiente (SINIMA), e regulamentado pelo <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7830.htm\">Decreto nº 7.830, de 17 de outubro de 2012</a> e pela <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/decreto/d7830.htm\">Instrução Normativa MMA nº 2, de 5 de maio de 2014</a>, o <b>Cadastro Ambiental Rural (CAR)</b> é um registro público eletrônico de âmbito nacional, obrigatório para todos os imóveis rurais, com a finalidade de integrar as informações ambientais das propriedades e posses rurais referentes às Áreas de Preservação Permanente (APP), de uso restrito, de Reserva Legal, de remanescentes de florestas e demais formas de vegetação nativa, e das áreas consolidadas, compondo base de dados para controle, monitoramento, planejamento ambiental e econômico e combate ao desmatamento.</p>"
+          }
+        },
+        {
+          "id": "bjemmckh",
+          "type": "figure",
+          "props": {
+            "slot": "bjemmckh__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "bjfrvcw8",
+          "type": "prose",
+          "props": {
+            "html": "<p>Ao longo dos anos, o SICAR transformou-se em uma das maiores bases geoespaciais do país, permitindo a realização de análises ambientais em escala nacional. Além de apoiar a regularização ambiental dos imóveis rurais, o sistema tornou-se referência para planejamento territorial, monitoramento ambiental e formulação de políticas públicas.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A inscrição no CAR é o primeiro passo para obtenção da regularidade ambiental do imóvel, e contempla: dados do proprietário, possuidor rural ou responsável direto pelo imóvel rural; dados sobre os documentos de comprovação de propriedade e ou posse; e informações georreferenciadas do perímetro do imóvel, das áreas de interesse social e das áreas de utilidade pública, com a informação da localização dos remanescentes de vegetação nativa, das Áreas de Preservação Permanente, das áreas de Uso Restrito, das áreas consolidadas e das Reservas Legais.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Para a gestão patrimonial pública, o SICAR fornece informações essenciais sobre restrições e características ambientais dos imóveis rurais.</span></p>"
+          }
+        },
+        {
+          "id": "bpws3z3m",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "SICAR"
+          }
+        },
+        {
+          "id": "bs10l6dv",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Órgão gestor",
+                "content": "Serviço Florestal Brasileiro (Ministério do Meio Ambiente).",
+                "imageSlot": "c_s2pkogs__imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Quem utiliza?",
+                "content": "<p></p><ul><li> Proprietários rurais;</li><li> Órgãos ambientais federais;</li><li> Órgãos ambientais estaduais;</li><li> Municípios;</li><li> INCRA;</li><li> SPU;</li><li> Instituições de pesquisa.</li></ul><p></p>",
+                "imageSlot": "c_bv2ev3h__imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com a gestão patrimonial",
+                "content": "Apoia análises ambientais, regularização fundiária, fiscalização e destinação de imóveis públicos rurais.",
+                "imageSlot": "c_1jn56e2__imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "byrs8x10",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": true,
+            "accent": "var(--terra-600)",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "link",
+                "title": "O que é o CAR?",
+                "text": "<p><a href=\"https://www.car.gov.br/#/sobre\"><span data-color=\"terra\">Mais informações - CAR</span></a></p><p></p>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mrxzb39x_7qye",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mrxzb39x_871j",
+          "type": "titulo",
+          "props": {
+            "text": "Sistema Nacional de Cadastro Rural (SNCR)",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_mrxzb39x_rhm8",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Sistema Nacional de Cadastro Rural (SNCR) foi instituído pela <b><a href=\"https://www.planalto.gov.br/ccivil_03/leis/l5868.htm\">Lei nº 5.868, de 12 de dezembro de 1972</a></b>, com a finalidade de promover o levantamento sistemático, a identificação e a organização das informações relacionadas aos imóveis rurais brasileiros e aos seus detentores. Concebido como instrumento de apoio ao planejamento governamental, o sistema busca fornecer informações confiáveis sobre a estrutura fundiária nacional, subsidiando políticas públicas voltadas à reforma agrária, tributação, regularização fundiária, desenvolvimento rural e ordenamento territorial.</p>"
+          }
+        },
+        {
+          "id": "bo344kio",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg",
+            "__pullUp": false
+          },
+          "children": [
+            {
+              "id": "b0hlgmj6",
+              "type": "prose",
+              "props": {
+                "html": "<p>Mais do que um simples cadastro de imóveis, o SNCR constitui uma importante base nacional de informações fundiárias, reunindo dados sobre localização, área, titularidade, exploração e utilização dos imóveis rurais. Ao longo de sua trajetória, tornou-se uma das principais referências para a gestão territorial rural no país e passou a se articular com sistemas mais recentes, como o SIGEF e o SICAR.</p><p>Para a gestão patrimonial pública, o SNCR representa uma fonte relevante de informações para identificação de imóveis rurais, análise da ocupação do território, regularização fundiária e reconhecimento de áreas públicas e privadas.</p>"
+              }
+            },
+            {
+              "id": "bxg8kmtr",
+              "type": "figure",
+              "props": {
+                "slot": "bxg8kmtr__slot",
+                "src": "",
+                "fit": "contain",
+                "size": "full",
+                "title": "",
+                "caption": "",
+                "credit": "",
+                "__pullUp": false,
+                "__pullDown": false
+              }
+            }
+          ]
+        },
+        {
+          "id": "bwmaokve",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "SNCR"
+          }
+        },
+        {
+          "id": "b_mry2cpy1_zlw9",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Órgão gestor",
+                "content": "INCRA",
+                "imageSlot": "b_mry2cpy1_zlw9__items_0_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Legislação associada",
+                "content": "<p><a href=\"https://www.planalto.gov.br/ccivil_03/leis/l5868.htm\">Lei nº 5.868/72</a><span style=\"text-wrap-mode: initial; color: inherit;\">; Lei nº 4.504/64; Lei nº 8.629/93</span></p>",
+                "imageSlot": "b_mry2cpy1_zlw9__items_1_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com a gestão patrimonial",
+                "content": "Apoia regularização fundiária, arrecadação de terras públicas e análise de ocupações rurais.",
+                "imageSlot": "b_mry2cpy1_zlw9__items_2_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mry2cs45_t38m",
+          "type": "feature",
+          "props": {
+            "columns": 2,
+            "card": true,
+            "accent": "var(--ochre-600)",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "link",
+                "title": "Sistema Nacional de Cadastro Rural - SNCR",
+                "text": "<span data-color=\"petrol\"><span data-color=\"ochre-light\"><span data-color=\"ochre\"><a href=\"https://www.gov.br/conecta/catalogo/apis/sncr-sistema-nacional-de-cadastro-rural\">Mais informações</a></span></span></span> <br>"
+              },
+              {
+                "icon": "link",
+                "title": "Catálogo ",
+                "text": "<span data-color=\"ochre\"><a href=\"https://www.gov.br/conecta/catalogo/apis/sncr-sistema-nacional-de-cadastro-rural\">Mais informações</a></span>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mrxzkpu3_sy8k",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mrxzkpu3_m5pc",
+          "type": "titulo",
+          "props": {
+            "text": "Catálogo de dados geoespaciais da Secretaria do Patrimônio da União (GeoPortal-SPU)",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "bwsrjznx",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "b_mrxzkpu3_bptf",
+              "type": "prose",
+              "props": {
+                "html": "<p>O GeoPortal SPU é a principal plataforma geoespacial da Secretaria do Patrimônio da União. Desenvolvido para ampliar a dimensão territorial da gestão patrimonial, o sistema permite visualizar imóveis da União em conjunto com diversas camadas de informação geográfica, ambiental, fundiária e administrativa, <span style=\"text-wrap-mode: initial; color: inherit;\"> de forma prática e integrada, dados sobre a localização, características e uso dos bens públicos, oferecendo mapas interativos e camadas temáticas que facilitam a compreensão do território.</span></p><p>Pode ser útil para gestores públicos, pesquisadores e cidadãos em geral, pois possibilita o acesso fácil e transparente às informações; ajuda na tomada de decisão mais qualificada; apoia estudos e pesquisas e contribui na integração com outras políticas públicas.</p>"
+              }
+            },
+            {
+              "id": "b8uu43we",
+              "type": "figure",
+              "props": {
+                "slot": "b8uu43we__slot",
+                "src": "",
+                "fit": "contain",
+                "size": "full",
+                "title": "",
+                "caption": "",
+                "credit": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "bj9csax7",
+          "type": "prose",
+          "props": {
+            "html": "<p>Além de apoiar as atividades internas da SPU/MGI, o GeoPortal-SPU também amplia a transparência das informações patrimoniais e facilita o acesso público aos dados territoriais relacionados aos imóveis da União.</p>"
+          }
+        },
+        {
+          "id": "bu3f7x3m",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "GEOSPU"
+          }
+        },
+        {
+          "id": "b_mrxzb39x_vtw5",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Órgão gestor",
+                "content": "Secretaria do Patrimônio da União (SPU/MGI).",
+                "imageSlot": "b_mrxzb39x_vtw5__items_0_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Quem utiliza?",
+                "content": "<p></p><ul><li>SPU;</li><li>Órgãos federais;</li><li>Estados;</li><li>Municípios;</li><li>Universidades;</li><li>Pesquisadores;</li><li>Sociedade em geral.</li></ul><p></p>",
+                "imageSlot": "b_mrxzb39x_vtw5__items_1_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com a gestão patrimonial",
+                "content": "Apoia fiscalização, destinação, regularização fundiária, avaliação e planejamento territorial.",
+                "imageSlot": "b_mrxzb39x_vtw5__items_2_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "bggx2ly3",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": true,
+            "accent": "var(--petrol-600)",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "link",
+                "title": "Catálogo de dados geoespaciais da Secretaria do Patrimônio da União",
+                "text": "<a href=\"https://geoportal-spunet.gestao.gov.br\"><span data-color=\"ochre-light\"><span data-color=\"petrol\">Mais informações - GeoSPU</span></span></a><br>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "blsr6s23",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c4u5vckm",
+          "type": "titulo",
+          "props": {
+            "text": "GeoVisão ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cd8u7qlj",
+          "type": "prose",
+          "props": {
+            "html": "<p>O GeoVisão compreende solução corporativa de inteligência geoespacial integrada à plataforma SPUnet para transformar grandes volumes de dados geográficos em informações úteis para a tomada de decisão, tendo sido concebido para ampliar o acesso, a visualização e a confiabilidade das informações territoriais e patrimoniais da União.</p>"
+          }
+        },
+        {
+          "id": "bgt024ws",
+          "type": "figure",
+          "props": {
+            "slot": "bgt024ws__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "bo210muw",
+          "type": "prose",
+          "props": {
+            "html": "<p>A ferramenta permite integrar dados de diversas fontes, gerar painéis temáticos e apoiar atividades relacionadas à fiscalização, regularização fundiária, avaliação patrimonial e planejamento das destinações. Por meio de uma interface web moderna e interoperável, o GEOvisão consolida mapas, imagens, indicadores e serviços geoespaciais em uma visão espacial unificada, promovendo maior eficiência, transparência e visão integrada do território.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Na versão atual, a solução apresenta camadas de dados provenientes do Banco de Dados Geoespaciais da SPU/MGI, o BDGEO-SPU, e dados de áreas territoriais da União sob gestão de diferentes órgãos da administração pública federal. A integração desses dados fundiários em uma visão espacial única apoiará a gestão patrimonial, a análise territorial, a tomada de decisão e a governança de dados geoespaciais.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Sua principal contribuição é ampliar a capacidade analítica dos gestores, permitindo decisões mais orientadas por evidências.</span></p>"
+          }
+        },
+        {
+          "id": "bbx6yp7k",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "GEOVISÃO"
+          }
+        },
+        {
+          "id": "b_mry1glct_lwgi",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Órgão gestor",
+                "content": "Secretaria do Patrimônio da União (SPU/MGI).",
+                "imageSlot": "b_mry1glct_lwgi__items_0_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com a gestão patrimonial",
+                "content": "Apoia planejamento, fiscalização, avaliação de imóveis e identificação de oportunidades de destinação.",
+                "imageSlot": "b_mry1glct_lwgi__items_2_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mry09xva_sixb",
+          "type": "feature",
+          "props": {
+            "columns": 2,
+            "card": true,
+            "accent": "var(--terra-600)",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "link",
+                "title": "SPUnet",
+                "text": "<span data-color=\"petrol\"><span data-color=\"ochre-light\"><span data-color=\"terra\"><a href=\"https://spunet.sistema.gov.br/\">Mais informações - SPUnet</a></span></span></span><br>"
+              },
+              {
+                "icon": "link",
+                "title": "Guia completo ",
+                "text": "<a href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/capacitacao-1/arquivos/guia-completo-geovisao-v01.pdf\">Acessar guia completo GeoVisão</a>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhrce3we",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c31yb4e6",
+          "type": "titulo",
+          "props": {
+            "text": "Portal Brasileiro de Dados Geoespaciais",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "bmedo8dz",
+          "type": "figure",
+          "props": {
+            "slot": "bmedo8dz__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "b7j0yxu0",
+          "type": "prose",
+          "props": {
+            "html": "<p>A Infraestrutura Nacional de Dados Espaciais (INDE) é uma rede nacional destinada ao compartilhamento de dados geoespaciais produzidos pelos órgãos públicos brasileiros. Em vez de funcionar como um sistema único, a INDE atua como um conjunto integrado de tecnologias, políticas, mecanismos e procedimentos de coordenação e monitoramento, padrões e acordos necessários que permite localizar, acessar e utilizar informações geográficas produzidas por diferentes instituições.</p><p>A INDE foi concebida com o propósito de catalogar, integrar e harmonizar dados geoespaciais produzidos ou mantidos e geridos nas instituições de governo brasileiras, de modo que possam ser facilmente localizados, explorados em suas características e acessados para os mais variados fins por qualquer usuário com acesso à Internet. A catalogação dos dados geoespaciais é feita mediante seus respectivos metadados pelos próprios produtores e/ou gestores dos dados.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A iniciativa busca evitar duplicidade de esforços, ampliar a interoperabilidade entre órgãos e promover o uso compartilhado de dados espaciais oficiais. Hoje, a INDE reúne milhares de conjuntos de dados relacionados ao território brasileiro, incluindo informações cartográficas, ambientais, fundiárias, urbanas e socioeconômicas.</span></p>"
+          }
+        },
+        {
+          "id": "b8mc2z8s",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "INDE"
+          }
+        },
+        {
+          "id": "b_mry1i3ft_80yg",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Órgão gestor",
+                "content": "Instituto Brasileiro de Geografia e Estatística (IBGE), como entidade responsável pelo apoio técnico e administrativo à Comissão Nacional de Geoinformação (Congeo)",
+                "imageSlot": "b_mry1i3ft_80yg__items_1_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Ato de instituição / fundamento principal",
+                "content": "<p>Decreto nº 6.666, de 27/11/2008 </p>",
+                "imageSlot": "b_mry1i3ft_80yg__items_0_imageSlot"
+              },
+              {
+                "title": "Quem utiliza?",
+                "content": "<p></p><ul><li>Órgãos federais;</li><li>Estados;</li><li>Municípios;</li><li>Universidades;</li><li>Institutos de pesquisa;</li><li>Empresas;</li><li>Gestores territoriais.</li></ul><p></p>",
+                "imageSlot": "b_mry1i3ft_80yg__items_2_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com a gestão patrimonial",
+                "content": "Fornece bases cartográficas e geoespaciais utilizadas em atividades de cadastro, georreferenciamento, fiscalização e planejamento territorial.",
+                "imageSlot": "b_mry1i3ft_80yg__items_3_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Interface com outros sistemas",
+                "content": "<p></p><ul><li>Funciona como infraestrutura de referência para praticamente todos os sistemas geoespaciais governamentais.</li></ul><p></p>",
+                "imageSlot": "b_mry1i3ft_80yg__items_4_imageSlot",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mry0sllf_xexh",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": true,
+            "accent": "var(--terra-600)",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "link",
+                "title": "Infraestrutura Nacional de Dados Espaciais – INDE",
+                "text": "<span data-color=\"petrol\"><span data-color=\"ochre-light\"><a href=\"https://inde.gov.br\">Mais informações - INDE</a></span></span><br>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b7pyzxim",
+      "type": "pagefooter",
+      "props": {
+        "code": "Sistemas estruturantes de gestão territorial e patrimonial no Brasil [M153]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Claudson Moreira"
+          },
+          {
+            "role": "Revisão",
+            "name": "-"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Julho de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
