@@ -1,0 +1,679 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M412 - Regimes de destinação",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "cj0v7ccm",
+          "text": "Regimes de direito real",
+          "hidden": false
+        },
+        {
+          "id": "cg0c6djy",
+          "text": "Regimes de direito pessoal ou obrigacional",
+          "hidden": false
+        },
+        {
+          "id": "cymwxnnb",
+          "text": "Regimes de outorga administrativa",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "br7sokuo",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "bl7l2qcs",
+      "type": "hero",
+      "props": {
+        "kicker": "Regimes de destinação",
+        "kickerIcon": "map-pinned",
+        "title": "Como o Estado atribui função aos imóveis públicos",
+        "byline": "um guia dos regimes de destinação",
+        "slot": "bl7l2qcs__slot"
+      }
+    },
+    {
+      "id": "bqu21bkv",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c2bph20x",
+          "type": "prose",
+          "props": {
+            "html": "<p>Os imóveis públicos podem ser utilizados para as mais diversas finalidades: sediar órgãos governamentais, apoiar políticas públicas, promover regularização fundiária, viabilizar empreendimentos econômicos, proteger comunidades tradicionais, gerar receitas ou mesmo ser transferidos definitivamente a outros entes ou particulares. Embora essas situações sejam frequentemente tratadas de forma genérica como “destinações”, elas envolvem relações jurídicas bastante distintas, com diferentes níveis de estabilidade, direitos conferidos aos destinatários, formas de remuneração, prazos, possibilidades de revogação e requisitos legais.</p><p>Compreender essas diferenças é fundamental para selecionar o mecanismo mais adequado a cada contexto e garantir segurança jurídica, transparência e coerência na gestão patrimonial. Entretanto, a diversidade de normas, nomenclaturas e práticas administrativas adotadas pelos diferentes entes federativos pode dificultar a comunicação entre profissionais e gerar interpretações divergentes sobre institutos aparentemente semelhantes.</p><p>Nesse contexto, iniciativas de padronização conceitual assumem papel estratégico. A organização sistemática dos regimes de destinação permite classificar os instrumentos existentes segundo sua natureza jurídica e seus efeitos patrimoniais, facilitando a produção de normas, o desenvolvimento de sistemas de informação, a gestão do conhecimento e o intercâmbio de experiências entre instituições. A <b>Tabela Taxonômica de Regimes de Destinação Imobiliária</b> elaborada no âmbito da Secretaria do Patrimônio da União representa uma contribuição relevante nesse sentido e serve como referência para este material, cuja versão integral é apresentada em anexo. </p><p>Antes de prosseguir, convém distinguir dois conceitos fundamentais aqui adotados:</p>"
+          }
+        },
+        {
+          "id": "b1r0cekz",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": true,
+            "accent": "",
+            "layout": "side",
+            "items": [
+              {
+                "icon": "landmark",
+                "title": "Regime de destinação imobiliária",
+                "text": "<span data-fs=\"body\">Relação jurídico-administrativa que define os direitos e as obrigações decorrentes da destinação de um imóvel público, estabelecendo a natureza da relação entre a Administração e o destinatário. </span>"
+              },
+              {
+                "icon": "file-text",
+                "title": "Instrumento de destinação",
+                "text": "<span data-fs=\"body\">Documento que formaliza o regime adotado, materializando suas condições, prazos, encargos e efeitos jurídicos, como contratos, termos, certidões ou portarias. </span>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bhq5d81u",
+          "type": "prose",
+          "props": {
+            "html": "<p>Apresentaremos, aqui, as principais classes de regimes de destinação aplicáveis aos imóveis públicos, explicando sua lógica, características e finalidades. A descrição detalhada de cada regime, bem como suas definições oficiais e fundamentos normativos, pode ser consultada na resolução e na tabela taxonômica reproduzidas ao final deste documento.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bvw3iwek",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cj0v7ccm",
+          "type": "titulo",
+          "props": {
+            "text": "Regimes de direito real",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c8c3bj2r",
+          "type": "prose",
+          "props": {
+            "html": "<p>Os regimes de direito real compreendem as formas de destinação em que a Administração Pública transfere a propriedade do imóvel ou constitui direitos reais limitados em favor de terceiros. Diferentemente dos regimes obrigacionais, essas relações produzem efeitos perante todos (oponibilidade erga omnes) e, em regra, podem ser registradas no cartório de registro de imóveis, conferindo maior estabilidade jurídica ao destinatário. São amplamente utilizados em políticas de regularização fundiária, desenvolvimento urbano, habitação, exploração econômica e reorganização patrimonial. A depender do caso, podem envolver alienação definitiva do bem ou apenas a constituição de direitos reais específicos, preservando a titularidade pública. Por sua relevância e diversidade, a <span data-term=\"TT\" title=\"Tabela Taxonômica de Regimes de Destinação Imobiliária\">TT</span> organiza esses regimes em duas grandes subclasses: os de <b>transferência da propriedade</b> e os de <b>direito real limitado</b>.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "byeb2k41",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c3udoi10",
+          "type": "titulo",
+          "props": {
+            "text": "Regimes de transferência da propriedade",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cph8gxsc",
+          "type": "prose",
+          "props": {
+            "html": "<p>Essa subclasse reúne os regimes pelos quais o Poder Público transfere a propriedade do imóvel a terceiros em caráter definitivo. A transferência pode decorrer de decisão discricionária da Administração, quando há espaço para avaliação de conveniência e oportunidade, ou resultar diretamente de imposição legal, hipótese em que o atendimento dos requisitos previstos em lei vincula a atuação administrativa. Trata-se de importante instrumento para implementação de políticas públicas, regularização fundiária, reorganização patrimonial, alienação de ativos e cumprimento de obrigações legais. Embora a propriedade seja transferida, muitos desses regimes podem impor condições, encargos ou finalidades específicas que condicionam sua manutenção.</p>"
+          }
+        },
+        {
+          "id": "bgq0anjy",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Alienação imobiliária discricionária",
+                "content": "<p>Nos regimes de alienação discricionária, a Administração possui margem para decidir se a transferência da propriedade é conveniente ao interesse público. Essa avaliação considera fatores como oportunidade, política pública envolvida, interesse social, eficiência patrimonial e planejamento governamental. Incluem-se nessa categoria mecanismos voltados tanto à obtenção de receitas quanto à reorganização do patrimônio ou à implementação de projetos específicos. A escolha do regime adequado depende das características do imóvel, da finalidade pretendida e da legislação aplicável.</p>",
+                "blocks": [
+                  {
+                    "id": "bzz05rxi",
+                    "type": "kicker",
+                    "props": {
+                      "icon": "layout-list",
+                      "children": "Regimes abrangidos",
+                      "__pullUp": false,
+                      "__pullDown": true
+                    }
+                  },
+                  {
+                    "id": "bbajyz9z",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "ordered",
+                      "icon": "check",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Dação em pagamento ",
+                          "text": "Contrato de dação em pagamento"
+                        },
+                        {
+                          "title": "Doação ",
+                          "text": "Contrato de doação"
+                        },
+                        {
+                          "title": "Integralização de cotas em Fundo de Investimento Imobiliário ",
+                          "text": "Contrato de Integralização de Cotas em Fundo de Investimento Imobiliário"
+                        },
+                        {
+                          "title": "Investidura ",
+                          "text": "Contrato de Investidura"
+                        },
+                        {
+                          "title": "Permuta ",
+                          "text": "Contrato de Permuta"
+                        },
+                        {
+                          "title": "Remição de foro",
+                          "text": "Contrato de Remição de Foro e Certificado de Remição de Foro (procedimento simplificado)"
+                        },
+                        {
+                          "title": "Venda ",
+                          "text": "Contrato de compra e venda"
+                        }
+                      ],
+                      "__pullUp": false
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Alienação imobiliária vinculada",
+                "content": "Na alienação vinculada, a transferência da propriedade decorre diretamente do atendimento dos requisitos previstos em lei, sem margem relevante para juízo discricionário da Administração. São regimes normalmente associados à efetivação de direitos, regularização fundiária ou cumprimento de comandos legais específicos, em que a atuação do gestor consiste essencialmente em verificar o preenchimento das condições estabelecidas pelo ordenamento jurídico. Nesses casos, a destinação do imóvel representa instrumento de concretização de políticas públicas previamente definidas pelo legislador.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "bek0k53d",
+                    "type": "kicker",
+                    "props": {
+                      "icon": "layout-list",
+                      "children": "Regimes abrangidos",
+                      "__pullDown": true
+                    }
+                  },
+                  {
+                    "id": "boqqunoo",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "ordered",
+                      "icon": "check",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Legitimação fundiária ",
+                          "text": "Certidão de Regularização Fundiária (CRF)."
+                        },
+                        {
+                          "title": "Reconhecimento de domínio ",
+                          "text": "Título de Reconhecimento de Domínio."
+                        },
+                        {
+                          "title": "Transferência de propriedade para fins de Reurb-S ",
+                          "text": "Certidão de Autorização de Transferência de domínio para fins de Reurb-S (CATReurb-S)."
+                        },
+                        {
+                          "title": "Transferência de propriedade por dispositivo legal específico ",
+                          "text": "Termo de Transferência. "
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bo1tcdvj",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c4f5u8ju",
+          "type": "titulo",
+          "props": {
+            "text": "Regimes de direito real limitado",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cgqrnkyn",
+          "type": "prose",
+          "props": {
+            "html": "<p>Diferentemente da transferência da propriedade, esses regimes mantêm o domínio do imóvel com o Poder Público, mas atribuem ao destinatário determinados poderes jurídicos diretamente relacionados ao bem. Em geral, conferem maior estabilidade do que os vínculos meramente contratuais e exigem registro no cartório competente, assegurando publicidade e segurança jurídica. São amplamente empregados para viabilizar políticas habitacionais, regularização fundiária, desenvolvimento urbano, utilização econômica ou implantação de empreendimentos de longo prazo, preservando a titularidade pública sempre que conveniente ao interesse coletivo.</p>"
+          }
+        },
+        {
+          "id": "bpbpx7fw",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Regimes e respectivos instrumentos abrangidos",
+            "kickerIcon": "layout-list",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-50)",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "bdugkjij",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b2zlttkp",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--terra-500)",
+                    "items": [
+                      {
+                        "title": "Aforamento",
+                        "text": "Contrato de aforamento"
+                      },
+                      {
+                        "title": "Concessão de Direito Real de Laje ",
+                        "text": "Contrato de Concessão de Direito Real de Laje"
+                      },
+                      {
+                        "title": "Concessão de Direito Real de Uso ",
+                        "text": "Contrato de Concessão de Direito Real de Uso; "
+                      },
+                      {
+                        "title": "Concessão de Direito de Superfície ",
+                        "text": "Contrato de Concessão de Direito de Superfície; "
+                      }
+                    ],
+                    "__pullDown": false
+                  }
+                },
+                {
+                  "id": "b_ms3l540p_ca0k",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--terra-500)",
+                    "items": [
+                      {
+                        "title": "Concessão de Uso Especial para Fins de Moradia ",
+                        "text": "Contrato de Concessão de Uso Especial para Fins de Moradia; "
+                      },
+                      {
+                        "title": "Contrato de Promessa de compra e venda ",
+                        "text": "Contrato de Promessa de compra e venda; "
+                      },
+                      {
+                        "title": "Transferência de Direito Real de Uso para fins de Reurb-S ",
+                        "text": "Certidão de Autorização de Transferência de Direito Real de Uso para fins de regularização fundiária urbana de interesse social (CAT-Reurb-S)"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bj8hqgo6",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cg0c6djy",
+          "type": "titulo",
+          "props": {
+            "text": "Regimes de direito pessoal ou obrigacional",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c1hirxgf",
+          "type": "prose",
+          "props": {
+            "html": "<p>Nessa categoria, a Administração não transfere a propriedade nem constitui direito real sobre o imóvel. O que se estabelece é uma relação contratual ou obrigacional entre as partes, disciplinando o uso do bem por determinado período e sob condições específicas. Em regra, esses regimes oferecem maior flexibilidade para adequar a destinação às necessidades da política pública ou da gestão patrimonial, preservando o domínio público do imóvel.</p><p>São amplamente utilizados para permitir a utilização de imóveis por órgãos públicos, entidades privadas, organizações sociais ou particulares, podendo ser gratuitos ou onerosos, conforme o interesse público e a legislação aplicável. Também constituem importantes instrumentos de arrecadação patrimonial quando associados à cobrança pelo uso privativo dos bens públicos.</p>"
+          }
+        },
+        {
+          "id": "b_ms3lb7xs_z6fm",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Regimes abrangidos",
+            "kickerIcon": "layout-list",
+            "title": "",
+            "color": "",
+            "bg": "var(--sand-50)",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "b_ms3lb7xs_nv0g",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b_ms3lb7xs_w30d",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--terra-500)",
+                    "items": [
+                      {
+                        "title": "Acordo de Cooperação Técnica para Regularização Fundiária Urbana ",
+                        "text": "Acordo de Cooperação Técnica (ACT-Reurb)."
+                      },
+                      {
+                        "title": "Entrega ",
+                        "text": "Termo de Entrega."
+                      },
+                      {
+                        "title": "Guarda provisória ",
+                        "text": "Termo de Guarda Provisória."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b_ms3lb7xs_ekyd",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--terra-500)",
+                    "items": [
+                      {
+                        "title": "Transferência de gestão por determinação legal ",
+                        "text": "Termo de Transferência de Gestão."
+                      },
+                      {
+                        "title": "Transferência de gestão de orlas e praias ",
+                        "text": "Termo de Adesão à Gestão de Orlas e Praias (TAGP)."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bqytyoaq",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cymwxnnb",
+          "type": "titulo",
+          "props": {
+            "text": "Regimes de outorga administrativa",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c70bb15r",
+          "type": "prose",
+          "props": {
+            "html": "<p>Os regimes de outorga administrativa caracterizam-se pela prática de atos unilaterais da Administração que permitem, reconhecem ou autorizam determinados usos do imóvel público, normalmente em caráter precário, específico ou transitório. Diferentemente dos direitos reais e das relações obrigacionais típicas, essas outorgas não estabelecem vínculo contratual amplo nem conferem direito real sobre o bem, permanecendo sujeitas às condições impostas pelo poder público e à prevalência do interesse coletivo.</p><p>São instrumentos frequentemente empregados para disciplinar situações pontuais, como autorizações para realização de obras, implantação de infraestrutura, realização de eventos, utilização sustentável por comunidades tradicionais ou reconhecimento administrativo de determinadas ocupações. Em muitos casos, constituem soluções céleres e proporcionais para demandas que não justificam a celebração de contratos mais complexos.</p>"
+          }
+        },
+        {
+          "id": "b_ms3llgh7_bs16",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Principais regimes",
+            "kickerIcon": "alert-circle",
+            "title": "",
+            "color": "",
+            "bg": "var(--sand-50)",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "b_ms3llgh7_hhv9",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b_ms3llgh7_rk18",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--terra-500)",
+                    "items": [
+                      {
+                        "title": "Autorização de obras ",
+                        "text": "Portaria de Autorização de Obras."
+                      },
+                      {
+                        "title": "Autorização de passagem",
+                        "text": "Termo de Autorização de Passagem [Gratuita | Onerosa]."
+                      },
+                      {
+                        "title": "Autorização de uso para fins comerciais ",
+                        "text": "Termo de Autorização de Uso."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b_ms3llgh7_bsnz",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--terra-500)",
+                    "items": [
+                      {
+                        "title": "Autorização de Uso Sustentável ",
+                        "text": "Termo de Autorização de Uso Sustentável (TAUS)."
+                      },
+                      {
+                        "title": "Inscrição de ocupação ",
+                        "text": "Certidão de Outorga de Inscrição de Ocupação"
+                      },
+                      {
+                        "title": "Permissão de uso para eventos de curta duração ",
+                        "text": "Termo de Permissão de Uso para eventos."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bkugs8ce",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "terra-dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b9lcf1l6",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Exemplo Da UNIÃO",
+            "kickerIcon": "map-pin",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-50)",
+            "body": "",
+            "__pullUp": false
+          },
+          "children": [
+            {
+              "id": "b13nxyuo",
+              "type": "prose",
+              "props": {
+                "html": "<p><b><span data-fs=\"h3\">Padronizando a linguagem da gestão patrimonial</span><br></b><span style=\"text-wrap-mode: initial; color: inherit;\"><span data-fs=\"h5\">A experiência do Comitê de Gestão do Conhecimento (ComGC/SPU)</span></span></p><p>A gestão de imóveis públicos envolve centenas de conceitos, instrumentos e regimes jurídicos que, muitas vezes, recebem denominações distintas ou são utilizados de forma inconsistente por diferentes órgãos e entes federativos, inclusive internamente nestes. Para enfrentar esse desafio, a Secretaria do Patrimônio da União (SPU) instituiu o Comitê de Gestão do Conhecimento (ComGC), responsável por, dentre outras atribuições, desenvolver e manter tabelas taxonômicas voltadas à padronização da linguagem técnico-administrativa aplicada à gestão patrimonial.</p><p>Essas taxonomias organizam conceitos, reduzem ambiguidades terminológicas e favorecem a interoperabilidade entre sistemas, a produção de estatísticas, a gestão do conhecimento e a elaboração de normas e documentos institucionais. Embora concebidas para a realidade da SPU, constituem importante referência para qualquer instituição que atue na gestão de imóveis públicos.</p><p>Entre os principais produtos desenvolvidos destacam-se:</p>"
+              }
+            },
+            {
+              "id": "bblv4m9j",
+              "type": "accordion",
+              "props": {
+                "numbered": false,
+                "items": [
+                  {
+                    "title": " TT-01 – Tipos de Uso Imobiliário",
+                    "content": "<p>Classifica os diferentes usos atribuídos aos imóveis públicos, apoiando análises sobre função social, destinação e políticas públicas.<br><span style=\"text-wrap-mode: initial; color: inherit;\">Disponível em: <mark data-hl=\"petrol\"><span data-color=\"petrol\"><a href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/252031/SEI_50532576_Resolucao_2-4.pdf\">Resolução ComGC/SPU/MGI nº 2/2025 (TT-01)</a></span></mark></span></p>"
+                  },
+                  {
+                    "title": " TT-02 – Regimes de Destinação Imobiliária",
+                    "content": "<p>Organiza e padroniza os regimes jurídicos utilizados para destinação de imóveis públicos, estruturando-os conforme sua natureza e efeitos patrimoniais.</p><p>Disponível no repositório institucional <b>MemóriaSPU: </b><span style=\"text-wrap-mode: initial; color: inherit;\"><mark data-hl=\"terra\"><span data-color=\"petrol\"><a href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/273781/SEI_54999155_Resolucao_5_TT02.pdf\">Resolução ComGC/SPU/MGI nº 5/2025 (TT-02)</a></span> </mark></span></p>",
+                    "linkHref": "",
+                    "linkLabel": "",
+                    "linkButton": ""
+                  },
+                  {
+                    "title": " TT-03 – Funções Finalísticas da Gestão Patrimonial Imobiliária",
+                    "content": "<p>Sistematiza as principais funções e macrofunções relacionadas à administração do patrimônio imobiliário público, oferecendo uma visão integrada do ciclo de gestão e apoiando iniciativas de capacitação, modelagem de processos e governança.</p><p>Disponível no repositório institucional <b>MemóriaSPU</b>: <mark data-hl=\"terra\"><a href=\"https://\">Tabela Taxonômica TT-03 – Funções Finalísticas</a></mark> </p>",
+                    "linkHref": "",
+                    "linkLabel": "",
+                    "linkButton": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b7n6chi5",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para fechar",
+        "kickerIcon": "check",
+        "title": "Considerações finais",
+        "body": "<p>A escolha do regime de destinação não é uma mera formalidade jurídica. Ela influencia diretamente a estabilidade da relação estabelecida, os direitos conferidos ao destinatário, a possibilidade de cobrança de contrapartidas, os mecanismos de fiscalização, o tratamento registral e o alcance das políticas públicas implementadas por meio dos imóveis.</p><p>Por essa razão, a utilização de uma classificação taxonômica padronizada contribui para aumentar a segurança jurídica, facilitar a interoperabilidade entre sistemas, qualificar a produção de informações patrimoniais e promover uma linguagem comum entre os diferentes entes e instituições responsáveis pela gestão do patrimônio imobiliário público. A Tabela Taxonômica de Regimes de Destinação Imobiliária da SPU constitui, nesse contexto, uma referência útil para compreender a diversidade e a complexidade dos instrumentos disponíveis para dar função social, econômica e institucional aos imóveis públicos.</p><p>Por fim, é importante destacar que a nomenclatura e a disciplina jurídica dos regimes de destinação podem variar entre os diferentes entes federativos. Estados, Distrito Federal e municípios podem prever instrumentos específicos ou adotar denominações distintas para institutos de natureza semelhante, assim como a União possui regimes próprios, a exemplo da inscrição de ocupação e do aforamento, decorrentes de sua história patrimonial e de legislação específica. Apesar dessas particularidades, grande parte dos regimes utilizados na gestão de imóveis públicos encontra fundamento no Direito Civil, especialmente no Código Civil brasileiro, complementado por normas urbanísticas, administrativas e patrimoniais de cada ente. A compreensão da natureza jurídica de cada regime é, portanto, mais relevante do que sua denominação específica, permitindo identificar soluções equivalentes em diferentes contextos institucionais.</p><p><br></p>"
+      },
+      "children": [
+        {
+          "id": "bp08buvw",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "warning",
+            "icon": "bookmark",
+            "title": "Atenção",
+            "heading": "Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02)",
+            "children": "<p>Para aprofundar o estudo, recomenda-se a leitura da Resolução que institui a Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02), reproduzida integralmente ao final deste material. O documento apresenta as definições oficiais, fundamentos legais, instrumentos de formalização e demais atributos de cada regime, constituindo importante referência para a padronização conceitual e a gestão dos imóveis públicos.</p><p><b><a href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/273781/SEI_54999155_Resolucao_5_TT02.pdf\" data-btn=\"secondary\">Acesse aqui a TT02</a></b></p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "bupna9b3",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Referências",
+                "content": "<p>Secretaria do Patrimônio da União. (2025). <b>Resolução ComGC/SPU/MGI nº 5, de 24 de outubro de 2025</b>: Institui a Tabela Taxonômica de Regimes de Destinação Imobiliária no âmbito da Secretaria do Patrimônio da União. Ministério da Gestão e da Inovação em Serviços Públicos. https://memoriaspu.gestao.gov.br</p>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhi2lp79",
+      "type": "pagefooter",
+      "props": {
+        "code": "M412 - Regimes de destinação",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Claudson Moreira"
+          },
+          {
+            "role": "Revisão",
+            "name": "Angélia Faddoul"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Julho de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}

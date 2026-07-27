@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M412 - Regimes de destinação</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"bl7l2qcs__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bl7l2qcs__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M412 - Regimes de destinação","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cj0v7ccm","text":"Regimes de direito real","hidden":false},{"id":"cg0c6djy","text":"Regimes de direito pessoal ou obrigacional","hidden":false},{"id":"cymwxnnb","text":"Regimes de outorga administrativa","hidden":false}]}},"blocks":[{"id":"br7sokuo","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"bl7l2qcs","type":"hero","props":{"kicker":"Regimes de destinação","kickerIcon":"map-pinned","title":"Como o Estado atribui função aos imóveis públicos","byline":"um guia dos regimes de destinação","slot":"bl7l2qcs__slot"}},{"id":"bqu21bkv","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c2bph20x","type":"prose","props":{"html":"\u003cp>Os imóveis públicos podem ser utilizados para as mais diversas finalidades: sediar órgãos governamentais, apoiar políticas públicas, promover regularização fundiária, viabilizar empreendimentos econômicos, proteger comunidades tradicionais, gerar receitas ou mesmo ser transferidos definitivamente a outros entes ou particulares. Embora essas situações sejam frequentemente tratadas de forma genérica como “destinações”, elas envolvem relações jurídicas bastante distintas, com diferentes níveis de estabilidade, direitos conferidos aos destinatários, formas de remuneração, prazos, possibilidades de revogação e requisitos legais.\u003c/p>\u003cp>Compreender essas diferenças é fundamental para selecionar o mecanismo mais adequado a cada contexto e garantir segurança jurídica, transparência e coerência na gestão patrimonial. Entretanto, a diversidade de normas, nomenclaturas e práticas administrativas adotadas pelos diferentes entes federativos pode dificultar a comunicação entre profissionais e gerar interpretações divergentes sobre institutos aparentemente semelhantes.\u003c/p>\u003cp>Nesse contexto, iniciativas de padronização conceitual assumem papel estratégico. A organização sistemática dos regimes de destinação permite classificar os instrumentos existentes segundo sua natureza jurídica e seus efeitos patrimoniais, facilitando a produção de normas, o desenvolvimento de sistemas de informação, a gestão do conhecimento e o intercâmbio de experiências entre instituições. A \u003cb>Tabela Taxonômica de Regimes de Destinação Imobiliária\u003c/b> elaborada no âmbito da Secretaria do Patrimônio da União representa uma contribuição relevante nesse sentido e serve como referência para este material, cuja versão integral é apresentada em anexo. \u003c/p>\u003cp>Antes de prosseguir, convém distinguir dois conceitos fundamentais aqui adotados:\u003c/p>"}},{"id":"b1r0cekz","type":"feature","props":{"columns":1,"card":true,"accent":"","layout":"side","items":[{"icon":"landmark","title":"Regime de destinação imobiliária","text":"\u003cspan data-fs=\"body\">Relação jurídico-administrativa que define os direitos e as obrigações decorrentes da destinação de um imóvel público, estabelecendo a natureza da relação entre a Administração e o destinatário. \u003c/span>"},{"icon":"file-text","title":"Instrumento de destinação","text":"\u003cspan data-fs=\"body\">Documento que formaliza o regime adotado, materializando suas condições, prazos, encargos e efeitos jurídicos, como contratos, termos, certidões ou portarias. \u003c/span>"}]}},{"id":"bhq5d81u","type":"prose","props":{"html":"\u003cp>Apresentaremos, aqui, as principais classes de regimes de destinação aplicáveis aos imóveis públicos, explicando sua lógica, características e finalidades. A descrição detalhada de cada regime, bem como suas definições oficiais e fundamentos normativos, pode ser consultada na resolução e na tabela taxonômica reproduzidas ao final deste documento.\u003c/p>"}}]},{"id":"bvw3iwek","type":"section","props":{"width":"content","surface":"dark","pad":"lg"},"children":[{"id":"cj0v7ccm","type":"titulo","props":{"text":"Regimes de direito real","level":"h2"}},{"id":"c8c3bj2r","type":"prose","props":{"html":"\u003cp>Os regimes de direito real compreendem as formas de destinação em que a Administração Pública transfere a propriedade do imóvel ou constitui direitos reais limitados em favor de terceiros. Diferentemente dos regimes obrigacionais, essas relações produzem efeitos perante todos (oponibilidade erga omnes) e, em regra, podem ser registradas no cartório de registro de imóveis, conferindo maior estabilidade jurídica ao destinatário. São amplamente utilizados em políticas de regularização fundiária, desenvolvimento urbano, habitação, exploração econômica e reorganização patrimonial. A depender do caso, podem envolver alienação definitiva do bem ou apenas a constituição de direitos reais específicos, preservando a titularidade pública. Por sua relevância e diversidade, a \u003cspan data-term=\"TT\" title=\"Tabela Taxonômica de Regimes de Destinação Imobiliária\">TT\u003c/span> organiza esses regimes em duas grandes subclasses: os de \u003cb>transferência da propriedade\u003c/b> e os de \u003cb>direito real limitado\u003c/b>.\u003c/p>"}}]},{"id":"byeb2k41","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"c3udoi10","type":"titulo","props":{"text":"Regimes de transferência da propriedade","level":"h3"}},{"id":"cph8gxsc","type":"prose","props":{"html":"\u003cp>Essa subclasse reúne os regimes pelos quais o Poder Público transfere a propriedade do imóvel a terceiros em caráter definitivo. A transferência pode decorrer de decisão discricionária da Administração, quando há espaço para avaliação de conveniência e oportunidade, ou resultar diretamente de imposição legal, hipótese em que o atendimento dos requisitos previstos em lei vincula a atuação administrativa. Trata-se de importante instrumento para implementação de políticas públicas, regularização fundiária, reorganização patrimonial, alienação de ativos e cumprimento de obrigações legais. Embora a propriedade seja transferida, muitos desses regimes podem impor condições, encargos ou finalidades específicas que condicionam sua manutenção.\u003c/p>"}},{"id":"bgq0anjy","type":"accordion","props":{"numbered":false,"items":[{"title":"Alienação imobiliária discricionária","content":"\u003cp>Nos regimes de alienação discricionária, a Administração possui margem para decidir se a transferência da propriedade é conveniente ao interesse público. Essa avaliação considera fatores como oportunidade, política pública envolvida, interesse social, eficiência patrimonial e planejamento governamental. Incluem-se nessa categoria mecanismos voltados tanto à obtenção de receitas quanto à reorganização do patrimônio ou à implementação de projetos específicos. A escolha do regime adequado depende das características do imóvel, da finalidade pretendida e da legislação aplicável.\u003c/p>","blocks":[{"id":"bzz05rxi","type":"kicker","props":{"icon":"layout-list","children":"Regimes abrangidos","__pullUp":false,"__pullDown":true}},{"id":"bbajyz9z","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"","items":[{"title":"Dação em pagamento ","text":"Contrato de dação em pagamento"},{"title":"Doação ","text":"Contrato de doação"},{"title":"Integralização de cotas em Fundo de Investimento Imobiliário ","text":"Contrato de Integralização de Cotas em Fundo de Investimento Imobiliário"},{"title":"Investidura ","text":"Contrato de Investidura"},{"title":"Permuta ","text":"Contrato de Permuta"},{"title":"Remição de foro","text":"Contrato de Remição de Foro e Certificado de Remição de Foro (procedimento simplificado)"},{"title":"Venda ","text":"Contrato de compra e venda"}],"__pullUp":false}}]},{"title":"Alienação imobiliária vinculada","content":"Na alienação vinculada, a transferência da propriedade decorre diretamente do atendimento dos requisitos previstos em lei, sem margem relevante para juízo discricionário da Administração. São regimes normalmente associados à efetivação de direitos, regularização fundiária ou cumprimento de comandos legais específicos, em que a atuação do gestor consiste essencialmente em verificar o preenchimento das condições estabelecidas pelo ordenamento jurídico. Nesses casos, a destinação do imóvel representa instrumento de concretização de políticas públicas previamente definidas pelo legislador.","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"bek0k53d","type":"kicker","props":{"icon":"layout-list","children":"Regimes abrangidos","__pullDown":true}},{"id":"boqqunoo","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"","items":[{"title":"Legitimação fundiária ","text":"Certidão de Regularização Fundiária (CRF)."},{"title":"Reconhecimento de domínio ","text":"Título de Reconhecimento de Domínio."},{"title":"Transferência de propriedade para fins de Reurb-S ","text":"Certidão de Autorização de Transferência de domínio para fins de Reurb-S (CATReurb-S)."},{"title":"Transferência de propriedade por dispositivo legal específico ","text":"Termo de Transferência. "}]}}]}]}}]},{"id":"bo1tcdvj","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"c4f5u8ju","type":"titulo","props":{"text":"Regimes de direito real limitado","level":"h3"}},{"id":"cgqrnkyn","type":"prose","props":{"html":"\u003cp>Diferentemente da transferência da propriedade, esses regimes mantêm o domínio do imóvel com o Poder Público, mas atribuem ao destinatário determinados poderes jurídicos diretamente relacionados ao bem. Em geral, conferem maior estabilidade do que os vínculos meramente contratuais e exigem registro no cartório competente, assegurando publicidade e segurança jurídica. São amplamente empregados para viabilizar políticas habitacionais, regularização fundiária, desenvolvimento urbano, utilização econômica ou implantação de empreendimentos de longo prazo, preservando a titularidade pública sempre que conveniente ao interesse coletivo.\u003c/p>"}},{"id":"bpbpx7fw","type":"panel","props":{"variant":"box","kicker":"Regimes e respectivos instrumentos abrangidos","kickerIcon":"layout-list","title":"","color":"","bg":"var(--cloud-50)","body":""},"children":[{"id":"bdugkjij","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b2zlttkp","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--terra-500)","items":[{"title":"Aforamento","text":"Contrato de aforamento"},{"title":"Concessão de Direito Real de Laje ","text":"Contrato de Concessão de Direito Real de Laje"},{"title":"Concessão de Direito Real de Uso ","text":"Contrato de Concessão de Direito Real de Uso; "},{"title":"Concessão de Direito de Superfície ","text":"Contrato de Concessão de Direito de Superfície; "}],"__pullDown":false}},{"id":"b_ms3l540p_ca0k","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--terra-500)","items":[{"title":"Concessão de Uso Especial para Fins de Moradia ","text":"Contrato de Concessão de Uso Especial para Fins de Moradia; "},{"title":"Contrato de Promessa de compra e venda ","text":"Contrato de Promessa de compra e venda; "},{"title":"Transferência de Direito Real de Uso para fins de Reurb-S ","text":"Certidão de Autorização de Transferência de Direito Real de Uso para fins de regularização fundiária urbana de interesse social (CAT-Reurb-S)"}]}}]}]}]},{"id":"bj8hqgo6","type":"section","props":{"width":"content","surface":"page","pad":"lg"},"children":[{"id":"cg0c6djy","type":"titulo","props":{"text":"Regimes de direito pessoal ou obrigacional","level":"h2"}},{"id":"c1hirxgf","type":"prose","props":{"html":"\u003cp>Nessa categoria, a Administração não transfere a propriedade nem constitui direito real sobre o imóvel. O que se estabelece é uma relação contratual ou obrigacional entre as partes, disciplinando o uso do bem por determinado período e sob condições específicas. Em regra, esses regimes oferecem maior flexibilidade para adequar a destinação às necessidades da política pública ou da gestão patrimonial, preservando o domínio público do imóvel.\u003c/p>\u003cp>São amplamente utilizados para permitir a utilização de imóveis por órgãos públicos, entidades privadas, organizações sociais ou particulares, podendo ser gratuitos ou onerosos, conforme o interesse público e a legislação aplicável. Também constituem importantes instrumentos de arrecadação patrimonial quando associados à cobrança pelo uso privativo dos bens públicos.\u003c/p>"}},{"id":"b_ms3lb7xs_z6fm","type":"panel","props":{"variant":"box","kicker":"Regimes abrangidos","kickerIcon":"layout-list","title":"","color":"","bg":"var(--sand-50)","body":""},"children":[{"id":"b_ms3lb7xs_nv0g","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_ms3lb7xs_w30d","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--terra-500)","items":[{"title":"Acordo de Cooperação Técnica para Regularização Fundiária Urbana ","text":"Acordo de Cooperação Técnica (ACT-Reurb)."},{"title":"Entrega ","text":"Termo de Entrega."},{"title":"Guarda provisória ","text":"Termo de Guarda Provisória."}]}},{"id":"b_ms3lb7xs_ekyd","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--terra-500)","items":[{"title":"Transferência de gestão por determinação legal ","text":"Termo de Transferência de Gestão."},{"title":"Transferência de gestão de orlas e praias ","text":"Termo de Adesão à Gestão de Orlas e Praias (TAGP)."}]}}]}]}]},{"id":"bqytyoaq","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cymwxnnb","type":"titulo","props":{"text":"Regimes de outorga administrativa","level":"h2"}},{"id":"c70bb15r","type":"prose","props":{"html":"\u003cp>Os regimes de outorga administrativa caracterizam-se pela prática de atos unilaterais da Administração que permitem, reconhecem ou autorizam determinados usos do imóvel público, normalmente em caráter precário, específico ou transitório. Diferentemente dos direitos reais e das relações obrigacionais típicas, essas outorgas não estabelecem vínculo contratual amplo nem conferem direito real sobre o bem, permanecendo sujeitas às condições impostas pelo poder público e à prevalência do interesse coletivo.\u003c/p>\u003cp>São instrumentos frequentemente empregados para disciplinar situações pontuais, como autorizações para realização de obras, implantação de infraestrutura, realização de eventos, utilização sustentável por comunidades tradicionais ou reconhecimento administrativo de determinadas ocupações. Em muitos casos, constituem soluções céleres e proporcionais para demandas que não justificam a celebração de contratos mais complexos.\u003c/p>"}},{"id":"b_ms3llgh7_bs16","type":"panel","props":{"variant":"box","kicker":"Principais regimes","kickerIcon":"alert-circle","title":"","color":"","bg":"var(--sand-50)","body":""},"children":[{"id":"b_ms3llgh7_hhv9","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_ms3llgh7_rk18","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--terra-500)","items":[{"title":"Autorização de obras ","text":"Portaria de Autorização de Obras."},{"title":"Autorização de passagem","text":"Termo de Autorização de Passagem [Gratuita | Onerosa]."},{"title":"Autorização de uso para fins comerciais ","text":"Termo de Autorização de Uso."}]}},{"id":"b_ms3llgh7_bsnz","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--terra-500)","items":[{"title":"Autorização de Uso Sustentável ","text":"Termo de Autorização de Uso Sustentável (TAUS)."},{"title":"Inscrição de ocupação ","text":"Certidão de Outorga de Inscrição de Ocupação"},{"title":"Permissão de uso para eventos de curta duração ","text":"Termo de Permissão de Uso para eventos."}]}}]}]}]},{"id":"bkugs8ce","type":"section","props":{"width":"content","surface":"terra-dark","pad":"lg"},"children":[{"id":"b9lcf1l6","type":"panel","props":{"variant":"box","kicker":"Exemplo Da UNIÃO","kickerIcon":"map-pin","title":"","color":"","bg":"var(--cloud-50)","body":"","__pullUp":false},"children":[{"id":"b13nxyuo","type":"prose","props":{"html":"\u003cp>\u003cb>\u003cspan data-fs=\"h3\">Padronizando a linguagem da gestão patrimonial\u003c/span>\u003cbr>\u003c/b>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003cspan data-fs=\"h5\">A experiência do Comitê de Gestão do Conhecimento (ComGC/SPU)\u003c/span>\u003c/span>\u003c/p>\u003cp>A gestão de imóveis públicos envolve centenas de conceitos, instrumentos e regimes jurídicos que, muitas vezes, recebem denominações distintas ou são utilizados de forma inconsistente por diferentes órgãos e entes federativos, inclusive internamente nestes. Para enfrentar esse desafio, a Secretaria do Patrimônio da União (SPU) instituiu o Comitê de Gestão do Conhecimento (ComGC), responsável por, dentre outras atribuições, desenvolver e manter tabelas taxonômicas voltadas à padronização da linguagem técnico-administrativa aplicada à gestão patrimonial.\u003c/p>\u003cp>Essas taxonomias organizam conceitos, reduzem ambiguidades terminológicas e favorecem a interoperabilidade entre sistemas, a produção de estatísticas, a gestão do conhecimento e a elaboração de normas e documentos institucionais. Embora concebidas para a realidade da SPU, constituem importante referência para qualquer instituição que atue na gestão de imóveis públicos.\u003c/p>\u003cp>Entre os principais produtos desenvolvidos destacam-se:\u003c/p>"}},{"id":"bblv4m9j","type":"accordion","props":{"numbered":false,"items":[{"title":" TT-01 – Tipos de Uso Imobiliário","content":"\u003cp>Classifica os diferentes usos atribuídos aos imóveis públicos, apoiando análises sobre função social, destinação e políticas públicas.\u003cbr>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Disponível em: \u003cmark data-hl=\"petrol\">\u003cspan data-color=\"petrol\">\u003ca href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/252031/SEI_50532576_Resolucao_2-4.pdf\">Resolução ComGC/SPU/MGI nº 2/2025 (TT-01)\u003c/a>\u003c/span>\u003c/mark>\u003c/span>\u003c/p>"},{"title":" TT-02 – Regimes de Destinação Imobiliária","content":"\u003cp>Organiza e padroniza os regimes jurídicos utilizados para destinação de imóveis públicos, estruturando-os conforme sua natureza e efeitos patrimoniais.\u003c/p>\u003cp>Disponível no repositório institucional \u003cb>MemóriaSPU: \u003c/b>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003cmark data-hl=\"terra\">\u003cspan data-color=\"petrol\">\u003ca href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/273781/SEI_54999155_Resolucao_5_TT02.pdf\">Resolução ComGC/SPU/MGI nº 5/2025 (TT-02)\u003c/a>\u003c/span> \u003c/mark>\u003c/span>\u003c/p>","linkHref":"","linkLabel":"","linkButton":""},{"title":" TT-03 – Funções Finalísticas da Gestão Patrimonial Imobiliária","content":"\u003cp>Sistematiza as principais funções e macrofunções relacionadas à administração do patrimônio imobiliário público, oferecendo uma visão integrada do ciclo de gestão e apoiando iniciativas de capacitação, modelagem de processos e governança.\u003c/p>\u003cp>Disponível no repositório institucional \u003cb>MemóriaSPU\u003c/b>: \u003cmark data-hl=\"terra\">\u003ca href=\"https://\">Tabela Taxonômica TT-03 – Funções Finalísticas\u003c/a>\u003c/mark> \u003c/p>","linkHref":"","linkLabel":"","linkButton":""}]}}]}]},{"id":"b7n6chi5","type":"conclusion","props":{"kicker":"Para fechar","kickerIcon":"check","title":"Considerações finais","body":"\u003cp>A escolha do regime de destinação não é uma mera formalidade jurídica. Ela influencia diretamente a estabilidade da relação estabelecida, os direitos conferidos ao destinatário, a possibilidade de cobrança de contrapartidas, os mecanismos de fiscalização, o tratamento registral e o alcance das políticas públicas implementadas por meio dos imóveis.\u003c/p>\u003cp>Por essa razão, a utilização de uma classificação taxonômica padronizada contribui para aumentar a segurança jurídica, facilitar a interoperabilidade entre sistemas, qualificar a produção de informações patrimoniais e promover uma linguagem comum entre os diferentes entes e instituições responsáveis pela gestão do patrimônio imobiliário público. A Tabela Taxonômica de Regimes de Destinação Imobiliária da SPU constitui, nesse contexto, uma referência útil para compreender a diversidade e a complexidade dos instrumentos disponíveis para dar função social, econômica e institucional aos imóveis públicos.\u003c/p>\u003cp>Por fim, é importante destacar que a nomenclatura e a disciplina jurídica dos regimes de destinação podem variar entre os diferentes entes federativos. Estados, Distrito Federal e municípios podem prever instrumentos específicos ou adotar denominações distintas para institutos de natureza semelhante, assim como a União possui regimes próprios, a exemplo da inscrição de ocupação e do aforamento, decorrentes de sua história patrimonial e de legislação específica. Apesar dessas particularidades, grande parte dos regimes utilizados na gestão de imóveis públicos encontra fundamento no Direito Civil, especialmente no Código Civil brasileiro, complementado por normas urbanísticas, administrativas e patrimoniais de cada ente. A compreensão da natureza jurídica de cada regime é, portanto, mais relevante do que sua denominação específica, permitindo identificar soluções equivalentes em diferentes contextos institucionais.\u003c/p>\u003cp>\u003cbr>\u003c/p>"},"children":[{"id":"bp08buvw","type":"callout","props":{"variant":"header","tone":"warning","icon":"bookmark","title":"Atenção","heading":"Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02)","children":"\u003cp>Para aprofundar o estudo, recomenda-se a leitura da Resolução que institui a Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02), reproduzida integralmente ao final deste material. O documento apresenta as definições oficiais, fundamentos legais, instrumentos de formalização e demais atributos de cada regime, constituindo importante referência para a padronização conceitual e a gestão dos imóveis públicos.\u003c/p>\u003cp>\u003cb>\u003ca href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/273781/SEI_54999155_Resolucao_5_TT02.pdf\" data-btn=\"secondary\">Acesse aqui a TT02\u003c/a>\u003c/b>\u003c/p>","color":""}},{"id":"bupna9b3","type":"accordion","props":{"numbered":false,"items":[{"title":"Referências","content":"\u003cp>Secretaria do Patrimônio da União. (2025). \u003cb>Resolução ComGC/SPU/MGI nº 5, de 24 de outubro de 2025\u003c/b>: Institui a Tabela Taxonômica de Regimes de Destinação Imobiliária no âmbito da Secretaria do Patrimônio da União. Ministério da Gestão e da Inovação em Serviços Públicos. https://memoriaspu.gestao.gov.br\u003c/p>"}]}}]},{"id":"bhi2lp79","type":"pagefooter","props":{"code":"M412 - Regimes de destinação","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Claudson Moreira"},{"role":"Revisão","name":"Angélia Faddoul"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Julho de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"bl7l2qcs__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bl7l2qcs__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"bookmark":"\u003cpath d=\"M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","file-text":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M10 9H8\"/>\u003cpath d=\"M16 13H8\"/>\u003cpath d=\"M16 17H8\"/>","landmark":"\u003cpath d=\"M10 18v-7\"/>\u003cpath d=\"M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z\"/>\u003cpath d=\"M14 18v-7\"/>\u003cpath d=\"M18 18v-7\"/>\u003cpath d=\"M3 22h18\"/>\u003cpath d=\"M6 18v-7\"/>","layout-list":"\u003crect width=\"7\" height=\"7\" x=\"3\" y=\"3\" rx=\"1\"/>\u003crect width=\"7\" height=\"7\" x=\"3\" y=\"14\" rx=\"1\"/>\u003cpath d=\"M14 4h7\"/>\u003cpath d=\"M14 9h7\"/>\u003cpath d=\"M14 15h7\"/>\u003cpath d=\"M14 20h7\"/>","map-pin":"\u003cpath d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/>\u003ccircle cx=\"12\" cy=\"10\" r=\"3\"/>","map-pinned":"\u003cpath d=\"M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0\"/>\u003ccircle cx=\"12\" cy=\"8\" r=\"2\"/>\u003cpath d=\"M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return html;
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      return html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+    }
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>
