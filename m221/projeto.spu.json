@@ -37,10 +37,10 @@
       "id": "bvtgtbn8",
       "type": "hero",
       "props": {
-        "kicker": "Análise técnico-jurídica preventiva de imóveis públicos",
-        "kickerIcon": "compass",
-        "title": "<i>Due diligence</i> aplicada à gestão de imóveis públicos",
-        "byline": "Análise preventiva para a tomada de decisões seguras",
+        "kicker": "Análise técnico-jurídica",
+        "kickerIcon": "scale",
+        "title": "Análise preventiva de imóveis públicos&nbsp;",
+        "byline": "busca de elementos para decisões patrimoniais seguras",
         "slot": "bvtgtbn8__slot"
       }
     },
@@ -104,7 +104,7 @@
             "title": "",
             "color": "",
             "bg": "var(--cloud-200)",
-            "body": "<p><br></p>",
+            "body": "",
             "__pullUp": false
           },
           "children": [
@@ -546,19 +546,20 @@
           "props": {
             "hint": "Dimensões de análise",
             "accent": "var(--terra-600)",
+            "showTabNumbers": true,
             "slides": [
               {
                 "showImage": false,
                 "slot": "bxs5lyh2__slides_1_slot",
                 "alt": "",
                 "caption": "",
-                "label": "<br>",
+                "label": "",
                 "title": "<span data-fs=\"h4\">Titularidade e cadeia dominial</span>",
                 "subtitle": "Afinal, de quem é esse imóvel?",
                 "description": "No caso dos bens públicos, essa resposta nem sempre pode ser encontrada apenas na matrícula imobiliária, pois muitos imóveis possuem origens históricas específicas decorrentes de sucessões legislativas, antigas formas de aquisição patrimonial ou de outros mecanismos previstos em lei. Por essa razão, a análise preventiva deve investigar a origem da propriedade e a cadeia dominial do imóvel, confrontando informações históricas, registrais e administrativas que permitam compreender como a titularidade foi constituída ao longo do tempo e se ela é compatível com a realidade patrimonial apresentada.",
                 "linkHref": "",
                 "linkLabel": "",
-                "tabLabel": "01",
+                "tabLabel": "Titularidade",
                 "labelIcon": "award"
               },
               {
@@ -566,13 +567,13 @@
                 "slot": "c_up3h3r7__imageSlot",
                 "alt": "",
                 "caption": "",
-                "label": "<br>",
+                "label": "",
                 "title": "<span data-fs=\"h4\">Cadastro e territorialidade</span>",
                 "subtitle": "As informações jurídicas e territoriais do imóvel correspondem entre si?",
                 "description": "A análise preventiva deve confrontar dados cadastrais, registrais e geoespaciais para verificar se a descrição jurídica do imóvel coincide com sua representação física no território, identificando eventuais sobreposições, divergências documentais ou inconsistências relacionadas aos seus limites. A integração dessas informações é essencial para que a tomada de decisão administrativa esteja apoiada em bases patrimoniais confiáveis.",
                 "linkHref": "",
                 "linkLabel": "",
-                "tabLabel": "02",
+                "tabLabel": "Cadastro",
                 "labelIcon": "move-3d"
               },
               {
@@ -580,13 +581,13 @@
                 "slot": "c_dyi2jvr__imageSlot",
                 "alt": "",
                 "caption": "",
-                "label": "<br>",
+                "label": "",
                 "title": "<span data-fs=\"h4\">Situação urbanística e ambiental</span>",
                 "subtitle": "A utilização pretendida para o imóvel é compatível com suas características urbanísticas e ambientais?",
                 "description": "Para isso, devem ser observadas as restrições legais incidentes sobre o bem, sua inserção territorial, as formas de ocupação existentes e a compatibilidade entre sua destinação e o interesse público envolvido. Mais do que identificar impedimentos formais, essa análise permite avaliar se o imóvel poderá cumprir adequadamente a função que dele se espera, reduzindo riscos relacionados à sua utilização futura.",
                 "linkHref": "",
                 "linkLabel": "",
-                "tabLabel": "03",
+                "tabLabel": "Situação",
                 "labelIcon": "trees"
               },
               {
@@ -594,13 +595,13 @@
                 "slot": "c_9qayema__imageSlot",
                 "alt": "",
                 "caption": "",
-                "label": "<br>",
+                "label": "",
                 "title": "<span data-fs=\"h4\">Aspectos administrativos e judiciais</span>",
                 "subtitle": "Existem processos administrativos ou judiciais capazes de afetar a situação jurídica do imóvel ou comprometer a decisão pretendida?",
                 "description": "Litígios possessórios, ações reivindicatórias, procedimentos administrativos pendentes ou entendimentos consolidados pelos tribunais podem influenciar significativamente a estratégia de atuação da Administração Pública. Conhecer previamente esses elementos permite antecipar riscos e evitar decisões fundadas em informações incompletas ou fragmentadas.",
                 "linkHref": "",
                 "linkLabel": "",
-                "tabLabel": "04",
+                "tabLabel": "Aspectos",
                 "labelIcon": "scale"
               },
               {
@@ -608,17 +609,16 @@
                 "slot": "c_8hscdf7__imageSlot",
                 "alt": "",
                 "caption": "",
-                "label": "<br>",
-                "title": "<span data-fs=\"h4\">Relatório de riscos e tomada de decisão</span>",
+                "label": "",
+                "title": "<span data-fs=\"h4\">Identificação de riscos e tomada de decisão</span>",
                 "subtitle": "",
                 "description": "Todas as informações obtidas nas etapas anteriores convergem para a elaboração de um relatório de riscos, cuja finalidade é subsidiar a tomada de decisão patrimonial. Esse documento sintetiza as potencialidades, limitações e inconsistências identificadas durante a análise preventiva, permitindo avaliar a viabilidade da incorporação, destinação, regularização ou utilização pretendida para o imóvel. Mais do que apontar problemas, o relatório oferece ao gestor os elementos necessários para decidir de maneira mais consciente, segura e alinhada ao interesse público.",
                 "linkHref": "",
                 "linkLabel": "",
-                "tabLabel": "05",
+                "tabLabel": "Decisão",
                 "labelIcon": "sticky-note-check"
               }
-            ],
-            "showTabNumbers": false
+            ]
           }
         },
         {
@@ -652,7 +652,7 @@
             "caption": "",
             "credit": "",
             "__pullDown": true,
-            "__pullUp": true
+            "__pullUp": false
           }
         }
       ]
@@ -731,7 +731,7 @@
           },
           {
             "role": "Revisão",
-            "name": "—"
+            "name": "Ana Tulia de Macedo, Claudson Moreira"
           },
           {
             "role": "design educacional",
