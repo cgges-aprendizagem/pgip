@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M231 - Aspectos praticos do reconhecimento e cadastro</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"ba37yhnv__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-ba37yhnv__slot.png"},"bo9rki1f__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bo9rki1f__slot.png"},"bfax3fki__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bfax3fki__slot.png"},"b_msjg2l6o_4qyb__slot":{"s":1,"x":0,"y":5.418914794921875,"u":"assets/images/img-3-b_msjg2l6o_4qyb__slot.png"},"b2n33own__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-b2n33own__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M231 - Aspectos praticos do reconhecimento e cadastro","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cn2lv8es","text":"Antes de começarmos: o que entendemos por cadastro?","hidden":false},{"id":"c3yig28n","text":"O cadastro como instrumento de gestão","hidden":false},{"id":"c53r4gef","text":"Quais informações são controladas pelo cadastro imobiliário?","hidden":false},{"id":"co8f0hql","text":"Na prática, o que significa cadastrar um imóvel público?","hidden":false},{"id":"cffv83zg","text":"A experiência da União: o modelo cadastral adotado pela Secretaria do Patrimônio da União","hidden":false}]}},"blocks":[{"id":"bi76f50s","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"b2n33own","type":"hero","props":{"kicker":"Reconhecimento e cadastro de imóveis públicos na prática","kickerIcon":"sticky-note-check","title":"Aspectos práticos do reconhecimento e cadastro de imóveis públicos","byline":"a experiência da União","slot":"b2n33own__slot"}},{"id":"b7geb92m","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cn2lv8es","type":"titulo","props":{"text":"Antes de começarmos: o que entendemos por cadastro?","level":"h2"}},{"id":"cblu35fs","type":"prose","props":{"html":"\u003cp>Ao longo da gestão de um imóvel público são produzidas inúmeras informações: localização, características físicas, situação jurídica, destinação, avaliações, receitas, registros contábeis, fiscalizações, entre muitas outras. Em algumas organizações, todas essas informações são tratadas como parte do cadastro do imóvel.\u003c/p>\u003cp>Neste material, adotaremos uma compreensão mais específica. Cadastro aqui será tratado como o conjunto de informações que identifica e individualiza o imóvel como objeto da gestão patrimonial, reunindo seus principais atributos físicos, espaciais, jurídicos e administrativos. As demais informações são produzidas pelos diferentes processos de gestão, como destinação, avaliação, fiscalização, contabilidade e receitas, permanecendo vinculadas ao imóvel, mas sem integrar, necessariamente, o seu cadastro.\u003c/p>\u003cp>Essa distinção permite compreender melhor a organização das informações patrimoniais e pode ser aplicada independentemente do sistema informatizado utilizado por cada órgão ou ente federativo. Ela também ajuda a entender a experiência da Secretaria do Patrimônio da União apresentada neste material, baseada em um modelo que organiza as informações por processos de gestão, mantendo o imóvel como elemento central de integração.\u003c/p>"}}]},{"id":"b4iq1eek","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"c3yig28n","type":"titulo","props":{"text":"O cadastro como instrumento de gestão","level":"h2"}},{"id":"c6dzcweo","type":"prose","props":{"html":"\u003cp>Um cadastro imobiliário eficiente é um dos principais instrumentos utilizados pela Administração Pública para conhecer, organizar e atualizar as informações necessárias à gestão dos imóveis sob sua responsabilidade. \u003c/p>\u003cp>Afinal, como planejar a destinação de um imóvel, avaliar sua utilização ou subsidiar a tomada de decisões patrimoniais se o próprio Estado desconhece suas características mais elementares?\u003c/p>"}},{"id":"bbpmx1vk","type":"panel","props":{"variant":"box","kicker":"CADASTRO IMOBILIÁRIO","kickerIcon":"notebook-text","title":"","color":"","bg":"var(--cloud-100)","body":"\u003cp>Mais do que identificar a existência de um imóvel, o cadastro imobiliário permite responder perguntas fundamentais para a sua gestão: \u003c/p>"},"children":[{"id":"b9q6dl6v","type":"feature","props":{"columns":2,"card":false,"accent":"var(--petrol-600)","layout":"side","items":[{"icon":"map-pin-search","title":"","text":"\u003cb>\u003cspan data-fs=\"h6\">Onde ele está localizado?\u003c/span>\u003c/b>"},{"icon":"circle-question-mark","title":"","text":"\u003cb>\u003cspan data-fs=\"h6\">Há ocupantes ou instrumentos jurídicos disciplinando sua utilização?\u003c/span>\u003c/b>"},{"icon":"pencil-ruler","title":"","text":"\u003cb>\u003cspan data-fs=\"h6\">Qual a sua dimensão?\u003c/span>\u003c/b>"},{"icon":"building","title":"","text":"\u003cb>\u003cspan data-fs=\"h6\">Trata-se de um imóvel edificado?\u003c/span>\u003c/b>"},{"icon":"scroll-text","title":"","text":"\u003cb>\u003cspan data-fs=\"h6\">Existe matrícula vinculada ao bem?\u003c/span>\u003c/b>"},{"icon":"trees","title":"","text":"\u003cb>\u003cspan data-fs=\"h6\">Como ele está sendo utilizado?\u003c/span>\u003c/b>"},{"icon":"search","title":"","text":"\u003cb>\u003cspan data-fs=\"h6\">Há dados geoespaciais que sinalizam impedimentos ambientais ou urbanísticos sobre ele?\u003c/span>\u003c/b>"}]}}]},{"id":"bna6sgps","type":"prose","props":{"html":"\u003cp>As respostas para essas perguntas são indispensáveis não apenas para a \u003cb>proteção do patrimônio\u003c/b> \u003cb>público\u003c/b>, mas também para a \u003cb>promoção de políticas\u003c/b> \u003cb>públicas\u003c/b> e para a \u003cb>utilização eficiente dos bens\u003c/b> colocados sob a tutela do Estado.\u003c/p>\u003cp>Nessa perspectiva, o cadastro imobiliário desempenha funções que vão muito além do armazenamento de informações em um sistema informatizado. Ele constitui um\u003cmark data-hl=\"green\"> instrumento de organização do conhecimento patrimonial\u003c/mark>, permitindo reunir, relacionar e disponibilizar informações produzidas por diferentes áreas técnicas. \u003c/p>\u003cp>A integração desses dados possibilita ao gestor público compreender melhor as características do imóvel e adotar decisões mais eficientes, seguras e transparentes sobre a sua utilização.\u003c/p>\u003cp>O cadastro imobiliário constitui, portanto, um dos principais mecanismos utilizados pela Administração Pública para transformar informações dispersas em conhecimento patrimonial capaz de subsidiar a gestão do território e do patrimônio público.\u003c/p>"}},{"id":"ba37yhnv","type":"figure","props":{"slot":"ba37yhnv__slot","src":"","fit":"contain","size":"full","title":"","caption":"\u003cbr>","credit":""}}]},{"id":"b7qvr36n","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c53r4gef","type":"titulo","props":{"text":"Quais informações são controladas pelo cadastro imobiliário?","level":"h2"}},{"id":"cqc02xao","type":"prose","props":{"html":"\u003cp>A gestão patrimonial depende da reunião de dados de diferentes naturezas, as quais analisadas em conjunto permitem compreender não apenas onde está localizado determinado imóvel, mas também quais são as suas características físicas, jurídicas e administrativas.\u003c/p>"}},{"id":"bhq5nuex","type":"contentslider","props":{"hint":"\u003cbr>","accent":"var(--green-700)","showTabNumbers":false,"slides":[{"showImage":false,"slot":"bhq5nuex__slides_1_slot","alt":"","caption":"","labelIcon":"land-plot","label":"","tabLabel":"Territoriais","title":"Informações territoriais","subtitle":"","description":"Elas permitem identificar a localização do imóvel, sua área, seus limites e outras características necessárias à sua individualização no território. Dependendo da natureza do bem, essas informações podem incluir plantas, memoriais descritivos, coordenadas geográficas e outros elementos técnicos indispensáveis à correta representação espacial do imóvel.","linkHref":"","linkLabel":""},{"showImage":false,"slot":"c_z3szjjh__imageSlot","alt":"","caption":"","labelIcon":"scale","label":"","tabLabel":"Jurídicas","title":"Informações jurídicas","subtitle":"","description":"Nesse conjunto encontram-se, por exemplo, os dados relativos à sua titularidade, à existência de matrícula perante o Registro de Imóveis, ao regime jurídico aplicável ao imóvel, quais órgãos são responsáveis pela sua administração, além de outras características que influenciam diretamente a sua utilização e proteção patrimonial.","linkHref":"","linkLabel":""},{"showImage":false,"slot":"c_9ynlchh__imageSlot","alt":"","caption":"","labelIcon":"circle-dollar-sign","label":"","tabLabel":"Econômicas e financeiras","title":"Informações econômicas e financeiras","subtitle":"","description":"Dependendo da natureza e da finalidade do imóvel, os processos de avaliação e contabilização patrimoniais podem gerar valores de referência, registros contábeis, receitas patrimoniais e outras informações essenciais para sua gestão, embora não componham, propriamente, o cadastro do imóvel.","linkHref":"","linkLabel":""}]}},{"id":"b820nll6","type":"callout","props":{"variant":"ear","tone":"attention","icon":"lightbulb","title":"","heading":"As informações produzidas sobre o imóvel não se esgotam no cadastro","children":"\u003cp>Ao longo de seu ciclo de vida, diferentes processos da gestão patrimonial produzem \u003cb>dados complementares\u003c/b>, vinculados ao imóvel cadastrado, que subsidiam atividades específicas da Administração Pública.&nbsp;\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É o caso das informações econômicas e financeiras, por exemplo, produzidas nos processos de avaliação e contabilização patrimoniais.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Registros contábeis relacionados aos imóveis públicos dependem da existência de informações cadastrais \u003cmark>confiáveis e permanentemente atualizadas\u003c/mark>, evidenciando a estreita integração entre o cadastro imobiliário e a contabilidade patrimonial.\u003c/span>\u003c/p>","color":""}},{"id":"b_msjbz5eg_bg3t","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Assim, o \u003cb>cadastro imobiliário\u003c/b> constitui a base informacional da gestão patrimonial. Sobre ele se articulam os diversos processos responsáveis por produzir e manter atualizadas as demais informações relacionadas ao ciclo de vida do imóvel. Consideradas em conjunto, essas informações permitem ao Estado conhecer melhor seu patrimônio e adotar decisões mais eficientes, baseadas em evidências.\u003c/span>\u003c/p>"}}]},{"id":"be0frshl","type":"section","props":{"width":"content","surface":"dark","pad":"lg"},"children":[{"id":"co8f0hql","type":"titulo","props":{"text":"Na prática, o que significa cadastrar um imóvel público?","level":"h2"}},{"id":"cpjs75cy","type":"prose","props":{"html":"\u003cp>Cadastrar um imóvel público é um processo contínuo que inicia&nbsp;\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">no \u003cb>\u003cspan data-color=\"ochre-light\">reconhecimento do imóvel\u003c/span>\u003c/b> pela Ad\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">ministração Pública, mas\u003cb> \u003cspan data-color=\"ochre-light\">não se encerra com o cadastramento\u003c/span>\u003c/b>.&nbsp; Trata-se de um ciclo contínuo de produção e atualização dos dados patrimoniais, permitindo que o Estado disponha das informações necessárias para protegê-lo, administrá-lo e utilizá-lo de maneira mais eficiente.&nbsp;\u003c/span>\u003c/p>"}},{"id":"bxo01as6","type":"panel","props":{"variant":"box","kicker":"Caracterizar atributos físicos, espaciais, jurídicos e administrativos","kickerIcon":"search","title":"Identificar","color":"","bg":"","body":"\u003cp>Antes de ser cadastrado, o bem precisa ser \u003cb>adequadamente identificado\u003c/b>, o que pressupõe conhecer sua localização, suas características físicas, seus limites, sua classe jurídica e outras informações indispensáveis à sua individualização. Em muitos casos, esse trabalho exige a reunião de informações provenientes de diferentes documentos e bases de dados governamentais, produzidas por profissionais de distintas áreas do conhecimento.\u003c/p>"},"children":[]},{"id":"b_msjcvdeq_91ti","type":"panel","props":{"variant":"box","kicker":"Verificar a consistência e a confiabilidade das informações","kickerIcon":"badge-check","title":"Validar","color":"","bg":"","body":"\u003cp>As informações produzidas precisam ser \u003cb>analisadas e validadas\u003c/b>. É nessa etapa que são verificadas eventuais inconsistências relacionadas, por exemplo, à localização do imóvel, à sua representação territorial ou às informações jurídicas e administrativas produzidas sobre o bem.  A qualidade dos dados inseridos no cadastro imobiliário influencia diretamente a qualidade das decisões patrimoniais posteriormente adotadas pela Administração Pública.&nbsp;\u003c/p>"},"children":[]},{"id":"b_msjcwnkn_wg6h","type":"panel","props":{"variant":"box","kicker":"Registrar o imóvel e seus atributos essenciais","kickerIcon":"book-check","title":"Cadastrar","color":"","bg":"","body":"\u003cp>Assim que validadas, as informações são \u003cb>organizadas e registradas\u003c/b> no modelo cadastral adotado pelo órgão responsável pela gestão do patrimônio imobiliário.&nbsp;\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Mas atenção, o processo não se encerra aqui.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan data-color=\"terra\">\u003c/span>\u003c/p>"},"children":[]},{"id":"b_msjcwpbo_wptf","type":"panel","props":{"variant":"box","kicker":"Acompanhar alterações e manter o cadastro compatível com a realidade","kickerIcon":"refresh-ccw","title":"Atualizar","color":"","bg":"","body":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Lembre-se que as informações produzidas pelo cadastro imobiliário possuem uma finalidade prática bastante evidente: \u003cb>subsidiar a tomada de decisões pela Administração Pública\u003c/b>. Por isso, além de corretamente identificadas, validadas e cadastradas, as informações precisam estar \u003cb>atualizadas\u003c/b>.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Processos de destinação patrimonial, avaliações imobiliárias, reconhecimento contábil dos bens públicos, planejamento territorial e integração com outras bases governamentais de dados são alguns exemplos de atividades que dependem da \u003cb>constante atualização das informações cadastrais\u003c/b>.&nbsp;\u003c/span>\u003c/p>"},"children":[]}]},{"id":"bm2iuzg2","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cffv83zg","type":"titulo","props":{"text":"A experiência da União: o modelo cadastral adotado pela Secretaria do Patrimônio da União","level":"h2"}},{"id":"cs4zn3wk","type":"prose","props":{"html":"\u003cp>A gestão do patrimônio imobiliário da União sofreu profundas transformações nas últimas décadas, acompanhando a crescente complexidade das informações necessárias à administração dos bens públicos. \u003c/p>\u003cp>Se, em um primeiro momento, a preocupação da Administração Pública concentrava-se predominantemente na identificação física e jurídica dos imóveis, notadamente para a \u003cspan data-term=\"consecução de fins arrecadatórios\" title=\"obtenção de receita financeira\">consecução de fins arrecadatórios\u003c/span>, com o passar do tempo a evolução das políticas públicas, dos instrumentos de gestão territorial e das próprias tecnologias da informação passou a exigir um modelo cadastral capaz de representar variados aspectos da gestão patrimonial.\u003c/p>"}},{"id":"bo9rki1f","type":"figure","props":{"slot":"bo9rki1f__slot","src":"","fit":"contain","size":"full","title":"","caption":"\u003cspan data-fs=\"body\">Imóveis destinados à prestação de serviços públicos, terrenos submetidos a regimes jurídicos especiais, bens geradores de receitas patrimoniais são apenas alguns exemplos da complexidade inerente à administração do patrimônio público federal.\u003c/span>","credit":""}},{"id":"bthsg8gg","type":"prose","props":{"html":"\u003cp>Por essas razões, o modelo cadastral atualmente adotado pela União é resultado de um processo contínuo de aperfeiçoamento institucional, que incorporou importantes aprendizados da utilização dos&nbsp;\u003cspan data-term=\"sistemas legados\" title=\"Um sistema legado é um software ou infraestrutura tecnológica antigo e desatualizado.\">sistemas legados\u003c/span> desenvolvidos no âmbito da Secretaria do Patrimônio da União (SPU).\u003c/p>"}},{"id":"be36368p","type":"titulo","props":{"text":"SPUnet \u003cspan style=\"font-weight: normal;\">| Plataforma Integrada de Gestão do Patrimônio da União\u003c/span>","level":"h3"}},{"id":"b_msjem8rr_7c6u","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Ao contrário dos \u003c/span>\u003cspan data-term=\"sistemas legados\" title=\"Um sistema legado é um software ou infraestrutura tecnológica antigo e desatualizado.\" style=\"text-wrap-mode: initial; color: inherit;\">sistemas legados\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">, que concentravam em um único cadastro informações produzidas por diferentes processos da gestão patrimonial, o \u003ca href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/o-que-e-o-spunet-1\">\u003cb>SPUnet\u003c/b>\u003c/a> foi concebido a partir de uma nova arquitetura, orientada pelos macroprocessos de gestão e tendo o imóvel como objeto primário da gestão patrimonial e elemento integrador das informações produzidas pelos diferentes processos de gestão.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Nesse modelo, o cadastro passa a representar o próprio imóvel, enquanto as informações relativas à destinação, avaliação, contabilidade, fiscalização, arrecadação de receitas e demais processos são produzidas e mantidas\u003cmark data-hl=\"green\"> em módulos específicos\u003c/mark>, preservando sua rastreabilidade e favorecendo maior consistência dos dados.\u003c/span>\u003c/p>"}},{"id":"bfax3fki","type":"figure","props":{"slot":"bfax3fki__slot","src":"","fit":"contain","size":"full","title":"","caption":"\u003cspan data-fs=\"body\">Para atender a essa diversidade de situações, o sistema está estruturado em \u003cb>blocos de funcionalidades (módulos)\u003c/b> dedicados aos diversos macroprocessos de gestão patrimonial: cadastro físico-cartorial; geoinformação; atendimento ao público; destinação de imóveis; avaliação; contabilização patrimonial; receitas patrimoniais; fiscalização e controle.&nbsp;\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Essa arquitetura também reflete a opção por organizar as informações patrimoniais \u003cmark>a partir dos processos de gestão\u003c/mark>, preservando o cadastro como representação do imóvel e permitindo que cada macroprocesso produza e mantenha atualizadas as informações sob sua responsabilidade.\u003c/span>\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003c/span>\u003cp>\u003c/p>","credit":""}},{"id":"b6hb9g5q","type":"titulo","props":{"text":"Uma evolução do próprio modelo de gestão","level":"h3"}},{"id":"bmg542uk","type":"prose","props":{"html":"\u003cp>Mais do que um novo sistema informatizado, o SPUnet representa uma evolução do próprio modelo de gestão cadastral. Confira os destaques e inovações:\u003c/p>"}},{"id":"behgc1h1","type":"examplecard","props":{"label":"Adoção de um modelo único de dados","icon":"lightbulb","color":"var(--ochre-600)","slot":"behgc1h1__slot","collapse":"none","title":"","children":"\u003cp>Adoção de um \u003cb>modelo único de dados\u003c/b> para o cadastro dos imóveis públicos federais pertencentes ou utilizados pela União, suas autarquias e fundações públicas federais. Assim, mais do que reunir informações anteriormente dispersas em diferentes sistemas informatizados, o novo modelo cadastral integra dados literais e geoespaciais produzidos sobre os imóveis públicos, permitindo sua permanente atualização e utilização.\u003c/p>"}},{"id":"b_msjg0ta1_qovl","type":"examplecard","props":{"label":"Integração de bases e sistemas","icon":"lightbulb","color":"var(--ochre-600)","slot":"b_msjg0ta1_qovl__slot","collapse":"none","title":"","children":"\u003cp>\u003cb>Integração com diferentes bases governamentais de dados e sistemas informatizados\u003c/b>, a exemplo do Sistema Eletrônico de Informações (SEI), do Sistema Integrado de Administração Financeira do Governo Federal (SIAFI) e das bases administradas pela Receita Federal do Brasil – promovendo maior interoperabilidade entre sistemas e a utilização compartilhada das informações produzidas pelos diferentes órgãos e entidades públicas.\u003c/p>"}},{"id":"b_msjg1p96_8juj","type":"examplecard","props":{"label":"Automação de procedimentos","icon":"lightbulb","color":"var(--ochre-600)","slot":"b_msjg1p96_8juj__slot","collapse":"none","title":"","children":"\u003cp>\u003cfont color=\"#1c2420\">\u003cb>Automação\u003c/b> de procedimentos patrimoniais, com espaço para a geração automática de contratos padronizados, controle do cumprimento das obrigações assumidas pelos destinatários dos imóveis públicos, automatização de operações relacionadas à contabilização patrimonial e possibilidade de produção de relatórios gerenciais.\u003c/font>\u003c/p>"}},{"id":"b_msjg2l6o_4qyb","type":"examplecard","props":{"label":"geoinformação como elemento estruturante","icon":"lightbulb","color":"var(--ochre-600)","slot":"b_msjg2l6o_4qyb__slot","collapse":"none","title":"","children":"\u003cp>\u003cfont color=\"#1c2420\">A incorporação da \u003cb>geoinformação\u003c/b> como elemento estruturante do cadastro patrimonial permitiu que o imóvel passasse a ser representado por meio de uma base georreferenciada, sobre a qual se integram os demais atributos físicos, jurídicos e administrativos. Mais do que um módulo específico do sistema, essas soluções consolidam a geoinformação como componente estruturante do novo modelo cadastral e ampliam significativamente a capacidade de análise territorial, planejamento e tomada de decisão.\u003c/font>\u003c/p>\u003cp>\u003cfont color=\"#1c2420\">Para além da representação espacial dos imóveis públicos, \u003cmark>o novo modelo permite conhecer, pela primeira vez, o próprio acervo cartográfico relacionado ao patrimônio imobiliário da União\u003c/mark>, identificando a tipologia, a qualidade e as características técnicas das informações geoespaciais produzidas sobre esses bens. Entre elas, destaca-se o \u003cb>GeoVisão\u003c/b>, plataforma que integra informações patrimoniais e geoespaciais em ambiente cartográfico, permitindo visualizar imóveis públicos, consultar seus atributos, realizar análises espaciais e sobrepor diferentes camadas de informação territorial.\u003c/font>\u003c/p>"}},{"id":"b8cdri07","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Essas e outras soluções desenvolvidas pela SPU voltadas à produção, integração e disponibilização de informações geoespaciais aplicadas à gestão patrimonial, evidenciam uma estratégia contínua de fortalecimento da inteligência territorial. Trata-se de um importante avanço para a gestão patrimonial pública, que passa a reconhecer a geoinformação não apenas como elemento acessório do cadastro imobiliário, mas como informação estratégica para a compreensão do território e para a tomada de decisões administrativas\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A implantação desse novo modelo ocorre de forma gradual. Os imóveis de uso especial foram os primeiros a migrar para essa nova arquitetura cadastral, possibilitando validar o modelo e consolidar suas principais funcionalidades. O desafio atual consiste em expandir essa abordagem aos imóveis dominiais, promovendo a integração das diferentes bases patrimoniais em um cadastro único, georreferenciado e permanentemente atualizado.\u003c/span>\u003c/p>"}}]},{"id":"bjojtgy8","type":"conclusion","props":{"kicker":"Para fechar","kickerIcon":"check","title":"Considerações finais","body":"\u003cp>A experiência da União demonstra que a evolução dos modelos cadastrais acompanha a própria transformação da gestão patrimonial pública. \u003c/p>\u003cp>Se, no passado, conhecer um imóvel significava predominantemente identificá-lo e descrevê-lo, a gestão contemporânea do patrimônio imobiliário exige a integração de informações produzidas em diferentes níveis de compreensão. \u003c/p>\u003cp>\u003cspan data-color=\"ochre-light\">\u003cb>O cadastro imobiliário deixa, assim, de representar apenas um instrumento de identificação dos bens públicos para assumir a função de organizar conhecimentos indispensáveis ao planejamento, à proteção e à utilização eficiente do patrimônio estatal.\u003c/b>\u003c/span>\u003c/p>\u003cp>Nessa trajetória, o SPUnet constitui importante exemplo do processo de amadurecimento institucional experimentado pela gestão patrimonial da União, evidenciando que a administração dos imóveis públicos depende não apenas da existência de sistemas informatizados, mas também da capacidade de produzir, integrar e atualizar continuamente as informações necessárias ao cumprimento das múltiplas funções desempenhadas pelo patrimônio público.\u003c/p>"},"children":[{"id":"b6956j2i","type":"accordion","props":{"numbered":false,"items":[{"title":"Referências bibliográficas","content":"\u003cp>\u003c/p>\u003cspan data-fs=\"small\">\u003cp>BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. Secretaria do Patrimônio da União. \u003cb>SPUnet\u003c/b>: demonstração do sistema. Disponível em: SPUnet – Demonstração do Sistema. Acesso em: 23 jul. 2026.\u003c/p>\u003cp>CARNEIRO, Andrea Flávia Tenório. \u003cb>Cadastro Imobiliário e Registro de Imóveis\u003c/b>. Porto Alegre: Sérgio Antônio Fabris Editor, 2003.\u003c/p>\u003cp>CUNHA, Eglaísa Micheline Pontes; OLIVEIRA, Francisco Henrique de; CARNEIRO, Andrea Flávia Tenório. Evolução do cadastro urbano no Brasil. In: SILVA, Everton da (org.).\u003cb> Cadastro Territorial Multifinalitário aplicado à gestão municipal\u003c/b>. Florianópolis: Universidade Federal de Santa Catarina, 2023. p. 13-29. Disponível em: https://capacidades.gov.br/capaciteca/cadastro-territorial-multifinalitario-aplicado-a-gestao-municipal/. Acesso em: 23 jul. 2026.\u003c/p>\u003c/span>\u003cp>\u003c/p>"}]}}]},{"id":"bxp2t2dc","type":"pagefooter","props":{"code":"Aspectos praticos do reconhecimento e cadastro [M231]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Carlos Alberto Sobral Coimbra Junior"},{"role":"Revisão","name":"Claudson Moreira"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"ba37yhnv__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-ba37yhnv__slot.png"},"bo9rki1f__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bo9rki1f__slot.png"},"bfax3fki__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bfax3fki__slot.png"},"b_msjg2l6o_4qyb__slot":{"s":1,"x":0,"y":5.418914794921875,"u":"assets/images/img-3-b_msjg2l6o_4qyb__slot.png"},"b2n33own__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-b2n33own__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"badge-check":"\u003cpath d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"/>\u003cpath d=\"m9 12 2 2 4-4\"/>","book-check":"\u003cpath d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20\"/>\u003cpath d=\"m9 9.5 2 2 4-4\"/>","building":"\u003cpath d=\"M12 10h.01\"/>\u003cpath d=\"M12 14h.01\"/>\u003cpath d=\"M12 6h.01\"/>\u003cpath d=\"M16 10h.01\"/>\u003cpath d=\"M16 14h.01\"/>\u003cpath d=\"M16 6h.01\"/>\u003cpath d=\"M8 10h.01\"/>\u003cpath d=\"M8 14h.01\"/>\u003cpath d=\"M8 6h.01\"/>\u003cpath d=\"M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3\"/>\u003crect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","circle-dollar-sign":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"/>\u003cpath d=\"M12 18V6\"/>","circle-question-mark":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/>\u003cpath d=\"M12 17h.01\"/>","land-plot":"\u003cpath d=\"m12 8 6-3-6-3v10\"/>\u003cpath d=\"m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12\"/>\u003cpath d=\"m6.49 12.85 11.02 6.3\"/>\u003cpath d=\"M17.51 12.85 6.5 19.15\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map-pin-search":"\u003cpath d=\"M 12.248 21.969 a 1 1 0 0 1 -0.849 -0.17 C 9.539 20.193 4 14.993 4 10 a 8 8 0 0 1 16 0 C 20 10.42 19.961 10.841 19.888 11.262\"/>\u003cpath d=\"m22 22-1.88-1.88\"/>\u003ccircle cx=\"12\" cy=\"10\" r=\"3\"/>\u003ccircle cx=\"18\" cy=\"18\" r=\"3\"/>","notebook-text":"\u003cpath d=\"M2 6h4\"/>\u003cpath d=\"M2 10h4\"/>\u003cpath d=\"M2 14h4\"/>\u003cpath d=\"M2 18h4\"/>\u003crect width=\"16\" height=\"20\" x=\"4\" y=\"2\" rx=\"2\"/>\u003cpath d=\"M9.5 8h5\"/>\u003cpath d=\"M9.5 12H16\"/>\u003cpath d=\"M9.5 16H14\"/>","pencil-ruler":"\u003cpath d=\"M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13\"/>\u003cpath d=\"m8 6 2-2\"/>\u003cpath d=\"m18 16 2-2\"/>\u003cpath d=\"m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17\"/>\u003cpath d=\"M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z\"/>\u003cpath d=\"m15 5 4 4\"/>","refresh-ccw":"\u003cpath d=\"M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"/>\u003cpath d=\"M3 3v5h5\"/>\u003cpath d=\"M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16\"/>\u003cpath d=\"M16 16h5v5\"/>","scale":"\u003cpath d=\"M12 3v18\"/>\u003cpath d=\"m19 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1\"/>\u003cpath d=\"m5 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M7 21h10\"/>","scroll-text":"\u003cpath d=\"M15 12h-5\"/>\u003cpath d=\"M15 8h-5\"/>\u003cpath d=\"M19 17V5a2 2 0 0 0-2-2H4\"/>\u003cpath d=\"M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3\"/>","search":"\u003cpath d=\"m21 21-4.34-4.34\"/>\u003ccircle cx=\"11\" cy=\"11\" r=\"8\"/>","sticky-note-check":"\u003cpath d=\"m15 19 2 2 4-4\"/>\u003cpath d=\"M15 3v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M21 13V9a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 15 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h6.5\"/>","trees":"\u003cpath d=\"M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z\"/>\u003cpath d=\"M7 16v6\"/>\u003cpath d=\"M13 19v3\"/>\u003cpath d=\"M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__intro{max-width:var(--measure);margin-bottom:var(--space-5)}' +
+        '.spu-csection__title{margin:0;font-family:var(--font-display);font-size:var(--fs-h2);line-height:1.08;letter-spacing:var(--ls-heading);color:var(--text-strong)}' +
+        '.spu-csection__lead{margin-top:var(--space-3);color:var(--text-muted);font-size:var(--fs-body-lg);line-height:var(--lh-relaxed)}' +
+        '.spu-csection__lead>:last-child{margin-bottom:0}' +
+        '.spu-csection__details{border-top:1px solid var(--color-divider);padding-top:var(--space-4)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer;list-style:none}' +
+        '.spu-csection__summary::-webkit-details-marker{display:none}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__details[open]>.spu-csection__summary svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__details>.spu-csection__body{display:block!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var title = props.title;
+        var lead = props.lead;
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint && NS.isPrint();
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing || props.__builderEditing === true;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            (hasRichContent(title) || hasRichContent(lead)) && React.createElement('div', { className:'spu-csection__intro' },
+              hasRichContent(title) && React.createElement('h2', { className:'spu-csection__title' }, NS.renderRich ? NS.renderRich(title, { inline:true }) : title),
+              hasRichContent(lead) && React.createElement('div', { className:'spu-csection__lead' }, NS.renderRich ? NS.renderRich(lead) : lead)
+            ),
+            React.createElement('details', {
+              className:'spu-csection__details',
+              open: forcedOpen || open,
+              onToggle:function(event){ if(!forcedOpen) setOpen(event.currentTarget.open); }
+            },
+              React.createElement('summary', {
+                className:'spu-csection__summary',
+                onClick:function(event){ if(forcedOpen) event.preventDefault(); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body' }, props.children)
+            )
+          )
+        );
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container',
+        fields:['title','lead','triggerLabel'],
+        props:{ title:'Título da seção', lead:'<p>Apresente brevemente o conteúdo que poderá ser expandido.</p>', triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.byType[definition.type] = definition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type !== definition.type) return originalNewBlock(type, child);
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:JSON.parse(JSON.stringify(definition.props)) };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

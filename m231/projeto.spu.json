@@ -1,0 +1,574 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M231 - Aspectos praticos do reconhecimento e cadastro",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "cn2lv8es",
+          "text": "Antes de começarmos: o que entendemos por cadastro?",
+          "hidden": false
+        },
+        {
+          "id": "c3yig28n",
+          "text": "O cadastro como instrumento de gestão",
+          "hidden": false
+        },
+        {
+          "id": "c53r4gef",
+          "text": "Quais informações são controladas pelo cadastro imobiliário?",
+          "hidden": false
+        },
+        {
+          "id": "co8f0hql",
+          "text": "Na prática, o que significa cadastrar um imóvel público?",
+          "hidden": false
+        },
+        {
+          "id": "cffv83zg",
+          "text": "A experiência da União: o modelo cadastral adotado pela Secretaria do Patrimônio da União",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "bi76f50s",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b2n33own",
+      "type": "hero",
+      "props": {
+        "kicker": "Reconhecimento e cadastro de imóveis públicos na prática",
+        "kickerIcon": "sticky-note-check",
+        "title": "Aspectos práticos do reconhecimento e cadastro de imóveis públicos",
+        "byline": "a experiência da União",
+        "slot": "b2n33own__slot"
+      }
+    },
+    {
+      "id": "b7geb92m",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cn2lv8es",
+          "type": "titulo",
+          "props": {
+            "text": "Antes de começarmos: o que entendemos por cadastro?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cblu35fs",
+          "type": "prose",
+          "props": {
+            "html": "<p>Ao longo da gestão de um imóvel público são produzidas inúmeras informações: localização, características físicas, situação jurídica, destinação, avaliações, receitas, registros contábeis, fiscalizações, entre muitas outras. Em algumas organizações, todas essas informações são tratadas como parte do cadastro do imóvel.</p><p>Neste material, adotaremos uma compreensão mais específica. Cadastro aqui será tratado como o conjunto de informações que identifica e individualiza o imóvel como objeto da gestão patrimonial, reunindo seus principais atributos físicos, espaciais, jurídicos e administrativos. As demais informações são produzidas pelos diferentes processos de gestão, como destinação, avaliação, fiscalização, contabilidade e receitas, permanecendo vinculadas ao imóvel, mas sem integrar, necessariamente, o seu cadastro.</p><p>Essa distinção permite compreender melhor a organização das informações patrimoniais e pode ser aplicada independentemente do sistema informatizado utilizado por cada órgão ou ente federativo. Ela também ajuda a entender a experiência da Secretaria do Patrimônio da União apresentada neste material, baseada em um modelo que organiza as informações por processos de gestão, mantendo o imóvel como elemento central de integração.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b4iq1eek",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c3yig28n",
+          "type": "titulo",
+          "props": {
+            "text": "O cadastro como instrumento de gestão",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c6dzcweo",
+          "type": "prose",
+          "props": {
+            "html": "<p>Um cadastro imobiliário eficiente é um dos principais instrumentos utilizados pela Administração Pública para conhecer, organizar e atualizar as informações necessárias à gestão dos imóveis sob sua responsabilidade. </p><p>Afinal, como planejar a destinação de um imóvel, avaliar sua utilização ou subsidiar a tomada de decisões patrimoniais se o próprio Estado desconhece suas características mais elementares?</p>"
+          }
+        },
+        {
+          "id": "bbpmx1vk",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "CADASTRO IMOBILIÁRIO",
+            "kickerIcon": "notebook-text",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-100)",
+            "body": "<p>Mais do que identificar a existência de um imóvel, o cadastro imobiliário permite responder perguntas fundamentais para a sua gestão: </p>"
+          },
+          "children": [
+            {
+              "id": "b9q6dl6v",
+              "type": "feature",
+              "props": {
+                "columns": 2,
+                "card": false,
+                "accent": "var(--petrol-600)",
+                "layout": "side",
+                "items": [
+                  {
+                    "icon": "map-pin-search",
+                    "title": "",
+                    "text": "<b><span data-fs=\"h6\">Onde ele está localizado?</span></b>"
+                  },
+                  {
+                    "icon": "circle-question-mark",
+                    "title": "",
+                    "text": "<b><span data-fs=\"h6\">Há ocupantes ou instrumentos jurídicos disciplinando sua utilização?</span></b>"
+                  },
+                  {
+                    "icon": "pencil-ruler",
+                    "title": "",
+                    "text": "<b><span data-fs=\"h6\">Qual a sua dimensão?</span></b>"
+                  },
+                  {
+                    "icon": "building",
+                    "title": "",
+                    "text": "<b><span data-fs=\"h6\">Trata-se de um imóvel edificado?</span></b>"
+                  },
+                  {
+                    "icon": "scroll-text",
+                    "title": "",
+                    "text": "<b><span data-fs=\"h6\">Existe matrícula vinculada ao bem?</span></b>"
+                  },
+                  {
+                    "icon": "trees",
+                    "title": "",
+                    "text": "<b><span data-fs=\"h6\">Como ele está sendo utilizado?</span></b>"
+                  },
+                  {
+                    "icon": "search",
+                    "title": "",
+                    "text": "<b><span data-fs=\"h6\">Há dados geoespaciais que sinalizam impedimentos ambientais ou urbanísticos sobre ele?</span></b>"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "bna6sgps",
+          "type": "prose",
+          "props": {
+            "html": "<p>As respostas para essas perguntas são indispensáveis não apenas para a <b>proteção do patrimônio</b> <b>público</b>, mas também para a <b>promoção de políticas</b> <b>públicas</b> e para a <b>utilização eficiente dos bens</b> colocados sob a tutela do Estado.</p><p>Nessa perspectiva, o cadastro imobiliário desempenha funções que vão muito além do armazenamento de informações em um sistema informatizado. Ele constitui um<mark data-hl=\"green\"> instrumento de organização do conhecimento patrimonial</mark>, permitindo reunir, relacionar e disponibilizar informações produzidas por diferentes áreas técnicas. </p><p>A integração desses dados possibilita ao gestor público compreender melhor as características do imóvel e adotar decisões mais eficientes, seguras e transparentes sobre a sua utilização.</p><p>O cadastro imobiliário constitui, portanto, um dos principais mecanismos utilizados pela Administração Pública para transformar informações dispersas em conhecimento patrimonial capaz de subsidiar a gestão do território e do patrimônio público.</p>"
+          }
+        },
+        {
+          "id": "ba37yhnv",
+          "type": "figure",
+          "props": {
+            "slot": "ba37yhnv__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "<br>",
+            "credit": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "b7qvr36n",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c53r4gef",
+          "type": "titulo",
+          "props": {
+            "text": "Quais informações são controladas pelo cadastro imobiliário?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cqc02xao",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão patrimonial depende da reunião de dados de diferentes naturezas, as quais analisadas em conjunto permitem compreender não apenas onde está localizado determinado imóvel, mas também quais são as suas características físicas, jurídicas e administrativas.</p>"
+          }
+        },
+        {
+          "id": "bhq5nuex",
+          "type": "contentslider",
+          "props": {
+            "hint": "<br>",
+            "accent": "var(--green-700)",
+            "showTabNumbers": false,
+            "slides": [
+              {
+                "showImage": false,
+                "slot": "bhq5nuex__slides_1_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "land-plot",
+                "label": "",
+                "tabLabel": "Territoriais",
+                "title": "Informações territoriais",
+                "subtitle": "",
+                "description": "Elas permitem identificar a localização do imóvel, sua área, seus limites e outras características necessárias à sua individualização no território. Dependendo da natureza do bem, essas informações podem incluir plantas, memoriais descritivos, coordenadas geográficas e outros elementos técnicos indispensáveis à correta representação espacial do imóvel.",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "c_z3szjjh__imageSlot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "scale",
+                "label": "",
+                "tabLabel": "Jurídicas",
+                "title": "Informações jurídicas",
+                "subtitle": "",
+                "description": "Nesse conjunto encontram-se, por exemplo, os dados relativos à sua titularidade, à existência de matrícula perante o Registro de Imóveis, ao regime jurídico aplicável ao imóvel, quais órgãos são responsáveis pela sua administração, além de outras características que influenciam diretamente a sua utilização e proteção patrimonial.",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "c_9ynlchh__imageSlot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "circle-dollar-sign",
+                "label": "",
+                "tabLabel": "Econômicas e financeiras",
+                "title": "Informações econômicas e financeiras",
+                "subtitle": "",
+                "description": "Dependendo da natureza e da finalidade do imóvel, os processos de avaliação e contabilização patrimoniais podem gerar valores de referência, registros contábeis, receitas patrimoniais e outras informações essenciais para sua gestão, embora não componham, propriamente, o cadastro do imóvel.",
+                "linkHref": "",
+                "linkLabel": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b820nll6",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "As informações produzidas sobre o imóvel não se esgotam no cadastro",
+            "children": "<p>Ao longo de seu ciclo de vida, diferentes processos da gestão patrimonial produzem <b>dados complementares</b>, vinculados ao imóvel cadastrado, que subsidiam atividades específicas da Administração Pública.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">É o caso das informações econômicas e financeiras, por exemplo, produzidas nos processos de avaliação e contabilização patrimoniais.&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Registros contábeis relacionados aos imóveis públicos dependem da existência de informações cadastrais <mark>confiáveis e permanentemente atualizadas</mark>, evidenciando a estreita integração entre o cadastro imobiliário e a contabilidade patrimonial.</span></p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b_msjbz5eg_bg3t",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Assim, o <b>cadastro imobiliário</b> constitui a base informacional da gestão patrimonial. Sobre ele se articulam os diversos processos responsáveis por produzir e manter atualizadas as demais informações relacionadas ao ciclo de vida do imóvel. Consideradas em conjunto, essas informações permitem ao Estado conhecer melhor seu patrimônio e adotar decisões mais eficientes, baseadas em evidências.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "be0frshl",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "co8f0hql",
+          "type": "titulo",
+          "props": {
+            "text": "Na prática, o que significa cadastrar um imóvel público?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cpjs75cy",
+          "type": "prose",
+          "props": {
+            "html": "<p>Cadastrar um imóvel público é um processo contínuo que inicia&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">no <b><span data-color=\"ochre-light\">reconhecimento do imóvel</span></b> pela Ad</span><span style=\"text-wrap-mode: initial; color: inherit;\">ministração Pública, mas<b> <span data-color=\"ochre-light\">não se encerra com o cadastramento</span></b>.&nbsp; Trata-se de um ciclo contínuo de produção e atualização dos dados patrimoniais, permitindo que o Estado disponha das informações necessárias para protegê-lo, administrá-lo e utilizá-lo de maneira mais eficiente.&nbsp;</span></p>"
+          }
+        },
+        {
+          "id": "bxo01as6",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Caracterizar atributos físicos, espaciais, jurídicos e administrativos",
+            "kickerIcon": "search",
+            "title": "Identificar",
+            "color": "",
+            "bg": "",
+            "body": "<p>Antes de ser cadastrado, o bem precisa ser <b>adequadamente identificado</b>, o que pressupõe conhecer sua localização, suas características físicas, seus limites, sua classe jurídica e outras informações indispensáveis à sua individualização. Em muitos casos, esse trabalho exige a reunião de informações provenientes de diferentes documentos e bases de dados governamentais, produzidas por profissionais de distintas áreas do conhecimento.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "b_msjcvdeq_91ti",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Verificar a consistência e a confiabilidade das informações",
+            "kickerIcon": "badge-check",
+            "title": "Validar",
+            "color": "",
+            "bg": "",
+            "body": "<p>As informações produzidas precisam ser <b>analisadas e validadas</b>. É nessa etapa que são verificadas eventuais inconsistências relacionadas, por exemplo, à localização do imóvel, à sua representação territorial ou às informações jurídicas e administrativas produzidas sobre o bem.  A qualidade dos dados inseridos no cadastro imobiliário influencia diretamente a qualidade das decisões patrimoniais posteriormente adotadas pela Administração Pública.&nbsp;</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "b_msjcwnkn_wg6h",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Registrar o imóvel e seus atributos essenciais",
+            "kickerIcon": "book-check",
+            "title": "Cadastrar",
+            "color": "",
+            "bg": "",
+            "body": "<p>Assim que validadas, as informações são <b>organizadas e registradas</b> no modelo cadastral adotado pelo órgão responsável pela gestão do patrimônio imobiliário.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Mas atenção, o processo não se encerra aqui.&nbsp;</span></p><p><span data-color=\"terra\"></span></p>"
+          },
+          "children": []
+        },
+        {
+          "id": "b_msjcwpbo_wptf",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Acompanhar alterações e manter o cadastro compatível com a realidade",
+            "kickerIcon": "refresh-ccw",
+            "title": "Atualizar",
+            "color": "",
+            "bg": "",
+            "body": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Lembre-se que as informações produzidas pelo cadastro imobiliário possuem uma finalidade prática bastante evidente: <b>subsidiar a tomada de decisões pela Administração Pública</b>. Por isso, além de corretamente identificadas, validadas e cadastradas, as informações precisam estar <b>atualizadas</b>.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Processos de destinação patrimonial, avaliações imobiliárias, reconhecimento contábil dos bens públicos, planejamento territorial e integração com outras bases governamentais de dados são alguns exemplos de atividades que dependem da <b>constante atualização das informações cadastrais</b>.&nbsp;</span></p>"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "bm2iuzg2",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cffv83zg",
+          "type": "titulo",
+          "props": {
+            "text": "A experiência da União: o modelo cadastral adotado pela Secretaria do Patrimônio da União",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cs4zn3wk",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão do patrimônio imobiliário da União sofreu profundas transformações nas últimas décadas, acompanhando a crescente complexidade das informações necessárias à administração dos bens públicos. </p><p>Se, em um primeiro momento, a preocupação da Administração Pública concentrava-se predominantemente na identificação física e jurídica dos imóveis, notadamente para a <span data-term=\"consecução de fins arrecadatórios\" title=\"obtenção de receita financeira\">consecução de fins arrecadatórios</span>, com o passar do tempo a evolução das políticas públicas, dos instrumentos de gestão territorial e das próprias tecnologias da informação passou a exigir um modelo cadastral capaz de representar variados aspectos da gestão patrimonial.</p>"
+          }
+        },
+        {
+          "id": "bo9rki1f",
+          "type": "figure",
+          "props": {
+            "slot": "bo9rki1f__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "<span data-fs=\"body\">Imóveis destinados à prestação de serviços públicos, terrenos submetidos a regimes jurídicos especiais, bens geradores de receitas patrimoniais são apenas alguns exemplos da complexidade inerente à administração do patrimônio público federal.</span>",
+            "credit": ""
+          }
+        },
+        {
+          "id": "bthsg8gg",
+          "type": "prose",
+          "props": {
+            "html": "<p>Por essas razões, o modelo cadastral atualmente adotado pela União é resultado de um processo contínuo de aperfeiçoamento institucional, que incorporou importantes aprendizados da utilização dos&nbsp;<span data-term=\"sistemas legados\" title=\"Um sistema legado é um software ou infraestrutura tecnológica antigo e desatualizado.\">sistemas legados</span> desenvolvidos no âmbito da Secretaria do Patrimônio da União (SPU).</p>"
+          }
+        },
+        {
+          "id": "be36368p",
+          "type": "titulo",
+          "props": {
+            "text": "SPUnet <span style=\"font-weight: normal;\">| Plataforma Integrada de Gestão do Patrimônio da União</span>",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_msjem8rr_7c6u",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Ao contrário dos </span><span data-term=\"sistemas legados\" title=\"Um sistema legado é um software ou infraestrutura tecnológica antigo e desatualizado.\" style=\"text-wrap-mode: initial; color: inherit;\">sistemas legados</span><span style=\"text-wrap-mode: initial; color: inherit;\">, que concentravam em um único cadastro informações produzidas por diferentes processos da gestão patrimonial, o <a href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/o-que-e-o-spunet-1\"><b>SPUnet</b></a> foi concebido a partir de uma nova arquitetura, orientada pelos macroprocessos de gestão e tendo o imóvel como objeto primário da gestão patrimonial e elemento integrador das informações produzidas pelos diferentes processos de gestão.&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Nesse modelo, o cadastro passa a representar o próprio imóvel, enquanto as informações relativas à destinação, avaliação, contabilidade, fiscalização, arrecadação de receitas e demais processos são produzidas e mantidas<mark data-hl=\"green\"> em módulos específicos</mark>, preservando sua rastreabilidade e favorecendo maior consistência dos dados.</span></p>"
+          }
+        },
+        {
+          "id": "bfax3fki",
+          "type": "figure",
+          "props": {
+            "slot": "bfax3fki__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "<span data-fs=\"body\">Para atender a essa diversidade de situações, o sistema está estruturado em <b>blocos de funcionalidades (módulos)</b> dedicados aos diversos macroprocessos de gestão patrimonial: cadastro físico-cartorial; geoinformação; atendimento ao público; destinação de imóveis; avaliação; contabilização patrimonial; receitas patrimoniais; fiscalização e controle.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Essa arquitetura também reflete a opção por organizar as informações patrimoniais <mark>a partir dos processos de gestão</mark>, preservando o cadastro como representação do imóvel e permitindo que cada macroprocesso produza e mantenha atualizadas as informações sob sua responsabilidade.</span></span><span style=\"text-wrap-mode: initial; color: inherit;\"></span><p></p>",
+            "credit": ""
+          }
+        },
+        {
+          "id": "b6hb9g5q",
+          "type": "titulo",
+          "props": {
+            "text": "Uma evolução do próprio modelo de gestão",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bmg542uk",
+          "type": "prose",
+          "props": {
+            "html": "<p>Mais do que um novo sistema informatizado, o SPUnet representa uma evolução do próprio modelo de gestão cadastral. Confira os destaques e inovações:</p>"
+          }
+        },
+        {
+          "id": "behgc1h1",
+          "type": "examplecard",
+          "props": {
+            "label": "Adoção de um modelo único de dados",
+            "icon": "lightbulb",
+            "color": "var(--ochre-600)",
+            "slot": "behgc1h1__slot",
+            "collapse": "none",
+            "title": "",
+            "children": "<p>Adoção de um <b>modelo único de dados</b> para o cadastro dos imóveis públicos federais pertencentes ou utilizados pela União, suas autarquias e fundações públicas federais. Assim, mais do que reunir informações anteriormente dispersas em diferentes sistemas informatizados, o novo modelo cadastral integra dados literais e geoespaciais produzidos sobre os imóveis públicos, permitindo sua permanente atualização e utilização.</p>"
+          }
+        },
+        {
+          "id": "b_msjg0ta1_qovl",
+          "type": "examplecard",
+          "props": {
+            "label": "Integração de bases e sistemas",
+            "icon": "lightbulb",
+            "color": "var(--ochre-600)",
+            "slot": "b_msjg0ta1_qovl__slot",
+            "collapse": "none",
+            "title": "",
+            "children": "<p><b>Integração com diferentes bases governamentais de dados e sistemas informatizados</b>, a exemplo do Sistema Eletrônico de Informações (SEI), do Sistema Integrado de Administração Financeira do Governo Federal (SIAFI) e das bases administradas pela Receita Federal do Brasil – promovendo maior interoperabilidade entre sistemas e a utilização compartilhada das informações produzidas pelos diferentes órgãos e entidades públicas.</p>"
+          }
+        },
+        {
+          "id": "b_msjg1p96_8juj",
+          "type": "examplecard",
+          "props": {
+            "label": "Automação de procedimentos",
+            "icon": "lightbulb",
+            "color": "var(--ochre-600)",
+            "slot": "b_msjg1p96_8juj__slot",
+            "collapse": "none",
+            "title": "",
+            "children": "<p><font color=\"#1c2420\"><b>Automação</b> de procedimentos patrimoniais, com espaço para a geração automática de contratos padronizados, controle do cumprimento das obrigações assumidas pelos destinatários dos imóveis públicos, automatização de operações relacionadas à contabilização patrimonial e possibilidade de produção de relatórios gerenciais.</font></p>"
+          }
+        },
+        {
+          "id": "b_msjg2l6o_4qyb",
+          "type": "examplecard",
+          "props": {
+            "label": "geoinformação como elemento estruturante",
+            "icon": "lightbulb",
+            "color": "var(--ochre-600)",
+            "slot": "b_msjg2l6o_4qyb__slot",
+            "collapse": "none",
+            "title": "",
+            "children": "<p><font color=\"#1c2420\">A incorporação da <b>geoinformação</b> como elemento estruturante do cadastro patrimonial permitiu que o imóvel passasse a ser representado por meio de uma base georreferenciada, sobre a qual se integram os demais atributos físicos, jurídicos e administrativos. Mais do que um módulo específico do sistema, essas soluções consolidam a geoinformação como componente estruturante do novo modelo cadastral e ampliam significativamente a capacidade de análise territorial, planejamento e tomada de decisão.</font></p><p><font color=\"#1c2420\">Para além da representação espacial dos imóveis públicos, <mark>o novo modelo permite conhecer, pela primeira vez, o próprio acervo cartográfico relacionado ao patrimônio imobiliário da União</mark>, identificando a tipologia, a qualidade e as características técnicas das informações geoespaciais produzidas sobre esses bens. Entre elas, destaca-se o <b>GeoVisão</b>, plataforma que integra informações patrimoniais e geoespaciais em ambiente cartográfico, permitindo visualizar imóveis públicos, consultar seus atributos, realizar análises espaciais e sobrepor diferentes camadas de informação territorial.</font></p>"
+          }
+        },
+        {
+          "id": "b8cdri07",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Essas e outras soluções desenvolvidas pela SPU voltadas à produção, integração e disponibilização de informações geoespaciais aplicadas à gestão patrimonial, evidenciam uma estratégia contínua de fortalecimento da inteligência territorial. Trata-se de um importante avanço para a gestão patrimonial pública, que passa a reconhecer a geoinformação não apenas como elemento acessório do cadastro imobiliário, mas como informação estratégica para a compreensão do território e para a tomada de decisões administrativas</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A implantação desse novo modelo ocorre de forma gradual. Os imóveis de uso especial foram os primeiros a migrar para essa nova arquitetura cadastral, possibilitando validar o modelo e consolidar suas principais funcionalidades. O desafio atual consiste em expandir essa abordagem aos imóveis dominiais, promovendo a integração das diferentes bases patrimoniais em um cadastro único, georreferenciado e permanentemente atualizado.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bjojtgy8",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para fechar",
+        "kickerIcon": "check",
+        "title": "Considerações finais",
+        "body": "<p>A experiência da União demonstra que a evolução dos modelos cadastrais acompanha a própria transformação da gestão patrimonial pública. </p><p>Se, no passado, conhecer um imóvel significava predominantemente identificá-lo e descrevê-lo, a gestão contemporânea do patrimônio imobiliário exige a integração de informações produzidas em diferentes níveis de compreensão. </p><p><span data-color=\"ochre-light\"><b>O cadastro imobiliário deixa, assim, de representar apenas um instrumento de identificação dos bens públicos para assumir a função de organizar conhecimentos indispensáveis ao planejamento, à proteção e à utilização eficiente do patrimônio estatal.</b></span></p><p>Nessa trajetória, o SPUnet constitui importante exemplo do processo de amadurecimento institucional experimentado pela gestão patrimonial da União, evidenciando que a administração dos imóveis públicos depende não apenas da existência de sistemas informatizados, mas também da capacidade de produzir, integrar e atualizar continuamente as informações necessárias ao cumprimento das múltiplas funções desempenhadas pelo patrimônio público.</p>"
+      },
+      "children": [
+        {
+          "id": "b6956j2i",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Referências bibliográficas",
+                "content": "<p></p><span data-fs=\"small\"><p>BRASIL. Ministério da Gestão e da Inovação em Serviços Públicos. Secretaria do Patrimônio da União. <b>SPUnet</b>: demonstração do sistema. Disponível em: SPUnet – Demonstração do Sistema. Acesso em: 23 jul. 2026.</p><p>CARNEIRO, Andrea Flávia Tenório. <b>Cadastro Imobiliário e Registro de Imóveis</b>. Porto Alegre: Sérgio Antônio Fabris Editor, 2003.</p><p>CUNHA, Eglaísa Micheline Pontes; OLIVEIRA, Francisco Henrique de; CARNEIRO, Andrea Flávia Tenório. Evolução do cadastro urbano no Brasil. In: SILVA, Everton da (org.).<b> Cadastro Territorial Multifinalitário aplicado à gestão municipal</b>. Florianópolis: Universidade Federal de Santa Catarina, 2023. p. 13-29. Disponível em: https://capacidades.gov.br/capaciteca/cadastro-territorial-multifinalitario-aplicado-a-gestao-municipal/. Acesso em: 23 jul. 2026.</p></span><p></p>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bxp2t2dc",
+      "type": "pagefooter",
+      "props": {
+        "code": "Aspectos praticos do reconhecimento e cadastro [M231]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Carlos Alberto Sobral Coimbra Junior"
+          },
+          {
+            "role": "Revisão",
+            "name": "Claudson Moreira"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
