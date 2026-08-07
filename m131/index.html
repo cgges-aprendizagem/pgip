@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M131 - Arquitetura normativa da gestão de bens imóveis públicos no Brasil</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"blo22e2q__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-blo22e2q__slot.png"},"bc5b05dh__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bc5b05dh__slot.png"},"b_msg5s7ab_zzbh__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b_msg5s7ab_zzbh__slot.png"},"behapctr__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-behapctr__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M131 - Arquitetura normativa da gestão de bens imóveis públicos no Brasil","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cylj3zsh","text":"Um sistema normativo, e não uma única lei patrimonial","hidden":false},{"id":"cv27tybd","text":"Quem regula o quê?","hidden":false},{"id":"cj0uy7j8","text":"Camada 1: Alicerces Constitucionais e Federativos ","hidden":false},{"id":"b_msiaag6w_wm7g","text":"Camada 2: Núcleo da gestão patrimonial imobiliária pública ","hidden":false},{"id":"cepp8lva","text":"Camada 3: Segurança jurídica, registro e propriedade ","hidden":false},{"id":"c1l9qvwd","text":"Camada 4: Território, ambiente e função socioambiental ","hidden":false},{"id":"c5cftkyc","text":"Como as camadas se conectam","hidden":false},{"id":"c6164bud","text":"Fluxo de análise normativa para Gestão de Imóveis Públicos","hidden":false}]}},"blocks":[{"id":"bjmfuhk2","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"behapctr","type":"hero","props":{"kicker":"Governança e Regulação da propriedade pública","kickerIcon":"scale","title":"Arquitetura normativa da gestão de bens imóveis públicos no Brasil","byline":"Compreendendo os principais marcos normativos que orientam a gestão dos imóveis públicos","slot":"behapctr__slot"}},{"id":"b1wwoqfi","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"cwm1tjdp","type":"prose","props":{"html":"\u003cp>A gestão de bens imóveis públicos não é orientada por uma única lei ou por um único código patrimonial. Ela depende de uma ampla arquitetura normativa que estrutura a atuação do Estado sobre seu patrimônio imobiliário.\u003c/p>\u003cp>Cada ente federativo (União, estados, Distrito Federal e municípios) possui competência para organizar a gestão de seus próprios imóveis, definindo regras internas sobre aquisição, cadastro, uso, destinação, fiscalização, manutenção, arrecadação e controle patrimonial. Essa autonomia, contudo, não se estende à definição de quais bens integram seu patrimônio, matéria disciplinada pela Constituição Federal. Assim, embora um município possa editar normas sobre a administração de seus bens, não lhe cabe atribuir a si a titularidade de imóveis que constitucional ou legalmente pertençam à União, aos estados ou a outro ente público.\u003c/p>\u003cp>Ao mesmo tempo, há matérias que dependem de legislação federal ou de normas nacionais, porque envolvem temas de competência da União ou regras gerais aplicáveis a todos os entes federativos. É o caso, por exemplo, do direito civil, dos registros públicos, da desapropriação, das normas gerais de licitações e contratos, da política urbana, da legislação ambiental e de parte importante da legislação fundiária.\u003c/p>"}}]},{"id":"bs46778t","type":"section","props":{"width":"content","surface":"page","pad":"lg"},"children":[{"id":"cylj3zsh","type":"titulo","props":{"text":"Um sistema normativo, e não uma única lei patrimonial","level":"h2"}},{"id":"cjkrhen4","type":"prose","props":{"html":"\u003cp>A gestão patrimonial imobiliária se caracteriza por demandar uma abordagem necessariamente\u003cmark> interdisciplinar e sistêmica\u003c/mark>. Embora essa seja uma característica comum ao Direito brasileiro, a disciplina dos imóveis públicos não se concentra em um único ramo do Direito, sendo construída a partir da interpretação sistêmica entre normas dispersas em diferentes níveis (constitucionais, legais e infralegais). Não se trata de uma exceção à lógica do ordenamento jurídico brasileiro, mas de um campo em que essa característica se manifesta de forma particularmente evidente, exigindo do gestor a integração de conceitos e institutos de diferentes naturezas. Essa complexidade decorre da própria natureza dos bens imóveis.\u003c/p>"}},{"id":"bwxetn0k","type":"pullquote","props":{"variant":"block","children":"Um imóvel público é simultaneamente um ativo patrimonial, um bem jurídico, uma parcela do território, um elemento ambiental e, também, um instrumento de implementação de políticas públicas. ","cite":""}},{"id":"bi2cwdf1","type":"prose","props":{"html":"\u003cp>Sua gestão envolve desde questões relacionadas à propriedade e ao registro imobiliário até aspectos ligados ao planejamento urbano, à proteção ambiental, ao combate às desigualdades, à regularização fundiária, à contabilidade pública e às contratações administrativas.\u003c/p>\u003cp>Por essa razão, compreender a gestão patrimonial exige mais do que conhecer leis específicas sobre imóveis públicos. É necessário compreender \u003cmark>como diferentes conjuntos normativos se relacionam e se complementam\u003c/mark> para formar uma arquitetura regulatória ampla e integrada.\u003c/p>"}},{"id":"b51zyrog","type":"callout","props":{"variant":"ear","tone":"attention","icon":"lightbulb","title":"","heading":"","children":"\u003cp>O objetivo deste material não é apresentar todas as normas aplicáveis à gestão patrimonial, mas ajudar você a entender \u003cb>a estrutura geral desse sistema normativo\u003c/b>: quais tipos de normas incidem sobre os imóveis públicos, como elas se conectam e por que a gestão patrimonial exige uma leitura integrada entre patrimônio, território, ambiente, registro, contratação pública e função socioambiental.\u003c/p>"}},{"id":"bsj169ma","type":"prose","props":{"html":"\u003cp>Para facilitar, organizamos os principais marcos normativos que incidem sobre os bens imóveis públicos em \u003cb>quatro grandes camadas\u003c/b>. A primeira estabelece os fundamentos constitucionais e federativos do sistema. A segunda reúne as normas diretamente relacionadas à administração patrimonial. A terceira trata da segurança jurídica, do registro e da propriedade. A quarta, por fim, conecta o patrimônio público ao território, ao meio ambiente e à sua função socioambiental.\u003c/p>"}},{"id":"bghfckv9","type":"callout","props":{"variant":"header","tone":"warning","icon":"alert-circle","title":"importante","heading":"","children":"\u003cp>As camadas apresentadas neste material foram organizadas apenas para facilitar o estudo. Elas agrupam temas relacionados à gestão patrimonial e não representam uma ordem de importância ou uma hierarquia entre as normas jurídicas.\u003c/p>"}}]},{"id":"bjs338v8","type":"section","props":{"width":"content","surface":"terra-dark","pad":"lg"},"children":[{"id":"blo22e2q","type":"figure","props":{"slot":"blo22e2q__slot","src":"","fit":"contain","size":"full","title":"Opção 1 - ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA","caption":"","credit":""}},{"id":"bc5b05dh","type":"figure","props":{"slot":"bc5b05dh__slot","src":"","fit":"contain","size":"full","title":"Opção 2 - ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA","caption":"","credit":""}},{"id":"b_msg5s7ab_zzbh","type":"figure","props":{"slot":"b_msg5s7ab_zzbh__slot","src":"","fit":"contain","size":"full","title":"Opção 3 - ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA","caption":"","credit":""}},{"id":"b0v9bpbi","type":"kicker","props":{"icon":"compass","children":"Como funciona essa arquitetura"}},{"id":"bb72fk2e","type":"prose","props":{"html":"\u003cp>As camadas formam uma base \u003cb>integrada\u003c/b> e \u003cb>interdependente\u003c/b>: os alicerces definem competências e princípios; o núcleo operacionaliza a gestão; a segurança jurídica protege os direitos; e o território e o ambiente orientam o uso dos imóveis em cumprimento da função socioambiental.\u003c/p>"}},{"id":"bw2u3zcd","type":"timeline","props":{"eras":[{"label":"","period":"Explore as camAdas","color":"var(--sand-300)","milestones":[{"date":"CAMADA 1","title":"Alicerces Constitucionais","content":"\u003cp>\u003cspan data-fs=\"body-lg\">\u003cb>Quem pode regular e administrar? \u003c/b>\u003c/span>\u003c/p>\u003cp>\u003cspan data-fs=\"body-lg\">\u003ci>\u003cspan data-fs=\"caption\">Constituição Federal : Art. 5º, XXIII | Art. 23, VI e VII | Art. 24, VI | Art. 37, caput | Art. 70, caput | Art. 170, III | Art. 182, caput | Art. 182, §1º | Art. 182, §2º | Art. 182, §4º | Art. 183, §3º | Art. 184 | Art. 186 | Art. 225, caput | Art. 225, §1\u003c/span>\u003c/i>\u003c/span>\u003c/p>","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"bfqncp0r","type":"statblock","props":{"variant":"rule","columns":3,"stats":[{"value":"","unit":"","label":"","description":"\u003cul>\u003cli>Competências legislativas e administrativas \u003c/li>\u003cli>Bens públicos e domínio dos entes federativos \u003c/li>\u003cli>Princípios da administração pública, a função social da propriedade, proteção ao meio-ambiente, a função social da cidade e ordenação do pleno desenvolvimento urbano  \u003c/li>\u003c/ul>"}]}}]},{"date":"Camada 2","title":"Núcleo da Administração Patrimonial","content":"\u003cp>\u003cspan data-fs=\"body-lg\">\u003cb>Como os imóveis públicos são administrados, contratados e contabilizados? \u003c/b>\u003c/span>\u003c/p>\u003cp>\u003cspan data-fs=\"body-lg\">\u003ci>\u003cspan data-fs=\"caption\">Decreto-Lei nº 9.760/1946 • Lei nº 9.636/1998 • Lei nº 14.133/2021 • MCASP • NBC TSP\u003c/span>\u003c/i>\u003c/span>\u003c/p>","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"bldp9dtp","type":"statblock","props":{"variant":"rule","columns":3,"stats":[{"value":"","unit":"","label":"Gestão Patrimonial","description":"\u003cul>\u003cli>Aquisição e incorporação \u003c/li>\u003cli>Cadastro e avaliação \u003c/li>\u003cli>Destinação e utilização \u003c/li>\u003cli>Alienação e fiscalização \u003c/li>\u003cli>Manutenção e arrecadação\u003c/li>\u003c/ul>"},{"value":"","unit":"","label":"Contratações patrimoniais","description":"\u003cp>\u003cul>\u003cli>Lei nº 14.133/2021 \u003c/li>\u003cli>Aquisição e alienação \u003c/li>\u003cli>Concessões e cessões \u003c/li>\u003cli>Locações e permissões \u003c/li>\u003cli>Obras e serviços \u003c/li>\u003c/ul>\u003c/p>\u003cp>\u003cbr>\u003c/p>"},{"value":"","unit":"","label":"Contabilidade patrimonial","description":"\u003cp>\u003cul>\u003cli>MCASP e NBC TSP \u003c/li>\u003cli>Reconhecimento e mensuração \u003c/li>\u003cli>Reavaliação de ativos \u003c/li>\u003cli>Evidenciação e transparência \u003c/li>\u003cli>Balanço Geral \u003c/li>\u003c/ul>\u003c/p>\u003cp>\u003cbr>\u003c/p>"}],"__pullUp":false}}]},{"date":"Camada 3","title":"Segurança jurídica, Registro e Propriedade","content":"\u003cp>\u003cspan data-fs=\"body-lg\">\u003c/span>\u003cspan data-fs=\"body-lg\">\u003cb>Como os direitos sobre os imóveis são reconhecidos e protegidos?\u003c/b>\u003c/span>\u003c/p>\u003cp>\u003ci style=\"text-wrap-mode: initial; color: inherit;\">\u003cspan data-fs=\"caption\">Código Civil • Lei de Registros Públicos • Lei nº 10.267/2001 • ONR • SIGEF • CIB\u003c/span>\u003c/i>\u003c/p>","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"bzog926k","type":"statblock","props":{"variant":"rule","columns":3,"stats":[{"value":"","unit":"","label":"","description":"\u003cul>\u003cli>Propriedade, posse e direitos reais \u003c/li>\u003cli>Registro de imóveis e matrículas \u003c/li>\u003cli>Georreferenciamento e integração cadastral \u003c/li>\u003cli>Publicidade registral e segurança jurídica\u003c/li>\u003c/ul>"}]}}]},{"date":"Camada 4","title":"Território, ambiente e função socioambiental","content":"\u003cp>\u003cspan data-fs=\"body-lg\">\u003cb>Como os imóveis podem ser utilizados?\u003c/b>\u003c/span>\u003c/p>\u003cp>\u003cspan data-fs=\"body-lg\">\u003ci>\u003cspan data-fs=\"caption\">Estatuto da Cidade • Código Florestal • SNUC • Regularização Fundiária • Zoneamento\u003c/span>\u003c/i>\u003c/span>\u003c/p>","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b9u99chb","type":"statblock","props":{"variant":"rule","columns":3,"stats":[{"value":"","unit":"","label":"","description":"\u003cul>\u003cli>Política urbana e Plano Diretor \u003c/li>\u003cli>Meio ambiente e proteção ambiental \u003c/li>\u003cli>Ordenamento territorial e uso do solo \u003c/li>\u003cli>Política fundiária e regularização territorial \u003c/li>\u003c/ul>"}]}}]}]}]}}]},{"id":"b1t680qt","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"cv27tybd","type":"titulo","props":{"text":"Quem regula o quê?","level":"h2"}},{"id":"c16tjc6j","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">A gestão patrimonial de imóveis públicos é construída sobre um conjunto integrado de normas. Cada ente tem autonomia para gerir seu patrimônio, mas todas as decisões devem respeitar as normas gerais nacionais, a função socioambiental da propriedade e o interesse público. \u003c/span>\u003c/p>\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Abra cada dimensão para obter uma visão geral das competências e incidências normativas de cada ente federativo.\u003c/span>\u003c/p>"}},{"id":"bl773l4q","type":"accordion","props":{"numbered":false,"items":[{"title":"Patrimônio público","content":"Regras sobre os bens públicos e sua gestão","blocks":[{"id":"b_msj6imsb_33yq","type":"columns","props":{"count":"4","ratio":"equal","gap":"sm","__pullUp":false},"children":[{"id":"b_msj6imsb_go6u","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"União","text":"\u003cul>\u003cli>Leis patrimoniais sobre uso, cessão, alienação, destinação, etc.​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6imsb_jzw0","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Estados","text":"\u003cul>\u003cli>Leis patrimoniais estaduais​\u003c/li>\u003cli>Regulamentos sobre uso, cessão, alienação, destinação, etc.\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6imsb_ski2","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Municípios","text":"\u003cul>\u003cli>Leis patrimoniais municipais​\u003c/li>\u003cli>Regulamentos sobre uso, cessão, alienação, destinação, etc.\u003c/li>\u003c/ul>"}]}}]},{"id":"b_msj6izz1_mbja","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Todos os entes","text":"\u003cul>\u003cli>Observância da Constituição, em especial: os Princípios da administração pública, a função social da propriedade , proteção ao meio-ambiente, a função social da cidade e ordenação do pleno desenvolvimento urbano.\u003c/li>\u003c/ul>"}],"__pullUp":true}}]},{"title":"Registro e propriedade","content":"Regras que dão segurança jurídica aos direitos sobre imóveis","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b_msj6k7gv_851o","type":"columns","props":{"count":"4","ratio":"equal","gap":"sm","__pullUp":false},"children":[{"id":"b_msj6k7gv_fhor","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"União","text":"\u003cul>\u003cli>\u003cspan style=\"color: inherit;\">Direito civil e direitos reais​\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Registros públicos (Lei nº 6.015/73)​\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Normas gerais sobre propriedade, posse e negócios jurídicos​\u003c/span>\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6k7gv_8aax","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Estados","text":"\u003cul>\u003cli>Serviços de registro (delegação)​\u003c/li>\u003cli>Normas suplementares​\u003c/li>\u003cli>Regularização fundiária no âmbito estadual​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6k7gv_zcyu","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Municípios","text":"\u003cul>\u003cli>Interação com cartórios de registro de imóveis​\u003c/li>\u003cli>Regularização fundiária urbana​\u003c/li>\u003cli>Cadastros territoriais municipais​\u003c/li>\u003c/ul>"}]}}]},{"id":"b_msj6jjvg_ahu5","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Todos os entes","text":"\u003cul>\u003cli>Observância das leis nacionais de registro (Lei 6.015/1973, Código Civil).​\u003c/li>\u003cli>Garantia de que os atos registrais sejam praticados em cartórios habilitados. ​\u003c/li>\u003cli>Assegurar publicidade, autenticidade e segurança jurídica dos direitos registrados​.\u003c/li>\u003c/ul>"}],"__pullUp":true}}]},{"title":"Urbanismo e uso do solo","content":"Regras que orientam o uso e a ocupação do território urbano","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b_msj6mogu_3ess","type":"columns","props":{"count":"4","ratio":"equal","gap":"sm","__pullUp":false},"children":[{"id":"b_msj6mogu_eh3t","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"União","text":"\u003cul>\u003cli>Normas gerais de direito urbanístico (Estatuto da Cidade – Lei nº 10.257/2001)​\u003c/li>\u003cli>Diretrizes nacionais de política urbana​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6mogu_0zmq","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Estados","text":"\u003cul>\u003cli>Normas estaduais de ordenamento territorial​\u003c/li>\u003cli>Normas suplementares​\u003c/li>\u003cli>Regiões metropolitanas e aglomerações urbanas​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6mogu_5cqg","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Municípios","text":"\u003cul>\u003cli>Plano Diretor (instrumento básico)​\u003c/li>\u003cli>Zoneamento e uso do solo​\u003c/li>\u003cli>Parcelamento, edificação e posturas municipais​\u003c/li>\u003c/ul>"}]}}]},{"id":"b_msj6lza5_uzq9","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Todos os entes","text":"\u003cul>\u003cli>Função social da propriedade e da cidade​\u003c/li>\u003cli>Observância do Plano Diretor​\u003c/li>\u003cli>Interesse público urbano​\u003c/li>\u003c/ul>"}],"__pullUp":true}}]},{"title":"Meio ambiente","content":"Regras de proteção ambiental e uso sustentável dos recursos naturais","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"bvyvr4qs","type":"columns","props":{"count":"4","ratio":"equal","gap":"sm","__pullUp":false},"children":[{"id":"b_msj6fr1w_yg7f","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"União","text":"\u003cul>\u003cli>Normas gerais de proteção ambiental (Lei nº 6.938/81)​\u003c/li>\u003cli>Código Florestal (Lei nº 12.651/2012)​\u003c/li>\u003cli>Unidades de conservação (Lei nº 9.985/00)​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6fvuj_tqfu","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Estados","text":"\u003cul>\u003cli>Licenciamento ambiental (órgãos estaduais)​\u003c/li>\u003cli>Áreas protegidas estaduais​\u003c/li>\u003cli>Normas ambientais suplementares​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6fxqd_v3vz","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Municípios","text":"\u003cul>\u003cli>Licenciamento ambiental local (impacto local)​\u003c/li>\u003cli>Áreas protegidas municipais​\u003c/li>\u003cli>Controle ambiental urbano​\u003c/li>\u003c/ul>"}]}}]},{"id":"b_msj6nz59_y436","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Todos os entes","text":"\u003cul>\u003cli>Observância à legislação federal e estadual​\u003c/li>\u003cli>Proteção do meio ambiente e desenvolvimento sustentável​\u003c/li>\u003cli>Prevenção e reparação de danos ambientais​\u003c/li>\u003c/ul>"}],"__pullUp":true}}]},{"title":"Questão fundiária","content":"Regras específicas para imóveis rurais, terras públicas&nbsp;\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">e política fundiária\u003c/span>","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b_msj6o6jj_v4si","type":"columns","props":{"count":"4","ratio":"equal","gap":"sm","__pullUp":false},"children":[{"id":"b_msj6o6jj_8bzu","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"União","text":"\u003cul>\u003cli>Direito agrário​\u003c/li>\u003cli>Política agrária e reforma agrária​\u003c/li>\u003cli>Regularização fundiária (Lei nº 13.465/2017)​\u003c/li>\u003cli>Cadastro rural e georreferenciamento​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6o6jj_um65","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Estados","text":"\u003cul>\u003cli>Regularização fundiária rural​\u003c/li>\u003cli>Gestão de terras devolutas estaduais​\u003c/li>\u003cli>Programas fundiários estaduais​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6o6jj_mikz","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Municípios","text":"\u003cul>\u003cli>Regularização fundiária urbana e rural de interesse local​\u003c/li>\u003cli>Gestão de terras municipais​\u003c/li>\u003cli>Cadastros territoriais​\u003c/li>\u003c/ul>"}]}}]},{"id":"b_msj6geo3_cd5u","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Todos os entes","text":"\u003cul>\u003cli>Regularização fundiária rural e urbana​\u003c/li>\u003c/ul>"}],"__pullUp":true}}]},{"title":"Licitações e Contratos","content":"Regras para contratações, concessões, permissões, obras e alienações","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b_msj6phfm_dtd8","type":"columns","props":{"count":"4","ratio":"equal","gap":"sm","__pullUp":false},"children":[{"id":"b_msj6phfm_twn9","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"União","text":"\u003cul>\u003cli>Lei nº 14.133/2021 (normas gerais)​\u003c/li>\u003cli>Regras sobre concessões e permissões​\u003c/li>\u003cli>Alienação de bens públicos​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6phfm_3c9x","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Estados","text":"\u003cul>\u003cli>Aplicação da Lei nº 14.133/2021​\u003c/li>\u003cli>Regulamentos próprios​\u003c/li>\u003cli>Procedimentos internos​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6phfm_cf5o","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Municípios","text":"\u003cul>\u003cli>Aplicação da Lei nº 14.133/2021​\u003c/li>\u003cli>Regulamentos próprios​\u003c/li>\u003cli>Procedimentos internos​\u003c/li>\u003c/ul>"}]}}]},{"id":"b_msj6pmaw_ac4o","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Todos os entes","text":"\u003cul>\u003cli>Princípios: legalidade, isonomia, impessoalidade, publicidade, eficiência e desenvolvimento nacional sustentável​\u003c/li>\u003c/ul>"}],"__pullUp":true}}]},{"title":"Contabilidade","content":"Regras de mensuração, registro, controle e prestação de contas","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b_msj6qglg_f13e","type":"columns","props":{"count":"4","ratio":"equal","gap":"sm","__pullUp":false},"children":[{"id":"b_msj6qglg_q8ea","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"União","text":"\u003cul>\u003cli>Normas brasileiras de contabilidade aplicadas ao setor público (NBC TSP)​\u003c/li>\u003cli>Sistemas nacionais (Siafi, Siconfi)​\u003c/li>\u003cli>Reconhecimento e depreciação de bens​\u003c/li>\u003cli>Impacto no Balanço Geral da União​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6qglg_g9l1","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Estados","text":"\u003cul>\u003cli>Contabilidade aplicada ao setor público​\u003cbr>Sistemas estaduais​\u003cbr>Procedimentos de controle interno​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6qglg_27hw","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Municípios","text":"\u003cul>\u003cli>Contabilidade aplicada ao setor público​\u003c/li>\u003cli>Sistemas municipais​\u003c/li>\u003cli>Procedimentos internos​\u003c/li>\u003c/ul>"}]}}]},{"id":"b_msj6qk63_jg6p","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Todos os entes","text":"\u003cul>\u003cli>Responsabilidade na gestão fiscal​\u003c/li>\u003cli>Transparência fiscal​\u003c/li>\u003cli>Prestação de contas​\u003c/li>\u003c/ul>"}],"__pullUp":true}}]},{"title":"Controle e transparência","content":"Regras de controle, auditoria, fiscalização e transparência","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b_msj6rdhe_trm8","type":"columns","props":{"count":"4","ratio":"equal","gap":"sm","__pullUp":false},"children":[{"id":"b_msj6rdhe_4gp7","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"União","text":"\u003cul>\u003cli>TCU (controle externo da União)​\u003c/li>\u003cli>CGU (controle interno federal)​\u003c/li>\u003cli>Portais de transparência do governo federal\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6rdhe_g8jk","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Estados","text":"\u003cul>\u003cli>Tribunais de contas estaduais​\u003c/li>\u003cli>Controladorias estaduais​\u003c/li>\u003cli>Transparência​\u003c/li>\u003c/ul>"}]}},{"id":"b_msj6rdhe_2lug","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Municípios","text":"\u003cul>\u003cli>Tribunais de contas municipais​\u003c/li>\u003cli>Controladorias municipais​\u003c/li>\u003cli>Transparência ​\u003c/li>\u003c/ul>"}]}}]},{"id":"b_msj6rgur_d0w1","type":"markerlist","props":{"variant":"icon","icon":"map-pin-pen","accent":"","items":[{"title":"Todos os entes","text":"\u003cul>\u003cli>Controle interno e externo​\u003c/li>\u003cli>Transparência ativa e passiva​\u003c/li>\u003cli>Integridade e governança pública​\u003c/li>\u003c/ul>"}],"__pullUp":true}}]}]}}]},{"id":"bflwiue3","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cj0uy7j8","type":"titulo","props":{"text":"Camada 1: Alicerces Constitucionais e Federativos ","level":"h2"}},{"id":"ck92do5s","type":"prose","props":{"html":"\u003cp>Toda a arquitetura normativa da gestão patrimonial tem origem na Constituição Federal. É nela que estão definidos os princípios, competências e diretrizes que sustentam a atuação do Estado sobre os imóveis públicos. \u003c/p>\u003cp>Mais do que disciplinar bens específicos, \u003cmark>a Constituição organiza o ambiente institucional em que a gestão patrimonial ocorre\u003c/mark>. Ela define quais bens pertencem à União, aos estados, ao Distrito Federal e aos municípios, estabelece os princípios da administração pública, trata da função social da propriedade e da proteção ambiental, e distribui competências entre os entes federativos. \u003c/p>"}},{"id":"b99gvmr1","type":"callout","props":{"variant":"ear","tone":"attention","icon":"lightbulb","title":"","heading":"","children":"\u003cp>Essa repartição de competências é um dos elementos centrais da gestão patrimonial brasileira. Embora cada ente federativo tenha autonomia para administrar seus próprios imóveis, nem todas as matérias podem ser disciplinadas localmente. Questões relacionadas à propriedade, aos registros públicos, à desapropriação, ao direito agrário e às normas gerais de licitações e contratos, por exemplo, dependem de legislação federal ou de normas nacionais. \u003c/p>"}},{"id":"btk9g12u","type":"prose","props":{"html":"\u003cp>Ao mesmo tempo, estados e municípios possuem competência para editar normas específicas sobre seus patrimônios, organizar estruturas de gestão, criar sistemas próprios e disciplinar procedimentos relacionados aos seus imóveis. \u003c/p>\u003cp>\u003cmark data-hl=\"petrol\">Essa primeira camada é responsável por definir a estrutura fundamental da gestão patrimonial no Brasil\u003c/mark>, especialmente as regras relacionadas à titularidade dos bens públicos, à repartição de competências entre os entes federativos e aos princípios que orientam a atuação da Administração Pública na gestão do patrimônio imobiliário. Corresponde diretrizes e comandos que delimitam quem pode administrar, legislar e atuar sobre determinado patrimônio, servindo de referência para a aplicação das demais normas relacionadas aos imóveis públicos. \u003c/p>"}},{"id":"bo18w2q0","type":"kicker","props":{"icon":"scale","children":"Principais marcos normativos"}},{"id":"bc63vk69","type":"accordion","props":{"numbered":false,"items":[{"title":"Constituição Federal de 1988","content":"\u003cul>\u003cli>Art. 20 – Bens da União \u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Art. 23 – Competências comuns \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Art. 24 – Competências concorrentes \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Art. 30 – Competências municipais \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Art. 37 – Princípios da Administração Pública \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Art. 5º, XXIII – Função social da propriedade \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Art. 182 e 183 – Política Urbana \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Art. 186 – Função social da propriedade rural \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit;\">Art. 225 – Meio ambiente \u003c/span>\u003c/li>\u003c/ul>","linkHref":"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm","linkLabel":"Confira o marco completo","linkButton":"primary","blocks":[]}]}}]},{"id":"b_msiaag6w_jnxr","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"b_msiaag6w_wm7g","type":"titulo","props":{"text":"Camada 2: Núcleo da gestão patrimonial imobiliária pública ","level":"h2"}},{"id":"b_msiaag6w_a2wy","type":"prose","props":{"html":"\u003cp>A segunda camada reúne as normas que disciplinam diretamente a administração dos bens imóveis públicos. É o núcleo executivo da gestão patrimonial e concentra os instrumentos utilizados pelos órgãos responsáveis para adquirir, cadastrar, avaliar, utilizar, proteger e destinar seus imóveis, ou seja, para executar a gestão desse patrimônio. \u003c/p>\u003cp>Tradicionalmente, essa dimensão é associada às atividades patrimoniais clássicas, como\u003cmark data-hl=\"petrol\"> aquisição, incorporação, cadastro, avaliação, destinação, alienação, fiscalização e manutenção\u003c/mark>. São essas normas que permitem ao Estado identificar seus imóveis, reconhecer direitos, formalizar instrumentos de utilização, controlar ocupações e promover a adequada gestão do patrimônio imobiliário. \u003c/p>"}},{"id":"b_msiaag6w_a2l3","type":"callout","props":{"variant":"ear","tone":"info","icon":"alert-circle","title":"","heading":"","children":"\u003cp>A gestão patrimonial não se limita às normas patrimoniais propriamente ditas. Grande parte das atividades relacionadas aos imóveis depende também de regras de contratação pública. A aquisição de imóveis, a locação de espaços, a concessão de uso e diversos outros instrumentos patrimoniais estão sujeitos às normas gerais estabelecidas pela \u003ca href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm\">Lei nº 14.133/2021\u003c/a>. \u003c/p>"}},{"id":"b_msiaag6w_6tm8","type":"prose","props":{"html":"\u003cp>Outro componente fundamental dessa camada é a \u003cb>contabilidade patrimonial\u003c/b>. Os imóveis públicos representam parcela significativa do patrimônio dos entes federativos e precisam ser corretamente reconhecidos, avaliados, reavaliados e evidenciados nas demonstrações contábeis. Nesse contexto, instrumentos como o \u003cmark data-hl=\"green\">Manual de Contabilidade Aplicada ao Setor Público (MCASP)\u003c/mark> e as \u003cmark data-hl=\"green\">Normas Brasileiras de Contabilidade Aplicadas ao Setor Público (NBC TSP)\u003c/mark> desempenham papel essencial para assegurar transparência, comparabilidade e qualidade das informações patrimoniais. \u003c/p>\u003cp>Por reunir normas relacionadas à gestão, à contratação e à contabilização dos imóveis públicos, esta camada representa o núcleo mais visível da administração patrimonial e aquele com o qual os gestores normalmente possuem contato mais direto. \u003c/p>\u003cp>Embora existam marcos normativos nacionais relevantes, especialmente para a gestão dos imóveis da União, cada estado, o Distrito Federal e os municípios possuem competência para disciplinar a administração de seus próprios patrimônios imobiliários. Por essa razão, a gestão patrimonial brasileira é complementada por um amplo conjunto de leis, decretos, regulamentos e normas internas que tratam de temas como aquisição, cadastro, destinação, alienação, avaliação, fiscalização e arrecadação patrimonial. Essas normas refletem as particularidades institucionais e territoriais de cada ente federativo, mas devem observar os princípios constitucionais e as normas gerais aplicáveis em âmbito nacional. \u003c/p>"}},{"id":"b_msiaag6w_wnto","type":"kicker","props":{"icon":"scale","children":"Principais marcos normativos"}},{"id":"b_msiaag6w_vol9","type":"accordion","props":{"numbered":false,"items":[{"title":"Decreto-Lei nº 9.760/1946 ","content":"\u003cp>Principal marco histórico da administração dos bens imóveis da União. Disciplina a identificação, demarcação, utilização, ocupação e diversos regimes patrimoniais aplicáveis aos imóveis federais. \u003c/p>\u003cp>\u003c/p>\u003cp>\u003ci style=\"\">\u003cspan data-font=\"serif\">\u003cspan data-color=\"terra\">Embora aplicável à União, constitui uma das principais referências históricas e conceituais da gestão patrimonial imobiliária brasileira. \u003c/span>\u003c/span>\u003c/i>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/decreto-lei/del9760.htm","linkLabel":"Confira o Decreto completo","linkButton":"secondary","blocks":[]},{"title":"Lei nº 9.636/1998 ","content":"\u003cp>Principal marco contemporâneo da gestão dos imóveis da União. Regulamenta aquisição, incorporação, cadastro, avaliação, destinação, utilização, alienação e regularização fundiária de imóveis federais. \u003c/p>\u003cp>\u003ci>\u003cspan data-font=\"serif\">\u003cspan data-color=\"terra\">Apresenta diversos instrumentos e conceitos que influenciam práticas adotadas por outros entes federativos. \u003c/span>\u003c/span>\u003c/i>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/leis/l9636.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"},{"title":"Leis patrimoniais estaduais, distritais e municipais ","content":"\u003cp>Cada ente federativo possui competência para disciplinar a gestão de seus próprios bens imóveis. Essas normas tratam de temas como aquisição, incorporação, cadastro, avaliação, utilização, cessão, concessão de uso, alienação, regularização patrimonial, arrecadação de receitas patrimoniais, fiscalização e proteção dos imóveis públicos. \u003c/p>\u003cp>\u003ci>\u003cspan data-font=\"serif\">\u003cspan data-color=\"terra\">Constituem a principal base normativa da gestão patrimonial cotidiana dos estados, do Distrito Federal e dos municípios, complementando as normas gerais e os princípios estabelecidos pela Constituição e pela legislação nacional. \u003c/span>\u003c/span>\u003c/i>\u003c/p>","linkHref":"","linkLabel":"","linkButton":"secondary"},{"title":"Lei nº 14.133/2021 ","content":"\u003cp>Estabelece normas gerais de licitações e contratos aplicáveis à aquisição, alienação, concessão de uso, locação, contratação de obras e serviços e demais negócios jurídicos relacionados aos imóveis públicos. \u003c/p>\u003cp>\u003ci>\u003c/i>\u003c/p>\u003cspan data-font=\"serif\">\u003cp>\u003ci>\u003c/i>\u003c/p>\u003cspan data-color=\"terra\">\u003cp>\u003ci>Dispositivos de destaque: \u003c/i>\u003c/p>\u003cp>\u003cul>\u003cli>\u003ci>Art. 74, V – Aquisição e locação de imóveis;  \u003c/i>\u003c/li>\u003cli>\u003ci>Arts. 76 e 77 – Alienação de bens públicos.  \u003c/i>\u003c/li>\u003c/ul>\u003c/p>\u003c/span>\u003c/span>","linkHref":"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"},{"title":"Manual de Contabilidade Aplicada ao Setor Público (MCASP)","content":"\u003cp>Principal referência nacional para contabilização dos ativos imobiliários públicos, aplicável à União, estados, Distrito Federal e municípios. \u003c/p>\u003cp>\u003ci>\u003c/i>\u003c/p>\u003cspan data-font=\"serif\">\u003cp>\u003ci>\u003c/i>\u003c/p>\u003cspan data-color=\"terra\">\u003cp>\u003ci>Conteúdo de destaque: \u003c/i>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>reconhecimento patrimonial;  \u003c/i>\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>mensuração e reavaliação;  \u003c/i>\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>evidenciação contábil dos imóveis públicos.\u003c/i>\u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003c/span>\u003c/span>","linkHref":"https://www.gov.br/tesouronacional/pt-br/contabilidade-e-custos/manuais","linkLabel":"Confira o Manual completo","linkButton":"secondary"}]}}]},{"id":"bytjczpv","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cepp8lva","type":"titulo","props":{"text":"Camada 3: Segurança jurídica, registro e propriedade ","level":"h2"}},{"id":"c9dm848x","type":"prose","props":{"html":"\u003cp>A gestão patrimonial depende não apenas da existência física dos imóveis, mas também da segurança jurídica associada aos direitos que incidem sobre eles. É essa a função da terceira camada normativa. \u003c/p>\u003cp>Ela reúne as normas relacionadas à propriedade, à posse, aos direitos reais, aos registros públicos e aos mecanismos de publicidade e proteção jurídica dos imóveis. Seu objetivo é garantir que os imóveis sejam corretamente identificados, delimitados e vinculados aos seus titulares, proporcionando estabilidade e segurança às relações jurídicas. \u003c/p>"}},{"id":"b6irbkim","type":"callout","props":{"variant":"ear","tone":"success","icon":"lightbulb","title":"","heading":"","children":"\u003cp>O registro imobiliário ocupa papel central nessa camada. É por meio dele que parte dos direitos sobre os imóveis são formalizados, publicizados e protegidos perante terceiros. Matrículas, averbações, registros de aquisição, alienação e constituição de direitos reais são exemplos de instrumentos fundamentais para a segurança jurídica do patrimônio público. \u003c/p>"}},{"id":"bzkl4f0x","type":"prose","props":{"html":"\u003cp>Nos últimos anos, essa dimensão passou por importantes transformações em razão da modernização dos sistemas cadastrais e registrais. Ferramentas como o \u003cb>Sistema de Gestão Fundiária (SIGEF)\u003c/b>, o \u003cb>Cadastro Ambiental Rural (CAR)\u003c/b>, o \u003cb>Cadastro Imobiliário Brasileiro (CIB)\u003c/b> e os serviços eletrônicos dos registros de imóveis vêm ampliando as possibilidades de integração entre informações cadastrais, registrais e geoespaciais. \u003c/p>\u003cp>\u003cmark data-hl=\"terra\">Para a gestão patrimonial, essa integração é estratégica\u003c/mark>. Não basta saber que um imóvel pertence ao Estado; é necessário que essa condição esteja juridicamente demonstrada, registrada e apoiada em informações consistentes. A ausência de regularidade dominial ou registral pode comprometer ou limitar destinações, dificultar regularizações fundiárias, gerar conflitos e limitar a implementação de políticas públicas. \u003c/p>"}},{"id":"brir676f","type":"pullquote","props":{"variant":"block","children":"Por essa razão, patrimônio, cadastro, registro e segurança jurídica constituem dimensões inseparáveis da gestão patrimonial contemporânea. ","cite":""}},{"id":"b1lgq4eo","type":"kicker","props":{"icon":"scale","children":"Principais marcos normativos"}},{"id":"bia6xcnx","type":"accordion","props":{"numbered":false,"items":[{"title":"Código Civil (Lei nº 10.406/2002) ","content":"\u003cp>Disciplina propriedade, posse, direitos reais, usucapião, superfície, servidões e demais institutos fundamentais para a gestão patrimonial. \u003c/p>\u003cp>\u003c/p>\u003cspan data-color=\"terra\">\u003ci>\u003cp>\u003c/p>\u003cspan data-font=\"serif\">\u003cp>Dispositivos de destaque: \u003c/p>\u003cp>\u003cul>\u003cli>Arts. 1.196 a 1.224 – Posse  \u003c/li>\u003cli>Arts. 1.225 a 1.510-E – Direitos reais  \u003c/li>\u003c/ul>\u003c/p>\u003c/span>\u003cp>\u003c/p>\u003c/i>\u003c/span>\u003cp>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"},{"title":"Lei nº 6.015/1973 (Lei de Registros Públicos) ","content":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Estrutura o sistema registral brasileiro e disciplina matrículas, registros e averbações imobiliárias. \u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003cspan data-font=\"serif\">\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003cspan data-color=\"terra\">\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>Dispositivos de destaque: \u003c/i>\u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>Arts. 167 a 288 – Registro de imóveis  \u003c/i>\u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"},{"title":"Lei nº 10.267/2001 ","content":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Institui o georreferenciamento obrigatório dos imóveis rurais e promove a integração entre cadastro e registro. \u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003cspan data-font=\"serif\">\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003cspan data-color=\"terra\">\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>Dispositivos de destaque: \u003c/i>\u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>Alterações na Lei de Registros Públicos  \u003c/i>\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>Certificação de imóveis rurais  \u003c/i>\u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10267.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"},{"title":"Decreto nº 11.208/2022 (Cadastro Imobiliário Brasileiro – CIB) ","content":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Institui o Cadastro Imobiliário Brasileiro e o Código de Identificação do Imóvel (CIB), promovendo integração cadastral entre diferentes bases territoriais. \u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003cspan data-color=\"terra\">\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003cspan data-font=\"serif\">\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>Destaques: \u003c/i>\u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>Integração de cadastros públicos e privados  \u003c/i>\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>Criação do BICE (Banco de Identificação Cadastral de Imóveis)  \u003c/i>\u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11208.htm","linkLabel":"Confira o Decreto completo","linkButton":"secondary"},{"title":"Lei nº 14.382/2022 ","content":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Marco da modernização do sistema registral brasileiro e da implantação do Sistema Eletrônico dos Registros Públicos (SERP).  \u003c/span>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14382.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"}]}}]},{"id":"b19mupfl","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"c1l9qvwd","type":"titulo","props":{"text":"Camada 4: Território, ambiente e função socioambiental ","level":"h2"}},{"id":"c0h9lq7l","type":"prose","props":{"html":"\u003cp>A quarta e última camada conecta os bens imóveis públicos ao território e às políticas públicas que orientam sua utilização. Diferentemente das normas patrimoniais, que tratam da administração dos bens, \u003cmark>essa camada estabelece as condições, restrições e diretrizes para seu uso\u003c/mark>. \u003c/p>\u003cp>Todo imóvel público está inserido em um contexto territorial específico. Por essa razão, sua utilização deve observar normas relacionadas ao \u003cb>planejamento urbano\u003c/b>, à \u003cb>proteção ambiental\u003c/b>, ao \u003cb>ordenamento territorial\u003c/b>, à \u003cb>gestão costeira\u003c/b> e à \u003cb>política fundiária\u003c/b>. Essas normas não definem quem é o proprietário do imóvel, mas influenciam diretamente o que pode ou não pode ser feito com ele.\u003c/p>"}},{"id":"b8i5uy6i","type":"contentslider","props":{"hint":"Confira as dimensões desta camada","accent":"var(--green-700)","showTabNumbers":false,"slides":[{"showImage":false,"slot":"b8i5uy6i__slides_1_slot","alt":"","caption":"","labelIcon":"ruler-dimension-line","label":"","tabLabel":"Ordenamento urbano","title":"Ordenamento urbano","subtitle":"","description":"No ambiente urbano, destaca-se o \u003cb>Plano Diretor\u003c/b>, principal instrumento da política urbana municipal. É nele que são definidas as diretrizes de desenvolvimento territorial, os parâmetros de uso e ocupação do solo, as áreas de interesse social, as zonas de proteção ambiental e as estratégias de expansão urbana. Mesmo imóveis pertencentes à União ou aos estados devem observar essas diretrizes quando inseridos no território municipal. \u003cbr>","linkHref":"","linkLabel":""},{"showImage":false,"slot":"c_delkxie__imageSlot","alt":"","caption":"","labelIcon":"sprout","label":"","tabLabel":"Proteção ambiental","title":"Proteção ambiental","subtitle":"","description":"A dimensão ambiental também exerce forte influência sobre a gestão patrimonial. Áreas de preservação permanente, unidades de conservação, vegetação protegida, recursos hídricos e demais restrições ambientais condicionam a utilização dos imóveis públicos e contribuem para a concretização de sua função socioambiental.\u003cbr>","linkHref":"","linkLabel":""},{"showImage":false,"slot":"c_a0stzlr__imageSlot","alt":"","caption":"","labelIcon":"waves-horizontal","label":"","tabLabel":"Gestão costeira","title":"Gestão costeira","subtitle":"","description":"Essa camada também abrange políticas territoriais específicas voltadas a determinados espaços de interesse estratégico, como a zona costeira brasileira. O Plano Nacional de Gerenciamento Costeiro e seus instrumentos complementares buscam compatibilizar desenvolvimento econômico, proteção ambiental, ocupação territorial e uso sustentável dos recursos naturais, influenciando diretamente a gestão dos imóveis públicos localizados no litoral e nas áreas costeiras.","linkHref":"","linkLabel":""},{"showImage":false,"slot":"c_eucy685__imageSlot","alt":"","caption":"","labelIcon":"tractor","label":"","tabLabel":"Política fundiária","title":"Política fundiária","subtitle":"","description":"A dimensão fundiária é especialmente relevante para imóveis rurais, terras públicas e processos de regularização fundiária. Questões relacionadas à reforma agrária, ao cadastro rural, ao georreferenciamento, à certificação de imóveis e à regularização territorial demonstram que a gestão patrimonial vai muito além da administração de edificações e terrenos urbanos.","linkHref":"","linkLabel":""}]}},{"id":"b_msj232w2_3x9g","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Ao conectar patrimônio, território, meio ambiente, desenvolvimento urbano, gestão costeira e política fundiária, essa camada evidencia que os imóveis públicos são instrumentos estratégicos para a implementação de políticas públicas, a promoção do desenvolvimento sustentável e o cumprimento da função socioambiental da propriedade pública.\u003c/span>\u003c/p>"}},{"id":"bh1tyova","type":"kicker","props":{"icon":"scale","children":"Principais marcos normativos"}},{"id":"brjsuyss","type":"accordion","props":{"numbered":false,"items":[{"title":"Lei nº 10.257/2001 (Estatuto da Cidade) ","content":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Principal marco da política urbana brasileira. Regulamenta os arts. 182 e 183 da Constituição e estabelece instrumentos para o cumprimento da função social da propriedade. \u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003c/span>\u003c/p>\u003cspan data-color=\"terra\">\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003ci>\u003c/i>\u003c/span>\u003c/p>\u003cspan data-font=\"serif\">\u003ci>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Dispositivos de destaque: \u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Art. 2º – Diretrizes gerais da política urbana  \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Arts. 39 a 42-B – Plano Diretor  \u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003c/i>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003c/span>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003c/span>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10257.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"},{"title":"Plano Diretor Municipal\u003cbr>","content":"\u003cp>\u003cspan style=\"color: inherit;\">Principal instrumento de ordenamento territorial local. Define uso do solo, expansão urbana, áreas de interesse social e proteção ambiental. \u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"color: inherit;\">\u003cspan data-color=\"terra\">\u003cspan data-font=\"serif\">\u003ci>Consulte o Plano Diretor do município correspondente. \u003c/i>\u003c/span>\u003c/span>\u003c/span>\u003c/li>\u003c/ul>\u003c/p>","linkHref":"","linkLabel":"","linkButton":""},{"title":"Lei nº 12.651/2012 (Código Florestal) ","content":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Estabelece regras para proteção da vegetação nativa e condiciona a utilização de imóveis públicos e privados. \u003c/span>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"},{"title":"Lei nº 9.985/2000 (SNUC) ","content":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Institui o Sistema Nacional de Unidades de Conservação e disciplina áreas protegidas que afetam diretamente a gestão patrimonial. \u003c/span>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/leis/l9985.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"},{"title":"Lei nº 13.465/2017 ","content":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Principal marco contemporâneo da regularização fundiária urbana e rural. \u003c/span>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13465.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"},{"title":"Lei nº 7.661/1988 (Plano Nacional de Gerenciamento Costeiro) ","content":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Estabelece diretrizes para gestão integrada da zona costeira e influencia diretamente a utilização dos imóveis públicos localizados no litoral. \u003c/span>\u003c/p>","linkHref":"https://www.planalto.gov.br/ccivil_03/leis/l7661.htm","linkLabel":"Confira a Lei completa","linkButton":"secondary"}]}}]},{"id":"by4hlqs8","type":"section","props":{"width":"content","surface":"dark","pad":"lg"},"children":[{"id":"c5cftkyc","type":"titulo","props":{"text":"Como as camadas se conectam","level":"h2"}},{"id":"ctelxium","type":"prose","props":{"html":"\u003cp>Embora apresentadas separadamente para fins didáticos, \u003cb>\u003cspan data-color=\"ochre-light\">as quatro camadas normativas não funcionam de forma isolada\u003c/span>\u003c/b>. Pelo contrário, elas se complementam e se influenciam mutuamente. \u003c/p>\u003cp>Uma mesma ação patrimonial pode exigir a observância simultânea de normas constitucionais, patrimoniais, registrais, urbanísticas, ambientais e fundiárias. A destinação de uma área pública para habitação de interesse social, por exemplo, pode envolver competências constitucionais, instrumentos patrimoniais, regularização registral, observância do Plano Diretor, atendimento à legislação ambiental e aplicação de normas de contratação pública. \u003c/p>\u003cp>Essa interação permanente demonstra que a gestão patrimonial não pode ser compreendida apenas a partir da legislação patrimonial propriamente dita. Ela depende de uma visão integrada do sistema normativo e da capacidade de compreender como diferentes normas se articulam em torno dos imóveis públicos. \u003c/p>"}}]},{"id":"behgl72t","type":"section","props":{"width":"content","surface":"page","pad":"lg"},"children":[{"id":"c6164bud","type":"titulo","props":{"text":"Fluxo de análise normativa para Gestão de Imóveis Públicos","level":"h2"}},{"id":"cktqpkwi","type":"prose","props":{"html":"\u003cp>A gestão de imóveis públicos exige análise integrada de normas de diferentes naturezas.\u003c/p>\u003cp>Responda às perguntas abaixo, clique em cada cartão, identifique as normas aplicáveis e escolha o instrumento adequado para garantir legalidade, eficiência e atendimento ao interesse público.\u003c/p>"}},{"id":"bsqaran4","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bs5j5ndd","type":"flashcard","props":{"term":"1. De quem é o imóvel?","definition":"\u003cspan style=\"color: inherit;\">\u003cspan data-fs=\"h5\">\u003c/span>\u003c/span>\u003cspan data-fs=\"body-lg\">De quem é o imóvel?\u003c/span>\u003cp>\u003cul>\u003cli>União, estado, Distrito Federal ou município?\u003c/li>\u003cli>Verificar a legislação patrimonial específica do ente.\u003c/li>\u003c/ul>\u003cp>\u003c/p>\u003c/p>","icon":"shield-user","description":"Qual ente federativo é o proprietário ou gestor responsável?","color":"var(--slate-600)"}},{"id":"b_msj4kt8r_fdth","type":"flashcard","props":{"term":"2. Onde está localizado?","definition":"\u003cspan style=\"color: inherit;\">\u003cspan data-fs=\"h5\">\u003c/span>\u003c/span>\u003cspan data-fs=\"body-lg\">Onde está localizado?\u003c/span>\u003cp>\u003c/p>\u003cul>\u003cli>Endereço, coordenadas ou descrição territorial.\u003c/li>\u003cli>Identificar o município, região administrativa e eventuais sobreposições territoriais.\u003c/li>\u003c/ul>\u003cp>\u003c/p>\u003cp>\u003c/p>","icon":"map-pinned","description":"Qual é a localização do imóvel?","color":"var(--green-600)"}},{"id":"b_msj4tw8d_pf8o","type":"flashcard","props":{"term":"3. Qual sua natureza?","definition":"\u003cspan style=\"color: inherit;\">\u003cspan data-fs=\"h5\">\u003c/span>\u003c/span>\u003cspan data-fs=\"body-lg\">Qual sua natureza?\u003c/span>\u003cp>\u003c/p>\u003cul>\u003cli>Define o conjunto de normas aplicáveis: urbanisticas, ambientais, fundiárias, culturais, de patrimônio histórico, etc.\u003c/li>\u003c/ul>\u003cp>\u003c/p>\u003cp>\u003c/p>","icon":"trees","description":"O imóvel é urbano, rural, costeiro, ambiental, histórico, especial, edificado ou não edificado?","color":"var(--terra-600)"}},{"id":"b_msj4wv8v_2khz","type":"flashcard","props":{"term":"4. O que se pretende fazer com o imóvel?","definition":"\u003cspan style=\"color: inherit;\">\u003cspan data-fs=\"h5\">\u003c/span>\u003c/span>\u003cspan data-fs=\"body-lg\">O que se pretende fazer com o imóvel?\u003c/span>\u003cp>\u003c/p>\u003cul>\u003cli>Uso direto, cessão, concessão, alienação, permuta, locação, regularização, obra, proteção, desmembramento, etc.\u003c/li>\u003cli>A finalidade influencia o regime jurídico e os requisitos legais.\u003c/li>\u003c/ul>\u003cp>\u003c/p>\u003cp>\u003c/p>","icon":"pencil-sparkles","description":"Qual é a finalidade ou destinação pretendida?","color":"var(--ochre-700)"}},{"id":"b_msj521ey_f4rv","type":"flashcard","props":{"term":"5. Qual norma patrimonial do ente se aplica?","definition":"\u003cspan style=\"color: inherit;\">\u003cspan data-fs=\"h5\">\u003c/span>\u003c/span>\u003cspan data-fs=\"body-lg\">Qual norma patrimonial do ente se aplica?\u003c/span>\u003cp>\u003c/p>\u003cul>\u003cli>Verificar lei orgânica, lei patrimonial, decretos e regulamentos do ente.\u003c/li>\u003cli>Confirmar exigências específicas: autorização legislativa, avaliação, desafetação, licitação, publicidade, etc.\u003c/li>\u003c/ul>\u003cp>\u003c/p>\u003cp>\u003c/p>","icon":"pen-tool","description":"Existe lei ou regulamento próprio sobre a gestão dos imóveis desse ente?","color":"var(--ink-500)"}},{"id":"b_msj54fzx_nl76","type":"flashcard","props":{"term":"6. Quais normas nacionais incidem sobre o caso?","definition":"\u003cspan style=\"color: inherit;\">\u003cspan data-fs=\"h5\">\u003c/span>\u003c/span>\u003cspan data-fs=\"body-lg\">Quais normas nacionais incidem?\u003c/span>\u003cp>\u003c/p>\u003cul>\u003cli>Direito civil e direitos reais, registros públicos desapropriação, licitações e contratos, normas urbanísticas, ambientais, agrárias, entre outras.\u003c/li>\u003cli>Devem ser observadas por todos os entes.\u003c/li>\u003c/ul>\u003cp>\u003c/p>\u003cp>\u003c/p>","icon":"landmark","description":"Existem normas federais que limitam ou condicionam a atuação do ente?","color":"var(--green-600)"}},{"id":"b_msj5bm36_2r4l","type":"flashcard","props":{"term":"7. Há restrições urbanísticas ou ambientais?","definition":"\u003cspan style=\"color: inherit;\">\u003cspan data-fs=\"h5\">\u003c/span>\u003c/span>\u003cspan data-fs=\"body-lg\">Há restrições urbanísticas ou ambientais?\u003c/span>\u003cp>\u003c/p>\u003cul>\u003cli>Verificar Plano Diretor, zoneamento, áreas de interesse social, áreas de proteção APP, unidade de conservação, patrimônio cultural, etc.\u003c/li>\u003cli>Podem limitar o uso, a ocupação ou a destinação.\u003c/li>\u003c/ul>\u003cp>\u003c/p>\u003cp>\u003c/p>","icon":"building-2","description":"O Plano Diretor, leis de uso do solo ou normas ambientais impõem restrições ao imóvel?","color":"var(--terra-700)"}},{"id":"b_msj57cmc_8gtf","type":"flashcard","props":{"term":"8. Qual instrumento jurídico pode ser utilizado?","definition":"\u003cspan style=\"color: inherit;\">\u003cspan data-fs=\"h5\">\u003c/span>\u003c/span>\u003cspan data-fs=\"body-lg\">Qual instrumento jurídico?\u003c/span>\u003cp>\u003c/p>\u003cul>\u003cli>Licitação, concessão de uso, permissão, cessão, autorização, doação, venda contrato, termo de cooperação, desafetação, regularização, etc\u003c/li>\u003cli>Respeitar requisitos legais e procedimentais.\u003c/li>\u003c/ul>\u003cp>\u003c/p>\u003cp>\u003c/p>","icon":"building-2","description":"Qual é o instrumento adequado para viabilizar a destinação ou o uso pretendido?","color":"var(--petrol-800)"}}]}]},{"id":"batn5cvl","type":"pagefooter","props":{"code":"Arquitetura normativa da gestão de bens imóveis públicos no Brasil [M131]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Claudson Moreira"},{"role":"Revisão","name":"Ana Túlia de Macedo, Karina Bonilaure&nbsp;"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"blo22e2q__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-blo22e2q__slot.png"},"bc5b05dh__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bc5b05dh__slot.png"},"b_msg5s7ab_zzbh__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b_msg5s7ab_zzbh__slot.png"},"behapctr__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-behapctr__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"building-2":"\u003cpath d=\"M10 12h4\"/>\u003cpath d=\"M10 8h4\"/>\u003cpath d=\"M14 21v-3a2 2 0 0 0-4 0v3\"/>\u003cpath d=\"M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2\"/>\u003cpath d=\"M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","landmark":"\u003cpath d=\"M10 18v-7\"/>\u003cpath d=\"M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z\"/>\u003cpath d=\"M14 18v-7\"/>\u003cpath d=\"M18 18v-7\"/>\u003cpath d=\"M3 22h18\"/>\u003cpath d=\"M6 18v-7\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map-pin-pen":"\u003cpath d=\"M17.97 9.304A8 8 0 0 0 2 10c0 4.69 4.887 9.562 7.022 11.468\"/>\u003cpath d=\"M21.378 16.626a1 1 0 0 0-3.004-3.004l-4.01 4.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z\"/>\u003ccircle cx=\"10\" cy=\"10\" r=\"3\"/>","map-pinned":"\u003cpath d=\"M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0\"/>\u003ccircle cx=\"12\" cy=\"8\" r=\"2\"/>\u003cpath d=\"M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712\"/>","pen-tool":"\u003cpath d=\"M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z\"/>\u003cpath d=\"m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18\"/>\u003cpath d=\"m2.3 2.3 7.286 7.286\"/>\u003ccircle cx=\"11\" cy=\"11\" r=\"2\"/>","pencil-sparkles":"\u003cpath d=\"M10 3H8\"/>\u003cpath d=\"m15.007 5.008 3.987 3.986\"/>\u003cpath d=\"M20 15v4\"/>\u003cpath d=\"M21.174 6.813a2.82 2.82 0 0 0-3.986-3.987L3.842 16.175a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z\"/>\u003cpath d=\"M22 17h-4\"/>\u003cpath d=\"M4 5v4\"/>\u003cpath d=\"M6 7H2\"/>\u003cpath d=\"M9 2v2\"/>","ruler-dimension-line":"\u003cpath d=\"M10 15v-3\"/>\u003cpath d=\"M14 15v-3\"/>\u003cpath d=\"M18 15v-3\"/>\u003cpath d=\"M2 8V4\"/>\u003cpath d=\"M22 6H2\"/>\u003cpath d=\"M22 8V4\"/>\u003cpath d=\"M6 15v-3\"/>\u003crect x=\"2\" y=\"12\" width=\"20\" height=\"8\" rx=\"2\"/>","scale":"\u003cpath d=\"M12 3v18\"/>\u003cpath d=\"m19 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1\"/>\u003cpath d=\"m5 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M7 21h10\"/>","shield-user":"\u003cpath d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/>\u003cpath d=\"M6.376 18.91a6 6 0 0 1 11.249.003\"/>\u003ccircle cx=\"12\" cy=\"11\" r=\"4\"/>","sprout":"\u003cpath d=\"M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3\"/>\u003cpath d=\"M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4\"/>\u003cpath d=\"M5 21h14\"/>","tractor":"\u003cpath d=\"m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20\"/>\u003cpath d=\"M16 18h-5\"/>\u003cpath d=\"M18 5a1 1 0 0 0-1 1v5.573\"/>\u003cpath d=\"M3 4h8.129a1 1 0 0 1 .99.863L13 11.246\"/>\u003cpath d=\"M4 11V4\"/>\u003cpath d=\"M7 15h.01\"/>\u003cpath d=\"M8 10.1V4\"/>\u003ccircle cx=\"18\" cy=\"18\" r=\"2\"/>\u003ccircle cx=\"7\" cy=\"15\" r=\"5\"/>","trees":"\u003cpath d=\"M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z\"/>\u003cpath d=\"M7 16v6\"/>\u003cpath d=\"M13 19v3\"/>\u003cpath d=\"M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5\"/>","waves-horizontal":"\u003cpath d=\"M2 12q2.5 2 5 0t5 0 5 0 5 0\"/>\u003cpath d=\"M2 19q2.5 2 5 0t5 0 5 0 5 0\"/>\u003cpath d=\"M2 5q2.5 2 5 0t5 0 5 0 5 0\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__intro{max-width:var(--measure);margin-bottom:var(--space-5)}' +
+        '.spu-csection__title{margin:0;font-family:var(--font-display);font-size:var(--fs-h2);line-height:1.08;letter-spacing:var(--ls-heading);color:var(--text-strong)}' +
+        '.spu-csection__lead{margin-top:var(--space-3);color:var(--text-muted);font-size:var(--fs-body-lg);line-height:var(--lh-relaxed)}' +
+        '.spu-csection__lead>:last-child{margin-bottom:0}' +
+        '.spu-csection__details{border-top:1px solid var(--color-divider);padding-top:var(--space-4)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer;list-style:none}' +
+        '.spu-csection__summary::-webkit-details-marker{display:none}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__details[open]>.spu-csection__summary svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__details>.spu-csection__body{display:block!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var title = props.title;
+        var lead = props.lead;
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint && NS.isPrint();
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing || props.__builderEditing === true;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            (hasRichContent(title) || hasRichContent(lead)) && React.createElement('div', { className:'spu-csection__intro' },
+              hasRichContent(title) && React.createElement('h2', { className:'spu-csection__title' }, NS.renderRich ? NS.renderRich(title, { inline:true }) : title),
+              hasRichContent(lead) && React.createElement('div', { className:'spu-csection__lead' }, NS.renderRich ? NS.renderRich(lead) : lead)
+            ),
+            React.createElement('details', {
+              className:'spu-csection__details',
+              open: forcedOpen || open,
+              onToggle:function(event){ if(!forcedOpen) setOpen(event.currentTarget.open); }
+            },
+              React.createElement('summary', {
+                className:'spu-csection__summary',
+                onClick:function(event){ if(forcedOpen) event.preventDefault(); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body' }, props.children)
+            )
+          )
+        );
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container',
+        fields:['title','lead','triggerLabel'],
+        props:{ title:'Título da seção', lead:'<p>Apresente brevemente o conteúdo que poderá ser expandido.</p>', triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.byType[definition.type] = definition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type !== definition.type) return originalNewBlock(type, child);
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:JSON.parse(JSON.stringify(definition.props)) };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

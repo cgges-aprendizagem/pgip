@@ -1,0 +1,1661 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M131 - Arquitetura normativa da gestão de bens imóveis públicos no Brasil",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "cylj3zsh",
+          "text": "Um sistema normativo, e não uma única lei patrimonial",
+          "hidden": false
+        },
+        {
+          "id": "cv27tybd",
+          "text": "Quem regula o quê?",
+          "hidden": false
+        },
+        {
+          "id": "cj0uy7j8",
+          "text": "Camada 1: Alicerces Constitucionais e Federativos ",
+          "hidden": false
+        },
+        {
+          "id": "b_msiaag6w_wm7g",
+          "text": "Camada 2: Núcleo da gestão patrimonial imobiliária pública ",
+          "hidden": false
+        },
+        {
+          "id": "cepp8lva",
+          "text": "Camada 3: Segurança jurídica, registro e propriedade ",
+          "hidden": false
+        },
+        {
+          "id": "c1l9qvwd",
+          "text": "Camada 4: Território, ambiente e função socioambiental ",
+          "hidden": false
+        },
+        {
+          "id": "c5cftkyc",
+          "text": "Como as camadas se conectam",
+          "hidden": false
+        },
+        {
+          "id": "c6164bud",
+          "text": "Fluxo de análise normativa para Gestão de Imóveis Públicos",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "bjmfuhk2",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "behapctr",
+      "type": "hero",
+      "props": {
+        "kicker": "Governança e Regulação da propriedade pública",
+        "kickerIcon": "scale",
+        "title": "Arquitetura normativa da gestão de bens imóveis públicos no Brasil",
+        "byline": "Compreendendo os principais marcos normativos que orientam a gestão dos imóveis públicos",
+        "slot": "behapctr__slot"
+      }
+    },
+    {
+      "id": "b1wwoqfi",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cwm1tjdp",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão de bens imóveis públicos não é orientada por uma única lei ou por um único código patrimonial. Ela depende de uma ampla arquitetura normativa que estrutura a atuação do Estado sobre seu patrimônio imobiliário.</p><p>Cada ente federativo (União, estados, Distrito Federal e municípios) possui competência para organizar a gestão de seus próprios imóveis, definindo regras internas sobre aquisição, cadastro, uso, destinação, fiscalização, manutenção, arrecadação e controle patrimonial. Essa autonomia, contudo, não se estende à definição de quais bens integram seu patrimônio, matéria disciplinada pela Constituição Federal. Assim, embora um município possa editar normas sobre a administração de seus bens, não lhe cabe atribuir a si a titularidade de imóveis que constitucional ou legalmente pertençam à União, aos estados ou a outro ente público.</p><p>Ao mesmo tempo, há matérias que dependem de legislação federal ou de normas nacionais, porque envolvem temas de competência da União ou regras gerais aplicáveis a todos os entes federativos. É o caso, por exemplo, do direito civil, dos registros públicos, da desapropriação, das normas gerais de licitações e contratos, da política urbana, da legislação ambiental e de parte importante da legislação fundiária.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bs46778t",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cylj3zsh",
+          "type": "titulo",
+          "props": {
+            "text": "Um sistema normativo, e não uma única lei patrimonial",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cjkrhen4",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão patrimonial imobiliária se caracteriza por demandar uma abordagem necessariamente<mark> interdisciplinar e sistêmica</mark>. Embora essa seja uma característica comum ao Direito brasileiro, a disciplina dos imóveis públicos não se concentra em um único ramo do Direito, sendo construída a partir da interpretação sistêmica entre normas dispersas em diferentes níveis (constitucionais, legais e infralegais). Não se trata de uma exceção à lógica do ordenamento jurídico brasileiro, mas de um campo em que essa característica se manifesta de forma particularmente evidente, exigindo do gestor a integração de conceitos e institutos de diferentes naturezas. Essa complexidade decorre da própria natureza dos bens imóveis.</p>"
+          }
+        },
+        {
+          "id": "bwxetn0k",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "children": "Um imóvel público é simultaneamente um ativo patrimonial, um bem jurídico, uma parcela do território, um elemento ambiental e, também, um instrumento de implementação de políticas públicas. ",
+            "cite": ""
+          }
+        },
+        {
+          "id": "bi2cwdf1",
+          "type": "prose",
+          "props": {
+            "html": "<p>Sua gestão envolve desde questões relacionadas à propriedade e ao registro imobiliário até aspectos ligados ao planejamento urbano, à proteção ambiental, ao combate às desigualdades, à regularização fundiária, à contabilidade pública e às contratações administrativas.</p><p>Por essa razão, compreender a gestão patrimonial exige mais do que conhecer leis específicas sobre imóveis públicos. É necessário compreender <mark>como diferentes conjuntos normativos se relacionam e se complementam</mark> para formar uma arquitetura regulatória ampla e integrada.</p>"
+          }
+        },
+        {
+          "id": "b51zyrog",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>O objetivo deste material não é apresentar todas as normas aplicáveis à gestão patrimonial, mas ajudar você a entender <b>a estrutura geral desse sistema normativo</b>: quais tipos de normas incidem sobre os imóveis públicos, como elas se conectam e por que a gestão patrimonial exige uma leitura integrada entre patrimônio, território, ambiente, registro, contratação pública e função socioambiental.</p>"
+          }
+        },
+        {
+          "id": "bsj169ma",
+          "type": "prose",
+          "props": {
+            "html": "<p>Para facilitar, organizamos os principais marcos normativos que incidem sobre os bens imóveis públicos em <b>quatro grandes camadas</b>. A primeira estabelece os fundamentos constitucionais e federativos do sistema. A segunda reúne as normas diretamente relacionadas à administração patrimonial. A terceira trata da segurança jurídica, do registro e da propriedade. A quarta, por fim, conecta o patrimônio público ao território, ao meio ambiente e à sua função socioambiental.</p>"
+          }
+        },
+        {
+          "id": "bghfckv9",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "warning",
+            "icon": "alert-circle",
+            "title": "importante",
+            "heading": "",
+            "children": "<p>As camadas apresentadas neste material foram organizadas apenas para facilitar o estudo. Elas agrupam temas relacionados à gestão patrimonial e não representam uma ordem de importância ou uma hierarquia entre as normas jurídicas.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bjs338v8",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "terra-dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "blo22e2q",
+          "type": "figure",
+          "props": {
+            "slot": "blo22e2q__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "Opção 1 - ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "bc5b05dh",
+          "type": "figure",
+          "props": {
+            "slot": "bc5b05dh__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "Opção 2 - ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "b_msg5s7ab_zzbh",
+          "type": "figure",
+          "props": {
+            "slot": "b_msg5s7ab_zzbh__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "Opção 3 - ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "b0v9bpbi",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "Como funciona essa arquitetura"
+          }
+        },
+        {
+          "id": "bb72fk2e",
+          "type": "prose",
+          "props": {
+            "html": "<p>As camadas formam uma base <b>integrada</b> e <b>interdependente</b>: os alicerces definem competências e princípios; o núcleo operacionaliza a gestão; a segurança jurídica protege os direitos; e o território e o ambiente orientam o uso dos imóveis em cumprimento da função socioambiental.</p>"
+          }
+        },
+        {
+          "id": "bw2u3zcd",
+          "type": "timeline",
+          "props": {
+            "eras": [
+              {
+                "label": "",
+                "period": "Explore as camAdas",
+                "color": "var(--sand-300)",
+                "milestones": [
+                  {
+                    "date": "CAMADA 1",
+                    "title": "Alicerces Constitucionais",
+                    "content": "<p><span data-fs=\"body-lg\"><b>Quem pode regular e administrar? </b></span></p><p><span data-fs=\"body-lg\"><i><span data-fs=\"caption\">Constituição Federal : Art. 5º, XXIII | Art. 23, VI e VII | Art. 24, VI | Art. 37, caput | Art. 70, caput | Art. 170, III | Art. 182, caput | Art. 182, §1º | Art. 182, §2º | Art. 182, §4º | Art. 183, §3º | Art. 184 | Art. 186 | Art. 225, caput | Art. 225, §1</span></i></span></p>",
+                    "linkHref": "",
+                    "linkLabel": "",
+                    "linkButton": "",
+                    "blocks": [
+                      {
+                        "id": "bfqncp0r",
+                        "type": "statblock",
+                        "props": {
+                          "variant": "rule",
+                          "columns": 3,
+                          "stats": [
+                            {
+                              "value": "",
+                              "unit": "",
+                              "label": "",
+                              "description": "<ul><li>Competências legislativas e administrativas </li><li>Bens públicos e domínio dos entes federativos </li><li>Princípios da administração pública, a função social da propriedade, proteção ao meio-ambiente, a função social da cidade e ordenação do pleno desenvolvimento urbano  </li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "date": "Camada 2",
+                    "title": "Núcleo da Administração Patrimonial",
+                    "content": "<p><span data-fs=\"body-lg\"><b>Como os imóveis públicos são administrados, contratados e contabilizados? </b></span></p><p><span data-fs=\"body-lg\"><i><span data-fs=\"caption\">Decreto-Lei nº 9.760/1946 • Lei nº 9.636/1998 • Lei nº 14.133/2021 • MCASP • NBC TSP</span></i></span></p>",
+                    "linkHref": "",
+                    "linkLabel": "",
+                    "linkButton": "",
+                    "blocks": [
+                      {
+                        "id": "bldp9dtp",
+                        "type": "statblock",
+                        "props": {
+                          "variant": "rule",
+                          "columns": 3,
+                          "stats": [
+                            {
+                              "value": "",
+                              "unit": "",
+                              "label": "Gestão Patrimonial",
+                              "description": "<ul><li>Aquisição e incorporação </li><li>Cadastro e avaliação </li><li>Destinação e utilização </li><li>Alienação e fiscalização </li><li>Manutenção e arrecadação</li></ul>"
+                            },
+                            {
+                              "value": "",
+                              "unit": "",
+                              "label": "Contratações patrimoniais",
+                              "description": "<p><ul><li>Lei nº 14.133/2021 </li><li>Aquisição e alienação </li><li>Concessões e cessões </li><li>Locações e permissões </li><li>Obras e serviços </li></ul></p><p><br></p>"
+                            },
+                            {
+                              "value": "",
+                              "unit": "",
+                              "label": "Contabilidade patrimonial",
+                              "description": "<p><ul><li>MCASP e NBC TSP </li><li>Reconhecimento e mensuração </li><li>Reavaliação de ativos </li><li>Evidenciação e transparência </li><li>Balanço Geral </li></ul></p><p><br></p>"
+                            }
+                          ],
+                          "__pullUp": false
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "date": "Camada 3",
+                    "title": "Segurança jurídica, Registro e Propriedade",
+                    "content": "<p><span data-fs=\"body-lg\"></span><span data-fs=\"body-lg\"><b>Como os direitos sobre os imóveis são reconhecidos e protegidos?</b></span></p><p><i style=\"text-wrap-mode: initial; color: inherit;\"><span data-fs=\"caption\">Código Civil • Lei de Registros Públicos • Lei nº 10.267/2001 • ONR • SIGEF • CIB</span></i></p>",
+                    "linkHref": "",
+                    "linkLabel": "",
+                    "linkButton": "",
+                    "blocks": [
+                      {
+                        "id": "bzog926k",
+                        "type": "statblock",
+                        "props": {
+                          "variant": "rule",
+                          "columns": 3,
+                          "stats": [
+                            {
+                              "value": "",
+                              "unit": "",
+                              "label": "",
+                              "description": "<ul><li>Propriedade, posse e direitos reais </li><li>Registro de imóveis e matrículas </li><li>Georreferenciamento e integração cadastral </li><li>Publicidade registral e segurança jurídica</li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "date": "Camada 4",
+                    "title": "Território, ambiente e função socioambiental",
+                    "content": "<p><span data-fs=\"body-lg\"><b>Como os imóveis podem ser utilizados?</b></span></p><p><span data-fs=\"body-lg\"><i><span data-fs=\"caption\">Estatuto da Cidade • Código Florestal • SNUC • Regularização Fundiária • Zoneamento</span></i></span></p>",
+                    "linkHref": "",
+                    "linkLabel": "",
+                    "linkButton": "",
+                    "blocks": [
+                      {
+                        "id": "b9u99chb",
+                        "type": "statblock",
+                        "props": {
+                          "variant": "rule",
+                          "columns": 3,
+                          "stats": [
+                            {
+                              "value": "",
+                              "unit": "",
+                              "label": "",
+                              "description": "<ul><li>Política urbana e Plano Diretor </li><li>Meio ambiente e proteção ambiental </li><li>Ordenamento territorial e uso do solo </li><li>Política fundiária e regularização territorial </li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1t680qt",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cv27tybd",
+          "type": "titulo",
+          "props": {
+            "text": "Quem regula o quê?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c16tjc6j",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">A gestão patrimonial de imóveis públicos é construída sobre um conjunto integrado de normas. Cada ente tem autonomia para gerir seu patrimônio, mas todas as decisões devem respeitar as normas gerais nacionais, a função socioambiental da propriedade e o interesse público. </span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">Abra cada dimensão para obter uma visão geral das competências e incidências normativas de cada ente federativo.</span></p>"
+          }
+        },
+        {
+          "id": "bl773l4q",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Patrimônio público",
+                "content": "Regras sobre os bens públicos e sua gestão",
+                "blocks": [
+                  {
+                    "id": "b_msj6imsb_33yq",
+                    "type": "columns",
+                    "props": {
+                      "count": "4",
+                      "ratio": "equal",
+                      "gap": "sm",
+                      "__pullUp": false
+                    },
+                    "children": [
+                      {
+                        "id": "b_msj6imsb_go6u",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "União",
+                              "text": "<ul><li>Leis patrimoniais sobre uso, cessão, alienação, destinação, etc.​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6imsb_jzw0",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Estados",
+                              "text": "<ul><li>Leis patrimoniais estaduais​</li><li>Regulamentos sobre uso, cessão, alienação, destinação, etc.</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6imsb_ski2",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Municípios",
+                              "text": "<ul><li>Leis patrimoniais municipais​</li><li>Regulamentos sobre uso, cessão, alienação, destinação, etc.</li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b_msj6izz1_mbja",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "icon",
+                      "icon": "map-pin-pen",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Todos os entes",
+                          "text": "<ul><li>Observância da Constituição, em especial: os Princípios da administração pública, a função social da propriedade , proteção ao meio-ambiente, a função social da cidade e ordenação do pleno desenvolvimento urbano.</li></ul>"
+                        }
+                      ],
+                      "__pullUp": true
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Registro e propriedade",
+                "content": "Regras que dão segurança jurídica aos direitos sobre imóveis",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b_msj6k7gv_851o",
+                    "type": "columns",
+                    "props": {
+                      "count": "4",
+                      "ratio": "equal",
+                      "gap": "sm",
+                      "__pullUp": false
+                    },
+                    "children": [
+                      {
+                        "id": "b_msj6k7gv_fhor",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "União",
+                              "text": "<ul><li><span style=\"color: inherit;\">Direito civil e direitos reais​</span></li><li><span style=\"color: inherit;\">Registros públicos (Lei nº 6.015/73)​</span></li><li><span style=\"color: inherit;\">Normas gerais sobre propriedade, posse e negócios jurídicos​</span></li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6k7gv_8aax",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Estados",
+                              "text": "<ul><li>Serviços de registro (delegação)​</li><li>Normas suplementares​</li><li>Regularização fundiária no âmbito estadual​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6k7gv_zcyu",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Municípios",
+                              "text": "<ul><li>Interação com cartórios de registro de imóveis​</li><li>Regularização fundiária urbana​</li><li>Cadastros territoriais municipais​</li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b_msj6jjvg_ahu5",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "icon",
+                      "icon": "map-pin-pen",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Todos os entes",
+                          "text": "<ul><li>Observância das leis nacionais de registro (Lei 6.015/1973, Código Civil).​</li><li>Garantia de que os atos registrais sejam praticados em cartórios habilitados. ​</li><li>Assegurar publicidade, autenticidade e segurança jurídica dos direitos registrados​.</li></ul>"
+                        }
+                      ],
+                      "__pullUp": true
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Urbanismo e uso do solo",
+                "content": "Regras que orientam o uso e a ocupação do território urbano",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b_msj6mogu_3ess",
+                    "type": "columns",
+                    "props": {
+                      "count": "4",
+                      "ratio": "equal",
+                      "gap": "sm",
+                      "__pullUp": false
+                    },
+                    "children": [
+                      {
+                        "id": "b_msj6mogu_eh3t",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "União",
+                              "text": "<ul><li>Normas gerais de direito urbanístico (Estatuto da Cidade – Lei nº 10.257/2001)​</li><li>Diretrizes nacionais de política urbana​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6mogu_0zmq",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Estados",
+                              "text": "<ul><li>Normas estaduais de ordenamento territorial​</li><li>Normas suplementares​</li><li>Regiões metropolitanas e aglomerações urbanas​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6mogu_5cqg",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Municípios",
+                              "text": "<ul><li>Plano Diretor (instrumento básico)​</li><li>Zoneamento e uso do solo​</li><li>Parcelamento, edificação e posturas municipais​</li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b_msj6lza5_uzq9",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "icon",
+                      "icon": "map-pin-pen",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Todos os entes",
+                          "text": "<ul><li>Função social da propriedade e da cidade​</li><li>Observância do Plano Diretor​</li><li>Interesse público urbano​</li></ul>"
+                        }
+                      ],
+                      "__pullUp": true
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Meio ambiente",
+                "content": "Regras de proteção ambiental e uso sustentável dos recursos naturais",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "bvyvr4qs",
+                    "type": "columns",
+                    "props": {
+                      "count": "4",
+                      "ratio": "equal",
+                      "gap": "sm",
+                      "__pullUp": false
+                    },
+                    "children": [
+                      {
+                        "id": "b_msj6fr1w_yg7f",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "União",
+                              "text": "<ul><li>Normas gerais de proteção ambiental (Lei nº 6.938/81)​</li><li>Código Florestal (Lei nº 12.651/2012)​</li><li>Unidades de conservação (Lei nº 9.985/00)​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6fvuj_tqfu",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Estados",
+                              "text": "<ul><li>Licenciamento ambiental (órgãos estaduais)​</li><li>Áreas protegidas estaduais​</li><li>Normas ambientais suplementares​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6fxqd_v3vz",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Municípios",
+                              "text": "<ul><li>Licenciamento ambiental local (impacto local)​</li><li>Áreas protegidas municipais​</li><li>Controle ambiental urbano​</li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b_msj6nz59_y436",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "icon",
+                      "icon": "map-pin-pen",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Todos os entes",
+                          "text": "<ul><li>Observância à legislação federal e estadual​</li><li>Proteção do meio ambiente e desenvolvimento sustentável​</li><li>Prevenção e reparação de danos ambientais​</li></ul>"
+                        }
+                      ],
+                      "__pullUp": true
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Questão fundiária",
+                "content": "Regras específicas para imóveis rurais, terras públicas&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">e política fundiária</span>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b_msj6o6jj_v4si",
+                    "type": "columns",
+                    "props": {
+                      "count": "4",
+                      "ratio": "equal",
+                      "gap": "sm",
+                      "__pullUp": false
+                    },
+                    "children": [
+                      {
+                        "id": "b_msj6o6jj_8bzu",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "União",
+                              "text": "<ul><li>Direito agrário​</li><li>Política agrária e reforma agrária​</li><li>Regularização fundiária (Lei nº 13.465/2017)​</li><li>Cadastro rural e georreferenciamento​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6o6jj_um65",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Estados",
+                              "text": "<ul><li>Regularização fundiária rural​</li><li>Gestão de terras devolutas estaduais​</li><li>Programas fundiários estaduais​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6o6jj_mikz",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Municípios",
+                              "text": "<ul><li>Regularização fundiária urbana e rural de interesse local​</li><li>Gestão de terras municipais​</li><li>Cadastros territoriais​</li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b_msj6geo3_cd5u",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "icon",
+                      "icon": "map-pin-pen",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Todos os entes",
+                          "text": "<ul><li>Regularização fundiária rural e urbana​</li></ul>"
+                        }
+                      ],
+                      "__pullUp": true
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Licitações e Contratos",
+                "content": "Regras para contratações, concessões, permissões, obras e alienações",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b_msj6phfm_dtd8",
+                    "type": "columns",
+                    "props": {
+                      "count": "4",
+                      "ratio": "equal",
+                      "gap": "sm",
+                      "__pullUp": false
+                    },
+                    "children": [
+                      {
+                        "id": "b_msj6phfm_twn9",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "União",
+                              "text": "<ul><li>Lei nº 14.133/2021 (normas gerais)​</li><li>Regras sobre concessões e permissões​</li><li>Alienação de bens públicos​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6phfm_3c9x",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Estados",
+                              "text": "<ul><li>Aplicação da Lei nº 14.133/2021​</li><li>Regulamentos próprios​</li><li>Procedimentos internos​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6phfm_cf5o",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Municípios",
+                              "text": "<ul><li>Aplicação da Lei nº 14.133/2021​</li><li>Regulamentos próprios​</li><li>Procedimentos internos​</li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b_msj6pmaw_ac4o",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "icon",
+                      "icon": "map-pin-pen",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Todos os entes",
+                          "text": "<ul><li>Princípios: legalidade, isonomia, impessoalidade, publicidade, eficiência e desenvolvimento nacional sustentável​</li></ul>"
+                        }
+                      ],
+                      "__pullUp": true
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Contabilidade",
+                "content": "Regras de mensuração, registro, controle e prestação de contas",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b_msj6qglg_f13e",
+                    "type": "columns",
+                    "props": {
+                      "count": "4",
+                      "ratio": "equal",
+                      "gap": "sm",
+                      "__pullUp": false
+                    },
+                    "children": [
+                      {
+                        "id": "b_msj6qglg_q8ea",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "União",
+                              "text": "<ul><li>Normas brasileiras de contabilidade aplicadas ao setor público (NBC TSP)​</li><li>Sistemas nacionais (Siafi, Siconfi)​</li><li>Reconhecimento e depreciação de bens​</li><li>Impacto no Balanço Geral da União​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6qglg_g9l1",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Estados",
+                              "text": "<ul><li>Contabilidade aplicada ao setor público​<br>Sistemas estaduais​<br>Procedimentos de controle interno​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6qglg_27hw",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Municípios",
+                              "text": "<ul><li>Contabilidade aplicada ao setor público​</li><li>Sistemas municipais​</li><li>Procedimentos internos​</li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b_msj6qk63_jg6p",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "icon",
+                      "icon": "map-pin-pen",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Todos os entes",
+                          "text": "<ul><li>Responsabilidade na gestão fiscal​</li><li>Transparência fiscal​</li><li>Prestação de contas​</li></ul>"
+                        }
+                      ],
+                      "__pullUp": true
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Controle e transparência",
+                "content": "Regras de controle, auditoria, fiscalização e transparência",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b_msj6rdhe_trm8",
+                    "type": "columns",
+                    "props": {
+                      "count": "4",
+                      "ratio": "equal",
+                      "gap": "sm",
+                      "__pullUp": false
+                    },
+                    "children": [
+                      {
+                        "id": "b_msj6rdhe_4gp7",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "União",
+                              "text": "<ul><li>TCU (controle externo da União)​</li><li>CGU (controle interno federal)​</li><li>Portais de transparência do governo federal</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6rdhe_g8jk",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Estados",
+                              "text": "<ul><li>Tribunais de contas estaduais​</li><li>Controladorias estaduais​</li><li>Transparência​</li></ul>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msj6rdhe_2lug",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "icon",
+                          "icon": "map-pin-pen",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "Municípios",
+                              "text": "<ul><li>Tribunais de contas municipais​</li><li>Controladorias municipais​</li><li>Transparência ​</li></ul>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "b_msj6rgur_d0w1",
+                    "type": "markerlist",
+                    "props": {
+                      "variant": "icon",
+                      "icon": "map-pin-pen",
+                      "accent": "",
+                      "items": [
+                        {
+                          "title": "Todos os entes",
+                          "text": "<ul><li>Controle interno e externo​</li><li>Transparência ativa e passiva​</li><li>Integridade e governança pública​</li></ul>"
+                        }
+                      ],
+                      "__pullUp": true
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bflwiue3",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cj0uy7j8",
+          "type": "titulo",
+          "props": {
+            "text": "Camada 1: Alicerces Constitucionais e Federativos ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "ck92do5s",
+          "type": "prose",
+          "props": {
+            "html": "<p>Toda a arquitetura normativa da gestão patrimonial tem origem na Constituição Federal. É nela que estão definidos os princípios, competências e diretrizes que sustentam a atuação do Estado sobre os imóveis públicos. </p><p>Mais do que disciplinar bens específicos, <mark>a Constituição organiza o ambiente institucional em que a gestão patrimonial ocorre</mark>. Ela define quais bens pertencem à União, aos estados, ao Distrito Federal e aos municípios, estabelece os princípios da administração pública, trata da função social da propriedade e da proteção ambiental, e distribui competências entre os entes federativos. </p>"
+          }
+        },
+        {
+          "id": "b99gvmr1",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>Essa repartição de competências é um dos elementos centrais da gestão patrimonial brasileira. Embora cada ente federativo tenha autonomia para administrar seus próprios imóveis, nem todas as matérias podem ser disciplinadas localmente. Questões relacionadas à propriedade, aos registros públicos, à desapropriação, ao direito agrário e às normas gerais de licitações e contratos, por exemplo, dependem de legislação federal ou de normas nacionais. </p>"
+          }
+        },
+        {
+          "id": "btk9g12u",
+          "type": "prose",
+          "props": {
+            "html": "<p>Ao mesmo tempo, estados e municípios possuem competência para editar normas específicas sobre seus patrimônios, organizar estruturas de gestão, criar sistemas próprios e disciplinar procedimentos relacionados aos seus imóveis. </p><p><mark data-hl=\"petrol\">Essa primeira camada é responsável por definir a estrutura fundamental da gestão patrimonial no Brasil</mark>, especialmente as regras relacionadas à titularidade dos bens públicos, à repartição de competências entre os entes federativos e aos princípios que orientam a atuação da Administração Pública na gestão do patrimônio imobiliário. Corresponde diretrizes e comandos que delimitam quem pode administrar, legislar e atuar sobre determinado patrimônio, servindo de referência para a aplicação das demais normas relacionadas aos imóveis públicos. </p>"
+          }
+        },
+        {
+          "id": "bo18w2q0",
+          "type": "kicker",
+          "props": {
+            "icon": "scale",
+            "children": "Principais marcos normativos"
+          }
+        },
+        {
+          "id": "bc63vk69",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Constituição Federal de 1988",
+                "content": "<ul><li>Art. 20 – Bens da União </li><li><span style=\"color: inherit;\">Art. 23 – Competências comuns </span></li><li><span style=\"color: inherit;\">Art. 24 – Competências concorrentes </span></li><li><span style=\"color: inherit;\">Art. 30 – Competências municipais </span></li><li><span style=\"color: inherit;\">Art. 37 – Princípios da Administração Pública </span></li><li><span style=\"color: inherit;\">Art. 5º, XXIII – Função social da propriedade </span></li><li><span style=\"color: inherit;\">Art. 182 e 183 – Política Urbana </span></li><li><span style=\"color: inherit;\">Art. 186 – Função social da propriedade rural </span></li><li><span style=\"color: inherit;\">Art. 225 – Meio ambiente </span></li></ul>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+                "linkLabel": "Confira o marco completo",
+                "linkButton": "primary",
+                "blocks": []
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_msiaag6w_jnxr",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_msiaag6w_wm7g",
+          "type": "titulo",
+          "props": {
+            "text": "Camada 2: Núcleo da gestão patrimonial imobiliária pública ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_msiaag6w_a2wy",
+          "type": "prose",
+          "props": {
+            "html": "<p>A segunda camada reúne as normas que disciplinam diretamente a administração dos bens imóveis públicos. É o núcleo executivo da gestão patrimonial e concentra os instrumentos utilizados pelos órgãos responsáveis para adquirir, cadastrar, avaliar, utilizar, proteger e destinar seus imóveis, ou seja, para executar a gestão desse patrimônio. </p><p>Tradicionalmente, essa dimensão é associada às atividades patrimoniais clássicas, como<mark data-hl=\"petrol\"> aquisição, incorporação, cadastro, avaliação, destinação, alienação, fiscalização e manutenção</mark>. São essas normas que permitem ao Estado identificar seus imóveis, reconhecer direitos, formalizar instrumentos de utilização, controlar ocupações e promover a adequada gestão do patrimônio imobiliário. </p>"
+          }
+        },
+        {
+          "id": "b_msiaag6w_a2l3",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "alert-circle",
+            "title": "",
+            "heading": "",
+            "children": "<p>A gestão patrimonial não se limita às normas patrimoniais propriamente ditas. Grande parte das atividades relacionadas aos imóveis depende também de regras de contratação pública. A aquisição de imóveis, a locação de espaços, a concessão de uso e diversos outros instrumentos patrimoniais estão sujeitos às normas gerais estabelecidas pela <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm\">Lei nº 14.133/2021</a>. </p>"
+          }
+        },
+        {
+          "id": "b_msiaag6w_6tm8",
+          "type": "prose",
+          "props": {
+            "html": "<p>Outro componente fundamental dessa camada é a <b>contabilidade patrimonial</b>. Os imóveis públicos representam parcela significativa do patrimônio dos entes federativos e precisam ser corretamente reconhecidos, avaliados, reavaliados e evidenciados nas demonstrações contábeis. Nesse contexto, instrumentos como o <mark data-hl=\"green\">Manual de Contabilidade Aplicada ao Setor Público (MCASP)</mark> e as <mark data-hl=\"green\">Normas Brasileiras de Contabilidade Aplicadas ao Setor Público (NBC TSP)</mark> desempenham papel essencial para assegurar transparência, comparabilidade e qualidade das informações patrimoniais. </p><p>Por reunir normas relacionadas à gestão, à contratação e à contabilização dos imóveis públicos, esta camada representa o núcleo mais visível da administração patrimonial e aquele com o qual os gestores normalmente possuem contato mais direto. </p><p>Embora existam marcos normativos nacionais relevantes, especialmente para a gestão dos imóveis da União, cada estado, o Distrito Federal e os municípios possuem competência para disciplinar a administração de seus próprios patrimônios imobiliários. Por essa razão, a gestão patrimonial brasileira é complementada por um amplo conjunto de leis, decretos, regulamentos e normas internas que tratam de temas como aquisição, cadastro, destinação, alienação, avaliação, fiscalização e arrecadação patrimonial. Essas normas refletem as particularidades institucionais e territoriais de cada ente federativo, mas devem observar os princípios constitucionais e as normas gerais aplicáveis em âmbito nacional. </p>"
+          }
+        },
+        {
+          "id": "b_msiaag6w_wnto",
+          "type": "kicker",
+          "props": {
+            "icon": "scale",
+            "children": "Principais marcos normativos"
+          }
+        },
+        {
+          "id": "b_msiaag6w_vol9",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Decreto-Lei nº 9.760/1946 ",
+                "content": "<p>Principal marco histórico da administração dos bens imóveis da União. Disciplina a identificação, demarcação, utilização, ocupação e diversos regimes patrimoniais aplicáveis aos imóveis federais. </p><p></p><p><i style=\"\"><span data-font=\"serif\"><span data-color=\"terra\">Embora aplicável à União, constitui uma das principais referências históricas e conceituais da gestão patrimonial imobiliária brasileira. </span></span></i></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/decreto-lei/del9760.htm",
+                "linkLabel": "Confira o Decreto completo",
+                "linkButton": "secondary",
+                "blocks": []
+              },
+              {
+                "title": "Lei nº 9.636/1998 ",
+                "content": "<p>Principal marco contemporâneo da gestão dos imóveis da União. Regulamenta aquisição, incorporação, cadastro, avaliação, destinação, utilização, alienação e regularização fundiária de imóveis federais. </p><p><i><span data-font=\"serif\"><span data-color=\"terra\">Apresenta diversos instrumentos e conceitos que influenciam práticas adotadas por outros entes federativos. </span></span></i></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/leis/l9636.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Leis patrimoniais estaduais, distritais e municipais ",
+                "content": "<p>Cada ente federativo possui competência para disciplinar a gestão de seus próprios bens imóveis. Essas normas tratam de temas como aquisição, incorporação, cadastro, avaliação, utilização, cessão, concessão de uso, alienação, regularização patrimonial, arrecadação de receitas patrimoniais, fiscalização e proteção dos imóveis públicos. </p><p><i><span data-font=\"serif\"><span data-color=\"terra\">Constituem a principal base normativa da gestão patrimonial cotidiana dos estados, do Distrito Federal e dos municípios, complementando as normas gerais e os princípios estabelecidos pela Constituição e pela legislação nacional. </span></span></i></p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Lei nº 14.133/2021 ",
+                "content": "<p>Estabelece normas gerais de licitações e contratos aplicáveis à aquisição, alienação, concessão de uso, locação, contratação de obras e serviços e demais negócios jurídicos relacionados aos imóveis públicos. </p><p><i></i></p><span data-font=\"serif\"><p><i></i></p><span data-color=\"terra\"><p><i>Dispositivos de destaque: </i></p><p><ul><li><i>Art. 74, V – Aquisição e locação de imóveis;  </i></li><li><i>Arts. 76 e 77 – Alienação de bens públicos.  </i></li></ul></p></span></span>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Manual de Contabilidade Aplicada ao Setor Público (MCASP)",
+                "content": "<p>Principal referência nacional para contabilização dos ativos imobiliários públicos, aplicável à União, estados, Distrito Federal e municípios. </p><p><i></i></p><span data-font=\"serif\"><p><i></i></p><span data-color=\"terra\"><p><i>Conteúdo de destaque: </i></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\"><i>reconhecimento patrimonial;  </i></span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\"><i>mensuração e reavaliação;  </i></span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\"><i>evidenciação contábil dos imóveis públicos.</i></span></li></ul></p></span></span>",
+                "linkHref": "https://www.gov.br/tesouronacional/pt-br/contabilidade-e-custos/manuais",
+                "linkLabel": "Confira o Manual completo",
+                "linkButton": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bytjczpv",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cepp8lva",
+          "type": "titulo",
+          "props": {
+            "text": "Camada 3: Segurança jurídica, registro e propriedade ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c9dm848x",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão patrimonial depende não apenas da existência física dos imóveis, mas também da segurança jurídica associada aos direitos que incidem sobre eles. É essa a função da terceira camada normativa. </p><p>Ela reúne as normas relacionadas à propriedade, à posse, aos direitos reais, aos registros públicos e aos mecanismos de publicidade e proteção jurídica dos imóveis. Seu objetivo é garantir que os imóveis sejam corretamente identificados, delimitados e vinculados aos seus titulares, proporcionando estabilidade e segurança às relações jurídicas. </p>"
+          }
+        },
+        {
+          "id": "b6irbkim",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "success",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>O registro imobiliário ocupa papel central nessa camada. É por meio dele que parte dos direitos sobre os imóveis são formalizados, publicizados e protegidos perante terceiros. Matrículas, averbações, registros de aquisição, alienação e constituição de direitos reais são exemplos de instrumentos fundamentais para a segurança jurídica do patrimônio público. </p>"
+          }
+        },
+        {
+          "id": "bzkl4f0x",
+          "type": "prose",
+          "props": {
+            "html": "<p>Nos últimos anos, essa dimensão passou por importantes transformações em razão da modernização dos sistemas cadastrais e registrais. Ferramentas como o <b>Sistema de Gestão Fundiária (SIGEF)</b>, o <b>Cadastro Ambiental Rural (CAR)</b>, o <b>Cadastro Imobiliário Brasileiro (CIB)</b> e os serviços eletrônicos dos registros de imóveis vêm ampliando as possibilidades de integração entre informações cadastrais, registrais e geoespaciais. </p><p><mark data-hl=\"terra\">Para a gestão patrimonial, essa integração é estratégica</mark>. Não basta saber que um imóvel pertence ao Estado; é necessário que essa condição esteja juridicamente demonstrada, registrada e apoiada em informações consistentes. A ausência de regularidade dominial ou registral pode comprometer ou limitar destinações, dificultar regularizações fundiárias, gerar conflitos e limitar a implementação de políticas públicas. </p>"
+          }
+        },
+        {
+          "id": "brir676f",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "children": "Por essa razão, patrimônio, cadastro, registro e segurança jurídica constituem dimensões inseparáveis da gestão patrimonial contemporânea. ",
+            "cite": ""
+          }
+        },
+        {
+          "id": "b1lgq4eo",
+          "type": "kicker",
+          "props": {
+            "icon": "scale",
+            "children": "Principais marcos normativos"
+          }
+        },
+        {
+          "id": "bia6xcnx",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Código Civil (Lei nº 10.406/2002) ",
+                "content": "<p>Disciplina propriedade, posse, direitos reais, usucapião, superfície, servidões e demais institutos fundamentais para a gestão patrimonial. </p><p></p><span data-color=\"terra\"><i><p></p><span data-font=\"serif\"><p>Dispositivos de destaque: </p><p><ul><li>Arts. 1.196 a 1.224 – Posse  </li><li>Arts. 1.225 a 1.510-E – Direitos reais  </li></ul></p></span><p></p></i></span><p></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Lei nº 6.015/1973 (Lei de Registros Públicos) ",
+                "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Estrutura o sistema registral brasileiro e disciplina matrículas, registros e averbações imobiliárias. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p><span data-font=\"serif\"><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p><span data-color=\"terra\"><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i>Dispositivos de destaque: </i></span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\"><i>Arts. 167 a 288 – Registro de imóveis  </i></span></li></ul></p></span><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p></span><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Lei nº 10.267/2001 ",
+                "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Institui o georreferenciamento obrigatório dos imóveis rurais e promove a integração entre cadastro e registro. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p><span data-font=\"serif\"><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p><span data-color=\"terra\"><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i>Dispositivos de destaque: </i></span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\"><i>Alterações na Lei de Registros Públicos  </i></span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\"><i>Certificação de imóveis rurais  </i></span></li></ul></p></span><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p></span><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10267.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Decreto nº 11.208/2022 (Cadastro Imobiliário Brasileiro – CIB) ",
+                "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Institui o Cadastro Imobiliário Brasileiro e o Código de Identificação do Imóvel (CIB), promovendo integração cadastral entre diferentes bases territoriais. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p><span data-color=\"terra\"><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p><span data-font=\"serif\"><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i>Destaques: </i></span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\"><i>Integração de cadastros públicos e privados  </i></span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\"><i>Criação do BICE (Banco de Identificação Cadastral de Imóveis)  </i></span></li></ul></p></span><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p></span><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/decreto/d11208.htm",
+                "linkLabel": "Confira o Decreto completo",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Lei nº 14.382/2022 ",
+                "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Marco da modernização do sistema registral brasileiro e da implantação do Sistema Eletrônico dos Registros Públicos (SERP).  </span></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14382.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b19mupfl",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c1l9qvwd",
+          "type": "titulo",
+          "props": {
+            "text": "Camada 4: Território, ambiente e função socioambiental ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c0h9lq7l",
+          "type": "prose",
+          "props": {
+            "html": "<p>A quarta e última camada conecta os bens imóveis públicos ao território e às políticas públicas que orientam sua utilização. Diferentemente das normas patrimoniais, que tratam da administração dos bens, <mark>essa camada estabelece as condições, restrições e diretrizes para seu uso</mark>. </p><p>Todo imóvel público está inserido em um contexto territorial específico. Por essa razão, sua utilização deve observar normas relacionadas ao <b>planejamento urbano</b>, à <b>proteção ambiental</b>, ao <b>ordenamento territorial</b>, à <b>gestão costeira</b> e à <b>política fundiária</b>. Essas normas não definem quem é o proprietário do imóvel, mas influenciam diretamente o que pode ou não pode ser feito com ele.</p>"
+          }
+        },
+        {
+          "id": "b8i5uy6i",
+          "type": "contentslider",
+          "props": {
+            "hint": "Confira as dimensões desta camada",
+            "accent": "var(--green-700)",
+            "showTabNumbers": false,
+            "slides": [
+              {
+                "showImage": false,
+                "slot": "b8i5uy6i__slides_1_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "ruler-dimension-line",
+                "label": "",
+                "tabLabel": "Ordenamento urbano",
+                "title": "Ordenamento urbano",
+                "subtitle": "",
+                "description": "No ambiente urbano, destaca-se o <b>Plano Diretor</b>, principal instrumento da política urbana municipal. É nele que são definidas as diretrizes de desenvolvimento territorial, os parâmetros de uso e ocupação do solo, as áreas de interesse social, as zonas de proteção ambiental e as estratégias de expansão urbana. Mesmo imóveis pertencentes à União ou aos estados devem observar essas diretrizes quando inseridos no território municipal. <br>",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "c_delkxie__imageSlot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "sprout",
+                "label": "",
+                "tabLabel": "Proteção ambiental",
+                "title": "Proteção ambiental",
+                "subtitle": "",
+                "description": "A dimensão ambiental também exerce forte influência sobre a gestão patrimonial. Áreas de preservação permanente, unidades de conservação, vegetação protegida, recursos hídricos e demais restrições ambientais condicionam a utilização dos imóveis públicos e contribuem para a concretização de sua função socioambiental.<br>",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "c_a0stzlr__imageSlot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "waves-horizontal",
+                "label": "",
+                "tabLabel": "Gestão costeira",
+                "title": "Gestão costeira",
+                "subtitle": "",
+                "description": "Essa camada também abrange políticas territoriais específicas voltadas a determinados espaços de interesse estratégico, como a zona costeira brasileira. O Plano Nacional de Gerenciamento Costeiro e seus instrumentos complementares buscam compatibilizar desenvolvimento econômico, proteção ambiental, ocupação territorial e uso sustentável dos recursos naturais, influenciando diretamente a gestão dos imóveis públicos localizados no litoral e nas áreas costeiras.",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "c_eucy685__imageSlot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "tractor",
+                "label": "",
+                "tabLabel": "Política fundiária",
+                "title": "Política fundiária",
+                "subtitle": "",
+                "description": "A dimensão fundiária é especialmente relevante para imóveis rurais, terras públicas e processos de regularização fundiária. Questões relacionadas à reforma agrária, ao cadastro rural, ao georreferenciamento, à certificação de imóveis e à regularização territorial demonstram que a gestão patrimonial vai muito além da administração de edificações e terrenos urbanos.",
+                "linkHref": "",
+                "linkLabel": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_msj232w2_3x9g",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Ao conectar patrimônio, território, meio ambiente, desenvolvimento urbano, gestão costeira e política fundiária, essa camada evidencia que os imóveis públicos são instrumentos estratégicos para a implementação de políticas públicas, a promoção do desenvolvimento sustentável e o cumprimento da função socioambiental da propriedade pública.</span></p>"
+          }
+        },
+        {
+          "id": "bh1tyova",
+          "type": "kicker",
+          "props": {
+            "icon": "scale",
+            "children": "Principais marcos normativos"
+          }
+        },
+        {
+          "id": "brjsuyss",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Lei nº 10.257/2001 (Estatuto da Cidade) ",
+                "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Principal marco da política urbana brasileira. Regulamenta os arts. 182 e 183 da Constituição e estabelece instrumentos para o cumprimento da função social da propriedade. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\"></span></p><span data-color=\"terra\"><p><span style=\"text-wrap-mode: initial; color: inherit;\"><i></i></span></p><span data-font=\"serif\"><i><p><span style=\"text-wrap-mode: initial; color: inherit;\">Dispositivos de destaque: </span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">Art. 2º – Diretrizes gerais da política urbana  </span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">Arts. 39 a 42-B – Plano Diretor  </span></li></ul></p></i></span><p><span style=\"text-wrap-mode: initial; color: inherit;\"></span></p></span><p><span style=\"text-wrap-mode: initial; color: inherit;\"></span></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/leis/leis_2001/l10257.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Plano Diretor Municipal<br>",
+                "content": "<p><span style=\"color: inherit;\">Principal instrumento de ordenamento territorial local. Define uso do solo, expansão urbana, áreas de interesse social e proteção ambiental. </span></p><p><ul><li><span style=\"color: inherit;\"><span data-color=\"terra\"><span data-font=\"serif\"><i>Consulte o Plano Diretor do município correspondente. </i></span></span></span></li></ul></p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Lei nº 12.651/2012 (Código Florestal) ",
+                "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Estabelece regras para proteção da vegetação nativa e condiciona a utilização de imóveis públicos e privados. </span></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12651.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Lei nº 9.985/2000 (SNUC) ",
+                "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Institui o Sistema Nacional de Unidades de Conservação e disciplina áreas protegidas que afetam diretamente a gestão patrimonial. </span></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/leis/l9985.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Lei nº 13.465/2017 ",
+                "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Principal marco contemporâneo da regularização fundiária urbana e rural. </span></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13465.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              },
+              {
+                "title": "Lei nº 7.661/1988 (Plano Nacional de Gerenciamento Costeiro) ",
+                "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Estabelece diretrizes para gestão integrada da zona costeira e influencia diretamente a utilização dos imóveis públicos localizados no litoral. </span></p>",
+                "linkHref": "https://www.planalto.gov.br/ccivil_03/leis/l7661.htm",
+                "linkLabel": "Confira a Lei completa",
+                "linkButton": "secondary"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "by4hlqs8",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c5cftkyc",
+          "type": "titulo",
+          "props": {
+            "text": "Como as camadas se conectam",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "ctelxium",
+          "type": "prose",
+          "props": {
+            "html": "<p>Embora apresentadas separadamente para fins didáticos, <b><span data-color=\"ochre-light\">as quatro camadas normativas não funcionam de forma isolada</span></b>. Pelo contrário, elas se complementam e se influenciam mutuamente. </p><p>Uma mesma ação patrimonial pode exigir a observância simultânea de normas constitucionais, patrimoniais, registrais, urbanísticas, ambientais e fundiárias. A destinação de uma área pública para habitação de interesse social, por exemplo, pode envolver competências constitucionais, instrumentos patrimoniais, regularização registral, observância do Plano Diretor, atendimento à legislação ambiental e aplicação de normas de contratação pública. </p><p>Essa interação permanente demonstra que a gestão patrimonial não pode ser compreendida apenas a partir da legislação patrimonial propriamente dita. Ela depende de uma visão integrada do sistema normativo e da capacidade de compreender como diferentes normas se articulam em torno dos imóveis públicos. </p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "behgl72t",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c6164bud",
+          "type": "titulo",
+          "props": {
+            "text": "Fluxo de análise normativa para Gestão de Imóveis Públicos",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cktqpkwi",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão de imóveis públicos exige análise integrada de normas de diferentes naturezas.</p><p>Responda às perguntas abaixo, clique em cada cartão, identifique as normas aplicáveis e escolha o instrumento adequado para garantir legalidade, eficiência e atendimento ao interesse público.</p>"
+          }
+        },
+        {
+          "id": "bsqaran4",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bs5j5ndd",
+              "type": "flashcard",
+              "props": {
+                "term": "1. De quem é o imóvel?",
+                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">De quem é o imóvel?</span><p><ul><li>União, estado, Distrito Federal ou município?</li><li>Verificar a legislação patrimonial específica do ente.</li></ul><p></p></p>",
+                "icon": "shield-user",
+                "description": "Qual ente federativo é o proprietário ou gestor responsável?",
+                "color": "var(--slate-600)"
+              }
+            },
+            {
+              "id": "b_msj4kt8r_fdth",
+              "type": "flashcard",
+              "props": {
+                "term": "2. Onde está localizado?",
+                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Onde está localizado?</span><p></p><ul><li>Endereço, coordenadas ou descrição territorial.</li><li>Identificar o município, região administrativa e eventuais sobreposições territoriais.</li></ul><p></p><p></p>",
+                "icon": "map-pinned",
+                "description": "Qual é a localização do imóvel?",
+                "color": "var(--green-600)"
+              }
+            },
+            {
+              "id": "b_msj4tw8d_pf8o",
+              "type": "flashcard",
+              "props": {
+                "term": "3. Qual sua natureza?",
+                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Qual sua natureza?</span><p></p><ul><li>Define o conjunto de normas aplicáveis: urbanisticas, ambientais, fundiárias, culturais, de patrimônio histórico, etc.</li></ul><p></p><p></p>",
+                "icon": "trees",
+                "description": "O imóvel é urbano, rural, costeiro, ambiental, histórico, especial, edificado ou não edificado?",
+                "color": "var(--terra-600)"
+              }
+            },
+            {
+              "id": "b_msj4wv8v_2khz",
+              "type": "flashcard",
+              "props": {
+                "term": "4. O que se pretende fazer com o imóvel?",
+                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">O que se pretende fazer com o imóvel?</span><p></p><ul><li>Uso direto, cessão, concessão, alienação, permuta, locação, regularização, obra, proteção, desmembramento, etc.</li><li>A finalidade influencia o regime jurídico e os requisitos legais.</li></ul><p></p><p></p>",
+                "icon": "pencil-sparkles",
+                "description": "Qual é a finalidade ou destinação pretendida?",
+                "color": "var(--ochre-700)"
+              }
+            },
+            {
+              "id": "b_msj521ey_f4rv",
+              "type": "flashcard",
+              "props": {
+                "term": "5. Qual norma patrimonial do ente se aplica?",
+                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Qual norma patrimonial do ente se aplica?</span><p></p><ul><li>Verificar lei orgânica, lei patrimonial, decretos e regulamentos do ente.</li><li>Confirmar exigências específicas: autorização legislativa, avaliação, desafetação, licitação, publicidade, etc.</li></ul><p></p><p></p>",
+                "icon": "pen-tool",
+                "description": "Existe lei ou regulamento próprio sobre a gestão dos imóveis desse ente?",
+                "color": "var(--ink-500)"
+              }
+            },
+            {
+              "id": "b_msj54fzx_nl76",
+              "type": "flashcard",
+              "props": {
+                "term": "6. Quais normas nacionais incidem sobre o caso?",
+                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Quais normas nacionais incidem?</span><p></p><ul><li>Direito civil e direitos reais, registros públicos desapropriação, licitações e contratos, normas urbanísticas, ambientais, agrárias, entre outras.</li><li>Devem ser observadas por todos os entes.</li></ul><p></p><p></p>",
+                "icon": "landmark",
+                "description": "Existem normas federais que limitam ou condicionam a atuação do ente?",
+                "color": "var(--green-600)"
+              }
+            },
+            {
+              "id": "b_msj5bm36_2r4l",
+              "type": "flashcard",
+              "props": {
+                "term": "7. Há restrições urbanísticas ou ambientais?",
+                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Há restrições urbanísticas ou ambientais?</span><p></p><ul><li>Verificar Plano Diretor, zoneamento, áreas de interesse social, áreas de proteção APP, unidade de conservação, patrimônio cultural, etc.</li><li>Podem limitar o uso, a ocupação ou a destinação.</li></ul><p></p><p></p>",
+                "icon": "building-2",
+                "description": "O Plano Diretor, leis de uso do solo ou normas ambientais impõem restrições ao imóvel?",
+                "color": "var(--terra-700)"
+              }
+            },
+            {
+              "id": "b_msj57cmc_8gtf",
+              "type": "flashcard",
+              "props": {
+                "term": "8. Qual instrumento jurídico pode ser utilizado?",
+                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Qual instrumento jurídico?</span><p></p><ul><li>Licitação, concessão de uso, permissão, cessão, autorização, doação, venda contrato, termo de cooperação, desafetação, regularização, etc</li><li>Respeitar requisitos legais e procedimentais.</li></ul><p></p><p></p>",
+                "icon": "building-2",
+                "description": "Qual é o instrumento adequado para viabilizar a destinação ou o uso pretendido?",
+                "color": "var(--petrol-800)"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "batn5cvl",
+      "type": "pagefooter",
+      "props": {
+        "code": "Arquitetura normativa da gestão de bens imóveis públicos no Brasil [M131]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Claudson Moreira"
+          },
+          {
+            "role": "Revisão",
+            "name": "Ana Túlia de Macedo, Karina Bonilaure&nbsp;"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}

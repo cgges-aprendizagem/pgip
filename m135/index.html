@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M135 - Administração e governança de terras no Brasil</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"b96n1sst__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-b96n1sst__slot.png"},"bpma480l__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bpma480l__slot.png"},"b9o5nfie__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b9o5nfie__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M135 - Administração e governança de terras no Brasil","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cezss6qb","text":"Por que esse tema é importante?","hidden":false},{"id":"cxd0n5zd","text":"Como o Estado organiza as informações sobre o território","hidden":false},{"id":"cip1mjtf","text":"Como a administração de terras se estruturou no Brasil","hidden":false},{"id":"czzes9vi","text":"Governança de terras: ampliando a perspectiva sobre a gestão da terra","hidden":false},{"id":"c6y4vt9p","text":"Boa governança de terras: princípios para uma gestão mais efetiva","hidden":false},{"id":"c3sqd7nz","text":"Governança de terras: desafios e perspectivas","hidden":false}]}},"blocks":[{"id":"bebv0yqx","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"b9o5nfie","type":"hero","props":{"kicker":"Governança e regulação da propriedade pública no Brasil","kickerIcon":"compass","title":"Administração e governança de terras no Brasil","byline":"conceitos, evolução e principais componentes","slot":"b9o5nfie__slot"}},{"id":"bv0zkyao","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cezss6qb","type":"titulo","props":{"text":"Por que esse tema é importante?","level":"h2"}},{"id":"cryoasr1","type":"prose","props":{"html":"\u003cp>Toda política pública que depende do território começa da mesma forma: é preciso saber qual é a terra, onde ela está, quem possui direitos sobre ela, como é utilizada e quais restrições incidem sobre seu uso. Sem essas informações, o Estado encontra dificuldades para implantar infraestrutura, proteger áreas ambientais, promover a regularização fundiária, administrar imóveis públicos ou formular políticas de desenvolvimento.\u003c/p>\u003cp>Por trás dessas informações existe um conjunto de instituições, normas, cadastros, registros e processos que permitem conhecer e administrar o território. É justamente esse conjunto que constitui o campo da administração e da governança de terras.\u003c/p>\u003cp>No Brasil, esse tema tem sido tratado predominantemente no contexto da gestão fundiária rural. Não por acaso, a recente\u003cb> \u003cmark data-hl=\"terra\">Política Nacional de Governança da Terra\u003c/mark>\u003c/b>, instituída pelo\u003ca href=\"https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/decreto/d13043.htm\"> Decreto nº 13.043, de 30 de junho de 2026\u003c/a>, concentra-se na integração das políticas de governança da terra no meio rural, fortalecendo a articulação institucional, a interoperabilidade entre cadastros, a transparência das informações e a regularização fundiária. \u003c/p>\u003cp>Embora esse seja o contexto em que os conceitos foram mais amplamente desenvolvidos, seus fundamentos também contribuem para compreender a gestão do patrimônio imobiliário público. Afinal, tanto a administração fundiária quanto a gestão patrimonial dependem de informações territoriais confiáveis, da atuação coordenada de diferentes instituições e de mecanismos que proporcionem segurança jurídica, eficiência e transparência às decisões relacionadas aos imóveis.\u003c/p>\u003cp>Ao longo deste material, serão apresentados os conceitos de administração e governança de terras, sua evolução, seus principais componentes e os princípios que orientam uma boa governança. Esses conhecimentos constituem uma base importante para compreender como as informações territoriais apoiam a gestão dos imóveis públicos e a implementação de políticas públicas.\u003c/p>"}},{"id":"b7vd8h52","type":"callout","props":{"variant":"ear","tone":"info","icon":"lightbulb","title":"IMPORTANTE","heading":"","children":"\u003cp>Este material é uma adaptação didática do item\u003cb> 1.2 – Administração e governança de terras\u003c/b>, da dissertação \u003ci>Governança de terras no Alto Rio Pardo, semiárido mineiro: uma análise do Programa de Cadastro de Terras e Regularização Fundiária\u003c/i>, de \u003cb>Danilo Daniel Prado Araújo\u003c/b>. Todo o conteúdo apresentado foi elaborado exclusivamente a partir desse documento-base, com adequações de linguagem, organização e enfoque didático para fins educacionais.\u003c/p>"}}]},{"id":"bi0ruoe1","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"cxd0n5zd","type":"titulo","props":{"text":"Como o Estado organiza as informações sobre o território","level":"h2"}},{"id":"cpxodobj","type":"prose","props":{"html":"\u003cp>A gestão da terra depende, antes de tudo, de informações confiáveis. Antes de destinar um imóvel público, implantar uma política pública, reconhecer direitos ou resolver um conflito fundiário, é necessário responder a questões como: \u003cmark data-hl=\"petrol\">onde está localizada a área, quem exerce direitos sobre ela, quais são seus limites, como ela é utilizada e quais restrições incidem sobre seu uso.\u003c/mark>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">&nbsp; Produzir, organizar e manter essas informações é a finalidade da administração de terras.\u003c/span>\u003c/p>"}},{"id":"bbd7d733","type":"pullquote","props":{"variant":"block","children":"A administração de terras corresponde ao conjunto de processos responsáveis por registrar, atualizar e disponibilizar informações sobre a posse, a propriedade, o valor e o uso da terra. Essas informações subsidiam tanto a garantia de direitos quanto o planejamento territorial e a implementação de políticas públicas.","cite":"ARAÚJO, 2022"}},{"id":"b_msj7amyd_fyp7","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Inicialmente, a administração de terras estava associada principalmente às atividades cadastrais e registrais. Com o tempo, seu escopo foi ampliado para incorporar outras funções relacionadas à gestão do território, reconhecendo que a terra constitui um recurso estratégico para o desenvolvimento econômico, social e ambiental.\u003c/span>\u003c/p>"}},{"id":"bpma480l","type":"figure","props":{"slot":"bpma480l__slot","src":"","fit":"contain","size":"full","title":"O paradigma de gestão da terra","caption":"\u003cbr>","credit":"Adaptado de Enemark \u003ci>et al\u003c/i>, 2005."}},{"id":"bjt7s749","type":"prose","props":{"html":"\u003cp>Nessa perspectiva, a administração de terras compreende \u003cb>quatro grandes funções\u003c/b>:\u003c/p>"}},{"id":"bs3t185g","type":"feature","props":{"columns":2,"card":true,"accent":"","layout":"side","items":[{"icon":"file-text","title":"Domínio da terra","text":"Envolvendo a identificação e o registro dos direitos, restrições e responsabilidades incidentes sobre os imóveis."},{"icon":"circle-dollar-sign","title":"Valor da terra","text":"Abrangendo atividades relacionadas à avaliação e à tributação imobiliária."},{"icon":"map-pinned","title":"Uso da terra","text":"Reunindo informações que apoiam o planejamento territorial e o ordenamento do espaço. "},{"icon":"building-2","title":"Desenvolvimento da terra","text":"Voltado às ações de transformação e melhoria do território, como parcelamento, infraestrutura e projetos de desenvolvimento. "}]}},{"id":"bnp9rzg0","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bhhbw4bp","type":"prose","props":{"html":"\u003cp>Essas funções são operacionalizadas por meio dos Sistemas de Administração de Terras (Land Administration Systems – LAS), que integram diferentes instituições, cadastros, registros e bases de dados destinados à produção e à gestão das informações territoriais.\u003c/p>\u003cp>Entre esses componentes, o cadastro territorial ocupa posição central. Além de identificar e representar os imóveis, ele fornece informações essenciais para diversas políticas públicas e estabelece uma importante conexão entre a realidade física do território e os registros administrativos e jurídicos.\u003c/p>\u003cp>Assim, a administração de terras vai além da simples organização de informações imobiliárias. Ela constitui a infraestrutura informacional que permite ao Estado conhecer o território, reconhecer direitos, planejar intervenções e apoiar a implementação de políticas públicas em diferentes áreas.\u003c/p>"}},{"id":"b96n1sst","type":"figure","props":{"slot":"b96n1sst__slot","src":"","fit":"contain","size":"full","title":"Hierarquia de questões fundiárias","caption":"\u003cbr>","credit":"Adaptado de Williamson \u003ci>et al,\u003c/i>&nbsp;2010."}}]},{"id":"bc1979b7","type":"panel","props":{"variant":"box","kicker":"Em síntese","kickerIcon":"notepad-text","title":"","color":"","bg":"var(--ochre-50)","body":"\u003cp>A administração de terras reúne os processos, instituições e sistemas responsáveis por produzir e organizar informações sobre a terra. Essas informações constituem a base para o reconhecimento de direitos, o planejamento territorial e a formulação e execução de políticas públicas.\u003c/p>"},"children":[]}]},{"id":"b4mytgm3","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cip1mjtf","type":"titulo","props":{"text":"Como a administração de terras se estruturou no Brasil","level":"h2"}},{"id":"ce7ezk45","type":"prose","props":{"html":"\u003cp>Os sistemas de administração de terras são resultado de processos históricos. As instituições, os cadastros, os registros e as normas que organizam a gestão territorial não surgem de uma única vez, mas são construídos ao longo do tempo em resposta às necessidades e aos desafios de cada período.\u003c/p>\u003cp>No Brasil, como já pontuado em outros materiais, essa trajetória foi marcada por sucessivas mudanças na forma de ocupação, apropriação e controle da terra. Entre os principais marcos desse processo estão o regime de sesmarias, predominante no período colonial; a ocupação baseada na posse; a Lei de Terras de 1850, que estabeleceu a compra como forma ordinária de acesso às terras públicas; a criação dos registros públicos; o Estatuto da Terra; o Sistema Nacional de Cadastro Rural (SNCR) e, mais recentemente, a Lei nº 10.267/2001, que fortaleceu a integração entre cadastro e registro por meio do georreferenciamento dos imóveis rurais. \u003c/p>"}},{"id":"byneh2de","type":"timeline","props":{"eras":[{"label":"","period":"","color":"var(--petrol-600)","milestones":[{"date":"Período Colonial          ","title":"Regime de Sesmarias","content":""},{"date":"Século XIX","title":"Lei de Terras","content":"Compra como forma de acesso às terras públicas","linkHref":"","linkLabel":"","linkButton":""},{"date":"1850","title":"Criação dos Registros Públicos","content":"","linkHref":"","linkLabel":"","linkButton":""},{"date":"1864","title":"Criação dos Registros Públicos","content":"","linkHref":"","linkLabel":"","linkButton":""},{"date":"1964","title":"Estatuto da Terra","content":"","linkHref":"","linkLabel":"","linkButton":""},{"date":"1972","title":"Sistema Nacional de Cadastro Rural (SNCR)","content":"","linkHref":"","linkLabel":"","linkButton":""},{"date":"2001","title":"Lei nº 10.267","content":"Integra cadastro e registro por meio do georreferenciamento","linkHref":"","linkLabel":"","linkButton":""}]}]}},{"id":"b_msf5guvu_rapw","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Cada uma dessas mudanças contribuiu para aperfeiçoar os instrumentos de gestão territorial. Ao mesmo tempo, a incorporação gradual de novas instituições e sistemas fez com que a administração de terras passasse a ser exercida por diferentes órgãos, cada qual responsável por determinadas competências e bases de informação.\u003c/span>\u003c/p>\u003cp>Como resultado, consolidou-se um modelo caracterizado pela existência de múltiplos cadastros, registros e instituições, nem sempre plenamente integrados entre si. Essa fragmentação dificulta o compartilhamento de informações e a coordenação das políticas públicas relacionadas à terra, constituindo um dos principais desafios da administração fundiária brasileira. \u003c/p>\u003cp>Entre os avanços recentes, destaca-se a Lei nº 10.267/2001, considerada um importante marco na modernização da administração de terras ao promover o georreferenciamento dos imóveis rurais e fortalecer a integração entre cadastro e registro. Essas iniciativas ampliaram a confiabilidade das informações territoriais e criaram melhores condições para o aperfeiçoamento da gestão fundiária. \u003c/p>\u003cp>Compreender essa evolução histórica permite entender por que a administração de terras no Brasil ainda enfrenta desafios relacionados à integração institucional e à organização das informações territoriais. Também evidencia que o aperfeiçoamento da gestão da terra depende não apenas da criação de novos instrumentos, mas da capacidade de articular instituições, sistemas de informação e políticas públicas de forma coordenada.\u003c/p>"}},{"id":"bt486grj","type":"callout","props":{"variant":"header","tone":"info","icon":"lightbulb","title":"Você sabia?","heading":"Da evolução histórica aos desafios atuais","children":"\u003cp>Muitos desafios contemporâneos da administração de terras não decorrem da ausência de instrumentos legais ou técnicos, mas da forma como eles foram sendo incorporados ao longo do tempo. A coexistência de diferentes instituições, cadastros e competências ajuda a explicar por que a integração das informações territoriais continua sendo uma prioridade para o aperfeiçoamento da gestão pública. \u003c/p>"}}]},{"id":"bdavmwh9","type":"section","props":{"width":"content","surface":"terra-dark","pad":"lg"},"children":[{"id":"czzes9vi","type":"titulo","props":{"text":"Governança de terras: ampliando a perspectiva sobre a gestão da terra","level":"h2"}},{"id":"c2jgx3o0","type":"prose","props":{"html":"\u003cp>A administração de terras fornece a estrutura necessária para organizar informações sobre o território, registrar direitos, apoiar o planejamento e dar suporte à implementação de políticas públicas. Entretanto, compreender como essas informações são produzidas e administradas é apenas parte da questão. Também é necessário entender \u003cb>como as decisões relacionadas à terra são tomadas, quem participa desse processo e quais mecanismos orientam a atuação das instituições envolvidas.\u003c/b>\u003c/p>\u003cp>É nesse contexto que se insere o conceito de \u003cb>governança de terras\u003c/b>.\u003c/p>\u003cp>Enquanto a administração de terras concentra-se nas funções administrativas e nos sistemas responsáveis pela gestão das informações territoriais, a governança de terras amplia essa perspectiva ao considerar o conjunto de regras, instituições, processos e relações que orientam a formulação, a implementação e o acompanhamento das decisões relacionadas ao acesso, ao uso, ao controle e à gestão da terra.\u003c/p>\u003cp>Essa abordagem reconhece que a gestão da terra não depende exclusivamente da atuação dos órgãos públicos. Ela envolve a interação entre diferentes instituições governamentais, setor privado, organizações da sociedade civil, comunidades e cidadãos, cujas decisões e interesses influenciam a forma como o território é administrado.\u003c/p>\u003cp>Por essa razão, a governança de terras ultrapassa a dimensão técnica da administração fundiária. Além da existência de cadastros, registros e sistemas de informação, torna-se relevante compreender como as instituições se articulam, como as responsabilidades são distribuídas, quais mecanismos asseguram transparência e participação e de que forma são solucionados os conflitos relacionados à terra.\u003c/p>\u003cp>A qualidade dessa governança exerce influência direta sobre diversos aspectos da gestão territorial. Sistemas de governança mais estruturados tendem a fortalecer a segurança dos direitos, aumentar a confiança nas instituições, reduzir conflitos, melhorar a implementação das políticas públicas e favorecer o desenvolvimento econômico, social e ambiental.\u003c/p>\u003cp>Entre as diferentes concepções apresentadas na literatura, adota-se a compreensão de que a governança de terras corresponde à administração fundiária exercida pelo conjunto da sociedade. Nessa perspectiva, a atuação do Estado continua sendo essencial, mas deixa de ser exclusiva, passando a integrar um sistema mais amplo de coordenação, participação e tomada de decisões envolvendo os diversos atores relacionados ao território.\u003c/p>"}}]},{"id":"b91xayb9","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c6y4vt9p","type":"titulo","props":{"text":"Boa governança de terras: princípios para uma gestão mais efetiva","level":"h2"}},{"id":"cmaxsscn","type":"prose","props":{"html":"\u003cp>A governança de terras não depende apenas da existência de instituições, normas e sistemas de informação. Sua qualidade também está relacionada à forma como essas estruturas funcionam e aos princípios que orientam a gestão do território.\u003c/p>\u003cp>Nesse contexto, diferentes organismos internacionais desenvolveram referenciais para orientar o aperfeiçoamento da governança de terras. Embora utilizem classificações distintas, esses referenciais convergem para alguns princípios fundamentais.\u003c/p>"}},{"id":"b8oydmxf","type":"kicker","props":{"icon":"compass","children":"Entre eles, destacam-se: "}},{"id":"blbt28z8","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bpxugnkj","type":"markerlist","props":{"variant":"icon","icon":"check","accent":"var(--terra-600)","items":[{"title":"Efetividade","text":"Para que as instituições sejam capazes de alcançar os objetivos das políticas fundiárias"},{"title":"Eficiência","text":"Promovendo o melhor uso dos recursos disponíveis"},{"title":"Transparência","text":"Permitindo que decisões e informações sejam acessíveis à sociedade"},{"title":"Responsabilização","text":"Assegurando que gestores e instituições respondam por suas decisões"}]}},{"id":"b_msf6kycz_hmux","type":"markerlist","props":{"variant":"icon","icon":"check","accent":"var(--terra-600)","items":[{"title":"Participação","text":"Favorecendo o envolvimento dos diferentes atores relacionados ao território"},{"title":"Segurança dos direitos","text":"Reduzindo conflitos e fortalecendo a confiança nas instituições"},{"title":"Equidade","text":"Considerando os diferentes grupos sociais no acesso e na gestão da terra"},{"title":"Coordenação institucional","text":"Favorecendo a atuação integrada entre órgãos e entidades"}]}}]},{"id":"bc7e6p1x","type":"prose","props":{"html":"\u003cp>Esses princípios não constituem objetivos isolados. Eles se complementam e contribuem para que os sistemas de administração e governança de terras apoiem políticas públicas mais consistentes, reduzam conflitos e ampliem a capacidade do Estado de gerir o território.\u003c/p>\u003cp>Ao reunir esses elementos, a governança de terras deixa de representar apenas um modelo de organização institucional e passa a constituir um referencial para avaliar como as instituições responsáveis pela gestão territorial exercem suas funções e interagem entre si.\u003c/p>"}},{"id":"bawdoe2f","type":"kicker","props":{"icon":"compass","children":"Características da boa governança e da débil governança"}},{"id":"bs5jq2in","type":"compareab","props":{"a":{"label":"A boa governança é:","icon":"building","title":"","content":"\u003cp>\u003cul>\u003cli>Eficiente, eficaz e competente\u003c/li>\u003cli>Responde às necessidades dos cidadãos\u003c/li>\u003cli>Legítima\u003c/li>\u003cli>Transparente (aberta)\u003c/li>\u003cli>Coerente, previsível e imparcial\u003c/li>\u003cli>Responsável\u003c/li>\u003cli>Justa\u003c/li>\u003cli>Sustentável\u003c/li>\u003cli>Responde às necessidades locais\u003c/li>\u003cli>Participativa\u003c/li>\u003cli>Fornece segurança e estabilidade\u003c/li>\u003cli>Dedicada à integridade\u003c/li>\u003c/ul>\u003c/p>"},"b":{"label":"A débil governança é:","icon":"scale","title":"","content":"\u003cp>\u003cul>\u003cli>Ineficiente, ineficaz e incompetente\u003c/li>\u003cli>Não responde às necessidades dos cidadãos\u003c/li>\u003cli>Ilegítima\u003c/li>\u003cli>Opaca (secreta)\u003c/li>\u003cli>Incoerente, imprevisível e parcial\u003c/li>\u003cli>Irresponsável\u003c/li>\u003cli>Injusta\u003c/li>\u003cli>Insustentável\u003c/li>\u003cli>Não responde às necessidades locais\u003c/li>\u003cli>Exclusiva\u003c/li>\u003cli>Não deseja ou é incapaz de fornecer segurança e estabilidade\u003c/li>\u003cli>Apoia a corrupção\u003c/li>\u003c/ul>\u003c/p>"}}},{"id":"bhpf3cxz","type":"prose","props":{"html":"\u003cp>Alcançar uma boa governança de terras não é uma tarefa fácil, mas é possível. A transição de uma governança débil para uma boa governança de terras é um processo de longo prazo e contínuo. O fortalecimento desse processo exige vontade política para superar a oposição daqueles que se beneficiam de tomadas de decisões não transparentes e da corrupção. Na prática, a melhoria da governança requer um forte comprometimento das pessoas envolvidas e o desenvolvimento da capacidade de viabilizar mudanças (FAO, 2007; PALMER et al, 2009).\"\u003c/p>"}}]},{"id":"bqp2y7mo","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"c3sqd7nz","type":"titulo","props":{"text":"Governança de terras: desafios e perspectivas","level":"h2"}},{"id":"ca4rj8p8","type":"prose","props":{"html":"\u003cp>A evolução da administração de terras para uma abordagem baseada na governança amplia a compreensão sobre os fatores que influenciam a gestão do território. Não basta dispor de cadastros atualizados, registros confiáveis ou sistemas de informação modernos. Também é necessário que as instituições atuem de forma coordenada, que as informações sejam compartilhadas e que os processos decisórios sejam conduzidos com transparência, participação e segurança jurídica.\u003c/p>\u003cp>No contexto brasileiro, esse desafio é particularmente relevante. Ao longo do tempo, diferentes instituições passaram a desempenhar atribuições relacionadas à administração da terra, desenvolvendo normas, cadastros e sistemas próprios. Embora essa especialização tenha contribuído para o aperfeiçoamento de diversas políticas públicas, também tornou mais complexa a articulação entre os órgãos responsáveis pela gestão territorial.\u003c/p>\u003cp>Nesse cenário, fortalecer a governança de terras significa buscar maior integração entre instituições, informações e processos, de modo que as decisões relacionadas ao território sejam mais consistentes, transparentes e capazes de responder aos desafios sociais, econômicos e ambientais.\u003c/p>\u003cp>Para os profissionais que atuam na gestão do patrimônio imobiliário público, compreender esses conceitos representa mais do que conhecer um campo de estudos. Significa reconhecer que cada imóvel está inserido em um sistema mais amplo de informações, instituições e relações que influenciam sua caracterização, administração e utilização. Essa compreensão contribui para uma atuação mais integrada e para decisões mais qualificadas na gestão patrimonial.\u003c/p>"}}]},{"id":"bvjuxx6h","type":"conclusion","props":{"kicker":"Para refletir","kickerIcon":"check","title":"","body":"\u003cp>Ao concluir a leitura deste material, reflita sobre sua atuação profissional.\u003c/p>\u003cp>\u003c/p>\u003cul>\u003cli>Como as informações utilizadas para caracterizar os imóveis públicos com os quais você trabalha são produzidas, organizadas e atualizadas? \u003c/li>\u003cli>Quais instituições participam das decisões relacionadas a esses imóveis? Essa atuação ocorre de forma integrada ou fragmentada? \u003c/li>\u003cli>Em sua realidade de trabalho, quais fatores dificultam a coordenação entre diferentes órgãos, cadastros e sistemas de informação? \u003c/li>\u003cli>De que maneira princípios como transparência, participação, coordenação institucional e segurança dos direitos podem contribuir para aperfeiçoar a gestão patrimonial? \u003c/li>\u003cli>Como os conceitos de administração e governança de terras podem apoiar uma caracterização patrimonial mais consistente e uma tomada de decisão mais qualificada?\u003c/li>\u003c/ul>\u003cbr>\u003cp>\u003c/p>"},"children":[{"id":"bl0k9bp6","type":"accordion","props":{"numbered":false,"items":[{"title":"Referências","content":"Este material é uma adaptação didática do item \u003cb>1.2 – Administração e governança de terras\u003c/b>, da dissertação \u003cb>Governança de terras no Alto Rio Pardo, semiárido mineiro: uma análise do Programa de Cadastro de Terras e Regularização Fundiária\u003c/b>, de \u003cb>\u003cspan data-color=\"terra\">Danilo Daniel Prado Araújo\u003c/span>\u003c/b>. Todo o conteúdo apresentado foi elaborado exclusivamente a partir desse documento-base, com adequações de linguagem, organização e enfoque didático para fins educacionais.","blocks":[{"id":"b6fk473k","type":"prose","props":{"html":"\u003cp>ARAÚJO, Danilo Daniel Prado. \u003ci>Governança de terras no Alto Rio Pardo, semiárido mineiro: uma análise do Programa de Cadastro de Terras e Regularização Fundiária\u003c/i>. 2022. Dissertação (Mestrado em Sociedade, Ambiente e Território) – Universidade Federal de Minas Gerais, Instituto de Ciências Agrárias, Montes Claros, 2022. Disponível em: \u003ca href=\"https://hdl.handle.net/1843/49941?utm_source=chatgpt.com\">https://hdl.handle.net/1843/49941\u003c/a>. Acesso em: 7 ago. 2026.\u003c/p>"}},{"id":"b_msj7otnv_n2o7","type":"prose","props":{"html":"\u003cp>ENEMARK, S; WILLIAMSON, I; WALLACE, J. Building modern land administration systems in developed economies. \u003ci>Journal of Spatial Science\u003c/i>, 50:2, 51-68. 2005. DOI: \u003ca href=\"10.1080/14498596.2005.9635049\">10.1080/14498596.2005.9635049\u003c/a>.\u003c/p>"}},{"id":"b4z2nh5g","type":"prose","props":{"html":"\u003cp>WILLIAMSON, Ian; ENEMARK, Stig; WALLACE, Jude; RAJABIFARD, Abbas. Land administration for sustainable development. In: \u003ci>FIG INTERNATIONAL CONGRESS\u003c/i>, 24., 2010, Sydney. Facing the challenges – building the capacity: proceedings. Copenhagen: International Federation of Surveyors (FIG), 2010. 16 p. Disponível em: \u003ca href=\"https://www.fig.net/resources/proceedings/fig_proceedings/fig2010/papers/ts03a/ts03a_williamson_enemark_et_al_4103.pdf\">https://www.fig.net/resources/proceedings/fig_proceedings/fig2010/papers/ts03a/ts03a_williamson_enemark_et_al_4103.pdf\u003c/a>. Acesso em: 7 ago. 2026.\u003c/p>"}}]}]}}]},{"id":"btk8twag","type":"pagefooter","props":{"code":"Administração e governança de terras no Brasil [M135]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Danilo Daniel Prado Araújo"},{"role":"Revisão","name":"Claudson Moreira Santos"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"b96n1sst__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-b96n1sst__slot.png"},"bpma480l__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bpma480l__slot.png"},"b9o5nfie__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b9o5nfie__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"building":"\u003cpath d=\"M12 10h.01\"/>\u003cpath d=\"M12 14h.01\"/>\u003cpath d=\"M12 6h.01\"/>\u003cpath d=\"M16 10h.01\"/>\u003cpath d=\"M16 14h.01\"/>\u003cpath d=\"M16 6h.01\"/>\u003cpath d=\"M8 10h.01\"/>\u003cpath d=\"M8 14h.01\"/>\u003cpath d=\"M8 6h.01\"/>\u003cpath d=\"M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3\"/>\u003crect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/>","building-2":"\u003cpath d=\"M10 12h4\"/>\u003cpath d=\"M10 8h4\"/>\u003cpath d=\"M14 21v-3a2 2 0 0 0-4 0v3\"/>\u003cpath d=\"M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2\"/>\u003cpath d=\"M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","circle-dollar-sign":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"/>\u003cpath d=\"M12 18V6\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","file-text":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M10 9H8\"/>\u003cpath d=\"M16 13H8\"/>\u003cpath d=\"M16 17H8\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map-pinned":"\u003cpath d=\"M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0\"/>\u003ccircle cx=\"12\" cy=\"8\" r=\"2\"/>\u003cpath d=\"M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712\"/>","notepad-text":"\u003cpath d=\"M8 2v4\"/>\u003cpath d=\"M12 2v4\"/>\u003cpath d=\"M16 2v4\"/>\u003crect width=\"16\" height=\"18\" x=\"4\" y=\"4\" rx=\"2\"/>\u003cpath d=\"M8 10h6\"/>\u003cpath d=\"M8 14h8\"/>\u003cpath d=\"M8 18h5\"/>","scale":"\u003cpath d=\"M12 3v18\"/>\u003cpath d=\"m19 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1\"/>\u003cpath d=\"m5 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M7 21h10\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__intro{max-width:var(--measure);margin-bottom:var(--space-5)}' +
+        '.spu-csection__title{margin:0;font-family:var(--font-display);font-size:var(--fs-h2);line-height:1.08;letter-spacing:var(--ls-heading);color:var(--text-strong)}' +
+        '.spu-csection__lead{margin-top:var(--space-3);color:var(--text-muted);font-size:var(--fs-body-lg);line-height:var(--lh-relaxed)}' +
+        '.spu-csection__lead>:last-child{margin-bottom:0}' +
+        '.spu-csection__details{border-top:1px solid var(--color-divider);padding-top:var(--space-4)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer;list-style:none}' +
+        '.spu-csection__summary::-webkit-details-marker{display:none}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__details[open]>.spu-csection__summary svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__details>.spu-csection__body{display:block!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var title = props.title;
+        var lead = props.lead;
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint && NS.isPrint();
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing || props.__builderEditing === true;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            (hasRichContent(title) || hasRichContent(lead)) && React.createElement('div', { className:'spu-csection__intro' },
+              hasRichContent(title) && React.createElement('h2', { className:'spu-csection__title' }, NS.renderRich ? NS.renderRich(title, { inline:true }) : title),
+              hasRichContent(lead) && React.createElement('div', { className:'spu-csection__lead' }, NS.renderRich ? NS.renderRich(lead) : lead)
+            ),
+            React.createElement('details', {
+              className:'spu-csection__details',
+              open: forcedOpen || open,
+              onToggle:function(event){ if(!forcedOpen) setOpen(event.currentTarget.open); }
+            },
+              React.createElement('summary', {
+                className:'spu-csection__summary',
+                onClick:function(event){ if(forcedOpen) event.preventDefault(); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body' }, props.children)
+            )
+          )
+        );
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container',
+        fields:['title','lead','triggerLabel'],
+        props:{ title:'Título da seção', lead:'<p>Apresente brevemente o conteúdo que poderá ser expandido.</p>', triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.byType[definition.type] = definition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type !== definition.type) return originalNewBlock(type, child);
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:JSON.parse(JSON.stringify(definition.props)) };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>
