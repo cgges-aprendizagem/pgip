@@ -1716,23 +1716,34 @@ const BLOCKS = [
   cat: 'Interativos',
   kind: 'list',
   propFields: [{
+    key: 'icon',
+    label: 'Ícone da frente',
+    type: 'icon'
+  }, {
     key: 'term',
-    label: 'Conceito',
+    label: 'Título da frente',
+    type: 'rich',
+    inline: true
+  }, {
+    key: 'description',
+    label: 'Descrição curta da frente',
     type: 'rich',
     inline: true
   }, {
     key: 'definition',
-    label: 'Definição',
+    label: 'Texto do verso',
     type: 'rich'
   }, {
-    key: 'icon',
-    label: 'Ícone',
-    type: 'icon'
+    key: 'color',
+    label: 'Cor do flashcard',
+    type: 'accent'
   }],
   props: {
-    term: 'Conceito',
-    definition: 'Definição do conceito.',
-    icon: 'building'
+    term: 'Título do flashcard',
+    description: 'Uma descrição curta para apresentar o conteúdo.',
+    definition: '<p>Use este espaço para desenvolver o conteúdo do verso.</p>',
+    icon: 'building',
+    color: 'var(--petrol-600)'
   }
 }, {
   type: 'accordion',
@@ -4215,7 +4226,7 @@ function ContentSlider({ slides = [], hint = 'Explore os slides', accent, showTa
         slide.caption && React.createElement('figcaption', null, __ds_scope.renderRich(slide.caption, { inline: true }))
       ), React.createElement('div', { className: 'spu-content-slider__body' },
         slide.labelIcon ? React.createElement('span', { className: 'spu-content-slider__label spu-content-slider__label--icon', 'aria-hidden': 'true' }, React.createElement(__ds_scope.Icon, { name: slide.labelIcon, size: 22 })) : slide.label && React.createElement('span', { className: 'spu-content-slider__label' }, __ds_scope.renderRich(slide.label, { inline: true })),
-        React.createElement('h3', { className: 'spu-content-slider__title' }, __ds_scope.renderRich(slide.title || 'Título do slide', { inline: true })),
+        __ds_scope.hasRichContent(slide.title) && React.createElement('h3', { className: 'spu-content-slider__title' }, __ds_scope.renderRich(slide.title, { inline: true })),
         slide.subtitle && React.createElement('p', { className: 'spu-content-slider__subtitle' }, __ds_scope.renderRich(slide.subtitle, { inline: true })),
         slide.description && React.createElement('div', { className: 'spu-content-slider__description' }, __ds_scope.renderRich(slide.description)),
         href && React.createElement('a', { className: 'spu-content-slider__link', href, target: /^https?:/i.test(href) ? '_blank' : undefined, rel: /^https?:/i.test(href) ? 'noopener' : undefined }, __ds_scope.renderRich(slide.linkLabel || 'Saiba mais', { inline: true }), React.createElement(__ds_scope.Icon, { name: 'arrow-right', size: 16 }))
@@ -4674,7 +4685,7 @@ RichText.COLORS = COLOR;
 // RichText; ReactNode é devolvido como está. `inline` para campos de uma linha.
 function renderRich(value, opts) {
   const o = opts || {};
-  if (value == null || value === '') return null;
+  if (!hasRichContent(value)) return null;
   if (typeof value === 'string') {
     return React.createElement(RichText, {
       html: value,
@@ -4685,7 +4696,13 @@ function renderRich(value, opts) {
   }
   return value;
 }
-Object.assign(__ds_scope, { RichText, RichTextLinkNotes, renderRich });
+function hasRichContent(value) {
+  if (value == null) return false;
+  if (typeof value !== 'string') return true;
+  const visible = value.replace(/<!--[\s\S]*?-->/g, '').replace(/<br\s*\/?>/gi, '').replace(/<[^>]*>/g, '').replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ').replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+  return visible.length > 0;
+}
+Object.assign(__ds_scope, { RichText, RichTextLinkNotes, renderRich, hasRichContent });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/RichText.jsx", error: String((e && e.message) || e) }); }
 
 // components/content/Callout.jsx
@@ -4919,7 +4936,7 @@ function FeatureGrid({
   }, React.createElement(__ds_scope.Icon, {
     name: it.icon || 'sparkles',
     size: 24
-  })), React.createElement('p', {
+  })), __ds_scope.hasRichContent(it.title) && React.createElement('p', {
     className: 'spu-feature__title'
   }, __ds_scope.renderRich(it.title, {
     inline: true
@@ -5270,7 +5287,8 @@ const BLOCK_LEVEL = {
   children: 1,
   body: 1,
   html: 1,
-  content: 1
+  content: 1,
+  lead: 1
 };
 
 // Rótulos PT-BR para placeholders de campos vazios no modo edit.
@@ -5289,7 +5307,9 @@ const FIELD_PLACEHOLDER = {
   term: 'Termo',
   definition: 'Definição',
   org: 'Identidade',
-  program: 'Nome do programa'
+  program: 'Nome do programa',
+  lead: 'Texto de apresentação',
+  triggerLabel: 'Clique para expandir'
 };
 function BlockView({
   block,
@@ -5340,6 +5360,7 @@ function BlockView({
 
   // —— Título simples (sem componente) ——
   if (block.type === 'titulo') {
+    if (!editing && !__ds_scope.hasRichContent(props.text)) return null;
     const tag = props.level || 'h2';
     return React.createElement(tag, {
       id: block.id,
@@ -5360,6 +5381,7 @@ function BlockView({
 
   // —— Parágrafo (RichText puro) ——
   if (block.type === 'prose') {
+    if (!editing && !__ds_scope.hasRichContent(props.html)) return null;
     return editing ? React.createElement(__ds_scope.Editable, {
       html: typeof props.html === 'string' ? props.html : '',
       style: spacingStyle,
@@ -5683,22 +5705,23 @@ Object.assign(__ds_scope, { CompareAB });
 // components/interactive/Flipcard.jsx
 try { (() => {
 __ds_scope.injectCss('spu-flip-css', `
-.spu-flip{perspective:1400px;background:none;border:0;padding:0;width:100%;font:inherit;text-align:left;cursor:pointer;display:block;isolation:isolate}
+.spu-flip{--spu-flip-color:var(--color-primary);perspective:1400px;background:none;border:0;padding:0;width:100%;font:inherit;text-align:left;cursor:pointer;display:block;isolation:isolate;border-radius:var(--radius-lg)}
+.spu-flip:focus-visible{outline:3px solid var(--color-focus-ring);outline-offset:3px}
 .spu-flip__inner{position:relative;transition:transform var(--dur-slow) var(--ease-in-out);transform-style:preserve-3d;-webkit-transform-style:preserve-3d}
 .spu-flip--flipped .spu-flip__inner{transform:rotateY(180deg)}
-.spu-flip__face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--radius-lg);padding:var(--space-6);display:flex;flex-direction:column;border:1px solid var(--color-border);box-shadow:var(--shadow-sm);overflow:hidden;transform:translateZ(1px);transition:box-shadow var(--dur) var(--ease-out)}
+.spu-flip__face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--radius-lg);padding:var(--space-6);display:flex;flex-direction:column;border:1px solid var(--color-border);border-top:4px solid var(--spu-flip-color);box-shadow:var(--shadow-sm);overflow:hidden;transform:translateZ(1px);transition:box-shadow var(--dur) var(--ease-out)}
 .spu-flip:hover .spu-flip__face{box-shadow:var(--shadow-md)}
-.spu-flip__face--front{background:var(--color-surface);opacity:1}
-.spu-flip__face--back{background:var(--color-primary);color:var(--text-on-dark);transform:rotateY(180deg) translateZ(1px);border-color:transparent;opacity:0}
+.spu-flip__face--front{background:var(--color-surface);background:color-mix(in srgb,var(--spu-flip-color) 7%,var(--color-surface));border-color:color-mix(in srgb,var(--spu-flip-color) 38%,var(--color-border));border-top-color:var(--spu-flip-color);opacity:1}
+.spu-flip__face--back{background:var(--color-primary);background:color-mix(in srgb,var(--spu-flip-color) 62%,var(--ink-900));color:var(--text-on-dark);transform:rotateY(180deg) translateZ(1px);border-color:transparent;opacity:0}
 .spu-flip--flipped .spu-flip__face--front{opacity:0}
 .spu-flip--flipped .spu-flip__face--back{opacity:1}
-.spu-flip__face--back .spu-flip__term{color:#fff}
 .spu-flip__hint{position:absolute;top:var(--space-4);right:var(--space-4);color:var(--text-faint)}
 .spu-flip__face--back .spu-flip__hint{color:var(--text-on-dark-muted)}
-.spu-flip__icon{width:46px;height:46px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;background:var(--color-primary-soft);color:var(--color-primary-strong);margin-bottom:var(--space-3)}
-.spu-flip__face--back .spu-flip__icon{background:rgba(255,255,255,.16);color:#fff}
+.spu-flip__icon{width:48px;height:48px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;background:var(--color-primary-soft);background:color-mix(in srgb,var(--spu-flip-color) 14%,var(--color-surface));color:var(--spu-flip-color);margin-bottom:var(--space-4);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--spu-flip-color) 24%,transparent)}
 .spu-flip__term{font-family:var(--font-display);font-weight:700;font-size:var(--fs-h5);margin:0 0 .25em;color:var(--text-strong)}
-.spu-flip__def{font-size:var(--fs-small);line-height:1.55}
+.spu-flip__description{font-size:var(--fs-small);line-height:1.55;color:var(--text-muted);margin-top:var(--space-1)}
+.spu-flip__def{font-size:var(--fs-small);line-height:1.62;flex:1;min-height:0;overflow:auto;padding-right:var(--space-1)}
+.spu-flip__def>:first-child{margin-top:0}.spu-flip__def>:last-child{margin-bottom:0}
 .spu-flip__cue{font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);margin-top:auto;padding-top:var(--space-3)}
 .spu-flip__face--back .spu-flip__cue{color:var(--text-on-dark-muted)}
 @media print{
@@ -5707,6 +5730,7 @@ __ds_scope.injectCss('spu-flip-css', `
   .spu-flip__face{position:static !important;transform:none !important;backface-visibility:visible !important;-webkit-backface-visibility:visible !important;box-shadow:none;opacity:1 !important}
   .spu-flip__face--front{border-radius:var(--radius-lg) var(--radius-lg) 0 0;border-bottom:0}
   .spu-flip__face--back{border-radius:0 0 var(--radius-lg) var(--radius-lg)}
+  .spu-flip__def{overflow:visible}
   .spu-flip__hint,.spu-flip__cue{display:none !important}
 }
 @media (prefers-reduced-motion: reduce){
@@ -5716,12 +5740,14 @@ __ds_scope.injectCss('spu-flip-css', `
 `);
 function Flipcard({
   term,
+  description,
   definition,
   icon,
   hint,
+  color,
   front,
   back,
-  height = 230,
+  height = 280,
   className,
   style
 }) {
@@ -5737,16 +5763,13 @@ function Flipcard({
   }, React.createElement(__ds_scope.Icon, {
     name: icon,
     size: 24
-  })), React.createElement('p', {
+  })), __ds_scope.hasRichContent(term) && React.createElement('h3', {
     className: 'spu-flip__term'
   }, __ds_scope.renderRich(term, {
     inline: true
-  })), hint && React.createElement('p', {
-    className: 'spu-flip__def',
-    style: {
-      color: 'var(--text-muted)'
-    }
-  }, __ds_scope.renderRich(hint, {
+  })), __ds_scope.hasRichContent(description || hint) && React.createElement('div', {
+    className: 'spu-flip__description'
+  }, __ds_scope.renderRich(description || hint, {
     inline: true
   })), React.createElement('span', {
     className: 'spu-flip__cue'
@@ -5757,20 +5780,29 @@ function Flipcard({
       flexDirection: 'column',
       height: '100%'
     }
-  }, React.createElement('p', {
-    className: 'spu-flip__term'
-  }, __ds_scope.renderRich(term, {
-    inline: true
-  })), React.createElement('div', {
+  }, React.createElement('div', {
     className: 'spu-flip__def'
   }, __ds_scope.renderRich(definition)), React.createElement('span', {
     className: 'spu-flip__cue'
   }, 'Clique para voltar'));
-  return React.createElement('button', {
-    type: 'button',
+  const toggle = event => {
+    if (event && event.target && event.target.closest && event.target.closest('a,[contenteditable="true"]')) return;
+    setFlipped(f => !f);
+  };
+  return React.createElement('div', {
+    role: 'button',
+    tabIndex: 0,
     className: __ds_scope.cx('spu-flip', flipped && 'spu-flip--flipped', className),
-    style,
-    onClick: () => setFlipped(f => !f),
+    style: {
+      '--spu-flip-color': color || 'var(--color-primary)',
+      ...style
+    },
+    onClick: toggle,
+    onKeyDown: event => {
+      if (event.target !== event.currentTarget || event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      toggle(event);
+    },
     'aria-pressed': flipped
   }, React.createElement('div', {
     className: 'spu-flip__inner',
