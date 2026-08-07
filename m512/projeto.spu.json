@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M512 - O patrimônio público vale mais do que seu preço?",
+    "lang": "pt-BR",
+    "builderCredit": true
+  },
+  "blocks": [
+    {
+      "id": "bhy632z3",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "bs5annj7",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bjvj2eph",
+          "type": "mediaembed",
+          "props": {
+            "type": "video",
+            "title": "O patrimônio público vale mais do que seu preço?",
+            "provider": "M512 (preview)",
+            "url": "./video/m512.mp4"
+          }
+        }
+      ]
+    }
+  ]
+}
