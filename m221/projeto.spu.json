@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "meta": {
-    "title": "M221 - Due diligence aplicada à gestão de imóveis públicos",
+    "title": "M221 - Análise preventiva de imóveis públicos",
     "lang": "pt-BR",
     "builderCredit": true,
     "toc": {
@@ -39,7 +39,7 @@
       "props": {
         "kicker": "Análise técnico-jurídica",
         "kickerIcon": "scale",
-        "title": "Análise preventiva de imóveis públicos&nbsp;",
+        "title": "Análise preventiva de imóveis públicos ",
         "byline": "busca de elementos para decisões patrimoniais seguras",
         "slot": "bvtgtbn8__slot"
       }
@@ -720,7 +720,7 @@
       "id": "b34td5p4",
       "type": "pagefooter",
       "props": {
-        "code": "Due diligence aplicada à gestão de imóveis públicos [M221]",
+        "code": "Análise preventiva de imóveis públicos [M221]",
         "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncnd",
