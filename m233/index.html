@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M233 - Registro de Imóveis e patrimonio publico</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"bprp72rv__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bprp72rv__slot.png"},"bvlw5rbz__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bvlw5rbz__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M233 - Registro de Imóveis e patrimonio publico","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cc7iikxm","text":"Introdução ao registro de imóveis","hidden":false},{"id":"cr1fjgcg","text":"Organização dos cartórios de registro de imóveis","hidden":false},{"id":"c9fyr85q","text":"Evolução do sistema: da transcrição à matrícula","hidden":false},{"id":"cdiqenwc","text":"Matrícula imobiliária","hidden":false},{"id":"c6s11q0g","text":"Prenotação e prioridade registral","hidden":false},{"id":"cod8yg5m","text":"Qualificação Registral","hidden":false},{"id":"cdqo8uci","text":"Certidões Imobiliárias","hidden":false},{"id":"cmq4tjsq","text":"Modernização: ONR, SREI E SERP","hidden":false}]}},"blocks":[{"id":"baaa525b","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"bprp72rv","type":"hero","props":{"kicker":"Reconhecimento e cadastro","kickerIcon":"compass","title":"Registro imobiliário","byline":"Aplicado à gestão de imóveis públicos ","slot":"bprp72rv__slot"}},{"id":"bphk1y4s","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cc7iikxm","type":"titulo","props":{"text":"Introdução ao registro de imóveis","level":"h2"}},{"id":"bpbfz4wh","type":"titulo","props":{"text":"O que é o Registro de Imóveis?","level":"h3"}},{"id":"cwfkgahm","type":"prose","props":{"html":"\u003cp>O Registro de Imóveis é um serviço público essencial ao ordenamento jurídico-imobiliário brasileiro, destinado a conferir publicidade, autenticidade, segurança e eficácia aos atos jurídicos que versem sobre bens imóveis. Sua função primordial é garantir segurança jurídica às relações imobiliárias, protegendo tanto os titulares dos direitos quanto terceiros de boa-fé.\u003c/p>\u003cp>No contexto da gestão pública, o Registro de Imóveis desempenha papel estratégico, pois é por meio dele que o Estado formaliza, perante a sociedade e o Poder Judiciário, os direitos reais sobre o vasto patrimônio imobiliário público.\u003c/p>"}},{"id":"btt426va","type":"titulo","props":{"text":"Base Legal","level":"h3"}},{"id":"bw37huck","type":"prose","props":{"html":"\u003cp>O sistema registral imobiliário brasileiro é regulamentado por um conjunto normativo, sendo as principais normas:\u003c/p>"}},{"id":"b3tf1dos","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"","items":[{"title":"Constituição Federal de 1988 (art. 236)","text":"Delega à iniciativa privada, sob controle do Estado, a prestação dos serviços notariais e de registro."},{"title":"Lei nº 6.015/1973 (Lei de Registros Públicos)","text":"Disciplina os registros públicos em geral, incluindo o Registro de Imóveis: matrícula, registros, averbações e certidões."},{"title":"Código Civil (Lei nº 10.406/2002)","text":"Regula os direitos reais (propriedade, usufruto, servidão, superfície etc.) e a aquisição/perda da propriedade imóvel."},{"title":"Normas das Corregedorias-Gerais de Justiça","text":"Complementam e regulamentam os procedimentos registrais em cada estado da federação."}]}},{"id":"bxcu396r","type":"titulo","props":{"text":"Princípios Registrais","level":"h3"}},{"id":"bdte1rw6","type":"prose","props":{"html":"\u003cp>Os princípios registrais constituem os pilares que orientam a atividade registral. Para a gestão de imóveis públicos, o domínio desses princípios é fundamental:\u003c/p>"}},{"id":"b7e23jmk","type":"datatable","props":{"caption":"","columns":[{"key":"c0","label":"Princípio"},{"key":"c1","label":"Conceito"},{"key":"c2","label":"Impacto na Gestão Pública"}],"rows":[{"c0":"Publicidade","c1":"Os atos registrais são acessíveis a qualquer pessoa, independentemente de interesse direto.","c2":"Garante transparência sobre o patrimônio público, permitindo o controle social."},{"c0":"Continuidade","c1":"A cadeia dominial deve ser ininterrupta: o transmitente precisa constar na matrícula como titular.","c2":"Essencial para regularizar imóveis com histórico fragmentado ou carentes de incorporação ao patrimônio público."},{"c0":"Especialidade","c1":"O imóvel e seus titulares devem ser perfeitamente identificados e delimitados.","c2":"Evita sobreposições de áreas e conflitos fundiários entre entes públicos e particulares."},{"c0":"Legalidade","c1":"O registrador examina a conformidade legal do título antes de proceder ao registro.","c2":"Filtra atos administrativos com vícios formais ou materiais, protegendo o patrimônio público."},{"c0":"Prioridade","c1":"O primeiro título protocolado tem preferência sobre os posteriores para o mesmo imóvel.","c2":"Define a ordem de precedência em disputas sobre área pública."},{"c0":"Presunção de Veracidade (Fé Pública)","c1":"Os registros produzem presunção relativa (juris tantum) de veracidade.","c2":"O título registrado em nome do ente público cria presunção de domínio oponível a terceiros."},{"c0":"Concentração na Matrícula","c1":"Todos os atos jurídicos relevantes sobre o imóvel devem ser levados a registro ou averbação.","c2":"Impede a dispersão de informações sobre ônus, restrições e alterações nos imóveis públicos."},{"c0":"Instância / Rogação","c1":"O registrador só atua mediante provocação das partes ou por ordem judicial.","c2":"O gestor público deve formalizar o requerimento de registro dos atos administrativos praticados."}],"dense":false,"highlightFirst":true,"striped":false,"tone":"default","className":""}},{"id":"b2t1x5b3","type":"callout","props":{"variant":"header","tone":"warning","icon":"notebook-pen","title":"NOTA","heading":"","children":"\u003cp>O princípio da Concentração foi reforçado pela Lei nº 13.097/2015, que estabeleceu que as informações constantes da matrícula são oponíveis a terceiros, incentivando a atualização constante dos registros.\u003c/p>"}}]},{"id":"b95c5y3h","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cr1fjgcg","type":"titulo","props":{"text":"Organização dos cartórios de registro de imóveis","level":"h2"}},{"id":"b0n0781s","type":"titulo","props":{"text":"Natureza Jurídica","level":"h3"}},{"id":"c9vs8o2r","type":"prose","props":{"html":"\u003cp>Os Cartórios de Registro de Imóveis são serviços públicos exercidos em caráter privado por delegação do Poder Público, nos termos do artigo 236 da Constituição Federal. Trata-se de atividade sui generis: embora exercida por particulares (Oficiais de Registro aprovados em concurso público), possui natureza pública, pois os atos registrais gozam de fé pública e seus efeitos são oponíveis erga omnes.\u003c/p>\u003cp>Os Oficiais de Registro de Imóveis são titulares vitalícios das serventias (até a aposentadoria compulsória), respondendo pessoal e objetivamente pelos danos causados em razão do serviço, conforme o art. 22 da Lei nº 8.935/1994.\u003c/p>"}},{"id":"bd03cqpz","type":"titulo","props":{"text":"Fiscalização e Controle","level":"h3"}},{"id":"bb0l1706","type":"prose","props":{"html":"\u003cp>Embora exercidos por particulares, os cartórios estão sujeitos à fiscalização permanente do Poder Judiciário em diferentes instâncias:\u003c/p>"}},{"id":"bu60x83l","type":"feature","props":{"columns":2,"card":true,"accent":"","layout":"top","items":[{"icon":"scale","title":"CNJ — Conselho Nacional de Justiça","text":"Estabelece diretrizes nacionais, promove uniformização dos procedimentos, supervisiona a modernização e pode avocar processos disciplinares."},{"icon":"file-search-corner","title":"Corregedorias-Gerais de Justiça dos Estados","text":"Realizam fiscalização direta das serventias, expedem provimentos estaduais e julgam reclamações administrativas."},{"icon":"book-open-text","title":"Corregedoria Nacional de Justiça","text":"Edita o Código Nacional de Normas (CNNormas), consolidando orientações para todos os cartórios do país."},{"icon":"gavel","title":"Poder Judiciário Estadual","text":"Juízes corregedores permanentes fiscalizam as serventias locais e decidem dúvidas registrais."}]}},{"id":"b7x11knc","type":"titulo","props":{"text":"Princípio da Territorialidade e Circunscrição Imobiliária","level":"h3"}},{"id":"b4k3h921","type":"prose","props":{"html":"\u003cp>Cada Cartório de Registro de Imóveis possui competência exclusiva sobre uma determinada área geográfica denominada circunscrição imobiliária. A territorialidade é um requisito de validade do ato registral: \u003cmark data-hl=\"petrol\">um imóvel somente pode ser registrado no cartório da circunscrição onde está localizado\u003c/mark>. O registro praticado por cartório incompetente é nulo.\u003c/p>\u003cp>Para imóveis que abrangem mais de uma circunscrição, a Lei nº 6.015/1973 (art. 169, § 1º) determina que o registro seja feito em todos os cartórios com competência sobre as áreas abrangidas, devendo os registros se referir uns aos outros.\u003c/p>"}},{"id":"bixsvkff","type":"callout","props":{"variant":"header","tone":"warning","icon":"alert-circle","title":"ATENÇÃO","heading":"","children":"\u003cp>Na gestão de imóveis públicos de grande extensão é comum que a área abranja diferentes circunscrições e até estados distintos. Nesses casos, a regularização registral exige ação coordenada junto a múltiplos cartórios.\u003c/p>"}},{"id":"bhewpge1","type":"panel","props":{"variant":"box","kicker":"funções","kickerIcon":"map-pin","title":"Estrutura Interna do Cartório","color":"","bg":"var(--cloud-100)","body":"A estrutura básica de um Cartório de Registro de Imóveis é composta pelos seguintes setores e agentes:"},"children":[{"id":"bgh61wry","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bfv8zu6k","type":"markerlist","props":{"variant":"icon","icon":"user","accent":"","items":[{"title":"Oficial Registrador","text":"Titular da serventia; responsável final pelos atos registrais; assina e subscreve os registros e averbações; pratica os atos de maior complexidade."},{"title":"Oficial Substituto","text":"Substitui o Oficial Registrador em suas ausências e impedimentos, com os mesmos poderes e responsabilidades."},{"title":"Escreventes Autorizados","text":"Praticam atos registrais por delegação do Oficial; responsáveis por análise, qualificação e lavratura de atos."},{"title":"Setor de Protocolo","text":"Recebe os títulos, realiza a prenotação (lançamento no Livro Protocolo), garantindo a prioridade registral."}]}},{"id":"b_msi42m0k_w2j1","type":"markerlist","props":{"variant":"icon","icon":"user","accent":"","items":[{"title":"Setor de Qualificação Registral","text":"Analisa a legalidade, regularidade e atendimento às exigências legais dos documentos apresentados."},{"title":"Setor de Certidões","text":"Emite certidões de matrícula, ônus reais, inteiro teor e propriedade a quem as solicitar."},{"title":"Setor de Arquivo","text":"Guarda e preserva os livros, títulos e documentos que fundamentaram os atos registrais."}]}}]}]},{"id":"b6oa9yqy","type":"titulo","props":{"text":"Organização Nacional do Sistema Registral","level":"h3"}},{"id":"begd00lf","type":"prose","props":{"html":"\u003cp>O sistema registral imobiliário brasileiro é hierarquizado e integrado da seguinte forma:\u003c/p>"}},{"id":"bvlw5rbz","type":"figure","props":{"slot":"bvlw5rbz__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]},{"id":"bj9xao71","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c9fyr85q","type":"titulo","props":{"text":"Evolução do sistema: da transcrição à matrícula","level":"h2"}},{"id":"bsh1o8vm","type":"accordion","props":{"numbered":false,"items":[{"title":"O Sistema de Transcrição (anterior à Lei nº 6.015/1973)","content":"\u003cp>Antes da vigência da Lei nº 6.015/1973, o registro imobiliário brasileiro operava pelo sistema de transcrição. Nesse modelo, o foco recaía sobre o ato jurídico (a transação em si) e não sobre o imóvel como entidade individualizada.\u003c/p>","blocks":[{"id":"bnbu08m7","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"","items":[{"title":"Organização","text":"Livros temáticos sem numeração individualizada por imóvel."},{"title":"Histórico dominial","text":"Disperso em múltiplos livros e registros; pesquisa complexa e demorada."},{"title":"Segurança jurídica","text":"Reduzida: dificuldade de identificar com precisão a cadeia de titularidade."},{"title":"Identificação do imóvel","text":"Feita por descrição textual, sem número único; risco de sobreposições."},{"title":"Pesquisa","text":"Exigia rastrear transações uma a uma em livros diferentes."}]}}]},{"title":"O Sistema de Matrícula (Lei nº 6.015/1973)","content":"A matrícula tornou-se a unidade básica do sistema registral imobiliário brasileiro. Cada imóvel passou a ter número próprio, permanente e exclusivo, com toda a sua história concentrada em um único cadastro jurídico. Essa mudança representou avanço significativo em termos de segurança jurídica, rastreabilidade e modernização do sistema.","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b5mrkiit","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"","items":[{"title":"Identificação do imóvel","text":"Número único e permanente para cada imóvel."},{"title":"Histórico dominial","text":"Concentrado em um único documento (a matrícula): todas as transmissões, ônus e alterações."},{"title":"Segurança jurídica","text":"Elevada: facilidade para verificar titularidade, ônus e restrições."},{"title":"Pesquisa","text":"Simplificada: basta consultar a matrícula para conhecer toda a situação jurídica do imóvel."},{"title":"Princípio aplicado","text":"Concentração: todas as informações juridicamente relevantes devem constar da matrícula."}]}}]},{"title":"Transcrição de Origem e Reconstrução da Cadeia Dominial","content":"Muitos imóveis, especialmente os de maior antiguidade integrantes do patrimônio público, possuem origem em transcrições anteriores à vigência da Lei nº 6.015/1973. Nesses casos, a análise das transcrições antigas é indispensável para a reconstrução da cadeia dominial — especialmente quando se investiga se determinada área efetivamente pertencia ao patrimônio público ou se foi indevidamente titulada a particulares.","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"bju1vx0n","type":"panel","props":{"variant":"box","kicker":"Exemplo","kickerIcon":"map-pin","title":"","color":"","bg":"","body":"\u003cp>\u003cb>Matrícula nº 15.432 aberta a partir da Transcrição nº 7.890 do Livro 3-H.&nbsp;\u003c/b>\u003c/p>\u003cp>Para reconstruir a origem do imóvel, é necessário pesquisar a transcrição originária e, se for o caso, as transcrições anteriores que a antecederam, reconstituindo assim toda a cadeia dominial.\u003c/p>","__pullDown":false},"children":[]},{"id":"b08ks38p","type":"callout","props":{"variant":"header","tone":"info","icon":"bookmark-check","title":"NOTA","heading":"","children":"\u003cp>Na regularização de terras e identificação de ocupações irregulares em terrenos públicos, a pesquisa das transcrições de origem é etapa obrigatória, pois muitos registros fraudulentos foram realizados no período pré-matrícula, aproveitando-se da menor rigorosidade do sistema de transcrição.\u003c/p>"}}]}]}}]},{"id":"baxe7m8r","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"cdiqenwc","type":"titulo","props":{"text":"Matrícula imobiliária","level":"h2"}},{"id":"cx0kdnxo","type":"prose","props":{"html":"\u003cp>A matrícula é o cadastro jurídico individualizado do imóvel, composto pelo número único que o identifica perante o cartório e por todos os atos registrais e averbações que recaíram sobre ele ao longo do tempo. Ela cumpre três funções essenciais:\u003cb> identificar o imóvel \u003c/b>(especialidade objetiva), \u003cb>identificar o titular\u003c/b> (especialidade subjetiva) e \u003cb>concentrar o histórico jurídico do bem\u003c/b>.\u003c/p>"}},{"id":"bxec65wb","type":"panel","props":{"variant":"box","kicker":"","kickerIcon":"map-pin","title":"Abertura da Matrícula","color":"","bg":"var(--sand-50)","body":"\u003cp>A abertura da matrícula ocorre:\u003c/p>"},"children":[{"id":"bogyvh4i","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"btpcuvff","type":"markerlist","props":{"variant":"icon","icon":"check","accent":"var(--petrol-900)","items":[{"title":"","text":"No primeiro registro do imóvel, quando este ainda não possui matrícula (art. 228 da Lei nº 6.015/1973)."},{"title":"","text":"Por força de unificação de imóveis contíguos pertencentes ao mesmo titular."},{"title":"","text":"Por desmembramento, quando parte de imóvel matriculado é destacada para formar nova unidade."}]}},{"id":"b_msi083s7_wb6c","type":"markerlist","props":{"variant":"icon","icon":"check","accent":"var(--petrol-900)","items":[{"title":"","text":"Por determinação judicial, em ação de usucapião ou adjudicação compulsória."},{"title":"","text":"Por incorporação de área ao patrimônio público (caso dos imóveis da União, estados e municípios)."}]}}]},{"id":"b3j5yzoe","type":"callout","props":{"variant":"header","tone":"warning","icon":"alert-triangle","title":"ATENÇÃO","heading":"","children":"\u003cp>Imóveis públicos muitas vezes carecem de matrícula individualizada, estando registrados apenas nos antigos livros de transcrição ou simplesmente não registrados. A ausência de matrícula não afasta o domínio público, mas dificulta a gestão, a fiscalização e a defesa judicial do patrimônio.\u003c/p>"}}]},{"id":"b2amr5fp","type":"titulo","props":{"text":"Estrutura da Matrícula","level":"h3"}},{"id":"bt1cbidd","type":"accordion","props":{"numbered":false,"items":[{"title":"Cabeçalho","content":"\u003cp>O cabeçalho da matrícula reúne as informações de identificação do imóvel na sua abertura:\u003c/p>\u003cp>\u003cul>\u003cli>Número da matrícula\u003c/li>\u003cli>Localização (endereço, município, estado)\u003c/li>\u003cli>Área total (em metros quadrados ou hectares)\u003c/li>\u003cli>Confrontações (limites com os imóveis vizinhos)\u003c/li>\u003cli>Proprietário inicial (com qualificação completa)\u003c/li>\u003cli>Origem: transcrição ou matrícula da qual se originou\u003c/li>\u003c/ul>\u003c/p>"},{"title":"Registro (R)","content":"O registro é utilizado quando ocorre um fato jurídico capaz de criar, modificar ou transferir um direito real sobre o imóvel. O registro afeta a titularidade ou os direitos reais que recaem sobre o bem.","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b5q7xkh6","type":"datatable","props":{"caption":"","columns":[{"key":"c0","label":"Exemplos de atos Sujeitos ao Registro (R)"},{"key":"c1","label":"Observação / Relevância para Imóveis Públicos"}],"rows":[{"c0":"Compra e venda","c1":"Transmissão onerosa da propriedade."},{"c0":"Doação","c1":"Transmissão gratuita; comum na incorporação de áreas ao patrimônio municipal."},{"c0":"Permuta","c1":"Troca de imóveis; usada em regularização fundiária e desapropriações por acordo."},{"c0":"Usufruto","c1":"Direito real de uso e fruição sobre bem alheio."},{"c0":"Servidão","c1":"Direito real sobre imóvel alheio em benefício de outro imóvel (ex.: passagem de serviço público)."},{"c0":"Direito de Superfície","c1":"Concessão do direito de construir ou plantar em imóvel público."},{"c0":"CDRU — Concessão de Direito Real de Uso","c1":"Instrumento de regularização fundiária e concessão de uso de imóveis públicos a particulares."},{"c0":"CUEM — Concessão de Uso Especial para Fins de Moradia","c1":"Direito subjetivo do ocupante de imóvel público para fins de moradia (art. 183, § 1º, CF)."},{"c0":"Aforamento (Enfiteuse)","c1":"Bens da União sujeitos ao regime enfitêutico."},{"c0":"Desapropriação","c1":"Transferência compulsória da propriedade ao poder público mediante indenização."},{"c0":"Incorporação ao patrimônio público","c1":"Formalização do domínio público sobre bem que até então não estava registrado em nome do ente."}],"dense":false,"highlightFirst":true,"striped":false,"tone":"default","className":""}},{"id":"bve2zvyo","type":"callout","props":{"variant":"ear","tone":"warning","icon":"file-text","title":"exemplo","heading":"","children":"\u003cp>\u003cb>R-5 - Registro de Concessão de Direito Real de Uso (CDRU)\u003c/b> em favor de determinada associação de moradores, sobre área de 5.000 m² pertencente ao Município, conforme Decreto Municipal nº X/XXXX. A CDRU, por criar direito real, exige registro na matrícula.\u003c/p>"}}]},{"title":"Averbação (AV)","content":"\u003cp>A averbação é o ato pelo qual se anotam na matrícula fatos ou atos que, embora não criem ou modifiquem direitos reais, alteram ou complementam informações já registradas, mantendo a matrícula atualizada.\u003c/p>\u003cp>\u003cbr>\u003c/p>","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"bt7vfzjp","type":"feature","props":{"columns":2,"card":false,"accent":"var(--terra-600)","layout":"side","items":[{"icon":"building","title":"Construção de edificação","text":"Incluindo prédios públicos, equipamentos comunitários e infraestrutura."},{"icon":"file-x","title":"Cancelamento de direito real","text":"Extinção de CDRU, doação, usufruto, servidão, hipoteca etc."},{"icon":"hard-hat","title":"Demolição","text":"Remoção de edificação preexistente."},{"icon":"church","title":"Tombamento","text":"Quando o imóvel público (ou privado) é tombado pelo patrimônio histórico."},{"icon":"flag-triangle-right","title":"Alteração de área (retificação)","text":"Ajuste das dimensões do imóvel após medição técnica ou decisão judicial."},{"icon":"notebook-pen","title":"Afetação e desafetação de bem público","text":"Mudança da destinação jurídica do bem (de dominical para uso especial, ou vice-versa)."},{"icon":"map-pinned","title":"Alteração de denominação de logradouro","text":"Ex.: renomeação de rua onde se localiza o imóvel."}]}},{"id":"bzw7nhoq","type":"callout","props":{"variant":"ear","tone":"warning","icon":"lightbulb","title":"EXEMPLO","heading":"","children":"\u003cp>\u003cb>AV-8 - Averbação de construção de prédio administrativo\u003c/b> com área total de 2.500 m², conforme Habite-se nº XXX/XXXX e Auto de Conclusão emitido pela Prefeitura Municipal. O proprietário permanece o mesmo (ente público); apenas uma informação factual sobre o imóvel é acrescentada à matrícula.\u003c/p>"}},{"id":"b0gl1ika","type":"kicker","props":{"icon":"compass","children":"NOTA"}},{"id":"bu9t3xzp","type":"prose","props":{"html":"\u003cp>Para imóveis públicos, é recomendável averbar também os atos administrativos de afetação e desafetação, pois eles determinam o regime jurídico aplicável ao bem (se pode ou não ser alienado, onerado etc.) e devem constar da matrícula para fins do princípio da Concentração.\u003c/p>"}}]}]}}]},{"id":"bpmhv14v","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c6s11q0g","type":"titulo","props":{"text":"Prenotação e prioridade registral","level":"h2"}},{"id":"c4wpykqa","type":"prose","props":{"html":"\u003cp>A \u003cb>prenotação\u003c/b> é o lançamento do título no Livro Protocolo (Livro 1) do Cartório de Registro de Imóveis. Ao ser protocolado, o documento recebe número de ordem sequencial e data (com indicação da hora, minuto e segundo, conforme Provimento CNJ nº 149/2023).\u003c/p>\u003cp>A prenotação é o marco temporal que determina a prioridade entre títulos concorrentes sobre o mesmo imóvel: quem protocola primeiro tem preferência. Produz efeitos imediatos, independentemente da conclusão da qualificação registral.\u003c/p>"}},{"id":"bau2302n","type":"panel","props":{"variant":"box","kicker":"Efeitos da Prenotação","kickerIcon":"map-pin","title":"","color":"","bg":"","body":""},"children":[{"id":"b5d6eblu","type":"feature","props":{"columns":2,"card":true,"accent":"","layout":"side","items":[{"icon":"arrow-big-up-dash","title":"Prioridade registral","text":"Garante ao apresentante preferência sobre títulos apresentados posteriormente para o mesmo imóvel."},{"icon":"bookmark-check","title":"Reserva de posição","text":"O número de protocolo reserva a posição na fila de análise dos títulos."},{"icon":"calendar-days","title":"Vigência","text":"A prenotação vigora por 30 dias (art. 205 da Lei nº 6.015/1973). Se o registro não for concluído nesse prazo, a prenotação caduca."},{"icon":"scale","title":"Suscitação de dúvida","text":"Se houver exigência não atendida, o prazo de prenotação fica suspenso enquanto tramita a dúvida perante o juiz competente."}]}}]},{"id":"b2hc8d88","type":"callout","props":{"variant":"header","tone":"info","icon":"file-text","title":"NOTA","heading":"","children":"\u003cp>Na apresentação de instrumentos públicos (escrituras lavradas por Tabeliões ou atos administrativos da Administração Pública), recomenda-se que o gestor público acompanhe o andamento da prenotação para evitar a caducidade por inércia.\u003c/p>"}},{"id":"b45yuifp","type":"prose","props":{"html":"\u003cp>O \u003cb>princípio da prioridade\u003c/b> tem especial relevo para a proteção do patrimônio público. Em situações de disputa entre o poder público e particulares sobre determinada área, o registro tempestivo em nome do ente público é instrumento de defesa do patrimônio. Imóveis públicos não registrados ficam vulneráveis a registros fraudulentos por particulares que se valem de títulos forjados ou irregulares.\u003c/p>\u003cp>Não por outra razão, a Lei nº 5.972, de 11 de dezembro de 1973, passou a tratar expressamente do registro dos bens imóveis da União, reforçando a importância do registro imobiliário como instrumento de proteção patrimonial.\u003c/p>\u003cp>Recomenda-se que os órgãos de gestão patrimonial realizem o registro e a atualização das matrículas dos imóveis públicos de forma proativa, sem aguardar litígios ou autuações de controle.\u003c/p>"}}]},{"id":"balfampu","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"cod8yg5m","type":"titulo","props":{"text":"Qualificação Registral","level":"h2"}},{"id":"bgndqtng","type":"contentslider","props":{"hint":"Qualificação Registral","accent":"","showTabNumbers":false,"slides":[{"showImage":false,"slot":"bgndqtng__slides_0_slot","alt":"","caption":"","labelIcon":"stamp","label":"ITEM 1","tabLabel":"Conceito e importância","title":"","subtitle":"Conceito","description":"\u003cp>A qualificação registral é a análise jurídica realizada pelo Oficial Registrador (ou escrevente autorizado) sobre o título apresentado a registro. Trata-se do juízo de legalidade que antecede o ato registral, funcionando como filtro de proteção do sistema imobiliário.\u003c/p>\u003cp>Para o gestor público, compreender a qualificação registral é fundamental para preparar adequadamente os documentos apresentados ao cartório e evitar devolução por exigências formais que atrasam a regularização do patrimônio.\u003c/p>","linkHref":"","linkLabel":""},{"showImage":false,"slot":"bgndqtng__slides_1_slot","alt":"","caption":"","labelIcon":"search-check","label":"ITEM 2","tabLabel":"Aspectos verificados ","title":"\u003cspan data-fs=\"h3\">Aspectos verificados na qualificação\u003c/span>","subtitle":"","description":"\u003cul>\u003cli>\u003cb>Competência territorial: \u003c/b>o imóvel está na circunscrição do cartório?\u003c/li>\u003cli>\u003cb>Continuidade:\u003c/b> o transmitente está registrado como titular atual do imóvel?\u003c/li>\u003cli>\u003cb>Especialidade objetiva: \u003c/b>o imóvel está devidamente descrito e identificado?\u003c/li>\u003cli>\u003cb>Especialidade subjetiva:\u003c/b> os titulares estão qualificados (CPF/CNPJ, endereço etc.)?\u003c/li>\u003cli>\u003cb>Capacidade das partes:\u003c/b> os signatários têm capacidade para o ato?\u003c/li>\u003cli>\u003cb>Regularidade formal: \u003c/b>o título atende às formalidades legais exigidas?\u003c/li>\u003cli>\u003cb>Legitimidade: \u003c/b>quem praticou o ato tinha poderes para tanto?\u003c/li>\u003cli>\u003cb>Fiscalidade:\u003c/b> foram recolhidos os tributos incidentes (ITBI, ITCMD etc.)?\u003c/li>\u003cli>\u003cb>Cumprimento da legislação:\u003c/b> o ato está em conformidade com as normas aplicáveis?\u003c/li>\u003c/ul>","linkHref":"","linkLabel":""},{"showImage":false,"slot":"c_z02188b__imageSlot","alt":"","caption":"","labelIcon":"tag","label":"ITEM 3","tabLabel":"Resultados possíveis","title":"\u003cspan data-fs=\"h3\">Resultados possíveis da qualificação\u003c/span>","subtitle":"","description":"\u003cul>\u003cli>\u003cb>Registro ou Averbação (aprovação):\u003c/b> título aprovado. O registrador pratica o ato e lavra o registro ou averbação na matrícula.\u003c/li>\u003cli>\u003cb>Nota Devolutiva (exigência): \u003c/b>o título apresenta irregularidade sanável. O registrador devolve o título com a indicação das exigências a serem cumpridas. O prazo de prenotação fica suspenso.\u003c/li>\u003cli>\u003cb>Suscitação de Dúvida:\u003c/b>  havendo discordância do apresentante quanto às exigências do registrador, o título é remetido ao juiz competente para decisão, nos termos do art. 198 da Lei nº 6.015/1973.\u003c/li>\u003cli>\u003cb>Recusa (rejeição definitiva):\u003c/b> em casos de vício insanável (ex.: imóvel fora da circunscrição), o registro é negado definitivamente.\u003c/li>\u003c/ul>","linkHref":"","linkLabel":""}]}}]},{"id":"b339vl8v","type":"section","props":{"width":"content","surface":"dark","pad":"lg"},"children":[{"id":"cdqo8uci","type":"titulo","props":{"text":"Certidões Imobiliárias","level":"h2"}},{"id":"b12dhxoy","type":"accordion","props":{"numbered":false,"items":[{"title":"\u003cspan data-fs=\"h5\">Tipos de certidões e usos na Gestão Pública\u003c/span>","content":"\u003cp>As certidões imobiliárias são documentos essenciais na gestão do patrimônio público, tendo valor probatório nas licitações, contratos, processos judiciais e auditorias. Conhecer cada tipo e sua finalidade específica é imprescindível para o gestor.\u003c/p>","blocks":[{"id":"bl4lbtxw","type":"datatable","props":{"caption":"","columns":[{"key":"c0","label":"Tipo de Certidão"},{"key":"c1","label":"Conteúdo"},{"key":"c2","label":"Uso Típico na Gestão Pública"}],"rows":[{"c0":"Certidão de Matrícula (situação atual)","c1":"Reproduz o estado atual da matrícula, com todos os registros e averbações vigentes.","c2":"Verificação do titular atual, ônus e restrições; juntada em processos de alienação, concessão e regularização."},{"c0":"Certidão de Inteiro Teor","c1":"Reproduz integralmente todo o conteúdo da matrícula, incluindo atos cancelados.","c2":"Reconstituição da cadeia dominial; investigação de fraudes e irregularidades históricas."},{"c0":"Certidão de Ônus Reais","c1":"Informa os gravames e restrições ativos sobre o imóvel (hipoteca, penhora, usufruto etc.).","c2":"Due diligence antes de aquisição de imóveis; verificação de passivos em imóveis desapropriados."},{"c0":"Certidão de Propriedade","c1":"Comprova a titularidade registral atual do imóvel.","c2":"Comprovação do domínio público em processos judiciais; instrução de processos administrativos."},{"c0":"Certidão Negativa de Ônus e Alienações","c1":"Atesta a inexistência de ônus, gravames ou restrições sobre o imóvel.","c2":"Exigência em alienações, concessões onerosas e contratos de uso de imóveis públicos."},{"c0":"Certidão de Transcrição","c1":"Reproduz o conteúdo de transcrições antigas (anteriores à matrícula).","c2":"Pesquisa de origem para imóveis com histórico pré-1973; investigação de fraudes registrais históricas."}],"dense":false,"highlightFirst":true,"striped":false,"tone":"default","className":""}}]},{"title":"\u003cspan data-fs=\"h5\">Prazo de validade das certidões\u003c/span>","content":"As certidões imobiliárias não possuem prazo de validade legalmente fixado para sua validade intrínseca. Contudo, normas e contratos frequentemente exigem certidões emitidas com determinada antecedência:","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b9nh4eek","type":"markerlist","props":{"variant":"icon","icon":"check","accent":"","items":[{"title":"Cartórios","text":"Geralmente aceitam certidões emitidas há até 30 dias para atos que dependem de informações atualizadas."},{"title":"Licitações e contratos públicos","text":"Editais frequentemente exigem certidões com data não superior a 90 dias."},{"title":"Processos judiciais","text":"O juízo pode exigir certidão atualizada emitida próximo à data da audiência."}]}},{"id":"b78len4v","type":"callout","props":{"variant":"header","tone":"info","icon":"notebook-pen","title":"NOTA","heading":"","children":"\u003cp>Com a implantação do SREI e do ONR, as certidões digitais emitidas eletronicamente possuem carimbo de tempo e QR Code para verificação de autenticidade, dispensando o reconhecimento de firma e facilitando a tramitação digital nos processos administrativos.\u003c/p>"}}]}]}}]},{"id":"bbzruzya","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cmq4tjsq","type":"titulo","props":{"text":"Modernização: ONR, SREI E SERP","level":"h2"}},{"id":"bi9fbyme","type":"titulo","props":{"text":"ONR - Operador Nacional do Registro Eletrônico de Imóveis","level":"h3"}},{"id":"cqhc369c","type":"prose","props":{"html":"\u003cp>O ONR é a entidade responsável pela operação e manutenção da infraestrutura eletrônica nacional dos serviços de Registro de Imóveis. Criado pelo Provimento CNJ nº 89/2019 e consolidado pela Lei nº 14.382/2022, o ONR desempenha papel central na modernização do sistema registral.\u003c/p>"}},{"id":"bri62alu","type":"panel","props":{"variant":"box","kicker":"Função do ONR","kickerIcon":"map-pin","title":"","color":"","bg":"var(--cloud-50)","body":""},"children":[{"id":"br1m900x","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"btqyfqkd","type":"markerlist","props":{"variant":"icon","icon":"clipboard-list","accent":"var(--ochre-600)","items":[{"title":"Integração nacional dos cartórios","text":"Conecta todos os Cartórios de Registro de Imóveis ao sistema eletrônico nacional."},{"title":"Recepção eletrônica de documentos","text":"Permite o envio digital de títulos ao cartório, sem necessidade de comparecimento presencial."},{"title":"Emissão de certidões digitais","text":"Certidões com validade jurídica plena emitidas eletronicamente, com assinatura digital e QR Code."}]}},{"id":"b_msi2qm7c_8to4","type":"markerlist","props":{"variant":"icon","icon":"clipboard-list","accent":"var(--ochre-500)","items":[{"title":"Interoperabilidade registral","text":"Integração com outros sistemas (SERP, notariado, Poder Judiciário, Administração Pública)."},{"title":"Central de Serviços Eletrônicos","text":"Portal de acesso único para pedidos de certidões, registro eletrônico e consultas."}]}}]}]},{"id":"bh3re532","type":"titulo","props":{"text":"SREI - Sistema de Registro Eletrônico de Imóveis","level":"h3"}},{"id":"b7nt35rg","type":"prose","props":{"html":"\u003cp>O SREI é o ambiente eletrônico dos registros imobiliários, por meio do qual os cartórios praticam os atos registrais em plataforma digital. Permite a transmissão eletrônica de documentos, a qualificação registral e a emissão de atos em formato digital, com assinatura eletrônica do Oficial.\u003c/p>"}},{"id":"b_msi31zi3_mjeh","type":"titulo","props":{"text":"SERP - Sistema Eletrônico dos Registros Públicos","level":"h3"}},{"id":"b_msi31xmz_0ghe","type":"prose","props":{"html":"\u003cp>O SERP, criado pela Lei nº 14.382/2022, representa a mais ampla modernização dos registros públicos brasileiros. Integra não apenas o Registro de Imóveis, mas também o Registro Civil das Pessoas Jurídicas e o Registro de Títulos e Documentos em uma plataforma única.\u003c/p>"}},{"id":"b_msi33wjk_rclc","type":"panel","props":{"variant":"box","kicker":"Inovação trazida pelo SERP (Lei nº 14.382/2022)","kickerIcon":"trending-up","title":"\u003cspan data-fs=\"h4\">Impacto na Gestão de Imóveis Públicos\u003c/span>","color":"","bg":"var(--cloud-50)","body":""},"children":[{"id":"b_msi33wjk_09s7","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_msi33wjk_xl7y","type":"markerlist","props":{"variant":"icon","icon":"circle-check-big","accent":"var(--terra-600)","items":[{"title":"Registro eletrônico de pleno direito","text":"Atos praticados eletronicamente têm a mesma validade que os atos físicos."},{"title":"Usucapião extrajudicial simplificada","text":"Procedimento mais ágil para regularização de posses, com impacto em disputas envolvendo imóveis públicos."},{"title":"Retificação administrativa simplificada","text":"Facilita a correção de dados cadastrais sem necessidade de ação judicial."}]}},{"id":"b_msi33wjk_r4ck","type":"markerlist","props":{"variant":"icon","icon":"circle-check-big","accent":"var(--terra-600)","items":[{"title":"Concentração de informações em meio eletrônico","text":"Permite consulta integrada de registros, averbações e certidões em plataforma digital."},{"title":"Integração com a Receita Federal (CPF/CNPJ)","text":"Qualificação automática de titulares, reduzindo exigências formais."},{"title":"Dispensa de reconhecimento de firma","text":"Documentos assinados digitalmente dispensam reconhecimento de firma notarial."}]}}]}]},{"id":"b6kdapq4","type":"titulo","props":{"text":"Relação entre os Sistemas","level":"h3"}},{"id":"bs8t115s","type":"prose","props":{"html":""}},{"id":"bmysc3mc","type":"datatable","props":{"caption":"","columns":[{"key":"c0","label":"Estrutura"},{"key":"c1","label":"Natureza"},{"key":"c2","label":"Função Principal"},{"key":"c3","label":"Criação / Base Legal"}],"rows":[{"c0":"Cartório de RI","c1":"Serviço público delegado","c2":"Pratica os atos registrais","c3":"Art. 236 CF/1988; Lei nº 6.015/1973"},{"c0":"ONR","c1":"Entidade operadora","c2":"Opera a infraestrutura eletrônica nacional","c3":"Provimento CNJ nº 89/2019; Lei nº 14.382/2022"},{"c0":"SREI","c1":"Sistema eletrônico","c2":"Ambiente digital dos registros imobiliários","c3":"Provimento CNJ nº 89/2019"},{"c0":"SERP","c1":"Sistema eletrônico integrado","c2":"Integra todos os registros públicos","c3":"Lei nº 14.382/2022"}],"dense":false,"highlightFirst":true,"striped":false,"tone":"default","className":""}},{"id":"bf93tn2f","type":"accordion","props":{"numbered":false,"items":[{"title":"Referências normativas e bibliográficas","content":"","blocks":[{"id":"bkv4t5rj","type":"kicker","props":{"icon":"compass","children":"Legislação","__pullUp":false}},{"id":"b1w6iayw","type":"prose","props":{"html":"\u003cp>\u003cul>\u003cli>Constituição da República Federativa do Brasil de 1988, art. 236.\u003c/li>\u003cli>\u003cb>Lei nº 6.015/1973\u003c/b> - Lei de Registros Públicos.\u003c/li>\u003cli>\u003cb>Lei nº 5.972/1973\u003c/b> - Regula o procedimento para o registro da propriedade de bens imóveis discriminados administrativamente ou possuídos pela União.\u003c/li>\u003cli>\u003cb>Lei nº 8.935/1994\u003c/b> - Dispõe sobre serviços notariais e de registro.\u003c/li>\u003cli>\u003cb>Lei nº 10.406/2002\u003c/b> - Código Civil \u003c/li>\u003cli>\u003cb>Lei nº 13.097/2015\u003c/b> - Concentração na matrícula; princípio da fé pública registral.\u003c/li>\u003cli>\u003cb>Lei nº 14.382/2022\u003c/b> - Sistema Eletrônico dos Registros Públicos (SERP).\u003c/li>\u003cli>\u003cb>Provimento CNJ nº 89/2019\u003c/b> - Implantação do ONR e SREI.\u003c/li>\u003cli>\u003cb>Provimento CNJ nº 149/2023\u003c/b> - Código Nacional de Normas dos Registros Públicos.\u003c/li>\u003c/ul>\u003c/p>"}}]}]}}]},{"id":"b8bfxxpk","type":"pagefooter","props":{"code":"Registro de Imóveis e patrimonio publico [M233]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Andrea Cassoli Araújo"},{"role":"Revisão","name":"Carlos Alberto Sobral Coimbra Junior"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"bprp72rv__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bprp72rv__slot.png"},"bvlw5rbz__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bvlw5rbz__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"arrow-big-up-dash":"\u003cpath d=\"M14 16a1 1 0 0 0 1-1v-2a1 1 0 0 1 1-1h3.293a.707.707 0 0 0 .5-1.207l-6.939-6.939a1.207 1.207 0 0 0-1.708 0l-6.94 6.94a.707.707 0 0 0 .5 1.206H8a1 1 0 0 1 1 1v2a1 1 0 0 0 1 1z\"/>\u003cpath d=\"M9 20h6\"/>","book-open-text":"\u003cpath d=\"M12 7v14\"/>\u003cpath d=\"M16 12h2\"/>\u003cpath d=\"M16 8h2\"/>\u003cpath d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"/>\u003cpath d=\"M6 12h2\"/>\u003cpath d=\"M6 8h2\"/>","bookmark-check":"\u003cpath d=\"M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z\"/>\u003cpath d=\"m9 10 2 2 4-4\"/>","building":"\u003cpath d=\"M12 10h.01\"/>\u003cpath d=\"M12 14h.01\"/>\u003cpath d=\"M12 6h.01\"/>\u003cpath d=\"M16 10h.01\"/>\u003cpath d=\"M16 14h.01\"/>\u003cpath d=\"M16 6h.01\"/>\u003cpath d=\"M8 10h.01\"/>\u003cpath d=\"M8 14h.01\"/>\u003cpath d=\"M8 6h.01\"/>\u003cpath d=\"M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3\"/>\u003crect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/>","calendar-days":"\u003cpath d=\"M8 2v4\"/>\u003cpath d=\"M16 2v4\"/>\u003crect width=\"18\" height=\"18\" x=\"3\" y=\"4\" rx=\"2\"/>\u003cpath d=\"M3 10h18\"/>\u003cpath d=\"M8 14h.01\"/>\u003cpath d=\"M12 14h.01\"/>\u003cpath d=\"M16 14h.01\"/>\u003cpath d=\"M8 18h.01\"/>\u003cpath d=\"M12 18h.01\"/>\u003cpath d=\"M16 18h.01\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","church":"\u003cpath d=\"M10 9h4\"/>\u003cpath d=\"M12 7v5\"/>\u003cpath d=\"M14 21v-3a2 2 0 0 0-4 0v3\"/>\u003cpath d=\"m18 9 3.52 2.147a1 1 0 0 1 .48.854V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6.999a1 1 0 0 1 .48-.854L6 9\"/>\u003cpath d=\"M6 21V7a1 1 0 0 1 .376-.782l5-3.999a1 1 0 0 1 1.249.001l5 4A1 1 0 0 1 18 7v14\"/>","circle-check-big":"\u003cpath d=\"M21.801 10A10 10 0 1 1 17 3.335\"/>\u003cpath d=\"m9 11 3 3L22 4\"/>","clipboard-list":"\u003crect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\"/>\u003cpath d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/>\u003cpath d=\"M12 11h4\"/>\u003cpath d=\"M12 16h4\"/>\u003cpath d=\"M8 11h.01\"/>\u003cpath d=\"M8 16h.01\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","file-search-corner":"\u003cpath d=\"M11.1 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.589 3.588A2.4 2.4 0 0 1 20 8v3.25\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"m21 22-2.88-2.88\"/>\u003ccircle cx=\"16\" cy=\"17\" r=\"3\"/>","file-text":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M10 9H8\"/>\u003cpath d=\"M16 13H8\"/>\u003cpath d=\"M16 17H8\"/>","file-x":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"m14.5 12.5-5 5\"/>\u003cpath d=\"m9.5 12.5 5 5\"/>","flag-triangle-right":"\u003cpath d=\"M6 22V2.8a.8.8 0 0 1 1.17-.71l11.38 5.69a.8.8 0 0 1 0 1.44L6 15.5\"/>","gavel":"\u003cpath d=\"m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381\"/>\u003cpath d=\"m16 16 6-6\"/>\u003cpath d=\"m21.5 10.5-8-8\"/>\u003cpath d=\"m8 8 6-6\"/>\u003cpath d=\"m8.5 7.5 8 8\"/>","hard-hat":"\u003cpath d=\"M10 10V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5\"/>\u003cpath d=\"M14 6a6 6 0 0 1 6 6v3\"/>\u003cpath d=\"M4 15v-3a6 6 0 0 1 6-6\"/>\u003crect x=\"2\" y=\"15\" width=\"20\" height=\"4\" rx=\"1\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map-pin":"\u003cpath d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/>\u003ccircle cx=\"12\" cy=\"10\" r=\"3\"/>","map-pinned":"\u003cpath d=\"M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0\"/>\u003ccircle cx=\"12\" cy=\"8\" r=\"2\"/>\u003cpath d=\"M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712\"/>","notebook-pen":"\u003cpath d=\"M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4\"/>\u003cpath d=\"M2 6h4\"/>\u003cpath d=\"M2 10h4\"/>\u003cpath d=\"M2 14h4\"/>\u003cpath d=\"M2 18h4\"/>\u003cpath d=\"M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z\"/>","scale":"\u003cpath d=\"M12 3v18\"/>\u003cpath d=\"m19 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1\"/>\u003cpath d=\"m5 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M7 21h10\"/>","search-check":"\u003cpath d=\"m8 11 2 2 4-4\"/>\u003ccircle cx=\"11\" cy=\"11\" r=\"8\"/>\u003cpath d=\"m21 21-4.3-4.3\"/>","stamp":"\u003cpath d=\"M14 13V8.5C14 7 15 7 15 5a3 3 0 0 0-6 0c0 2 1 2 1 3.5V13\"/>\u003cpath d=\"M20 15.5a2.5 2.5 0 0 0-2.5-2.5h-11A2.5 2.5 0 0 0 4 15.5V17a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1z\"/>\u003cpath d=\"M5 22h14\"/>","tag":"\u003cpath d=\"M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z\"/>\u003ccircle cx=\"7.5\" cy=\"7.5\" r=\".5\" fill=\"currentColor\"/>","trending-up":"\u003cpath d=\"M16 7h6v6\"/>\u003cpath d=\"m22 7-8.5 8.5-5-5L2 17\"/>","user":"\u003cpath d=\"M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/>\u003ccircle cx=\"12\" cy=\"7\" r=\"4\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__intro{max-width:var(--measure);margin-bottom:var(--space-5)}' +
+        '.spu-csection__title{margin:0;font-family:var(--font-display);font-size:var(--fs-h2);line-height:1.08;letter-spacing:var(--ls-heading);color:var(--text-strong)}' +
+        '.spu-csection__lead{margin-top:var(--space-3);color:var(--text-muted);font-size:var(--fs-body-lg);line-height:var(--lh-relaxed)}' +
+        '.spu-csection__lead>:last-child{margin-bottom:0}' +
+        '.spu-csection__details{border-top:1px solid var(--color-divider);padding-top:var(--space-4)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer;list-style:none}' +
+        '.spu-csection__summary::-webkit-details-marker{display:none}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__details[open]>.spu-csection__summary svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__details>.spu-csection__body{display:block!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var title = props.title;
+        var lead = props.lead;
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint && NS.isPrint();
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing || props.__builderEditing === true;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            (hasRichContent(title) || hasRichContent(lead)) && React.createElement('div', { className:'spu-csection__intro' },
+              hasRichContent(title) && React.createElement('h2', { className:'spu-csection__title' }, NS.renderRich ? NS.renderRich(title, { inline:true }) : title),
+              hasRichContent(lead) && React.createElement('div', { className:'spu-csection__lead' }, NS.renderRich ? NS.renderRich(lead) : lead)
+            ),
+            React.createElement('details', {
+              className:'spu-csection__details',
+              open: forcedOpen || open,
+              onToggle:function(event){ if(!forcedOpen) setOpen(event.currentTarget.open); }
+            },
+              React.createElement('summary', {
+                className:'spu-csection__summary',
+                onClick:function(event){ if(forcedOpen) event.preventDefault(); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body' }, props.children)
+            )
+          )
+        );
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container',
+        fields:['title','lead','triggerLabel'],
+        props:{ title:'Título da seção', lead:'<p>Apresente brevemente o conteúdo que poderá ser expandido.</p>', triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.byType[definition.type] = definition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type !== definition.type) return originalNewBlock(type, child);
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:JSON.parse(JSON.stringify(definition.props)) };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>
