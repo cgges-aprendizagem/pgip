@@ -170,19 +170,6 @@
       },
       "children": [
         {
-          "id": "blo22e2q",
-          "type": "figure",
-          "props": {
-            "slot": "blo22e2q__slot",
-            "src": "",
-            "fit": "contain",
-            "size": "full",
-            "title": "Opção 1 - ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA",
-            "caption": "",
-            "credit": ""
-          }
-        },
-        {
           "id": "bc5b05dh",
           "type": "figure",
           "props": {
@@ -190,20 +177,7 @@
             "src": "",
             "fit": "contain",
             "size": "full",
-            "title": "Opção 2 - ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA",
-            "caption": "",
-            "credit": ""
-          }
-        },
-        {
-          "id": "b_msg5s7ab_zzbh",
-          "type": "figure",
-          "props": {
-            "slot": "b_msg5s7ab_zzbh__slot",
-            "src": "",
-            "fit": "contain",
-            "size": "full",
-            "title": "Opção 3 - ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA",
+            "title": "ARQUITETURA NORMATIVA DA GESTÃO PATRIMONIAL IMOBILIÁRIA",
             "caption": "",
             "credit": ""
           }
@@ -714,7 +688,7 @@
               },
               {
                 "title": "Questão fundiária",
-                "content": "Regras específicas para imóveis rurais, terras públicas&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">e política fundiária</span>",
+                "content": "Regras específicas para imóveis rurais, terras públicas <span style=\"text-wrap-mode: initial; color: inherit;\">e política fundiária</span>",
                 "linkHref": "",
                 "linkLabel": "",
                 "linkButton": "",
@@ -1542,9 +1516,9 @@
               "type": "flashcard",
               "props": {
                 "term": "1. De quem é o imóvel?",
-                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">De quem é o imóvel?</span><p><ul><li>União, estado, Distrito Federal ou município?</li><li>Verificar a legislação patrimonial específica do ente.</li></ul><p></p></p>",
-                "icon": "shield-user",
                 "description": "Qual ente federativo é o proprietário ou gestor responsável?",
+                "definition": "<p><span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">De quem é o imóvel?</span></p><p><ul><li>União, estado, Distrito Federal ou município?</li><li>Verificar a legislação patrimonial específica do ente.</li></ul><p></p>",
+                "icon": "shield-user",
                 "color": "var(--slate-600)"
               }
             },
@@ -1553,9 +1527,9 @@
               "type": "flashcard",
               "props": {
                 "term": "2. Onde está localizado?",
-                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Onde está localizado?</span><p></p><ul><li>Endereço, coordenadas ou descrição territorial.</li><li>Identificar o município, região administrativa e eventuais sobreposições territoriais.</li></ul><p></p><p></p>",
-                "icon": "map-pinned",
                 "description": "Qual é a localização do imóvel?",
+                "definition": "<p><span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Onde está localizado?</span></p><p></p><ul><li>Endereço, coordenadas ou descrição territorial.</li><li>Identificar o município, região administrativa e eventuais sobreposições territoriais.</li></ul><p></p><p></p>",
+                "icon": "map-pinned",
                 "color": "var(--green-600)"
               }
             },
@@ -1564,9 +1538,9 @@
               "type": "flashcard",
               "props": {
                 "term": "3. Qual sua natureza?",
-                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Qual sua natureza?</span><p></p><ul><li>Define o conjunto de normas aplicáveis: urbanisticas, ambientais, fundiárias, culturais, de patrimônio histórico, etc.</li></ul><p></p><p></p>",
-                "icon": "trees",
                 "description": "O imóvel é urbano, rural, costeiro, ambiental, histórico, especial, edificado ou não edificado?",
+                "definition": "<p><span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Qual sua natureza?</span></p><p></p><ul><li>Define o conjunto de normas aplicáveis: urbanisticas, ambientais, fundiárias, culturais, de patrimônio histórico, etc.</li></ul><p></p><p></p>",
+                "icon": "trees",
                 "color": "var(--terra-600)"
               }
             },
@@ -1575,9 +1549,9 @@
               "type": "flashcard",
               "props": {
                 "term": "4. O que se pretende fazer com o imóvel?",
-                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">O que se pretende fazer com o imóvel?</span><p></p><ul><li>Uso direto, cessão, concessão, alienação, permuta, locação, regularização, obra, proteção, desmembramento, etc.</li><li>A finalidade influencia o regime jurídico e os requisitos legais.</li></ul><p></p><p></p>",
-                "icon": "pencil-sparkles",
                 "description": "Qual é a finalidade ou destinação pretendida?",
+                "definition": "<p><span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">O que se pretende fazer com o imóvel?</span></p><p></p><ul><li>Uso direto, cessão, concessão, alienação, permuta, locação, regularização, obra, proteção, desmembramento, etc.</li><li>A finalidade influencia o regime jurídico e os requisitos legais.</li></ul><p></p><p></p>",
+                "icon": "pencil-sparkles",
                 "color": "var(--ochre-700)"
               }
             },
@@ -1586,9 +1560,9 @@
               "type": "flashcard",
               "props": {
                 "term": "5. Qual norma patrimonial do ente se aplica?",
-                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Qual norma patrimonial do ente se aplica?</span><p></p><ul><li>Verificar lei orgânica, lei patrimonial, decretos e regulamentos do ente.</li><li>Confirmar exigências específicas: autorização legislativa, avaliação, desafetação, licitação, publicidade, etc.</li></ul><p></p><p></p>",
-                "icon": "pen-tool",
                 "description": "Existe lei ou regulamento próprio sobre a gestão dos imóveis desse ente?",
+                "definition": "<p><span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Qual norma patrimonial do ente se aplica?</span></p><p></p><ul><li>Verificar lei orgânica, lei patrimonial, decretos e regulamentos do ente.</li><li>Confirmar exigências específicas: autorização legislativa, avaliação, desafetação, licitação, publicidade, etc.</li></ul><p></p><p></p>",
+                "icon": "pen-tool",
                 "color": "var(--ink-500)"
               }
             },
@@ -1597,9 +1571,9 @@
               "type": "flashcard",
               "props": {
                 "term": "6. Quais normas nacionais incidem sobre o caso?",
-                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Quais normas nacionais incidem?</span><p></p><ul><li>Direito civil e direitos reais, registros públicos desapropriação, licitações e contratos, normas urbanísticas, ambientais, agrárias, entre outras.</li><li>Devem ser observadas por todos os entes.</li></ul><p></p><p></p>",
-                "icon": "landmark",
                 "description": "Existem normas federais que limitam ou condicionam a atuação do ente?",
+                "definition": "<p><span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Quais normas nacionais incidem?</span></p><p></p><ul><li>Direito civil e direitos reais, registros públicos desapropriação, licitações e contratos, normas urbanísticas, ambientais, agrárias, entre outras.</li><li>Devem ser observadas por todos os entes.</li></ul><p></p><p></p>",
+                "icon": "landmark",
                 "color": "var(--green-600)"
               }
             },
@@ -1608,9 +1582,9 @@
               "type": "flashcard",
               "props": {
                 "term": "7. Há restrições urbanísticas ou ambientais?",
-                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Há restrições urbanísticas ou ambientais?</span><p></p><ul><li>Verificar Plano Diretor, zoneamento, áreas de interesse social, áreas de proteção APP, unidade de conservação, patrimônio cultural, etc.</li><li>Podem limitar o uso, a ocupação ou a destinação.</li></ul><p></p><p></p>",
-                "icon": "building-2",
                 "description": "O Plano Diretor, leis de uso do solo ou normas ambientais impõem restrições ao imóvel?",
+                "definition": "<p><span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Há restrições urbanísticas ou ambientais?</span></p><p></p><ul><li>Verificar Plano Diretor, zoneamento, áreas de interesse social, áreas de proteção APP, unidade de conservação, patrimônio cultural, etc.</li><li>Podem limitar o uso, a ocupação ou a destinação.</li></ul><p></p><p></p>",
+                "icon": "building-2",
                 "color": "var(--terra-700)"
               }
             },
@@ -1619,9 +1593,9 @@
               "type": "flashcard",
               "props": {
                 "term": "8. Qual instrumento jurídico pode ser utilizado?",
-                "definition": "<span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Qual instrumento jurídico?</span><p></p><ul><li>Licitação, concessão de uso, permissão, cessão, autorização, doação, venda contrato, termo de cooperação, desafetação, regularização, etc</li><li>Respeitar requisitos legais e procedimentais.</li></ul><p></p><p></p>",
-                "icon": "building-2",
                 "description": "Qual é o instrumento adequado para viabilizar a destinação ou o uso pretendido?",
+                "definition": "<p><span style=\"color: inherit;\"><span data-fs=\"h5\"></span></span><span data-fs=\"body-lg\">Qual instrumento jurídico?</span></p><p></p><ul><li>Licitação, concessão de uso, permissão, cessão, autorização, doação, venda contrato, termo de cooperação, desafetação, regularização, etc</li><li>Respeitar requisitos legais e procedimentais.</li></ul><p></p><p></p>",
+                "icon": "building-2",
                 "color": "var(--petrol-800)"
               }
             }
@@ -1644,7 +1618,7 @@
           },
           {
             "role": "Revisão",
-            "name": "Ana Túlia de Macedo, Karina Bonilaure&nbsp;"
+            "name": "Ana Túlia de Macedo, Karina Bonilaure "
           },
           {
             "role": "Design Educacional",
