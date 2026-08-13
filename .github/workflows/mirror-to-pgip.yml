@@ -1,0 +1,42 @@
+name: Espelhar no PGIP
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mirror-pgip
+  cancel-in-progress: false
+
+jobs:
+  mirror:
+    if: github.repository == 'luislindner/spu'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Configurar acesso ao destino
+        env:
+          MIRROR_SSH_KEY: ${{ secrets.PGIP_MIRROR_SSH_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$MIRROR_SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+
+      - name: Espelhar branches e tags
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git clone --mirror \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            source.git
+
+          git -C source.git remote add target \
+            git@github.com:cgges-aprendizagem/pgip.git
+
+          git -C source.git push --force --prune target \
+            'refs/heads/*:refs/heads/*' \
+            'refs/tags/*:refs/tags/*'
