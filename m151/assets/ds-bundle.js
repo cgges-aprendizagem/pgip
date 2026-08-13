@@ -62,9 +62,6 @@ try { (() => {
 
 (() => {
   const STATE_FILE = '.image-slots.state.json';
-  // 2× a ~600px slot in a 1920-wide deck — retina-sharp without making the
-  // sidecar enormous. A 1200px WebP at q=0.85 is ~150-300KB.
-  const MAX_DIM = 1200;
   // Raster formats only. SVG is excluded (can carry script; createImageBitmap
   // on SVG blobs is inconsistent). GIF is excluded because the canvas
   // re-encode keeps only the first frame, so an animated GIF would silently
@@ -78,6 +75,7 @@ try { (() => {
   // the host allowlists to *.state.json basenames only.
   const subs = new Set();
   let slots = {};
+  let storeRevision = 0;
   // ids explicitly cleared before the sidecar fetch resolved — otherwise
   // the merge below can't tell "never set" from "just deleted" and would
   // resurrect the sidecar's stale value.
@@ -86,7 +84,9 @@ try { (() => {
   let loadP = null;
   function load() {
     if (loadP) return loadP;
+    const revision = storeRevision;
     loadP = fetch(STATE_FILE).then(r => r.ok ? r.json() : null).then(j => {
+      if (revision !== storeRevision) return;
       // Merge: sidecar loses to any in-memory change that raced ahead of
       // the fetch (drop or clear) so neither is clobbered by hydration.
       if (j && typeof j === 'object') {
@@ -163,26 +163,17 @@ try { (() => {
     if (loaded) save();else load().then(save);
   }
 
-  // ── Image downscale ─────────────────────────────────────────────────────
-  // Encode through a canvas so the sidecar carries resized bytes, not the
-  // raw upload. Longest side is capped at 2× the slot's rendered width
-  // (retina) and at MAX_DIM. WebP keeps alpha and is ~10× smaller than PNG
-  // for photos, so there's no need for per-image format picking.
-  async function toDataUrl(file, targetW) {
-    const bitmap = await createImageBitmap(file);
-    try {
-      const cap = Math.min(MAX_DIM, Math.max(1, Math.round(targetW * 2)) || MAX_DIM);
-      const scale = Math.min(1, cap / Math.max(bitmap.width, bitmap.height));
-      const w = Math.max(1, Math.round(bitmap.width * scale));
-      const h = Math.max(1, Math.round(bitmap.height * scale));
-      const canvas = document.createElement('canvas');
-      canvas.width = w;
-      canvas.height = h;
-      canvas.getContext('2d').drawImage(bitmap, 0, 0, w, h);
-      return canvas.toDataURL('image/webp', 0.85);
-    } finally {
-      bitmap.close && bitmap.close();
-    }
+  // ── Original image persistence ──────────────────────────────────────────
+  // Keep the uploaded bytes intact. Compact WebP variants are generated only
+  // when the author chooses a compact export, so the editor and high-quality
+  // packages never depend on an already-downscaled copy.
+  function toDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result || ''));
+      reader.onerror = () => reject(reader.error || new Error('Could not read image.'));
+      reader.readAsDataURL(file);
+    });
   }
 
   // ── Custom element ──────────────────────────────────────────────────────
@@ -460,13 +451,11 @@ try { (() => {
         this._setError('Drop a PNG, JPEG, WebP, or AVIF image.');
         return;
       }
-      // toDataUrl can take hundreds of ms on a large photo. A Clear or a
-      // newer drop during that window would be clobbered when this await
-      // resumes — bump + capture a generation so stale encodes bail.
+      // Reading can take hundreds of ms on a large image. A Clear or a newer
+      // drop during that window must not be clobbered when this await resumes.
       const gen = ++this._gen;
       try {
-        const w = this.clientWidth || this.offsetWidth || MAX_DIM;
-        const url = await toDataUrl(file, w);
+        const url = await toDataUrl(file);
         if (gen !== this._gen) return;
         // Only exit reframe once the new image is in hand — a rejected type
         // or decode failure leaves the in-progress crop untouched.
@@ -577,7 +566,9 @@ try { (() => {
       this._spill.style.top = t;
     }
     _commitView() {
+      const current = this.id ? getSlot(this.id) : this._local;
       const v = {
+        ...(current || {}),
         s: this._view.s,
         x: this._view.x,
         y: this._view.y
@@ -662,6 +653,32 @@ try { (() => {
       }
     }
   }
+  window.__SPU_IMAGE_SLOT_RUNTIME = {
+    snapshot() {
+      return loaded || Object.keys(slots).length ? JSON.stringify(slots) : '';
+    },
+    replace(content) {
+      try {
+        const next = typeof content === 'string' ? JSON.parse(content) : content;
+        slots = next && typeof next === 'object' && !Array.isArray(next) ? next : {};
+      } catch {
+        slots = {};
+      }
+      storeRevision++;
+      tombstones.clear();
+      loaded = true;
+      subs.forEach(fn => fn());
+      save();
+    },
+    clear() {
+      slots = {};
+      storeRevision++;
+      tombstones.clear();
+      loaded = true;
+      subs.forEach(fn => fn());
+      save();
+    }
+  };
   if (!customElements.get('image-slot')) {
     customElements.define('image-slot', ImageSlot);
   }
@@ -859,8 +876,17 @@ const BLOCKS = [
     license: true,
     licenseKind: 'byncsa',
     credits: [{
-      role: 'Produção',
-      name: '—'
+      role: 'Conteúdo',
+      name: 'Autor'
+    }, {
+      role: 'Revisão',
+      name: '-'
+    }, {
+      role: 'Design Educacional',
+      name: 'Luís Henrique Lindner'
+    }, {
+      role: 'Versão',
+      name: 'Julho de 2026'
     }]
   }
 }, {
@@ -1312,11 +1338,21 @@ const BLOCKS = [
     inline: true,
     optional: true
   }, {
+    key: 'labelIcon',
+    label: 'Ícone da etiqueta',
+    type: 'icon',
+    optional: true
+  }, {
     key: 'label',
     label: 'Etiqueta',
     type: 'rich',
     inline: true,
     optional: true
+  }, {
+    key: 'tabLabel',
+    label: 'Rótulo da aba',
+    type: 'rich',
+    inline: true
   }, {
     key: 'title',
     label: 'Título',
@@ -1354,16 +1390,23 @@ const BLOCKS = [
     key: 'accent',
     label: 'Cor de acento',
     type: 'accent'
+  }, {
+    key: 'showTabNumbers',
+    label: 'Mostrar números nas abas',
+    type: 'bool'
   }],
   props: {
     hint: 'Explore os slides',
     accent: '',
+    showTabNumbers: true,
     slides: [{
       showImage: true,
       slot: '',
       alt: '',
       caption: '',
+      labelIcon: '',
       label: 'Etiqueta',
+      tabLabel: 'Slide 1',
       title: 'Título do slide',
       subtitle: 'Subtítulo opcional',
       description: '<p>Descrição opcional do conteúdo.</p>',
@@ -1374,7 +1417,9 @@ const BLOCKS = [
       slot: '',
       alt: '',
       caption: '',
+      labelIcon: '',
       label: '',
+      tabLabel: 'Slide 2',
       title: 'Outro título de slide',
       subtitle: '',
       description: '',
@@ -1589,6 +1634,17 @@ const BLOCKS = [
     key: 'accent',
     label: 'Cor do conjunto de ícones',
     type: 'accent'
+  }, {
+    key: 'layout',
+    label: 'Posição do ícone',
+    type: 'select',
+    options: [{
+      value: 'top',
+      label: 'Acima do conteúdo'
+    }, {
+      value: 'side',
+      label: 'À esquerda do conteúdo'
+    }]
   }],
   itemFields: [{
     key: 'icon',
@@ -1609,6 +1665,7 @@ const BLOCKS = [
     columns: 3,
     card: true,
     accent: '',
+    layout: 'top',
     items: [{
       icon: 'building',
       title: 'Título',
@@ -1659,23 +1716,34 @@ const BLOCKS = [
   cat: 'Interativos',
   kind: 'list',
   propFields: [{
+    key: 'icon',
+    label: 'Ícone da frente',
+    type: 'icon'
+  }, {
     key: 'term',
-    label: 'Conceito',
+    label: 'Título da frente',
+    type: 'rich',
+    inline: true
+  }, {
+    key: 'description',
+    label: 'Descrição curta da frente',
     type: 'rich',
     inline: true
   }, {
     key: 'definition',
-    label: 'Definição',
+    label: 'Texto do verso',
     type: 'rich'
   }, {
-    key: 'icon',
-    label: 'Ícone',
-    type: 'icon'
+    key: 'color',
+    label: 'Cor do flashcard',
+    type: 'accent'
   }],
   props: {
-    term: 'Conceito',
-    definition: 'Definição do conceito.',
-    icon: 'building'
+    term: 'Título do flashcard',
+    description: 'Uma descrição curta para apresentar o conteúdo.',
+    definition: '<p>Use este espaço para desenvolver o conteúdo do verso.</p>',
+    icon: 'building',
+    color: 'var(--petrol-600)'
   }
 }, {
   type: 'accordion',
@@ -1694,11 +1762,6 @@ const BLOCKS = [
     key: 'content',
     label: 'Resposta',
     type: 'rich'
-  }, {
-    key: 'imageSlot',
-    label: 'Imagem (opcional)',
-    type: 'slot',
-    optional: true
   }, {
     key: 'linkHref',
     label: 'Link (opcional)',
@@ -1773,11 +1836,6 @@ const BLOCKS = [
       key: 'content',
       label: 'Descrição',
       type: 'rich'
-    }, {
-      key: 'imageSlot',
-      label: 'Imagem (opcional)',
-      type: 'slot',
-      optional: true
     }, {
       key: 'linkHref',
       label: 'Link (opcional)',
@@ -2481,7 +2539,26 @@ const SPU_MARKS = {
     id: 'green-light',
     label: 'Verde claro',
     swatch: 'var(--green-400)'
-  }]
+  }],
+  fonts: [
+    { id: 'display', label: 'Display' },
+    { id: 'body', label: 'Corpo' },
+    { id: 'serif', label: 'Serifada' },
+    { id: 'mono', label: 'Monoespaçada' }
+  ],
+  sizes: [
+    { id: 'display', label: 'Display' },
+    { id: 'h2', label: 'H2' },
+    { id: 'h3', label: 'H3' },
+    { id: 'h4', label: 'H4' },
+    { id: 'h5', label: 'H5' },
+    { id: 'h6', label: 'H6' },
+    { id: 'body-lg', label: 'Corpo grande' },
+    { id: 'body', label: 'Corpo' },
+    { id: 'small', label: 'Pequeno' },
+    { id: 'caption', label: 'Legenda' },
+    { id: 'eyebrow', label: 'Eyebrow' }
+  ]
 };
 __ds_scope.injectCss('spu-editable-css', `
 [data-spu-editable]{outline:none;cursor:text;border-radius:var(--radius-sm)}
@@ -2506,6 +2583,9 @@ __ds_scope.injectCss('spu-editable-css', `
 .spu-mtpop__btns button{flex:1;border:0;border-radius:7px;padding:7px 10px;font:inherit;font-size:12px;font-weight:600;cursor:pointer;background:rgba(255,255,255,.14);color:#fff}
 .spu-mtpop__btns button.is-primary{background:var(--color-accent,#c2613a);color:#fff}
 .spu-mtpop__btns button:hover{filter:brightness(1.12)}
+.spu-mtpop__list{display:flex;flex-direction:column;min-width:170px;max-height:min(330px,60vh);overflow:auto}
+.spu-mtpop__list button{border:0;background:transparent;color:#fff;text-align:left;padding:7px 9px;border-radius:7px;cursor:pointer;font:inherit;font-size:12px}
+.spu-mtpop__list button:hover{background:rgba(255,255,255,.16)}
 `);
 
 // ── helpers de seleção ──
@@ -2638,6 +2718,16 @@ function applyColor(id) {
     'data-color': id
   }, `span[data-color="${id}"]`);
 }
+function applyFont(id) {
+  wrapSelection('span', {
+    'data-font': id
+  }, `span[data-font="${id}"]`);
+}
+function applyFontSize(id) {
+  wrapSelection('span', {
+    'data-fs': id
+  }, `span[data-fs="${id}"]`);
+}
 function applyEmphasis(cmd) {
   document.execCommand(cmd, false, null);
   const sel = window.getSelection();
@@ -2702,7 +2792,7 @@ function clearMarks() {
   if (!host) return;
   const tmp = document.createElement('div');
   tmp.appendChild(range.cloneContents());
-  tmp.querySelectorAll('mark, [data-color], [data-term], b, strong, i, em, a').forEach(unwrap);
+  tmp.querySelectorAll('span:not([data-term]), mark, [data-color], [data-font], [data-fs], [data-term], b, strong, i, em, a').forEach(unwrap);
   range.deleteContents();
   range.insertNode(document.createRange().createContextualFragment(tmp.innerHTML));
   sel.removeAllRanges();
@@ -2770,7 +2860,7 @@ function MarkToolbar({
   linkButtons = true
 }) {
   const [box, setBox] = React.useState(null);
-  const [menu, setMenu] = React.useState(null); // 'hl' | 'color' | 'link' | null
+  const [menu, setMenu] = React.useState(null); // 'hl' | 'color' | 'font' | 'size' | 'link' | null
   const savedRange = React.useRef(null);
   const [linkUrl, setLinkUrl] = React.useState('https://');
   React.useEffect(() => {
@@ -2883,6 +2973,21 @@ function MarkToolbar({
       height: 16
     }
   })))));
+  const optionMenu = (which, items, apply) => menu === which && React.createElement('div', {
+    className: 'spu-mtpop',
+    style: {
+      top: box.top + 38,
+      left: box.left
+    },
+    onMouseDown: e => e.preventDefault()
+  }, React.createElement('div', {
+    className: 'spu-mtpop__list'
+  }, items.map(item => React.createElement('button', {
+    key: item.id,
+    onClick: () => run(() => apply(item.id))
+  }, item.label))));
+  const popFont = optionMenu('font', SPU_MARKS.fonts, applyFont);
+  const popSize = optionMenu('size', SPU_MARKS.sizes, applyFontSize);
   const popLink = menu === 'link' && React.createElement('div', {
     className: 'spu-mtpop',
     style: {
@@ -2938,6 +3043,13 @@ function MarkToolbar({
     style: {
       fontWeight: 700
     }
+  }), btn('font', 'Família tipográfica', ['F', caret], () => openMenu('font'), {
+    className: menu === 'font' ? 'is-open' : undefined
+  }), btn('size', 'Tamanho do texto', ['Aa', caret], () => openMenu('size'), {
+    className: menu === 'size' ? 'is-open' : undefined,
+    style: {
+      fontSize: 11
+    }
   }), lists && box.allowLists && sep('s3'), lists && box.allowLists && btn('ul', 'Lista', '•', () => applyEmphasis('insertUnorderedList')), lists && box.allowLists && btn('ol', 'Lista numerada', '1.', () => applyEmphasis('insertOrderedList')), (links || glossary) && sep('s4'), links && btn('a', 'Link', ['🔗', caret], () => openMenu('link'), {
     className: menu === 'link' ? 'is-open' : undefined
   }), glossary && btn('t', 'Termo de glossário', 'termo', applyTerm, {
@@ -2945,10 +3057,10 @@ function MarkToolbar({
       borderBottom: '1.5px dotted #fff',
       fontSize: 12
     }
-  }), sep('s5'), btn('x', 'Limpar marcas', '✕', clearMarks)]);
-  return React.createElement(React.Fragment, null, bar, popHL, popColor, popLink);
+  }), sep('s5'), btn('x', 'Limpar formatação da seleção', '✕', clearMarks)]);
+  return React.createElement(React.Fragment, null, bar, popHL, popColor, popFont, popSize, popLink);
 }
-Object.assign(__ds_scope, { SPU_MARKS, applyHighlight, applyColor, applyEmphasis, applyLink, applyTerm, clearMarks, Editable, MarkToolbar });
+Object.assign(__ds_scope, { SPU_MARKS, applyHighlight, applyColor, applyFont, applyFontSize, applyEmphasis, applyLink, applyTerm, clearMarks, Editable, MarkToolbar });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/Editable.jsx", error: String((e && e.message) || e) }); }
 
 // components/content/LicenseBadge.jsx
@@ -3088,6 +3200,16 @@ function resolveMedia(url) {
     src: u
   }; // desconhecido → mantém placeholder + link na legenda
 }
+function mediaTitleText(value) {
+  let html = typeof value === 'string' ? value : React.isValidElement(value) && value.props && typeof value.props.html === 'string' ? value.props.html : '';
+  if (!html) return '';
+  if (typeof DOMParser !== 'undefined') {
+    try {
+      return new DOMParser().parseFromString('<body>' + html + '</body>', 'text/html').body.textContent.trim();
+    } catch (e) {}
+  }
+  return html.replace(/<[^>]*>/g, '').trim();
+}
 function MediaEmbed({
   type = 'video',
   src,
@@ -3099,6 +3221,7 @@ function MediaEmbed({
   style
 }) {
   const isAudio = type === 'audio' || type === 'podcast';
+  const accessibleTitle = mediaTitleText(title);
   const ratio = aspect || (isAudio ? '21 / 9' : '16 / 9');
   const icon = isAudio ? 'headphones' : 'play-circle';
   // src explícito tem prioridade; senão deriva o player a partir da url.
@@ -3118,14 +3241,14 @@ function MediaEmbed({
     };
     player = React.createElement('iframe', {
       src: media.src,
-      title: title || 'Spotify',
+      title: accessibleTitle || 'Spotify',
       loading: 'lazy',
       allow: 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
     });
   } else if (media.kind === 'iframe') {
     player = React.createElement('iframe', {
       src: media.src,
-      title: title || 'mídia',
+      title: accessibleTitle || 'mídia',
       loading: 'lazy',
       allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
       allowFullScreen: true
@@ -4037,6 +4160,7 @@ __ds_scope.injectCss('spu-content-slider-css', `
 .spu-content-slider__media figcaption{position:absolute;left:var(--space-4);bottom:var(--space-4);z-index:1;max-width:calc(100% - var(--space-8));padding:.55em .8em;border-radius:var(--radius);background:rgba(18,35,31,.84);color:#fff;font-family:var(--font-mono);font-size:var(--fs-caption)}
 .spu-content-slider__body{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(var(--space-6),5vw,var(--space-10))}
 .spu-content-slider__label{display:inline-flex;padding:.35em .65em;border-radius:var(--radius-pill);background:color-mix(in srgb,var(--_cs) 12%,var(--color-surface));color:var(--_cs);font-family:var(--font-mono);font-size:var(--fs-eyebrow);font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.spu-content-slider__label--icon{align-items:center;justify-content:center;width:44px;height:44px;padding:0;border-radius:var(--radius)}
 .spu-content-slider__title{margin:var(--space-3) 0 0;font-family:var(--font-display);font-size:clamp(1.75rem,3.5vw,var(--fs-h2));line-height:1.04;letter-spacing:var(--ls-heading);color:var(--text-strong)}
 .spu-content-slider__subtitle{margin:var(--space-3) 0 0;font-family:var(--font-display);font-size:var(--fs-h5);font-weight:600;line-height:1.25;color:var(--_cs)}
 .spu-content-slider__description{margin-top:var(--space-4);color:var(--text-muted)}
@@ -4062,7 +4186,7 @@ function ContentSliderImage({ id, alt }) {
     style: { display: 'block', width: '100%', height: '100%' }
   });
 }
-function ContentSlider({ slides = [], hint = 'Explore os slides', accent, className, style }) {
+function ContentSlider({ slides = [], hint = 'Explore os slides', accent, showTabNumbers = true, className, style }) {
   const [current, setCurrent] = React.useState(0);
   const startX = React.useRef(null);
   const printing = __ds_scope.isPrint();
@@ -4101,8 +4225,8 @@ function ContentSlider({ slides = [], hint = 'Explore os slides', accent, classN
         React.createElement(ContentSliderImage, { id: slide.slot, alt: slide.alt }),
         slide.caption && React.createElement('figcaption', null, __ds_scope.renderRich(slide.caption, { inline: true }))
       ), React.createElement('div', { className: 'spu-content-slider__body' },
-        slide.label && React.createElement('span', { className: 'spu-content-slider__label' }, __ds_scope.renderRich(slide.label, { inline: true })),
-        React.createElement('h3', { className: 'spu-content-slider__title' }, __ds_scope.renderRich(slide.title || 'Título do slide', { inline: true })),
+        slide.labelIcon ? React.createElement('span', { className: 'spu-content-slider__label spu-content-slider__label--icon', 'aria-hidden': 'true' }, React.createElement(__ds_scope.Icon, { name: slide.labelIcon, size: 22 })) : slide.label && React.createElement('span', { className: 'spu-content-slider__label' }, __ds_scope.renderRich(slide.label, { inline: true })),
+        __ds_scope.hasRichContent(slide.title) && React.createElement('h3', { className: 'spu-content-slider__title' }, __ds_scope.renderRich(slide.title, { inline: true })),
         slide.subtitle && React.createElement('p', { className: 'spu-content-slider__subtitle' }, __ds_scope.renderRich(slide.subtitle, { inline: true })),
         slide.description && React.createElement('div', { className: 'spu-content-slider__description' }, __ds_scope.renderRich(slide.description)),
         href && React.createElement('a', { className: 'spu-content-slider__link', href, target: /^https?:/i.test(href) ? '_blank' : undefined, rel: /^https?:/i.test(href) ? 'noopener' : undefined }, __ds_scope.renderRich(slide.linkLabel || 'Saiba mais', { inline: true }), React.createElement(__ds_scope.Icon, { name: 'arrow-right', size: 16 }))
@@ -4118,7 +4242,7 @@ function ContentSlider({ slides = [], hint = 'Explore os slides', accent, classN
       'aria-selected': index === current,
       tabIndex: index === current ? 0 : -1,
       onClick: () => setCurrent(index)
-    }, React.createElement('span', null, String(index + 1).padStart(2, '0')), React.createElement('b', null, __ds_scope.renderRich(slide.label || slide.title || `Slide ${index + 1}`, { inline: true }))))),
+    }, showTabNumbers && React.createElement('span', null, String(index + 1).padStart(2, '0')), React.createElement('b', null, __ds_scope.renderRich(slide.tabLabel || slide.title || `Slide ${index + 1}`, { inline: true }))))),
     React.createElement('button', { type: 'button', className: 'spu-content-slider__arrow', onClick: () => go(current + 1), 'aria-label': 'Próximo slide' }, React.createElement(__ds_scope.Icon, { name: 'arrow-right', size: 20 }))
   ));
 }
@@ -4339,6 +4463,22 @@ __ds_scope.injectCss('spu-richtext-css', `
 .spu-richtext [data-color="terra-light"]{color:var(--terra-300)}
 .spu-richtext [data-color="petrol-light"]{color:var(--petrol-300)}
 .spu-richtext [data-color="green-light"]{color:var(--green-400)}
+/* Família e tamanho aplicáveis a trechos selecionados. */
+.spu-richtext [data-font="display"]{font-family:var(--font-display)}
+.spu-richtext [data-font="body"]{font-family:var(--font-body)}
+.spu-richtext [data-font="serif"]{font-family:var(--font-serif)}
+.spu-richtext [data-font="mono"]{font-family:var(--font-mono)}
+.spu-richtext [data-fs="eyebrow"]{font-size:var(--fs-eyebrow)}
+.spu-richtext [data-fs="caption"]{font-size:var(--fs-caption)}
+.spu-richtext [data-fs="small"]{font-size:var(--fs-small)}
+.spu-richtext [data-fs="body"]{font-size:var(--fs-body)}
+.spu-richtext [data-fs="body-lg"]{font-size:var(--fs-body-lg)}
+.spu-richtext [data-fs="h6"]{font-size:var(--fs-h6)}
+.spu-richtext [data-fs="h5"]{font-size:var(--fs-h5)}
+.spu-richtext [data-fs="h4"]{font-size:var(--fs-h4)}
+.spu-richtext [data-fs="h3"]{font-size:var(--fs-h3)}
+.spu-richtext [data-fs="h2"]{font-size:var(--fs-h2)}
+.spu-richtext [data-fs="display"]{font-size:var(--fs-display);line-height:var(--lh-tight)}
 /* Termo de glossário (marcação) */
 .spu-richtext [data-term]{text-decoration:underline dotted;text-underline-offset:.2em;text-decoration-color:var(--color-primary);cursor:help}
 /* Variante inline (campos de uma linha: legenda, título) */
@@ -4545,7 +4685,7 @@ RichText.COLORS = COLOR;
 // RichText; ReactNode é devolvido como está. `inline` para campos de uma linha.
 function renderRich(value, opts) {
   const o = opts || {};
-  if (value == null || value === '') return null;
+  if (!hasRichContent(value)) return null;
   if (typeof value === 'string') {
     return React.createElement(RichText, {
       html: value,
@@ -4556,7 +4696,13 @@ function renderRich(value, opts) {
   }
   return value;
 }
-Object.assign(__ds_scope, { RichText, RichTextLinkNotes, renderRich });
+function hasRichContent(value) {
+  if (value == null) return false;
+  if (typeof value !== 'string') return true;
+  const visible = value.replace(/<!--[\s\S]*?-->/g, '').replace(/<br\s*\/?>/gi, '').replace(/<[^>]*>/g, '').replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ').replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+  return visible.length > 0;
+}
+Object.assign(__ds_scope, { RichText, RichTextLinkNotes, renderRich, hasRichContent });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/RichText.jsx", error: String((e && e.message) || e) }); }
 
 // components/content/Callout.jsx
@@ -4753,12 +4899,17 @@ __ds_scope.injectCss('spu-features-css', `
 .spu-feature__title{font-family:var(--font-display);font-weight:700;font-size:var(--fs-h6);line-height:1.25;margin:0 0 .3em;color:var(--text-strong)}
 .spu-feature__text{color:var(--text-muted);font-size:var(--fs-small);margin:0}
 .spu-feature--card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-sm)}
+.spu-feature--side{display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:var(--space-4);align-items:start}
+.spu-feature--side .spu-feature__icon{grid-row:1 / span 2;margin-bottom:0}
+.spu-feature--side .spu-feature__title{grid-column:2}
+.spu-feature--side .spu-feature__text{grid-column:2}
 `);
 function FeatureGrid({
   items = [],
   columns,
   card = false,
   accent,
+  layout = 'top',
   className,
   style
 }) {
@@ -4775,7 +4926,7 @@ function FeatureGrid({
     style: gridStyle
   }, items.map((it, i) => React.createElement('div', {
     key: i,
-    className: __ds_scope.cx('spu-feature', card && 'spu-feature--card')
+    className: __ds_scope.cx('spu-feature', card && 'spu-feature--card', layout === 'side' && 'spu-feature--side')
   }, React.createElement('div', {
     className: 'spu-feature__icon',
     style: accent ? {
@@ -4785,7 +4936,7 @@ function FeatureGrid({
   }, React.createElement(__ds_scope.Icon, {
     name: it.icon || 'sparkles',
     size: 24
-  })), React.createElement('p', {
+  })), __ds_scope.hasRichContent(it.title) && React.createElement('p', {
     className: 'spu-feature__title'
   }, __ds_scope.renderRich(it.title, {
     inline: true
@@ -4914,7 +5065,7 @@ const richInline = value => __ds_scope.renderRich(value, {
   inline: true
 });
 __ds_scope.injectCss('spu-pagefooter-css', `
-.spu-pagefooter{background:var(--petrol-800);background-image:var(--texture-topo);background-size:420px;color:var(--text-on-dark);padding:var(--space-12) var(--gutter);margin-top:var(--space-12)}
+.spu-pagefooter{background:var(--petrol-800);background-image:var(--texture-topo);background-size:420px;color:var(--text-on-dark);padding:var(--space-12) var(--gutter)}
 .spu-pagefooter__inner{max-width:var(--container-content);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:start}
 .spu-pagefooter__code{font-family:var(--font-mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-on-dark);opacity:.8;margin:0 0 var(--space-4)}
 .spu-pagefooter__context{font-size:var(--fs-small);color:var(--text-on-dark-muted);max-width:46ch;margin:0;line-height:1.6}
@@ -4987,7 +5138,10 @@ __ds_scope.injectCss('spu-panel-css', `
 .spu-panel__body{color:var(--text-body)}
 .spu-panel__body+:where(.spu-blockstack){margin-top:var(--space-5)}
 .spu-panel>:last-child{margin-bottom:0}
-.spu-panel--accent{border-left:var(--border-accent) solid var(--_pc, var(--color-accent))}
+.spu-panel--accent{--_panel-accent:var(--_pc,var(--color-accent));background:color-mix(in srgb,var(--_panel-accent) 9%,var(--color-surface));background-image:none;border-color:color-mix(in srgb,var(--_panel-accent) 30%,var(--color-border));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--_panel-accent) 10%,transparent)}
+.spu-panel--colored .spu-panel__kicker{color:var(--_pc,var(--color-accent))}
+.spu-panel--colored .spu-panel__kicker .spu-kicker__rule{background:var(--_pc,var(--color-accent))}
+.spu-panel--colored .spu-panel__title{color:color-mix(in srgb,var(--_pc,var(--color-accent)) 78%,var(--text-strong))}
 /* Card que extravasa a coluna de leitura (mais largo, centrado na viewport) */
 .spu-panel--wide{width:min(var(--container-wide), calc(100vw - 2 * var(--gutter)));margin-left:50%;transform:translateX(-50%)}
 /* Faixa full-bleed — largura total (como o hero) */
@@ -5025,7 +5179,7 @@ function Panel({
   }, __ds_scope.renderRich(body)), __ds_scope.renderRich(children)];
   if (variant === 'feature') {
     return React.createElement('div', {
-      className: __ds_scope.cx('spu-panel', 'spu-panel--feature', color && 'spu-panel--accent', className),
+      className: __ds_scope.cx('spu-panel', 'spu-panel--feature', color && 'spu-panel--colored', className),
       style: {
         ...(color ? {
           '--_pc': color
@@ -5038,7 +5192,7 @@ function Panel({
     }, inner));
   }
   return React.createElement('div', {
-    className: __ds_scope.cx('spu-panel', wide && 'spu-panel--wide', color && 'spu-panel--accent', className),
+    className: __ds_scope.cx('spu-panel', wide && 'spu-panel--wide', variant === 'accent' && 'spu-panel--accent', (color || variant === 'accent') && 'spu-panel--colored', className),
     style: {
       ...(color ? {
         '--_pc': color
@@ -5120,9 +5274,12 @@ function dsNamespace() {
 //   block = { id, type, props:{…}, (children[] se container) }
 //   mode  = 'preview' | 'edit'   (edit habilitará handles/Editable depois)
 
-// Campos cujo valor é texto rico (string HTML) — passam por renderRich.
+// `fields` é o contrato do registry para texto editável salvo como HTML.
+// O antigo `def.rich` não pode ser usado como trava: vários componentes
+// históricos (Figure, PullQuote, Kicker, BleedImage...) já aceitam RichText no
+// canvas sem terem recebido essa flag no registry.
 function richField(def, key) {
-  return def && def.rich && (def.fields || []).indexOf(key) !== -1;
+  return def && (def.fields || []).indexOf(key) !== -1;
 }
 
 // Campos rich tratados como bloco (multilinha); o resto é inline (uma linha).
@@ -5130,7 +5287,8 @@ const BLOCK_LEVEL = {
   children: 1,
   body: 1,
   html: 1,
-  content: 1
+  content: 1,
+  lead: 1
 };
 
 // Rótulos PT-BR para placeholders de campos vazios no modo edit.
@@ -5149,7 +5307,9 @@ const FIELD_PLACEHOLDER = {
   term: 'Termo',
   definition: 'Definição',
   org: 'Identidade',
-  program: 'Nome do programa'
+  program: 'Nome do programa',
+  lead: 'Texto de apresentação',
+  triggerLabel: 'Clique para expandir'
 };
 function BlockView({
   block,
@@ -5166,6 +5326,17 @@ function BlockView({
     }
   }, `Bloco desconhecido: ${block.type}`);
   const props = block.props || {};
+  const spacingStyle = {
+    ...(props.style || {}),
+    ...(props.__pullUp ? { marginTop: 'calc(-1 * var(--flow-block))' } : null),
+    ...(props.__pullDown ? { marginBottom: 'calc(-1 * var(--flow-block))' } : null)
+  };
+  const componentProps = {
+    ...props,
+    style: spacingStyle
+  };
+  delete componentProps.__pullUp;
+  delete componentProps.__pullDown;
   const editing = mode === 'edit';
   const emit = patch => onEdit && onEdit(block, patch);
 
@@ -5189,10 +5360,12 @@ function BlockView({
 
   // —— Título simples (sem componente) ——
   if (block.type === 'titulo') {
+    if (!editing && !__ds_scope.hasRichContent(props.text)) return null;
     const tag = props.level || 'h2';
     return React.createElement(tag, {
       id: block.id,
-      className: 'spu-block-title'
+      className: 'spu-block-title',
+      style: spacingStyle
     }, editing ? React.createElement(__ds_scope.Editable, {
       html: props.text || '',
       single: true,
@@ -5208,13 +5381,16 @@ function BlockView({
 
   // —— Parágrafo (RichText puro) ——
   if (block.type === 'prose') {
+    if (!editing && !__ds_scope.hasRichContent(props.html)) return null;
     return editing ? React.createElement(__ds_scope.Editable, {
       html: typeof props.html === 'string' ? props.html : '',
+      style: spacingStyle,
       onChange: h => emit({
         html: h
       })
     }) : React.createElement(__ds_scope.RichText, {
-      html: typeof props.html === 'string' ? props.html : undefined
+      html: typeof props.html === 'string' ? props.html : undefined,
+      style: spacingStyle
     });
   }
   const NS = dsNamespace();
@@ -5239,14 +5415,14 @@ function BlockView({
     if (def.stack === false) {
       // Columns/grade: filhos vão direto como children do componente.
       return React.createElement(Comp, {
-        ...props,
+        ...componentProps,
         ...extra,
         children: undefined
       }, kids);
     }
     const hasKids = (block.children || []).length > 0;
     return React.createElement(Comp, {
-      ...props,
+      ...componentProps,
       ...extra,
       children: undefined
     }, hasKids && React.createElement('div', {
@@ -5261,7 +5437,7 @@ function BlockView({
 
   // —— Demais blocos ——
   const resolved = {
-    ...props
+    ...componentProps
   };
   if (block.type === 'kicker') {
     resolved.className = __ds_scope.cx(props.className, 'spu-block-kicker');
@@ -5269,8 +5445,13 @@ function BlockView({
   (def.fields || []).forEach(k => {
     if (editing) {
       resolved[k] = fieldNode(k, !BLOCK_LEVEL[k]); // todos os fields viram Editable
-    } else if (richField(def, k) && typeof resolved[k] === 'string' && k === 'children') {
-      resolved.children = __ds_scope.renderRich(resolved.children); // preview: comportamento atual
+    } else if (richField(def, k) && typeof resolved[k] === 'string') {
+      // Preview/export must resolve every field declared as rich text, not
+      // only `children`. Otherwise captions, credits, bylines and similar
+      // fields display their HTML markup literally outside edit mode.
+      resolved[k] = __ds_scope.renderRich(resolved[k], {
+        inline: !BLOCK_LEVEL[k]
+      });
     }
   });
   return React.createElement(Comp, resolved);
@@ -5524,22 +5705,23 @@ Object.assign(__ds_scope, { CompareAB });
 // components/interactive/Flipcard.jsx
 try { (() => {
 __ds_scope.injectCss('spu-flip-css', `
-.spu-flip{perspective:1400px;background:none;border:0;padding:0;width:100%;font:inherit;text-align:left;cursor:pointer;display:block;isolation:isolate}
+.spu-flip{--spu-flip-color:var(--color-primary);perspective:1400px;background:none;border:0;padding:0;width:100%;font:inherit;text-align:left;cursor:pointer;display:block;isolation:isolate;border-radius:var(--radius-lg)}
+.spu-flip:focus-visible{outline:3px solid var(--color-focus-ring);outline-offset:3px}
 .spu-flip__inner{position:relative;transition:transform var(--dur-slow) var(--ease-in-out);transform-style:preserve-3d;-webkit-transform-style:preserve-3d}
 .spu-flip--flipped .spu-flip__inner{transform:rotateY(180deg)}
-.spu-flip__face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--radius-lg);padding:var(--space-6);display:flex;flex-direction:column;border:1px solid var(--color-border);box-shadow:var(--shadow-sm);overflow:hidden;transform:translateZ(1px);transition:box-shadow var(--dur) var(--ease-out)}
+.spu-flip__face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--radius-lg);padding:var(--space-6);display:flex;flex-direction:column;border:1px solid var(--color-border);border-top:4px solid var(--spu-flip-color);box-shadow:var(--shadow-sm);overflow:hidden;transform:translateZ(1px);transition:box-shadow var(--dur) var(--ease-out)}
 .spu-flip:hover .spu-flip__face{box-shadow:var(--shadow-md)}
-.spu-flip__face--front{background:var(--color-surface);opacity:1}
-.spu-flip__face--back{background:var(--color-primary);color:var(--text-on-dark);transform:rotateY(180deg) translateZ(1px);border-color:transparent;opacity:0}
+.spu-flip__face--front{background:var(--color-surface);background:color-mix(in srgb,var(--spu-flip-color) 7%,var(--color-surface));border-color:color-mix(in srgb,var(--spu-flip-color) 38%,var(--color-border));border-top-color:var(--spu-flip-color);opacity:1}
+.spu-flip__face--back{background:var(--color-primary);background:color-mix(in srgb,var(--spu-flip-color) 62%,var(--ink-900));color:var(--text-on-dark);transform:rotateY(180deg) translateZ(1px);border-color:transparent;opacity:0}
 .spu-flip--flipped .spu-flip__face--front{opacity:0}
 .spu-flip--flipped .spu-flip__face--back{opacity:1}
-.spu-flip__face--back .spu-flip__term{color:#fff}
 .spu-flip__hint{position:absolute;top:var(--space-4);right:var(--space-4);color:var(--text-faint)}
 .spu-flip__face--back .spu-flip__hint{color:var(--text-on-dark-muted)}
-.spu-flip__icon{width:46px;height:46px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;background:var(--color-primary-soft);color:var(--color-primary-strong);margin-bottom:var(--space-3)}
-.spu-flip__face--back .spu-flip__icon{background:rgba(255,255,255,.16);color:#fff}
+.spu-flip__icon{width:48px;height:48px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;background:var(--color-primary-soft);background:color-mix(in srgb,var(--spu-flip-color) 14%,var(--color-surface));color:var(--spu-flip-color);margin-bottom:var(--space-4);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--spu-flip-color) 24%,transparent)}
 .spu-flip__term{font-family:var(--font-display);font-weight:700;font-size:var(--fs-h5);margin:0 0 .25em;color:var(--text-strong)}
-.spu-flip__def{font-size:var(--fs-small);line-height:1.55}
+.spu-flip__description{font-size:var(--fs-small);line-height:1.55;color:var(--text-muted);margin-top:var(--space-1)}
+.spu-flip__def{font-size:var(--fs-small);line-height:1.62;flex:1;min-height:0;overflow:auto;padding-right:var(--space-1)}
+.spu-flip__def>:first-child{margin-top:0}.spu-flip__def>:last-child{margin-bottom:0}
 .spu-flip__cue{font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);margin-top:auto;padding-top:var(--space-3)}
 .spu-flip__face--back .spu-flip__cue{color:var(--text-on-dark-muted)}
 @media print{
@@ -5548,6 +5730,7 @@ __ds_scope.injectCss('spu-flip-css', `
   .spu-flip__face{position:static !important;transform:none !important;backface-visibility:visible !important;-webkit-backface-visibility:visible !important;box-shadow:none;opacity:1 !important}
   .spu-flip__face--front{border-radius:var(--radius-lg) var(--radius-lg) 0 0;border-bottom:0}
   .spu-flip__face--back{border-radius:0 0 var(--radius-lg) var(--radius-lg)}
+  .spu-flip__def{overflow:visible}
   .spu-flip__hint,.spu-flip__cue{display:none !important}
 }
 @media (prefers-reduced-motion: reduce){
@@ -5557,12 +5740,14 @@ __ds_scope.injectCss('spu-flip-css', `
 `);
 function Flipcard({
   term,
+  description,
   definition,
   icon,
   hint,
+  color,
   front,
   back,
-  height = 230,
+  height = 280,
   className,
   style
 }) {
@@ -5578,16 +5763,13 @@ function Flipcard({
   }, React.createElement(__ds_scope.Icon, {
     name: icon,
     size: 24
-  })), React.createElement('p', {
+  })), __ds_scope.hasRichContent(term) && React.createElement('h3', {
     className: 'spu-flip__term'
   }, __ds_scope.renderRich(term, {
     inline: true
-  })), hint && React.createElement('p', {
-    className: 'spu-flip__def',
-    style: {
-      color: 'var(--text-muted)'
-    }
-  }, __ds_scope.renderRich(hint, {
+  })), __ds_scope.hasRichContent(description || hint) && React.createElement('div', {
+    className: 'spu-flip__description'
+  }, __ds_scope.renderRich(description || hint, {
     inline: true
   })), React.createElement('span', {
     className: 'spu-flip__cue'
@@ -5598,20 +5780,29 @@ function Flipcard({
       flexDirection: 'column',
       height: '100%'
     }
-  }, React.createElement('p', {
-    className: 'spu-flip__term'
-  }, __ds_scope.renderRich(term, {
-    inline: true
-  })), React.createElement('div', {
+  }, React.createElement('div', {
     className: 'spu-flip__def'
   }, __ds_scope.renderRich(definition)), React.createElement('span', {
     className: 'spu-flip__cue'
   }, 'Clique para voltar'));
-  return React.createElement('button', {
-    type: 'button',
+  const toggle = event => {
+    if (event && event.target && event.target.closest && event.target.closest('a,[contenteditable="true"]')) return;
+    setFlipped(f => !f);
+  };
+  return React.createElement('div', {
+    role: 'button',
+    tabIndex: 0,
     className: __ds_scope.cx('spu-flip', flipped && 'spu-flip--flipped', className),
-    style,
-    onClick: () => setFlipped(f => !f),
+    style: {
+      '--spu-flip-color': color || 'var(--color-primary)',
+      ...style
+    },
+    onClick: toggle,
+    onKeyDown: event => {
+      if (event.target !== event.currentTarget || event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      toggle(event);
+    },
     'aria-pressed': flipped
   }, React.createElement('div', {
     className: 'spu-flip__inner',
@@ -6026,7 +6217,7 @@ __ds_scope.injectCss('spu-section-css', `
 .spu-blockstack.spu-blockstack>*:not(.spu-block-title):not(.spu-block-kicker){margin-block:0}
 .spu-block-title{margin:0}
 .spu-block-title .spu-richtext{line-height:inherit}
-.spu-section__inner>.spu-blockstack>.spu-block-title:is(h3,h4):not(:last-child){margin-bottom:calc(-1 * var(--flow-block) + var(--space-3))}
+.spu-section__inner>.spu-blockstack>.spu-block-title:is(h3,h4,h5,h6):not(:last-child){margin-bottom:calc(-1 * var(--flow-block) + var(--space-3))}
 .spu-section__inner{margin-inline:auto;padding-inline:var(--gutter)}
 .spu-section--narrow .spu-section__inner{max-width:var(--container-prose)}
 .spu-section--content .spu-section__inner{max-width:var(--container-content)}

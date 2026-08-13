@@ -7,11 +7,6 @@
     "toc": {
       "items": [
         {
-          "id": "cb56n0hl",
-          "text": "O ciclo de vida do imóvel público ",
-          "hidden": false
-        },
-        {
           "id": "chvkm7fq",
           "text": "1. Caracterização patrimonial imobiliária",
           "hidden": false
@@ -92,6 +87,7 @@
             "columns": 3,
             "card": true,
             "accent": "",
+            "layout": "top",
             "items": [
               {
                 "icon": "map-pin",
@@ -145,7 +141,7 @@
       "type": "section",
       "props": {
         "width": "content",
-        "surface": "none",
+        "surface": "page",
         "pad": "lg"
       },
       "children": [
@@ -154,40 +150,53 @@
           "type": "titulo",
           "props": {
             "text": "O ciclo de vida do imóvel público ",
-            "level": "h2"
+            "level": "h3"
           }
         },
         {
-          "id": "cnjlrb8w",
+          "id": "bzo6npcb",
           "type": "prose",
           "props": {
-            "html": "<p><mark><b>Aqui vai o infográfico com macadores. Infográfico sendo refeito!</b></mark></p>"
+            "html": "<p>As funções de gestão patrimonial imobiliária atuam de forma integrada e contínua para garantir que os imóveis públicos sejam conhecidos, protegidos e ptilizados de forma compatível com o interesse público.</p>"
           }
         },
         {
-          "id": "bgfzayo7",
-          "type": "mapfigure",
+          "id": "bjeez3gz",
+          "type": "figure",
           "props": {
-            "slot": "bgfzayo7__slot",
-            "markers": [
-              {
-                "title": "Caracterização",
-                "description": "Identificar, reconhecer, delimitar e individualizar os imóveis públicos.",
-                "x": 49,
-                "y": 13,
-                "label": "1"
-              },
-              {
-                "title": "Ingresso",
-                "description": "dddddd",
-                "x": 74,
-                "y": 26,
-                "label": "2"
-              }
-            ],
-            "caption": "<br>",
-            "credit": "",
-            "label": "PROVISÓRIO"
+            "slot": "bjeez3gz__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "OPCAO A",
+            "caption": "As funções interagem permanentemente. Informações geradas em qualquer etapa alimentam as demais, retroalimentando o ciclo e permitindo novas demandas de caracterização, ingresso, avaliação, destinação, arrecadação, fiscalização e proteção dos imóveis públicos.",
+            "credit": ""
+          }
+        },
+        {
+          "id": "by2fq3h2",
+          "type": "figure",
+          "props": {
+            "slot": "by2fq3h2__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "OPCAO B",
+            "caption": "As funções interagem permanentemente. Informações geradas em qualquer etapa alimentam as demais, retroalimentando o ciclo e permitindo novas demandas de caracterização, ingresso, avaliação, destinação, arrecadação, fiscalização e proteção dos imóveis públicos.",
+            "credit": ""
+          }
+        },
+        {
+          "id": "bixb6wap",
+          "type": "figure",
+          "props": {
+            "slot": "bixb6wap__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "OPCAO C",
+            "caption": "As funções interagem permanentemente. Informações geradas em qualquer etapa alimentam as demais, retroalimentando o ciclo e permitindo novas demandas de caracterização, ingresso, avaliação, destinação, arrecadação, fiscalização e proteção dos imóveis públicos.",
+            "credit": ""
           }
         }
       ]
@@ -321,7 +330,7 @@
           "id": "cnpsolmb",
           "type": "prose",
           "props": {
-            "html": "<p>Após sua identificação, os imóveis precisam ser formalmente incorporados ao patrimônio público. A consolidação dominial e patrimonial reúne as atividades relacionadas à aquisição, incorporação e regularização dos imóveis.</p><p>Essa função abrange desde a aquisição de imóveis por compra, doação, desapropriação ou outros instrumentos legais até o registro cartorial e o cadastramento nos sistemas corporativos de gestão patrimonial. Também compreende a regularização de registros, retificações e adequações cadastrais necessárias para garantir segurança jurídica e controle patrimonial. <span style=\"text-wrap-mode: initial; color: inherit;\">Em outras palavras, essa função transforma um bem identificado em um bem efetivamente reconhecido e gerido pelo Estado.</span></p>"
+            "html": "<p>Após sua identificação, os imóveis precisam ser formalmente incorporados ao patrimônio público. A consolidação dominial e patrimonial reúne as atividades relacionadas à aquisição, incorporação e regularização dos imóveis.</p><p>Essa função abrange desde a aquisição de imóveis por compra, doação, desapropriação ou outros instrumentos legais até o registro cartorial e o cadastramento nos sistemas corporativos de gestão patrimonial. Também compreende a regularização de registros, retificações e adequações cadastrais necessárias para garantir segurança jurídica e controle patrimonial. <span style=\"text-wrap-mode: initial; color: inherit;\">Em outras palavras, essa função transforma um bem identificado em um bem efetivamente reconhecido e gerido pelo Estado.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Além do registro cartorial, quando cabível, a incorporação de um imóvel exige seu cadastramento nos sistemas corporativos, permitindo sua gestão, monitoramento e destinação.</span></p>"
           }
         },
         {
@@ -329,7 +338,7 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
+            "kicker": "‎&nbsp;",
             "kickerIcon": "file-plus-corner",
             "title": "Aquisição e constituição de direitos imobiliários",
             "color": "",
@@ -344,16 +353,17 @@
                 "columns": 2,
                 "card": false,
                 "accent": "var(--petrol-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "square-dashed-mouse-pointer",
                     "title": "<span style=\"font-weight: normal;\">Envolve </span>diferentes formas de aquisição e constituição<span style=\"font-weight: normal;\"> previstas na legislação: compra e venda, doação, desapropriação, arrecadação de imóveis, adjudicação, transferência entre órgãos ou entes federativos, reconhecimento de domínio, sucessão patrimonial e recebimento de bens decorrentes de decisões judiciais.</span>",
-                    "text": "<p></p><p></p>"
+                    "text": ""
                   },
                   {
                     "icon": "scale",
                     "title": "<span style=\"font-weight: normal;\">Abrange a </span>constituição de direitos imobiliários, como servidões, concessões de direito real, direitos de superfície e outros<span style=\"font-weight: normal;\"> instrumentos que permitam ao poder público exercer competências ou viabilizar políticas públicas <mark>sem necessariamente adquirir a propriedade plena do imóvel</mark>.</span>",
-                    "text": "<p></p><p></p>"
+                    "text": ""
                   }
                 ]
               }
@@ -372,7 +382,7 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
+            "kicker": "‎&nbsp;",
             "kickerIcon": "book-open-check",
             "title": "Incorporação patrimonial imobiliária",
             "color": "",
@@ -387,11 +397,12 @@
                 "columns": 2,
                 "card": false,
                 "accent": "var(--petrol-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "vector-square",
                     "title": "<span style=\"font-weight: normal;\">Compreende a </span>identificação e individualização<span style=\"font-weight: normal;\"> dos imóveis incorporados, o </span>cadastramento<span style=\"font-weight: normal;\"> em sistemas corporativos de gestão patrimonial, a </span>vinculação<span style=\"font-weight: normal;\"> às unidades responsáveis por sua administração e, quando cabível, a realização dos </span>atos registrais<span style=\"font-weight: normal;\"> necessários perante os Cartórios de Registro de Imóveis.</span>",
-                    "text": "<p></p><p></p>"
+                    "text": ""
                   },
                   {
                     "icon": "clipboard-list",
@@ -415,7 +426,7 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
+            "kicker": "‎&nbsp;",
             "kickerIcon": "book-check",
             "title": "Regularização patrimonial",
             "color": "",
@@ -430,6 +441,7 @@
                 "columns": 2,
                 "card": false,
                 "accent": "var(--petrol-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "layout-list",
@@ -538,7 +550,7 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
+            "kicker": "‎&nbsp;",
             "kickerIcon": "piggy-bank",
             "title": "Avaliação patrimonial imobiliária",
             "color": "",
@@ -553,16 +565,17 @@
                 "columns": 2,
                 "card": false,
                 "accent": "var(--ochre-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "chart-line",
                     "title": "<span style=\"font-weight: normal;\">A avaliação permite estimar o </span>valor de mercado<span style=\"font-weight: normal;\">, o </span>valor patrimonial<span style=\"font-weight: normal;\">, o </span>valor locativo<span style=\"font-weight: normal;\"> ou outros referenciais técnicos necessários à atuação do Estado. Para isso, utiliza </span>metodologias reconhecidas<span style=\"font-weight: normal;\">, normas técnicas e critérios compatíveis com as características de cada imóvel e com a finalidade da avaliação. O processo envolve <mark>levantamento de informações, análise documental, vistoria, pesquisa de mercado, tratamento de dados e elaboração de pareceres ou laudos técnicos</mark>.</span>",
-                    "text": "<p></p><p></p>"
+                    "text": ""
                   },
                   {
                     "icon": "notebook-pen",
                     "title": "<span style=\"font-weight: normal;\">Além de </span>subsidiar decisões<span style=\"font-weight: normal;\"> patrimoniais, a avaliação contribui para </span>ampliar a transparência<span style=\"font-weight: normal;\"> sobre o patrimônio público e apoiar a gestão baseada em evidências. Em um contexto de crescente valorização da governança patrimonial, conhecer o valor dos imóveis públicos tornou-se requisito importante para o </span>planejamento<span style=\"font-weight: normal;\">, a </span>racionalização<span style=\"font-weight: normal;\"> do uso dos ativos e a</span> geração de valor<span style=\"font-weight: normal;\"> público.</span>",
-                    "text": "<p></p><p></p>"
+                    "text": ""
                   }
                 ]
               }
@@ -574,7 +587,7 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
+            "kicker": "‎&nbsp;",
             "kickerIcon": "calculator",
             "title": "Contabilidade patrimonial imobiliária",
             "color": "",
@@ -589,16 +602,17 @@
                 "columns": 2,
                 "card": false,
                 "accent": "var(--ochre-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "file-digit",
                     "title": "<p><span style=\"font-weight: 400;\">Envolve o </span>registro da incorporação de imóveis, a atualização de valores patrimoniais, a contabilização de aquisições, alienações, transferências e baixas patrimoniais<span style=\"font-weight: 400;\">, bem como a </span>aplicação das normas de contabilidade pública<span style=\"font-weight: 400;\"> relacionadas aos bens imóveis. Também inclui procedimentos de conciliação entre informações contábeis, cadastrais e registrais, <mark>contribuindo para a qualidade e confiabilidade das informações patrimoniais</mark>.</span></p><p></p>",
-                    "text": "<p></p><p></p>"
+                    "text": ""
                   },
                   {
                     "icon": "book-open",
                     "title": "<span style=\"font-weight: 400;\">A contabilidade patrimonial desempenha</span> papel estratégico na governança pública<span style=\"font-weight: 400;\"> ao permitir que gestores, órgãos de controle e sociedade conheçam <mark>a dimensão e a evolução do patrimônio imobiliário sob responsabilidade do Estado</mark>. Além disso, fornece informações fundamentais para planejamento, prestação de contas, transparência e avaliação da sustentabilidade patrimonial das instituições públicas.</span>",
-                    "text": "<p></p><p></p>"
+                    "text": ""
                   }
                 ]
               }
@@ -800,7 +814,7 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
+            "kicker": "‎&nbsp;",
             "kickerIcon": "sheet",
             "title": "Gestão de receitas patrimoniais imobiliárias",
             "color": "",
@@ -814,7 +828,7 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
+            "kicker": "‎&nbsp;",
             "kickerIcon": "chart-area",
             "title": "Gestão econômica de ativos imobiliários",
             "color": "",
@@ -854,8 +868,8 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
-            "kickerIcon": "search",
+            "kicker": "‎&nbsp;",
+            "kickerIcon": "file-pen",
             "title": "Fiscalização patrimonial imobiliária",
             "color": "",
             "bg": "var(--ochre-50)",
@@ -869,6 +883,7 @@
                 "columns": 2,
                 "card": false,
                 "accent": "var(--terra-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "map-pin",
@@ -897,8 +912,8 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
-            "kickerIcon": "search",
+            "kicker": "‎&nbsp;",
+            "kickerIcon": "file-cog",
             "title": "Controle e manutenção imobiliária",
             "color": "",
             "bg": "var(--ochre-50)",
@@ -912,6 +927,7 @@
                 "columns": 2,
                 "card": false,
                 "accent": "var(--terra-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "building",
@@ -940,8 +956,8 @@
           "type": "panel",
           "props": {
             "variant": "box",
-            "kicker": " ",
-            "kickerIcon": "search",
+            "kicker": "‎&nbsp;",
+            "kickerIcon": "file-badge",
             "title": "Gestão de contratos e atos de destinação imobiliária",
             "color": "",
             "bg": "var(--ochre-50)",
@@ -955,6 +971,7 @@
                 "columns": 2,
                 "card": false,
                 "accent": "var(--terra-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "calendar-1",
@@ -1079,7 +1096,7 @@
       "type": "section",
       "props": {
         "width": "content",
-        "surface": "warm",
+        "surface": "page",
         "pad": "lg"
       },
       "children": [
@@ -1095,23 +1112,250 @@
           "id": "cue86fyc",
           "type": "prose",
           "props": {
-            "html": "<p>MATEIRAL INCOMPLETO</p>"
+            "html": "<p>Todas as funções da gestão patrimonial imobiliária dependem da existência de informações confiáveis, atualizadas e acessíveis. Caracterizar um imóvel, incorporá-lo ao patrimônio público, avaliá-lo, destiná-lo, fiscalizar sua utilização ou proteger seus direitos exige informações produzidas ao longo de todo o seu ciclo de vida.&nbsp;</p><p>A <b>gestão da informação, dados e conhecimento patrimonial </b>reúne o conjunto de atividades destinadas à produção, organização, integração, preservação e disponibilização das informações relacionadas ao patrimônio imobiliário público. Trata-se de uma função transversal, que apoia todas as demais funções de gestão patrimonial e fornece a base informacional necessária à tomada de decisões.&nbsp;</p>"
+          }
+        },
+        {
+          "id": "bqz9ue6p",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "muito mais do que manter cadastros atualizados"
+          }
+        },
+        {
+          "id": "b9dsicdx",
+          "type": "prose",
+          "props": {
+            "html": "<p>Essa macrofunção inclui:</p>"
+          }
+        },
+        {
+          "id": "bek93e3p",
+          "type": "feature",
+          "props": {
+            "columns": 3,
+            "card": false,
+            "accent": "var(--slate-600)",
+            "layout": "side",
+            "items": [
+              {
+                "icon": "map",
+                "title": "<span style=\"font-weight: normal;\">Produção de dados territoriais</span>",
+                "text": ""
+              },
+              {
+                "icon": "chevrons-left-right-ellipsis",
+                "title": "<span style=\"font-weight: normal;\">Integração entre sistemas corporativos</span>",
+                "text": ""
+              },
+              {
+                "icon": "files",
+                "title": "<span style=\"font-weight: normal;\">Organização de documentos técnicos</span>",
+                "text": ""
+              },
+              {
+                "icon": "map-pin-check",
+                "title": "<span style=\"font-weight: normal;\">Gestão da informação geoespacial</span>",
+                "text": ""
+              },
+              {
+                "icon": "book-open-check",
+                "title": "<span style=\"font-weight: normal;\">Preservação da memória institucional</span>",
+                "text": ""
+              },
+              {
+                "icon": "message-square-share",
+                "title": "<span style=\"font-weight: normal;\">Compartilhamento do conhecimento produzido</span>",
+                "text": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_msqpuyvs_o290",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Em um contexto de transformação digital, essa função tornou-se elemento estruturante da gestão patrimonial moderna. A integração entre cadastros, registros, bases cartográficas, sistemas corporativos e ferramentas analíticas amplia a capacidade do Estado de conhecer seu patrimônio, reduzir inconsistências, apoiar políticas públicas e produzir decisões baseadas em evidências.&nbsp;&nbsp;</span></p>"
+          }
+        },
+        {
+          "id": "b5zvaqqq",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "‎&nbsp;",
+            "kickerIcon": "braces",
+            "title": "Gestão de dados patrimoniais&nbsp;",
+            "color": "",
+            "bg": "var(--slate-100)",
+            "body": "<p>A gestão de dados patrimoniais compreende as atividades destinadas à produção, organização, atualização, integração e disponibilização dos dados relacionados aos imóveis públicos. Seu objetivo é assegurar que as informações utilizadas pela Administração Pública sejam consistentes, confiáveis e adequadamente estruturadas para apoiar a gestão patrimonial.&nbsp;</p><p>Essa função envolve a <b>definição</b> de padrões de dados, o <b>tratamento</b> de inconsistências cadastrais, a <b>integração</b> entre diferentes bases de informação, a <b>manutenção</b> de cadastros corporativos e a <b>interoperabilidade</b> entre sistemas. Também inclui atividades relacionadas à <b>governança</b> de dados, à <b>qualidade da informação</b> e à <b>padronização</b> de atributos utilizados na representação dos imóveis públicos.&nbsp;</p>"
+          },
+          "children": [
+            {
+              "id": "bnnoj8n4",
+              "type": "markerlist",
+              "props": {
+                "variant": "icon",
+                "icon": "badge-check",
+                "accent": "var(--ochre-600)",
+                "items": [
+                  {
+                    "title": "<br>",
+                    "text": "Ao garantir dados íntegros e interoperáveis, essa função reduz retrabalho, melhora a confiabilidade das informações patrimoniais e fortalece a atuação integrada entre diferentes órgãos e instituições.&nbsp;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_msqqdvy5_rxud",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "‎&nbsp;",
+            "kickerIcon": "satellite",
+            "title": "Gestão da informação geoespacial&nbsp;",
+            "color": "",
+            "bg": "var(--slate-100)",
+            "body": "<p>Grande parte das informações patrimoniais possui dimensão territorial. Por essa razão, a gestão patrimonial depende da produção e utilização de informações geoespaciais capazes de representar a localização, os limites, as características físicas e a relação dos imóveis com o território.&nbsp;</p><p>Essa função reúne atividades relacionadas à <b>produção</b> cartográfica, <b>georreferenciamento</b>, <b>manutenção</b> de bases geoespaciais, <b>integração</b> de imagens de satélite, fotografias aéreas, modelos digitais do terreno e demais informações espaciais utilizadas pela gestão patrimonial.&nbsp;</p>"
+          },
+          "children": [
+            {
+              "id": "b_msqqdvy5_oms9",
+              "type": "markerlist",
+              "props": {
+                "variant": "icon",
+                "icon": "badge-check",
+                "accent": "var(--ochre-600)",
+                "items": [
+                  {
+                    "title": "<br>",
+                    "text": "A utilização integrada dessas informações permite identificar sobreposições, acompanhar alterações territoriais, apoiar fiscalizações, subsidiar avaliações, aperfeiçoar processos de caracterização e fortalecer o planejamento territorial.&nbsp;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_msqqfrj6_0ev6",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "‎&nbsp;",
+            "kickerIcon": "book-search",
+            "title": "Gestão documental e do conhecimento patrimonial",
+            "color": "",
+            "bg": "var(--slate-100)",
+            "body": "<p>A gestão patrimonial produz grande quantidade de documentos técnicos, jurídicos e administrativos ao longo do ciclo de vida dos imóveis públicos. Plantas, memoriais descritivos, matrículas, pareceres, laudos, contratos, processos administrativos, fotografias, mapas e estudos técnicos constituem parte do patrimônio informacional necessário à atuação do Estado.&nbsp;</p><p>Essa função reúne as atividades destinadas à <b>organização</b>, <b>preservação</b>, <b>recuperação</b>, <b>compartilhamento</b> e <b>reutilização</b> dessas informações, transformando documentos dispersos em conhecimento institucional.&nbsp;</p><p>Além da gestão documental, essa função compreende iniciativas voltadas à sistematização de boas práticas, produção de referenciais técnicos, taxonomias, bases de conhecimento, capacitação e mecanismos que favoreçam o compartilhamento da experiência acumulada pelas instituições responsáveis pela gestão patrimonial.&nbsp;</p>"
+          },
+          "children": [
+            {
+              "id": "b_msqqfrj6_03vp",
+              "type": "markerlist",
+              "props": {
+                "variant": "icon",
+                "icon": "badge-check",
+                "accent": "var(--ochre-600)",
+                "items": [
+                  {
+                    "title": "<br>",
+                    "text": "Ao preservar o conhecimento institucional, reduz-se a perda de informações decorrente da rotatividade de servidores, fortalece-se a aprendizagem organizacional e amplia-se a capacidade do Estado de aperfeiçoar continuamente sua atuação.&nbsp;"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "be0h6un7",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "warning",
+            "icon": "badge-alert",
+            "title": "Informação também é patrimônio",
+            "heading": "",
+            "children": "<p>Assim como os imóveis precisam ser protegidos, as informações produzidas sobre eles também constituem ativos estratégicos da Administração Pública. Informações incompletas, desatualizadas ou inconsistentes comprometem decisões, aumentam riscos jurídicos e dificultam a implementação de políticas públicas. Por essa razão, a gestão da informação passou a ser reconhecida como uma função essencial da gestão patrimonial contemporânea.&nbsp;</p>"
+          }
+        },
+        {
+          "id": "b5jnguug",
+          "type": "kicker",
+          "props": {
+            "icon": "text-initial",
+            "children": "Glossário das principais funções"
+          }
+        },
+        {
+          "id": "bthothm9",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Gestão da informação, dados e conhecimento patrimonial&nbsp;",
+                "content": "<p>Função de gestão patrimonial imobiliária que compreende o conjunto de atividades destinadas à produção, organização, integração, preservação, governança e disponibilização de dados, documentos, informações geoespaciais e conhecimento institucional relacionados ao patrimônio imobiliário público, apoiando todas as demais funções da gestão patrimonial.&nbsp;</p>"
+              },
+              {
+                "title": "Gestão de dados patrimoniais&nbsp;",
+                "content": "Subfunção responsável pela produção, organização, padronização, integração, atualização e governança dos dados relativos aos imóveis públicos, assegurando qualidade, interoperabilidade e confiabilidade das informações utilizadas pela Administração Pública.&nbsp;",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Gestão da informação geoespacial&nbsp;",
+                "content": "Subfunção que reúne atividades relacionadas à produção, organização e utilização de informações cartográficas e geográficas aplicadas à gestão patrimonial, incluindo georreferenciamento, bases cartográficas, sensoriamento remoto e sistemas de informação geográfica.&nbsp;",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Gestão documental patrimonial&nbsp;",
+                "content": "Subfunção destinada à organização, preservação, classificação, recuperação e disponibilização da documentação técnica, jurídica e administrativa produzida ao longo do ciclo de vida dos imóveis públicos, assegurando rastreabilidade, autenticidade e preservação da memória institucional.&nbsp;",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Gestão do conhecimento patrimonial&nbsp;",
+                "content": "Subfunção que compreende as atividades voltadas à identificação, sistematização, compartilhamento, preservação e disseminação do conhecimento produzido na gestão patrimonial imobiliária, incluindo boas práticas, taxonomias, referenciais técnicos, bases de conhecimento, capacitação e mecanismos de aprendizagem organizacional.&nbsp;",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
           }
         }
       ]
     },
     {
-      "id": "bt2iyc6f",
+      "id": "btse31ee",
       "type": "pagefooter",
       "props": {
-        "code": "Unidade · Tema",
+        "code": "funções, conexões e ciclo de vida dos imóveis públicos [M151]",
         "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
           {
-            "role": "Produção",
-            "name": "—"
+            "role": "Conteúdo",
+            "name": "Claudson Moreira"
+          },
+          {
+            "role": "Revisão",
+            "name": "Ana Tulia de Macedo"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
           }
         ]
       }
