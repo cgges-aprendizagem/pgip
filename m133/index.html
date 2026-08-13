@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M133 - A gestão dos imóveis públicos no Brasil ao longo do tempo</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"bmklu5oq__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bmklu5oq__slot.png"},"bh7vbniq__slot":{"s":1,"x":0,"y":-9.888927779157143,"u":"assets/images/img-1-bh7vbniq__slot.jpg"},"bl1dj48s__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bl1dj48s__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M133 - A gestão dos imóveis públicos no Brasil ao longo do tempo","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"ca42rmyw","text":"Onde começa a gestão do patrimônio da União?","hidden":false},{"id":"cz42pocd","text":"Da República à criação da Diretoria do Patrimônio Nacional","hidden":false}]}},"blocks":[{"id":"b6fz11gy","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"bl1dj48s","type":"hero","props":{"kicker":"Governança e regulação da propriedade pública no Brasil","kickerIcon":"podcast","title":"A gestão dos imóveis públicos no Brasil ao longo do tempo","byline":"a experiência da União","slot":"bl1dj48s__slot"}},{"id":"b64r4n1i","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cd27slt0","type":"prose","props":{"html":"\u003cp>A gestão de imóveis públicos que conhecemos hoje é resultado de um longo processo de construção institucional. As competências, estruturas administrativas e instrumentos utilizados pelo Estado para identificar, administrar, destinar, arrecadar e proteger seu patrimônio foram sendo constituídos e transformados ao longo da própria formação do Estado brasileiro.\u003c/p>\u003cp>Mais do que acompanhar uma sucessão de órgãos e mudanças de denominação, o objetivo deste material é perceber o que mudou e o que permaneceu na gestão patrimonial ao longo do tempo. Essa perspectiva ajuda a compreender por que muitas das funções, categorias jurídicas e questões enfrentadas atualmente pelos gestores de imóveis públicos possuem raízes históricas.\u003c/p>"}},{"id":"bd8lck1d","type":"callout","props":{"variant":"ear","tone":"info","icon":"landmark","title":"","heading":"","children":"\u003cp>A experiência da União é utilizada como referência histórica para observar como a administração pública estrutura competências e responsabilidades para gerir seu patrimônio imobiliário. Uma questão que, com diferentes arranjos institucionais e jurídicos, também se coloca para estados e municípios.\u003c/p>","color":""}},{"id":"b_msqtp8mx_62an","type":"callout","props":{"variant":"header","tone":"warning","icon":"book-open-text","title":"material adaptado para fins didáticos","heading":"","children":"\u003cp>Este material didático foi elaborado a partir da dissertação de mestrado de \u003cb>Felipe Augusto Xavier\u003c/b>, intitulada “\u003ca href=\"http://repositorio2.unb.br/handle/10482/37992\">As mudanças de paradigma na gestão do patrimônio da União: Uma análise crítica sobre a Secretaria de Coordenação e Governança do Patrimônio da União\u003c/a>”. O conteúdo original foi adaptado pelo autor para fins educacionais, preservando as principais análises, informações e referências da pesquisa.\u003c/p>","color":""}}]},{"id":"blkyk0mf","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"ca42rmyw","type":"titulo","props":{"text":"Onde começa a gestão do patrimônio da União?","level":"h2","__pullDown":false}},{"id":"bc2v0n54","type":"prose","props":{"html":"\u003cp>\u003ci>A trajetória apresentada aqui é específica da administração federal, mas ajuda a observar uma questão mais ampla, que interessa a qualquer gestor público: como o Estado organiza instituições e distribui competências para conhecer, administrar e proteger seus bens.\u003c/i>\u003c/p>","__pullUp":false}},{"id":"b9vo7arc","type":"kicker","props":{"icon":"compass","children":"voltemos ao início do século XIX"}},{"id":"c46ounlj","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O Brasil foi colônia portuguesa até o início do século XIX e herdou de seu colonizador parte do modelo de gestão patrimonial que ainda vigora no país. Os livros de história explicam muito bem o processo de formação das terras privadas, a partir das concessões de sesmarias, mas pouco, ou quase nada, tratam da formação da propriedade pública nacional.\u003c/span>\u003c/p>\u003cp>Para compreender como se organizou a gestão desse patrimônio, é preciso voltar a 1808. Com a transferência da Corte portuguesa para o Brasil, estruturas administrativas responsáveis por diferentes aspectos da gestão das terras, dos bens e das rendas da Coroa passaram a funcionar no território brasileiro. A distinção entre essas competências é importante para acompanhar a trajetória que levaria, mais tarde, à estrutura específica de gestão dos bens da União.\u003c/p>"}},{"id":"bh7vbniq","type":"bleedimage","props":{"slot":"bh7vbniq__slot","src":"","zoom":false,"fit":"cover","heightPreset":"wide","title":"\u003cbr>","caption":"\u003cbr>","credit":"\u003ca href=\"https://artsandculture.google.com/story/viagem-ao-novo-mundo-a-corte-portuguesa-no-brasil-national-coach-museum/5AXRumB0octrLg?hl=pt-BR\">Embarque da Família Real para o Brasil\u003c/a> |&nbsp;\u003ca href=\"https://artsandculture.google.com/asset/embarque-da-fam%C3%ADlia-real-para-o-brasil-nicolas-luis-albert-delerive-atrib/0gF4_hGkg5YcEQ?hl=pt-BR\">Nicolas-Luis-Albert Delerive (atrib.) - Século XIX\u003c/a>","captionMode":"below","overlayBg":"rgba(14,46,43,.72)"}},{"id":"b_msquxer1_nbep","type":"kicker","props":{"icon":"hourglass","children":"1808"}},{"id":"bbf4yrq9","type":"titulo","props":{"text":"Duas estruturas, diferentes responsabilidades","level":"h3"}},{"id":"b4yonzcl","type":"prose","props":{"html":"\u003cp>Quando a Coroa portuguesa veio para o Brasil, toda a estrutura administrativa do estamento português foi transferida para o Rio de Janeiro. Um de seus primeiros atos, mais precisamente em 22 de abril de 1808, foi a criação do \u003cb>Tribunal do Desembargo do Paço\u003c/b>, órgão responsável por decidir sobre negócios relacionados à \u003cmark data-hl=\"petrol\">distribuição de sesmarias\u003c/mark>.\u003c/p>\u003cp>Poucos meses depois, em 28 de junho de 1808, também foi criado o \u003cb>Erário Régio\u003c/b>, ou \u003cb>Tesouro Real\u003c/b>, órgão encarregado da escrituração, contabilidade, cobrança e fiscalização das rendas reais. Entre essas rendas estavam aquelas oriundas dos próprios reais, categoria específica de propriedade pública, hoje denominada \u003cb>próprios nacionais\u003c/b>, destinada ao atendimento dos interesses do Estado.\u003c/p>\u003cp>Essa distinção entre as competências institucionais do \u003cb>Tribunal do Desembargo do Paço\u003c/b> e do \u003cb>Tesouro Real\u003c/b>, bem como entre o tipo de propriedade e os instrumentos legais geridos por cada instituição, é muito importante para compreender o desenvolvimento da estrutura organizacional da atual Secretaria do Patrimônio da União.\u003c/p>\u003cp>Em outras palavras, desde esse momento é possível identificar funções relacionadas à terra e ao patrimônio distribuídas entre estruturas distintas da Administração. Essa diferenciação se tornaria ainda mais evidente ao longo do século XIX.\u003c/p>"}},{"id":"bt9lc097","type":"callout","props":{"variant":"ear","tone":"info","icon":"badge-alert","title":"","heading":"","children":"\u003cp>Neste momento da história, a gestão patrimonial ainda não aparece como uma função administrativa especializada nos moldes atuais. Bens, rendas e outras funções fazendárias estavam inseridos em estruturas administrativas mais abrangentes. A especialização dessas competências ocorrerá progressivamente ao longo do período estudado.\u003c/p>","color":""}},{"id":"b0lrq2xw","type":"kicker","props":{"icon":"hourglass","children":"1831"}},{"id":"bplirult","type":"titulo","props":{"text":"Do Tesouro Real ao Tesouro Público Nacional","level":"h3"}},{"id":"blmhu4mz","type":"prose","props":{"html":"\u003cp>Com a \u003cmark data-hl=\"terra\">Independência e a organização do Estado brasileiro\u003c/mark>, essas estruturas também foram transformadas. Para a trajetória da gestão patrimonial, um marco importante ocorreu em 1831.\u003c/p>\u003cp>No que se refere à administração dos próprios nacionais e dos bens de uso especial, os arquivos do projeto Memória da Administração Pública Brasileira mostram que, em 1831, o Tesouro Real passou a se chamar \u003cb>Tesouro Público Nacional\u003c/b>, mantendo a competência pela arrecadação, distribuição e contabilidade de todas as rendas públicas. A reforma daquele ano também incluiu expressamente entre as competências do Tesouro “\u003cmark data-hl=\"green\">a administração de todos os bens próprios da nação\u003c/mark>”, desde que não estivessem, por lei, a cargo de outra repartição pública.\u003c/p>\u003cp>A administração dos bens públicos aparecia, portanto, vinculada à estrutura fazendária do Estado, juntamente com funções relacionadas às receitas e à contabilidade pública.\u003c/p>"}},{"id":"b_msquzdae_dak2","type":"kicker","props":{"icon":"hourglass","children":"1850"}},{"id":"b1e1l9yv","type":"titulo","props":{"text":"Duas trajetórias que não devem ser confundidas&nbsp;","level":"h3"}},{"id":"blk6mszi","type":"prose","props":{"html":"\u003cp>A diferenciação entre essas estruturas fica ainda mais clara em 1850, ano marcado tanto pela \u003cb>Lei de Terras\u003c/b> quanto por mudanças na organização responsável pela gestão do patrimônio nacional.\u003c/p>\u003cp>A partir do Tribunal do Desembargo do Paço surgiu a \u003cb>Repartição Geral de Terras Públicas\u003c/b>, posteriormente transformada na 3ª Diretoria, de Terras Públicas e Colonização, vinculada à Secretaria de Estado dos Negócios da Agricultura, Comércio e Obras Públicas, conforme registrado no Caderno nº 4 do projeto Memória da Administração Pública Brasileira – MAPA:\u003c/p>"}},{"id":"ban8umdo","type":"columns","props":{"count":2,"ratio":"last-wide","gap":"md"},"children":[{"id":"b4aa6c0a","type":"kicker","props":{"icon":"quote","children":"‎&nbsp;"}},{"id":"b_msqqgbor_uxqh","type":"prose","props":{"html":"\u003cp>\u003ci>\u003cspan data-font=\"serif\">Um caso emblemático é o da 3ª Diretoria, de Terras Públicas e Colonização, que fez parte da estrutura administrativa da Secretaria de Estado dos Negócios da Agricultura, Comércio e Obras Públicas desde seu primeiro regulamento em 1861. Na planilha desse órgão o leitor verá que sua data de criação remete a 1850, ou seja, antes da criação da própria secretaria. Isso acontece porque as atribuições da secretaria são essencialmente as mesmas que as da Repartição Geral de Terras Públicas, esta sim criada em 1850 e, até então, subordinada à Secretaria de Estado dos Negócios do Império. Dessa forma, a criação da nova secretaria em 1860 marcou apenas uma alteração de nome de um órgão já existente, bem como a alteração do seu superior hierárquico.\u003c/span>\u003c/i>\u003c/p>"}}]},{"id":"b_msqq3fe5_zjum","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A Repartição Geral de Terras Públicas, muitas vezes apontada como órgão embrionário da SPU, era responsável pela medição das terras devolutas, pela legitimação das posses e pelos serviços de colonização criados para atrair imigrantes. Após sucessivas reestruturações organizacionais, essas competências foram incorporadas ao Instituto Nacional de Colonização e Reforma Agrária – INCRA.\u003c/span>\u003c/p>\u003cp>Em 1850, o Tesouro Nacional passou por nova reforma, com a criação da \u003cb>Diretoria Geral das Rendas Públicas\u003c/b>. Essa Diretoria passou a prever, além da administração dos próprios nacionais, competências para cadastrar e fiscalizar esses imóveis. Ou seja, no mesmo ano em que foi editada a Lei de Terras, o Tesouro Nacional também foi reformado e incorporou novas atribuições relacionadas à gestão do patrimônio nacional.\u003c/p>"}},{"id":"bmklu5oq","type":"figure","props":{"slot":"bmklu5oq__slot","src":"","fit":"contain","size":"full","title":"1850 - duas estruturas com objetos diferentes","caption":"","credit":""}},{"id":"b2s45t6j","type":"compareab","props":{"a":{"label":"Repartição Geral de Terras Públicas","icon":"map","title":"\u003cspan style=\"font-weight: normal;\">Atuava sobre as terras devolutas, a legitimação de posses e a colonização.\u003c/span>","content":""},"b":{"label":"Diretoria Geral das Rendas Públicas","icon":"circle-dollar-sign","title":"\u003cspan style=\"font-weight: normal;\">No âmbito do Tesouro Nacional, administrava os próprios nacionais e passou a exercer também funções de cadastro e fiscalização desses imóveis.\u003c/span>","content":""}}}]},{"id":"bb3el7ef","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cz42pocd","type":"titulo","props":{"text":"Da República à criação da Diretoria do Patrimônio Nacional","level":"h2"}},{"id":"cs3f944h","type":"prose","props":{"html":"\u003cp>Entre a reforma do Tesouro de 1850 e a criação da Diretoria do Patrimônio Nacional, em 1909, o Estado brasileiro passou por transformações profundas, especialmente com a passagem do Império para a República. Nesse período, foram também definidos institutos e regras que continuam importantes para compreender a gestão do patrimônio da União.\u003c/p>\u003cp>A base da legislação patrimonial e de seus principais institutos, contudo, remonta ao período imperial, quando foram criados os \u003cb>terrenos de marinha\u003c/b>, em 1831, e os \u003cb>terrenos marginais\u003c/b>, em 1867. Também é desse período a primeira norma que disciplinou a demarcação dos terrenos de marinha e marginais: o Decreto nº 4.105, de 1868.\u003c/p>"}},{"id":"bh0qerft","type":"callout","props":{"variant":"ear","tone":"info","icon":"notebook-pen","title":"","heading":"","children":"\u003cp>\u003cb>Terrenos de marinha\u003c/b> e \u003cb>terrenos marginais\u003c/b> são categorias específicas de bens públicos que você já conheceu ou conhecerá em outros materiais do Programa. Aqui, mais importante do que aprofundar seus conceitos é perceber como sua gestão contribuiu para a especialização das funções relacionadas ao patrimônio da União.\u003c/p>"}},{"id":"bh5prstd","type":"prose","props":{"html":"\u003cp>A reforma mais significativa do Tesouro Nacional, em termos de gestão patrimonial, ocorreu em 1909, quando foi criada, dentro da estrutura organizacional do Estado, uma unidade específica para gerir os bens da União, com detalhamento mais completo de suas competências: a Diretoria do Patrimônio Nacional.\u003c/p>"}},{"id":"be6o0nqm","type":"kicker","props":{"icon":"hourglass","children":"1905"}},{"id":"b8t9i0xi","type":"titulo","props":{"text":"A República e a separação entre terras devolutas e bens da União","level":"h3"}},{"id":"b7gu1968","type":"prose","props":{"html":"\u003cp>Com a passagem do Império para a República, as terras devolutas foram repassadas aos Estados, mas a gestão dos terrenos de marinha e dos terrenos marginais não ficou plenamente resolvida com a Constituição de 1891, o que gerou litígios entre a União e os Estados. \u003c/p>\u003cp>Em 1905, o Supremo Tribunal Federal, seguindo o parecer do Procurador-Geral da República à época, Epitácio Pessoa, decidiu, no julgamento da Ação Originária nº 8, que os terrenos de marinha pertencem à União. O parecer é um relevante documento histórico sobre a diferença entre a gestão dos bens da União e a gestão das terras devolutas:\u003c/p>"}},{"id":"b_msqsk3f2_baqz","type":"columns","props":{"count":2,"ratio":"last-wide","gap":"lg"},"children":[{"id":"b_msqsk3f2_3vi2","type":"kicker","props":{"icon":"quote","children":"‎&nbsp;"}},{"id":"b_msqsk3f2_0qct","type":"prose","props":{"html":"\u003cp>\u003c/p>\u003cspan data-font=\"serif\">\u003cp style=\"font-style: italic;\">Em nosso direito anterior à República, nunca se confundiu terra devoluta com terreno de marinha: tais expressões sempre foram usadas, pela legislação como pelos escritores, para designar coisas inteiramente distintas.\u003c/p>\u003cp style=\"font-style: italic;\">Uma e outra destas espécies de bens faziam parte do domínio nacional, mas era somente isto o que tinham de comum.\u003c/p>\u003cp style=\"font-style: italic;\">Cada uma se regia por legislação à parte, e, ao passo que as terras devolutas podiam ser vendidas e dependiam do Ministério da Agricultura, os terrenos de marinha eram apenas aforáveis e estavam sujeitos ao Ministro da Fazenda.\u003c/p>\u003cp style=\"font-style: italic;\">Das primeiras ocupa-se, entre outras, a Lei nº 601, de 18 de setembro de 1850, que as especifica e enumera no art. 3º; dos segundos tratam numerosos alvarás, leis, instruções, etc., dos quais o principal é o Decreto nº 4.105, de 22 de fevereiro de 1868, que os define no art. 1º, § 1º.\u003c/p>\u003cp style=\"font-style: italic;\">Basta ler essas duas legislações, diversas e independentes entre si, para ver que não é possível confundir terras devolutas com terrenos de marinha.\u003c/p>\u003cp style=\"\">\u003cspan data-fs=\"caption\" style=\"\">\u003cspan data-font=\"mono\" style=\"\">\u003cspan data-color=\"terra\">(PESSOA, Epitácio. Terrenos de Marinha: razões finais. Rio de Janeiro: Imprensa Nacional, 1904, p. 5)\u003c/span>\u003c/span>\u003c/span>\u003c/p>\u003c/span>\u003cp>\u003c/p>"}}]},{"id":"bbtvmymk","type":"kicker","props":{"icon":"hourglass","children":"1909"}},{"id":"b6k9za6b","type":"titulo","props":{"text":"Nasce uma estrutura especializada na gestão dos imóveis da União (1909)","level":"h3"}},{"id":"bvel331q","type":"prose","props":{"html":"\u003cp>Os relatórios de gestão mais antigos do órgão, disponíveis no repositório do Acervo Histórico e Institucional da Secretaria do Patrimônio da União, retratam essa trajetória. \u003c/p>\u003cp>É o caso do relatório do Serviço do Patrimônio da União de 1944:\u003c/p>"}},{"id":"b8ir44vc","type":"columns","props":{"count":2,"ratio":"last-wide","gap":"lg"},"children":[{"id":"b4x5e9t0","type":"kicker","props":{"icon":"quote","children":"‎&nbsp;"}},{"id":"b_msqqi81s_jmjr","type":"prose","props":{"html":"\u003cp>\u003ci>\u003cspan data-font=\"serif\">Os serviços atinentes à administração dos próprios nacionais eram executados, no Tesouro Nacional, pela Diretoria das Rendas Públicas (Decretos ns. 736, de 20-11-1850, art. 16; 1.166, de 17-12-1892, art. 5.º, § 2.º e 2.807, de 31-1-1898, art. 13, § 3.º), até que, pela Lei n. 2.083, de 30 de julho de 1909, foi criada a Diretoria do Patrimônio Nacional [...] A denominação de Diretoria do Patrimônio Nacional foi mantida pela legislação posterior, isto é, pelos Decretos ns. 7.751, de 23-12-1909, e 15.210, de 28-12-1921. Reorganizada pelo Decreto n. 22.250, de 23-12-1932, passou a chamar-se Diretoria do Domínio da União, denominação esta igualmente mantida no Decreto-lei n. 710, de 17-9-1938 e regimentos aprovados pelos Decretos ns. 3.102, de 23-9-1938, e 3.777, de 2-3-1939. Transformou-se, afinal, em Serviço do Patrimônio da União, conforme Decreto-lei n. 6.871, de 15-9-1944, já mencionado.&nbsp;(p. 11-12)\u003c/span>\u003c/i>\u003c/p>"}}]},{"id":"bk8xnhz6","type":"prose","props":{"html":"\u003cp>A criação da Diretoria do Patrimônio Nacional, em 1909, representa um marco importante nessa trajetória: \u003cmark>pela primeira vez, uma unidade administrativa do Ministério da Fazenda passou a ter competências definidas especificamente para a gestão dos imóveis da União\u003c/mark>. \u003c/p>\u003cp>As atribuições até então exercidas pela Diretoria das Rendas Públicas foram ampliadas, reunindo funções relacionadas ao cadastro, à gestão, à fiscalização, à demarcação, à destinação, à arrecadação e à guarda de documentos relativos aos imóveis da União. \u003c/p>"}},{"id":"b_msqqizai_2jl2","type":"callout","props":{"variant":"ear","tone":"attention","icon":"badge-alert","title":"","heading":"","children":"\u003cp>Mais do que uma mudança de nome ou de estrutura administrativa, a criação da \u003cb>Diretoria do Patrimônio Nacional\u003c/b> evidencia a especialização da gestão patrimonial. Funções que apareceram ao longo do século XIX passam a ser reunidas em uma unidade dedicada especificamente aos imóveis da União.\u003c/p>","color":""}},{"id":"bjarq63j","type":"titulo","props":{"text":"Uma estrutura que muda, mas preserva funções patrimoniais","level":"h3"}},{"id":"b73g7ymj","type":"prose","props":{"html":"\u003cp>A consolidação, no ordenamento jurídico, do entendimento de que o órgão patrimonial seria responsável por gerir os terrenos de marinha e os terrenos marginais refletiu-se nos atos de \u003cmark data-hl=\"petrol\">criação e reorganização das unidades responsáveis pela gestão do patrimônio da União\u003c/mark> após a Proclamação da República.&nbsp;\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Essas estruturas organizacionais passaram a responder pelos seguintes macroprocessos: \u003c/span>\u003cmark style=\"text-wrap-mode: initial;\">\u003cb>demarcação\u003c/b> e \u003cb>cadastro\u003c/b>, \u003cb>destinação\u003c/b>, \u003cb>arrecadação\u003c/b> e \u003cb>fiscalização\u003c/b>\u003c/mark>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\"> dos bens imóveis da União.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Tal organização em torno de macroprocessos pode ser observada nas diferentes denominações atribuídas ao órgão responsável pela gestão patrimonial após a instituição da República, sintetizadas na linha do tempo abaixo. Além das principais denominações, você pode observar os ministérios aos quais esteve vinculado e os respectivos atos de criação ou reorganização.\u003c/span>\u003c/p>"}},{"id":"bnonmlii","type":"statblock","props":{"variant":"rule","columns":3,"stats":[{"value":"","unit":"1909","label":"Diretoria do Patrimônio Nacional","description":"\u003cspan style=\"color: inherit;\">Ministério da Fazenda / Tesouro Federal\u003c/span>\u003cbr>\u003cspan style=\"color: inherit;\">Lei nº 2.083, de 30 de julho de 1909\u003c/span>"},{"value":"","unit":"1932","label":"Diretoria do Domínio da União","description":"Ministério da Fazenda\u003cbr>Decreto nº 22.250, de 23 de dezembro de 1932\u003cbr>"},{"value":"","unit":"1944","label":"Serviço do Patrimônio da União&nbsp;","description":"Ministério da Fazenda\u003cbr>Decreto-Lei nº 6.871, de 15 de setembro de 1944\u003cbr>"},{"value":"","unit":"1988","label":"Secretaria do Patrimônio da União&nbsp;","description":"Ministério da Fazenda\u003cbr>Decreto nº 96.911, de 3 de outubro de 1988\u003cbr>"}]}},{"id":"b_msqwfawt_4mo9","type":"statblock","props":{"variant":"rule","columns":3,"stats":[{"value":"","unit":"1998","label":"Secretaria do Patrimônio da União&nbsp;","description":"Ministério do Planejamento e Orçamento\u003cbr>Lei nº 9.649, de 27 de maio de 1998\u003cbr>"},{"value":"","unit":"2017","label":"Secretaria do Patrimônio da União&nbsp;","description":"Ministério do Planejamento, Desenvolvimento e Gestão\u003cbr>Decreto nº 9.035, de 20 de abril de 2017\u003cbr>"},{"value":"","unit":"2019","label":"Secretaria de Coordenação e Governança do Patrimônio da União","description":"Ministério da Economia\u003cbr>Decreto nº 9.745, de 8 de abril de 2019\u003cbr>"},{"value":"","unit":"2023","label":"Secretaria do Patrimônio da União&nbsp;","description":"Ministério da Gestão e da Inovação em Serviços Públicos\u003cbr>Decreto nº 11.345, de 1º de janeiro de 2023\u003cbr>"}]}},{"id":"b9esfltf","type":"prose","props":{"html":"\u003cp>As denominações dos órgãos e os ministérios aos quais se vinculam refletem os contextos sociais, econômicos e políticos de cada época. Mais do que memorizar essas denominações, interessa observar a permanência e a transformação das funções exercidas pelo Estado sobre seus imóveis.&nbsp;&nbsp;\u003c/p>"}},{"id":"bmr3kw1k","type":"callout","props":{"variant":"header","tone":"warning","icon":"lightbulb","title":"Para guardar","heading":"","children":"\u003cp>Ao longo desse período, a gestão dos imóveis da União foi se especializando, até reunir em uma estrutura própria funções como demarcação, cadastro, destinação, arrecadação e fiscalização. Essa trajetória mostra como a gestão patrimonial exige responsabilidades e funções claramente organizadas.\u003c/p>"}}]},{"id":"bq9e6d3j","type":"collapsiblesection","props":{"title":"\u003cspan data-fs=\"h4\">Formação e transformação da gestão do patrimônio da União\u003c/span>","lead":"\u003cp>Entenda por que a história da instituição não deve ser vista apenas como uma sequência de mudanças de nomes, mas como um processo de construção e redefinição da própria ideia de patrimônio público nacional.\u003cbr>\u003cbr>\u003c/p>","triggerLabel":"Veja mais&nbsp;","defaultOpen":false,"width":"content","surface":"terra-dark","pad":"lg"},"children":[{"id":"bbvf799s","type":"timeline","props":{"eras":[{"label":"","period":"","color":"var(--ochre-100)","milestones":[{"date":"Início do século XIX ","title":"O Brasil colônia ","content":"\u003cp>Modelo de gestão patrimonial português\u003c/p>"},{"date":"1808 ","title":"Tribunal do Desembargo do Paço - Erário Régio","content":"\u003cul>\u003cli>22 de abril de 1808, Criação do Tribunal do Desembargo do Paço, responsável, entre outras atribuições, por negócios relacionados à distribuição de sesmarias.\u003c/li>\u003cli>28 de junho de 1808, Criação do Erário Régio (Tesouro Real), responsável pela escrituração, contabilidade, cobrança e fiscalização das rendas reais, incluindo os chamados próprios reais.\u003c/li>\u003c/ul>","linkHref":"","linkLabel":"","linkButton":""},{"date":"1831","title":"Tesouro Público Nacional","content":"O Tesouro Real passa a se chamar Tesouro Público Nacional. A reforma inclui entre suas competências a administração dos bens próprios da nação. Também é apontada como referência para a criação dos terrenos de marinha.","linkHref":"","linkLabel":"","linkButton":""},{"date":"1850 ","title":"Diretoria Geral das Rendas Públicas","content":"\u003cul>\u003cli>Criação da Repartição Geral de Terras Públicas, posteriormente relacionada à estrutura que daria origem à 3ª Diretoria de Terras Públicas e Colonização. No mesmo ano, ocorre a reforma do Tesouro Nacional, com criação da Diretoria Geral das Rendas Públicas. É também o ano da Lei de Terras.\u003c/li>\u003cli>18 de setembro de 1850, Data da Lei nº 601, que tratava das terras devolutas e as especificava no art. 3º.\u003c/li>\u003c/ul>\u003cp>\u003cbr>\u003c/p>","linkHref":"","linkLabel":"","linkButton":""},{"date":"1860 ","title":"Secretaria de Estado dos Negócios da Agricultura, Comércio e Obras Públicas","content":"Criação da Secretaria de Estado dos Negócios da Agricultura, Comércio e Obras Públicas, que assumiu atribuições anteriormente vinculadas à Repartição Geral de Terras Públicas.","linkHref":"","linkLabel":"","linkButton":""},{"date":"1909","title":"Diretoria do Patrimônio Nacional","content":"\u003cul>\u003cli>30 de julho de 1909, Lei nº 2.083 cria a Diretoria do Patrimônio Nacional, unidade específica para gerir os bens da União.\u003c/li>\u003cli>23 de dezembro de 1909, Decreto nº 7.751 mantém a denominação Diretoria do Patrimônio Nacional.\u003c/li>\u003c/ul>","linkHref":"","linkLabel":"","linkButton":""},{"date":"1932 ","title":"Diretoria do Domínio da União","content":"23 de dezembro de 1932, Decreto nº 22.250 reorganiza a Diretoria do Patrimônio Nacional, que passa a se chamar Diretoria do Domínio da União.","linkHref":"","linkLabel":"","linkButton":""},{"date":"1944 ","title":"Serviço do Patrimônio da União","content":"15 de setembro de 1944, Decreto-Lei nº 6.871 transforma a Diretoria do Domínio da União no Serviço do Patrimônio da União (SPU). \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É produzido o relatório do Serviço do Patrimônio da União, utilizado no texto como documento histórico para reconstruir a trajetória institucional.\u003c/span>","linkHref":"","linkLabel":"","linkButton":""},{"date":"1988","title":"Secretaria do Patrimônio da União","content":"3 de outubro de 1988, Decreto nº 96.911 — a instituição passa a ser denominada Secretaria do Patrimônio da União, vinculada ao Ministério da Fazenda.","linkHref":"","linkLabel":"","linkButton":""},{"date":"1998","title":"SPU / Ministério do Planejamento e Orçamento","content":"27 de maio de 1998, Lei nº 9.649 — a Secretaria do Patrimônio da União passa a estar vinculada ao Ministério do Planejamento e Orçamento.","linkHref":"","linkLabel":"","linkButton":""},{"date":"2017","title":"SPU / Ministério do Planejamento, Desenvolvimento e Gestão","content":"20 de abril de 2017, Decreto nº 9.035 — a Secretaria do Patrimônio da União passa a estar vinculada ao Ministério do Planejamento, Desenvolvimento e Gestão.","linkHref":"","linkLabel":"","linkButton":""},{"date":"2019","title":"Secretaria de Coordenação e Governança do Patrimônio da União","content":"8 de abril de 2019, Decreto nº 9.745 — a instituição passa a se chamar Secretaria de Coordenação e Governança do Patrimônio da União, vinculada ao Ministério da Economia.","linkHref":"","linkLabel":"","linkButton":""},{"date":"2023","title":"Secretaria do Patrimônio da União","content":"1º de janeiro de 2023, Decreto nº 11.345 — a instituição volta à denominação Secretaria do Patrimônio da União, vinculada ao Ministério da Gestão e da Inovação em Serviços Públicos.","linkHref":"","linkLabel":"","linkButton":""}]}]}},{"id":"bqo1t04f","type":"kicker","props":{"icon":"compass","children":"Resumindo"}},{"id":"bdt8r7df","type":"prose","props":{"html":"\u003cp>O que a linha do tempo sobre a formação e transformação da gestão do patrimônio da União tem a nos dizer?\u003c/p>"}},{"id":"brk5yz0d","type":"accordion","props":{"numbered":true,"items":[{"title":"A gestão patrimonial brasileira tem raízes muito anteriores à criação da SPU","content":"\u003cp> A atual Secretaria do Patrimônio da União não surgiu de forma isolada. Sua trajetória institucional remonta à estrutura administrativa transferida de Portugal para o Brasil em 1808, especialmente ao Erário Régio e, posteriormente, ao Tesouro Público Nacional.\u003c/p>"},{"title":"Houve forte continuidade institucional apesar das mudanças políticas","content":"O Brasil passou da condição de colônia para Império e, depois, República, mas determinadas funções relacionadas à administração dos bens públicos permaneceram. Isso mostra que mudanças de regime político não significaram necessariamente ruptura na gestão patrimonial.","linkHref":"","linkLabel":"","linkButton":""},{"title":"As mudanças de estrutura acompanharam a ampliação e a especialização das funções do Estado","content":"Ao longo do tempo, a administração passou de uma atuação mais geral sobre as rendas e bens públicos para estruturas cada vez mais específicas, culminando na criação da Diretoria do Patrimônio Nacional, em 1909.","linkHref":"","linkLabel":"","linkButton":""},{"title":"A definição jurídica do que pertence à União foi um processo gradual","content":"A distinção entre terras devolutas, terrenos de marinha, terrenos marginais e próprios nacionais foi fundamental. O texto mostra que não se tratava de categorias equivalentes e que suas formas de administração eram diferentes.","linkHref":"","linkLabel":"","linkButton":""},{"title":"A disputa sobre os terrenos de marinha demonstra que patrimônio público também é uma questão de poder estatal","content":"A decisão do STF em 1905, reconhecendo a titularidade da União sobre os terrenos de marinha, evidencia que a definição do patrimônio nacional envolveu conflitos entre diferentes níveis de governo e precisou ser consolidada juridicamente.","linkHref":"","linkLabel":"","linkButton":""},{"title":"As mudanças de nome não significaram necessariamente mudanças completas de função","content":"A sequência Diretoria do Patrimônio Nacional → Diretoria do Domínio da União → Serviço do Patrimônio da União → Secretaria do Patrimônio da União revela sucessivas reorganizações. Apesar disso, algumas funções essenciais permaneceram, especialmente demarcação, cadastro, destinação, arrecadação e fiscalização.","linkHref":"","linkLabel":"","linkButton":""},{"title":"A mudança do ministério de vinculação acompanha diferentes momentos da organização do Estado","content":"O órgão esteve ligado a diferentes ministérios ao longo do tempo. Isso sugere que a gestão patrimonial foi sendo reposicionada conforme as prioridades e estruturas administrativas de cada período.","linkHref":"","linkLabel":"","linkButton":""},{"title":"Existe uma tensão entre continuidade e mudança","content":"Talvez essa seja a principal conclusão do texto: a instituição muda constantemente em sua estrutura, denominação e vinculação, mas mantém uma continuidade histórica em torno da administração dos bens da União.","linkHref":"","linkLabel":"","linkButton":""},{"title":"A história institucional ajuda a compreender a instituição atual","content":"Conhecer essa trajetória permite perceber que as atribuições atuais da SPU são resultado de um processo histórico de acumulação, transferência e redefinição de competências, e não de uma criação recente.","linkHref":"","linkLabel":"","linkButton":""}]}}]},{"id":"btc4llxl","type":"conclusion","props":{"kicker":"Conclusões","kickerIcon":"check","title":"O que essa trajetória nos ajuda a compreender?","body":"\u003cp>A linha do tempo revela um processo de reorganização contínua da gestão do patrimônio imobiliário da União, sem ruptura completa com as funções historicamente exercidas. Ao longo desse percurso, estruturas administrativas, denominações dos órgãos e vinculações ministeriais foram alteradas para acompanhar as transformações políticas, jurídicas e administrativas do Estado brasileiro. Nesse tempo, a gestão patrimonial se especializou e incorporou atribuições centrais, como demarcação, cadastro, destinação, arrecadação e fiscalização.\u003c/p>\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Os documentos históricos mostram ainda que, desde a transformação do Tesouro Real em Tesouro Nacional, em 1831, e suas reorganizações posteriores, uma das principais funções da gestão patrimonial foi a arrecadação de rendas fundiárias por meio do aforamento e da ocupação, aplicados principalmente aos terrenos de marinha e aos terrenos marginais.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Essa trajetória mostra que a forma como o Poder Público organiza a gestão de seus imóveis resulta de escolhas institucionais construídas ao longo do tempo, com competências redistribuídas e estruturas sucessivamente criadas ou reorganizadas.\u003c/span>\u003c/p>\u003cp>Embora este conteúdo tenha focado na experiência da União, essa perspectiva também se aplica a estados, municípios e demais órgãos e entidades que administram imóveis públicos. Conhecer quem exerce cada competência e como essas responsabilidades se articulam é parte fundamental da gestão patrimonial.\u003c/p>"},"children":[{"id":"baa882j8","type":"panel","props":{"variant":"box","kicker":"Questões para reflexão","kickerIcon":"brain","title":"","color":"","bg":"var(--ochre-50)","body":""},"children":[{"id":"by0fr8u9","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"","items":[{"title":"","text":"Se as estruturas patrimoniais brasileiras possuem raízes no período colonial e imperial, em que medida práticas históricas podem continuar influenciando a administração pública contemporânea? "},{"title":"","text":"O que pode ser aprendido com a permanência de determinadas funções patrimoniais durante mais de dois séculos, apesar das mudanças de regime político e de ministérios? "},{"title":"","text":"Como a redefinição das competências sobre as terras e os bens públicos pode ser entendida como parte do processo de construção da autoridade do Estado brasileiro? "},{"title":"","text":"Que desafios atuais da gestão do patrimônio da União podem ter relação com essa longa trajetória histórica? "},{"title":"","text":"Ao longo de mais de dois séculos de transformações, o que mudou de fato na gestão do patrimônio público brasileiro e o que permaneceu como elemento de continuidade?"}]}}]},{"id":"b1t1hkk2","type":"accordion","props":{"numbered":false,"items":[{"title":"Referências","content":"\u003cp>\u003cspan data-color=\"petrol\">XAVIER, Felipe Augusto. \u003cb>As mudanças de paradigma na gestão do patrimônio da união\u003c/b>: uma análise crítica sobre a secretaria de coordenação e governança do patrimônio da união. 2019. 180 f., il. Dissertação (Mestrado em Política Social)—Universidade de Brasília, Brasília, 2019\u003c/span>.\u003c/p>\u003cp>ARQUIVO NACIONAL. Projeto Memória da Administração Pública Brasileira – MAPA. Caderno nº 4. Rio de Janeiro: Arquivo Nacional, [s.d.]. Disponível em: https://mapa.an.gov.br/images/publicacoes/CadernoMAPA4/files/assets/common/downloads/publication.pdf. Acesso em: 5 ago. 2026.\u003c/p>\u003cp>BRASIL. Alvará de 22 de abril de 1808. Cria o Tribunal do Desembargo do Paço no Brasil. Rio de Janeiro, 1808.\u003c/p>\u003cp>BRASIL. Alvará de 28 de junho de 1808. Cria o Erário Régio e o Conselho da Fazenda no Brasil. Rio de Janeiro, 1808.\u003c/p>\u003cp>BRASIL. Lei de 4 de outubro de 1831. Dá organização ao Tesouro Público Nacional e às Tesourarias das Províncias. Rio de Janeiro, 1831.\u003c/p>\u003cp>BRASIL. Lei nº 601, de 18 de setembro de 1850. Dispõe sobre as terras devolutas no Império. Rio de Janeiro, 1850.\u003c/p>\u003cp>BRASIL. Decreto nº 736, de 20 de novembro de 1850. Dá regulamento ao Tesouro Nacional e às Tesourarias das Províncias. Rio de Janeiro, 1850.\u003c/p>\u003cp>BRASIL. Lei nº 1.507, de 26 de setembro de 1867. Fixa a despesa e orça a receita geral do Império para o exercício de 1867-1868. Rio de Janeiro, 1867.\u003c/p>\u003cp>BRASIL. Decreto nº 4.105, de 22 de fevereiro de 1868. Regula a concessão dos terrenos de marinha, dos reservados nas margens dos rios e dos acrescidos natural ou artificialmente. Rio de Janeiro, 1868.\u003c/p>\u003cp>BRASIL. Constituição da República dos Estados Unidos do Brasil, de 24 de fevereiro de 1891. Rio de Janeiro, 1891.\u003c/p>\u003cp>BRASIL. Decreto nº 1.166, de 17 de dezembro de 1892. Reorganiza o Tesouro Federal. Rio de Janeiro, 1892.\u003c/p>\u003cp>BRASIL. Decreto nº 2.807, de 31 de janeiro de 1898. Reforma o regulamento do Tesouro Federal. Rio de Janeiro, 1898.\u003c/p>\u003cp>BRASIL. Lei nº 2.083, de 30 de julho de 1909. Cria a Diretoria do Patrimônio Nacional. Rio de Janeiro, 1909.\u003c/p>\u003cp>BRASIL. Decreto nº 7.751, de 23 de dezembro de 1909. Dá regulamento à Diretoria do Patrimônio Nacional. Rio de Janeiro, 1909.\u003c/p>\u003cp>BRASIL. Decreto nº 15.210, de 28 de dezembro de 1921. Reorganiza serviços vinculados ao Ministério da Fazenda. Rio de Janeiro, 1921.\u003c/p>\u003cp>BRASIL. Decreto nº 22.250, de 23 de dezembro de 1932. Reorganiza a Diretoria do Patrimônio Nacional, que passa a denominar-se Diretoria do Domínio da União. Rio de Janeiro, 1932.\u003c/p>\u003cp>BRASIL. Decreto-Lei nº 710, de 17 de setembro de 1938. Dispõe sobre a Diretoria do Domínio da União. Rio de Janeiro, 1938.\u003c/p>\u003cp>BRASIL. Decreto nº 3.102, de 23 de setembro de 1938. Aprova regimento da Diretoria do Domínio da União. Rio de Janeiro, 1938.\u003c/p>\u003cp>BRASIL. Decreto nº 3.777, de 2 de março de 1939. Aprova regimento da Diretoria do Domínio da União. Rio de Janeiro, 1939.\u003c/p>\u003cp>BRASIL. Decreto-Lei nº 6.871, de 15 de setembro de 1944. Transforma a Diretoria do Domínio da União em Serviço do Patrimônio da União. Rio de Janeiro, 1944.\u003c/p>\u003cp>BRASIL. Ministério da Fazenda. Tesouro Nacional. Serviço do Patrimônio da União. Relatório 1944. [S.l.]: [s.n.], 1944.\u003c/p>\u003cp>BRASIL. Decreto nº 96.911, de 3 de outubro de 1988. Dispõe sobre a Secretaria do Patrimônio da União. Brasília, DF, 1988.\u003c/p>\u003cp>BRASIL. Lei nº 9.649, de 27 de maio de 1998. Dispõe sobre a organização da Presidência da República e dos Ministérios. Brasília, DF, 1998.\u003c/p>\u003cp>BRASIL. Decreto nº 9.035, de 20 de abril de 2017. Aprova a Estrutura Regimental do Ministério do Planejamento, Desenvolvimento e Gestão. Brasília, DF, 2017.\u003c/p>\u003cp>BRASIL. Decreto nº 9.745, de 8 de abril de 2019. Aprova a Estrutura Regimental do Ministério da Economia. Brasília, DF, 2019.\u003c/p>\u003cp>BRASIL. Decreto nº 11.345, de 1º de janeiro de 2023. Aprova a Estrutura Regimental do Ministério da Gestão e da Inovação em Serviços Públicos. Brasília, DF, 2023.\u003c/p>\u003cp>PESSOA, Epitácio. Terrenos de Marinha: razões finais oferecidas em defesa dos direitos da União. Rio de Janeiro: Imprensa Nacional, 1904.\u003c/p>"}]}}]},{"id":"bgh3jp08","type":"pagefooter","props":{"code":"A gestão dos imóveis públicos no Brasil ao longo do tempo [M133]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Felipe Augusto Xavier"},{"role":"Adaptação e Revisão","name":"Claudson Moreira,  Karina Mello Bonilaure"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"bmklu5oq__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bmklu5oq__slot.png"},"bh7vbniq__slot":{"s":1,"x":0,"y":-9.888927779157143,"u":"assets/images/img-1-bh7vbniq__slot.jpg"},"bl1dj48s__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bl1dj48s__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"badge-alert":"\u003cpath d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"/>\u003cline x1=\"12\" x2=\"12\" y1=\"8\" y2=\"12\"/>\u003cline x1=\"12\" x2=\"12.01\" y1=\"16\" y2=\"16\"/>","book-open-text":"\u003cpath d=\"M12 7v14\"/>\u003cpath d=\"M16 12h2\"/>\u003cpath d=\"M16 8h2\"/>\u003cpath d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"/>\u003cpath d=\"M6 12h2\"/>\u003cpath d=\"M6 8h2\"/>","brain":"\u003cpath d=\"M12 18V5\"/>\u003cpath d=\"M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4\"/>\u003cpath d=\"M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5\"/>\u003cpath d=\"M17.997 5.125a4 4 0 0 1 2.526 5.77\"/>\u003cpath d=\"M18 18a4 4 0 0 0 2-7.464\"/>\u003cpath d=\"M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517\"/>\u003cpath d=\"M6 18a4 4 0 0 1-2-7.464\"/>\u003cpath d=\"M6.003 5.125a4 4 0 0 0-2.526 5.77\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","circle-dollar-sign":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"/>\u003cpath d=\"M12 18V6\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","hourglass":"\u003cpath d=\"M5 22h14\"/>\u003cpath d=\"M5 2h14\"/>\u003cpath d=\"M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22\"/>\u003cpath d=\"M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2\"/>","landmark":"\u003cpath d=\"M10 18v-7\"/>\u003cpath d=\"M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z\"/>\u003cpath d=\"M14 18v-7\"/>\u003cpath d=\"M18 18v-7\"/>\u003cpath d=\"M3 22h18\"/>\u003cpath d=\"M6 18v-7\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map":"\u003cpath d=\"M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z\"/>\u003cpath d=\"M15 5.764v15\"/>\u003cpath d=\"M9 3.236v15\"/>","notebook-pen":"\u003cpath d=\"M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4\"/>\u003cpath d=\"M2 6h4\"/>\u003cpath d=\"M2 10h4\"/>\u003cpath d=\"M2 14h4\"/>\u003cpath d=\"M2 18h4\"/>\u003cpath d=\"M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z\"/>","podcast":"\u003cpath d=\"M13 17a1 1 0 1 0-2 0l.5 4.5a0.5 0.5 0 0 0 1 0z\" fill=\"currentColor\"/>\u003cpath d=\"M16.85 18.58a9 9 0 1 0-9.7 0\"/>\u003cpath d=\"M8 14a5 5 0 1 1 8 0\"/>\u003ccircle cx=\"12\" cy=\"11\" r=\"1\" fill=\"currentColor\"/>","quote":"\u003cpath d=\"M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z\"/>\u003cpath d=\"M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__intro{max-width:var(--measure);margin-bottom:var(--space-5)}' +
+        '.spu-csection__title{margin:0;font-family:var(--font-display);font-size:var(--fs-h2);line-height:1.08;letter-spacing:var(--ls-heading);color:var(--text-strong)}' +
+        '.spu-csection__lead{margin-top:var(--space-3);color:var(--text-muted);font-size:var(--fs-body-lg);line-height:var(--lh-relaxed)}' +
+        '.spu-csection__lead>:last-child{margin-bottom:0}' +
+        '.spu-csection__details{border-top:1px solid var(--color-divider);padding-top:var(--space-4)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer;list-style:none}' +
+        '.spu-csection__summary::-webkit-details-marker{display:none}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__details[open]>.spu-csection__summary svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__details>.spu-csection__body{display:block!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var title = props.title;
+        var lead = props.lead;
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint && NS.isPrint();
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing || props.__builderEditing === true;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            (hasRichContent(title) || hasRichContent(lead)) && React.createElement('div', { className:'spu-csection__intro' },
+              hasRichContent(title) && React.createElement('h2', { className:'spu-csection__title' }, NS.renderRich ? NS.renderRich(title, { inline:true }) : title),
+              hasRichContent(lead) && React.createElement('div', { className:'spu-csection__lead' }, NS.renderRich ? NS.renderRich(lead) : lead)
+            ),
+            React.createElement('details', {
+              className:'spu-csection__details',
+              open: forcedOpen || open,
+              onToggle:function(event){ if(!forcedOpen) setOpen(event.currentTarget.open); }
+            },
+              React.createElement('summary', {
+                className:'spu-csection__summary',
+                onClick:function(event){ if(forcedOpen) event.preventDefault(); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body' }, props.children)
+            )
+          )
+        );
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container',
+        fields:['title','lead','triggerLabel'],
+        props:{ title:'Título da seção', lead:'<p>Apresente brevemente o conteúdo que poderá ser expandido.</p>', triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.byType[definition.type] = definition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type !== definition.type) return originalNewBlock(type, child);
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:JSON.parse(JSON.stringify(definition.props)) };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>
