@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M421 - Destinação de imóveis públicos</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"bfs2sf3c__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bfs2sf3c__slot.png"},"bzohy7lp__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bzohy7lp__slot.png"},"b6897zai__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b6897zai__slot.png"},"b7lmkt6e__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-b7lmkt6e__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M421 - Destinação de imóveis públicos","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cdy7pcfs","text":"Primeira lente: \u003cspan style=\"font-weight: normal;\">O território não é apenas o lugar onde um imóvel público está\u003c/span>","hidden":false},{"id":"c11fj8me","text":"Segunda lente: \u003cspan style=\"font-weight: normal;\">O patrimônio público como recurso para o desenvolvimento\u003c/span>","hidden":false},{"id":"c9wh7ppr","text":"Terceira lente: \u003cspan style=\"font-weight: normal;\">O território também é feito de atores e interesses\u003c/span>","hidden":false},{"id":"cdzd1bur","text":"Juntando as três lentes: \u003cspan style=\"font-weight: normal;\">ampliando o olhar sobre a destinação\u003c/span>","hidden":false},{"id":"c2o6h4d3","text":"Para levar para a prática","hidden":false}]}},"blocks":[{"id":"bkyrhfil","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"b7lmkt6e","type":"hero","props":{"kicker":"Imóveis públicos, políticas públicas e desenvolvimento territorial","kickerIcon":"house","title":"Destinação de imóveis públicos ","byline":"na perspectiva do desenvolvimento territorial","slot":"b7lmkt6e__slot"}},{"id":"bjcq6ng4","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"ceja5bkw","type":"prose","props":{"html":"\u003cp>Quando se analisa um pedido de destinação de imóvel público para implantação de um hospital, uma rodovia, um porto, uma ferrovia, um parque tecnológico ou uma usina de energia, é comum que a atenção se concentre nos aspectos dominiais, registrais ou jurídicos da área. Embora essenciais, esses elementos não esgotam a análise. Em muitos casos, a decisão patrimonial representa também uma decisão sobre o futuro do território, \u003cb>influenciando a oferta de serviços públicos, a atração de investimentos, a geração de empregos, a integração regional e a qualidade de vida da população.\u003c/b>\u003c/p>\u003cp>Essa perspectiva é desenvolvida em importantes referenciais sobre planejamento e desenvolvimento territorial, ainda que nem sempre voltados diretamente à gestão patrimonial, dos quais destacamos:\u003c/p>"}},{"id":"b7trf77h","type":"feature","props":{"columns":3,"card":true,"accent":"var(--terra-600)","layout":"top","items":[{"icon":"book-marked","title":"Documento Técnico da Política Nacional de Ordenamento Territorial (PNOT)","text":"\u003cp>\u003cspan data-fs=\"caption\">– Brasil (2006) \u003c/p>\u003cp>\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>Destaca que a infraestrutura e as políticas públicas estruturam o território, moldando sua organização econômica, social e ambiental e influenciando as oportunidades de desenvolvimento das diferentes regiões do país.\u003c/p>"},{"icon":"file-scan","title":"O Patrimônio da União como recurso público a serviço do desenvolvimento urbano: entre o planejamento inclusivo e a governança empreendedora","text":"\u003cp>\u003cspan data-fs=\"caption\">– \u003ca href=\"https://www.ipea.gov.br/code2011/chamada2011/pdf/area7/area7-artigo8.pdf\">Borges e Leal (2011)\u003c/a>\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>Propõe uma mudança de paradigma ao compreender o patrimônio imobiliário público (utilizando como referência os imóveis da União) como recurso estratégico para a implementação de políticas públicas e para a promoção do desenvolvimento.\u003c/p>"},{"icon":"file-badge","title":"A governança territorial no Brasil: Conceitos e Modalidades","text":"\u003cp>\u003cspan data-fs=\"caption\">\u003ca href=\"https://www.ipea.gov.br/code2011/chamada2011/pdf/area7/area7-artigo10.pdf\">– Pires \u003ci>et al\u003c/i>. (2011) \u003c/a>\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>Complementando a visão da dicotomia da governança empreendedora usando terras da União, o artigo aprofunda o conceito de \"Governança Territorial\" no Brasil, ajudando a entender as forças de mercado e as dinâmicas locais que pressionam a gestão do patrimônio público.\u003c/p>"}]}},{"id":"b9fex3es","type":"callout","props":{"variant":"ear","tone":"warning","icon":"book","title":"","heading":"","children":"\u003cp>Este material realiza uma leitura orientada desses três referenciais, extraindo seus principais argumentos e relacionando-os à gestão de imóveis públicos. Mais do que reproduzir seus conteúdos, busca demonstrar como conceitos de ordenamento territorial, infraestrutura e desenvolvimento podem subsidiar a análise de processos de destinação patrimonial, tanto para projetos executados diretamente pelo Poder Público quanto para iniciativas privadas voltadas ao interesse coletivo.\u003c/p>"}},{"id":"bckfsc5j","type":"prose","props":{"html":"\u003cp>Ao longo do texto, os três referenciais são apresentados como diferentes lentes para observar a relação entre patrimônio público, território e desenvolvimento. A proposta é oferecer elementos para que você possa ampliar seu olhar sobre a destinação, considerando não apenas o imóvel e o uso pretendido, mas também o território em que ele se insere e as dinâmicas e atores envolvidos.\u003c/p>"}}]},{"id":"brxjgqr9","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cdy7pcfs","type":"titulo","props":{"text":"Primeira lente: \u003cspan style=\"font-weight: normal;\">O território não é apenas o lugar onde um imóvel público está\u003c/span>","level":"h2"}},{"id":"cyfpa8xc","type":"prose","props":{"html":"\u003cp>Quando pensamos em uma obra, um equipamento ou uma atividade, é fácil enxergar o território apenas como o local onde ela será implantada. O Documento Técnico da Política Nacional de Ordenamento Territorial (PNOT) propõe um olhar mais amplo. Para compreender essa perspectiva, vale começar pelo próprio conceito de território utilizado no documento.\u003c/p>"}},{"id":"bal32s99","type":"titulo","props":{"text":"Território: \u003cspan style=\"font-weight: normal;\">mais do que uma área delimitada\u003c/span>","level":"h3"}},{"id":"bzcq59p5","type":"prose","props":{"html":"\u003cp>O documento técnico reúne diferentes abordagens sobre o conceito de território. \u003cmark>Além de sua dimensão física e jurídica, associa-o às noções de soberania, poder e controle\u003c/mark> e destaca suas dimensões histórica e simbólica. Na perspectiva do “\u003cb>território usado\u003c/b>”, trata-se da materialidade sobre a qual uma sociedade se estabelece e que é continuamente transformada pelas relações que nela se desenvolvem. \u003c/p>\u003cp>O documento também apresenta o território como “\u003cb>espaço da prática\u003c/b>”: um espaço apropriado, usado e vivido pelos atores. Nessa abordagem, as práticas realizadas sobre o espaço envolvem relações de poder e produzem transformações territoriais. \u003c/p>"}},{"id":"by7rtdaw","type":"pullquote","props":{"variant":"block","children":"\u003ci>A configuração territorial é produto e produtora de novas configurações.\u003c/i>","cite":"Documento Técnico da PNOT (2006)"}},{"id":"biq7s6yh","type":"prose","props":{"html":"\u003cp>Essa afirmação sintetiza uma ideia importante do documento. A configuração existente do território define possibilidades de investimento e influencia processos de concentração e desconcentração econômica. Ao mesmo tempo, novas configurações resultam da articulação entre as estratégias das empresas, a atuação do Estado nos três níveis de governo e os processos sociais provenientes da sociedade civil. \u003c/p>"}},{"id":"bfs2sf3c","type":"bleedimage","props":{"slot":"bfs2sf3c__slot","src":"","zoom":false,"fit":"cover","heightPreset":"medium","title":"","caption":"","credit":"","captionMode":"below","overlayBg":"rgba(14,46,43,.72)"}},{"id":"bw6242sr","type":"titulo","props":{"text":"Ordenar o território: \u003cspan style=\"font-weight: normal;\">articular ações que produzem efeitos no espaço\u003c/span>","level":"h3"}},{"id":"bar91e93","type":"prose","props":{"html":"\u003cp>É nesse contexto que o estudo discute o ordenamento territorial. Entre as diferentes concepções examinadas, o documento busca articular a organização física do espaço ao desenvolvimento regional e ressalta a necessidade de articulação das políticas públicas, instituições e instâncias decisórias.\u003c/p>"}},{"id":"btquoq3b","type":"pullquote","props":{"variant":"block","children":"\u003ci>Ordenamento territorial é a regulação das ações que têm impacto na distribuição da população, das atividades produtivas, dos equipamentos e de suas tendências [...], segundo uma visão estratégica e mediante articulação institucional e negociação de múltiplos atores.\u003c/i>","cite":"Documento Técnico da PNOT (2006)"}},{"id":"bgx2xe13","type":"prose","props":{"html":"\u003cp>A definição chama atenção para algo especialmente importante: diferentes ações públicas e privadas produzem efeitos sobre a organização do território. A PNOT considera, por isso, a articulação de objetivos econômicos, sociais e ambientais e relaciona ordenamento territorial e desenvolvimento regional. \u003c/p>"}},{"id":"bk0w7e0l","type":"titulo","props":{"text":"Infraestrutura e equipamentos também organizam o território","level":"h3"}},{"id":"bozvtmud","type":"prose","props":{"html":"\u003cp>Essa perspectiva aparece de forma concreta quando a PNOT trata dos mecanismos e instrumentos de gestão territorial. Entre eles, o documento inclui projetos de infraestrutura e equipamentos do território, além de planos de conectividade e de densificação desses equipamentos. \u003c/p>\u003cp>Assim, infraestrutura, equipamentos, atividades produtivas e políticas públicas não aparecem apenas como elementos instalados em determinado espaço. Eles integram os processos considerados pela PNOT na organização e transformação territorial.\u003c/p>"}},{"id":"bbtezi7q","type":"callout","props":{"variant":"header","tone":"attention","icon":"alert-circle","title":"PARA GUARDAR","heading":"","children":"\u003cp>O território é usado, apropriado e transformado por diferentes atores. Sua configuração influencia ações e investimentos e, ao mesmo tempo, é modificada por eles. Políticas públicas, atividades produtivas, infraestrutura e equipamentos integram essa dinâmica territorial.\u003c/p>"}}]},{"id":"bx6hubnn","type":"section","props":{"width":"content","surface":"page","pad":"lg"},"children":[{"id":"c11fj8me","type":"titulo","props":{"text":"Segunda lente: \u003cspan style=\"font-weight: normal;\">O patrimônio público como recurso para o desenvolvimento\u003c/span>","level":"h2"}},{"id":"cmtd8gb5","type":"prose","props":{"html":"\u003cp>Se a primeira lente nos levou a olhar para o território e para as ações que interferem em sua organização, a segunda aproxima essa discussão diretamente da gestão patrimonial.\u003c/p>\u003cp>No artigo “\u003ci>O Patrimônio da União como recurso público a serviço do desenvolvimento urbano: entre o planejamento inclusivo e a governança empreendedora\u003c/i>”, Jennifer dos Santos Borges e Suely Ribeiro Leal analisam especificamente os imóveis da União. O ponto de partida das autoras é expresso já no resumo do trabalho: esses imóveis constituem uma “reserva valiosa de recursos estratégicos” que pode ser aplicada em favor do desenvolvimento urbano. \u003c/p>"}},{"id":"b88sdzbz","type":"titulo","props":{"text":"De patrimônio administrado a recurso público","level":"h3"}},{"id":"bwjqusgj","type":"prose","props":{"html":"\u003cp>O artigo situa essa discussão no contexto de uma mudança ocorrida na política de gestão do patrimônio da União a partir de 2003. Segundo as autoras, a nova abordagem passou a enfatizar o apoio ao desenvolvimento econômico, ao equilíbrio ambiental, à inclusão socioterritorial, à redução das desigualdades regionais e ao desenvolvimento sustentável, tendo o patrimônio da União como recurso estratégico. \u003c/p>\u003cp>Essa perspectiva está associada também à função socioambiental da propriedade pública. O texto relaciona a gestão dos imóveis da União às diretrizes da política urbana e destaca que a propriedade pública também está submetida ao cumprimento de sua função social. \u003c/p>"}},{"id":"bikfb7z1","type":"pullquote","props":{"variant":"block","children":"\u003ci>Trata-se, pois, de um recurso público federal, entendido como \"patrimônio de todos\".\u003c/i>","cite":"– Borges e Leal (2011)"}},{"id":"bhzdz5nd","type":"titulo","props":{"text":"O valor estratégico pode assumir diferentes formas","level":"h3"}},{"id":"b5ogd1wk","type":"prose","props":{"html":"\u003cp>Para Borges e Leal, o caráter estratégico desse patrimônio está relacionado à própria \u003cb>diversidade\u003c/b> e à \u003cb>localização\u003c/b> dos imóveis da União. O artigo menciona terrenos e edificações situados em áreas de grande valorização econômica, inclusive aquelas vinculadas a atividades portuárias e turísticas; áreas de significativa fragilidade ambiental, como terrenos ao longo da orla marítima e margens de rios; e vazios urbanos com potencial para atendimento de demandas sociais. \u003c/p>"}},{"id":"bewl17tl","type":"pullquote","props":{"variant":"block","children":"\u003ci>O valor estratégico dos bens imóveis que compõem o Patrimônio da União reside no fato de se constituírem em terrenos e edificações geralmente localizados em áreas de grande valorização econômica [...] ou de significativa fragilidade ambiental [...].\u003c/i>","cite":"– Borges e Leal (2011)"}},{"id":"b89tur7l","type":"prose","props":{"html":"\u003cp>O artigo apresenta exemplos concretos dessa utilização. Ao tratar das terras públicas localizadas no litoral, destaca sua importância para o controle e a disponibilização de áreas destinadas a atividades portuárias e à proteção da costa. Também menciona a utilização de imóveis e terrenos da antiga Rede Ferroviária Federal S.A (RFFSA) na região portuária do Rio de Janeiro em projetos relacionados à revitalização urbana e à preparação da infraestrutura para grandes eventos. \u003c/p>"}},{"id":"bzohy7lp","type":"figure","props":{"slot":"bzohy7lp__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}},{"id":"bdxpnlur","type":"titulo","props":{"text":"Destinar também envolve diferentes projetos de desenvolvimento","level":"h3"}},{"id":"bbyiivps","type":"prose","props":{"html":"\u003cp>A utilização estratégica do patrimônio não está associada a uma única concepção de desenvolvimento. Esse é um ponto importante da análise de Borges e Leal. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Ao examinar destinações realizadas entre 2003 e 2010, as autoras identificam duas tendências predominantes, que consideram “não necessariamente excludentes entre si”: uma de caráter empreendedor e outra relacionada à priorização da inclusão social.\u003c/span>\u003c/p>\u003cp>A utilização dos imóveis é analisada, assim, em relação ao planejamento urbano municipal, às orientações da política nacional de gestão patrimonial e, também, aos diferentes arranjos de interesses presentes nas cidades. Segundo as autoras, essas condições se refletem nas diferentes orientações de desenvolvimento urbano observadas na destinação dos imóveis. \u003c/p>"}},{"id":"b4f4gc3b","type":"pullquote","props":{"variant":"block","children":"\u003ci>A gestão do Patrimônio da União, além de condicionada pelo planejamento municipal, é conduzida sob influência da governança urbana [...] o que se reflete na adoção de diferentes orientações de desenvolvimento urbano na destinação desses imóveis.\u003c/i>","cite":"Borges e Leal (2011)"}},{"id":"bv7xlkgl","type":"callout","props":{"variant":"header","tone":"info","icon":"alert-circle","title":"PARA GUARDAR","heading":"","children":"\u003cp>Borges e Leal apresentam o patrimônio imobiliário da União como um recurso público estratégico, cuja utilização se relaciona ao \u003cb>desenvolvimento urbano\u003c/b>, ao \u003cb>planejamento municipal\u003c/b>, à \u003cb>função socioambiental\u003c/b> dos imóveis e às diferentes forças presentes na governança das cidades. O artigo mostra também que esse patrimônio pode ser mobilizado para finalidades distintas, refletindo diferentes orientações de desenvolvimento. \u003c/p>"}}]},{"id":"bjk1p6ag","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"c9wh7ppr","type":"titulo","props":{"text":"Terceira lente: \u003cspan style=\"font-weight: normal;\">O território também é feito de atores e interesses\u003c/span>","level":"h2"}},{"id":"cz4f3nby","type":"prose","props":{"html":"\u003cp>As duas primeiras lentes destacaram a organização do território e o patrimônio imobiliário público como recurso relacionado ao desenvolvimento. A terceira chama atenção para outro componente desses processos: \u003cb>os atores que atuam no território e as formas pelas quais se relacionam e se articulam\u003c/b>.\u003c/p>\u003cp>Em “\u003ci>Governança Territorial: conceitos e modalidades\u003c/i>”, Elson Luciano Silva Pires, Lucas Labigalini Fuini, Rodrigo Furgieri Mancini e Denise Cristina Piccoli abordam a governança territorial a partir das \u003cmark>transformações nas formas de articulação entre Estado, mercado e sociedade civil \u003c/mark>e de seus efeitos sobre os processos de desenvolvimento.\u003c/p>"}},{"id":"bepdlqz6","type":"titulo","props":{"text":"O território envolve diferentes atores","level":"h3"}},{"id":"bi8fmlgg","type":"prose","props":{"html":"\u003cp>Para os autores, a análise da governança em sua dimensão territorial considera as relações estabelecidas entre diferentes atores sociais. Isso envolve tanto formas de coordenação da ação pública quanto relações entre instituições, organizações econômicas e sociedade civil.\u003c/p>"}},{"id":"be133mja","type":"pullquote","props":{"variant":"block","children":"\u003ci>A análise da governança na sua dimensão territorial considera as articulações e interdependências entre atores sociais na definição de formas de coordenação horizontal e vertical da ação pública e regulação dos processos econômicos e sociais territoriais.\u003c/i>","cite":"Pires et al. (2011)"}},{"id":"bj6xly37","type":"prose","props":{"html":"\u003cp>A governança, nessa perspectiva, não se restringe às estruturas formais de governo. O texto destaca a existência de redes de interdependência que envolvem também atores externos às estruturas governamentais e apresenta a governança como processo de construção de formas de coordenação entre atores territorialmente próximos.\u003c/p>"}},{"id":"ba6rr8ui","type":"callout","props":{"variant":"ear","tone":"attention","icon":"lightbulb","title":"","heading":"","children":"\u003cp>Essa abordagem permite observar o território não apenas a partir das ações individuais de cada ator, mas também das relações estabelecidas entre eles.\u003c/p>"}},{"id":"btic489h","type":"titulo","props":{"text":"Coordenar não significa eliminar interesses diferentes","level":"h3"}},{"id":"b7op9vit","type":"prose","props":{"html":"\u003cp>Os autores associam a governança territorial à coordenação entre atores e instituições que possuem diferentes recursos, competências e posições. Nesse processo, aparecem \u003cmark data-hl=\"petrol\">relações entre sociedade civil e governo, governo e setor privado e diferentes níveis e setores da própria administração pública\u003c/mark>. \u003c/p>\u003cp>A atuação em rede é apresentada como uma forma de compartilhar conhecimentos e competências entre parceiros, sem que cada um deixe de possuir autonomia própria. O texto também reconhece que essas relações podem envolver diferentes interesses, negociações e relações de poder.\u003c/p>"}},{"id":"bzo1rkam","type":"pullquote","props":{"variant":"block","children":"\u003ci>A governança territorial interfere na competitividade das regiões ao definir formas de distribuição de poder em cadeias produtivas e outras formas de relacionamento comercial, institucional e industrial [...].\u003c/i>","cite":"Pires et al., 2011. "}},{"id":"bppsvkwu","type":"prose","props":{"html":"\u003cp>Assim, compreender a governança territorial envolve observar quem participa, quais recursos são mobilizados, como as decisões são coordenadas e como se distribuem as relações de poder entre os atores presentes no território.\u003c/p>"}},{"id":"b6897zai","type":"bleedimage","props":{"slot":"b6897zai__slot","src":"","zoom":false,"fit":"cover","heightPreset":"wide","title":"","caption":"","credit":"","captionMode":"below","overlayBg":"rgba(14,46,43,.72)"}},{"id":"bdhm9qrb","type":"titulo","props":{"text":"Diferentes formas de articulação produzem diferentes processos de desenvolvimento","level":"h3"}},{"id":"bx9pg8eo","type":"prose","props":{"html":"\u003cp>Um aspecto central do texto é a relação estabelecida entre as formas de governança e os processos de desenvolvimento territorial. Os autores não apresentam uma única configuração de governança aplicável a todos os territórios. Ao contrário, discutem diferentes modalidades e destacam que \u003cmark data-hl=\"terra\">os resultados dependem das características dos atores, dos recursos disponíveis e das formas pelas quais eles se relacionam\u003c/mark>.\u003c/p>"}},{"id":"bfm70gmo","type":"pullquote","props":{"variant":"block","children":"\u003ci>Das diversas modalidades de relacionamento entre atores e recursos é que virão as mudanças nos conteúdos dos processos de desenvolvimento dos diversos lugares.\u003c/i>","cite":"Pires et al., 2011."}},{"id":"b2jfqunz","type":"prose","props":{"html":"\u003cp>Nessa perspectiva, os processos de desenvolvimento territorial estão relacionados à capacidade de articulação entre Estado, mercado e sociedade civil, às instituições existentes e às formas de coordenação construídas em cada território.\u003c/p>\u003cp>Os autores associam essas formas de governança à mobilização de recursos e potencialidades territoriais e discutem seu papel na busca pela redução de disparidades regionais e pela ampliação das oportunidades e dos benefícios para comunidades locais e regionais. \u003c/p>"}},{"id":"b6woqlwx","type":"callout","props":{"variant":"header","tone":"warning","icon":"alert-circle","title":"PARA GUARDAR","heading":"","children":"\u003cp>Na abordagem de Pires et al. (2011), compreender os processos de desenvolvimento territorial exige olhar para os atores e para as relações estabelecidas entre eles. Estado, agentes econômicos e sociedade civil dispõem de diferentes recursos, interesses e capacidades, e as formas de coordenação e articulação construídas no território influenciam seus processos de desenvolvimento. \u003c/p>"}}]},{"id":"b3i5iebi","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cdzd1bur","type":"titulo","props":{"text":"Juntando as três lentes: \u003cspan style=\"font-weight: normal;\">ampliando o olhar sobre a destinação\u003c/span>","level":"h2"}},{"id":"c9q8a6dr","type":"prose","props":{"html":"\u003cp>Os três referenciais percorridos partem de objetos distintos. A primeira lente discute a organização e o ordenamento do território; a segunda examina o patrimônio imobiliário da União como recurso relacionado ao desenvolvimento urbano; e terceira e última, por sua vez, concentra sua análise nas formas de governança e articulação entre os atores que participam dos processos de desenvolvimento territorial.\u003c/p>\u003cp>Colocadas lado a lado, essas três lentes permitem retomar a questão que orientou esta leitura: \u003cb>\u003cmark data-hl=\"petrol\">o que esses referenciais acrescentam ao olhar de quem atua com a destinação de imóveis públicos?\u003c/mark>\u003c/b>\u003c/p>"}},{"id":"bmu5ygn1","type":"titulo","props":{"text":"Do imóvel para o território","level":"h3"}},{"id":"b76w4kfh","type":"prose","props":{"html":"\u003cp>A primeira lente mostrou que o território não é apenas uma superfície sobre a qual se localizam imóveis, atividades e equipamentos. Na abordagem, sua configuração é continuamente influenciada pela atuação do Estado, dos agentes privados e da sociedade civil e, ao mesmo tempo, condiciona possibilidades de ação e investimento.\u003c/p>\u003cp>O documento inclui entre os elementos que repercutem sobre essa organização as políticas públicas, as atividades produtivas, as infraestruturas e os equipamentos do território. Também relaciona o ordenamento territorial à articulação de objetivos econômicos, sociais e ambientais e à coordenação de políticas e instituições. \u003c/p>"}},{"id":"bfjzq3dp","type":"callout","props":{"variant":"ear","tone":"info","icon":"road","title":"AMPLIANDO O OLHAR","heading":"","children":"\u003cp>Uma rodovia, um porto, um hospital ou outro equipamento não é considerado pela perspectiva territorial apenas pelo espaço físico que ocupa. Infraestruturas e equipamentos integram os processos de organização e transformação do território.\u003c/p>"}},{"id":"b_mss0nc1r_x610","type":"titulo","props":{"text":"Do imóvel como bem ao patrimônio como recurso","level":"h3"}},{"id":"bfegnp22","type":"prose","props":{"html":"\u003cp>A segunda lente aproximou essa discussão da gestão patrimonial. Borges e Leal analisam os imóveis da União como recursos públicos estratégicos e relacionam sua utilização ao desenvolvimento urbano, ao planejamento municipal e às diferentes orientações presentes na governança das cidades. \u003c/p>\u003cp>O artigo também evidencia a diversidade desse patrimônio: áreas de grande valorização econômica, imóveis associados a atividades portuárias e turísticas, áreas ambientalmente frágeis e vazios urbanos com potencial para atendimento de demandas sociais são alguns dos exemplos examinados pelas autoras. \u003c/p>"}},{"id":"b_mss0o058_dgn0","type":"callout","props":{"variant":"ear","tone":"info","icon":"map-pin-house","title":"AMPLIANDO O OLHAR","heading":"","children":"\u003cp>A análise do patrimônio imobiliário público pode considerar não apenas sua condição jurídica ou patrimonial, mas também as diferentes finalidades às quais esses recursos podem estar associados no desenvolvimento das cidades.\u003c/p>"}},{"id":"b_mss0nbq4_ox8o","type":"titulo","props":{"text":"Dos órgãos e interessados para os atores do território","level":"h3"}},{"id":"b_mss0n98y_no9g","type":"prose","props":{"html":"\u003cp>A terceira lente acrescentou a dimensão da governança territorial. Pires et al. mostram que os processos territoriais envolvem articulações e interdependências entre diferentes atores e incluem relações entre Estado, agentes econômicos e sociedade civil, bem como entre diferentes níveis e setores da ação pública. \u003c/p>\u003cp>Esses atores possuem recursos, competências, interesses e capacidades diferentes. As formas pelas quais se articulam, coordenam suas ações e estabelecem relações entre si integram, na abordagem dos autores, os próprios processos de desenvolvimento territorial. \u003c/p>"}},{"id":"b_mss0q3w5_mfbg","type":"callout","props":{"variant":"ear","tone":"","icon":"file-user","title":"AMPLIANDO O OLHAR","heading":"","children":"\u003cp>Observar o território significa também reconhecer os diferentes atores que nele atuam e as relações estabelecidas entre eles.\u003c/p>"}}]},{"id":"busiadb1","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"c2o6h4d3","type":"titulo","props":{"text":"Para levar para a prática","level":"h2"}},{"id":"cbediars","type":"prose","props":{"html":"\u003cp>Esta leitura não propõe novos requisitos ou procedimentos para a destinação de imóveis públicos. As três lentes apresentadas oferecem perspectivas que podem ampliar o olhar de quem participa desses processos.\u003c/p>"}},{"id":"brbckjmb","type":"panel","props":{"variant":"box","kicker":"Reflexão","kickerIcon":"brain","title":"","color":"","bg":"var(--sand-50)","body":"\u003cp>Ao atuar em uma análise de destinação de um imóvel público, vale refletir:\u003c/p>\u003cp>\u003c/p>"},"children":[{"id":"bj10j1wx","type":"feature","props":{"columns":1,"card":false,"accent":"var(--terra-600)","layout":"side","items":[{"icon":"map-pin-house","title":"","text":"\u003cspan data-fs=\"body\">Estamos olhando apenas para o imóvel e para o uso solicitado ou também para o território em que essa destinação se insere? \u003c/span>"},{"icon":"landmark","title":"","text":"\u003cspan data-fs=\"body\">Quais atores públicos, econômicos e sociais estão envolvidos ou relacionados à dinâmica territorial em que essa destinação ocorre? \u003c/span>"},{"icon":"search","title":"","text":"\u003cspan data-fs=\"body\">Que aspectos poderiam passar despercebidos se a análise se limitasse às características do imóvel e à finalidade imediata da destinação? \u003c/span>"}]}}]},{"id":"b9fu6gep","type":"prose","props":{"html":"\u003cp>As três lentes não oferecem uma resposta única para essas questões. Elas ajudam a tornar visíveis dimensões diferentes de um mesmo processo: o território em que as ações acontecem, o patrimônio público que pode ser mobilizado e os atores que participam das dinâmicas de desenvolvimento.\u003c/p>"}}]},{"id":"be19p9pg","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"bk72sny8","type":"contentslider","props":{"hint":"Principais conceitos de governança e desenvolvimento territorial","accent":"","showTabNumbers":false,"slides":[{"showImage":false,"slot":"bk72sny8__slides_1_slot","alt":"","caption":"","labelIcon":"","label":"","tabLabel":"Destinação","title":"\u003cspan data-fs=\"h3\">\u003cspan data-fs=\"h4\">Destinação de Imóveis Públicos\u003c/span>\u003c/span>","subtitle":"","description":"Representa uma decisão estratégica sobre o futuro do território que influencia a oferta de serviços, a atração de investimentos, a geração de empregos, a integração regional e a qualidade de vida local, indo muito além dos aspectos puramente jurídicos ou registrais. Na prática, constitui um instrumento de transformação do espaço e de geração de valor público.","linkHref":"","linkLabel":""},{"showImage":false,"slot":"c_jeog0fr__imageSlot","alt":"","caption":"","labelIcon":"","label":"","tabLabel":"Ordenamento","title":"\u003cspan data-fs=\"h4\">Ordenamento Territorial\u003c/span>","subtitle":"","description":"É a estruturação do território por meio de políticas públicas e infraestrutura, que atuam moldando a sua organização ambiental, econômica e social. Essa organização influencia diretamente as oportunidades de desenvolvimento nas mais diversas regiões do país.","linkHref":"","linkLabel":""},{"showImage":false,"slot":"c_uob65mw__imageSlot","alt":"","caption":"","labelIcon":"","label":"","tabLabel":"Patrimônio","title":"\u003cspan data-fs=\"h4\">Patrimônio Imobiliário Público \u003cspan style=\"font-weight: normal;\">(como Recurso Estratégico)\u003c/span>\u003c/span>","subtitle":"","description":"Compreensão do patrimônio (a exemplo das terras da União) sob um novo paradigma, reconhecendo-o como recurso estratégico fundamental para promover o desenvolvimento e implementar políticas públicas, muitas vezes servindo de contraponto a uma lógica de \"governança empreendedora\" orientada para o lucro.","linkHref":"","linkLabel":""},{"showImage":false,"slot":"c_ulswi6u__imageSlot","alt":"","caption":"","labelIcon":"","label":"","tabLabel":"Governança","title":"\u003cspan data-fs=\"h4\">Governança Territorial\u003c/span>","subtitle":"","description":"Trata-se do processo descentralizado de formular estratégias para coordenar atores locais (setor público, empresas privadas e sociedade civil) que precisam negociar e cooperar para resolver problemas e conduzir projetos coletivos de desenvolvimento regional. Essa governança ocorre quando o espaço geográfico deixa de ser considerado um mero \"cenário\" e passa a ser compreendido como um espaço de poder, regido por uma complexa teia onde os diversos atores disputam e cooperam no território","linkHref":"","linkLabel":""}]}},{"id":"bkui1swg","type":"referencias","props":{"title":"Referências","defaultOpen":false,"items":["BORGES, Jennifer dos Santos; LEAL, Suely Ribeiro. O patrimônio da União como recurso público a serviço do desenvolvimento urbano: entre o planejamento inclusivo e a governança empreendedora. In: CONFERÊNCIA DO DESENVOLVIMENTO, 2., 2011, Brasília. \u003cb>Anais do I Circuito de Debates Acadêmicos\u003c/b>. Brasília: Ipea, 2011. Disponível em: https://www.ipea.gov.br/code2011/chamada2011/pdf/area7/area7-artigo8.pdf. Acesso em: 13 ago. 2026.","PIRES, Elson Luciano Silva et al. A governança territorial no Brasil: conceitos e modalidades. In: CONFERÊNCIA DO DESENVOLVIMENTO, 2., 2011, Brasília. \u003cb>Anais do I Circuito de Debates Acadêmicos\u003c/b>. Brasília: Ipea, 2011. Disponível em: https://www.ipea.gov.br/code2011/chamada2011/pdf/area7/area7-artigo10.pdf. Acesso em: 13 ago. 2026."]}}]},{"id":"boeopjsj","type":"pagefooter","props":{"code":"Gestão de imóveis públicos na perspectiva do desenvolvimento territorial [M421]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Claudson Moreira"},{"role":"Revisão","name":"Angélia Faddoul"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"bfs2sf3c__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bfs2sf3c__slot.png"},"bzohy7lp__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bzohy7lp__slot.png"},"b6897zai__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b6897zai__slot.png"},"b7lmkt6e__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-b7lmkt6e__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"book":"\u003cpath d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20\"/>","book-marked":"\u003cpath d=\"M10 2v8l3-3 3 3V2\"/>\u003cpath d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20\"/>","brain":"\u003cpath d=\"M12 18V5\"/>\u003cpath d=\"M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4\"/>\u003cpath d=\"M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5\"/>\u003cpath d=\"M17.997 5.125a4 4 0 0 1 2.526 5.77\"/>\u003cpath d=\"M18 18a4 4 0 0 0 2-7.464\"/>\u003cpath d=\"M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517\"/>\u003cpath d=\"M6 18a4 4 0 0 1-2-7.464\"/>\u003cpath d=\"M6.003 5.125a4 4 0 0 0-2.526 5.77\"/>","file-badge":"\u003cpath d=\"M13 22h5a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v3.3\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"m7.69 16.479 1.29 4.88a.5.5 0 0 1-.698.591l-1.843-.849a1 1 0 0 0-.879.001l-1.846.85a.5.5 0 0 1-.692-.593l1.29-4.88\"/>\u003ccircle cx=\"6\" cy=\"14\" r=\"3\"/>","file-scan":"\u003cpath d=\"M20 10V8a2.4 2.4 0 0 0-.706-1.704l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.35\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M16 14a2 2 0 0 0-2 2\"/>\u003cpath d=\"M16 22a2 2 0 0 1-2-2\"/>\u003cpath d=\"M20 14a2 2 0 0 1 2 2\"/>\u003cpath d=\"M20 22a2 2 0 0 0 2-2\"/>","file-user":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M16 22a4 4 0 0 0-8 0\"/>\u003ccircle cx=\"12\" cy=\"15\" r=\"3\"/>","house":"\u003cpath d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"/>\u003cpath d=\"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/>","landmark":"\u003cpath d=\"M10 18v-7\"/>\u003cpath d=\"M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z\"/>\u003cpath d=\"M14 18v-7\"/>\u003cpath d=\"M18 18v-7\"/>\u003cpath d=\"M3 22h18\"/>\u003cpath d=\"M6 18v-7\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map-pin-house":"\u003cpath d=\"M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z\"/>\u003cpath d=\"M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2\"/>\u003cpath d=\"M18 22v-3\"/>\u003ccircle cx=\"10\" cy=\"10\" r=\"3\"/>","road":"\u003cpath d=\"M12 17v4\"/>\u003cpath d=\"M12 5V3\"/>\u003cpath d=\"M12 9v3\"/>\u003cpath d=\"M2.077 18.449A2 2 0 0 0 4 21h16a2 2 0 0 0 1.924-2.55l-4-14A2 2 0 0 0 16 3H8a2 2 0 0 0-1.924 1.45z\"/>","search":"\u003cpath d=\"m21 21-4.34-4.34\"/>\u003ccircle cx=\"11\" cy=\"11\" r=\"8\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__intro{max-width:var(--measure);margin-bottom:var(--space-5)}' +
+        '.spu-csection__title{margin:0;font-family:var(--font-display);font-size:var(--fs-h2);line-height:1.08;letter-spacing:var(--ls-heading);color:var(--text-strong)}' +
+        '.spu-csection__lead{margin-top:var(--space-3);color:var(--text-muted);font-size:var(--fs-body-lg);line-height:var(--lh-relaxed)}' +
+        '.spu-csection__lead>:last-child{margin-bottom:0}' +
+        '.spu-csection__details{border-top:1px solid var(--color-divider);padding-top:var(--space-4)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer;list-style:none}' +
+        '.spu-csection__summary::-webkit-details-marker{display:none}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__details[open]>.spu-csection__summary svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__details>.spu-csection__body{display:block!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var title = props.title;
+        var lead = props.lead;
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint && NS.isPrint();
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing || props.__builderEditing === true;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            (hasRichContent(title) || hasRichContent(lead)) && React.createElement('div', { className:'spu-csection__intro' },
+              hasRichContent(title) && React.createElement('h2', { className:'spu-csection__title' }, NS.renderRich ? NS.renderRich(title, { inline:true }) : title),
+              hasRichContent(lead) && React.createElement('div', { className:'spu-csection__lead' }, NS.renderRich ? NS.renderRich(lead) : lead)
+            ),
+            React.createElement('details', {
+              className:'spu-csection__details',
+              open: forcedOpen || open,
+              onToggle:function(event){ if(!forcedOpen) setOpen(event.currentTarget.open); }
+            },
+              React.createElement('summary', {
+                className:'spu-csection__summary',
+                onClick:function(event){ if(forcedOpen) event.preventDefault(); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body' }, props.children)
+            )
+          )
+        );
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container',
+        fields:['title','lead','triggerLabel'],
+        props:{ title:'Título da seção', lead:'<p>Apresente brevemente o conteúdo que poderá ser expandido.</p>', triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.byType[definition.type] = definition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type !== definition.type) return originalNewBlock(type, child);
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:JSON.parse(JSON.stringify(definition.props)) };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('title') || el.getAttribute('data-definition') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('span').textContent = def;
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>
