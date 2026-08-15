@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M141 - Marcos balizadores da Gestão Territorial (video)",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": []
+    }
+  },
+  "blocks": [
+    {
+      "id": "bb6uvooc",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b56f5n7i",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bu2vs8sg",
+          "type": "mediaembed",
+          "props": {
+            "type": "video",
+            "title": "Marcos conceituais e legais do ordenamento e da gestão territorial no Brasil",
+            "provider": "",
+            "url": "https://eduplay.rnp.br/app/video/466488"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bg9jx39v",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Mostrar/ocultar a transcrição",
+        "defaultOpen": true,
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_msuw92o1_3h74",
+          "type": "prose",
+          "props": {
+            "html": "<p>Confira abaixo a transcrição completa do vídeo.</p>"
+          }
+        },
+        {
+          "id": "cej90aqy",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b4mpxoeg",
+          "type": "prose",
+          "props": {
+            "html": "<p>Boas-vindas!&nbsp;</p><p>Neste vídeo a gente vai desvendar de um jeito bem direto os marcos conceituais e legais do ordenamento e da gestão territorial no Brasil. Se você atua, aí, na gestão de imóveis públicos, sabe que lidar com o território é uma tarefa diária, né? Mas, às vezes, as bases que orientam tudo isso podem parecer um pouco distantes ou muito teóricas. Então, o nosso objetivo aqui é traduzir esses grandes conceitos, mostrando como aquelas decisões macro afetam de verdade a realidade de quem gere os bens públicos do nosso país.</p><p>Vamos lá. Pra começar, eu tenho uma pergunta bem prática pra você: <b>“O que que uma escola pública, uma rodovia federal, uma praia e uma terra indígena têm em comum?”</b>&nbsp;</p><p>À primeira vista, são espaços completamente diferentes, certo? Mas, na verdade, todos eles são manifestações físicas da atuação do Estado. Eles são resultado direto de decisões políticas, econômicas e sociais. E entender essa dinâmica é fundamental pra você, que trabalha gerindo o nosso patrimônio público.</p><p><br></p><p></p><span data-fs=\"h3\"><p>Parte um: O Estado no território.</p><p></p></span><p>Vamos dar uma olhada nos marcos conceituais. Sabe aquela ideia tradicional que a gente tem de Geografia focada em mapas e fronteiras, bem definidas e paradinhas? Pode esquecer. <mark>O território é, literalmente, o espaço da prática</mark>. É a face vivida e materializada do poder. Isso quer dizer que organizar um espaço nunca é só um detalhe técnico, sabe? É algo profundamente político. Cada pedacinho de terra que é apropriado, regulado ou protegido reflete uma intenção clara e uma estratégia de Estado.</p><p>E, claro, o Estado não joga sozinho nessa. A dinâmica de um território é moldada por três grandes agentes: o <b>Estado</b>, a <b>sociedade civil</b> e os <b>agentes privados</b>. O Estado é, sim, o ator principal, mas ele está o tempo todo interagindo com os interesses dos outros dois agentes. Entender como essas três forças batem de frente ou, às vezes, se ajudam, é o primeiro passo para criar qualquer política pública que realmente funcione. E é exatamente aí que entra a gestão territorial.</p><p>Colocando em termos práticos, é o exercício diário das relações de poder para garantir que ações diferentes façam sentido quando colocadas juntas. No nível nacional, significa escolher e regular atividades. Já lá na ponta, nos níveis regional e local, é aplicar essas estratégias conversando com a população e usando o saber local. É fazer com que o desenvolvimento sustentável deixe de ser só uma palavra bonita e vire uma realidade implementada no dia a dia.</p><p><br></p><p></p><span data-fs=\"h3\"><p>Parte 2: ordenamento territorial</p><p></p></span><p>Se a gestão territorial é o exercício das relações no espaço, o ordenamento é a grande regra do jogo. É ele que regula tudo que impacta o espaço: onde as pessoas vão morar, onde as fábricas vão ficar, quais áreas precisam ser preservadas e quais serão demarcadas, como terras indígenas. Pra fazer tudo isso funcionar exige-se uma visão macro, muita articulação entre as instituições e, com certeza, muita negociação.&nbsp;</p><p>Mas e aí, Como isso tudo virou lei aqui pra gente?</p><p>Bom, a nossa Constituição de 1988 disse que era tarefa da União elaborar planos de ordenação do território. Só que isso ficou meio adormecido por um bom tempo. Foi só lá em 2003, que o Ministério da Integração Nacional assumiu essa coordenação. E isso culminou, em 2006, na formulação do documento Base para a Política Nacional de Ordenamento Territorial, a PNOT.&nbsp;</p><p></p><span data-fs=\"h3\"><p>Parte 3: O papel da União&nbsp;</p><p></p></span><p>Quais são as competências e, claro, os limites?</p><p></p><p></p><p>A nossa Constituição deu uma missão, digamos, estruturante para União. <mark>É competência exclusiva desta desenhar os grandes planos de ordenação do território.</mark> Mas a lista continua. A União também cria as diretrizes macro para o desenvolvimento urbano, incluindo habitação e saneamento básico. É ela que gerencia os recursos hídricos do país e que controla a exploração de minerais e do potencial energético. Percebe o tamanho disso? É uma responsabilidade monumental sobre a infraestrutura e o futuro da nação.&nbsp;</p><p>Aí você pode se perguntar:<mark data-hl=\"terra\"> tá... e onde ficam as cidades nisso tudo?&nbsp;</mark></p><p>Os municípios promovem, sim, o ordenamento urbano local. Mas a cidade não é uma ilha isolada. A lei municipal tem obrigatoriamente que respeitar as regras e diretrizes que vêm da União e dos Estados. É como um grande quebra-cabeça, onde a peça local tem que se encaixar na visão regional e nacional.</p><p><br></p><p></p><span data-fs=\"h3\"><p>Parte 4: O impacto no patrimônio público</p><p></p></span><p>Como isso se aplica na prática? Por que essa teoria toda importa para você no seu dia a dia?&nbsp;</p><p>Pensa na lógica de como o Estado atua. Quando um terreno da União vira um projeto de moradia popular ou quando uma área costeira é transformada em reserva ambiental, o Estado está fazendo três coisas fundamentais: primeiro, organizando a ocupação física; segundo, resolvendo demandas socioambientais super urgentes; e terceiro, promovendo o desenvolvimento e o bem-estar da população.</p>"
+          }
+        },
+        {
+          "id": "bje5jmka",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "warning",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>Gerir imóveis públicos não é bater carimbo. É estar na linha de frente, onde as grandes políticas viram benefícios reais para as pessoas. O Estado produz o seu próprio espaço justamente para garantir a segurança e desenvolvimento de todo mundo. Então, trabalhar com patrimônio público é, na sua essência, um exercício direto e supercrítico de governança. É literalmente manipular o espaço para alcançar aqueles grandes objetivos do nosso país, que estão lá na Constituição.&nbsp;</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b4tz7vr8",
+          "type": "prose",
+          "props": {
+            "html": "<p>Para encerrar, eu quero deixar uma provocação para você. S<span style=\"text-wrap-mode: initial; color: inherit;\">abendo que cada decisão sobre um imóvel público é, no fundo, um ato de poder e de estratégia:</span></p>"
+          }
+        },
+        {
+          "id": "brkbao3k",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "auto",
+            "children": "<i>Como a sua gestão diária desse patrimônio pode moldar, ativamente, o desenvolvimento sustentável e o futuro do nosso país?&nbsp;</i>",
+            "cite": ""
+          }
+        },
+        {
+          "id": "brjzxmr3",
+          "type": "prose",
+          "props": {
+            "html": "<p>Fica aí o convite para você refletir sobre a imensa responsabilidade e o impacto social do seu trabalho.&nbsp;</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bxq5rodj",
+      "type": "pagefooter",
+      "props": {
+        "code": "Marcos conceituais e legais da gestão territorial [M141]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Claudson Moreira"
+          },
+          {
+            "role": "Revisão",
+            "name": "Ana Tulia de Macedo"
+          },
+          {
+            "role": "Design e Edição do vídeo",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Julho de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
