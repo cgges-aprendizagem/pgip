@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M134 - Orgaos de controle</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"b_msw65pdb_0yxy__blocks_0_children_1_props_slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-b_msw65pdb_0yxy__blocks_.jpg"},"b9p2emjs__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-b9p2emjs__slot.jpg"},"b_msw661m3_rd07__blocks_0_children_1_props_slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b_msw661m3_rd07__blocks_.jpg"},"b_msw6633b_u3l8__blocks_0_children_1_props_slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-b_msw6633b_u3l8__blocks_.jpg"},"b_msw664a3_mn7g__blocks_0_children_1_props_slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-b_msw664a3_mn7g__blocks_.jpg"},"b0u2ma74__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-5-b0u2ma74__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M134 - Orgaos de controle","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cwfxv49w","text":"\u003cspan style=\"font-weight: normal;\">Para começar:\u003c/span> por que este tema interessa a você?","hidden":false},{"id":"ca67nb86","text":"Quem é quem nesse cenário","hidden":false},{"id":"cvqxcm5n","text":"Quando a gestão patrimonial deixa de ser apenas uma decisão administrativa","hidden":false},{"id":"cmoptgyk","text":"Os limites da atuação do Poder Judiciário nas políticas públicas","hidden":false},{"id":"b_msw5qtmq_9zjg","text":"Casos reais","hidden":false},{"id":"cwrj52x0","text":"Um novo instrumento: \u003cspan style=\"font-weight: normal;\">as Comissões de Soluções Fundiárias\u003c/span>","hidden":false},{"id":"cxt34gfn","text":"Os grandes conflitos fundiários com entes públicos","hidden":false},{"id":"cll6pvwh","text":"O olhar do controle: \u003cspan style=\"font-weight: normal;\">transparência e integridade\u003c/span> ","hidden":false},{"id":"czantce1","text":"A caixa de ferramentas dos atores externos","hidden":false}]}},"blocks":[{"id":"bilanyng","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"b0u2ma74","type":"hero","props":{"kicker":"Governança e regulação da propriedade pública no Brasil","kickerIcon":"landmark","title":"O Judiciário, o Ministério Público e os órgãos de controle na gestão do patrimônio imobiliário público","byline":"Quando outros atores decidem o destino dos imóveis públicos — e o que isso significa para quem os gerencia","slot":"b0u2ma74__slot"}},{"id":"baq12k1g","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cwfxv49w","type":"titulo","props":{"text":"\u003cspan style=\"font-weight: normal;\">Para começar:\u003c/span> por que este tema interessa a você?","level":"h2"}},{"id":"c9462nch","type":"prose","props":{"html":"\u003cp>Quem trabalha, ou pretende trabalhar, com a gestão de imóveis públicos logo descobre que as decisões sobre esses bens não são tomadas apenas dentro da repartição. Um prédio abandonado pode virar objeto de uma ação judicial movida pelo Ministério Público. Uma ordem de desocupação pode ser suspensa pelo Poder Judiciário. Um relatório do Tribunal de Contas da União pode colocar toda a política de gestão patrimonial na lista de riscos mais graves da administração federal.\u003c/p>\u003cp>Em outras palavras: o gestor de imóveis públicos atua em um ambiente de governança compartilhada, no qual o Poder Judiciário, o Ministério Público, as Defensorias e os órgãos de controle observam, cobram e, em certos casos, determinam providências sobre o patrimônio. Compreender como esses atores funcionam, quais instrumentos utilizam e quais limites a jurisprudência recente lhes impôs é uma competência essencial, tanto para evitar litígios quanto para dialogar bem quando eles acontecem.\u003c/p>\u003cp>Este texto apresenta esse cenário em três movimentos: primeiro, explica a decisão do STF que redefiniu as regras do jogo (o chamado Tema 698); depois, mostra casos reais e recentes (2020–2026) de atuação desses atores sobre imóveis públicos; por fim, descreve os novos instrumentos institucionais criados nesse período — como as Comissões de Soluções Fundiárias — e o papel dos órgãos de controle. Ao final, você encontrará um glossário com os termos jurídicos utilizados, questões para reflexão e as referências completas.\u003c/p>"}}]},{"id":"btmm9x5f","type":"section","props":{"width":"content","surface":"dark","pad":"lg"},"children":[{"id":"ca67nb86","type":"titulo","props":{"text":"Quem é quem nesse cenário","level":"h2"}},{"id":"cikgg1c1","type":"prose","props":{"html":"\u003cp>Antes de avançar, vale um mapa rápido dos atores externos que interagem com a gestão patrimonial:\u003c/p>"}},{"id":"ba6n3qda","type":"accordion","props":{"numbered":false,"items":[{"title":"Poder Judiciário","content":"\u003cp>Juízes e tribunais (estaduais, federais e o STF) que julgam ações envolvendo imóveis públicos — pedidos de reintegração de posse, ações que exigem a restauração de um prédio histórico e determinações relacionadas à destinação desses imóveis.\u003c/p>"},{"title":"Ministério Público (MP)","content":"Instituição autônoma que defende os interesses da sociedade. Existe o Ministério Público Federal (MPF), que atua sobre bens e temas federais, e os Ministérios Públicos estaduais. Seu principal instrumento nesse campo é a ação civil pública, uma ação judicial usada para proteger interesses coletivos, como o patrimônio público e cultural.","linkHref":"","linkLabel":"","linkButton":""},{"title":"Defensoria Pública","content":"Presta assistência jurídica gratuita a pessoas vulneráveis — por exemplo, famílias que ocupam um imóvel público e enfrentam ordem de despejo.","linkHref":"","linkLabel":"","linkButton":""},{"title":"Tribunais de Contas (da União e estaduais/municipais)","content":"Fiscalizam a boa aplicação dos recursos e a qualidade da gestão. O TCU audita periodicamente a gestão do patrimônio imobiliário federal.","linkHref":"","linkLabel":"","linkButton":""},{"title":"Órgãos centrais de controle interno ","content":"Como a Controladoria-Geral da União, as Controladorias-Gerais dos Estados e dos Municípios, as auditorias-gerais e as unidades centrais de controle interno, são órgãos que avaliam programas e apuram irregularidades.","linkHref":"","linkLabel":"","linkButton":""},{"title":"Conselho Nacional de Justiça (CNJ)","content":"Órgão que administra e normatiza o próprio Poder Judiciário. Como veremos, editou regras importantes sobre conflitos envolvendo imóveis ocupados.","linkHref":"","linkLabel":"","linkButton":""}]}}]},{"id":"b5lwfzbm","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cvqxcm5n","type":"titulo","props":{"text":"Quando a gestão patrimonial deixa de ser apenas uma decisão administrativa","level":"h2"}},{"id":"cg1td2q6","type":"prose","props":{"html":"\u003cp>Na maior parte do tempo, as decisões sobre imóveis públicos são tomadas pela própria Administração (Poder Executivo). Cabe aos órgãos gestores decidir como caracterizar, conservar, utilizar, destinar ou alienar seus imóveis, sempre observando a legislação e o interesse público.\u003c/p>\u003cp>Entretanto, essas decisões raramente envolvem apenas aspectos técnicos. Um imóvel público pode interessar simultaneamente à política habitacional, à preservação ambiental, ao patrimônio cultural, ao desenvolvimento econômico, à implantação de equipamentos públicos ou à arrecadação de receitas. Em outras situações, pode estar ocupado, abandonado, deteriorado ou ser objeto de disputas entre diferentes instituições públicas ou grupos sociais.\u003c/p>\u003cp>Quando esses interesses entram em conflito, ou quando há indícios de ilegalidade, omissão administrativa ou ameaça a direitos coletivos, outros atores institucionais passam a participar desse processo. O Ministério Público pode questionar judicialmente determinada situação; a Defensoria Pública pode atuar na defesa de pessoas vulneráveis; os Tribunais de Contas e os órgãos de controle interno podem realizar auditorias e recomendar providências; e o Poder Judiciário pode ser chamado a solucionar o conflito.\u003c/p>"}},{"id":"bmskg0n7","type":"callout","props":{"variant":"ear","tone":"info","icon":"lightbulb","title":"","heading":"","children":"\u003cp>Isso não significa que esses órgãos substituam a Administração na gestão cotidiana do patrimônio. Em regra, continuam cabendo ao Poder Executivo as escolhas relacionadas ao planejamento, às prioridades e à destinação dos imóveis públicos. O desafio está justamente em definir até onde vai a autonomia do gestor e em que situações a atuação desses outros atores se torna legítima ou necessária.\u003c/p>"}},{"id":"b2sx96t1","type":"prose","props":{"html":"\u003cp>É exatamente essa questão que passou a receber novos contornos nos últimos anos e que será apresentada na próxima seção, a partir de uma importante decisão do Supremo Tribunal Federal.\u003c/p>"}}]},{"id":"bu72tgwp","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cmoptgyk","type":"titulo","props":{"text":"Os limites da atuação do Poder Judiciário nas políticas públicas","level":"h2"}},{"id":"blhaouxr","type":"titulo","props":{"text":"Como era antes","level":"h3"}},{"id":"cielrakc","type":"prose","props":{"html":"\u003cp>Durante décadas, discutiu-se no Brasil até que ponto o Poder Judiciário juiz pode interferir nas escolhas de gestão do Poder Executivo. De um lado, a Constituição de 1988 garante direitos sociais (saúde, moradia, educação) e atribui ao Ministério Público a defesa do patrimônio público. De outro, a mesma Constituição estabelece a separação de Poderes: quem administra é o Executivo.\u003c/p>\u003cp>Na gestão de imóveis públicos, essa tensão aparecia de forma muito concreta. Diante de um prédio público abandonado ou de um terreno ocioso, era comum o Ministério Público ajuizar ações exigindo providências específicas: \"reformem este imóvel\", \"transformem este terreno em creche\", \"destinem este prédio à habitação\". E era comum, também, que juízes acolhessem esses pedidos e ordenassem exatamente isso — obras e destinações determinadas caso a caso, sem visão de conjunto sobre o orçamento e o planejamento da administração.\u003c/p>"}},{"id":"bu50f3nd","type":"titulo","props":{"text":"O que o STF decidiu","level":"h3"}},{"id":"bp0t4xbe","type":"prose","props":{"html":"\u003cp>Esse cenário mudou com o julgamento, em 2023, do Recurso Extraordinário 684.612, que deu origem ao Tema 698 da repercussão geral — ou seja, uma tese que todos os juízes do país devem seguir em casos semelhantes. O caso concreto da área da saúde: uma ação civil pública do Ministério Público do Rio de Janeiro sobre as condições precárias do Hospital Municipal Salgado Filho, com pedidos de realização de concurso, contratação de pessoal e execução de obras. A relatoria original foi do ministro Ricardo Lewandowski, mas a tese vencedora foi redigida pelo ministro Roberto Barroso, em duas partes:\u003c/p>"}},{"id":"biyfwulp","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bemunw6l","type":"flashcard","props":{"term":"O Judiciário pode intervir","description":"","definition":"\u003cp>Quando um serviço público ligado a direitos fundamentais está ausente ou gravemente deficiente, a intervenção judicial não viola a separação de Poderes. O juiz não precisa ficar de braços cruzados diante da omissão do Estado.\u003c/p>","icon":"scale","color":"var(--green-600)"}},{"id":"b_msw54jum_aa4p","type":"flashcard","props":{"term":"Mas não pode substituir a Administração","description":"","definition":"\u003cp>Como regra, a decisão judicial não deve determinar medidas pontuais (\"faça esta obra\", \"contrate aquele serviço\"). Deve, em vez disso, indicar as finalidades a serem alcançadas e determinar que a própria administração apresente um plano e os meios adequados para chegar ao resultado.\u003c/p>","icon":"octagon-x","color":"var(--terra-500)"}}]},{"id":"bad53jik","type":"prose","props":{"html":"\u003cp>Na prática, o STF trocou o modelo de \"comando e controle\" — ordens judiciais diretas sobre o que fazer — por um modelo dialogado, que a literatura jurídica chama de decisões estruturantes. O juiz reconhece o problema (por exemplo, o abandono grave de um imóvel), fixa metas e prazos, mas devolve ao Executivo a tarefa de planejar como resolver, respeitando a capacidade técnica e a visão de conjunto da administração.\u003c/p>"}},{"id":"b581ff57","type":"callout","props":{"variant":"header","tone":"info","icon":"file-pen","title":"Impactos na Gestão","heading":"O que o Tema 698 significa para o gestor?","children":"\u003cp>Se um imóvel sob sua responsabilidade for objeto de ação judicial, a tendência atual não é o juiz ordenar diretamente uma obra ou uma destinação específica — e sim exigir que o órgão apresente um plano, com cronograma e metas, para resolver o problema apontado.\u003c/p>\u003cp>Isso é uma proteção, mas também uma responsabilidade: a administração que não tem plano nenhum, nem consegue elaborá-lo no prazo fixado, perde a proteção que o precedente oferece. \u003cmark>Planejamento documentado deixou de ser apenas boa prática — virou defesa jurídica\u003c/mark>.\u003c/p>"}},{"id":"bjgnm4zn","type":"titulo","props":{"text":"Diferentes perspectivas sobre a aplicação do Tema 698","level":"h3"}},{"id":"bhvhkg8s","type":"prose","props":{"html":"\u003cp>As diretrizes estabelecidas pelo STF no Tema 698 orientam a atuação do Poder Judiciário sobre políticas públicas. Entretanto, sua aplicação a casos concretos nem sempre é simples. Em muitas situações, diferentes atores atribuem pesos distintos à autonomia da Administração Pública e à necessidade de intervenção judicial para assegurar direitos ou corrigir omissões administrativas.\u003c/p>\u003cp>O bloco a seguir apresenta duas perspectivas que costumam aparecer nesses debates. Elas não representam entendimentos conflitantes do STF, nem posições mutuamente excludentes. Correspondem, na prática, a diferentes formas de interpretar e aplicar as diretrizes fixadas diante das circunstâncias de cada caso concreto.\u003c/p>\u003cp>Para o gestor público, o mais importante é entender essas perspectivas e compreender os argumentos que podem ser apresentados pelos diferentes atores envolvidos. Essa compreensão contribui para decisões mais fundamentadas e para uma atuação mais segura em contextos de controle e judicialização.\u003c/p>\u003cp>E, para o Judiciário, o Tema 698 fixa o entendimento de que não lhe cabe agir como uma espécie de \"gestor substituto” do patrimônio imobiliário, apontando prédios e exigindo obras, seu papel passa a atuar como indutor de processos: cobrando planos, prazos e resultados, e demonstrando quando a omissão é absoluta.\u003c/p>"}}]},{"id":"bt6sqrcx","type":"section","props":{"width":"content","surface":"dark","pad":"md","__pullDown":false},"children":[{"id":"bwfh9uz9","type":"titulo","props":{"text":"\u003cspan style=\"font-weight: normal;\">Comparando perspectivas \u003c/span>\u003cspan style=\"font-weight: 400;\">\u003cbr>\u003c/span>\u003cspan data-fs=\"eyebrow\" style=\"font-weight: normal;\">navegue entre elas &lt; &gt;\u003c/span>","level":"h5"}}]},{"id":"bjnlalsg","type":"sectionslider","props":{"loop":true,"__pullDown":true},"children":[{"id":"cfmenfql","type":"sectionslide","props":{"width":"content","surface":"dark","pad":"lg","__pullUp":true},"children":[{"id":"b_msw5nq0q_uoi0","type":"titulo","props":{"text":"Escolha do imóvel e da destinação","level":"h3"}},{"id":"bsowl1gq","type":"compareab","props":{"a":{"label":"autonomia do Executivo","icon":"building","title":"","content":"\u003cp>É decisão técnica e orçamentária do gestor, que tem a visão de conjunto da cidade e do orçamento. Ordem judicial para transformar o \"imóvel X\" em creche desorganiza o planejamento e cria privilégios geográficos.\u003c/p>"},"b":{"label":"controle do Judiciário","icon":"scale","title":"","content":"\u003cp>A autonomia pressupõe que exista algum plano em andamento. Se o imóvel está abandonado há anos, sem plano nem cronograma, invocar \"autonomia administrativa\" é abuso — e o juiz pode fixar prazos obrigatórios de destinação.\u003c/p>"}}}]},{"id":"b_msw5pfr0_jezu","type":"sectionslide","props":{"width":"content","surface":"dark","pad":"lg","__pullUp":true},"children":[{"id":"b_msw5pfr0_f1nf","type":"titulo","props":{"text":"Recursos escassos","level":"h3"}},{"id":"b_msw5pfr0_lc9w","type":"compareab","props":{"a":{"label":"autonomia do Executivo","icon":"building","title":"","content":"\u003cp>Reformar um prédio ocioso consome orçamento que sairá de outra área. Cabe ao gestor avaliar se vale mais reformar o imóvel antigo ou investir em construções novas, dentro do planejamento plurianual.\u003c/p>"},"b":{"label":"controle do Judiciário","icon":"scale","title":"","content":"\u003cp>A escassez não justifica a inércia total. A omissão absoluta e prolongada retira a questão do campo da escolha administrativa legítima.\u003c/p>"}}}]},{"id":"b_msw5pe84_s137","type":"sectionslide","props":{"width":"content","surface":"dark","pad":"lg","__pullUp":true},"children":[{"id":"b_msw5pe84_r3zi","type":"titulo","props":{"text":"Riscos imediatos (segurança, saúde)","level":"h3"}},{"id":"b_msw5pe84_2tdm","type":"compareab","props":{"a":{"label":"autonomia do Executivo","icon":"building","title":"","content":"\u003cp>A obrigação imediata limita-se a mitigar o risco: isolar a área, vigiar, limpar. A solução definitiva (reforma ou venda) segue o fluxo normal do planejamento.\u003c/p>"},"b":{"label":"controle do Judiciário","icon":"scale","title":"","content":"\u003cp>Concorda com a mitigação imediata, mas cobra que ela venha acompanhada de um caminho para a solução definitiva.\u003c/p>"}}}]},{"id":"b_msw5rjrt_5iia","type":"sectionslide","props":{"width":"content","surface":"dark","pad":"lg","__pullUp":true},"children":[{"id":"b_msw5rjrt_v8pl","type":"titulo","props":{"text":"Imóveis com destinação obrigatória","level":"h3"}},{"id":"b_msw5rjrt_r2dk","type":"compareab","props":{"a":{"label":"autonomia do Executivo","icon":"building","title":"","content":"\u003cp>Determinação legal ou obrigação estabelecida em contrato que vincule o gestor a realizar uma destinação específica, não afasta de modo absoluto a discrionariedade da Administração Pública. Há espaço para decisões sobre os fluxos, procedimentos e, em alguns casos, sobre o instrumento para implementação da destinação.\u003c/p>"},"b":{"label":"controle do Judiciário","icon":"scale","title":"","content":"\u003cp>Quando o imóvel foi recebido com um encargo específico (por exemplo, terreno doado pela União ao município exclusivamente para habitação social), a destinação deixa de ser escolha do gestor. Descumprir o encargo é desvio de finalidade, e o controle judicial pode ser direto, sem as flexibilidades do Tema 698.\u003c/p>"}}}]}]},{"id":"b_msw5qtmq_y6j6","type":"sectionslider","props":{"loop":true},"children":[{"id":"b_msw5qtmq_6ubq","type":"sectionslide","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"b_msw5qtmq_9zjg","type":"titulo","props":{"text":"Casos reais","level":"h2"}},{"id":"b_msw5qtmq_2wim","type":"prose","props":{"html":"\u003cp>Nada ilustra melhor esse novo cenário do que os casos concretos. Os exemplos a seguir foram escolhidos porque mostram diferentes combinações de atores, instrumentos e desfechos — e porque cada um traz uma lição prática para o gestor.\u003c/p>"}},{"id":"bqpze736","type":"accordion","props":{"numbered":false,"items":[{"title":"\u003cspan data-fs=\"h5\">Prédio do INSS na Av. Venezuela, 53 (Rio de Janeiro)\u003c/span>","content":"","blocks":[{"id":"bqlu1qws","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bsw0sgko","type":"prose","props":{"html":"\u003cp>O INSS ajuizou ação de reintegração de posse contra famílias que ocupavam um prédio federal no centro do Rio. O MPF, em vez de apenas acompanhar o processo, formulou pedidos ativos de gestão: argumentou que o imóvel não cumpria sua função social e pediu (i) a suspensão de qualquer remoção enquanto vigorasse a decisão do STF na ADPF 828 (explicada adiante), (ii) a construção de um plano de desocupação que considerasse a perspectiva dos ocupantes e (iii) a garantia prévia de reassentamento das famílias pelos órgãos de habitação.\u003c/p>"}},{"id":"b9p2emjs","type":"figure","props":{"slot":"b9p2emjs__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":"\u003ca href=\"https://g1.globo.com/rj/rio-de-janeiro/noticia/2024/12/08/justica-federal-determina-que-154-familias-desocupem-predio-abandonado-do-inss-no-centro.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Portal G1\u003c/a>&nbsp;(reprodução)","__pullDown":false,"__pullUp":false}}]},{"id":"b4chd343","type":"callout","props":{"variant":"ear","tone":"info","icon":"clipboard-check","title":"Lição","heading":"","children":"\u003cp>O Ministério Público pode atuar dentro de uma ação movida pelo próprio poder público, transformando um pedido de despejo em uma discussão sobre destinação social e reassentamento.\u003c/p>","__pullUp":true}}]},{"title":"\u003cspan style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">Galpão ferroviário de Araçatuba (São Paulo) e a tese do STJ\u003c/span>","content":"","blocks":[{"id":"b_msw65pdb_xxl9","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_msw65pdb_cirq","type":"prose","props":{"html":"\u003cp>O Ministério Público de São Paulo ajuizou, em 2023, ação contra o município de Araçatuba pelo estado de risco estrutural do Galpão da Oficina de Locomotivas — tombado desde 1992 e interditado pela Defesa Civil desde 2009. A prefeitura tentou encerrar o processo alegando que já havia iniciado as obras. O Superior Tribunal de Justiça rejeitou o argumento (REsp 2.218.969-SP, julgado em 2025) e fixou uma orientação de grande alcance prático: a mera intenção de cumprir, ou mesmo o início das obras, não encerra o processo — só o cumprimento integral da obrigação.\u003c/p>\u003cp>O STJ foi além: indicou que o juiz da execução pode adotar medidas de acompanhamento contínuo, como criar um comitê de monitoramento com participação da sociedade civil, realizar audiências públicas, ajustar prazos e multas conforme o andamento, e exigir relatórios de progresso publicados a cada 45 dias.\u003c/p>"}},{"id":"b_msw65pdb_qjh6","type":"figure","props":{"slot":"b_msw65pdb_0yxy__blocks_0_children_1_props_slot","src":"","fit":"contain","size":"full","title":"","caption":"\u003cbr>","credit":"\u003ca href=\"https://www.hojemais.com.br/aracatuba/noticia/cultura/telhado-do-centro-cultural-ferroviario-de-aracatuba-desaba-e-defesa-civil-avaliara-danosnbsp\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Manu Zambon\u003c/a>&nbsp;(reprodução)","__pullDown":true}}]},{"id":"b_msw65pdb_4b13","type":"callout","props":{"variant":"ear","tone":"info","icon":"clipboard-check","title":"Lição","heading":"","children":"\u003cp>\"Começamos a obra\" não basta. A tendência é o Judiciário acompanhar a execução até o fim, com instrumentos de monitoramento que se parecem muito com gestão de projetos — só que conduzida de dentro do processo judicial.\u003c/p>"}}]},{"title":"\u003cspan style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">Orfanato Santa Luzia (São Luís, Maranhão)\u003c/span>","content":"","blocks":[{"id":"b_msw661m3_agmo","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_msw661m3_lok8","type":"prose","props":{"html":"\u003cp>Em 2020, o Ministério Público estadual acionou o município de São Luís para obrigá-lo a restaurar o antigo Orfanato Santa Luzia, imóvel municipal situado em área tombada por decreto estadual de 1986. A Justiça concedeu liminar (decisão urgente e provisória) determinando escoramento, contenção de paredes e isolamento do casarão; em 2023, a sentença final condenou o município à restauração completa.\u003c/p>"}},{"id":"b_msw661m3_ech3","type":"figure","props":{"slot":"b_msw661m3_rd07__blocks_0_children_1_props_slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":"\u003ca href=\"https://oimparcial.com.br/noticias/2020/03/ministerio-publico-requer-restauracao-de-antigo-orfanato/\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: O Imparcial\u003c/a>&nbsp;(reprodução)","__pullDown":false}}]},{"id":"b_msw661m3_xu7x","type":"callout","props":{"variant":"ear","tone":"info","icon":"clipboard-check","title":"Lição","heading":"","children":"\u003cp>O percurso típico dessas ações tem duas fases — primeiro a contenção emergencial do risco, depois a obrigação definitiva de restaurar. O gestor que se antecipa à primeira fase (interdição, escoramento, vigilância) chega em posição muito melhor à segunda.\u003c/p>","__pullUp":true}}]},{"title":"\u003cspan style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">Caso mais completo: Rua Caetés, 331 (Belo Horizonte)\u003c/span>","content":"","blocks":[{"id":"b_msw6633a_fpzi","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_msw6633b_g0a1","type":"prose","props":{"html":"\u003cp>Este caso reúne, em um único imóvel, quase todos os elementos deste texto. Sobre o mesmo prédio federal do INSS tramitaram dois processos: a ação de reintegração de posse movida pelo próprio INSS contra as famílias ocupantes, e uma ação civil pública movida em conjunto pelo MPF e pela Defensoria Pública da União pedindo que União, Caixa e INSS financiassem a requalificação do imóvel para habitação de interesse social.\u003c/p>\u003cp>O impasse entre os dois processos foi destravado com a atuação da Comissão Regional de Soluções Fundiárias do TRF-6 (um novo tipo de estrutura judicial, detalhada na seção 6), que articulou os órgãos públicos e as famílias. O desfecho: o imóvel foi integrado ao Programa Imóvel da Gente, do Governo Federal, com autorização para transformação em 88 unidades habitacionais pelo Minha Casa, Minha Vida – Entidades.\u003c/p>"}},{"id":"b_msw6633b_7ox9","type":"figure","props":{"slot":"b_msw6633b_u3l8__blocks_0_children_1_props_slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":"\u003ca href=\"https://www.otempo.com.br/cidades/predio-ocupado-no-centro-de-bh-sera-transformado-em-habitacao-residencial-1.3463422\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: O Tempo\u003c/a>&nbsp;(reprodução)","__pullDown":false}}]},{"id":"b_msw6633b_o4w3","type":"callout","props":{"variant":"ear","tone":"info","icon":"clipboard-check","title":"Lição","heading":"","children":"\u003cp>Litígios sobre imóveis públicos podem durar décadas quando cada ator puxa para um lado. Estruturas de mediação e um programa de destinação estruturado no Executivo transformaram um conflito em política pública.\u003c/p>"}}]},{"title":"\u003cspan style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">Ciclo que se repete: o terreno da União em Santos (São Paulo)\u003c/span>","content":"","blocks":[{"id":"b_msw664a3_kecs","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_msw664a3_1zjr","type":"prose","props":{"html":"\u003cp>Em setembro de 2025, a Justiça Federal em Santos concedeu liminar de reintegração de posse de um terreno da União na Vila Mathias, determinando também a demolição das construções erguidas sem autorização, após a SPU noticiar nova ocupação por um movimento de moradia — a segunda no mesmo ano. Na primeira, ocorrida meses antes, o grupo desocupou a área voluntariamente e o processo foi extinto.\u003c/p>\u003cp>À primeira vista, uma reintegração concedida com urgência parece contradizer o que este texto apresenta sobre a ADPF 828 e as audiências prévias de mediação. A chave está na diferença entre situações: as salvaguardas da ADPF 828 e da Resolução CNJ nº 510/2023 foram desenhadas para ocupações coletivas consolidadas, em que famílias vulneráveis constituíram moradia ao longo do tempo.\u003c/p>"}},{"id":"b_msw664a3_6dbr","type":"figure","props":{"slot":"b_msw664a3_mn7g__blocks_0_children_1_props_slot","src":"","fit":"contain","size":"full","title":"","caption":"\u003cbr>","credit":"\u003ca href=\"https://www.atribuna.com.br/cidades/santos/terreno-em-santos-sofre-nova-ocupac-o-irregular-e-provoca-impasse-sobre-moradia-no-litoral-de-s-o-paulo-entenda-1.494089\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Silvio Luiz/AT (reprodução)\u003c/a>","__pullDown":false}}]},{"id":"bm1t0ml2","type":"prose","props":{"html":"\u003cp>Para ocupações recentes, a orientação da própria Comissão Nacional de Soluções Fundiárias é de tratamento célere, e a legislação (arts. 300 e 562 do Código de Processo Civil e art. 10 da Lei nº 9.636/1998) autoriza a recuperação sumária da posse de imóvel da União ocupado irregularmente. Foi exatamente esse o fundamento da liminar no caso concreto, somado à repetição da ocupação no mesmo ano.\u003c/p>","__pullUp":true}},{"id":"b_msw664a3_3g25","type":"callout","props":{"variant":"ear","tone":"info","icon":"clipboard-check","title":"Lição","heading":"","children":"\u003cp>O tempo é uma variável decisiva nesses conflitos — para os dois lados. A ocupação recente pode ser revertida com rapidez; a que se consolida por anos de inércia do gestor passa a atrair as salvaguardas estruturais vistas na seção 6. E a ociosidade prolongada segue sendo o gatilho de quase todos esses casos: preveni-la, com destinação tempestiva, é a forma mais eficaz de evitar o ciclo.\u003c/p>"}}]}]}}]}]},{"id":"bmutcnj4","type":"section","props":{"width":"content","surface":"page","pad":"lg"},"children":[{"id":"cwrj52x0","type":"titulo","props":{"text":"Um novo instrumento: \u003cspan style=\"font-weight: normal;\">as Comissões de Soluções Fundiárias\u003c/span>","level":"h2"}},{"id":"cdzc026y","type":"prose","props":{"html":"\u003cp>Conflitos envolvendo imóveis públicos nem sempre se limitam a disputas entre a Administração e um particular. Em algumas situações, especialmente quando envolvem ocupações coletivas urbanas ou rurais e populações em situação de vulnerabilidade, a solução exige diálogo entre diferentes instituições e a busca de alternativas que conciliem a proteção do patrimônio público e garantia de direitos.\u003c/p>\u003cp>Nesse contexto, foram criadas as \u003cb>Comissões de Soluções Fundiárias\u003c/b>, estruturas instituídas no âmbito dos tribunais para apoiar o tratamento adequado dos conflitos fundiários coletivos. Seu papel não é substituir o juiz nem decidir o processo, mas reunir informações, promover o diálogo entre os envolvidos e buscar soluções consensuais sempre que possível, antes da adoção de medidas como despejos ou reintegrações de posse.\u003c/p>\u003cp>Embora a expressão \"conflito fundiário\" seja frequentemente associada ao meio rural, as Comissões também atuam em conflitos coletivos relacionados a imóveis urbanos. Para os gestores de imóveis públicos, compreender seu funcionamento é importante, pois esses conflitos podem envolver áreas pertencentes à União, aos estados ou aos municípios, exigindo atuação articulada com o Poder Judiciário e outras instituições.\u003c/p>"}},{"id":"bjue4caq","type":"titulo","props":{"text":"De onde vieram?","level":"h3"}},{"id":"brib1rrk","type":"prose","props":{"html":"\u003cp>Em 2021, durante a pandemia de covid-19, no âmbito da \u003cspan data-term=\"ADPF\" data-definition=\"Arguição de Descumprimento de Preceito Fundamental\">ADPF\u003c/span>&nbsp;828, que pedia proteção para famílias vulneráveis ameaçadas de remoção, o ministro Luís Roberto Barroso concedeu liminar suspendendo desocupações de imóveis ocupados antes da pandemia. Em 2022, uma nova decisão no mesmo processo determinou que todos os Tribunais de Justiça e Tribunais Regionais Federais instalassem Comissões de Conflitos Fundiários — e tornou obrigatórias, antes de qualquer ordem de desocupação coletiva, a inspeção judicial no local e a audiência de mediação.\u003c/p>\u003cp>O deslocamento é importante: a intervenção judicial deixou de ser apenas reativa (expedir o mandado de despejo) para se tornar preventiva e estrutural (entender o conflito no território antes de decidir).\u003c/p>"}},{"id":"bqum4itf","type":"pullquote","props":{"variant":"block","fontSize":"body-lg","children":"\u003ci>O desenho proposto pelo CNJ revela um esforço da administração judiciária de inserir o Poder Judiciário mais amplamente no debate e no planejamento das políticas públicas destinadas ao atendimento dos direitos de acesso à terra, à moradia e à cidade, uma vez que o Judiciário é também um ator importante, cujas decisões em conflitos fundiários coletivos impactam a distribuição de recursos e o planejamento das ações públicas. \u003c/i>","cite":"Fischer, Andrade e Alencar (p.324, 2025)"}},{"id":"bfjt7voq","type":"titulo","props":{"text":"A regulamentação","level":"h3"}},{"id":"bpzjztks","type":"prose","props":{"html":"\u003cp>Em junho de 2023, o CNJ, por meio da Resolução CNJ nº 510/2023, transformou essa determinação em política permanente, criando \u003cb>dois níveis de atuação\u003c/b>:\u003c/p>"}},{"id":"byq6b5jm","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bpuzrtse","type":"flashcard","props":{"term":"Comissão Nacional de Soluções Fundiárias (CNSF)","description":"","definition":"\u003cp>Funciona no CNJ, com um conselheiro e ao menos quatro magistrados. Define protocolos nacionais para ações de despejo ou reintegração de posse que atinjam moradia coletiva ou áreas produtivas de populações vulneráveis, e orienta as comissões regionais por meio de notas técnicas.\u003c/p>","icon":"file-spreadsheet","color":"var(--terra-600)"}},{"id":"b_msw6lkyg_3ftk","type":"flashcard","props":{"term":"Comissões Regionais de Soluções Fundiárias (CRSF) ","description":"","definition":"\u003cp>Instaladas em cada tribunal, funcionam como estrutura de apoio à solução pacífica desses conflitos: fazem visitas técnicas ao local, promovem audiências de mediação, produzem laudos multidisciplinares (com assistentes sociais, engenheiros, antropólogos, urbanistas) e se articulam com órgãos de habitação e assistência social.\u003c/p>","icon":"handshake","color":"var(--ochre-600)"}}]},{"id":"bhc5j50j","type":"kicker","props":{"icon":"scale","children":"O que as comissões significam para a gestão patrimonial"}},{"id":"b50a6sbq","type":"prose","props":{"html":"\u003cp>As comissões são o complemento operacional do Tema 698. O precedente define o modelo (reconhecer a omissão grave, fixar finalidades, devolver o plano ao Executivo); as comissões fornecem a estrutura para executá-lo de forma técnica e dialogada. \u003c/p>\u003cp>Para o gestor do patrimônio essas comissões implicam diferentes consequências. Por um lado, restringem a discricionariedade administrativa porque, ainda que sejam dialogadas, as soluções dependem da concordância do Poder Judiciário. Por outro lado, justamente por serem mediadas, tais soluções tendem a ser percebidas pelas partes como mais legítimas. \u003c/p>"}},{"id":"b3g8nh4l","type":"titulo","props":{"text":"Desafios e controvérsias","level":"h4"}},{"id":"bw58uu2q","type":"accordion","props":{"numbered":false,"items":[{"title":" Sobrecarga e desvio de finalidade","content":"\u003cp>Alguns tribunais passaram a encaminhar às comissões ações individuais, sem caráter coletivo. Em 2024, a Comissão Nacional aprovou notas técnicas exigindo decisão judicial fundamentada para a remessa de processos às comissões regionais, definindo sua estrutura mínima de funcionamento e a celeridade devida em ocupações recentes.\u003c/p>"},{"title":"Questionamento no STF ","content":"A \u003cspan data-term=\"ADI 7425\" data-definition=\"Ação Direta de Inconstitucionalidade 7425\">ADI 7425\u003c/span>, proposta pela Confederação da Agricultura e Pecuária do Brasil (CNA), questiona dispositivos da Resolução que permitiriam às comissões agir de forma autônoma, sem decisão prévia do juiz da causa — um debate sobre os limites da atuação administrativa do Judiciário. Até julho de 2026, a ação aguardava julgamento de mérito no STF, sem decisão que suspendesse a resolução — na prática, as comissões seguem em pleno funcionamento, mas o desenho institucional ainda pode ser ajustado pelo Supremo.","linkHref":"","linkLabel":"","linkButton":""},{"title":"Falta de solução habitacional","content":"Em muitos casos as comissões conseguem evitar ou adiar o despejo, mas não encontram alternativa concreta de moradia, por falta de estoque de imóveis adequados ou de recursos nos programas habitacionais.","linkHref":"","linkLabel":"","linkButton":""},{"title":"Assimetria entre tribunais","content":"O grau de estruturação das comissões varia muito entre os 33 tribunais obrigados pela Resolução, alguns ainda operam sem estrutura mínima.","linkHref":"","linkLabel":"","linkButton":""}]}}]},{"id":"b445o9nd","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cxt34gfn","type":"titulo","props":{"text":"Os grandes conflitos fundiários com entes públicos","level":"h2"}},{"id":"cbe4eb2q","type":"prose","props":{"html":"\u003cp>Além dos casos de imóveis urbanos, o período recente registrou decisões de enorme escala envolvendo áreas públicas — úteis para dimensionar o alcance da atuação judicial sobre o território:\u003c/p>"}},{"id":"bcqw20tp","type":"accordion","props":{"numbered":false,"items":[{"title":"Raposa Serra do Sol (STF, PET 3388)","content":"\u003cp>A homologação, em 2005, da demarcação contínua de 1.747.464 hectares em Roraima (194 comunidades, cerca de 19 mil indígenas) foi contestada pelo estado e confirmada pelo STF, que fixou 19 salvaguardas e o marco interpretativo do art. 231 da Constituição sobre terras indígenas.\u003c/p>"},{"title":"Marco temporal (RE 1.017.365 e ADIs 7582, 7583 e 7586)","content":"Em 2023, o STF declarou inconstitucional a tese do marco temporal para demarcação de terras indígenas. O Congresso reagiu com a Lei 14.701/2023, restabelecendo a tese; em dezembro de 2025, o STF reafirmou a inconstitucionalidade por 9 votos a 1 e declarou, pela primeira vez, a omissão do Estado brasileiro por não concluir as demarcações no prazo constitucional.","linkHref":"","linkLabel":"","linkButton":""},{"title":"Fazenda Ariadnópolis / Quilombo Campo Grande (MG)","content":"O maior conflito agrário da história de Minas Gerais foi encerrado em novembro de 2025, após quase 30 anos, com a desapropriação de cerca de 4 mil hectares e a inclusão de aproximadamente 600 famílias na reforma agrária. O acordo foi homologado em sessão conjunta e inédita do TRF-6 e do TJMG — primeira cooperação formal entre as duas cortes em um conflito fundiário.","linkHref":"","linkLabel":"","linkButton":""}]}}]},{"id":"bp9o6zk2","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cll6pvwh","type":"titulo","props":{"text":"O olhar do controle: \u003cspan style=\"font-weight: normal;\">transparência e integridade\u003c/span> ","level":"h2"}},{"id":"bbehde7e","type":"prose","props":{"html":"\u003cp>Enquanto o Judiciário e o Ministério Público atuam caso a caso, os órgãos de controle avaliam o sistema como um todo e o diagnóstico deles ajuda a entender por que há tanta judicialização.&nbsp;\u003c/p>"}},{"id":"bifbf6rr","type":"titulo","props":{"text":"O controle externo: \u003cspan style=\"font-weight: normal;\">o diagnóstico dos tribunais de contas&nbsp;\u003c/span>","level":"h3"}},{"id":"cm906xpc","type":"prose","props":{"html":"\u003cp>O controle externo da gestão patrimonial é exercido pelos tribunais de contas — o TCU, no plano federal, e os tribunais de contas dos estados e dos municípios, nas demais esferas. As auditorias sobre patrimônio imobiliário têm apontado, com recorrência, o mesmo conjunto de fragilidades, que revelam os pontos de vulnerabilidade que o gestor, em qualquer ente, deve resolver:\u003c/p>"}},{"id":"bli74rvu","type":"feature","props":{"columns":2,"card":true,"accent":"var(--terra-600)","layout":"side","items":[{"icon":"info","title":"Fragilidade de informação","text":"Sistemas defasados e dados cadastrais pouco confiáveis comprometem toda a cadeia de gestão — do inventário à fiscalização e à avaliação dos imóveis. Sem saber, com segurança, o que se tem e em que condições, qualquer decisão de destinação fica vulnerável."},{"icon":"house","title":"Fragilidade de utilização","text":"Imóveis desocupados permanecem sujeitos a abandono e depredação, gerando riscos ambientais e de segurança que, por consequência, implicam em gastos, trata-se de um desequilíbrio que resume o custo da ociosidade."},{"icon":"landmark","title":"Fragilidade institucional","text":"As estruturas responsáveis pela gestão patrimonial demandam atualizações de fluxos, de procedimentos e tecnológicas para enfrentarem com eficiência o enorme desafio que é dar conta de todo o clico de gestão dos imóveis."},{"icon":"file-search-corner","title":"Fragilidade de governança e transparência","text":"Planos de caracterização e fiscalização carecem de indicadores de efetividade, o monitoramento das carteiras é frágil e a prestação de contas à sociedade ainda é limitada."}]}},{"id":"bc1uuyzj","type":"kicker","props":{"icon":"landmark","children":"O caso federal ilustra a dinâmica"}},{"id":"b409lroc","type":"prose","props":{"html":"\u003cp>A gestão do patrimônio imobiliário figura na Lista de Alto Risco do Tribunal de Contas da União – TCU, com atualizações periódicas, e decisões recentes do tribunal determinaram aperfeiçoamentos, monitoramentos anuais e a ampliação da transparência sobre as destinações, justamente para permitir maior controle social do patrimônio. Diagnósticos da mesma natureza aparecem em auditorias de cortes de contas estaduais e distritais, como as realizadas pelos TCEs de Santa Catarina e da Bahia e pelo TCDF, que apontaram cadastros inconsistentes, imóveis sem registro, ausência de inventário e fiscalização deficiente —, o que sugere que as fragilidades não são idiossincrasias de um ente, mas traços recorrentes da gestão imobiliária pública\u003c/p>"}},{"id":"b7d372hs","type":"callout","props":{"variant":"header","tone":"info","icon":"lightbulb","title":"Para pensar","heading":"","children":"\u003cp>Note a conexão entre os números do controle e os casos reais apresentados anteriormente: cada imóvel público desocupado é, potencialmente, um gatilho de ocupação, ação civil pública ou ordem judicial. O diagnóstico dos tribunais de contas e a judicialização são duas faces do mesmo problema - a dificuldade estrutural de dar destinação tempestiva ao patrimônio.\u003c/p>"}},{"id":"b_mswbtdnh_sr91","type":"titulo","props":{"text":"O controle interno: \u003cspan style=\"font-weight: normal;\">a atuação das controladorias\u003c/span>","level":"h3"}},{"id":"bgmz53yd","type":"prose","props":{"html":"\u003cp>Cada Poder e cada ente da Federação deve manter seu próprio sistema de controle interno (arts. 70 e 74 da Constituição). No Poder Executivo, essa função é exercida pelas controladorias, no nível federal, é a Controladoria- Geral da União, estados e municípios têm seus próprios órgãos de controle interno.\u003c/p>\u003cp>Essas instituições são responsáveis pela avaliação das ações dos gestores a respeito do patrimônio público e pelo incremento da transparência da gestão, por meio de auditoria, correição, prevenção da corrupção e ouvidoria. Na gestão imobiliária, a atuação do controle interno se manifesta em \u003cb>três frentes principais\u003c/b>:\u003c/p>"}},{"id":"bej3saow","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"var(--ochre-600)","items":[{"title":"Auditorias sobre a gestão dos imóveis","text":"As controladorias avaliam periodicamente como as unidades gestoras administram os bens sob sua responsabilidade, verificando, por exemplo, se imóveis cedidos estão ocupados regularmente, se os encargos das cessões são fiscalizados e se as carteiras estão adequadamente caracterizadas. Os achados alimentam planos de providências dos gestores, fechando o ciclo entre diagnóstico e correção.\u003cbr>"},{"title":"Transparência ativa","text":"Os entes mantêm portais de transparência que publicam, entre outros dados, informações sobre seus imóveis, ocupantes e destinações — obrigação que decorre da Lei de Acesso à Informação (Lei nº 12.527/2011), aplicável a todos os entes federativos. Do lado do gestor patrimonial, painéis de dados abertos sobre os imóveis, seus ocupantes e a arrecadação permitem a qualquer cidadão, pesquisador ou órgão de controle acompanhar a gestão.\u003cbr>"},{"title":"Integridade","text":"As controladorias coordenam as políticas de integridade de suas administrações, que exigem dos órgãos a identificação e o tratamento de riscos de fraude, corrupção e conflito de interesses. Decisões patrimoniais são sensíveis a esses riscos, e por isso devem estar mapeadas nos programas de integridade dos órgãos gestores."}]}},{"id":"bxx5khix","type":"callout","props":{"variant":"ear","tone":"warning","icon":"lightbulb","title":"","heading":"Por que transparência e integridade importam tanto aqui?","children":"\u003cp>Imóvel público combina três ingredientes de risco:\u003cb> ativos de alto valor, decisões descentralizadas (avaliações, cessões, permutas, alienações) e histórico de informação precária\u003c/b>. Nesse ambiente, a publicidade dos dados é essencial para reconhecer e adotar medidas contra o uso privado indevido do patrimônio, e é a condição para que o controle social funcione. Para o gestor, transparência não é obrigação acessória: é o que diferencia uma decisão patrimonial defensável de uma decisão sob suspeita.\u003c/p>"}}]},{"id":"bmih7fua","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"b9rd5pr3","type":"kicker","props":{"icon":"book-open-text","children":"SíNTESE"}},{"id":"czantce1","type":"titulo","props":{"text":"A caixa de ferramentas dos atores externos","level":"h2"}},{"id":"coqkixet","type":"prose","props":{"html":"\u003cp>A gestão de imóveis públicos envolve a atuação de diferentes instituições, cada uma com competências, responsabilidades e instrumentos próprios. Embora esses atores possam atuar de forma articulada em determinadas situações, seus papéis não se confundem: enquanto alguns tomam decisões administrativas, outros exercem funções de controle, fiscalização, defesa de direitos ou solução de conflitos.\u003c/p>\u003cp>O quadro a seguir apresenta, de forma sintética, os principais instrumentos utilizados por esses atores no exercício de suas atribuições. Seu objetivo é facilitar a compreensão do papel desempenhado por cada instituição e como elas contribuem, sob diferentes perspectivas, para a governança, a proteção e o controle do patrimônio imobiliário público.\u003c/p>"}},{"id":"bf5re4og","type":"datatable","props":{"caption":"","columns":[{"key":"c0","label":"Instrumento"},{"key":"c1","label":"Quem usa"},{"key":"c2","label":"Para quê"}],"rows":[{"c0":"Ação civil pública (ACP)","c1":"MP, Defensoria","c2":"Obrigar a conservação/restauração de bem tombado ou a destinação de imóvel ocioso, com multa diária pelo descumprimento"},{"c0":"Manifestação em ação de reintegração de posse","c1":"MPF, DPU","c2":"Requerer que a desocupação seja condicionada à existência de plano de reassentamento e à observância da função social"},{"c0":"Liminar (tutela de urgência)","c1":"Judiciário","c2":"Determinar medidas emergenciais (escoramento, isolamento, interdição) ou deferir reintegração com urgência"},{"c0":"Decisão estruturante (Tema 698)","c1":"Judiciário","c2":"Reconhecer a omissão grave, fixar finalidades e prazos, e exigir que o Executivo apresente o plano"},{"c0":"Comissões de Soluções Fundiárias","c1":"Judiciário/CNJ (Res. 510/2023)","c2":"Mediar conflitos possessórios coletivos com visitas técnicas, laudos multidisciplinares e articulação interinstitucional"},{"c0":"Auditorias e Lista de Alto Risco","c1":"TCU, CGU e Tribunais de Contas e Controladorias de estados e municípios","c2":"Diagnosticar deficiências sistêmicas, determinar correções e monitorar programas de destinação"}],"dense":false,"highlightFirst":true,"striped":true,"tone":"petrol","className":"spu-table-wrap--striped spu-table-wrap--tone-petrol"}}]},{"id":"bw2mddcx","type":"conclusion","props":{"kicker":"Para fechar","kickerIcon":"check","title":"Conclusão","body":"\u003cp>Os casos e instrumentos apresentados revelam que o Poder Judiciário, o Ministério Público e os órgãos de controle se tornaram fortes influenciadores e, em situações de omissão grave, verdadeiros atores centrais, da gestão do patrimônio imobiliário público no Brasil. Sentenças determinam restaurações, audiências de mediação precedem desocupações, comissões articulam soluções estruturais e auditorias definem agendas de melhoria. Esse protagonismo tem méritos inegáveis: destravou conflitos que se arrastavam há décadas, protegeu populações vulneráveis e deu visibilidade pública a um problema que a rotina administrativa havia normalizado.\u003c/p>\u003cp>É preciso, porém, olhar criticamente para esse modelo, que carrega ao menos quatro ordens de problemas.\u003c/p>"},"children":[{"id":"bddt021a","type":"accordion","props":{"numbered":true,"items":[{"title":"Legitimidade e capacidade","content":"\u003cp>Juízes, promotores e auditores não respondem eleitoralmente pelas escolhas alocativas que induzem, nem dispõem da visão orçamentária e territorial de conjunto que a gestão exige — exatamente a razão pela qual o próprio Tema 698 afasta o microgerenciamento judicial. Quando a intervenção externa define, na prática, onde o recurso escasso será aplicado, a decisão sai do circuito democrático-administrativo sem que ninguém passe a responder integralmente por ela.\u003c/p>"},{"title":"Seletividade da judicialização","content":"\u003cp>A intervenção ocorre nos casos que chegam ao processo, não necessariamente nos mais graves ou prioritários. O imóvel que conta com um promotor atento, uma comunidade organizada ou visibilidade na imprensa tende a \"furar a fila\" das prioridades definidas nas políticas públicas — o que pode aprofundar desigualdades entre territórios e entre grupos com diferentes capacidades de mobilização.\u003c/p>"},{"title":"Tempo e segurança jurídica","content":"\u003cp>Gerir por processo judicial é caro e lento; multas diárias retiram recursos do mesmo orçamento que deveria financiar a solução; e a assimetria de estruturação entre tribunais e comissões — somada a controvérsias ainda abertas, produz tratamentos distintos para situações semelhantes, gerando insegurança para gestores e cidadãos.\u003c/p>"},{"title":"Risco de deslocamento de responsabilidade","content":"\u003cp>Quanto mais o sistema de justiça e os órgãos de controle assumem a condução, menor pode ser o incentivo para o Executivo investir na própria capacidade de gestão — e o modelo estruturante do Tema 698 só funciona se houver, do outro lado, uma administração capaz de planejar. Há também um alerta simétrico para o controle: diagnósticos repetidos ano após ano, sem consequências práticas, correm o risco de se tornar ritual.\u003c/p>"}]}},{"id":"b4btkm80","type":"prose","props":{"html":"\u003cp>A síntese para quem atua na área é dupla. De um lado, reconhecer e aproveitar o que esses atores trazem: indução de soluções, mediação qualificada, diagnóstico sistêmico e pressão por transparência. De outro, trabalhar para que a intervenção externa seja exceção — o que exige cadastro confiável, destinação tempestiva, planos documentados, dados públicos e integridade nas decisões patrimoniais. Onde a gestão é forte e transparente, o controle complementa; onde ela é frágil, o controle substitui, com todos os limites apontados acima.\u003c/p>"}},{"id":"bua77c8u","type":"panel","props":{"variant":"box","kicker":"Para refletir","kickerIcon":"brain","title":"","color":"","bg":"var(--sand-50)","body":""},"children":[{"id":"byphrgbv","type":"markerlist","props":{"variant":"icon","icon":"badge-question-mark","accent":"var(--terra-500)","items":[{"title":"","text":"Pense em um imóvel público ocioso que você conheça, considerando o que vimos neste material, o que a administração responsável precisaria demonstrar em juízo para preservar sua autonomia de decisão sobre esse bem? "},{"title":"","text":"Você já acompanhou alguma situação em que uma decisão da Administração Pública foi questionada por um órgão de controle ou pelo Poder Judiciário? O que motivou essa intervenção e quais foram seus efeitos? "},{"title":"","text":"Pense em um caso de repercussão nacional ou em uma situação vivenciada no órgão/entidade onde você trabalha envolvendo um imóvel público. Quais instituições participaram da solução do problema? Cada uma desempenhou o papel que você esperava? "},{"title":"","text":"Ao lembrar de alguma situação envolvendo um imóvel público, você consegue identificar quais atores estudados neste material participaram da tomada de decisão ou do controle da atuação administrativa?"}]}}]},{"id":"byryx8up","type":"kicker","props":{"icon":"album","children":"\u003cspan data-color=\"ochre-light\">Referências\u003c/span>"}},{"id":"baz4ojo7","type":"accordion","props":{"numbered":false,"items":[{"title":"Normas e Constituição","content":"","blocks":[{"id":"bifif303","type":"prose","props":{"html":"\u003cp>BRASIL. Constituição da República Federativa do Brasil de 1988. Brasília, DF: Senado Federal, 1988. Arts. 2º, 5º (XXIII), 127 (caput), 129 (III) e 231.\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">BRASIL. Decreto nº 11.929, de 5 de março de 2024. Institui o Programa de Democratização de Imóveis da União — Imóvel da Gente. Diário Oficial da União, Brasília, DF, 2024.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">BRASIL. Lei nº 14.701, de 20 de outubro de 2023. Regulamenta o art. 231 da Constituição Federal (demarcação de terras indígenas). Diário Oficial da União, Brasília, DF, 2023.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">CONSELHO NACIONAL DE JUSTIÇA (CNJ). Resolução nº 510, de 26 de junho de 2023. Institui a Comissão Nacional de Soluções Fundiárias e as Comissões Regionais de Soluções Fundiárias nos tribunais. Disponível em: https://atos.cnj.jus.br/atos/detalhar/5172. Acesso em: jul. 2026.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">CONSELHO NACIONAL DE JUSTIÇA (CNJ). Comissão de Soluções Fundiárias aprova notas técnicas para orientar tribunais. Agência CNJ de Notícias, Brasília, nov. 2024. Disponível em: https://www.cnj.jus.br/comissao-de-solucoes-fundiarias-aprova-notas-tecnicas-para-orientar-tribunais/. Acesso em: jul. 2026.\u003c/span>\u003c/p>"}}]},{"title":"Decisões judiciais e documentos institucionais","content":"","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b_mswc2m76_v05g","type":"prose","props":{"html":"\u003cp>SUPREMO TRIBUNAL FEDERAL (STF). Recurso Extraordinário nº 684.612/RJ — Tema 698 da Repercussão Geral. Relator: Min. Ricardo Lewandowski. Redator do acórdão: Min. Roberto Barroso. Julgamento: 30/06/2023. DJe 07/08/2023.\u003c/p>\u003cp>STF. ADPF 828. Relator: Min. Luís Roberto Barroso. Liminar: jun. 2021. Quarta tutela cautelar incidental: nov. 2022.\u003c/p>\u003cp>STF. ADI 7425 (Confederação da Agricultura e Pecuária do Brasil × Resolução CNJ nº 510/2023). Em tramitação.\u003c/p>\u003cp>STF. PET 3388 — Terra Indígena Raposa Serra do Sol. Relator: Min. Carlos Ayres Britto. Julgamento: mar. 2009. Embargos de declaração: out. 2013.\u003c/p>\u003cp>STF. RE 1.017.365 (Tema 1031) — marco temporal (set. 2023). ADIs 7582, 7583 e 7586 — Lei 14.701/2023 (dez. 2025). Relator: Min. Gilmar Mendes.\u003c/p>\u003cp>SUPERIOR TRIBUNAL DE JUSTIÇA (STJ). REsp 2.218.969-SP. 2ª Turma. Relator: Min. Afrânio Vilela. Julgamento: 2025.\u003c/p>\u003cp>TRIBUNAL DE CONTAS DA UNIÃO (TCU). Lista de Alto Risco da Administração Pública Federal — Gestão do patrimônio imobiliário da União. Disponível em: https://sites.tcu.gov.br/listadealtorisco/gestao_do_patrimonio_imobiliario_da_uniao.html. Acesso em: jul. 2026.\u003c/p>\u003cp>TCU. Acórdão nº 160/2024 — Plenário. Gestão do patrimônio imobiliário da União (Lista de Alto Risco). Relator: Min. Jhonatan de Jesus. Fev. 2024.\u003c/p>\u003cp>TCU. Auditoria no Programa Imóvel da Gente — TC 008.376/2025-5. Sessão plenária: 19 nov. 2025.\u003c/p>\u003cp>TRF-6. Ação Civil Pública nº 1083289-54.2021.4.01.3800 (MPF + DPU × União/INSS/CEF) — Rua Caetés, 331, Belo Horizonte. Atuação da Comissão Regional de Soluções Fundiárias: 2024.\u003c/p>\u003cp>TRF-3. Ação de reintegração de posse nº 5007773-36.2025.4.03.6104 — União (SPU-SP) × Frente de Moradia da Baixada Santista. 3ª Vara Federal de Santos. Tutela de urgência: set. 2025.\u003c/p>\u003cp>TRF-6 e TJMG. Homologação do acordo de desapropriação da Fazenda Ariadnópolis — Quilombo Campo Grande. Sessão conjunta: 26 nov. 2025.\u003c/p>\u003cp>MPF/RJ. Manifestação em ação de reintegração de posse — INSS × famílias ocupantes. Av. Venezuela, 53, Rio de Janeiro.\u003c/p>\u003cp>MPSP. Ação civil pública — Galpão da Oficina de Locomotivas, Araçatuba/SP. Ajuizada em maio de 2023.\u003c/p>\u003cp>TJMA. Vara de Interesses Difusos e Coletivos de São Luís. ACP — Orfanato Santa Luzia. Liminar: abr. 2020. Sentença: 2023.\u003c/p>"}}]},{"title":"Transparência dos dados oficiais sobre o patrimônio da União","content":"","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b_mswc2jb0_udr6","type":"prose","props":{"html":"\u003cp>SPU. Painel de Transparência Ativa do Patrimônio da União. Disponível em: https://qlik-publico.paineis.gov.br. Acesso em: jul. 2026.\u003c/p>\u003cp>CONTROLADORIA-GERAL DA UNIÃO (CGU). Relatórios de auditoria sobre a gestão de imóveis da União (Plataforma e-Aud) — entre outros, Relatório nº 1621788 (imóveis da União utilizados em atividades portuárias na região do Porto de Santos) e Relatório nº 1623044 (imóveis da União em atividades portuárias no Ceará — SPU/CE). Disponível em: https://eaud.cgu.gov.br/relatorios. Acesso em: jul. 2026.\u003c/p>\u003cp>CGU. Portal da Transparência do Governo Federal — consulta de imóveis funcionais da União. Disponível em: https://portaldatransparencia.gov.br/imoveis-funcionais/imoveis. Acesso em: jul. 2026.\u003c/p>"}}]},{"title":"Artigos e obras","content":"","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b_mswc3rne_alxh","type":"prose","props":{"html":"\u003cp>FISCHER, Luly Rodrigues da Cunha; ANDRADE, Agenor Cássio Nascimento Correia de; ALENCAR, Thais Viana de. Comissões de Soluções Fundiárias como medida estruturante da ADPF 828. Suprema — Revista de Estudos Constitucionais, Brasília, v. 5, n. especial, p. 311-340, 2025. DOI: 10.53798/suprema.2025.v5.nEspecial.a346.\u003c/p>\u003cp>GUTERRES, José Augusto; SILVA, Lucas Cavalcanti. A política judiciária estruturante do CNJ para tratamento adequado de conflitos fundiários coletivos: análise da Resolução CNJ n. 510/2023. Revista CNJ, Brasília, v. 9, n. 1, p. 87-106, jan./jun. 2025. DOI: 10.54829/revistacnj.v9i1.726.\u003c/p>\u003cp>VALLE, Vanice Regina Lírio do. Tema 698: o STF \"lacrou\" o controle de políticas públicas? Revista Consultor Jurídico (ConJur), 20 jul. 2023.\u003c/p>\u003cp>MIRANDA, Marcos Paulo de Souza. O controle judicial da omissão do poder público na preservação de bens tombados. Revista Consultor Jurídico (ConJur), 18 jan. 2025.\u003c/p>\u003cp>FUCCIA, Eduardo Velozo. Juíza determina reintegração de terreno da União na área urbana de Santos. Revista Consultor Jurídico (ConJur), 24 set. 2025.\u003c/p>\u003cp>MAZZILLI, Hugo Nigro. O Ministério Público em defesa do patrimônio público. Revista Digital do MPC. Disponível em: https://mazzilli.com.br/pages/artigos/patrpub_MPC.pdf. Acesso em: jul. 2026.\u003c/p>\u003cp>MINISTÉRIO PÚBLICO DE MINAS GERAIS (MPMG). Práticas em defesa do patrimônio público. Revista MPMG Jurídico, edição especial Patrimônio Público. Belo Horizonte: PGJ/CEAF, mar. 2015.\u003c/p>\u003cp>CNJ; INSPER; INSTITUTO PÓLIS. Conflitos fundiários coletivos urbanos e rurais: uma visão das ações possessórias. Brasília: CNJ, 2021.\u003c/p>\u003cp>MPF; PFDC. Coletânea: conflitos fundiários coletivos e a Resolução CNJ nº 510/2023. Brasília: MPF, 2024.\u003c/p>\u003cp>COMISSÃO PASTORAL DA TERRA (CPT). Conflitos no Campo Brasil 2024. Goiânia: CPT, 2025.\u003c/p>"}}]}]}}]},{"id":"bzw6twbi","type":"pagefooter","props":{"code":"Judiciario MP Controle_Gestao Patrimonio Imobiliario [M134]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Ana Túlia de Macedo"},{"role":"Revisão","name":"Claudson Moreira, Karina Bonilaure "},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"b_msw65pdb_0yxy__blocks_0_children_1_props_slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-b_msw65pdb_0yxy__blocks_.jpg"},"b9p2emjs__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-b9p2emjs__slot.jpg"},"b_msw661m3_rd07__blocks_0_children_1_props_slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b_msw661m3_rd07__blocks_.jpg"},"b_msw6633b_u3l8__blocks_0_children_1_props_slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-b_msw6633b_u3l8__blocks_.jpg"},"b_msw664a3_mn7g__blocks_0_children_1_props_slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-b_msw664a3_mn7g__blocks_.jpg"},"b0u2ma74__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-5-b0u2ma74__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"album":"\u003crect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\" ry=\"2\"/>\u003cpolyline points=\"11 3 11 11 14 8 17 11 17 3\"/>","badge-question-mark":"\u003cpath d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"/>\u003cpath d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/>\u003cline x1=\"12\" x2=\"12.01\" y1=\"17\" y2=\"17\"/>","book-open-text":"\u003cpath d=\"M12 7v14\"/>\u003cpath d=\"M16 12h2\"/>\u003cpath d=\"M16 8h2\"/>\u003cpath d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"/>\u003cpath d=\"M6 12h2\"/>\u003cpath d=\"M6 8h2\"/>","brain":"\u003cpath d=\"M12 18V5\"/>\u003cpath d=\"M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4\"/>\u003cpath d=\"M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5\"/>\u003cpath d=\"M17.997 5.125a4 4 0 0 1 2.526 5.77\"/>\u003cpath d=\"M18 18a4 4 0 0 0 2-7.464\"/>\u003cpath d=\"M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517\"/>\u003cpath d=\"M6 18a4 4 0 0 1-2-7.464\"/>\u003cpath d=\"M6.003 5.125a4 4 0 0 0-2.526 5.77\"/>","building":"\u003cpath d=\"M12 10h.01\"/>\u003cpath d=\"M12 14h.01\"/>\u003cpath d=\"M12 6h.01\"/>\u003cpath d=\"M16 10h.01\"/>\u003cpath d=\"M16 14h.01\"/>\u003cpath d=\"M16 6h.01\"/>\u003cpath d=\"M8 10h.01\"/>\u003cpath d=\"M8 14h.01\"/>\u003cpath d=\"M8 6h.01\"/>\u003cpath d=\"M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3\"/>\u003crect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","clipboard-check":"\u003crect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\"/>\u003cpath d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/>\u003cpath d=\"m9 14 2 2 4-4\"/>","file-pen":"\u003cpath d=\"M12.659 22H18a2 2 0 0 0 2-2V8a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 14 2H6a2 2 0 0 0-2 2v9.34\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M10.378 12.622a1 1 0 0 1 3 3.003L8.36 20.637a2 2 0 0 1-.854.506l-2.867.837a.5.5 0 0 1-.62-.62l.836-2.869a2 2 0 0 1 .506-.853z\"/>","file-search-corner":"\u003cpath d=\"M11.1 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.589 3.588A2.4 2.4 0 0 1 20 8v3.25\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"m21 22-2.88-2.88\"/>\u003ccircle cx=\"16\" cy=\"17\" r=\"3\"/>","file-spreadsheet":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M8 13h2\"/>\u003cpath d=\"M14 13h2\"/>\u003cpath d=\"M8 17h2\"/>\u003cpath d=\"M14 17h2\"/>","handshake":"\u003cpath d=\"m11 17 2 2a1 1 0 1 0 3-3\"/>\u003cpath d=\"m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4\"/>\u003cpath d=\"m21 3 1 11h-2\"/>\u003cpath d=\"M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3\"/>\u003cpath d=\"M3 4h8\"/>","house":"\u003cpath d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"/>\u003cpath d=\"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/>","info":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M12 16v-4\"/>\u003cpath d=\"M12 8h.01\"/>","landmark":"\u003cpath d=\"M10 18v-7\"/>\u003cpath d=\"M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z\"/>\u003cpath d=\"M14 18v-7\"/>\u003cpath d=\"M18 18v-7\"/>\u003cpath d=\"M3 22h18\"/>\u003cpath d=\"M6 18v-7\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","octagon-x":"\u003cpath d=\"m15 9-6 6\"/>\u003cpath d=\"M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z\"/>\u003cpath d=\"m9 9 6 6\"/>","scale":"\u003cpath d=\"M12 3v18\"/>\u003cpath d=\"m19 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1\"/>\u003cpath d=\"m5 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M7 21h10\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__always,.spu-csection__body{display:flex;flex-direction:column;gap:var(--flow-block)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);width:max-content;margin-top:var(--flow-block);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__summary[aria-expanded="true"] svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-csection__body[hidden]{display:none}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__body{display:flex!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint ? NS.isPrint() : window.__SPU_PRINT === true;
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing;
+        var items = React.Children.toArray(props.children);
+        function blockType(node){
+          if(!React.isValidElement(node)) return '';
+          if(node.props && node.props.block && node.props.block.type) return node.props.block.type;
+          return React.Children.toArray(node.props && node.props.children).map(blockType).filter(Boolean)[0] || '';
+        }
+        var markerIndex = items.findIndex(function(item){ return blockType(item) === 'collapsebreak'; });
+        var alwaysVisible = markerIndex >= 0 ? items.slice(0, markerIndex) : [];
+        var collapsed = markerIndex >= 0 ? items.slice(markerIndex + 1) : items;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            alwaysVisible.length && React.createElement('div', { className:'spu-csection__always' }, alwaysVisible),
+            !printing && React.createElement('button', {
+                type:'button',
+                className:'spu-csection__summary',
+                'aria-expanded':forcedOpen || open,
+                onClick:function(){ if(!forcedOpen) setOpen(!open); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body', hidden:!(forcedOpen || open) }, collapsed)
+          )
+        );
+      };
+      NS.CollapseBreak = function(){ return null; };
+      var markerDefinition = {
+        type:'collapsebreak', component:'CollapseBreak', label:'Botão de recolher',
+        icon:'chevron-down', cat:'Estrutura', kind:'marker', internal:true, props:{}
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container', stack:false,
+        fields:['triggerLabel'], allowedTypes:registry.childTypes.concat([markerDefinition.type]),
+        props:{ triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.blocks.push(markerDefinition);
+      registry.byType[definition.type] = definition;
+      registry.byType[markerDefinition.type] = markerDefinition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type === markerDefinition.type) return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:markerDefinition.type, props:{} };
+        if(type !== definition.type) return originalNewBlock(type, child);
+        var props = JSON.parse(JSON.stringify(definition.props));
+        props.children = [registry.newBlock(markerDefinition.type, true)];
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:props };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function safeDefinition(value){
+    var box = document.createElement('div');
+    box.innerHTML = String(value || '');
+    var allowed = ['STRONG','B','EM','I','BR','P','SPAN'];
+    Array.from(box.querySelectorAll('*')).forEach(function(el){
+      if(el.tagName === 'SCRIPT' || el.tagName === 'STYLE'){ el.remove(); return; }
+      if(allowed.indexOf(el.tagName) < 0){ el.replaceWith.apply(el, Array.from(el.childNodes)); return; }
+      Array.from(el.attributes).forEach(function(attr){ el.removeAttribute(attr.name); });
+    });
+    return box.innerHTML;
+  }
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('data-definition') || el.getAttribute('title') || el.getAttribute('data-def') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span class="spu-term-pop__def"></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('.spu-term-pop__def').innerHTML = safeDefinition(def);
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

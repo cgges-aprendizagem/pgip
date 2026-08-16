@@ -1,0 +1,1469 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M134 - Orgaos de controle",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "cwfxv49w",
+          "text": "<span style=\"font-weight: normal;\">Para começar:</span> por que este tema interessa a você?",
+          "hidden": false
+        },
+        {
+          "id": "ca67nb86",
+          "text": "Quem é quem nesse cenário",
+          "hidden": false
+        },
+        {
+          "id": "cvqxcm5n",
+          "text": "Quando a gestão patrimonial deixa de ser apenas uma decisão administrativa",
+          "hidden": false
+        },
+        {
+          "id": "cmoptgyk",
+          "text": "Os limites da atuação do Poder Judiciário nas políticas públicas",
+          "hidden": false
+        },
+        {
+          "id": "b_msw5qtmq_9zjg",
+          "text": "Casos reais",
+          "hidden": false
+        },
+        {
+          "id": "cwrj52x0",
+          "text": "Um novo instrumento: <span style=\"font-weight: normal;\">as Comissões de Soluções Fundiárias</span>",
+          "hidden": false
+        },
+        {
+          "id": "cxt34gfn",
+          "text": "Os grandes conflitos fundiários com entes públicos",
+          "hidden": false
+        },
+        {
+          "id": "cll6pvwh",
+          "text": "O olhar do controle: <span style=\"font-weight: normal;\">transparência e integridade</span> ",
+          "hidden": false
+        },
+        {
+          "id": "czantce1",
+          "text": "A caixa de ferramentas dos atores externos",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "bilanyng",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b0u2ma74",
+      "type": "hero",
+      "props": {
+        "kicker": "Governança e regulação da propriedade pública no Brasil",
+        "kickerIcon": "landmark",
+        "title": "O Judiciário, o Ministério Público e os órgãos de controle na gestão do patrimônio imobiliário público",
+        "byline": "Quando outros atores decidem o destino dos imóveis públicos — e o que isso significa para quem os gerencia",
+        "slot": "b0u2ma74__slot"
+      }
+    },
+    {
+      "id": "baq12k1g",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cwfxv49w",
+          "type": "titulo",
+          "props": {
+            "text": "<span style=\"font-weight: normal;\">Para começar:</span> por que este tema interessa a você?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c9462nch",
+          "type": "prose",
+          "props": {
+            "html": "<p>Quem trabalha, ou pretende trabalhar, com a gestão de imóveis públicos logo descobre que as decisões sobre esses bens não são tomadas apenas dentro da repartição. Um prédio abandonado pode virar objeto de uma ação judicial movida pelo Ministério Público. Uma ordem de desocupação pode ser suspensa pelo Poder Judiciário. Um relatório do Tribunal de Contas da União pode colocar toda a política de gestão patrimonial na lista de riscos mais graves da administração federal.</p><p>Em outras palavras: o gestor de imóveis públicos atua em um ambiente de governança compartilhada, no qual o Poder Judiciário, o Ministério Público, as Defensorias e os órgãos de controle observam, cobram e, em certos casos, determinam providências sobre o patrimônio. Compreender como esses atores funcionam, quais instrumentos utilizam e quais limites a jurisprudência recente lhes impôs é uma competência essencial, tanto para evitar litígios quanto para dialogar bem quando eles acontecem.</p><p>Este texto apresenta esse cenário em três movimentos: primeiro, explica a decisão do STF que redefiniu as regras do jogo (o chamado Tema 698); depois, mostra casos reais e recentes (2020–2026) de atuação desses atores sobre imóveis públicos; por fim, descreve os novos instrumentos institucionais criados nesse período — como as Comissões de Soluções Fundiárias — e o papel dos órgãos de controle. Ao final, você encontrará um glossário com os termos jurídicos utilizados, questões para reflexão e as referências completas.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "btmm9x5f",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "ca67nb86",
+          "type": "titulo",
+          "props": {
+            "text": "Quem é quem nesse cenário",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cikgg1c1",
+          "type": "prose",
+          "props": {
+            "html": "<p>Antes de avançar, vale um mapa rápido dos atores externos que interagem com a gestão patrimonial:</p>"
+          }
+        },
+        {
+          "id": "ba6n3qda",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Poder Judiciário",
+                "content": "<p>Juízes e tribunais (estaduais, federais e o STF) que julgam ações envolvendo imóveis públicos — pedidos de reintegração de posse, ações que exigem a restauração de um prédio histórico e determinações relacionadas à destinação desses imóveis.</p>"
+              },
+              {
+                "title": "Ministério Público (MP)",
+                "content": "Instituição autônoma que defende os interesses da sociedade. Existe o Ministério Público Federal (MPF), que atua sobre bens e temas federais, e os Ministérios Públicos estaduais. Seu principal instrumento nesse campo é a ação civil pública, uma ação judicial usada para proteger interesses coletivos, como o patrimônio público e cultural.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Defensoria Pública",
+                "content": "Presta assistência jurídica gratuita a pessoas vulneráveis — por exemplo, famílias que ocupam um imóvel público e enfrentam ordem de despejo.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Tribunais de Contas (da União e estaduais/municipais)",
+                "content": "Fiscalizam a boa aplicação dos recursos e a qualidade da gestão. O TCU audita periodicamente a gestão do patrimônio imobiliário federal.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Órgãos centrais de controle interno ",
+                "content": "Como a Controladoria-Geral da União, as Controladorias-Gerais dos Estados e dos Municípios, as auditorias-gerais e as unidades centrais de controle interno, são órgãos que avaliam programas e apuram irregularidades.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Conselho Nacional de Justiça (CNJ)",
+                "content": "Órgão que administra e normatiza o próprio Poder Judiciário. Como veremos, editou regras importantes sobre conflitos envolvendo imóveis ocupados.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b5lwfzbm",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cvqxcm5n",
+          "type": "titulo",
+          "props": {
+            "text": "Quando a gestão patrimonial deixa de ser apenas uma decisão administrativa",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cg1td2q6",
+          "type": "prose",
+          "props": {
+            "html": "<p>Na maior parte do tempo, as decisões sobre imóveis públicos são tomadas pela própria Administração (Poder Executivo). Cabe aos órgãos gestores decidir como caracterizar, conservar, utilizar, destinar ou alienar seus imóveis, sempre observando a legislação e o interesse público.</p><p>Entretanto, essas decisões raramente envolvem apenas aspectos técnicos. Um imóvel público pode interessar simultaneamente à política habitacional, à preservação ambiental, ao patrimônio cultural, ao desenvolvimento econômico, à implantação de equipamentos públicos ou à arrecadação de receitas. Em outras situações, pode estar ocupado, abandonado, deteriorado ou ser objeto de disputas entre diferentes instituições públicas ou grupos sociais.</p><p>Quando esses interesses entram em conflito, ou quando há indícios de ilegalidade, omissão administrativa ou ameaça a direitos coletivos, outros atores institucionais passam a participar desse processo. O Ministério Público pode questionar judicialmente determinada situação; a Defensoria Pública pode atuar na defesa de pessoas vulneráveis; os Tribunais de Contas e os órgãos de controle interno podem realizar auditorias e recomendar providências; e o Poder Judiciário pode ser chamado a solucionar o conflito.</p>"
+          }
+        },
+        {
+          "id": "bmskg0n7",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>Isso não significa que esses órgãos substituam a Administração na gestão cotidiana do patrimônio. Em regra, continuam cabendo ao Poder Executivo as escolhas relacionadas ao planejamento, às prioridades e à destinação dos imóveis públicos. O desafio está justamente em definir até onde vai a autonomia do gestor e em que situações a atuação desses outros atores se torna legítima ou necessária.</p>"
+          }
+        },
+        {
+          "id": "b2sx96t1",
+          "type": "prose",
+          "props": {
+            "html": "<p>É exatamente essa questão que passou a receber novos contornos nos últimos anos e que será apresentada na próxima seção, a partir de uma importante decisão do Supremo Tribunal Federal.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bu72tgwp",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cmoptgyk",
+          "type": "titulo",
+          "props": {
+            "text": "Os limites da atuação do Poder Judiciário nas políticas públicas",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "blhaouxr",
+          "type": "titulo",
+          "props": {
+            "text": "Como era antes",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cielrakc",
+          "type": "prose",
+          "props": {
+            "html": "<p>Durante décadas, discutiu-se no Brasil até que ponto o Poder Judiciário juiz pode interferir nas escolhas de gestão do Poder Executivo. De um lado, a Constituição de 1988 garante direitos sociais (saúde, moradia, educação) e atribui ao Ministério Público a defesa do patrimônio público. De outro, a mesma Constituição estabelece a separação de Poderes: quem administra é o Executivo.</p><p>Na gestão de imóveis públicos, essa tensão aparecia de forma muito concreta. Diante de um prédio público abandonado ou de um terreno ocioso, era comum o Ministério Público ajuizar ações exigindo providências específicas: \"reformem este imóvel\", \"transformem este terreno em creche\", \"destinem este prédio à habitação\". E era comum, também, que juízes acolhessem esses pedidos e ordenassem exatamente isso — obras e destinações determinadas caso a caso, sem visão de conjunto sobre o orçamento e o planejamento da administração.</p>"
+          }
+        },
+        {
+          "id": "bu50f3nd",
+          "type": "titulo",
+          "props": {
+            "text": "O que o STF decidiu",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bp0t4xbe",
+          "type": "prose",
+          "props": {
+            "html": "<p>Esse cenário mudou com o julgamento, em 2023, do Recurso Extraordinário 684.612, que deu origem ao Tema 698 da repercussão geral — ou seja, uma tese que todos os juízes do país devem seguir em casos semelhantes. O caso concreto da área da saúde: uma ação civil pública do Ministério Público do Rio de Janeiro sobre as condições precárias do Hospital Municipal Salgado Filho, com pedidos de realização de concurso, contratação de pessoal e execução de obras. A relatoria original foi do ministro Ricardo Lewandowski, mas a tese vencedora foi redigida pelo ministro Roberto Barroso, em duas partes:</p>"
+          }
+        },
+        {
+          "id": "biyfwulp",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bemunw6l",
+              "type": "flashcard",
+              "props": {
+                "term": "O Judiciário pode intervir",
+                "description": "",
+                "definition": "<p>Quando um serviço público ligado a direitos fundamentais está ausente ou gravemente deficiente, a intervenção judicial não viola a separação de Poderes. O juiz não precisa ficar de braços cruzados diante da omissão do Estado.</p>",
+                "icon": "scale",
+                "color": "var(--green-600)"
+              }
+            },
+            {
+              "id": "b_msw54jum_aa4p",
+              "type": "flashcard",
+              "props": {
+                "term": "Mas não pode substituir a Administração",
+                "description": "",
+                "definition": "<p>Como regra, a decisão judicial não deve determinar medidas pontuais (\"faça esta obra\", \"contrate aquele serviço\"). Deve, em vez disso, indicar as finalidades a serem alcançadas e determinar que a própria administração apresente um plano e os meios adequados para chegar ao resultado.</p>",
+                "icon": "octagon-x",
+                "color": "var(--terra-500)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bad53jik",
+          "type": "prose",
+          "props": {
+            "html": "<p>Na prática, o STF trocou o modelo de \"comando e controle\" — ordens judiciais diretas sobre o que fazer — por um modelo dialogado, que a literatura jurídica chama de decisões estruturantes. O juiz reconhece o problema (por exemplo, o abandono grave de um imóvel), fixa metas e prazos, mas devolve ao Executivo a tarefa de planejar como resolver, respeitando a capacidade técnica e a visão de conjunto da administração.</p>"
+          }
+        },
+        {
+          "id": "b581ff57",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "file-pen",
+            "title": "Impactos na Gestão",
+            "heading": "O que o Tema 698 significa para o gestor?",
+            "children": "<p>Se um imóvel sob sua responsabilidade for objeto de ação judicial, a tendência atual não é o juiz ordenar diretamente uma obra ou uma destinação específica — e sim exigir que o órgão apresente um plano, com cronograma e metas, para resolver o problema apontado.</p><p>Isso é uma proteção, mas também uma responsabilidade: a administração que não tem plano nenhum, nem consegue elaborá-lo no prazo fixado, perde a proteção que o precedente oferece. <mark>Planejamento documentado deixou de ser apenas boa prática — virou defesa jurídica</mark>.</p>"
+          }
+        },
+        {
+          "id": "bjgnm4zn",
+          "type": "titulo",
+          "props": {
+            "text": "Diferentes perspectivas sobre a aplicação do Tema 698",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bhvhkg8s",
+          "type": "prose",
+          "props": {
+            "html": "<p>As diretrizes estabelecidas pelo STF no Tema 698 orientam a atuação do Poder Judiciário sobre políticas públicas. Entretanto, sua aplicação a casos concretos nem sempre é simples. Em muitas situações, diferentes atores atribuem pesos distintos à autonomia da Administração Pública e à necessidade de intervenção judicial para assegurar direitos ou corrigir omissões administrativas.</p><p>O bloco a seguir apresenta duas perspectivas que costumam aparecer nesses debates. Elas não representam entendimentos conflitantes do STF, nem posições mutuamente excludentes. Correspondem, na prática, a diferentes formas de interpretar e aplicar as diretrizes fixadas diante das circunstâncias de cada caso concreto.</p><p>Para o gestor público, o mais importante é entender essas perspectivas e compreender os argumentos que podem ser apresentados pelos diferentes atores envolvidos. Essa compreensão contribui para decisões mais fundamentadas e para uma atuação mais segura em contextos de controle e judicialização.</p><p>E, para o Judiciário, o Tema 698 fixa o entendimento de que não lhe cabe agir como uma espécie de \"gestor substituto” do patrimônio imobiliário, apontando prédios e exigindo obras, seu papel passa a atuar como indutor de processos: cobrando planos, prazos e resultados, e demonstrando quando a omissão é absoluta.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bt6sqrcx",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "md",
+        "__pullDown": false
+      },
+      "children": [
+        {
+          "id": "bwfh9uz9",
+          "type": "titulo",
+          "props": {
+            "text": "<span style=\"font-weight: normal;\">Comparando perspectivas </span><span style=\"font-weight: 400;\"><br></span><span data-fs=\"eyebrow\" style=\"font-weight: normal;\">navegue entre elas &lt; &gt;</span>",
+            "level": "h5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bjnlalsg",
+      "type": "sectionslider",
+      "props": {
+        "loop": true,
+        "__pullDown": true
+      },
+      "children": [
+        {
+          "id": "cfmenfql",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "dark",
+            "pad": "lg",
+            "__pullUp": true
+          },
+          "children": [
+            {
+              "id": "b_msw5nq0q_uoi0",
+              "type": "titulo",
+              "props": {
+                "text": "Escolha do imóvel e da destinação",
+                "level": "h3"
+              }
+            },
+            {
+              "id": "bsowl1gq",
+              "type": "compareab",
+              "props": {
+                "a": {
+                  "label": "autonomia do Executivo",
+                  "icon": "building",
+                  "title": "",
+                  "content": "<p>É decisão técnica e orçamentária do gestor, que tem a visão de conjunto da cidade e do orçamento. Ordem judicial para transformar o \"imóvel X\" em creche desorganiza o planejamento e cria privilégios geográficos.</p>"
+                },
+                "b": {
+                  "label": "controle do Judiciário",
+                  "icon": "scale",
+                  "title": "",
+                  "content": "<p>A autonomia pressupõe que exista algum plano em andamento. Se o imóvel está abandonado há anos, sem plano nem cronograma, invocar \"autonomia administrativa\" é abuso — e o juiz pode fixar prazos obrigatórios de destinação.</p>"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_msw5pfr0_jezu",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "dark",
+            "pad": "lg",
+            "__pullUp": true
+          },
+          "children": [
+            {
+              "id": "b_msw5pfr0_f1nf",
+              "type": "titulo",
+              "props": {
+                "text": "Recursos escassos",
+                "level": "h3"
+              }
+            },
+            {
+              "id": "b_msw5pfr0_lc9w",
+              "type": "compareab",
+              "props": {
+                "a": {
+                  "label": "autonomia do Executivo",
+                  "icon": "building",
+                  "title": "",
+                  "content": "<p>Reformar um prédio ocioso consome orçamento que sairá de outra área. Cabe ao gestor avaliar se vale mais reformar o imóvel antigo ou investir em construções novas, dentro do planejamento plurianual.</p>"
+                },
+                "b": {
+                  "label": "controle do Judiciário",
+                  "icon": "scale",
+                  "title": "",
+                  "content": "<p>A escassez não justifica a inércia total. A omissão absoluta e prolongada retira a questão do campo da escolha administrativa legítima.</p>"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_msw5pe84_s137",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "dark",
+            "pad": "lg",
+            "__pullUp": true
+          },
+          "children": [
+            {
+              "id": "b_msw5pe84_r3zi",
+              "type": "titulo",
+              "props": {
+                "text": "Riscos imediatos (segurança, saúde)",
+                "level": "h3"
+              }
+            },
+            {
+              "id": "b_msw5pe84_2tdm",
+              "type": "compareab",
+              "props": {
+                "a": {
+                  "label": "autonomia do Executivo",
+                  "icon": "building",
+                  "title": "",
+                  "content": "<p>A obrigação imediata limita-se a mitigar o risco: isolar a área, vigiar, limpar. A solução definitiva (reforma ou venda) segue o fluxo normal do planejamento.</p>"
+                },
+                "b": {
+                  "label": "controle do Judiciário",
+                  "icon": "scale",
+                  "title": "",
+                  "content": "<p>Concorda com a mitigação imediata, mas cobra que ela venha acompanhada de um caminho para a solução definitiva.</p>"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_msw5rjrt_5iia",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "dark",
+            "pad": "lg",
+            "__pullUp": true
+          },
+          "children": [
+            {
+              "id": "b_msw5rjrt_v8pl",
+              "type": "titulo",
+              "props": {
+                "text": "Imóveis com destinação obrigatória",
+                "level": "h3"
+              }
+            },
+            {
+              "id": "b_msw5rjrt_r2dk",
+              "type": "compareab",
+              "props": {
+                "a": {
+                  "label": "autonomia do Executivo",
+                  "icon": "building",
+                  "title": "",
+                  "content": "<p>Determinação legal ou obrigação estabelecida em contrato que vincule o gestor a realizar uma destinação específica, não afasta de modo absoluto a discrionariedade da Administração Pública. Há espaço para decisões sobre os fluxos, procedimentos e, em alguns casos, sobre o instrumento para implementação da destinação.</p>"
+                },
+                "b": {
+                  "label": "controle do Judiciário",
+                  "icon": "scale",
+                  "title": "",
+                  "content": "<p>Quando o imóvel foi recebido com um encargo específico (por exemplo, terreno doado pela União ao município exclusivamente para habitação social), a destinação deixa de ser escolha do gestor. Descumprir o encargo é desvio de finalidade, e o controle judicial pode ser direto, sem as flexibilidades do Tema 698.</p>"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b_msw5qtmq_y6j6",
+      "type": "sectionslider",
+      "props": {
+        "loop": true
+      },
+      "children": [
+        {
+          "id": "b_msw5qtmq_6ubq",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "white",
+            "pad": "lg"
+          },
+          "children": [
+            {
+              "id": "b_msw5qtmq_9zjg",
+              "type": "titulo",
+              "props": {
+                "text": "Casos reais",
+                "level": "h2"
+              }
+            },
+            {
+              "id": "b_msw5qtmq_2wim",
+              "type": "prose",
+              "props": {
+                "html": "<p>Nada ilustra melhor esse novo cenário do que os casos concretos. Os exemplos a seguir foram escolhidos porque mostram diferentes combinações de atores, instrumentos e desfechos — e porque cada um traz uma lição prática para o gestor.</p>"
+              }
+            },
+            {
+              "id": "bqpze736",
+              "type": "accordion",
+              "props": {
+                "numbered": false,
+                "items": [
+                  {
+                    "title": "<span data-fs=\"h5\">Prédio do INSS na Av. Venezuela, 53 (Rio de Janeiro)</span>",
+                    "content": "",
+                    "blocks": [
+                      {
+                        "id": "bqlu1qws",
+                        "type": "columns",
+                        "props": {
+                          "count": 2,
+                          "ratio": "equal",
+                          "gap": "lg"
+                        },
+                        "children": [
+                          {
+                            "id": "bsw0sgko",
+                            "type": "prose",
+                            "props": {
+                              "html": "<p>O INSS ajuizou ação de reintegração de posse contra famílias que ocupavam um prédio federal no centro do Rio. O MPF, em vez de apenas acompanhar o processo, formulou pedidos ativos de gestão: argumentou que o imóvel não cumpria sua função social e pediu (i) a suspensão de qualquer remoção enquanto vigorasse a decisão do STF na ADPF 828 (explicada adiante), (ii) a construção de um plano de desocupação que considerasse a perspectiva dos ocupantes e (iii) a garantia prévia de reassentamento das famílias pelos órgãos de habitação.</p>"
+                            }
+                          },
+                          {
+                            "id": "b9p2emjs",
+                            "type": "figure",
+                            "props": {
+                              "slot": "b9p2emjs__slot",
+                              "src": "",
+                              "fit": "contain",
+                              "size": "full",
+                              "title": "",
+                              "caption": "",
+                              "credit": "<a href=\"https://g1.globo.com/rj/rio-de-janeiro/noticia/2024/12/08/justica-federal-determina-que-154-familias-desocupem-predio-abandonado-do-inss-no-centro.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Portal G1</a>&nbsp;(reprodução)",
+                              "__pullDown": false,
+                              "__pullUp": false
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "b4chd343",
+                        "type": "callout",
+                        "props": {
+                          "variant": "ear",
+                          "tone": "info",
+                          "icon": "clipboard-check",
+                          "title": "Lição",
+                          "heading": "",
+                          "children": "<p>O Ministério Público pode atuar dentro de uma ação movida pelo próprio poder público, transformando um pedido de despejo em uma discussão sobre destinação social e reassentamento.</p>",
+                          "__pullUp": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "<span style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">Galpão ferroviário de Araçatuba (São Paulo) e a tese do STJ</span>",
+                    "content": "",
+                    "blocks": [
+                      {
+                        "id": "b_msw65pdb_xxl9",
+                        "type": "columns",
+                        "props": {
+                          "count": 2,
+                          "ratio": "equal",
+                          "gap": "lg"
+                        },
+                        "children": [
+                          {
+                            "id": "b_msw65pdb_cirq",
+                            "type": "prose",
+                            "props": {
+                              "html": "<p>O Ministério Público de São Paulo ajuizou, em 2023, ação contra o município de Araçatuba pelo estado de risco estrutural do Galpão da Oficina de Locomotivas — tombado desde 1992 e interditado pela Defesa Civil desde 2009. A prefeitura tentou encerrar o processo alegando que já havia iniciado as obras. O Superior Tribunal de Justiça rejeitou o argumento (REsp 2.218.969-SP, julgado em 2025) e fixou uma orientação de grande alcance prático: a mera intenção de cumprir, ou mesmo o início das obras, não encerra o processo — só o cumprimento integral da obrigação.</p><p>O STJ foi além: indicou que o juiz da execução pode adotar medidas de acompanhamento contínuo, como criar um comitê de monitoramento com participação da sociedade civil, realizar audiências públicas, ajustar prazos e multas conforme o andamento, e exigir relatórios de progresso publicados a cada 45 dias.</p>"
+                            }
+                          },
+                          {
+                            "id": "b_msw65pdb_qjh6",
+                            "type": "figure",
+                            "props": {
+                              "slot": "b_msw65pdb_0yxy__blocks_0_children_1_props_slot",
+                              "src": "",
+                              "fit": "contain",
+                              "size": "full",
+                              "title": "",
+                              "caption": "<br>",
+                              "credit": "<a href=\"https://www.hojemais.com.br/aracatuba/noticia/cultura/telhado-do-centro-cultural-ferroviario-de-aracatuba-desaba-e-defesa-civil-avaliara-danosnbsp\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Manu Zambon</a>&nbsp;(reprodução)",
+                              "__pullDown": true
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "b_msw65pdb_4b13",
+                        "type": "callout",
+                        "props": {
+                          "variant": "ear",
+                          "tone": "info",
+                          "icon": "clipboard-check",
+                          "title": "Lição",
+                          "heading": "",
+                          "children": "<p>\"Começamos a obra\" não basta. A tendência é o Judiciário acompanhar a execução até o fim, com instrumentos de monitoramento que se parecem muito com gestão de projetos — só que conduzida de dentro do processo judicial.</p>"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "<span style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">Orfanato Santa Luzia (São Luís, Maranhão)</span>",
+                    "content": "",
+                    "blocks": [
+                      {
+                        "id": "b_msw661m3_agmo",
+                        "type": "columns",
+                        "props": {
+                          "count": 2,
+                          "ratio": "equal",
+                          "gap": "lg"
+                        },
+                        "children": [
+                          {
+                            "id": "b_msw661m3_lok8",
+                            "type": "prose",
+                            "props": {
+                              "html": "<p>Em 2020, o Ministério Público estadual acionou o município de São Luís para obrigá-lo a restaurar o antigo Orfanato Santa Luzia, imóvel municipal situado em área tombada por decreto estadual de 1986. A Justiça concedeu liminar (decisão urgente e provisória) determinando escoramento, contenção de paredes e isolamento do casarão; em 2023, a sentença final condenou o município à restauração completa.</p>"
+                            }
+                          },
+                          {
+                            "id": "b_msw661m3_ech3",
+                            "type": "figure",
+                            "props": {
+                              "slot": "b_msw661m3_rd07__blocks_0_children_1_props_slot",
+                              "src": "",
+                              "fit": "contain",
+                              "size": "full",
+                              "title": "",
+                              "caption": "",
+                              "credit": "<a href=\"https://oimparcial.com.br/noticias/2020/03/ministerio-publico-requer-restauracao-de-antigo-orfanato/\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: O Imparcial</a>&nbsp;(reprodução)",
+                              "__pullDown": false
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "b_msw661m3_xu7x",
+                        "type": "callout",
+                        "props": {
+                          "variant": "ear",
+                          "tone": "info",
+                          "icon": "clipboard-check",
+                          "title": "Lição",
+                          "heading": "",
+                          "children": "<p>O percurso típico dessas ações tem duas fases — primeiro a contenção emergencial do risco, depois a obrigação definitiva de restaurar. O gestor que se antecipa à primeira fase (interdição, escoramento, vigilância) chega em posição muito melhor à segunda.</p>",
+                          "__pullUp": true
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "<span style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">Caso mais completo: Rua Caetés, 331 (Belo Horizonte)</span>",
+                    "content": "",
+                    "blocks": [
+                      {
+                        "id": "b_msw6633a_fpzi",
+                        "type": "columns",
+                        "props": {
+                          "count": 2,
+                          "ratio": "equal",
+                          "gap": "lg"
+                        },
+                        "children": [
+                          {
+                            "id": "b_msw6633b_g0a1",
+                            "type": "prose",
+                            "props": {
+                              "html": "<p>Este caso reúne, em um único imóvel, quase todos os elementos deste texto. Sobre o mesmo prédio federal do INSS tramitaram dois processos: a ação de reintegração de posse movida pelo próprio INSS contra as famílias ocupantes, e uma ação civil pública movida em conjunto pelo MPF e pela Defensoria Pública da União pedindo que União, Caixa e INSS financiassem a requalificação do imóvel para habitação de interesse social.</p><p>O impasse entre os dois processos foi destravado com a atuação da Comissão Regional de Soluções Fundiárias do TRF-6 (um novo tipo de estrutura judicial, detalhada na seção 6), que articulou os órgãos públicos e as famílias. O desfecho: o imóvel foi integrado ao Programa Imóvel da Gente, do Governo Federal, com autorização para transformação em 88 unidades habitacionais pelo Minha Casa, Minha Vida – Entidades.</p>"
+                            }
+                          },
+                          {
+                            "id": "b_msw6633b_7ox9",
+                            "type": "figure",
+                            "props": {
+                              "slot": "b_msw6633b_u3l8__blocks_0_children_1_props_slot",
+                              "src": "",
+                              "fit": "contain",
+                              "size": "full",
+                              "title": "",
+                              "caption": "",
+                              "credit": "<a href=\"https://www.otempo.com.br/cidades/predio-ocupado-no-centro-de-bh-sera-transformado-em-habitacao-residencial-1.3463422\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: O Tempo</a>&nbsp;(reprodução)",
+                              "__pullDown": false
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "b_msw6633b_o4w3",
+                        "type": "callout",
+                        "props": {
+                          "variant": "ear",
+                          "tone": "info",
+                          "icon": "clipboard-check",
+                          "title": "Lição",
+                          "heading": "",
+                          "children": "<p>Litígios sobre imóveis públicos podem durar décadas quando cada ator puxa para um lado. Estruturas de mediação e um programa de destinação estruturado no Executivo transformaram um conflito em política pública.</p>"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "title": "<span style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">Ciclo que se repete: o terreno da União em Santos (São Paulo)</span>",
+                    "content": "",
+                    "blocks": [
+                      {
+                        "id": "b_msw664a3_kecs",
+                        "type": "columns",
+                        "props": {
+                          "count": 2,
+                          "ratio": "equal",
+                          "gap": "lg"
+                        },
+                        "children": [
+                          {
+                            "id": "b_msw664a3_1zjr",
+                            "type": "prose",
+                            "props": {
+                              "html": "<p>Em setembro de 2025, a Justiça Federal em Santos concedeu liminar de reintegração de posse de um terreno da União na Vila Mathias, determinando também a demolição das construções erguidas sem autorização, após a SPU noticiar nova ocupação por um movimento de moradia — a segunda no mesmo ano. Na primeira, ocorrida meses antes, o grupo desocupou a área voluntariamente e o processo foi extinto.</p><p>À primeira vista, uma reintegração concedida com urgência parece contradizer o que este texto apresenta sobre a ADPF 828 e as audiências prévias de mediação. A chave está na diferença entre situações: as salvaguardas da ADPF 828 e da Resolução CNJ nº 510/2023 foram desenhadas para ocupações coletivas consolidadas, em que famílias vulneráveis constituíram moradia ao longo do tempo.</p>"
+                            }
+                          },
+                          {
+                            "id": "b_msw664a3_6dbr",
+                            "type": "figure",
+                            "props": {
+                              "slot": "b_msw664a3_mn7g__blocks_0_children_1_props_slot",
+                              "src": "",
+                              "fit": "contain",
+                              "size": "full",
+                              "title": "",
+                              "caption": "<br>",
+                              "credit": "<a href=\"https://www.atribuna.com.br/cidades/santos/terreno-em-santos-sofre-nova-ocupac-o-irregular-e-provoca-impasse-sobre-moradia-no-litoral-de-s-o-paulo-entenda-1.494089\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Silvio Luiz/AT (reprodução)</a>",
+                              "__pullDown": false
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "bm1t0ml2",
+                        "type": "prose",
+                        "props": {
+                          "html": "<p>Para ocupações recentes, a orientação da própria Comissão Nacional de Soluções Fundiárias é de tratamento célere, e a legislação (arts. 300 e 562 do Código de Processo Civil e art. 10 da Lei nº 9.636/1998) autoriza a recuperação sumária da posse de imóvel da União ocupado irregularmente. Foi exatamente esse o fundamento da liminar no caso concreto, somado à repetição da ocupação no mesmo ano.</p>",
+                          "__pullUp": true
+                        }
+                      },
+                      {
+                        "id": "b_msw664a3_3g25",
+                        "type": "callout",
+                        "props": {
+                          "variant": "ear",
+                          "tone": "info",
+                          "icon": "clipboard-check",
+                          "title": "Lição",
+                          "heading": "",
+                          "children": "<p>O tempo é uma variável decisiva nesses conflitos — para os dois lados. A ocupação recente pode ser revertida com rapidez; a que se consolida por anos de inércia do gestor passa a atrair as salvaguardas estruturais vistas na seção 6. E a ociosidade prolongada segue sendo o gatilho de quase todos esses casos: preveni-la, com destinação tempestiva, é a forma mais eficaz de evitar o ciclo.</p>"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bmutcnj4",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cwrj52x0",
+          "type": "titulo",
+          "props": {
+            "text": "Um novo instrumento: <span style=\"font-weight: normal;\">as Comissões de Soluções Fundiárias</span>",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cdzc026y",
+          "type": "prose",
+          "props": {
+            "html": "<p>Conflitos envolvendo imóveis públicos nem sempre se limitam a disputas entre a Administração e um particular. Em algumas situações, especialmente quando envolvem ocupações coletivas urbanas ou rurais e populações em situação de vulnerabilidade, a solução exige diálogo entre diferentes instituições e a busca de alternativas que conciliem a proteção do patrimônio público e garantia de direitos.</p><p>Nesse contexto, foram criadas as <b>Comissões de Soluções Fundiárias</b>, estruturas instituídas no âmbito dos tribunais para apoiar o tratamento adequado dos conflitos fundiários coletivos. Seu papel não é substituir o juiz nem decidir o processo, mas reunir informações, promover o diálogo entre os envolvidos e buscar soluções consensuais sempre que possível, antes da adoção de medidas como despejos ou reintegrações de posse.</p><p>Embora a expressão \"conflito fundiário\" seja frequentemente associada ao meio rural, as Comissões também atuam em conflitos coletivos relacionados a imóveis urbanos. Para os gestores de imóveis públicos, compreender seu funcionamento é importante, pois esses conflitos podem envolver áreas pertencentes à União, aos estados ou aos municípios, exigindo atuação articulada com o Poder Judiciário e outras instituições.</p>"
+          }
+        },
+        {
+          "id": "bjue4caq",
+          "type": "titulo",
+          "props": {
+            "text": "De onde vieram?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "brib1rrk",
+          "type": "prose",
+          "props": {
+            "html": "<p>Em 2021, durante a pandemia de covid-19, no âmbito da <span data-term=\"ADPF\" data-definition=\"Arguição de Descumprimento de Preceito Fundamental\">ADPF</span>&nbsp;828, que pedia proteção para famílias vulneráveis ameaçadas de remoção, o ministro Luís Roberto Barroso concedeu liminar suspendendo desocupações de imóveis ocupados antes da pandemia. Em 2022, uma nova decisão no mesmo processo determinou que todos os Tribunais de Justiça e Tribunais Regionais Federais instalassem Comissões de Conflitos Fundiários — e tornou obrigatórias, antes de qualquer ordem de desocupação coletiva, a inspeção judicial no local e a audiência de mediação.</p><p>O deslocamento é importante: a intervenção judicial deixou de ser apenas reativa (expedir o mandado de despejo) para se tornar preventiva e estrutural (entender o conflito no território antes de decidir).</p>"
+          }
+        },
+        {
+          "id": "bqum4itf",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "body-lg",
+            "children": "<i>O desenho proposto pelo CNJ revela um esforço da administração judiciária de inserir o Poder Judiciário mais amplamente no debate e no planejamento das políticas públicas destinadas ao atendimento dos direitos de acesso à terra, à moradia e à cidade, uma vez que o Judiciário é também um ator importante, cujas decisões em conflitos fundiários coletivos impactam a distribuição de recursos e o planejamento das ações públicas. </i>",
+            "cite": "Fischer, Andrade e Alencar (p.324, 2025)"
+          }
+        },
+        {
+          "id": "bfjt7voq",
+          "type": "titulo",
+          "props": {
+            "text": "A regulamentação",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bpzjztks",
+          "type": "prose",
+          "props": {
+            "html": "<p>Em junho de 2023, o CNJ, por meio da Resolução CNJ nº 510/2023, transformou essa determinação em política permanente, criando <b>dois níveis de atuação</b>:</p>"
+          }
+        },
+        {
+          "id": "byq6b5jm",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bpuzrtse",
+              "type": "flashcard",
+              "props": {
+                "term": "Comissão Nacional de Soluções Fundiárias (CNSF)",
+                "description": "",
+                "definition": "<p>Funciona no CNJ, com um conselheiro e ao menos quatro magistrados. Define protocolos nacionais para ações de despejo ou reintegração de posse que atinjam moradia coletiva ou áreas produtivas de populações vulneráveis, e orienta as comissões regionais por meio de notas técnicas.</p>",
+                "icon": "file-spreadsheet",
+                "color": "var(--terra-600)"
+              }
+            },
+            {
+              "id": "b_msw6lkyg_3ftk",
+              "type": "flashcard",
+              "props": {
+                "term": "Comissões Regionais de Soluções Fundiárias (CRSF) ",
+                "description": "",
+                "definition": "<p>Instaladas em cada tribunal, funcionam como estrutura de apoio à solução pacífica desses conflitos: fazem visitas técnicas ao local, promovem audiências de mediação, produzem laudos multidisciplinares (com assistentes sociais, engenheiros, antropólogos, urbanistas) e se articulam com órgãos de habitação e assistência social.</p>",
+                "icon": "handshake",
+                "color": "var(--ochre-600)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bhc5j50j",
+          "type": "kicker",
+          "props": {
+            "icon": "scale",
+            "children": "O que as comissões significam para a gestão patrimonial"
+          }
+        },
+        {
+          "id": "b50a6sbq",
+          "type": "prose",
+          "props": {
+            "html": "<p>As comissões são o complemento operacional do Tema 698. O precedente define o modelo (reconhecer a omissão grave, fixar finalidades, devolver o plano ao Executivo); as comissões fornecem a estrutura para executá-lo de forma técnica e dialogada. </p><p>Para o gestor do patrimônio essas comissões implicam diferentes consequências. Por um lado, restringem a discricionariedade administrativa porque, ainda que sejam dialogadas, as soluções dependem da concordância do Poder Judiciário. Por outro lado, justamente por serem mediadas, tais soluções tendem a ser percebidas pelas partes como mais legítimas. </p>"
+          }
+        },
+        {
+          "id": "b3g8nh4l",
+          "type": "titulo",
+          "props": {
+            "text": "Desafios e controvérsias",
+            "level": "h4"
+          }
+        },
+        {
+          "id": "bw58uu2q",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": " Sobrecarga e desvio de finalidade",
+                "content": "<p>Alguns tribunais passaram a encaminhar às comissões ações individuais, sem caráter coletivo. Em 2024, a Comissão Nacional aprovou notas técnicas exigindo decisão judicial fundamentada para a remessa de processos às comissões regionais, definindo sua estrutura mínima de funcionamento e a celeridade devida em ocupações recentes.</p>"
+              },
+              {
+                "title": "Questionamento no STF ",
+                "content": "A <span data-term=\"ADI 7425\" data-definition=\"Ação Direta de Inconstitucionalidade 7425\">ADI 7425</span>, proposta pela Confederação da Agricultura e Pecuária do Brasil (CNA), questiona dispositivos da Resolução que permitiriam às comissões agir de forma autônoma, sem decisão prévia do juiz da causa — um debate sobre os limites da atuação administrativa do Judiciário. Até julho de 2026, a ação aguardava julgamento de mérito no STF, sem decisão que suspendesse a resolução — na prática, as comissões seguem em pleno funcionamento, mas o desenho institucional ainda pode ser ajustado pelo Supremo.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Falta de solução habitacional",
+                "content": "Em muitos casos as comissões conseguem evitar ou adiar o despejo, mas não encontram alternativa concreta de moradia, por falta de estoque de imóveis adequados ou de recursos nos programas habitacionais.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Assimetria entre tribunais",
+                "content": "O grau de estruturação das comissões varia muito entre os 33 tribunais obrigados pela Resolução, alguns ainda operam sem estrutura mínima.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b445o9nd",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cxt34gfn",
+          "type": "titulo",
+          "props": {
+            "text": "Os grandes conflitos fundiários com entes públicos",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cbe4eb2q",
+          "type": "prose",
+          "props": {
+            "html": "<p>Além dos casos de imóveis urbanos, o período recente registrou decisões de enorme escala envolvendo áreas públicas — úteis para dimensionar o alcance da atuação judicial sobre o território:</p>"
+          }
+        },
+        {
+          "id": "bcqw20tp",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Raposa Serra do Sol (STF, PET 3388)",
+                "content": "<p>A homologação, em 2005, da demarcação contínua de 1.747.464 hectares em Roraima (194 comunidades, cerca de 19 mil indígenas) foi contestada pelo estado e confirmada pelo STF, que fixou 19 salvaguardas e o marco interpretativo do art. 231 da Constituição sobre terras indígenas.</p>"
+              },
+              {
+                "title": "Marco temporal (RE 1.017.365 e ADIs 7582, 7583 e 7586)",
+                "content": "Em 2023, o STF declarou inconstitucional a tese do marco temporal para demarcação de terras indígenas. O Congresso reagiu com a Lei 14.701/2023, restabelecendo a tese; em dezembro de 2025, o STF reafirmou a inconstitucionalidade por 9 votos a 1 e declarou, pela primeira vez, a omissão do Estado brasileiro por não concluir as demarcações no prazo constitucional.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Fazenda Ariadnópolis / Quilombo Campo Grande (MG)",
+                "content": "O maior conflito agrário da história de Minas Gerais foi encerrado em novembro de 2025, após quase 30 anos, com a desapropriação de cerca de 4 mil hectares e a inclusão de aproximadamente 600 famílias na reforma agrária. O acordo foi homologado em sessão conjunta e inédita do TRF-6 e do TJMG — primeira cooperação formal entre as duas cortes em um conflito fundiário.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bp9o6zk2",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cll6pvwh",
+          "type": "titulo",
+          "props": {
+            "text": "O olhar do controle: <span style=\"font-weight: normal;\">transparência e integridade</span> ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "bbehde7e",
+          "type": "prose",
+          "props": {
+            "html": "<p>Enquanto o Judiciário e o Ministério Público atuam caso a caso, os órgãos de controle avaliam o sistema como um todo e o diagnóstico deles ajuda a entender por que há tanta judicialização.&nbsp;</p>"
+          }
+        },
+        {
+          "id": "bifbf6rr",
+          "type": "titulo",
+          "props": {
+            "text": "O controle externo: <span style=\"font-weight: normal;\">o diagnóstico dos tribunais de contas&nbsp;</span>",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cm906xpc",
+          "type": "prose",
+          "props": {
+            "html": "<p>O controle externo da gestão patrimonial é exercido pelos tribunais de contas — o TCU, no plano federal, e os tribunais de contas dos estados e dos municípios, nas demais esferas. As auditorias sobre patrimônio imobiliário têm apontado, com recorrência, o mesmo conjunto de fragilidades, que revelam os pontos de vulnerabilidade que o gestor, em qualquer ente, deve resolver:</p>"
+          }
+        },
+        {
+          "id": "bli74rvu",
+          "type": "feature",
+          "props": {
+            "columns": 2,
+            "card": true,
+            "accent": "var(--terra-600)",
+            "layout": "side",
+            "items": [
+              {
+                "icon": "info",
+                "title": "Fragilidade de informação",
+                "text": "Sistemas defasados e dados cadastrais pouco confiáveis comprometem toda a cadeia de gestão — do inventário à fiscalização e à avaliação dos imóveis. Sem saber, com segurança, o que se tem e em que condições, qualquer decisão de destinação fica vulnerável."
+              },
+              {
+                "icon": "house",
+                "title": "Fragilidade de utilização",
+                "text": "Imóveis desocupados permanecem sujeitos a abandono e depredação, gerando riscos ambientais e de segurança que, por consequência, implicam em gastos, trata-se de um desequilíbrio que resume o custo da ociosidade."
+              },
+              {
+                "icon": "landmark",
+                "title": "Fragilidade institucional",
+                "text": "As estruturas responsáveis pela gestão patrimonial demandam atualizações de fluxos, de procedimentos e tecnológicas para enfrentarem com eficiência o enorme desafio que é dar conta de todo o clico de gestão dos imóveis."
+              },
+              {
+                "icon": "file-search-corner",
+                "title": "Fragilidade de governança e transparência",
+                "text": "Planos de caracterização e fiscalização carecem de indicadores de efetividade, o monitoramento das carteiras é frágil e a prestação de contas à sociedade ainda é limitada."
+              }
+            ]
+          }
+        },
+        {
+          "id": "bc1uuyzj",
+          "type": "kicker",
+          "props": {
+            "icon": "landmark",
+            "children": "O caso federal ilustra a dinâmica"
+          }
+        },
+        {
+          "id": "b409lroc",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão do patrimônio imobiliário figura na Lista de Alto Risco do Tribunal de Contas da União – TCU, com atualizações periódicas, e decisões recentes do tribunal determinaram aperfeiçoamentos, monitoramentos anuais e a ampliação da transparência sobre as destinações, justamente para permitir maior controle social do patrimônio. Diagnósticos da mesma natureza aparecem em auditorias de cortes de contas estaduais e distritais, como as realizadas pelos TCEs de Santa Catarina e da Bahia e pelo TCDF, que apontaram cadastros inconsistentes, imóveis sem registro, ausência de inventário e fiscalização deficiente —, o que sugere que as fragilidades não são idiossincrasias de um ente, mas traços recorrentes da gestão imobiliária pública</p>"
+          }
+        },
+        {
+          "id": "b7d372hs",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "Para pensar",
+            "heading": "",
+            "children": "<p>Note a conexão entre os números do controle e os casos reais apresentados anteriormente: cada imóvel público desocupado é, potencialmente, um gatilho de ocupação, ação civil pública ou ordem judicial. O diagnóstico dos tribunais de contas e a judicialização são duas faces do mesmo problema - a dificuldade estrutural de dar destinação tempestiva ao patrimônio.</p>"
+          }
+        },
+        {
+          "id": "b_mswbtdnh_sr91",
+          "type": "titulo",
+          "props": {
+            "text": "O controle interno: <span style=\"font-weight: normal;\">a atuação das controladorias</span>",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bgmz53yd",
+          "type": "prose",
+          "props": {
+            "html": "<p>Cada Poder e cada ente da Federação deve manter seu próprio sistema de controle interno (arts. 70 e 74 da Constituição). No Poder Executivo, essa função é exercida pelas controladorias, no nível federal, é a Controladoria- Geral da União, estados e municípios têm seus próprios órgãos de controle interno.</p><p>Essas instituições são responsáveis pela avaliação das ações dos gestores a respeito do patrimônio público e pelo incremento da transparência da gestão, por meio de auditoria, correição, prevenção da corrupção e ouvidoria. Na gestão imobiliária, a atuação do controle interno se manifesta em <b>três frentes principais</b>:</p>"
+          }
+        },
+        {
+          "id": "bej3saow",
+          "type": "markerlist",
+          "props": {
+            "variant": "ordered",
+            "icon": "check",
+            "accent": "var(--ochre-600)",
+            "items": [
+              {
+                "title": "Auditorias sobre a gestão dos imóveis",
+                "text": "As controladorias avaliam periodicamente como as unidades gestoras administram os bens sob sua responsabilidade, verificando, por exemplo, se imóveis cedidos estão ocupados regularmente, se os encargos das cessões são fiscalizados e se as carteiras estão adequadamente caracterizadas. Os achados alimentam planos de providências dos gestores, fechando o ciclo entre diagnóstico e correção.<br>"
+              },
+              {
+                "title": "Transparência ativa",
+                "text": "Os entes mantêm portais de transparência que publicam, entre outros dados, informações sobre seus imóveis, ocupantes e destinações — obrigação que decorre da Lei de Acesso à Informação (Lei nº 12.527/2011), aplicável a todos os entes federativos. Do lado do gestor patrimonial, painéis de dados abertos sobre os imóveis, seus ocupantes e a arrecadação permitem a qualquer cidadão, pesquisador ou órgão de controle acompanhar a gestão.<br>"
+              },
+              {
+                "title": "Integridade",
+                "text": "As controladorias coordenam as políticas de integridade de suas administrações, que exigem dos órgãos a identificação e o tratamento de riscos de fraude, corrupção e conflito de interesses. Decisões patrimoniais são sensíveis a esses riscos, e por isso devem estar mapeadas nos programas de integridade dos órgãos gestores."
+              }
+            ]
+          }
+        },
+        {
+          "id": "bxx5khix",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "warning",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "Por que transparência e integridade importam tanto aqui?",
+            "children": "<p>Imóvel público combina três ingredientes de risco:<b> ativos de alto valor, decisões descentralizadas (avaliações, cessões, permutas, alienações) e histórico de informação precária</b>. Nesse ambiente, a publicidade dos dados é essencial para reconhecer e adotar medidas contra o uso privado indevido do patrimônio, e é a condição para que o controle social funcione. Para o gestor, transparência não é obrigação acessória: é o que diferencia uma decisão patrimonial defensável de uma decisão sob suspeita.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmih7fua",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b9rd5pr3",
+          "type": "kicker",
+          "props": {
+            "icon": "book-open-text",
+            "children": "SíNTESE"
+          }
+        },
+        {
+          "id": "czantce1",
+          "type": "titulo",
+          "props": {
+            "text": "A caixa de ferramentas dos atores externos",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "coqkixet",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão de imóveis públicos envolve a atuação de diferentes instituições, cada uma com competências, responsabilidades e instrumentos próprios. Embora esses atores possam atuar de forma articulada em determinadas situações, seus papéis não se confundem: enquanto alguns tomam decisões administrativas, outros exercem funções de controle, fiscalização, defesa de direitos ou solução de conflitos.</p><p>O quadro a seguir apresenta, de forma sintética, os principais instrumentos utilizados por esses atores no exercício de suas atribuições. Seu objetivo é facilitar a compreensão do papel desempenhado por cada instituição e como elas contribuem, sob diferentes perspectivas, para a governança, a proteção e o controle do patrimônio imobiliário público.</p>"
+          }
+        },
+        {
+          "id": "bf5re4og",
+          "type": "datatable",
+          "props": {
+            "caption": "",
+            "columns": [
+              {
+                "key": "c0",
+                "label": "Instrumento"
+              },
+              {
+                "key": "c1",
+                "label": "Quem usa"
+              },
+              {
+                "key": "c2",
+                "label": "Para quê"
+              }
+            ],
+            "rows": [
+              {
+                "c0": "Ação civil pública (ACP)",
+                "c1": "MP, Defensoria",
+                "c2": "Obrigar a conservação/restauração de bem tombado ou a destinação de imóvel ocioso, com multa diária pelo descumprimento"
+              },
+              {
+                "c0": "Manifestação em ação de reintegração de posse",
+                "c1": "MPF, DPU",
+                "c2": "Requerer que a desocupação seja condicionada à existência de plano de reassentamento e à observância da função social"
+              },
+              {
+                "c0": "Liminar (tutela de urgência)",
+                "c1": "Judiciário",
+                "c2": "Determinar medidas emergenciais (escoramento, isolamento, interdição) ou deferir reintegração com urgência"
+              },
+              {
+                "c0": "Decisão estruturante (Tema 698)",
+                "c1": "Judiciário",
+                "c2": "Reconhecer a omissão grave, fixar finalidades e prazos, e exigir que o Executivo apresente o plano"
+              },
+              {
+                "c0": "Comissões de Soluções Fundiárias",
+                "c1": "Judiciário/CNJ (Res. 510/2023)",
+                "c2": "Mediar conflitos possessórios coletivos com visitas técnicas, laudos multidisciplinares e articulação interinstitucional"
+              },
+              {
+                "c0": "Auditorias e Lista de Alto Risco",
+                "c1": "TCU, CGU e Tribunais de Contas e Controladorias de estados e municípios",
+                "c2": "Diagnosticar deficiências sistêmicas, determinar correções e monitorar programas de destinação"
+              }
+            ],
+            "dense": false,
+            "highlightFirst": true,
+            "striped": true,
+            "tone": "petrol",
+            "className": "spu-table-wrap--striped spu-table-wrap--tone-petrol"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bw2mddcx",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para fechar",
+        "kickerIcon": "check",
+        "title": "Conclusão",
+        "body": "<p>Os casos e instrumentos apresentados revelam que o Poder Judiciário, o Ministério Público e os órgãos de controle se tornaram fortes influenciadores e, em situações de omissão grave, verdadeiros atores centrais, da gestão do patrimônio imobiliário público no Brasil. Sentenças determinam restaurações, audiências de mediação precedem desocupações, comissões articulam soluções estruturais e auditorias definem agendas de melhoria. Esse protagonismo tem méritos inegáveis: destravou conflitos que se arrastavam há décadas, protegeu populações vulneráveis e deu visibilidade pública a um problema que a rotina administrativa havia normalizado.</p><p>É preciso, porém, olhar criticamente para esse modelo, que carrega ao menos quatro ordens de problemas.</p>"
+      },
+      "children": [
+        {
+          "id": "bddt021a",
+          "type": "accordion",
+          "props": {
+            "numbered": true,
+            "items": [
+              {
+                "title": "Legitimidade e capacidade",
+                "content": "<p>Juízes, promotores e auditores não respondem eleitoralmente pelas escolhas alocativas que induzem, nem dispõem da visão orçamentária e territorial de conjunto que a gestão exige — exatamente a razão pela qual o próprio Tema 698 afasta o microgerenciamento judicial. Quando a intervenção externa define, na prática, onde o recurso escasso será aplicado, a decisão sai do circuito democrático-administrativo sem que ninguém passe a responder integralmente por ela.</p>"
+              },
+              {
+                "title": "Seletividade da judicialização",
+                "content": "<p>A intervenção ocorre nos casos que chegam ao processo, não necessariamente nos mais graves ou prioritários. O imóvel que conta com um promotor atento, uma comunidade organizada ou visibilidade na imprensa tende a \"furar a fila\" das prioridades definidas nas políticas públicas — o que pode aprofundar desigualdades entre territórios e entre grupos com diferentes capacidades de mobilização.</p>"
+              },
+              {
+                "title": "Tempo e segurança jurídica",
+                "content": "<p>Gerir por processo judicial é caro e lento; multas diárias retiram recursos do mesmo orçamento que deveria financiar a solução; e a assimetria de estruturação entre tribunais e comissões — somada a controvérsias ainda abertas, produz tratamentos distintos para situações semelhantes, gerando insegurança para gestores e cidadãos.</p>"
+              },
+              {
+                "title": "Risco de deslocamento de responsabilidade",
+                "content": "<p>Quanto mais o sistema de justiça e os órgãos de controle assumem a condução, menor pode ser o incentivo para o Executivo investir na própria capacidade de gestão — e o modelo estruturante do Tema 698 só funciona se houver, do outro lado, uma administração capaz de planejar. Há também um alerta simétrico para o controle: diagnósticos repetidos ano após ano, sem consequências práticas, correm o risco de se tornar ritual.</p>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b4btkm80",
+          "type": "prose",
+          "props": {
+            "html": "<p>A síntese para quem atua na área é dupla. De um lado, reconhecer e aproveitar o que esses atores trazem: indução de soluções, mediação qualificada, diagnóstico sistêmico e pressão por transparência. De outro, trabalhar para que a intervenção externa seja exceção — o que exige cadastro confiável, destinação tempestiva, planos documentados, dados públicos e integridade nas decisões patrimoniais. Onde a gestão é forte e transparente, o controle complementa; onde ela é frágil, o controle substitui, com todos os limites apontados acima.</p>"
+          }
+        },
+        {
+          "id": "bua77c8u",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Para refletir",
+            "kickerIcon": "brain",
+            "title": "",
+            "color": "",
+            "bg": "var(--sand-50)",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "byphrgbv",
+              "type": "markerlist",
+              "props": {
+                "variant": "icon",
+                "icon": "badge-question-mark",
+                "accent": "var(--terra-500)",
+                "items": [
+                  {
+                    "title": "",
+                    "text": "Pense em um imóvel público ocioso que você conheça, considerando o que vimos neste material, o que a administração responsável precisaria demonstrar em juízo para preservar sua autonomia de decisão sobre esse bem? "
+                  },
+                  {
+                    "title": "",
+                    "text": "Você já acompanhou alguma situação em que uma decisão da Administração Pública foi questionada por um órgão de controle ou pelo Poder Judiciário? O que motivou essa intervenção e quais foram seus efeitos? "
+                  },
+                  {
+                    "title": "",
+                    "text": "Pense em um caso de repercussão nacional ou em uma situação vivenciada no órgão/entidade onde você trabalha envolvendo um imóvel público. Quais instituições participaram da solução do problema? Cada uma desempenhou o papel que você esperava? "
+                  },
+                  {
+                    "title": "",
+                    "text": "Ao lembrar de alguma situação envolvendo um imóvel público, você consegue identificar quais atores estudados neste material participaram da tomada de decisão ou do controle da atuação administrativa?"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "byryx8up",
+          "type": "kicker",
+          "props": {
+            "icon": "album",
+            "children": "<span data-color=\"ochre-light\">Referências</span>"
+          }
+        },
+        {
+          "id": "baz4ojo7",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Normas e Constituição",
+                "content": "",
+                "blocks": [
+                  {
+                    "id": "bifif303",
+                    "type": "prose",
+                    "props": {
+                      "html": "<p>BRASIL. Constituição da República Federativa do Brasil de 1988. Brasília, DF: Senado Federal, 1988. Arts. 2º, 5º (XXIII), 127 (caput), 129 (III) e 231.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">BRASIL. Decreto nº 11.929, de 5 de março de 2024. Institui o Programa de Democratização de Imóveis da União — Imóvel da Gente. Diário Oficial da União, Brasília, DF, 2024.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">BRASIL. Lei nº 14.701, de 20 de outubro de 2023. Regulamenta o art. 231 da Constituição Federal (demarcação de terras indígenas). Diário Oficial da União, Brasília, DF, 2023.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">CONSELHO NACIONAL DE JUSTIÇA (CNJ). Resolução nº 510, de 26 de junho de 2023. Institui a Comissão Nacional de Soluções Fundiárias e as Comissões Regionais de Soluções Fundiárias nos tribunais. Disponível em: https://atos.cnj.jus.br/atos/detalhar/5172. Acesso em: jul. 2026.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">CONSELHO NACIONAL DE JUSTIÇA (CNJ). Comissão de Soluções Fundiárias aprova notas técnicas para orientar tribunais. Agência CNJ de Notícias, Brasília, nov. 2024. Disponível em: https://www.cnj.jus.br/comissao-de-solucoes-fundiarias-aprova-notas-tecnicas-para-orientar-tribunais/. Acesso em: jul. 2026.</span></p>"
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Decisões judiciais e documentos institucionais",
+                "content": "",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b_mswc2m76_v05g",
+                    "type": "prose",
+                    "props": {
+                      "html": "<p>SUPREMO TRIBUNAL FEDERAL (STF). Recurso Extraordinário nº 684.612/RJ — Tema 698 da Repercussão Geral. Relator: Min. Ricardo Lewandowski. Redator do acórdão: Min. Roberto Barroso. Julgamento: 30/06/2023. DJe 07/08/2023.</p><p>STF. ADPF 828. Relator: Min. Luís Roberto Barroso. Liminar: jun. 2021. Quarta tutela cautelar incidental: nov. 2022.</p><p>STF. ADI 7425 (Confederação da Agricultura e Pecuária do Brasil × Resolução CNJ nº 510/2023). Em tramitação.</p><p>STF. PET 3388 — Terra Indígena Raposa Serra do Sol. Relator: Min. Carlos Ayres Britto. Julgamento: mar. 2009. Embargos de declaração: out. 2013.</p><p>STF. RE 1.017.365 (Tema 1031) — marco temporal (set. 2023). ADIs 7582, 7583 e 7586 — Lei 14.701/2023 (dez. 2025). Relator: Min. Gilmar Mendes.</p><p>SUPERIOR TRIBUNAL DE JUSTIÇA (STJ). REsp 2.218.969-SP. 2ª Turma. Relator: Min. Afrânio Vilela. Julgamento: 2025.</p><p>TRIBUNAL DE CONTAS DA UNIÃO (TCU). Lista de Alto Risco da Administração Pública Federal — Gestão do patrimônio imobiliário da União. Disponível em: https://sites.tcu.gov.br/listadealtorisco/gestao_do_patrimonio_imobiliario_da_uniao.html. Acesso em: jul. 2026.</p><p>TCU. Acórdão nº 160/2024 — Plenário. Gestão do patrimônio imobiliário da União (Lista de Alto Risco). Relator: Min. Jhonatan de Jesus. Fev. 2024.</p><p>TCU. Auditoria no Programa Imóvel da Gente — TC 008.376/2025-5. Sessão plenária: 19 nov. 2025.</p><p>TRF-6. Ação Civil Pública nº 1083289-54.2021.4.01.3800 (MPF + DPU × União/INSS/CEF) — Rua Caetés, 331, Belo Horizonte. Atuação da Comissão Regional de Soluções Fundiárias: 2024.</p><p>TRF-3. Ação de reintegração de posse nº 5007773-36.2025.4.03.6104 — União (SPU-SP) × Frente de Moradia da Baixada Santista. 3ª Vara Federal de Santos. Tutela de urgência: set. 2025.</p><p>TRF-6 e TJMG. Homologação do acordo de desapropriação da Fazenda Ariadnópolis — Quilombo Campo Grande. Sessão conjunta: 26 nov. 2025.</p><p>MPF/RJ. Manifestação em ação de reintegração de posse — INSS × famílias ocupantes. Av. Venezuela, 53, Rio de Janeiro.</p><p>MPSP. Ação civil pública — Galpão da Oficina de Locomotivas, Araçatuba/SP. Ajuizada em maio de 2023.</p><p>TJMA. Vara de Interesses Difusos e Coletivos de São Luís. ACP — Orfanato Santa Luzia. Liminar: abr. 2020. Sentença: 2023.</p>"
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Transparência dos dados oficiais sobre o patrimônio da União",
+                "content": "",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b_mswc2jb0_udr6",
+                    "type": "prose",
+                    "props": {
+                      "html": "<p>SPU. Painel de Transparência Ativa do Patrimônio da União. Disponível em: https://qlik-publico.paineis.gov.br. Acesso em: jul. 2026.</p><p>CONTROLADORIA-GERAL DA UNIÃO (CGU). Relatórios de auditoria sobre a gestão de imóveis da União (Plataforma e-Aud) — entre outros, Relatório nº 1621788 (imóveis da União utilizados em atividades portuárias na região do Porto de Santos) e Relatório nº 1623044 (imóveis da União em atividades portuárias no Ceará — SPU/CE). Disponível em: https://eaud.cgu.gov.br/relatorios. Acesso em: jul. 2026.</p><p>CGU. Portal da Transparência do Governo Federal — consulta de imóveis funcionais da União. Disponível em: https://portaldatransparencia.gov.br/imoveis-funcionais/imoveis. Acesso em: jul. 2026.</p>"
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Artigos e obras",
+                "content": "",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b_mswc3rne_alxh",
+                    "type": "prose",
+                    "props": {
+                      "html": "<p>FISCHER, Luly Rodrigues da Cunha; ANDRADE, Agenor Cássio Nascimento Correia de; ALENCAR, Thais Viana de. Comissões de Soluções Fundiárias como medida estruturante da ADPF 828. Suprema — Revista de Estudos Constitucionais, Brasília, v. 5, n. especial, p. 311-340, 2025. DOI: 10.53798/suprema.2025.v5.nEspecial.a346.</p><p>GUTERRES, José Augusto; SILVA, Lucas Cavalcanti. A política judiciária estruturante do CNJ para tratamento adequado de conflitos fundiários coletivos: análise da Resolução CNJ n. 510/2023. Revista CNJ, Brasília, v. 9, n. 1, p. 87-106, jan./jun. 2025. DOI: 10.54829/revistacnj.v9i1.726.</p><p>VALLE, Vanice Regina Lírio do. Tema 698: o STF \"lacrou\" o controle de políticas públicas? Revista Consultor Jurídico (ConJur), 20 jul. 2023.</p><p>MIRANDA, Marcos Paulo de Souza. O controle judicial da omissão do poder público na preservação de bens tombados. Revista Consultor Jurídico (ConJur), 18 jan. 2025.</p><p>FUCCIA, Eduardo Velozo. Juíza determina reintegração de terreno da União na área urbana de Santos. Revista Consultor Jurídico (ConJur), 24 set. 2025.</p><p>MAZZILLI, Hugo Nigro. O Ministério Público em defesa do patrimônio público. Revista Digital do MPC. Disponível em: https://mazzilli.com.br/pages/artigos/patrpub_MPC.pdf. Acesso em: jul. 2026.</p><p>MINISTÉRIO PÚBLICO DE MINAS GERAIS (MPMG). Práticas em defesa do patrimônio público. Revista MPMG Jurídico, edição especial Patrimônio Público. Belo Horizonte: PGJ/CEAF, mar. 2015.</p><p>CNJ; INSPER; INSTITUTO PÓLIS. Conflitos fundiários coletivos urbanos e rurais: uma visão das ações possessórias. Brasília: CNJ, 2021.</p><p>MPF; PFDC. Coletânea: conflitos fundiários coletivos e a Resolução CNJ nº 510/2023. Brasília: MPF, 2024.</p><p>COMISSÃO PASTORAL DA TERRA (CPT). Conflitos no Campo Brasil 2024. Goiânia: CPT, 2025.</p>"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bzw6twbi",
+      "type": "pagefooter",
+      "props": {
+        "code": "Judiciario MP Controle_Gestao Patrimonio Imobiliario [M134]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Ana Túlia de Macedo"
+          },
+          {
+            "role": "Revisão",
+            "name": "Claudson Moreira, Karina Bonilaure "
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
