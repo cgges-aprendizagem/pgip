@@ -563,7 +563,7 @@
           "props": {
             "variant": "box",
             "kicker": "Exemplo Da UNIÃO",
-            "kickerIcon": "map-pin",
+            "kickerIcon": "landmark",
             "title": "",
             "color": "",
             "bg": "var(--cloud-50)",
@@ -586,21 +586,17 @@
                 "items": [
                   {
                     "title": " TT-01 – Tipos de Uso Imobiliário",
-                    "content": "<p>Classifica os diferentes usos atribuídos aos imóveis públicos, apoiando análises sobre função social, destinação e políticas públicas.<br><span style=\"text-wrap-mode: initial; color: inherit;\">Disponível em: <mark data-hl=\"petrol\"><span data-color=\"petrol\"><a href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/252031/SEI_50532576_Resolucao_2-4.pdf\">Resolução ComGC/SPU/MGI nº 2/2025 (TT-01)</a></span></mark></span></p>"
+                    "content": "<p>Classifica os diferentes usos atribuídos aos imóveis públicos, apoiando análises sobre função social, destinação e políticas públicas.</p>",
+                    "linkLabel": "Acesse: <span style=\"text-wrap-mode: initial; color: inherit;\">Resolução ComGC/SPU/MGI nº 2/2025 (TT-01)</span>",
+                    "linkHref": "https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/252031/SEI_50532576_Resolucao_2-4.pdf",
+                    "linkButton": "primary"
                   },
                   {
                     "title": " TT-02 – Regimes de Destinação Imobiliária",
-                    "content": "<p>Organiza e padroniza os regimes jurídicos utilizados para destinação de imóveis públicos, estruturando-os conforme sua natureza e efeitos patrimoniais.</p><p>Disponível no repositório institucional <b>MemóriaSPU: </b><span style=\"text-wrap-mode: initial; color: inherit;\"><mark data-hl=\"terra\"><span data-color=\"petrol\"><a href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/273781/SEI_54999155_Resolucao_5_TT02.pdf\">Resolução ComGC/SPU/MGI nº 5/2025 (TT-02)</a></span> </mark></span></p>",
-                    "linkHref": "",
-                    "linkLabel": "",
-                    "linkButton": ""
-                  },
-                  {
-                    "title": " TT-03 – Funções Finalísticas da Gestão Patrimonial Imobiliária",
-                    "content": "<p>Sistematiza as principais funções e macrofunções relacionadas à administração do patrimônio imobiliário público, oferecendo uma visão integrada do ciclo de gestão e apoiando iniciativas de capacitação, modelagem de processos e governança.</p><p>Disponível no repositório institucional <b>MemóriaSPU</b>: <mark data-hl=\"terra\"><a href=\"https://\">Tabela Taxonômica TT-03 – Funções Finalísticas</a></mark> </p>",
-                    "linkHref": "",
-                    "linkLabel": "",
-                    "linkButton": ""
+                    "content": "<p>Organiza e padroniza os regimes jurídicos utilizados para destinação de imóveis públicos, estruturando-os conforme sua natureza e efeitos patrimoniais.</p>",
+                    "linkHref": "https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/273781/SEI_54999155_Resolucao_5_TT02.pdf",
+                    "linkLabel": "Acesse: Resolução ComGC/SPU/MGI nº 5/2025 (TT-02)",
+                    "linkButton": "primary"
                   }
                 ]
               }
@@ -628,8 +624,7 @@
             "icon": "bookmark",
             "title": "Atenção",
             "heading": "Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02)",
-            "children": "<p>Para aprofundar o estudo, recomenda-se a leitura da Resolução que institui a Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02), reproduzida integralmente ao final deste material. O documento apresenta as definições oficiais, fundamentos legais, instrumentos de formalização e demais atributos de cada regime, constituindo importante referência para a padronização conceitual e a gestão dos imóveis públicos.</p><p><b><a href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/273781/SEI_54999155_Resolucao_5_TT02.pdf\" data-btn=\"secondary\">Acesse aqui a TT02</a></b></p>",
-            "color": ""
+            "children": "<p>Para aprofundar o estudo, recomenda-se a leitura da Resolução que institui a Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02), reproduzida integralmente ao final deste material. O documento apresenta as definições oficiais, fundamentos legais, instrumentos de formalização e demais atributos de cada regime, constituindo importante referência para a padronização conceitual e a gestão dos imóveis públicos.</p><p><b><a href=\"https://memoria-spu.gestao.gov.br/wp-content/uploads/tainacan-items/54791/273781/SEI_54999155_Resolucao_5_TT02.pdf\" data-btn=\"secondary\">Acesse aqui a TT-02</a></b></p>"
           }
         },
         {
@@ -651,7 +646,7 @@
       "id": "bhi2lp79",
       "type": "pagefooter",
       "props": {
-        "code": "M412 - Regimes de destinação",
+        "code": "Regimes de destinação [M412]",
         "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",

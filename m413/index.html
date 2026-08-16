@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M413 - Destinar um imóvel público - um problema imobiliário ou uma decisão de Estado</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"bxrfmg77__beforeSlot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bxrfmg77__beforeslot.png"},"bxrfmg77__afterSlot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bxrfmg77__afterslot.png"},"bpotdm0g__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bpotdm0g__slot.png"},"bbnt51kf__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bbnt51kf__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M413 - Destinar um imóvel público - um problema imobiliário ou uma decisão de Estado","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"c5x9jj9w","text":"Por que este material importa?","hidden":false},{"id":"chd0n1zp","text":"Antes de escolher a destinação: \u003cspan style=\"font-weight: normal;\">que valor público o imóvel pode gerar?\u003c/span>","hidden":false},{"id":"cczs88xb","text":"Imóveis diferentes, soluções diferentes","hidden":false},{"id":"c1rwyllo","text":"O que considerar na escolha da destinação?","hidden":false},{"id":"cv3wzhhd","text":"Como transformar critérios em uma decisão de destinação?","hidden":false}]}},"blocks":[{"id":"bjpclbph","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"bbnt51kf","type":"hero","props":{"kicker":"Fundamentos. estratégias e instrumentos de destinação patrimonial","kickerIcon":"milestone","title":"Destinar um imóvel público","byline":"um problema imobiliário ou uma decisão de Estado?","slot":"bbnt51kf__slot"}},{"id":"bj657k1f","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c5x9jj9w","type":"titulo","props":{"text":"Por que este material importa?","level":"h2"}},{"id":"cut1jo3a","type":"prose","props":{"html":"\u003cp>Destinar um imóvel público não é apenas escolher entre vender, ceder, alugar, construir ou manter determinado bem. A decisão envolve compreender a vocação do imóvel, sua inserção no território, as políticas públicas que pode apoiar, os custos e benefícios de cada alternativa e, sobretudo, o valor público que pode gerar para a sociedade.\u003c/p>\u003cp>Este material propõe justamente essa reflexão. Ele dialoga com conteúdos anteriores do Programa, que  apresentaram a função socioambiental da propriedade pública, os regimes de destinação e a relação entre patrimônio, território e políticas públicas. Aqui, o foco avança para uma questão central da gestão patrimonial: \u003cb>\u003cmark data-hl=\"petrol\">como pensar a destinação como uma decisão de Estado e não apenas como uma solução imobiliária?\u003c/mark>\u003c/b>\u003c/p>\u003cp>A leitura não apresenta uma fórmula pronta para decidir. Seu objetivo é ampliar o olhar sobre os critérios que precisam ser considerados e mostrar por que diferentes imóveis podem exigir soluções completamente diferentes.\u003c/p>"}},{"id":"box174vx","type":"callout","props":{"variant":"ear","tone":"attention","icon":"file-text","title":"Material adaptado","heading":"","children":"\u003cp>Este conteúdo foi adaptado para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos a partir do trabalho originalmente desenvolvido por \u003cb>Rodrigo Pessoa Trajano\u003c/b> em sua dissertação de mestrado em Administração Pública pela Fundação Getulio Vargas (FGV). As reflexões acadêmicas são retomadas aqui em linguagem mais direta e aplicadas aos desafios da gestão patrimonial pública.\u003c/p>"}}]},{"id":"bl74s5nw","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"chd0n1zp","type":"titulo","props":{"text":"Antes de escolher a destinação: \u003cspan style=\"font-weight: normal;\">que valor público o imóvel pode gerar?\u003c/span>","level":"h2"}},{"id":"cgwhks7y","type":"prose","props":{"html":"\u003cp>Quando se discute a destinação de um imóvel público, a pergunta quase sempre surge de forma simplificada.\u003c/p>"}},{"id":"bqq63zj9","type":"feature","props":{"columns":4,"card":true,"accent":"","layout":"top","items":[{"icon":"circle-dollar-sign","title":"","text":"\u003cb>Devemos vender?\u003c/b>"},{"icon":"house","title":"","text":"\u003cb>Devemos construir moradias?\u003c/b>"},{"icon":"hospital","title":"","text":"\u003cb>Devemos instalar um órgão público?\u003c/b>"},{"icon":"file-text","title":"","text":"\u003cb>Devemos alugar?\u003c/b>"}]}},{"id":"b3bryewv","type":"prose","props":{"html":"\u003cp>À primeira vista, parecem perguntas objetivas. Mas talvez a pergunta mais importante talvez seja outra:\u003c/p>"}},{"id":"bbhqy5b8","type":"feature","props":{"columns":1,"card":false,"accent":"var(--terra-600)","layout":"side","items":[{"icon":"circle-question-mark","title":"\u003cspan data-font=\"serif\">\u003ci>\u003cspan data-fs=\"body-lg\">\u003cmark style=\"\">\u003cspan style=\"font-weight: normal;\">Qual é a maior geração de \u003c/span>valor público\u003cspan style=\"font-weight: normal;\"> que este imóvel pode produzir para a sociedade?\u003c/span>\u003c/mark>\u003c/span>\u003c/i>\u003c/span>","text":"Essa mudança de perspectiva altera completamente a forma de enxergar o patrimônio imobiliário público.\u003cbr>"}]}},{"id":"b_mst17pfd_u9dc","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Durante muito tempo, os imóveis públicos foram tratados predominantemente sob duas óticas. Para alguns, representam apenas \u003cmark data-hl=\"petrol\">infraestrutura necessária ao funcionamento do Estado\u003c/mark>: locais onde funcionam escolas, hospitais, universidades, quartéis, repartições públicas e demais equipamentos destinados à prestação de serviços. Para outros, representam um \u003cmark data-hl=\"terra\">estoque patrimonial capaz de gerar receitas\u003c/mark> mediante alienações ou locações. \u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Ambas as visões captam dimensões importantes do patrimônio público, mas não esgotam suas possibilidades de utilização. \u003c/span>\u003c/p>"}},{"id":"bxrfmg77","type":"imagereveal","props":{"beforeLabel":"Geração de Receita","afterLabel":"Infraestrutura de Estado","beforeSlot":"bxrfmg77__beforeSlot","afterSlot":"bxrfmg77__afterSlot","heightMode":"adapted","caption":""}},{"id":"b_msuydyll_nehm","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Os imóveis públicos constituem\u003cmark> recursos estratégicos\u003c/mark> de que o Estado dispõe para implementar políticas públicas e atuar sobre o território. São ativos capazes de promover desenvolvimento econômico, reduzir desigualdades regionais, organizar o território, proteger o meio ambiente, fomentar cadeias produtivas, induzir investimentos privados, viabilizar infraestrutura, assegurar políticas habitacionais, preservar patrimônios históricos e culturais, garantir segurança nacional e fortalecer a presença do Estado em regiões estratégicas. \u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003cb>Sua importância transcende o próprio mercado imobiliário.\u003c/b> \u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">A gestão patrimonial não deve ser compreendida apenas como administração de propriedades, mas como parte da atuação do Estado na implementação de políticas públicas, na organização do território e na geração de valor para a sociedade.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">A literatura internacional demonstra que os Estados modernos deixam de tratar imóveis como meras instalações físicas para administrá-los como recursos estratégicos, alinhando eficiência operacional, sustentabilidade financeira e geração de valor público. Contudo, a gestão pública ainda enfrenta fragilidades críticas: inventários incompletos, ausência de visão estratégica e planejamento de longo prazo, escassez de dados qualificados e baixa articulação institucional. Tais gargalos comprometem a tomada de decisão, que se torna ainda mais desafiadora quando considerada a enorme diversidade do patrimônio imobiliário estatal.\u003c/span>\u003c/p>"}},{"id":"bq7cezop","type":"callout","props":{"variant":"ear","tone":"warning","icon":"alert-circle","title":"","heading":"","children":"\u003cp>A primeira decisão não é, necessariamente, escolher entre vender, ceder, alugar, construir ou manter. Antes disso, é preciso compreender o que aquele imóvel pode representar em seu contexto e quais resultados públicos diferentes alternativas de uso podem produzir.\u003c/p>"}}]},{"id":"bvv57yzc","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cczs88xb","type":"titulo","props":{"text":"Imóveis diferentes, soluções diferentes","level":"h2"}},{"id":"bewl3uzf","type":"prose","props":{"html":"\u003cp>O patrimônio público reúne imóveis muito diferentes entre si, inseridos em contextos territoriais, jurídicos, sociais, ambientais e econômicos igualmente diversos.\u003c/p>\u003cp>Uma área urbana consolidada possui desafios completamente distintos daqueles encontrados em uma gleba rural. Uma antiga estação ferroviária exige soluções diferentes das aplicáveis a um prédio histórico, uma área portuária, uma ilha oceânica, um terreno industrial, um aeroporto desativado, uma faixa de fronteira, uma floresta pública, um imóvel inserido em comunidade tradicional ou um edifício localizado no centro financeiro de uma capital.\u003c/p>"}},{"id":"bk5yx399","type":"callout","props":{"variant":"ear","tone":"info","icon":"house","title":"","heading":"","children":"\u003cp>\u003c/p>\u003cspan data-fs=\"body-lg\">\u003cp>\u003cspan data-color=\"petrol\">\u003c/span>\u003c/p>\u003c/span>\u003cspan data-font=\"display\">\u003cspan data-fs=\"body-lg\">\u003cp>\u003cspan data-color=\"petrol\">Cada imóvel possui limitações jurídicas, características físicas, contexto territorial, dinâmica econômica e potencialidades completamente distintas. Por isso, \u003cmark>as possibilidades de destinação variam enormemente\u003c/mark>. \u003c/span>\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Alguns imóveis possuem clara vocação para políticas habitacionais. Outros apresentam localização privilegiada para instalação de hospitais, escolas, universidades ou equipamentos administrativos. Há imóveis cuja melhor utilização pode ocorrer mediante concessões para exploração turística. Outros podem impulsionar polos logísticos, parques tecnológicos, áreas industriais ou projetos de infraestrutura. Existem imóveis cuja maior contribuição consiste na preservação ambiental ou na proteção de comunidades tradicionais. Há também aqueles cuja melhor alternativa pode ser sua alienação, especialmente quando não apresentam interesse público específico e quando o custo de sua manutenção supera os benefícios decorrentes de sua permanência no patrimônio estatal.\u003c/span>\u003c/p>\u003cp>\u003cb>Por exemplo\u003c/b>: um imóvel localizado em região industrial consolidada pode apresentar maior potencial para atrair investimentos, gerar empregos e ampliar a arrecadação tributária. Já um edifício histórico, situado no centro da cidade, talvez gere maior valor se restaurado para atividades culturais do que alienado ao mercado.\u003c/p>"}},{"id":"bp28ad5a","type":"prose","props":{"html":"\u003cp>\u003cmark data-hl=\"terra\">Nenhuma solução é universalmente correta.\u003c/mark> A alternativa mais adequada depende das características do imóvel, de sua inserção no território, das restrições existentes, das demandas da sociedade e dos objetivos das políticas públicas. \u003c/p>"}},{"id":"cdn5eouo","type":"titulo","props":{"text":"\u003cspan style=\"font-weight: normal;\">Nem automática, nem ignorada.\u003c/span> \u003cbr>Estratégica. ","level":"h3"}},{"id":"co7z3v33","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Se um imóvel público não deve ser destinado sem considerar a melhor geração de valor para a sociedade, tampouco deve ser mantido sem utilização indefinidamente apenas porque pertence ao Estado. A ausência de destinação também produz consequências.\u003c/span>\u003c/p>"}},{"id":"b71gfk2w","type":"callout","props":{"variant":"header","tone":"success","icon":"dollar-sign","title":"Quanto custa um imóvel ocioso?","heading":"","children":"\u003cp>Imóveis ociosos representam custos de m\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">anutenção,&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">de vigilância, d\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">e deterioração,&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">jurídicos e&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">administrativos.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Mas existe um custo frequentemente ignorado: o\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">&nbsp;\u003cb>custo de oportunidade\u003c/b>.&nbsp;\u003c/span>\u003c/p>","color":""}},{"id":"buehg3l4","type":"prose","props":{"html":"\u003cp>Cada imóvel mantido sem destinação representa uma oportunidade negligenciada de produzir valor econômico, social ou ambiental. Ao manter um terreno vazio, pode-se deixar de gerar moradias. Ao manter fechado um edifício público, pode-se deixar de oferecer serviços. Ao conservar improdutiva uma área com potencial para investimentos, pode-se deixar de criar empregos. Ao manter imóveis sem estratégia de utilização, o Estado também pode deixar de arrecadar receitas capazes de financiar políticas públicas.\u003c/p>"}},{"id":"btsob5zk","type":"markerlist","props":{"variant":"icon","icon":"alert-triangle","accent":"var(--terra-600)","items":[{"title":"\u003cspan style=\"font-weight: normal;\">\u003cspan data-color=\"terra\">Isso não significa que todo imóvel desocupado deva ser imediatamente destinado ou alienado. Em determinadas situações, sua preservação, manutenção como reserva patrimonial ou proteção para utilização futura também pode atender a um interesse público. O ponto é reconhecer que \u003cmark>manter um imóvel sem uso deve igualmente resultar de uma decisão fundamentada, e não simplesmente da ausência de decisão\u003c/mark>.\u003c/span>\u003c/span>\u003cbr>","text":""}]}},{"id":"bhedsuxe","type":"prose","props":{"html":"\u003cp>A literatura sobre gestão patrimonial identifica precisamente esse problema ao destacar que o Estado frequentemente administra seus imóveis como estruturas físicas, e não como ativos estratégicos, o que dificulta a otimização do uso do espaço, reduz a produtividade do patrimônio e limita sua capacidade de geração de receitas sustentáveis.\u003c/p>"}}]},{"id":"b7g0e9bu","type":"section","props":{"width":"wide","surface":"terra-dark","pad":"lg"},"children":[{"id":"brzmheen","type":"panel","props":{"variant":"box","kicker":"Exercitando seus conhecimentos","kickerIcon":"notebook-pen","title":"","color":"","bg":"var(--sand-50)","body":"\u003cp>\u003cbr>\u003c/p>"},"children":[{"id":"bpotdm0g","type":"figure","props":{"slot":"bpotdm0g__slot","src":"","fit":"contain","size":"full","title":"","caption":"\u003cbr>","credit":""}},{"id":"bjyl46ef","type":"prose","props":{"html":"\u003cp>\u003cspan data-fs=\"h5\">\u003cspan data-fs=\"h4\">Com base no que você estudou até aqui, qual seria a melhor destinação para o imóvel público da imagem acima?&nbsp;\u003c/span>\u003c/span>\u003c/p>"}}]},{"id":"b22ktrnd","type":"kicker","props":{"icon":"mouse-pointer","children":"Clique no cartão com a sua opção de destinação"}},{"id":"btqfuflj","type":"columns","props":{"count":"4","ratio":"equal","gap":"sm"},"children":[{"id":"b_msv98jgy_sjeb","type":"flashcard","props":{"term":"Habitação","description":"","definition":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Ainda não temos informações suficientes para decidir.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Precisamos conhecer o imóvel, seu contexto, as demandas, as restrições, os custos e os resultados esperados.\u003c/span>\u003c/p>","icon":"home","color":"var(--slate-600)"}},{"id":"b19w7x7r","type":"flashcard","props":{"term":"Equipamento público","description":"","definition":"\u003cp>Ainda não temos informações suficientes para decidir.\u003c/p>\u003cp>Precisamos conhecer o imóvel, seu contexto, as demandas, as restrições, os custos e os resultados esperados.\u003c/p>","icon":"ferris-wheel","color":"var(--slate-600)"}},{"id":"b_msv98u2j_w7wx","type":"flashcard","props":{"term":"Alienação","description":"","definition":"\u003cp>Ainda não temos informações suficientes para decidir.\u003c/p>\u003cp>Precisamos conhecer o imóvel, seu contexto, as demandas, as restrições, os custos e os resultados esperados.\u003c/p>","icon":"circle-dollar-sign","color":"var(--slate-600)"}},{"id":"b_msv98zg4_7i1s","type":"flashcard","props":{"term":"Preservação","description":"","definition":"\u003cp>Ainda não temos informações suficientes para decidir.\u003c/p>\u003cp>Precisamos conhecer o imóvel, seu contexto, as demandas, as restrições, os custos e os resultados esperados.\u003c/p>","icon":"tree-deciduous","color":"var(--slate-600)"}}]}]},{"id":"b9ceymk1","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c1rwyllo","type":"titulo","props":{"text":"O que considerar na escolha da destinação?","level":"h2"}},{"id":"cflfb96h","type":"prose","props":{"html":"\u003cp>Reconhecer que não existe uma solução automática nos leva a um ponto central da destinação: \u003cb>a\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">&nbsp;resposta dificilmente será encontrada em critérios únicos.&nbsp;\u003c/span>\u003c/b>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É necessário analisar as características, as possibilidades de uso e o contexto de cada imóvel. Destinar é uma decisão resultante da interação de diversos fatores, envolvendo as seguintes dimensões:\u003c/span>\u003c/p>"}},{"id":"bx2o33hp","type":"columns","props":{"count":"2","ratio":"equal","gap":"sm"},"children":[{"id":"bqneenb7","type":"flashcard","props":{"term":"Territorial e física","description":"","definition":"\u003cp>\u003cul>\u003cli>localização; \u003c/li>\u003cli>características físicas; \u003c/li>\u003cli>infraestrutura existente; \u003c/li>\u003cli>inserção e dinâmica territorial. \u003c/li>\u003c/ul>\u003c/p>","icon":"map-pinned","color":"var(--petrol-600)"}},{"id":"b_mst20yme_33ve","type":"flashcard","props":{"term":"Jurídica e urbanística","description":"","definition":"\u003cp>\u003c/p>\u003cul>\u003cli>regime jurídico e eventuais restrições aplicáveis ao imóvel; \u003c/li>\u003cli>Plano Diretor municipal; \u003c/li>\u003cli>zoneamento urbano; \u003c/li>\u003cli>demais regras de uso e ocupação do território. \u003c/li>\u003c/ul>\u003cp>\u003c/p>","icon":"scale","color":"var(--petrol-600)"}},{"id":"b_mst210mh_qeg3","type":"flashcard","props":{"term":"Social, ambiental e institucional","description":"","definition":"\u003cp>\u003c/p>\u003cul>\u003cli>\u003cspan style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">demanda social; \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">função  socioambiental da propriedade pública; \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">sustentabilidade ambiental; \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">necessidades dos órgãos públicos; \u003c/span>\u003c/li>\u003cli>\u003cspan style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">interesse estratégico do Estado. \u003c/span> \u003c/li>\u003c/ul>\u003cp>\u003c/p>","icon":"sprout","color":"var(--petrol-600)"}},{"id":"b_mst211vv_rox6","type":"flashcard","props":{"term":"Econômica","description":"","definition":"\u003cp>\u003c/p>\u003cul>\u003cli>mercado imobiliário; \u003c/li>\u003cli>potencial econômico; \u003c/li>\u003cli>custos de manutenção; \u003c/li>\u003cli>potencial de geração de receitas e outros benefícios econômicos.\u003c/li>\u003c/ul>\u003cp>\u003c/p>","icon":"coins","color":"var(--petrol-600)"}}]},{"id":"b4v0slgs","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Cada um desses fatores pode influenciar a decisão. Um mesmo imóvel pode apresentar elevada rentabilidade financeira caso seja alugado. Outro poderá gerar maior benefício mediante alienação. Outro talvez jamais devesse deixar o patrimônio público.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Há situações em que vender produz maior eficiência. Imagine um imóvel de elevado valor de mercado, sem utilização pública previsível, localizado em região cuja valorização atingiu maturidade e cuja manutenção impõe custos crescentes ao Estado.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A alienação pode converter um ativo improdutivo em recursos financeiros imediatamente disponíveis para investimentos prioritários. Em outras circunstâncias, entretanto, vender significa abrir mão de uma fonte permanente de receitas.\u003c/span>\u003c/p>"}},{"id":"bjnchdx5","type":"callout","props":{"variant":"ear","tone":"note","icon":"lightbulb","title":"","heading":"","children":"\u003cp>Um edifício comercial bem localizado pode proporcionar rendimentos contínuos por décadas mediante locação, preservando simultaneamente o patrimônio estatal.\u003c/p>","color":""}},{"id":"b_mst27tk9_75g5","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Do ponto de vista econômico, a decisão depende de variáveis como expectativa de valorização imobiliária, taxa de ocupação, custos de manutenção, fluxo de caixa esperado, necessidade imediata de recursos, risco de mercado e horizonte temporal da política pública.\u003c/span>\u003c/p>\u003cp>Essas variáveis econômicas são importantes, mas representam apenas uma das dimensões da decisão. Uma alternativa economicamente atrativa, por exemplo, pode ser incompatível com as regras de uso do território ou com uma necessidade social prioritária. Da mesma forma, uma finalidade pública desejável pode encontrar limitações nas características físicas ou jurídicas do imóvel.\u003c/p>\u003cp>A destinação também precisa considerar os resultados sociais, ambientais, territoriais e institucionais que cada alternativa pode produzir. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Portanto, a discussão não deve ser reduzida à dicotomia entre vender ou manter.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">A decisão resulta justamente da análise conjunta desses diferentes elementos.\u003c/span>\u003c/p>"}},{"id":"bu6ge5yx","type":"panel","props":{"variant":"box","kicker":"valor público | o melhor retorno","kickerIcon":"blocks","title":"","color":"","bg":"","body":"\u003cp>O verdadeiro debate consiste em identificar\u003cb> qual alternativa produz maior valor público para a sociedade ao longo do tempo\u003c/b>. Esse valor, contudo, não pode ser medido exclusivamente em dinheiro.\u003c/p>"},"children":[{"id":"by0jcwmb","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b844j1kk","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--terra-800)","items":[{"title":"Existem retornos financeiros.","text":""},{"title":"Existem retornos sociais.","text":""},{"title":"Existem retornos ambientais.","text":""}]}},{"id":"b_mst2czpr_f1y9","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--terra-800)","items":[{"title":"Existem retornos urbanos.","text":""},{"title":"Existem retornos institucionais.","text":""}]}}]},{"id":"brke9z09","type":"prose","props":{"html":"\u003cp>A dificuldade reside justamente em compatibilizar todos eles. \u003c/p>","__pullUp":true}}]}]},{"id":"bx5uf4qq","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cv3wzhhd","type":"titulo","props":{"text":"Como transformar critérios em uma decisão de destinação?","level":"h2"}},{"id":"c6mcbx97","type":"prose","props":{"html":"\u003cp>Cada alternativa pode produzir resultados distintos e mobilizar diferentes dimensões do valor público discutidas anteriormente.\u003c/p>\u003cp>No caso dos imóveis rurais públicos, por exemplo, a decisão pode envolver alternativas como regularização fundiária, reforma agrária, conservação ambiental, concessões florestais, projetos de energia renovável, atividades produtivas ou preservação de comunidades tradicionais.\u003c/p>\u003cp>Uma área destinada à conservação ambiental pode gerar benefícios ecológicos de longo prazo. Outra, destinada à agricultura familiar, pode promover desenvolvimento regional e segurança alimentar. Uma terceira, utilizada para geração de energia renovável, pode contribuir para a transição energética e gerar receitas públicas.\u003c/p>"}},{"id":"bwugnm6u","type":"callout","props":{"variant":"header","tone":"warning","icon":"lightbulb","title":"importante","heading":"","children":"\u003cp>Os exemplos mostram que os critérios apresentados anteriormente não funcionam como uma lista de verificação capaz de indicar, automaticamente, a melhor destinação. Eles precisam ser analisados em conjunto e relacionados às alternativas concretamente possíveis para cada imóvel.\u003c/p>"}},{"id":"b_mst2yn2v_ycrg","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O desafio da gestão patrimonial moderna consiste justamente em criar mecanismos capazes de comparar alternativas tão diferentes. \u003c/span>\u003c/p>\u003cp>Para você que atua com a gestão de imóveis públicos, esse desafio exige olhar para além de um único critério ou de uma solução previamente definida. Significa reunir e compreender as diferentes informações disponíveis sobre o imóvel, seu contexto e as alternativas possíveis, reconhecendo que aspectos jurídicos, territoriais, sociais, ambientais, institucionais e econômicos podem influenciar a decisão.\u003c/p>\u003cp>Essa perspectiva não significa que, individualmente, seja responsável por definir a destinação do imóvel. As decisões são tomadas no âmbito das competências e dos processos próprios de cada instituição. Significa, porém, compreender a complexidade dessas escolhas e reconhecer os diferentes elementos que precisam ser considerados na análise e na atuação profissional.\u003c/p>"}}]},{"id":"b7k0cnd9","type":"conclusion","props":{"kicker":"Para fechar","kickerIcon":"check","title":"Conclusão","body":"\u003cp>Ao longo deste material, partimos de uma pergunta aparentemente simples: \u003cb>\u003cspan data-color=\"ochre-light\">o que fazer com um imóvel público?\u003c/span>\u003c/b> Vimos, porém, que vender, alugar, manter, ceder, regularizar ou construir representam possibilidades que precisam ser consideradas diante das características e do contexto de cada imóvel e dos diferentes resultados que podem produzir.\u003c/p>\u003cp>Ao final, talvez a pergunta inicial continue sem resposta definitiva. E isso não representa um problema. Pelo contrário. Significa reconhecer que não existe solução única para um patrimônio cuja diversidade reflete a própria complexidade do Estado brasileiro. Talvez o verdadeiro desafio da gestão patrimonial não seja decidir entre vender, alugar, manter, ceder, regularizar ou construir. O verdadeiro desafio seja decidir, em cada caso concreto, qual destinação melhor transforma um patrimônio público em benefício público. \u003c/p>\u003cp>Nessa perspectiva, mais importante do que assumir previamente que um imóvel deve permanecer no patrimônio, ser alienado ou receber determinado uso, é compreender o valor que as diferentes alternativas podem produzir para a sociedade.\u003c/p>\u003cp>Essa reflexão convida a ampliar o olhar sobre o patrimônio. Além de conhecer procedimentos e instrumentos, é importante compreender o imóvel em seu contexto e perceber como as informações produzidas, as análises realizadas e as alternativas consideradas podem contribuir para decisões voltadas ao desenvolvimento, à eficiência administrativa, à justiça territorial e à promoção do interesse coletivo.\u003c/p>"},"children":[{"id":"berl172h","type":"panel","props":{"variant":"box","kicker":"Para refletir","kickerIcon":"brain","title":"","color":"","bg":"","body":"\u003cp>A destinação de um imóvel público envolve escolhas que podem produzir resultados muito diferentes. Pensando nos desafios discutidos ao longo deste material, reflita:\u003c/p>"},"children":[{"id":"bemmw118","type":"feature","props":{"columns":1,"card":false,"accent":"var(--terra-500)","layout":"side","items":[{"icon":"circle-question-mark","title":"","text":"\u003cspan data-fs=\"body\">Na sua atuação, que aspectos tendem a receber mais atenção na análise de uma destinação? Há dimensões (territoriais, sociais, ambientais, econômicas ou institucionais) que podem acabar sendo menos consideradas? \u003c/span>"},{"icon":"circle-question-mark","title":"","text":"\u003cspan data-fs=\"body\">Como evitar que uma solução aparentemente adequada à primeira vista seja adotada sem que outras possibilidades tenham sido suficientemente avaliadas? \u003c/span>"},{"icon":"circle-question-mark","title":"","text":"\u003cspan data-fs=\"body\">O que torna difícil comparar alternativas de destinação que podem gerar benefícios de naturezas tão diferentes para a sociedade? \u003c/span>"},{"icon":"circle-question-mark","title":"","text":"\u003cspan data-fs=\"body\">Considerando o seu papel no processo, como você pode contribuir para que a decisão sobre a destinação seja mais bem informada e considere o imóvel, seu contexto e as diferentes possibilidades de geração de valor público?\u003c/span>"}]}}]},{"id":"bo51knuk","type":"referencias","props":{"title":"Este material foi adaptado de","defaultOpen":true,"items":["TRAJANO, Rodrigo Pessoa. \u003cb>A estratégia de gestão dos imóveis públicos da União.\u003c/b> 2023. Dissertação (Mestrado Profissional em Administração Pública) – Escola Brasileira de Administração Pública e de Empresas, Fundação Getulio Vargas, Rio de Janeiro, 2023. Disponível em: \u003ca href=\"https://hdl.handle.net/10438/34196\" target=\"_blank\" rel=\"noopener noreferrer\">https://hdl.handle.net/10438/34196\u003c/a>. Acesso em: 16 ago. 2026."]}}]},{"id":"buzt4eye","type":"pagefooter","props":{"code":"Destinar um imóvel público: um problema imobiliário ou uma decisão de Estado? [M413] ","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Rodrigo Pessoa Trajano"},{"role":"Revisão","name":"Claudson Moreira"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"bxrfmg77__beforeSlot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bxrfmg77__beforeslot.png"},"bxrfmg77__afterSlot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bxrfmg77__afterslot.png"},"bpotdm0g__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bpotdm0g__slot.png"},"bbnt51kf__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bbnt51kf__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"blocks":"\u003cpath d=\"M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2\"/>\u003crect x=\"14\" y=\"2\" width=\"8\" height=\"8\" rx=\"1\"/>","brain":"\u003cpath d=\"M12 18V5\"/>\u003cpath d=\"M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4\"/>\u003cpath d=\"M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5\"/>\u003cpath d=\"M17.997 5.125a4 4 0 0 1 2.526 5.77\"/>\u003cpath d=\"M18 18a4 4 0 0 0 2-7.464\"/>\u003cpath d=\"M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517\"/>\u003cpath d=\"M6 18a4 4 0 0 1-2-7.464\"/>\u003cpath d=\"M6.003 5.125a4 4 0 0 0-2.526 5.77\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","circle-dollar-sign":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"/>\u003cpath d=\"M12 18V6\"/>","circle-question-mark":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/>\u003cpath d=\"M12 17h.01\"/>","coins":"\u003cpath d=\"M13.744 17.736a6 6 0 1 1-7.48-7.48\"/>\u003cpath d=\"M15 6h1v4\"/>\u003cpath d=\"m6.134 14.768.866-.5 2 3.464\"/>\u003ccircle cx=\"16\" cy=\"8\" r=\"6\"/>","dollar-sign":"\u003cline x1=\"12\" x2=\"12\" y1=\"2\" y2=\"22\"/>\u003cpath d=\"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6\"/>","ferris-wheel":"\u003ccircle cx=\"12\" cy=\"12\" r=\"2\"/>\u003cpath d=\"M12 2v4\"/>\u003cpath d=\"m6.8 15-3.5 2\"/>\u003cpath d=\"m20.7 7-3.5 2\"/>\u003cpath d=\"M6.8 9 3.3 7\"/>\u003cpath d=\"m20.7 17-3.5-2\"/>\u003cpath d=\"m9 22 3-8 3 8\"/>\u003cpath d=\"M8 22h8\"/>\u003cpath d=\"M18 18.7a9 9 0 1 0-12 0\"/>","file-text":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M10 9H8\"/>\u003cpath d=\"M16 13H8\"/>\u003cpath d=\"M16 17H8\"/>","hospital":"\u003cpath d=\"M12 7v4\"/>\u003cpath d=\"M14 21v-3a2 2 0 0 0-4 0v3\"/>\u003cpath d=\"M14 9h-4\"/>\u003cpath d=\"M18 11h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2\"/>\u003cpath d=\"M18 21V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16\"/>","house":"\u003cpath d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"/>\u003cpath d=\"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map-pinned":"\u003cpath d=\"M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0\"/>\u003ccircle cx=\"12\" cy=\"8\" r=\"2\"/>\u003cpath d=\"M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712\"/>","milestone":"\u003cpath d=\"M12 13v8\"/>\u003cpath d=\"M12 3v3\"/>\u003cpath d=\"M18.172 6a2 2 0 0 1 1.414.586l2.06 2.06a1.207 1.207 0 0 1 0 1.708l-2.06 2.06a2 2 0 0 1-1.414.586H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z\"/>","mouse-pointer":"\u003cpath d=\"M12.586 12.586 19 19\"/>\u003cpath d=\"M3.688 3.037a.497.497 0 0 0-.651.651l6.5 15.999a.501.501 0 0 0 .947-.062l1.569-6.083a2 2 0 0 1 1.448-1.479l6.124-1.579a.5.5 0 0 0 .063-.947z\"/>","notebook-pen":"\u003cpath d=\"M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4\"/>\u003cpath d=\"M2 6h4\"/>\u003cpath d=\"M2 10h4\"/>\u003cpath d=\"M2 14h4\"/>\u003cpath d=\"M2 18h4\"/>\u003cpath d=\"M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z\"/>","scale":"\u003cpath d=\"M12 3v18\"/>\u003cpath d=\"m19 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1\"/>\u003cpath d=\"m5 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M7 21h10\"/>","sprout":"\u003cpath d=\"M14 9.536V7a4 4 0 0 1 4-4h1.5a.5.5 0 0 1 .5.5V5a4 4 0 0 1-4 4 4 4 0 0 0-4 4c0 2 1 3 1 5a5 5 0 0 1-1 3\"/>\u003cpath d=\"M4 9a5 5 0 0 1 8 4 5 5 0 0 1-8-4\"/>\u003cpath d=\"M5 21h14\"/>","tree-deciduous":"\u003cpath d=\"M8 19a4 4 0 0 1-2.24-7.32A3.5 3.5 0 0 1 9 6.03V6a3 3 0 1 1 6 0v.04a3.5 3.5 0 0 1 3.24 5.65A4 4 0 0 1 16 19Z\"/>\u003cpath d=\"M12 19v3\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__always,.spu-csection__body{display:flex;flex-direction:column;gap:var(--flow-block)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);width:max-content;margin-top:var(--flow-block);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__summary[aria-expanded="true"] svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-csection__body[hidden]{display:none}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__body{display:flex!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint ? NS.isPrint() : window.__SPU_PRINT === true;
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing;
+        var items = React.Children.toArray(props.children);
+        function blockType(node){
+          if(!React.isValidElement(node)) return '';
+          if(node.props && node.props.block && node.props.block.type) return node.props.block.type;
+          return React.Children.toArray(node.props && node.props.children).map(blockType).filter(Boolean)[0] || '';
+        }
+        var markerIndex = items.findIndex(function(item){ return blockType(item) === 'collapsebreak'; });
+        var alwaysVisible = markerIndex >= 0 ? items.slice(0, markerIndex) : [];
+        var collapsed = markerIndex >= 0 ? items.slice(markerIndex + 1) : items;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            alwaysVisible.length && React.createElement('div', { className:'spu-csection__always' }, alwaysVisible),
+            !printing && React.createElement('button', {
+                type:'button',
+                className:'spu-csection__summary',
+                'aria-expanded':forcedOpen || open,
+                onClick:function(){ if(!forcedOpen) setOpen(!open); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body', hidden:!(forcedOpen || open) }, collapsed)
+          )
+        );
+      };
+      NS.CollapseBreak = function(){ return null; };
+      var markerDefinition = {
+        type:'collapsebreak', component:'CollapseBreak', label:'Botão de recolher',
+        icon:'chevron-down', cat:'Estrutura', kind:'marker', internal:true, props:{}
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container', stack:false,
+        fields:['triggerLabel'], allowedTypes:registry.childTypes.concat([markerDefinition.type]),
+        props:{ triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.blocks.push(markerDefinition);
+      registry.byType[definition.type] = definition;
+      registry.byType[markerDefinition.type] = markerDefinition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type === markerDefinition.type) return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:markerDefinition.type, props:{} };
+        if(type !== definition.type) return originalNewBlock(type, child);
+        var props = JSON.parse(JSON.stringify(definition.props));
+        props.children = [registry.newBlock(markerDefinition.type, true)];
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:props };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function safeDefinition(value){
+    var box = document.createElement('div');
+    box.innerHTML = String(value || '');
+    var allowed = ['STRONG','B','EM','I','BR','P','SPAN'];
+    Array.from(box.querySelectorAll('*')).forEach(function(el){
+      if(el.tagName === 'SCRIPT' || el.tagName === 'STYLE'){ el.remove(); return; }
+      if(allowed.indexOf(el.tagName) < 0){ el.replaceWith.apply(el, Array.from(el.childNodes)); return; }
+      Array.from(el.attributes).forEach(function(attr){ el.removeAttribute(attr.name); });
+    });
+    return box.innerHTML;
+  }
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('data-definition') || el.getAttribute('title') || el.getAttribute('data-def') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span class="spu-term-pop__def"></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('.spu-term-pop__def').innerHTML = safeDefinition(def);
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

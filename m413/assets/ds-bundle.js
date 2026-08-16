@@ -2061,11 +2061,30 @@ const BLOCKS = [
   icon: 'image',
   cat: 'Interativos',
   kind: 'list',
+  propFields: [{
+    key: 'heightMode',
+    label: 'Altura da imagem',
+    type: 'select',
+    options: [{
+      value: 'original',
+      label: 'Proporção original'
+    }, {
+      value: 'adapted',
+      label: 'Adaptada ao quadro'
+    }]
+  }, {
+    key: 'caption',
+    label: 'Legenda',
+    type: 'rich',
+    inline: true
+  }],
   props: {
     beforeLabel: 'Antes',
     afterLabel: 'Depois',
     beforeSlot: '',
-    afterSlot: ''
+    afterSlot: '',
+    heightMode: 'original',
+    caption: ''
   }
 }, {
   type: 'quiz',
@@ -2847,11 +2866,18 @@ function applyEmphasis(cmd) {
   const sel = window.getSelection();
   fireInput(sel ? closestEditable(sel.anchorNode) : null);
 }
+function isExternalLink(url) {
+  return /^https?:\/\//i.test(String(url || '').trim());
+}
 function applyLink(url, asButton) {
   if (!url) return;
   const attrs = {
     href: url
   };
+  if (isExternalLink(url)) {
+    attrs.target = '_blank';
+    attrs.rel = 'noopener noreferrer';
+  }
   if (asButton) attrs['data-btn'] = asButton === true ? 'primary' : asButton; // primary|secondary|ghost
   wrapSelection('a', attrs, 'a[href]');
 }
@@ -4915,6 +4941,9 @@ function _attrs(el, key) {
   }
   return props;
 }
+function isExternalLink(url) {
+  return /^https?:\/\//i.test(String(url || '').trim());
+}
 function _convert(node, key) {
   if (node.nodeType === 3) return node.nodeValue; // texto
   if (node.nodeType !== 1) return null; // comentários etc.
@@ -4936,6 +4965,13 @@ function _convert(node, key) {
   if (tag === 'a') {
     const href = node.getAttribute('href') || '';
     const props = _attrs(node, key);
+    if (isExternalLink(href)) {
+      props.target = props.target || '_blank';
+      const rel = new Set(String(props.rel || '').split(/\s+/).filter(Boolean));
+      rel.add('noopener');
+      rel.add('noreferrer');
+      props.rel = Array.from(rel).join(' ');
+    }
     if (/^https?:/i.test(href) && __ds_scope.isPrint()) {
       const label = (node.textContent || href).trim();
       const n = _registerLink(label, href);
@@ -7377,19 +7413,27 @@ Object.assign(__ds_scope, { Hero });
 // components/media/ImageReveal.jsx
 try { (() => {
 __ds_scope.injectCss('spu-reveal-css', `
+.spu-reveal-figure{margin:var(--flow-block) 0}
 .spu-reveal{position:relative;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);user-select:none;touch-action:none;background:var(--color-surface-warm)}
 .spu-reveal img{display:block;width:100%;pointer-events:none}
-.spu-reveal__after{position:absolute;inset:0;will-change:clip-path}
+.spu-reveal--adapted{height:clamp(260px,46vw,520px)}
+.spu-reveal--adapted>img,.spu-reveal--adapted>image-slot{height:100%;object-fit:cover}
+.spu-reveal--adapted>.spu-ph{height:100%;min-height:0}
+.spu-reveal__after{position:absolute;inset:0;z-index:2;will-change:clip-path}
 .spu-reveal__after img{position:absolute;inset:0;height:100%;object-fit:cover}
-.spu-reveal__handle{position:absolute;top:0;bottom:0;width:3px;background:#fff;box-shadow:0 0 0 1px rgba(28,36,32,.25);transform:translateX(-50%);cursor:ew-resize}
+.spu-reveal__after .spu-ph{height:100%;min-height:0}
+.spu-reveal__handle{position:absolute;z-index:3;top:0;bottom:0;width:3px;background:#fff;box-shadow:0 0 0 1px rgba(28,36,32,.25);transform:translateX(-50%);cursor:ew-resize}
 .spu-reveal__grip{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:var(--radius-pill);background:#fff;color:var(--color-primary-strong);display:flex;align-items:center;justify-content:center;gap:-2px;box-shadow:var(--shadow-md)}
-.spu-reveal__label{position:absolute;bottom:var(--space-3);font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:rgba(14,46,43,.7);padding:.3em .7em;border-radius:var(--radius-pill);pointer-events:none}
+.spu-reveal__label{position:absolute;z-index:1;bottom:var(--space-3);font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:rgba(14,46,43,.7);padding:.3em .7em;border-radius:var(--radius-pill);pointer-events:none}
 .spu-reveal__label--a{left:var(--space-3)}
 .spu-reveal__label--b{right:var(--space-3)}
+.spu-reveal__caption{font-size:var(--fs-caption);color:var(--text-muted);margin-top:var(--space-3);line-height:1.55}
+.spu-reveal__caption b,.spu-reveal__caption strong{font:inherit;font-weight:700;color:inherit}
 .spu-reveal-print{display:flex;flex-direction:column;gap:var(--space-3);break-inside:avoid}
 .spu-reveal-print figure{position:relative;margin:0;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border)}
 .spu-reveal-print img{display:block;width:100%}
 .spu-reveal-print__tag{position:absolute;top:var(--space-3);left:var(--space-3);font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:rgba(14,46,43,.78);padding:.3em .7em;border-radius:var(--radius-pill)}
+.spu-reveal-print__caption{font-size:var(--fs-caption);color:var(--text-muted);line-height:1.55}
 `);
 function Ph(label) {
   return React.createElement('div', {
@@ -7416,10 +7460,15 @@ function ImageReveal({
   afterLabel = 'Depois',
   alt = '',
   start = 50,
+  heightMode = 'original',
+  caption,
   className,
   style
 }) {
+  const adapted = heightMode === 'adapted';
+  const beforeSlotRef = React.useRef(null);
   const beforeMedia = beforeSlot ? React.createElement('image-slot', {
+    ref: beforeSlotRef,
     id: beforeSlot,
     shape: 'rect',
     fit: 'cover',
@@ -7427,7 +7476,8 @@ function ImageReveal({
     style: {
       display: 'block',
       width: '100%',
-      minHeight: 260
+      height: adapted ? '100%' : undefined,
+      minHeight: adapted ? 0 : 260
     }
   }) : before ? React.createElement('img', {
     src: before,
@@ -7452,6 +7502,35 @@ function ImageReveal({
   const [pct, setPct] = React.useState(start);
   const ref = React.useRef(null);
   const dragging = React.useRef(false);
+  React.useEffect(() => {
+    if (!beforeSlot || adapted) return undefined;
+    const el = beforeSlotRef.current;
+    if (!el) return undefined;
+    const sync = () => {
+      const img = el.shadowRoot && el.shadowRoot.querySelector('.frame img');
+      if (img && img.naturalWidth) {
+        const width = el.clientWidth || el.offsetWidth || 1;
+        el.style.height = Math.round(width * img.naturalHeight / img.naturalWidth) + 'px';
+      } else {
+        el.style.height = '260px';
+      }
+    };
+    const img = el.shadowRoot && el.shadowRoot.querySelector('.frame img');
+    if (img) img.addEventListener('load', sync);
+    const resizeObserver = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(sync) : null;
+    if (resizeObserver) resizeObserver.observe(el);
+    const stateObserver = typeof MutationObserver !== 'undefined' ? new MutationObserver(sync) : null;
+    if (stateObserver) stateObserver.observe(el, {
+      attributes: true,
+      attributeFilter: ['data-filled']
+    });
+    sync();
+    return () => {
+      if (img) img.removeEventListener('load', sync);
+      if (resizeObserver) resizeObserver.disconnect();
+      if (stateObserver) stateObserver.disconnect();
+    };
+  }, [beforeSlot, adapted]);
   const move = clientX => {
     const el = ref.current;
     if (!el) return;
@@ -7504,11 +7583,17 @@ function ImageReveal({
     }) : after ? React.createElement('img', {
       src: after,
       alt
-    }) : Ph(afterLabel)));
+    }) : Ph(afterLabel)), caption && React.createElement('div', {
+      className: 'spu-reveal-print__caption'
+    }, __ds_scope.renderRich(caption, {
+      inline: true
+    })));
   }
   return React.createElement('figure', {
-    className: __ds_scope.cx('spu-reveal', className),
-    style,
+    className: __ds_scope.cx('spu-reveal-figure', className),
+    style
+  }, React.createElement('div', {
+    className: __ds_scope.cx('spu-reveal', adapted && 'spu-reveal--adapted'),
     ref,
     onPointerDown: onDown,
     onPointerMove: onMove,
@@ -7517,13 +7602,13 @@ function ImageReveal({
   }, beforeMedia, React.createElement('div', {
     className: 'spu-reveal__after',
     style: {
-      clipPath: `inset(0 ${100 - pct}% 0 0)`
+      clipPath: `inset(0 0 0 ${pct}%)`
     }
-  }, afterMedia), React.createElement('span', {
-    className: 'spu-reveal__label spu-reveal__label--a'
-  }, beforeLabel), React.createElement('span', {
+  }, afterMedia, React.createElement('span', {
     className: 'spu-reveal__label spu-reveal__label--b'
-  }, afterLabel), React.createElement('div', {
+  }, afterLabel)), React.createElement('span', {
+    className: 'spu-reveal__label spu-reveal__label--a'
+  }, beforeLabel), React.createElement('div', {
     className: 'spu-reveal__handle',
     style: {
       left: `${pct}%`
@@ -7536,7 +7621,11 @@ function ImageReveal({
   }), React.createElement(__ds_scope.Icon, {
     name: 'chevron-right',
     size: 16
-  }))));
+  })))), caption && React.createElement('figcaption', {
+    className: 'spu-reveal__caption'
+  }, __ds_scope.renderRich(caption, {
+    inline: true
+  })));
 }
 Object.assign(__ds_scope, { ImageReveal });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/media/ImageReveal.jsx", error: String((e && e.message) || e) }); }
