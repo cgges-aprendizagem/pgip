@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Infográfico interativo sobre as seis etapas do ciclo de gestão contratual de imóveis públicos.">
+  <meta name="theme-color" content="#133d39">
+  <meta property="og:title" content="Ciclo de Gestão Contratual">
+  <meta property="og:description" content="Explore as seis etapas de um ciclo contínuo de gestão.">
+  <meta property="og:image" content="og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Ciclo de Gestão Contratual — Infográfico Interativo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap');
+
+    :root {
+      --petrol-900: #0e2e2b;
+      --petrol-800: #133d39;
+      --petrol-700: #16433f;
+      --petrol-600: #1f5d5a;
+      --petrol-500: #2e7a75;
+      --petrol-100: #d6e8e6;
+      --petrol-50: #eaf3f1;
+      --terra-700: #9e3d20;
+      --terra-600: #c4502e;
+      --terra-100: #f7e0d5;
+      --ochre-700: #9a6a14;
+      --ochre-600: #c8922a;
+      --ochre-100: #f7edd3;
+      --green-600: #2f7d52;
+      --green-100: #ddeee2;
+      --slate-600: #5a6b7b;
+      --slate-100: #e3e9ed;
+      --sand-200: #ebe0cc;
+      --sand-100: #f4ecdd;
+      --cloud-100: #fdfbf7;
+      --cloud-50: #fefdfb;
+      --ink-900: #1c2420;
+      --ink-700: #2e3a36;
+      --ink-500: #515c57;
+      --border: rgba(28, 36, 32, 0.12);
+      --border-strong: rgba(28, 36, 32, 0.22);
+      --font-display: 'Red Hat Display', 'Archivo', system-ui, sans-serif;
+      --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+      --radius: 10px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --shadow: 0 2px 6px rgba(28,36,32,.07), 0 6px 18px rgba(28,36,32,.06);
+      --shadow-md: 0 4px 12px rgba(28,36,32,.08), 0 12px 30px rgba(28,36,32,.08);
+      --shadow-lg: 0 10px 24px rgba(28,36,32,.10), 0 28px 60px rgba(28,36,32,.12);
+      --card-w: clamp(210px, 22vw, 286px);
+      --card-h: clamp(132px, 14vw, 168px);
+      --orbit-radius: clamp(300px, 36vw, 490px);
+      --turn: 760ms cubic-bezier(.2,.72,.12,1);
+    }
+
+    * { box-sizing: border-box; }
+    html { min-width: 320px; background: var(--cloud-100); }
+    body { min-height: 100svh; margin: 0; overflow-x: hidden; color: var(--ink-700); background: var(--cloud-100); font-family: var(--font-body); font-size: 16px; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+    button { color: inherit; font: inherit; }
+    button:focus-visible { outline: 3px solid rgba(31,93,90,.42); outline-offset: 3px; }
+
+    .experience { width: min(100%, 1380px); min-height: 100svh; margin: 0 auto; padding: clamp(20px,3vw,40px) clamp(16px,4vw,56px) clamp(22px,3vw,40px); display: grid; grid-template-rows: auto auto minmax(230px,auto); gap: clamp(18px,2.5vh,28px); }
+    .masthead { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: start; gap: 28px; }
+    .eyebrow { margin: 0 0 8px; color: var(--terra-600); font-family: var(--font-display); font-size: .75rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    h1 { max-width: 880px; margin: 0; color: var(--ink-900); font-family: var(--font-display); font-size: clamp(2rem,4.2vw,4rem); font-weight: 800; letter-spacing: -.025em; line-height: 1.02; }
+    .intro { max-width: 700px; margin: 10px 0 0; color: var(--ink-500); font-size: clamp(.95rem,1.2vw,1.08rem); line-height: 1.55; }
+    .mast-actions { display: flex; align-items: center; gap: 10px; }
+    .counter { padding: 9px 13px; border: 1px solid var(--border); border-radius: 999px; background: white; color: var(--ink-500); font-family: var(--font-display); font-size: .72rem; font-weight: 700; white-space: nowrap; box-shadow: var(--shadow); }
+    .counter strong { color: var(--petrol-700); }
+    .auto-button { min-height: 38px; padding: 0 13px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--border); border-radius: 999px; background: white; color: var(--petrol-700); font-size: .78rem; font-weight: 700; cursor: pointer; box-shadow: var(--shadow); transition: border-color 160ms ease, transform 160ms ease; }
+    .auto-button:hover { border-color: var(--petrol-500); transform: translateY(-1px); }
+
+    .icon { width: 1.25em; height: 1.25em; display: inline-block; flex: 0 0 auto; background: currentColor; -webkit-mask: var(--icon) center/contain no-repeat; mask: var(--icon) center/contain no-repeat; }
+    .icon-file { --icon: url('icons/file-signature.svg'); }
+    .icon-monitor { --icon: url('icons/clipboard-check.svg'); }
+    .icon-settings { --icon: url('icons/settings-2.svg'); }
+    .icon-alert { --icon: url('icons/triangle-alert.svg'); }
+    .icon-scale { --icon: url('icons/scale.svg'); }
+    .icon-house { --icon: url('icons/house.svg'); }
+    .icon-users { --icon: url('icons/users.svg'); }
+    .icon-eye { --icon: url('icons/eye.svg'); }
+    .icon-refresh { --icon: url('icons/refresh-cw.svg'); }
+    .icon-handshake { --icon: url('icons/handshake.svg'); }
+    .icon-landmark { --icon: url('icons/landmark.svg'); }
+    .icon-left { --icon: url('icons/chevron-left.svg'); }
+    .icon-right { --icon: url('icons/chevron-right.svg'); }
+    .icon-pause { --icon: url('icons/pause.svg'); }
+    .icon-play { --icon: url('icons/play.svg'); }
+
+    .carousel-shell { display: grid; grid-template-rows: clamp(310px,38vh,370px) auto; align-items: center; gap: 14px; }
+    .orbit-scene { min-height: 310px; height: 100%; position: relative; perspective: 1500px; perspective-origin: 50% 48%; touch-action: pan-y; user-select: none; }
+    .orbit-guide { position: absolute; left: 50%; top: 58%; width: min(76vw,920px); height: 150px; border: 1px dashed rgba(31,93,90,.22); border-radius: 50%; transform: translate(-50%,-50%) rotateX(68deg); }
+    .orbit-guide::before,.orbit-guide::after { content: ''; position: absolute; top: 50%; width: 7px; height: 7px; border: 2px solid var(--terra-600); border-radius: 50%; background: var(--cloud-100); transform: translateY(-50%); }
+    .orbit-guide::before { left: -5px; }.orbit-guide::after { right: -5px; }
+    .ring { position: absolute; left: 50%; top: 48%; width: var(--card-w); height: var(--card-h); transform-style: preserve-3d; transform: translate(-50%,-50%) rotateX(-7deg) rotateY(0deg); transition: transform var(--turn); will-change: transform; }
+    .stage-card { --accent: var(--petrol-600); --soft: var(--petrol-50); position: absolute; inset: 0; padding: 0; border: 0; background: transparent; transform: rotateY(calc(var(--index)*60deg)) translateZ(var(--orbit-radius)); transform-style: preserve-3d; cursor: pointer; }
+    .card-face { position: absolute; inset: 0; padding: clamp(15px,1.6vw,21px); display: grid; grid-template-rows: auto 1fr; overflow: hidden; border: 1px solid color-mix(in srgb,var(--accent) 35%,var(--border)); border-top: 4px solid var(--accent); border-radius: var(--radius-lg); background: white; box-shadow: var(--shadow-md); backface-visibility: hidden; transition: border-color 180ms ease, box-shadow 180ms ease, opacity 180ms ease; }
+    .card-face::after { content: ''; position: absolute; width: 120px; height: 120px; right: -50px; bottom: -62px; border-radius: 50%; background: var(--soft); opacity: .9; }
+    .card-back { transform: rotateY(180deg); }
+    .stage-card:not(.is-active) .card-face { opacity: .78; box-shadow: 0 4px 14px rgba(28,36,32,.08); }
+    .stage-card.is-active { pointer-events: none; }
+    .stage-card.is-active .card-face { opacity: 0; }
+    .card-top { display: flex; justify-content: space-between; align-items: start; gap: 12px; position: relative; z-index: 1; }
+    .stage-number { color: var(--accent); font-family: var(--font-display); font-size: clamp(1.45rem,2.4vw,2rem); font-weight: 800; line-height: 1; }
+    .stage-icon { width: clamp(36px,3.5vw,46px); height: clamp(36px,3.5vw,46px); display: grid; place-items: center; border-radius: 50%; color: var(--accent); background: var(--soft); }
+    .stage-icon .icon { width: 55%; height: 55%; }
+    .card-copy { align-self: end; position: relative; z-index: 1; text-align: left; }
+    .card-kicker { display: block; margin-bottom: 4px; color: var(--ink-500); font-size: .63rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+    .card-title { display: block; color: var(--ink-900); font-family: var(--font-display); font-size: clamp(.92rem,1.35vw,1.14rem); font-weight: 750; letter-spacing: -.01em; line-height: 1.13; }
+    .stage-card.is-active .card-title { color: var(--accent); }
+    .focus-card { --accent: var(--petrol-600); --soft: var(--petrol-50); position: absolute; z-index: 16; top: clamp(58px,7vh,82px); left: 0; right: 0; width: clamp(320px,35vw,438px); min-height: clamp(178px,18vw,222px); margin-inline: auto; padding: clamp(22px,2.4vw,30px); display: grid; grid-template-rows: auto 1fr; border: 1px solid var(--accent); border-top: 4px solid var(--accent); border-radius: var(--radius-lg); background: white; box-shadow: var(--shadow-lg); overflow: hidden; pointer-events: none; }
+    .focus-card::after { content: ''; position: absolute; right: -58px; bottom: -78px; width: 170px; height: 170px; border-radius: 50%; background: var(--soft); }
+    .focus-card .card-top,.focus-card .card-copy { position: relative; z-index: 1; }
+    .focus-card .stage-number { font-size: clamp(2rem,3vw,2.7rem); }
+    .focus-card .stage-icon { width: clamp(48px,4.3vw,58px); height: clamp(48px,4.3vw,58px); }
+    .focus-card .card-kicker { margin-bottom: 7px; font-size: .7rem; }
+    .focus-card .card-title { max-width: 350px; color: var(--accent); font-size: clamp(1.18rem,1.8vw,1.48rem); }
+    .orbit-nav { position: absolute; top: 52%; z-index: 20; width: 46px; height: 46px; display: grid; place-items: center; border: 1px solid var(--border-strong); border-radius: 50%; background: rgba(255,255,255,.94); color: var(--petrol-700); box-shadow: var(--shadow); cursor: pointer; transform: translateY(-50%); transition: transform 160ms ease, background 160ms ease; }
+    .orbit-nav:hover { background: var(--petrol-50); transform: translateY(-50%) scale(1.04); }
+    .orbit-nav.prev { left: clamp(0px,2vw,24px); }.orbit-nav.next { right: clamp(0px,2vw,24px); }
+    .orbit-nav .icon { width: 22px; height: 22px; }
+
+    .stepper { width: min(100%,720px); margin: 0 auto; display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 6px; position: relative; z-index: 30; }
+    .step-tab { min-width: 0; min-height: 42px; padding: 6px 8px; border: 1px solid var(--border); border-radius: var(--radius); background: white; color: var(--ink-500); font-family: var(--font-display); font-size: .7rem; font-weight: 700; cursor: pointer; box-shadow: 0 1px 2px rgba(28,36,32,.05); transition: color 160ms ease,background 160ms ease,border-color 160ms ease,transform 160ms ease; }
+    .step-tab:hover { border-color: var(--petrol-500); transform: translateY(-1px); }
+    .step-tab span { display: block; margin-bottom: 1px; color: var(--tab-accent); font-size: .92rem; font-weight: 800; }
+    .step-tab[aria-selected='true'] { border-color: var(--petrol-700); background: var(--petrol-700); color: white; box-shadow: 0 4px 12px rgba(22,67,63,.18); }
+    .step-tab[aria-selected='true'] span { color: white; }
+
+    .details-shell { min-height: 230px; }
+    .detail { --accent: var(--petrol-600); --soft: var(--petrol-50); display: none; grid-template-columns: minmax(0,1.5fr) minmax(260px,.75fr); gap: clamp(18px,3vw,34px); padding: clamp(20px,3vw,34px); border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: var(--radius-md); background: white; box-shadow: var(--shadow); animation: detail-in 360ms ease both; }
+    .detail.is-active { display: grid; }
+    .detail-heading { display: grid; grid-template-columns: auto minmax(0,1fr); gap: 14px; align-items: start; margin-bottom: 18px; }
+    .detail-heading-icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: var(--radius); color: var(--accent); background: var(--soft); }
+    .detail-heading-icon .icon { width: 24px; height: 24px; }
+    .detail-label { margin: 0 0 3px; color: var(--accent); font-family: var(--font-display); font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    .detail h2 { margin: 0; color: var(--ink-900); font-family: var(--font-display); font-size: clamp(1.25rem,2.2vw,1.75rem); font-weight: 750; letter-spacing: -.016em; line-height: 1.12; }
+    .action-list { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 9px 24px; list-style: none; }
+    .action-list li { display: grid; grid-template-columns: 16px 1fr; gap: 8px; color: var(--ink-700); font-size: clamp(.88rem,1vw,.98rem); line-height: 1.35; }
+    .action-list li::before { content: ''; width: 7px; height: 7px; margin-top: .43em; border-radius: 50%; background: var(--accent); }
+    .insight-box { align-self: stretch; padding: clamp(18px,2.2vw,26px); display: grid; align-content: center; grid-template-columns: auto 1fr; gap: 14px; border: 1px solid color-mix(in srgb,var(--accent) 24%,var(--border)); border-radius: var(--radius); background: var(--sand-100); }
+    .insight-icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; color: white; background: var(--accent); }
+    .insight-icon .icon { width: 23px; height: 23px; }
+    .insight-box strong { display: block; margin-bottom: 5px; color: var(--ink-900); font-family: var(--font-display); font-size: .95rem; line-height: 1.2; }
+    .insight-box p { margin: 0; color: var(--ink-500); font-size: .88rem; line-height: 1.42; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    @keyframes detail-in { from { opacity: 0; transform: translateY(7px); } to { opacity: 1; transform: none; } }
+
+    @media (max-width: 900px) {
+      :root { --card-w: clamp(196px,32vw,250px); --card-h: clamp(126px,21vw,154px); --orbit-radius: clamp(250px,43vw,360px); }
+      .experience { grid-template-rows: auto auto auto; }
+      .masthead { gap: 16px; }
+      .carousel-shell { grid-template-rows: 320px auto; }
+      .detail { grid-template-columns: 1fr; }
+      .insight-box { min-height: 110px; }
+    }
+
+    @media (max-width: 660px) {
+      :root { --card-w: min(72vw,270px); --card-h: min(42vw,154px); --orbit-radius: clamp(205px,69vw,290px); }
+      body { overflow-y: auto; }
+      .experience { padding: 18px 12px 20px; gap: 16px; }
+      .masthead { grid-template-columns: 1fr; gap: 10px; }
+      h1 { font-size: clamp(1.95rem,9vw,3rem); }
+      .intro { margin-top: 7px; font-size: .9rem; }
+      .mast-actions { justify-content: space-between; }
+      .carousel-shell { grid-template-rows: 290px auto; }
+      .orbit-scene { min-height: 290px; perspective: 1100px; }
+      .ring { top: 47%; }
+      .focus-card { top: 56px; width: min(78vw,310px); min-height: 170px; padding: 20px; }
+      .orbit-guide { width: 94vw; height: 120px; }
+      .orbit-nav { top: 55%; width: 40px; height: 40px; }
+      .orbit-nav.prev { left: 0; }.orbit-nav.next { right: 0; }
+      .stepper { gap: 4px; }
+      .step-tab { min-height: 38px; padding: 4px 2px; font-size: 0; }
+      .step-tab span { margin: 0; font-size: .86rem; }
+      .detail { padding: 18px; gap: 18px; }
+      .detail-heading { margin-bottom: 15px; }
+      .action-list { grid-template-columns: 1fr; gap: 8px; }
+      .insight-box { min-height: 0; padding: 16px; }
+    }
+
+    @media (max-height: 760px) and (min-width: 661px) {
+      .experience { padding-top: 16px; padding-bottom: 16px; gap: 12px; }
+      h1 { font-size: clamp(2rem,3vw,3rem); }
+      .intro { margin-top: 5px; }
+      .carousel-shell { grid-template-rows: 285px auto; }
+      .details-shell { min-height: 200px; }
+      .detail { padding-top: 20px; padding-bottom: 20px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,*::before,*::after { scroll-behavior: auto!important; animation-duration: .01ms!important; animation-iteration-count: 1!important; transition-duration: .01ms!important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="experience" aria-labelledby="page-title">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Patrimônio imobiliário público</p>
+        <h1 id="page-title">Ciclo de gestão contratual</h1>
+        <p class="intro">Da celebração à retomada do imóvel, cada etapa preserva a finalidade pública e prepara o início de um novo ciclo.</p>
+      </div>
+      <div class="mast-actions">
+        <div class="counter" aria-live="polite">Etapa <strong id="counter-current">1</strong> de <strong>6</strong></div>
+        <button class="auto-button" id="autoplay" type="button" aria-pressed="true"><span class="icon icon-pause" id="autoplay-icon" aria-hidden="true"></span><span id="autoplay-label">Pausar giro</span></button>
+      </div>
+    </header>
+
+    <section class="carousel-shell" aria-label="Etapas do ciclo de gestão contratual">
+      <div class="orbit-scene" id="scene">
+        <div class="orbit-guide" aria-hidden="true"></div>
+        <button class="orbit-nav prev" id="previous" type="button" aria-label="Etapa anterior"><span class="icon icon-left" aria-hidden="true"></span></button>
+        <div class="ring" id="ring">
+          <button class="stage-card is-active" style="--index:0;--accent:#1f5d5a;--soft:#eaf3f1" data-index="0" type="button" aria-label="Etapa 1: Celebração do contrato e organização da gestão" aria-pressed="true">
+            <span class="card-face card-front"><span class="card-top"><span class="stage-number">01</span><span class="stage-icon"><span class="icon icon-file"></span></span></span><span class="card-copy"><span class="card-kicker">Início do ciclo</span><span class="card-title">Celebração do contrato e organização da gestão</span></span></span>
+            <span class="card-face card-back"><span class="card-top"><span class="stage-number">01</span><span class="stage-icon"><span class="icon icon-file"></span></span></span><span class="card-copy"><span class="card-kicker">Início do ciclo</span><span class="card-title">Celebração do contrato e organização da gestão</span></span></span>
+          </button>
+          <button class="stage-card" style="--index:1;--accent:#2e7a75;--soft:#d6e8e6" data-index="1" type="button" aria-label="Etapa 2: Monitoramento da execução" aria-pressed="false">
+            <span class="card-face card-front"><span class="card-top"><span class="stage-number">02</span><span class="stage-icon"><span class="icon icon-monitor"></span></span></span><span class="card-copy"><span class="card-kicker">Acompanhamento</span><span class="card-title">Monitoramento da execução</span></span></span>
+            <span class="card-face card-back"><span class="card-top"><span class="stage-number">02</span><span class="stage-icon"><span class="icon icon-monitor"></span></span></span><span class="card-copy"><span class="card-kicker">Acompanhamento</span><span class="card-title">Monitoramento da execução</span></span></span>
+          </button>
+          <button class="stage-card" style="--index:2;--accent:#2f7d52;--soft:#ddeee2" data-index="2" type="button" aria-label="Etapa 3: Alterações contratuais" aria-pressed="false">
+            <span class="card-face card-front"><span class="card-top"><span class="stage-number">03</span><span class="stage-icon"><span class="icon icon-settings"></span></span></span><span class="card-copy"><span class="card-kicker">Ajustes necessários</span><span class="card-title">Alterações contratuais</span></span></span>
+            <span class="card-face card-back"><span class="card-top"><span class="stage-number">03</span><span class="stage-icon"><span class="icon icon-settings"></span></span></span><span class="card-copy"><span class="card-kicker">Ajustes necessários</span><span class="card-title">Alterações contratuais</span></span></span>
+          </button>
+          <button class="stage-card" style="--index:3;--accent:#c8922a;--soft:#f7edd3" data-index="3" type="button" aria-label="Etapa 4: Tratamento do inadimplemento" aria-pressed="false">
+            <span class="card-face card-front"><span class="card-top"><span class="stage-number">04</span><span class="stage-icon"><span class="icon icon-alert"></span></span></span><span class="card-copy"><span class="card-kicker">Resposta proporcional</span><span class="card-title">Tratamento do inadimplemento</span></span></span>
+            <span class="card-face card-back"><span class="card-top"><span class="stage-number">04</span><span class="stage-icon"><span class="icon icon-alert"></span></span></span><span class="card-copy"><span class="card-kicker">Resposta proporcional</span><span class="card-title">Tratamento do inadimplemento</span></span></span>
+          </button>
+          <button class="stage-card" style="--index:4;--accent:#c4502e;--soft:#f7e0d5" data-index="4" type="button" aria-label="Etapa 5: Extinção contratual" aria-pressed="false">
+            <span class="card-face card-front"><span class="card-top"><span class="stage-number">05</span><span class="stage-icon"><span class="icon icon-scale"></span></span></span><span class="card-copy"><span class="card-kicker">Encerramento seguro</span><span class="card-title">Extinção contratual</span></span></span>
+            <span class="card-face card-back"><span class="card-top"><span class="stage-number">05</span><span class="stage-icon"><span class="icon icon-scale"></span></span></span><span class="card-copy"><span class="card-kicker">Encerramento seguro</span><span class="card-title">Extinção contratual</span></span></span>
+          </button>
+          <button class="stage-card" style="--index:5;--accent:#5a6b7b;--soft:#e3e9ed" data-index="5" type="button" aria-label="Etapa 6: Recebimento ou retomada do imóvel" aria-pressed="false">
+            <span class="card-face card-front"><span class="card-top"><span class="stage-number">06</span><span class="stage-icon"><span class="icon icon-house"></span></span></span><span class="card-copy"><span class="card-kicker">Recomeço do ciclo</span><span class="card-title">Recebimento ou retomada do imóvel</span></span></span>
+            <span class="card-face card-back"><span class="card-top"><span class="stage-number">06</span><span class="stage-icon"><span class="icon icon-house"></span></span></span><span class="card-copy"><span class="card-kicker">Recomeço do ciclo</span><span class="card-title">Recebimento ou retomada do imóvel</span></span></span>
+          </button>
+        </div>
+        <div class="focus-card" id="focus-card" aria-hidden="true">
+          <span class="card-top"><span class="stage-number" id="focus-number">01</span><span class="stage-icon"><span class="icon icon-file" id="focus-icon"></span></span></span>
+          <span class="card-copy"><span class="card-kicker" id="focus-kicker">Início do ciclo</span><span class="card-title" id="focus-title">Celebração do contrato e organização da gestão</span></span>
+        </div>
+        <button class="orbit-nav next" id="next" type="button" aria-label="Próxima etapa"><span class="icon icon-right" aria-hidden="true"></span></button>
+        <p class="sr-only" id="announcement" aria-live="polite"></p>
+      </div>
+
+      <nav class="stepper" role="tablist" aria-label="Selecionar etapa">
+        <button class="step-tab" style="--tab-accent:#1f5d5a" type="button" role="tab" aria-selected="true" data-step="0"><span>01</span>Celebrar</button>
+        <button class="step-tab" style="--tab-accent:#2e7a75" type="button" role="tab" aria-selected="false" data-step="1"><span>02</span>Monitorar</button>
+        <button class="step-tab" style="--tab-accent:#2f7d52" type="button" role="tab" aria-selected="false" data-step="2"><span>03</span>Alterar</button>
+        <button class="step-tab" style="--tab-accent:#c8922a" type="button" role="tab" aria-selected="false" data-step="3"><span>04</span>Tratar</button>
+        <button class="step-tab" style="--tab-accent:#c4502e" type="button" role="tab" aria-selected="false" data-step="4"><span>05</span>Extinguir</button>
+        <button class="step-tab" style="--tab-accent:#5a6b7b" type="button" role="tab" aria-selected="false" data-step="5"><span>06</span>Retomar</button>
+      </nav>
+    </section>
+
+    <section class="details-shell" aria-label="Conteúdo da etapa selecionada">
+      <article class="detail is-active" style="--accent:#1f5d5a;--soft:#eaf3f1" data-detail="0">
+        <div><header class="detail-heading"><span class="detail-heading-icon"><span class="icon icon-file"></span></span><div><p class="detail-label">Etapa 01 · Início do ciclo</p><h2>Celebração do contrato e organização da gestão</h2></div></header><ul class="action-list"><li>Formalização do instrumento</li><li>Cadastro do contrato e do imóvel</li><li>Definição de responsáveis</li><li>Organização da documentação</li><li>Ativação de controles e alertas</li></ul></div>
+        <aside class="insight-box"><span class="insight-icon"><span class="icon icon-users"></span></span><div><strong>Responsabilidades claras desde o início</strong><p>Definir quem faz o quê, registrar e comunicar a todos os envolvidos.</p></div></aside>
+      </article>
+      <article class="detail" style="--accent:#2e7a75;--soft:#d6e8e6" data-detail="1" hidden>
+        <div><header class="detail-heading"><span class="detail-heading-icon"><span class="icon icon-monitor"></span></span><div><p class="detail-label">Etapa 02 · Acompanhamento</p><h2>Monitoramento da execução</h2></div></header><ul class="action-list"><li>Acompanhar a finalidade da destinação</li><li>Verificar obrigações essenciais e acessórias</li><li>Conferir contrapartidas e prazos</li><li>Analisar condicionantes legais e ambientais</li><li>Avaliar conservação e uso do imóvel</li><li>Registrar evidências e documentos</li></ul></div>
+        <aside class="insight-box"><span class="insight-icon"><span class="icon icon-eye"></span></span><div><strong>Acompanhar para garantir o interesse público</strong><p>O monitoramento contínuo previne riscos e assegura resultados para a sociedade.</p></div></aside>
+      </article>
+      <article class="detail" style="--accent:#2f7d52;--soft:#ddeee2" data-detail="2" hidden>
+        <div><header class="detail-heading"><span class="detail-heading-icon"><span class="icon icon-settings"></span></span><div><p class="detail-label">Etapa 03 · Ajustes necessários</p><h2>Alterações contratuais</h2></div></header><ul class="action-list"><li>Identificar necessidade de ajustes</li><li>Formalizar por termo aditivo, apostila ou instrumento equivalente</li><li>Respeitar limites legais e contratuais</li><li>Preservar a finalidade pública</li></ul></div>
+        <aside class="insight-box"><span class="insight-icon"><span class="icon icon-refresh"></span></span><div><strong>Adaptar sem perder o objetivo</strong><p>Alterar quando necessário, com segurança jurídica e transparência.</p></div></aside>
+      </article>
+      <article class="detail" style="--accent:#c8922a;--soft:#f7edd3" data-detail="3" hidden>
+        <div><header class="detail-heading"><span class="detail-heading-icon"><span class="icon icon-alert"></span></span><div><p class="detail-label">Etapa 04 · Resposta proporcional</p><h2>Tratamento do inadimplemento</h2></div></header><ul class="action-list"><li>Identificar irregularidades ou descumprimentos</li><li>Comunicar o destinatário</li><li>Oportunizar regularização</li><li>Acompanhar providências</li><li>Adotar medidas administrativas quando necessário</li></ul></div>
+        <aside class="insight-box"><span class="insight-icon"><span class="icon icon-handshake"></span></span><div><strong>Atuação preventiva e proporcional</strong><p>Priorizar prevenção, orientação e regularização; agravar medidas só quando indispensável.</p></div></aside>
+      </article>
+      <article class="detail" style="--accent:#c4502e;--soft:#f7e0d5" data-detail="4" hidden>
+        <div><header class="detail-heading"><span class="detail-heading-icon"><span class="icon icon-scale"></span></span><div><p class="detail-label">Etapa 05 · Encerramento seguro</p><h2>Extinção contratual</h2></div></header><ul class="action-list"><li>Verificar hipóteses de extinção</li><li>Avaliar cumprimento das obrigações remanescentes</li><li>Formalizar o encerramento da relação jurídica</li><li>Adotar providências registrais, quando cabível</li></ul></div>
+        <aside class="insight-box"><span class="insight-icon"><span class="icon icon-landmark"></span></span><div><strong>Encerrar com segurança jurídica</strong><p>Concluir corretamente protege o patrimônio público e evita litígios futuros.</p></div></aside>
+      </article>
+      <article class="detail" style="--accent:#5a6b7b;--soft:#e3e9ed" data-detail="5" hidden>
+        <div><header class="detail-heading"><span class="detail-heading-icon"><span class="icon icon-house"></span></span><div><p class="detail-label">Etapa 06 · Recomeço do ciclo</p><h2>Recebimento ou retomada do imóvel</h2></div></header><ul class="action-list"><li>Receber voluntariamente ou retomar o imóvel</li><li>Verificar estado de conservação e pendências</li><li>Atualizar cadastros e registros</li><li>Preparar o imóvel para nova destinação ou gestão direta</li></ul></div>
+        <aside class="insight-box"><span class="insight-icon"><span class="icon icon-refresh"></span></span><div><strong>Encerrar um ciclo para iniciar outro</strong><p>O imóvel regularizado pode receber nova destinação ou voltar à gestão direta.</p></div></aside>
+      </article>
+    </section>
+  </main>
+
+  <script>
+    (() => {
+      const ring = document.getElementById('ring');
+      const scene = document.getElementById('scene');
+      const cards = [...document.querySelectorAll('.stage-card')];
+      const tabs = [...document.querySelectorAll('.step-tab')];
+      const details = [...document.querySelectorAll('.detail')];
+      const counter = document.getElementById('counter-current');
+      const announcement = document.getElementById('announcement');
+      const autoplayButton = document.getElementById('autoplay');
+      const autoplayLabel = document.getElementById('autoplay-label');
+      const autoplayIcon = document.getElementById('autoplay-icon');
+      const focusCard = document.getElementById('focus-card');
+      const focusNumber = document.getElementById('focus-number');
+      const focusIcon = document.getElementById('focus-icon');
+      const focusKicker = document.getElementById('focus-kicker');
+      const focusTitle = document.getElementById('focus-title');
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+      const cardData = [
+        { title:'Celebração do contrato e organização da gestão', kicker:'Início do ciclo', icon:'icon-file', accent:'#1f5d5a', soft:'#eaf3f1' },
+        { title:'Monitoramento da execução', kicker:'Acompanhamento', icon:'icon-monitor', accent:'#2e7a75', soft:'#d6e8e6' },
+        { title:'Alterações contratuais', kicker:'Ajustes necessários', icon:'icon-settings', accent:'#2f7d52', soft:'#ddeee2' },
+        { title:'Tratamento do inadimplemento', kicker:'Resposta proporcional', icon:'icon-alert', accent:'#c8922a', soft:'#f7edd3' },
+        { title:'Extinção contratual', kicker:'Encerramento seguro', icon:'icon-scale', accent:'#c4502e', soft:'#f7e0d5' },
+        { title:'Recebimento ou retomada do imóvel', kicker:'Recomeço do ciclo', icon:'icon-house', accent:'#5a6b7b', soft:'#e3e9ed' }
+      ];
+      let current = 0, rotation = 0, autoplay = !reduced.matches, timer = null, pointerStart = null;
+
+      function render(announce = true) {
+        ring.style.transform = `translate(-50%,-50%) rotateX(-7deg) rotateY(${-rotation * 60}deg)`;
+        cards.forEach((card,index) => { const active = index === current; card.classList.toggle('is-active',active); card.setAttribute('aria-pressed',String(active)); card.tabIndex = -1; });
+        tabs.forEach((tab,index) => { const active = index === current; tab.setAttribute('aria-selected',String(active)); tab.tabIndex = active ? 0 : -1; });
+        details.forEach((detail,index) => { const active = index === current; detail.classList.toggle('is-active',active); detail.hidden = !active; });
+        const data = cardData[current];
+        focusCard.style.setProperty('--accent',data.accent);
+        focusCard.style.setProperty('--soft',data.soft);
+        focusNumber.textContent = String(current + 1).padStart(2,'0');
+        focusIcon.className = `icon ${data.icon}`;
+        focusKicker.textContent = data.kicker;
+        focusTitle.textContent = data.title;
+        counter.textContent = String(current + 1);
+        if (announce) announcement.textContent = `Etapa ${current + 1} de 6: ${data.title}`;
+      }
+      function restart() {
+        clearInterval(timer);
+        timer = autoplay ? setInterval(() => next(false), 6000) : null;
+        autoplayButton.setAttribute('aria-pressed',String(autoplay));
+        autoplayLabel.textContent = autoplay ? 'Pausar giro' : 'Retomar giro';
+        autoplayIcon.className = `icon ${autoplay ? 'icon-pause' : 'icon-play'}`;
+      }
+      function goTo(index,direction = 0,announce = true) {
+        const nextIndex = (index + cards.length) % cards.length;
+        if (!direction) { const forward = (nextIndex-current+cards.length)%cards.length, backward = forward-cards.length; direction = Math.abs(forward) <= Math.abs(backward) ? forward : backward; }
+        rotation += direction; current = nextIndex; render(announce); restart();
+      }
+      function next(announce = true) { goTo(current + 1,1,announce); }
+      function previous() { goTo(current - 1,-1); }
+
+      document.getElementById('next').addEventListener('click',() => next());
+      document.getElementById('previous').addEventListener('click',previous);
+      cards.forEach(card => card.addEventListener('click',() => goTo(Number(card.dataset.index))));
+      tabs.forEach(tab => tab.addEventListener('click',() => goTo(Number(tab.dataset.step))));
+      autoplayButton.addEventListener('click',() => { autoplay = !autoplay; restart(); });
+      document.addEventListener('keydown',event => { if (event.key === 'ArrowRight') { event.preventDefault(); next(); } else if (event.key === 'ArrowLeft') { event.preventDefault(); previous(); } else if (event.key === 'Home') { event.preventDefault(); goTo(0); } else if (event.key === 'End') { event.preventDefault(); goTo(5); } });
+      scene.addEventListener('pointerdown',event => { pointerStart = {x:event.clientX,y:event.clientY}; });
+      scene.addEventListener('pointerup',event => { if (!pointerStart) return; const dx = event.clientX-pointerStart.x, dy = event.clientY-pointerStart.y; pointerStart = null; if (Math.abs(dx)>42 && Math.abs(dx)>Math.abs(dy)) dx<0 ? next() : previous(); });
+      scene.addEventListener('pointercancel',() => { pointerStart = null; });
+      scene.addEventListener('mouseenter',() => clearInterval(timer));
+      scene.addEventListener('mouseleave',restart);
+      scene.addEventListener('focusin',() => clearInterval(timer));
+      scene.addEventListener('focusout',restart);
+      reduced.addEventListener('change',event => { if (event.matches) autoplay = false; restart(); });
+      render(false); restart();
+    })();
+  </script>
+</body>
+</html>
