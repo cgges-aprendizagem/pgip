@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M451 - Gestão de contratos de destinação</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"buqwa341__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-buqwa341__slot.png"},"bezrl14v__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bezrl14v__slot.png"},"beb7e2vx__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-beb7e2vx__slot.png"},"bzoa9g4n__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bzoa9g4n__slot.png"},"b583x99d__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-b583x99d__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M451 - Gestão de contratos de destinação","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cukxdvba","text":"A natureza dos contratos de destinação imobiliária","hidden":false},{"id":"b_msuxnfah_3q4w","text":"O ciclo de vida da gestão contratual","hidden":false},{"id":"c7k9bntl","text":"Boas práticas e transformação digital: \u003cspan style=\"font-weight: normal;\">a experiência do Módulo de Gestão de Atos e Contratos da SPU\u003c/span>","hidden":false}]}},"blocks":[{"id":"bjneagtf","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"b583x99d","type":"hero","props":{"kicker":"Gestão do uso dos imóveis públicos","kickerIcon":"building","title":"Gestão de instrumentos de destinação de imóveis públicos","byline":"Princípios, ciclo de vida e boas práticas para garantir a efetividade das destinações","slot":"b583x99d__slot"}},{"id":"bb8cgbz3","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cwylb54e","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O principal desafio da gestão do patrimônio imobiliário público não está apenas em decidir a quem destinar um imóvel ou formalizar o instrumento jurídico correspondente, mas em garantir que esse bem cumpra, ao longo do tempo, a\u003cmark> finalidade pública que justificou sua destinação\u003c/mark>. Em outras palavras, é preciso assegurar que o imóvel permaneça efetivamente a serviço da sociedade, produzindo os benefícios esperados e contribuindo para sua função socioambiental.\u003c/span>\u003c/p>\u003cp>Sob essa perspectiva, a celebração do contrato não representa o encerramento do processo de destinação, mas o início de uma nova etapa: a\u003cb> gestão contratual\u003c/b>. A partir desse momento, cabe à Administração Pública acompanhar o cumprimento das obrigações assumidas, monitorar a utilização do imóvel, verificar a manutenção da finalidade pactuada, promover ajustes quando necessários e adotar medidas diante de eventuais irregularidades ou mudanças de contexto.\u003c/p>"}},{"id":"b743pz6p","type":"callout","props":{"variant":"header","tone":"warning","icon":"alert-triangle","title":"","heading":"","children":"\u003cp>A expressão “\u003cb>contrato\u003c/b>” é utilizada aqui em sentido amplo para designar os diversos instrumentos jurídicos empregados para formalizar a destinação de imóveis públicos, abrangendo contratos, termos, escrituras, atos e outros instrumentos congêneres previstos na legislação aplicável. Essa opção tem finalidade didática e operacional, simplificando a exposição sem afastar as distinções jurídicas existentes entre esses instrumentos.\u003c/p>"}},{"id":"bo01yr8e","type":"prose","props":{"html":"\u003cp>A distinção entre a celebração do contrato e sua efetiva execução é fundamental pois a \u003cb>função pública do patrimônio imobiliário não se concretiza pelo simples ato de destinação ou pela assinatura do contrato\u003c/b>. Um imóvel somente gera valor para a sociedade quando é efetivamente utilizado para os fins que motivaram sua destinação e quando as condições pactuadas são observadas ao longo de toda a vigência da relação jurídica. Em outras palavras, é a adequada gestão contratual que transforma uma decisão administrativa em resultados concretos, assegurando que o patrimônio público permaneça a serviço do interesse coletivo.\u003c/p>\u003cp>Os contratos de destinação apresentam características que os diferenciam dos contratos administrativos tradicionalmente associados à aquisição de bens, execução de obras ou prestação de serviços. Em geral, envolvem relações jurídicas de longa duração, acompanhamento permanente do uso do imóvel, monitoramento do cumprimento de finalidades específicas e, em determinadas situações, até mesmo a constituição ou transferência de direitos reais sujeitos a registro imobiliário. Essas peculiaridades demandam mecanismos próprios de gestão e fiscalização.\u003c/p>"}},{"id":"bjr2u6cf","type":"markerlist","props":{"variant":"icon","icon":"scale","accent":"","items":[{"title":"\u003cspan style=\"font-weight: normal;\">\u003ci>Diante das especificidades dos contratos de destinação, a \u003ca href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 14.133, de 2021\u003c/a>, oferece referências importantes em temas como governança, planejamento e fiscalização contratual, mas não disciplina de forma detalhada as particularidades da gestão do patrimônio imobiliário público. Por essa razão, sua aplicação tem caráter complementar (subsidiário) às normas e procedimentos próprios da destinação e da gestão de imóveis públicos.\u003c/i>\u003c/span>","text":""}]}},{"id":"bn22ba01","type":"kicker","props":{"icon":"book-open-check","children":"Objetivo deste material"}},{"id":"b_msw53kuc_0pqt","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Este material foi elaborado para oferecer uma visão prática e estruturada da gestão contratual patrimonial, tomando como referência o ciclo de vida do contrato, que se inicia com sua celebração e se encerra com sua extinção, devolução ou retomada do imóvel. Ao longo do conteúdo, são apresentados conceitos fundamentais, orientações operacionais e boas práticas voltadas ao monitoramento de obrigações, à gestão de alterações, ao tratamento de inadimplementos e ao encerramento das relações contratuais.\u003c/span>\u003c/p>\u003cp>Embora utilize exemplos inspirados na experiência da União, especialmente em temas de maior maturidade institucional, o conteúdo foi concebido para ser aplicável a órgãos e entidades de qualquer esfera federativa. Estados, Distrito Federal e municípios podem adotar instrumentos jurídicos, procedimentos e regulamentações próprios para a gestão de seus imóveis, inexistindo, atualmente, um levantamento nacional consolidado sobre essas normas. Por essa razão, o foco deste guia recai sobre princípios, métodos e práticas que podem ser adaptados às diferentes realidades institucionais.\u003c/p>\u003cp>Mais do que um conjunto de orientações sobre contratos, este material busca contribuir para uma visão estratégica da administração patrimonial, na qual a gestão contratual é compreendida como instrumento de governança, preservação do patrimônio público e geração contínua de valor para a sociedade. \u003cb>\u003cmark data-hl=\"petrol\">Afinal, destinar um imóvel é apenas o começo; garantir que ele cumpra sua finalidade pública é o verdadeiro desafio da gestão.\u003c/mark>\u003c/b>\u003c/p>"}}]},{"id":"bb1zdusv","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cukxdvba","type":"titulo","props":{"text":"A natureza dos contratos de destinação imobiliária","level":"h2"}},{"id":"clvpx08h","type":"prose","props":{"html":"\u003cp>Os contratos de destinação imobiliária ocupam uma posição singular na administração do patrimônio imobiliário público. Embora compartilhem características comuns com outros instrumentos celebrados pela Administração Pública, sua finalidade, objeto e dinâmica de execução conferem-lhes peculiaridades que exigem uma abordagem própria de gestão.\u003c/p>\u003cp>Enquanto os contratos administrativos em geral têm por objetivo a aquisição de bens, a contratação de serviços ou a execução de obras, \u003cmark data-hl=\"sand\">os \u003cb>contratos de destinação\u003c/b> disciplinam, em essência, a utilização, ocupação, exploração, administração ou atribuição de direitos relacionados a imóveis públicos\u003c/mark>. O foco deixa de ser a entrega de um produto ou serviço e passa a ser a manutenção, ao longo do tempo, de uma relação jurídica capaz de assegurar que o imóvel seja utilizado em conformidade com a finalidade pública que justificou sua destinação.\u003c/p>\u003cp>Essa característica faz com que tais instrumentos, em regra, estejam associados a relações jurídicas de longa duração, muitas vezes estendendo-se por anos ou décadas. Durante esse período, podem ocorrer mudanças legislativas, institucionais, urbanísticas ou mesmo nas condições do imóvel e do destinatário, tornando indispensável um acompanhamento contínuo por parte da Administração.\u003c/p>\u003cp>Outra diferença relevante é que o sucesso desses contratos não pode ser aferido apenas por sua celebração ou pela inexistência de litígios. Seu verdadeiro resultado está na efetiva implementação e manutenção da finalidade pactuada, no cumprimento das obrigações assumidas pelas partes e na preservação do interesse público que motivou a destinação. Um imóvel cedido para implantação de um equipamento público, por exemplo, somente cumprirá sua função se esse equipamento for efetivamente implantado, utilizado e mantido nas condições previstas.\u003c/p>\u003cp>Nesse contexto, a gestão contratual assume papel estratégico. Mais do que controlar prazos ou documentos, ela permite acompanhar a execução da destinação, identificar riscos, promover ajustes, prevenir irregularidades e garantir que o patrimônio público continue gerando benefícios para a coletividade durante toda a vigência da relação jurídica.\u003c/p>"}},{"id":"bek8mz8g","type":"examplecard","props":{"label":"particularidade importante dos contratos de destinação","icon":"map-pin","color":"var(--ochre-700)","slot":"bek8mz8g__slot","collapse":"closed","title":"\u003cspan data-fs=\"h4\">Registro imobiliário: \u003cbr>\u003cspan style=\"font-weight: normal;\">uma característica distintiva dos contratos patrimoniais\u003c/span>\u003c/span>","children":"\u003cp>Uma particularidade importante dos contratos de destinação que envolvem constituição, transferência, modificação ou extinção de direitos reais é \u003cmark data-hl=\"terra\">a necessidade de observar, quando aplicável, as regras do sistema registral imobiliário\u003c/mark>.\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Diferentemente da maioria dos contratos administrativos tradicionais, cujos efeitos decorrem essencialmente da manifestação de vontade das partes e do cumprimento das exigências legais de publicidade, determinados contratos patrimoniais dependem de registro no Cartório de Registro de Imóveis para produzir os efeitos próprios dos direitos reais perante terceiros.\u003c/span>\u003c/p>\u003cp>No âmbito da Secretaria do Patrimônio da União (SPU), por exemplo, contratos com força de escritura pública que constituam ou transfiram direitos reais sobre imóveis da União são levados a registro na matrícula do imóvel, assim como os atos relacionados à extinção ou reversão desses direitos, quando cabíveis. Essa prática reforça a segurança jurídica, a publicidade registral e a adequada gestão do patrimônio imobiliário.\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Embora outros entes federativos possam adotar procedimentos internos próprios para a gestão de seus instrumentos patrimoniais, a exigência de registro de direitos reais perante o Cartório de Registro de Imóveis decorre da legislação federal sobre registros públicos (\u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 6.015, de 1973\u003c/a>) e não pode ser afastada por normatização específica de cada ente. Esse exemplo demonstra que a gestão contratual de imóveis frequentemente extrapola os limites da administração documental, exigindo atenção também aos efeitos produzidos no âmbito do registro imobiliário.\u003c/span>\u003c/p>"}}]},{"id":"b_msuxnfah_u9un","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_msuxnfah_3q4w","type":"titulo","props":{"text":"O ciclo de vida da gestão contratual","level":"h2"}},{"id":"b_msuxnfah_ktt6","type":"prose","props":{"html":"\u003cp>A gestão contratual é um processo contínuo que acompanha toda a vigência da relação jurídica estabelecida entre a Administração Pública e o destinatário do imóvel. Diferentemente do processo de destinação, que compreende os estudos técnicos, a análise jurídica e a decisão sobre a melhor forma de utilização do bem, a gestão contratual tem início com a celebração do contrato e se desenvolve até sua extinção e a adequada devolução ou retomada do imóvel.\u003c/p>\u003cp>Essa visão permite compreender que o contrato não representa um fim em si mesmo. Ele constitui o ponto de partida para um conjunto de atividades destinadas a acompanhar sua execução, prevenir irregularidades, promover ajustes quando necessários e assegurar que a finalidade pública da destinação seja efetivamente alcançada.\u003c/p>\u003cp>A figura a seguir apresenta, de forma simplificada, as principais etapas desse ciclo.\u003c/p>"}},{"id":"buqwa341","type":"figure","props":{"slot":"buqwa341__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]},{"id":"b7duwomx","type":"section","props":{"width":"full","surface":"dark","pad":"md"},"children":[{"id":"buxqpozo","type":"externalembed","props":{"title":"Conteúdo incorporado","embed":"\u003ciframe\n  src=\"https://luislindner.github.io/spu/m451/m451_ciclo/public/infografico.html\"\n  title=\"Ciclo de gestão contratual\"\n  loading=\"lazy\"\n  width=\"1200\"\n  height=\"900\"\n  style=\"width:100%; border:0;\"\n  allow=\"fullscreen\"\n>\u003c/iframe>","responsive":false,"useEmbedDimensions":true,"width":0,"height":900}}]},{"id":"bk0clrn8","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"bl0wcgif","type":"kicker","props":{"icon":"scroll","children":"ETAPA 01","__pullDown":false}},{"id":"cm5cifku","type":"titulo","props":{"text":"Celebração do contrato e organização da gestão","level":"h3"}},{"id":"cvj9ovwy","type":"prose","props":{"html":"\u003cp>A celebração do contrato formaliza a relação jurídica entre a Administração Pública e o destinatário do imóvel, estabelecendo direitos, deveres, prazos, encargos e demais condições aplicáveis.\u003c/p>\u003cp>Contudo, essa etapa não deve limitar-se à assinatura do instrumento. É também o momento de estruturar a gestão contratual, criando as condições necessárias para o acompanhamento de sua execução. Entre as providências recomendadas nessa fase destacam-se:\u003c/p>"}},{"id":"bdlikjjt","type":"feature","props":{"columns":2,"card":true,"accent":"var(--terra-600)","layout":"side","items":[{"icon":"file-check","title":"","text":"\u003cspan data-fs=\"body\">Cadastramento do contrato e do imóvel nos sistemas utilizados pelo órgão (que pode ser automática, como no caso da SPU/MGI). \u003c/span>"},{"icon":"notebook-pen","title":"","text":"\u003cspan data-fs=\"body\">Definição das obrigações que exigirão monitoramento específico. \u003c/span>"},{"icon":"search","title":"","text":"\u003cspan data-fs=\"body\">Identificação das partes envolvidas e dos responsáveis pela gestão.\u003c/span>"},{"icon":"file-sliders","title":"","text":"\u003cspan data-fs=\"body\">Configuração de mecanismos de controle de prazos e alertas. \u003c/span>"}]}},{"id":"bzg4smyu","type":"prose","props":{"html":"\u003cp>Uma boa estrutura inicial reduz riscos, facilita o acompanhamento posterior e evita perda de informações ao longo da vigência do contrato.\u003c/p>"}},{"id":"byu2s02u","type":"callout","props":{"variant":"ear","tone":"info","icon":"thumbs-up","title":"Boa prática","heading":"","children":"\u003cp>A gestão contratual deve começar junto com a celebração do contrato, e não apenas quando surgirem problemas ou vencimentos relevantes.\u003c/p>"}}]},{"id":"bmf5a2pl","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"bsn30wts","type":"kicker","props":{"icon":"clipboard-check","children":"Etapa 02"}},{"id":"c3a6ylhw","type":"titulo","props":{"text":"Monitoramento da execução","level":"h3"}},{"id":"c61457gg","type":"prose","props":{"html":"\u003cp>O monitoramento representa a etapa mais extensa e relevante do ciclo de vida contratual. Seu objetivo é verificar, de forma contínua, se o imóvel está sendo utilizado conforme a finalidade pactuada e se as obrigações assumidas pelas partes estão sendo efetivamente cumpridas.\u003c/p>\u003cp>Em contratos de destinação, esse acompanhamento vai muito além do controle documental. Ele busca assegurar que o patrimônio público continue atendendo ao interesse coletivo que justificou sua destinação.\u003c/p>"}},{"id":"b444uaht","type":"panel","props":{"variant":"box","kicker":"Entre os aspectos normalmente sujeitos a monitoramento estão:","kickerIcon":"clipboard-list","title":"","color":"","bg":"var(--cloud-50)","body":"","__pullDown":false,"__pullUp":false},"children":[{"id":"b04a0wq2","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_msuyltv4_5byf","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--petrol-600)","items":[{"title":"","text":"Implantação e manutenção da finalidade prevista."},{"title":"","text":"Cumprimento de obrigações essenciais e acessórias. "},{"title":"","text":"Execução de contrapartidas."}]}},{"id":"b_msuym2hc_l1eq","type":"markerlist","props":{"variant":"check","icon":"check","accent":"var(--petrol-600)","items":[{"title":"","text":"Observância dos prazos contratuais. "},{"title":"","text":"Atendimento de condicionantes legais ou ambientais. "},{"title":"","text":"Conservação e utilização adequada do imóvel."}]}}]}]},{"id":"bi8vv7cx","type":"prose","props":{"html":"\u003cp>Sempre que possível, o monitoramento deve combinar análise documental, comunicação com o destinatário, utilização de sistemas informatizados e, quando necessário, vistorias ou outras formas de verificação.\u003c/p>\u003cp>Para verificar esses aspectos, o gestor pode recorrer a diferentes fontes de evidência, combinadas de acordo com a natureza do contrato e os recursos disponíveis:\u003c/p>"}},{"id":"bpg66qgg","type":"feature","props":{"columns":3,"card":true,"accent":"","layout":"top","items":[{"icon":"book-open-text","title":"","text":"Documentos e relatórios periódicos apresentados pelo destinatário."},{"icon":"camera","title":"","text":"Registros fotográficos, inclusive enviados pelo próprio destinatário.\u003cbr>"},{"icon":"satellite","title":"","text":"Imagens de satélite e ferramentas de georreferenciamento, especialmente úteis para acompanhar grandes glebas ou identificar ocupações irregulares.\u003cbr>"},{"icon":"search","title":"","text":"Vistorias presenciais, conduzidas pela própria equipe gestora.\u003cbr>"},{"icon":"square-library","title":"","text":"Bases cadastrais e sistemas eletrônicos da própria Administração.\u003cbr>"},{"icon":"book-check","title":"","text":"Informações prestadas por outros órgãos parceiros (fiscalização ambiental, urbanística, sanitária, entre outros).\u003cbr>"}]}},{"id":"bz4znkcz","type":"prose","props":{"html":"\u003cp>A escolha e a combinação dessas fontes não devem ser uniformes para todos os contratos. O monitoramento ganha eficiência quando sua intensidade é proporcional ao risco envolvido em cada destinação, considerando fatores como o valor do imóvel, a natureza do destinatário, o tipo de finalidade pactuada e o histórico de cumprimento da relação contratual.\u003c/p>"}}]},{"id":"bwldzj35","type":"section","props":{"width":"content","surface":"warm","pad":"lg","__pullDown":false,"__pullUp":false},"children":[{"id":"bwnetm8b","type":"kicker","props":{"icon":"square-pen","children":"Etapa 03"}},{"id":"cf5nrpno","type":"titulo","props":{"text":"Alterações contratuais","level":"h3"}},{"id":"ck05fplr","type":"prose","props":{"html":"\u003cp>Ao longo da vigência do contrato, podem surgir situações que exijam ajustes em suas condições originalmente estabelecidas.\u003c/p>\u003cp>Essas alterações podem decorrer de mudanças na execução da destinação, necessidade de prorrogação de prazos, atualização de cláusulas, correção de erros materiais ou outras circunstâncias compatíveis com a legislação aplicável e com o interesse público.\u003c/p>\u003cp>Independentemente de sua natureza, toda alteração deve ser devidamente fundamentada, formalizada pelo instrumento adequado e registrada no respectivo processo administrativo, preservando a segurança jurídica e a rastreabilidade das decisões.\u003c/p>"}},{"id":"bb2o83pp","type":"callout","props":{"variant":"ear","tone":"success","icon":"lightbulb","title":"","heading":"","children":"\u003cp>Uma gestão contratual eficiente não evita alterações; ao contrário, reconhece que elas podem ser necessárias para adaptar o contrato a novas circunstâncias sem comprometer sua finalidade.\u003c/p>","color":""}}]},{"id":"bskf0eb8","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b0ye25df","type":"kicker","props":{"icon":"banknote-x","children":"Etapa 04"}},{"id":"cdqn8017","type":"titulo","props":{"text":"Tratamento do inadimplemento","level":"h3"}},{"id":"c8sskn59","type":"prose","props":{"html":"\u003cp>Nem sempre a execução contratual ocorre conforme o planejado. Atrasos, descumprimento de obrigações, desvio de finalidade ou outras irregularidades podem surgir ao longo da vigência do contrato.\u003c/p>\u003cp>Nessas situações, a atuação do gestor deve priorizar a identificação tempestiva dos problemas e, sempre que possível, buscar sua regularização antes da adoção de medidas mais gravosas.\u003c/p>\u003cp>Para orientar a resposta do gestor, é útil classificar o inadimplemento de acordo com sua natureza, já que situações de gravidade distinta exigem respostas proporcionalmente distintas:\u003c/p>"}},{"id":"brlzhrvx","type":"columns","props":{"count":"3","ratio":"equal","gap":"sm"},"children":[{"id":"by0i9xck","type":"flashcard","props":{"term":"Inadimplemento formal","description":"","definition":"\u003cp>Relacionado a obrigações acessórias, como atraso na apresentação de documentos, relatórios ou comunicações exigidas pelo contrato.\u003c/p>","icon":"file-check","color":"var(--petrol-600)"}},{"id":"b_msuyzwav_7asd","type":"flashcard","props":{"term":"Inadimplemento quanto à finalidade ","description":"","definition":"\u003cp>Ocorre quando a finalidade pactuada não é implantada, é abandonada ou é substituída por uso diverso do previsto, comprometendo a própria razão de ser da destinação.\u003c/p>","icon":"file-question-mark","color":"var(--ochre-600)"}},{"id":"b_msuyzvnd_1tih","type":"flashcard","props":{"term":"Inadimplemento patrimonial","description":"","definition":"\u003cp>Associado a danos ao próprio bem, como degradação física, ocupações indevidas por terceiros ou alterações não autorizadas na edificação.\u003c/p>","icon":"file-sliders","color":"var(--terra-600)"}}]},{"id":"b9zrzqts","type":"prose","props":{"html":"\u003cp>Essa distinção ajuda o gestor a calibrar a resposta: um atraso documental pontual normalmente não justifica a mesma gravidade de medida que um desvio de finalidade ou um dano patrimonial relevante.\u003c/p>"}},{"id":"bxxm00ge","type":"callout","props":{"variant":"ear","tone":"info","icon":"lightbulb","title":"Boas práticas","heading":"","children":"\u003cp>\u003c/p>\u003cul>\u003cli>Registrar a irregularidade identificada.\u003c/li>\u003cli>Comunicar formalmente o destinatário.\u003c/li>\u003cli>Conceder oportunidade para apresentação de esclarecimentos ou regularização, quando cabível.\u003c/li>\u003cli>Acompanhar o cumprimento das providências acordadas.\u003c/li>\u003cli>Adotar as medidas administrativas previstas na legislação e no contrato em caso de persistência do inadimplemento. \u003c/li>\u003c/ul>\u003cp>\u003c/p>\u003cp>A atuação preventiva tende a produzir resultados melhores do que intervenções exclusivamente repressivas, contribuindo para preservar a finalidade pública da destinação e reduzir conflitos administrativos.\u003c/p>"}}]},{"id":"bwvja8oe","type":"section","props":{"width":"content","surface":"warm","pad":"lg","__pullUp":false},"children":[{"id":"b_msw83cnl_95nz","type":"kicker","props":{"icon":"sticky-note-x","children":"Etapa 05"}},{"id":"cq1i4egi","type":"titulo","props":{"text":"Extinção contratual","level":"h3"}},{"id":"c9akr7r2","type":"prose","props":{"html":"\u003cp>Todo contrato possui um momento de encerramento, seja pelo término do prazo de vigência, pelo cumprimento de sua finalidade, por acordo entre as partes ou por outras hipóteses previstas na legislação e no próprio instrumento.\u003c/p>\u003cp>A extinção contratual exige análise cuidadosa para verificar se permanecem obrigações pendentes, se existem providências formais a serem adotadas ou se há necessidade de praticar atos complementares relacionados ao imóvel.\u003c/p>\u003cp>Em determinadas modalidades de destinação, especialmente quando envolvem direitos reais, a extinção pode demandar também providências perante o registro imobiliário, observada a legislação aplicável.\u003c/p>"}}]},{"id":"b_msw8989x_g9vx","type":"section","props":{"width":"content","surface":"none","pad":"lg","__pullUp":false},"children":[{"id":"b_msw8989x_j348","type":"kicker","props":{"icon":"refresh-ccw","children":"Etapa 06"}},{"id":"b_msw8989x_a18l","type":"titulo","props":{"text":"Recebimento ou retomada do imóvel","level":"h3"}},{"id":"b_msw8989x_17ef","type":"prose","props":{"html":"\u003cp>A etapa final do ciclo consiste no recebimento voluntário ou na retomada da gestão do imóvel pela Administração Pública.\u003c/p>\u003cp>Nesse momento, recomenda-se verificar o estado de conservação do bem, o cumprimento das obrigações remanescentes, a existência de pendências documentais ou materiais e a necessidade de atualização dos registros administrativos ou imobiliários.\u003c/p>\u003cp>Concluídas essas providências, o imóvel estará apto para permanecer sob gestão direta do poder público ou ser objeto de nova destinação, iniciando um novo ciclo patrimonial.\u003c/p>"}},{"id":"b_msw8989x_sq9g","type":"panel","props":{"variant":"feature","kicker":"Em síntese","kickerIcon":"album","title":"","color":"","bg":"var(--slate-200)","body":"\u003cp>\u003c/p>\u003cp>A gestão contratual pode ser compreendida como um processo contínuo composto por seis grandes etapas:\u003c/p>\u003cp>\u003c/p>\u003col>\u003cli>Celebração do contrato e organização da gestão; \u003c/li>\u003cli>Monitoramento da execução; \u003c/li>\u003cli>Alterações contratuais; \u003c/li>\u003cli>Tratamento do inadimplemento; \u003c/li>\u003cli>Extinção contratual; e \u003c/li>\u003cli>Recebimento ou retomada do imóvel. \u003c/li>\u003c/ol>\u003cp>\u003c/p>\u003cp>Cada uma dessas fases desempenha papel essencial para assegurar que a destinação produza os resultados esperados e que o patrimônio imobiliário público permaneça efetivamente a serviço da sociedade.\u003c/p>\u003cp>\u003c/p>"},"children":[]}]},{"id":"bm90eiej","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"c7k9bntl","type":"titulo","props":{"text":"Boas práticas e transformação digital: \u003cspan style=\"font-weight: normal;\">a experiência do Módulo de Gestão de Atos e Contratos da SPU\u003c/span>","level":"h2"}},{"id":"cu52pwv5","type":"prose","props":{"html":"\u003cp>Sistemas modernos podem atuar como instrumentos de governança, promovendo padronização, integração de dados, rastreabilidade dos atos administrativos e maior eficiência na gestão do ciclo de vida dos contratos.\u003c/p>\u003cp>Com essa perspectiva, a Secretaria do Patrimônio da União (SPU) desenvolveu o \u003cb>Módulo de Gestão de Atos e Contratos (MGC)\u003c/b>, integrado ao SPUNet, como uma solução destinada a apoiar a formalização e a gestão dos instrumentos de destinação de imóveis da União. Desde sua concepção, o módulo foi estruturado para acompanhar todas as etapas do ciclo de vida contratual, desde a celebração até o monitoramento da execução, alterações, tratamento de inadimplementos e encerramento da relação jurídica.\u003c/p>\u003cp>A implementação foi iniciada pela primeira etapa desse ciclo (a celebração do contrato e a organização inicial da gestão), concentrando esforços na padronização dos instrumentos, na automação de procedimentos e na integração com as bases corporativas de informação. Essa estratégia permitiu estabelecer uma base sólida para a evolução futura da solução, que já se encontra preparada para incorporar funcionalidades voltadas ao acompanhamento da execução contratual, como notificações automáticas, gestão das comunicações com os destinatários, atualização cadastral dos responsáveis, controle de obrigações e outras ferramentas de monitoramento contínuo.\u003c/p>\u003cp>Embora desenvolvido para atender às especificidades da União, o MGC reúne práticas que podem inspirar outros órgãos e entidades públicas, especialmente no que se refere à utilização de modelos padronizados, integração entre sistemas, automação de atividades repetitivas e fortalecimento da governança contratual.\u003c/p>"}},{"id":"b3wh5p9s","type":"accordion","props":{"numbered":false,"items":[{"title":"Padronização inteligente de minutas","content":"\u003cp>Um dos principais diferenciais do módulo é a geração automática de contratos a partir do preenchimento de formulários digitais estruturados. Em vez de elaborar cada instrumento individualmente, o sistema utiliza minutas-padrão mantidas de forma centralizada, garantindo maior uniformidade e reduzindo riscos de inconsistências.\u003c/p>\u003cp>Os modelos podem combinar cláusulas padronizadas de preenchimento obrigatório com campos parametrizáveis destinados às informações específicas de cada contratação. Essa abordagem concilia segurança jurídica, flexibilidade operacional e facilidade de atualização normativa.\u003c/p>\u003cp>Além disso, a governança centralizada das minutas permite que alterações promovidas nos modelos oficiais sejam refletidas nas novas contratações, favorecendo a harmonização institucional e reduzindo a dispersão de versões.\u003c/p>","blocks":[{"id":"bezrl14v","type":"figure","props":{"slot":"bezrl14v__slot","src":"","fit":"contain","size":"full","title":"tela de seleção do modelo contratual ou da geração automática da minuta","caption":"","credit":""}}]},{"title":"Integração com a base de imóveis","content":"\u003cp>Outro aspecto relevante é a integração entre o módulo contratual e o cadastro patrimonial da SPU.\u003c/p>\u003cp>Na elaboração do contrato, diversas informações relativas ao imóvel são obtidas automaticamente da base corporativa, evitando redigitação, reduzindo erros de preenchimento e assegurando maior consistência entre os registros cadastrais e o instrumento jurídico.\u003c/p>\u003cp>Essa integração demonstra como a interoperabilidade entre sistemas pode simplificar procedimentos administrativos e aumentar a confiabilidade das informações utilizadas na gestão patrimonial.\u003c/p>","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"bzoa9g4n","type":"figure","props":{"slot":"bzoa9g4n__slot","src":"","fit":"contain","size":"full","title":"tela demonstrando o aproveitamento automático dos dados do imóvel","caption":"","credit":""}}]},{"title":"Automação de procedimentos","content":"\u003cp>O MGC também automatiza atividades tradicionalmente executadas de forma manual, contribuindo para reduzir o tempo de processamento e aumentar a eficiência operacional.\u003c/p>\u003cp>Entre essas funcionalidades destaca-se a geração automatizada do extrato contratual e sua publicação no Diário Oficial da União, diminuindo retrabalho e reduzindo o risco de divergências entre o contrato celebrado e as informações divulgadas oficialmente.\u003c/p>\u003cp>Essa lógica de automação pode ser aplicada a diversas outras etapas da gestão patrimonial, liberando as equipes para atividades de análise, acompanhamento e tomada de decisão.\u003c/p>","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"beb7e2vx","type":"figure","props":{"slot":"beb7e2vx__slot","src":"","fit":"contain","size":"full","title":"tela ilustrando a geração ou publicação automática do extrato","caption":"","credit":""}}]},{"title":"Uma plataforma preparada para a evolução do ciclo contratual","content":"\u003cp>Embora sua implantação tenha priorizado a fase de celebração dos contratos, a arquitetura do módulo foi concebida para suportar a gestão integrada de todo o ciclo contratual.\u003c/p>\u003cp>Entre as funcionalidades passíveis de incorporação destacam-se:\u003c/p>","linkHref":"","linkLabel":"","linkButton":"","blocks":[{"id":"b2ker755","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bij98hq8","type":"markerlist","props":{"variant":"check","icon":"check","accent":"","items":[{"title":"","text":"Controle automatizado de prazos. "},{"title":"","text":"Envio de notificações e lembretes. "},{"title":"","text":"Registro das comunicações com os destinatários. "},{"title":"","text":"Atualização dos dados dos responsáveis. "}]}},{"id":"b_msuzkysx_sb3w","type":"markerlist","props":{"variant":"check","icon":"check","accent":"","items":[{"title":"","text":"Acompanhamento do cumprimento de obrigações. "},{"title":"","text":"Registro de evidências e documentos comprobatórios. "},{"title":"","text":"Apoio às alterações contratuais e ao encerramento da relação jurídica. "}]}}]},{"id":"bju8snaf","type":"prose","props":{"html":"\u003cp>Essa visão evidencia que a transformação digital deve ser compreendida como um processo contínuo de aperfeiçoamento da gestão, e não apenas como a informatização da celebração dos contratos.\u003c/p>"}}]}]}}]},{"id":"blm4kuzm","type":"conclusion","props":{"kicker":"Para fechar","kickerIcon":"check","title":"Em síntese","body":"\u003cp>A experiência do MGC/SPUnet demonstra que soluções tecnológicas podem fortalecer significativamente a gestão contratual patrimonial quando concebidas a partir de princípios como padronização, integração de dados, automação de procedimentos e governança centralizada dos modelos contratuais.\u003c/p>\u003cp>Independentemente da tecnologia utilizada, esses elementos podem servir de referência para outros órgãos e entidades públicas interessados em aprimorar a gestão de seus instrumentos de destinação, aumentando a eficiência administrativa, reduzindo riscos e criando bases sólidas para o acompanhamento de todo o ciclo de vida contratual.\u003c/p>"},"children":[{"id":"br2ipboo","type":"callout","props":{"variant":"ear","tone":"info","icon":"mouse-pointer","title":"Saiba mais","heading":"","children":"\u003cp>Página de \u003ca href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/destinacao-de-imoveis/gestao-de-contratos/gestao-de-contratos\">Gestão de Contratos de Destinação\u003c/a>, apenas para servidores da SPU/MGI.\u003c/p>"}}]},{"id":"behaomfq","type":"pagefooter","props":{"code":"Gestão de contratos de destinação [M451]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Claudson Moreira"},{"role":"Revisão","name":"Angélia Faddoul  , Andrea Cassoli Araújo  e Thiago Flores "},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"buqwa341__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-buqwa341__slot.png"},"bezrl14v__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bezrl14v__slot.png"},"beb7e2vx__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-beb7e2vx__slot.png"},"bzoa9g4n__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bzoa9g4n__slot.png"},"b583x99d__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-b583x99d__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"album":"\u003crect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\" ry=\"2\"/>\u003cpolyline points=\"11 3 11 11 14 8 17 11 17 3\"/>","banknote-x":"\u003cpath d=\"M13 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5\"/>\u003cpath d=\"m17 17 5 5\"/>\u003cpath d=\"M18 12h.01\"/>\u003cpath d=\"m22 17-5 5\"/>\u003cpath d=\"M6 12h.01\"/>\u003ccircle cx=\"12\" cy=\"12\" r=\"2\"/>","book-check":"\u003cpath d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20\"/>\u003cpath d=\"m9 9.5 2 2 4-4\"/>","book-open-check":"\u003cpath d=\"M12 21V7\"/>\u003cpath d=\"m16 12 2 2 4-4\"/>\u003cpath d=\"M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3\"/>","book-open-text":"\u003cpath d=\"M12 7v14\"/>\u003cpath d=\"M16 12h2\"/>\u003cpath d=\"M16 8h2\"/>\u003cpath d=\"M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z\"/>\u003cpath d=\"M6 12h2\"/>\u003cpath d=\"M6 8h2\"/>","building":"\u003cpath d=\"M12 10h.01\"/>\u003cpath d=\"M12 14h.01\"/>\u003cpath d=\"M12 6h.01\"/>\u003cpath d=\"M16 10h.01\"/>\u003cpath d=\"M16 14h.01\"/>\u003cpath d=\"M16 6h.01\"/>\u003cpath d=\"M8 10h.01\"/>\u003cpath d=\"M8 14h.01\"/>\u003cpath d=\"M8 6h.01\"/>\u003cpath d=\"M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3\"/>\u003crect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/>","camera":"\u003cpath d=\"M13.997 4a2 2 0 0 1 1.76 1.05l.486.9A2 2 0 0 0 18.003 7H20a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h1.997a2 2 0 0 0 1.759-1.048l.489-.904A2 2 0 0 1 10.004 4z\"/>\u003ccircle cx=\"12\" cy=\"13\" r=\"3\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","clipboard-check":"\u003crect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\"/>\u003cpath d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/>\u003cpath d=\"m9 14 2 2 4-4\"/>","clipboard-list":"\u003crect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\"/>\u003cpath d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/>\u003cpath d=\"M12 11h4\"/>\u003cpath d=\"M12 16h4\"/>\u003cpath d=\"M8 11h.01\"/>\u003cpath d=\"M8 16h.01\"/>","file-check":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"m9 15 2 2 4-4\"/>","file-question-mark":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M12 17h.01\"/>\u003cpath d=\"M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3\"/>","file-sliders":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M8 12h8\"/>\u003cpath d=\"M10 11v2\"/>\u003cpath d=\"M8 17h8\"/>\u003cpath d=\"M14 16v2\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map-pin":"\u003cpath d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/>\u003ccircle cx=\"12\" cy=\"10\" r=\"3\"/>","mouse-pointer":"\u003cpath d=\"M12.586 12.586 19 19\"/>\u003cpath d=\"M3.688 3.037a.497.497 0 0 0-.651.651l6.5 15.999a.501.501 0 0 0 .947-.062l1.569-6.083a2 2 0 0 1 1.448-1.479l6.124-1.579a.5.5 0 0 0 .063-.947z\"/>","notebook-pen":"\u003cpath d=\"M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4\"/>\u003cpath d=\"M2 6h4\"/>\u003cpath d=\"M2 10h4\"/>\u003cpath d=\"M2 14h4\"/>\u003cpath d=\"M2 18h4\"/>\u003cpath d=\"M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z\"/>","refresh-ccw":"\u003cpath d=\"M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8\"/>\u003cpath d=\"M3 3v5h5\"/>\u003cpath d=\"M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16\"/>\u003cpath d=\"M16 16h5v5\"/>","satellite":"\u003cpath d=\"m13.5 6.5-3.148-3.148a1.205 1.205 0 0 0-1.704 0L6.352 5.648a1.205 1.205 0 0 0 0 1.704L9.5 10.5\"/>\u003cpath d=\"M16.5 7.5 19 5\"/>\u003cpath d=\"m17.5 10.5 3.148 3.148a1.205 1.205 0 0 1 0 1.704l-2.296 2.296a1.205 1.205 0 0 1-1.704 0L13.5 14.5\"/>\u003cpath d=\"M9 21a6 6 0 0 0-6-6\"/>\u003cpath d=\"M9.352 10.648a1.205 1.205 0 0 0 0 1.704l2.296 2.296a1.205 1.205 0 0 0 1.704 0l4.296-4.296a1.205 1.205 0 0 0 0-1.704l-2.296-2.296a1.205 1.205 0 0 0-1.704 0z\"/>","scale":"\u003cpath d=\"M12 3v18\"/>\u003cpath d=\"m19 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1\"/>\u003cpath d=\"m5 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M7 21h10\"/>","scroll":"\u003cpath d=\"M19 17V5a2 2 0 0 0-2-2H4\"/>\u003cpath d=\"M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3\"/>","search":"\u003cpath d=\"m21 21-4.34-4.34\"/>\u003ccircle cx=\"11\" cy=\"11\" r=\"8\"/>","square-library":"\u003crect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\"/>\u003cpath d=\"M7 7v10\"/>\u003cpath d=\"M11 7v10\"/>\u003cpath d=\"m15 7 2 10\"/>","square-pen":"\u003cpath d=\"M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7\"/>\u003cpath d=\"M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z\"/>","sticky-note-x":"\u003cpath d=\"M15 3v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"m16 16 5 5\"/>\u003cpath d=\"M21 12V9a2.4 2.4 0 0 0-.706-1.706l-3.588-3.588A2.4 2.4 0 0 0 15 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7\"/>\u003cpath d=\"m21 16-5 5\"/>","thumbs-up":"\u003cpath d=\"M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z\"/>\u003cpath d=\"M7 10v12\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__always,.spu-csection__body{display:flex;flex-direction:column;gap:var(--flow-block)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);width:max-content;margin-top:var(--flow-block);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__summary[aria-expanded="true"] svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-csection__body[hidden]{display:none}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__body{display:flex!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint ? NS.isPrint() : window.__SPU_PRINT === true;
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing;
+        var items = React.Children.toArray(props.children);
+        function blockType(node){
+          if(!React.isValidElement(node)) return '';
+          if(node.props && node.props.block && node.props.block.type) return node.props.block.type;
+          return React.Children.toArray(node.props && node.props.children).map(blockType).filter(Boolean)[0] || '';
+        }
+        var markerIndex = items.findIndex(function(item){ return blockType(item) === 'collapsebreak'; });
+        var alwaysVisible = markerIndex >= 0 ? items.slice(0, markerIndex) : [];
+        var collapsed = markerIndex >= 0 ? items.slice(markerIndex + 1) : items;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            alwaysVisible.length && React.createElement('div', { className:'spu-csection__always' }, alwaysVisible),
+            !printing && React.createElement('button', {
+                type:'button',
+                className:'spu-csection__summary',
+                'aria-expanded':forcedOpen || open,
+                onClick:function(){ if(!forcedOpen) setOpen(!open); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body', hidden:!(forcedOpen || open) }, collapsed)
+          )
+        );
+      };
+      NS.CollapseBreak = function(){ return null; };
+      var markerDefinition = {
+        type:'collapsebreak', component:'CollapseBreak', label:'Botão de recolher',
+        icon:'chevron-down', cat:'Estrutura', kind:'marker', internal:true, props:{}
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container', stack:false,
+        fields:['triggerLabel'], allowedTypes:registry.childTypes.concat([markerDefinition.type]),
+        props:{ triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.blocks.push(markerDefinition);
+      registry.byType[definition.type] = definition;
+      registry.byType[markerDefinition.type] = markerDefinition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type === markerDefinition.type) return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:markerDefinition.type, props:{} };
+        if(type !== definition.type) return originalNewBlock(type, child);
+        var props = JSON.parse(JSON.stringify(definition.props));
+        props.children = [registry.newBlock(markerDefinition.type, true)];
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:props };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function safeDefinition(value){
+    var box = document.createElement('div');
+    box.innerHTML = String(value || '');
+    var allowed = ['STRONG','B','EM','I','BR','P','SPAN'];
+    Array.from(box.querySelectorAll('*')).forEach(function(el){
+      if(el.tagName === 'SCRIPT' || el.tagName === 'STYLE'){ el.remove(); return; }
+      if(allowed.indexOf(el.tagName) < 0){ el.replaceWith.apply(el, Array.from(el.childNodes)); return; }
+      Array.from(el.attributes).forEach(function(attr){ el.removeAttribute(attr.name); });
+    });
+    return box.innerHTML;
+  }
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('data-definition') || el.getAttribute('title') || el.getAttribute('data-def') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span class="spu-term-pop__def"></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('.spu-term-pop__def').innerHTML = safeDefinition(def);
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

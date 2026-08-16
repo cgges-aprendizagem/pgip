@@ -1,0 +1,923 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M451 - Gestão de contratos de destinação",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "cukxdvba",
+          "text": "A natureza dos contratos de destinação imobiliária",
+          "hidden": false
+        },
+        {
+          "id": "b_msuxnfah_3q4w",
+          "text": "O ciclo de vida da gestão contratual",
+          "hidden": false
+        },
+        {
+          "id": "c7k9bntl",
+          "text": "Boas práticas e transformação digital: <span style=\"font-weight: normal;\">a experiência do Módulo de Gestão de Atos e Contratos da SPU</span>",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "bjneagtf",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b583x99d",
+      "type": "hero",
+      "props": {
+        "kicker": "Gestão do uso dos imóveis públicos",
+        "kickerIcon": "building",
+        "title": "Gestão de instrumentos de destinação de imóveis públicos",
+        "byline": "Princípios, ciclo de vida e boas práticas para garantir a efetividade das destinações",
+        "slot": "b583x99d__slot"
+      }
+    },
+    {
+      "id": "bb8cgbz3",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cwylb54e",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">O principal desafio da gestão do patrimônio imobiliário público não está apenas em decidir a quem destinar um imóvel ou formalizar o instrumento jurídico correspondente, mas em garantir que esse bem cumpra, ao longo do tempo, a<mark> finalidade pública que justificou sua destinação</mark>. Em outras palavras, é preciso assegurar que o imóvel permaneça efetivamente a serviço da sociedade, produzindo os benefícios esperados e contribuindo para sua função socioambiental.</span></p><p>Sob essa perspectiva, a celebração do contrato não representa o encerramento do processo de destinação, mas o início de uma nova etapa: a<b> gestão contratual</b>. A partir desse momento, cabe à Administração Pública acompanhar o cumprimento das obrigações assumidas, monitorar a utilização do imóvel, verificar a manutenção da finalidade pactuada, promover ajustes quando necessários e adotar medidas diante de eventuais irregularidades ou mudanças de contexto.</p>"
+          }
+        },
+        {
+          "id": "b743pz6p",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "warning",
+            "icon": "alert-triangle",
+            "title": "",
+            "heading": "",
+            "children": "<p>A expressão “<b>contrato</b>” é utilizada aqui em sentido amplo para designar os diversos instrumentos jurídicos empregados para formalizar a destinação de imóveis públicos, abrangendo contratos, termos, escrituras, atos e outros instrumentos congêneres previstos na legislação aplicável. Essa opção tem finalidade didática e operacional, simplificando a exposição sem afastar as distinções jurídicas existentes entre esses instrumentos.</p>"
+          }
+        },
+        {
+          "id": "bo01yr8e",
+          "type": "prose",
+          "props": {
+            "html": "<p>A distinção entre a celebração do contrato e sua efetiva execução é fundamental pois a <b>função pública do patrimônio imobiliário não se concretiza pelo simples ato de destinação ou pela assinatura do contrato</b>. Um imóvel somente gera valor para a sociedade quando é efetivamente utilizado para os fins que motivaram sua destinação e quando as condições pactuadas são observadas ao longo de toda a vigência da relação jurídica. Em outras palavras, é a adequada gestão contratual que transforma uma decisão administrativa em resultados concretos, assegurando que o patrimônio público permaneça a serviço do interesse coletivo.</p><p>Os contratos de destinação apresentam características que os diferenciam dos contratos administrativos tradicionalmente associados à aquisição de bens, execução de obras ou prestação de serviços. Em geral, envolvem relações jurídicas de longa duração, acompanhamento permanente do uso do imóvel, monitoramento do cumprimento de finalidades específicas e, em determinadas situações, até mesmo a constituição ou transferência de direitos reais sujeitos a registro imobiliário. Essas peculiaridades demandam mecanismos próprios de gestão e fiscalização.</p>"
+          }
+        },
+        {
+          "id": "bjr2u6cf",
+          "type": "markerlist",
+          "props": {
+            "variant": "icon",
+            "icon": "scale",
+            "accent": "",
+            "items": [
+              {
+                "title": "<span style=\"font-weight: normal;\"><i>Diante das especificidades dos contratos de destinação, a <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 14.133, de 2021</a>, oferece referências importantes em temas como governança, planejamento e fiscalização contratual, mas não disciplina de forma detalhada as particularidades da gestão do patrimônio imobiliário público. Por essa razão, sua aplicação tem caráter complementar (subsidiário) às normas e procedimentos próprios da destinação e da gestão de imóveis públicos.</i></span>",
+                "text": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "bn22ba01",
+          "type": "kicker",
+          "props": {
+            "icon": "book-open-check",
+            "children": "Objetivo deste material"
+          }
+        },
+        {
+          "id": "b_msw53kuc_0pqt",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Este material foi elaborado para oferecer uma visão prática e estruturada da gestão contratual patrimonial, tomando como referência o ciclo de vida do contrato, que se inicia com sua celebração e se encerra com sua extinção, devolução ou retomada do imóvel. Ao longo do conteúdo, são apresentados conceitos fundamentais, orientações operacionais e boas práticas voltadas ao monitoramento de obrigações, à gestão de alterações, ao tratamento de inadimplementos e ao encerramento das relações contratuais.</span></p><p>Embora utilize exemplos inspirados na experiência da União, especialmente em temas de maior maturidade institucional, o conteúdo foi concebido para ser aplicável a órgãos e entidades de qualquer esfera federativa. Estados, Distrito Federal e municípios podem adotar instrumentos jurídicos, procedimentos e regulamentações próprios para a gestão de seus imóveis, inexistindo, atualmente, um levantamento nacional consolidado sobre essas normas. Por essa razão, o foco deste guia recai sobre princípios, métodos e práticas que podem ser adaptados às diferentes realidades institucionais.</p><p>Mais do que um conjunto de orientações sobre contratos, este material busca contribuir para uma visão estratégica da administração patrimonial, na qual a gestão contratual é compreendida como instrumento de governança, preservação do patrimônio público e geração contínua de valor para a sociedade. <b><mark data-hl=\"petrol\">Afinal, destinar um imóvel é apenas o começo; garantir que ele cumpra sua finalidade pública é o verdadeiro desafio da gestão.</mark></b></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bb1zdusv",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cukxdvba",
+          "type": "titulo",
+          "props": {
+            "text": "A natureza dos contratos de destinação imobiliária",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "clvpx08h",
+          "type": "prose",
+          "props": {
+            "html": "<p>Os contratos de destinação imobiliária ocupam uma posição singular na administração do patrimônio imobiliário público. Embora compartilhem características comuns com outros instrumentos celebrados pela Administração Pública, sua finalidade, objeto e dinâmica de execução conferem-lhes peculiaridades que exigem uma abordagem própria de gestão.</p><p>Enquanto os contratos administrativos em geral têm por objetivo a aquisição de bens, a contratação de serviços ou a execução de obras, <mark data-hl=\"sand\">os <b>contratos de destinação</b> disciplinam, em essência, a utilização, ocupação, exploração, administração ou atribuição de direitos relacionados a imóveis públicos</mark>. O foco deixa de ser a entrega de um produto ou serviço e passa a ser a manutenção, ao longo do tempo, de uma relação jurídica capaz de assegurar que o imóvel seja utilizado em conformidade com a finalidade pública que justificou sua destinação.</p><p>Essa característica faz com que tais instrumentos, em regra, estejam associados a relações jurídicas de longa duração, muitas vezes estendendo-se por anos ou décadas. Durante esse período, podem ocorrer mudanças legislativas, institucionais, urbanísticas ou mesmo nas condições do imóvel e do destinatário, tornando indispensável um acompanhamento contínuo por parte da Administração.</p><p>Outra diferença relevante é que o sucesso desses contratos não pode ser aferido apenas por sua celebração ou pela inexistência de litígios. Seu verdadeiro resultado está na efetiva implementação e manutenção da finalidade pactuada, no cumprimento das obrigações assumidas pelas partes e na preservação do interesse público que motivou a destinação. Um imóvel cedido para implantação de um equipamento público, por exemplo, somente cumprirá sua função se esse equipamento for efetivamente implantado, utilizado e mantido nas condições previstas.</p><p>Nesse contexto, a gestão contratual assume papel estratégico. Mais do que controlar prazos ou documentos, ela permite acompanhar a execução da destinação, identificar riscos, promover ajustes, prevenir irregularidades e garantir que o patrimônio público continue gerando benefícios para a coletividade durante toda a vigência da relação jurídica.</p>"
+          }
+        },
+        {
+          "id": "bek8mz8g",
+          "type": "examplecard",
+          "props": {
+            "label": "particularidade importante dos contratos de destinação",
+            "icon": "map-pin",
+            "color": "var(--ochre-700)",
+            "slot": "bek8mz8g__slot",
+            "collapse": "closed",
+            "title": "<span data-fs=\"h4\">Registro imobiliário: <br><span style=\"font-weight: normal;\">uma característica distintiva dos contratos patrimoniais</span></span>",
+            "children": "<p>Uma particularidade importante dos contratos de destinação que envolvem constituição, transferência, modificação ou extinção de direitos reais é <mark data-hl=\"terra\">a necessidade de observar, quando aplicável, as regras do sistema registral imobiliário</mark>.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Diferentemente da maioria dos contratos administrativos tradicionais, cujos efeitos decorrem essencialmente da manifestação de vontade das partes e do cumprimento das exigências legais de publicidade, determinados contratos patrimoniais dependem de registro no Cartório de Registro de Imóveis para produzir os efeitos próprios dos direitos reais perante terceiros.</span></p><p>No âmbito da Secretaria do Patrimônio da União (SPU), por exemplo, contratos com força de escritura pública que constituam ou transfiram direitos reais sobre imóveis da União são levados a registro na matrícula do imóvel, assim como os atos relacionados à extinção ou reversão desses direitos, quando cabíveis. Essa prática reforça a segurança jurídica, a publicidade registral e a adequada gestão do patrimônio imobiliário.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Embora outros entes federativos possam adotar procedimentos internos próprios para a gestão de seus instrumentos patrimoniais, a exigência de registro de direitos reais perante o Cartório de Registro de Imóveis decorre da legislação federal sobre registros públicos (<a href=\"https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 6.015, de 1973</a>) e não pode ser afastada por normatização específica de cada ente. Esse exemplo demonstra que a gestão contratual de imóveis frequentemente extrapola os limites da administração documental, exigindo atenção também aos efeitos produzidos no âmbito do registro imobiliário.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_msuxnfah_u9un",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_msuxnfah_3q4w",
+          "type": "titulo",
+          "props": {
+            "text": "O ciclo de vida da gestão contratual",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_msuxnfah_ktt6",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão contratual é um processo contínuo que acompanha toda a vigência da relação jurídica estabelecida entre a Administração Pública e o destinatário do imóvel. Diferentemente do processo de destinação, que compreende os estudos técnicos, a análise jurídica e a decisão sobre a melhor forma de utilização do bem, a gestão contratual tem início com a celebração do contrato e se desenvolve até sua extinção e a adequada devolução ou retomada do imóvel.</p><p>Essa visão permite compreender que o contrato não representa um fim em si mesmo. Ele constitui o ponto de partida para um conjunto de atividades destinadas a acompanhar sua execução, prevenir irregularidades, promover ajustes quando necessários e assegurar que a finalidade pública da destinação seja efetivamente alcançada.</p><p>A figura a seguir apresenta, de forma simplificada, as principais etapas desse ciclo.</p>"
+          }
+        },
+        {
+          "id": "buqwa341",
+          "type": "figure",
+          "props": {
+            "slot": "buqwa341__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "b7duwomx",
+      "type": "section",
+      "props": {
+        "width": "full",
+        "surface": "dark",
+        "pad": "md"
+      },
+      "children": [
+        {
+          "id": "buxqpozo",
+          "type": "externalembed",
+          "props": {
+            "title": "Conteúdo incorporado",
+            "embed": "<iframe\n  src=\"https://luislindner.github.io/spu/m451/m451_ciclo/public/infografico.html\"\n  title=\"Ciclo de gestão contratual\"\n  loading=\"lazy\"\n  width=\"1200\"\n  height=\"900\"\n  style=\"width:100%; border:0;\"\n  allow=\"fullscreen\"\n></iframe>",
+            "responsive": false,
+            "useEmbedDimensions": true,
+            "width": 0,
+            "height": 900
+          }
+        }
+      ]
+    },
+    {
+      "id": "bk0clrn8",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bl0wcgif",
+          "type": "kicker",
+          "props": {
+            "icon": "scroll",
+            "children": "ETAPA 01",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "cm5cifku",
+          "type": "titulo",
+          "props": {
+            "text": "Celebração do contrato e organização da gestão",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cvj9ovwy",
+          "type": "prose",
+          "props": {
+            "html": "<p>A celebração do contrato formaliza a relação jurídica entre a Administração Pública e o destinatário do imóvel, estabelecendo direitos, deveres, prazos, encargos e demais condições aplicáveis.</p><p>Contudo, essa etapa não deve limitar-se à assinatura do instrumento. É também o momento de estruturar a gestão contratual, criando as condições necessárias para o acompanhamento de sua execução. Entre as providências recomendadas nessa fase destacam-se:</p>"
+          }
+        },
+        {
+          "id": "bdlikjjt",
+          "type": "feature",
+          "props": {
+            "columns": 2,
+            "card": true,
+            "accent": "var(--terra-600)",
+            "layout": "side",
+            "items": [
+              {
+                "icon": "file-check",
+                "title": "",
+                "text": "<span data-fs=\"body\">Cadastramento do contrato e do imóvel nos sistemas utilizados pelo órgão (que pode ser automática, como no caso da SPU/MGI). </span>"
+              },
+              {
+                "icon": "notebook-pen",
+                "title": "",
+                "text": "<span data-fs=\"body\">Definição das obrigações que exigirão monitoramento específico. </span>"
+              },
+              {
+                "icon": "search",
+                "title": "",
+                "text": "<span data-fs=\"body\">Identificação das partes envolvidas e dos responsáveis pela gestão.</span>"
+              },
+              {
+                "icon": "file-sliders",
+                "title": "",
+                "text": "<span data-fs=\"body\">Configuração de mecanismos de controle de prazos e alertas. </span>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bzg4smyu",
+          "type": "prose",
+          "props": {
+            "html": "<p>Uma boa estrutura inicial reduz riscos, facilita o acompanhamento posterior e evita perda de informações ao longo da vigência do contrato.</p>"
+          }
+        },
+        {
+          "id": "byu2s02u",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "thumbs-up",
+            "title": "Boa prática",
+            "heading": "",
+            "children": "<p>A gestão contratual deve começar junto com a celebração do contrato, e não apenas quando surgirem problemas ou vencimentos relevantes.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmf5a2pl",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bsn30wts",
+          "type": "kicker",
+          "props": {
+            "icon": "clipboard-check",
+            "children": "Etapa 02"
+          }
+        },
+        {
+          "id": "c3a6ylhw",
+          "type": "titulo",
+          "props": {
+            "text": "Monitoramento da execução",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c61457gg",
+          "type": "prose",
+          "props": {
+            "html": "<p>O monitoramento representa a etapa mais extensa e relevante do ciclo de vida contratual. Seu objetivo é verificar, de forma contínua, se o imóvel está sendo utilizado conforme a finalidade pactuada e se as obrigações assumidas pelas partes estão sendo efetivamente cumpridas.</p><p>Em contratos de destinação, esse acompanhamento vai muito além do controle documental. Ele busca assegurar que o patrimônio público continue atendendo ao interesse coletivo que justificou sua destinação.</p>"
+          }
+        },
+        {
+          "id": "b444uaht",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Entre os aspectos normalmente sujeitos a monitoramento estão:",
+            "kickerIcon": "clipboard-list",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-50)",
+            "body": "",
+            "__pullDown": false,
+            "__pullUp": false
+          },
+          "children": [
+            {
+              "id": "b04a0wq2",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b_msuyltv4_5byf",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--petrol-600)",
+                    "items": [
+                      {
+                        "title": "",
+                        "text": "Implantação e manutenção da finalidade prevista."
+                      },
+                      {
+                        "title": "",
+                        "text": "Cumprimento de obrigações essenciais e acessórias. "
+                      },
+                      {
+                        "title": "",
+                        "text": "Execução de contrapartidas."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b_msuym2hc_l1eq",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--petrol-600)",
+                    "items": [
+                      {
+                        "title": "",
+                        "text": "Observância dos prazos contratuais. "
+                      },
+                      {
+                        "title": "",
+                        "text": "Atendimento de condicionantes legais ou ambientais. "
+                      },
+                      {
+                        "title": "",
+                        "text": "Conservação e utilização adequada do imóvel."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bi8vv7cx",
+          "type": "prose",
+          "props": {
+            "html": "<p>Sempre que possível, o monitoramento deve combinar análise documental, comunicação com o destinatário, utilização de sistemas informatizados e, quando necessário, vistorias ou outras formas de verificação.</p><p>Para verificar esses aspectos, o gestor pode recorrer a diferentes fontes de evidência, combinadas de acordo com a natureza do contrato e os recursos disponíveis:</p>"
+          }
+        },
+        {
+          "id": "bpg66qgg",
+          "type": "feature",
+          "props": {
+            "columns": 3,
+            "card": true,
+            "accent": "",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "book-open-text",
+                "title": "",
+                "text": "Documentos e relatórios periódicos apresentados pelo destinatário."
+              },
+              {
+                "icon": "camera",
+                "title": "",
+                "text": "Registros fotográficos, inclusive enviados pelo próprio destinatário.<br>"
+              },
+              {
+                "icon": "satellite",
+                "title": "",
+                "text": "Imagens de satélite e ferramentas de georreferenciamento, especialmente úteis para acompanhar grandes glebas ou identificar ocupações irregulares.<br>"
+              },
+              {
+                "icon": "search",
+                "title": "",
+                "text": "Vistorias presenciais, conduzidas pela própria equipe gestora.<br>"
+              },
+              {
+                "icon": "square-library",
+                "title": "",
+                "text": "Bases cadastrais e sistemas eletrônicos da própria Administração.<br>"
+              },
+              {
+                "icon": "book-check",
+                "title": "",
+                "text": "Informações prestadas por outros órgãos parceiros (fiscalização ambiental, urbanística, sanitária, entre outros).<br>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bz4znkcz",
+          "type": "prose",
+          "props": {
+            "html": "<p>A escolha e a combinação dessas fontes não devem ser uniformes para todos os contratos. O monitoramento ganha eficiência quando sua intensidade é proporcional ao risco envolvido em cada destinação, considerando fatores como o valor do imóvel, a natureza do destinatário, o tipo de finalidade pactuada e o histórico de cumprimento da relação contratual.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bwldzj35",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg",
+        "__pullDown": false,
+        "__pullUp": false
+      },
+      "children": [
+        {
+          "id": "bwnetm8b",
+          "type": "kicker",
+          "props": {
+            "icon": "square-pen",
+            "children": "Etapa 03"
+          }
+        },
+        {
+          "id": "cf5nrpno",
+          "type": "titulo",
+          "props": {
+            "text": "Alterações contratuais",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "ck05fplr",
+          "type": "prose",
+          "props": {
+            "html": "<p>Ao longo da vigência do contrato, podem surgir situações que exijam ajustes em suas condições originalmente estabelecidas.</p><p>Essas alterações podem decorrer de mudanças na execução da destinação, necessidade de prorrogação de prazos, atualização de cláusulas, correção de erros materiais ou outras circunstâncias compatíveis com a legislação aplicável e com o interesse público.</p><p>Independentemente de sua natureza, toda alteração deve ser devidamente fundamentada, formalizada pelo instrumento adequado e registrada no respectivo processo administrativo, preservando a segurança jurídica e a rastreabilidade das decisões.</p>"
+          }
+        },
+        {
+          "id": "bb2o83pp",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "success",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>Uma gestão contratual eficiente não evita alterações; ao contrário, reconhece que elas podem ser necessárias para adaptar o contrato a novas circunstâncias sem comprometer sua finalidade.</p>",
+            "color": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "bskf0eb8",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b0ye25df",
+          "type": "kicker",
+          "props": {
+            "icon": "banknote-x",
+            "children": "Etapa 04"
+          }
+        },
+        {
+          "id": "cdqn8017",
+          "type": "titulo",
+          "props": {
+            "text": "Tratamento do inadimplemento",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c8sskn59",
+          "type": "prose",
+          "props": {
+            "html": "<p>Nem sempre a execução contratual ocorre conforme o planejado. Atrasos, descumprimento de obrigações, desvio de finalidade ou outras irregularidades podem surgir ao longo da vigência do contrato.</p><p>Nessas situações, a atuação do gestor deve priorizar a identificação tempestiva dos problemas e, sempre que possível, buscar sua regularização antes da adoção de medidas mais gravosas.</p><p>Para orientar a resposta do gestor, é útil classificar o inadimplemento de acordo com sua natureza, já que situações de gravidade distinta exigem respostas proporcionalmente distintas:</p>"
+          }
+        },
+        {
+          "id": "brlzhrvx",
+          "type": "columns",
+          "props": {
+            "count": "3",
+            "ratio": "equal",
+            "gap": "sm"
+          },
+          "children": [
+            {
+              "id": "by0i9xck",
+              "type": "flashcard",
+              "props": {
+                "term": "Inadimplemento formal",
+                "description": "",
+                "definition": "<p>Relacionado a obrigações acessórias, como atraso na apresentação de documentos, relatórios ou comunicações exigidas pelo contrato.</p>",
+                "icon": "file-check",
+                "color": "var(--petrol-600)"
+              }
+            },
+            {
+              "id": "b_msuyzwav_7asd",
+              "type": "flashcard",
+              "props": {
+                "term": "Inadimplemento quanto à finalidade ",
+                "description": "",
+                "definition": "<p>Ocorre quando a finalidade pactuada não é implantada, é abandonada ou é substituída por uso diverso do previsto, comprometendo a própria razão de ser da destinação.</p>",
+                "icon": "file-question-mark",
+                "color": "var(--ochre-600)"
+              }
+            },
+            {
+              "id": "b_msuyzvnd_1tih",
+              "type": "flashcard",
+              "props": {
+                "term": "Inadimplemento patrimonial",
+                "description": "",
+                "definition": "<p>Associado a danos ao próprio bem, como degradação física, ocupações indevidas por terceiros ou alterações não autorizadas na edificação.</p>",
+                "icon": "file-sliders",
+                "color": "var(--terra-600)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b9zrzqts",
+          "type": "prose",
+          "props": {
+            "html": "<p>Essa distinção ajuda o gestor a calibrar a resposta: um atraso documental pontual normalmente não justifica a mesma gravidade de medida que um desvio de finalidade ou um dano patrimonial relevante.</p>"
+          }
+        },
+        {
+          "id": "bxxm00ge",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "Boas práticas",
+            "heading": "",
+            "children": "<p></p><ul><li>Registrar a irregularidade identificada.</li><li>Comunicar formalmente o destinatário.</li><li>Conceder oportunidade para apresentação de esclarecimentos ou regularização, quando cabível.</li><li>Acompanhar o cumprimento das providências acordadas.</li><li>Adotar as medidas administrativas previstas na legislação e no contrato em caso de persistência do inadimplemento. </li></ul><p></p><p>A atuação preventiva tende a produzir resultados melhores do que intervenções exclusivamente repressivas, contribuindo para preservar a finalidade pública da destinação e reduzir conflitos administrativos.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bwvja8oe",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg",
+        "__pullUp": false
+      },
+      "children": [
+        {
+          "id": "b_msw83cnl_95nz",
+          "type": "kicker",
+          "props": {
+            "icon": "sticky-note-x",
+            "children": "Etapa 05"
+          }
+        },
+        {
+          "id": "cq1i4egi",
+          "type": "titulo",
+          "props": {
+            "text": "Extinção contratual",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c9akr7r2",
+          "type": "prose",
+          "props": {
+            "html": "<p>Todo contrato possui um momento de encerramento, seja pelo término do prazo de vigência, pelo cumprimento de sua finalidade, por acordo entre as partes ou por outras hipóteses previstas na legislação e no próprio instrumento.</p><p>A extinção contratual exige análise cuidadosa para verificar se permanecem obrigações pendentes, se existem providências formais a serem adotadas ou se há necessidade de praticar atos complementares relacionados ao imóvel.</p><p>Em determinadas modalidades de destinação, especialmente quando envolvem direitos reais, a extinção pode demandar também providências perante o registro imobiliário, observada a legislação aplicável.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_msw8989x_g9vx",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullUp": false
+      },
+      "children": [
+        {
+          "id": "b_msw8989x_j348",
+          "type": "kicker",
+          "props": {
+            "icon": "refresh-ccw",
+            "children": "Etapa 06"
+          }
+        },
+        {
+          "id": "b_msw8989x_a18l",
+          "type": "titulo",
+          "props": {
+            "text": "Recebimento ou retomada do imóvel",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_msw8989x_17ef",
+          "type": "prose",
+          "props": {
+            "html": "<p>A etapa final do ciclo consiste no recebimento voluntário ou na retomada da gestão do imóvel pela Administração Pública.</p><p>Nesse momento, recomenda-se verificar o estado de conservação do bem, o cumprimento das obrigações remanescentes, a existência de pendências documentais ou materiais e a necessidade de atualização dos registros administrativos ou imobiliários.</p><p>Concluídas essas providências, o imóvel estará apto para permanecer sob gestão direta do poder público ou ser objeto de nova destinação, iniciando um novo ciclo patrimonial.</p>"
+          }
+        },
+        {
+          "id": "b_msw8989x_sq9g",
+          "type": "panel",
+          "props": {
+            "variant": "feature",
+            "kicker": "Em síntese",
+            "kickerIcon": "album",
+            "title": "",
+            "color": "",
+            "bg": "var(--slate-200)",
+            "body": "<p></p><p>A gestão contratual pode ser compreendida como um processo contínuo composto por seis grandes etapas:</p><p></p><ol><li>Celebração do contrato e organização da gestão; </li><li>Monitoramento da execução; </li><li>Alterações contratuais; </li><li>Tratamento do inadimplemento; </li><li>Extinção contratual; e </li><li>Recebimento ou retomada do imóvel. </li></ol><p></p><p>Cada uma dessas fases desempenha papel essencial para assegurar que a destinação produza os resultados esperados e que o patrimônio imobiliário público permaneça efetivamente a serviço da sociedade.</p><p></p>"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "bm90eiej",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c7k9bntl",
+          "type": "titulo",
+          "props": {
+            "text": "Boas práticas e transformação digital: <span style=\"font-weight: normal;\">a experiência do Módulo de Gestão de Atos e Contratos da SPU</span>",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cu52pwv5",
+          "type": "prose",
+          "props": {
+            "html": "<p>Sistemas modernos podem atuar como instrumentos de governança, promovendo padronização, integração de dados, rastreabilidade dos atos administrativos e maior eficiência na gestão do ciclo de vida dos contratos.</p><p>Com essa perspectiva, a Secretaria do Patrimônio da União (SPU) desenvolveu o <b>Módulo de Gestão de Atos e Contratos (MGC)</b>, integrado ao SPUNet, como uma solução destinada a apoiar a formalização e a gestão dos instrumentos de destinação de imóveis da União. Desde sua concepção, o módulo foi estruturado para acompanhar todas as etapas do ciclo de vida contratual, desde a celebração até o monitoramento da execução, alterações, tratamento de inadimplementos e encerramento da relação jurídica.</p><p>A implementação foi iniciada pela primeira etapa desse ciclo (a celebração do contrato e a organização inicial da gestão), concentrando esforços na padronização dos instrumentos, na automação de procedimentos e na integração com as bases corporativas de informação. Essa estratégia permitiu estabelecer uma base sólida para a evolução futura da solução, que já se encontra preparada para incorporar funcionalidades voltadas ao acompanhamento da execução contratual, como notificações automáticas, gestão das comunicações com os destinatários, atualização cadastral dos responsáveis, controle de obrigações e outras ferramentas de monitoramento contínuo.</p><p>Embora desenvolvido para atender às especificidades da União, o MGC reúne práticas que podem inspirar outros órgãos e entidades públicas, especialmente no que se refere à utilização de modelos padronizados, integração entre sistemas, automação de atividades repetitivas e fortalecimento da governança contratual.</p>"
+          }
+        },
+        {
+          "id": "b3wh5p9s",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Padronização inteligente de minutas",
+                "content": "<p>Um dos principais diferenciais do módulo é a geração automática de contratos a partir do preenchimento de formulários digitais estruturados. Em vez de elaborar cada instrumento individualmente, o sistema utiliza minutas-padrão mantidas de forma centralizada, garantindo maior uniformidade e reduzindo riscos de inconsistências.</p><p>Os modelos podem combinar cláusulas padronizadas de preenchimento obrigatório com campos parametrizáveis destinados às informações específicas de cada contratação. Essa abordagem concilia segurança jurídica, flexibilidade operacional e facilidade de atualização normativa.</p><p>Além disso, a governança centralizada das minutas permite que alterações promovidas nos modelos oficiais sejam refletidas nas novas contratações, favorecendo a harmonização institucional e reduzindo a dispersão de versões.</p>",
+                "blocks": [
+                  {
+                    "id": "bezrl14v",
+                    "type": "figure",
+                    "props": {
+                      "slot": "bezrl14v__slot",
+                      "src": "",
+                      "fit": "contain",
+                      "size": "full",
+                      "title": "tela de seleção do modelo contratual ou da geração automática da minuta",
+                      "caption": "",
+                      "credit": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Integração com a base de imóveis",
+                "content": "<p>Outro aspecto relevante é a integração entre o módulo contratual e o cadastro patrimonial da SPU.</p><p>Na elaboração do contrato, diversas informações relativas ao imóvel são obtidas automaticamente da base corporativa, evitando redigitação, reduzindo erros de preenchimento e assegurando maior consistência entre os registros cadastrais e o instrumento jurídico.</p><p>Essa integração demonstra como a interoperabilidade entre sistemas pode simplificar procedimentos administrativos e aumentar a confiabilidade das informações utilizadas na gestão patrimonial.</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "bzoa9g4n",
+                    "type": "figure",
+                    "props": {
+                      "slot": "bzoa9g4n__slot",
+                      "src": "",
+                      "fit": "contain",
+                      "size": "full",
+                      "title": "tela demonstrando o aproveitamento automático dos dados do imóvel",
+                      "caption": "",
+                      "credit": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Automação de procedimentos",
+                "content": "<p>O MGC também automatiza atividades tradicionalmente executadas de forma manual, contribuindo para reduzir o tempo de processamento e aumentar a eficiência operacional.</p><p>Entre essas funcionalidades destaca-se a geração automatizada do extrato contratual e sua publicação no Diário Oficial da União, diminuindo retrabalho e reduzindo o risco de divergências entre o contrato celebrado e as informações divulgadas oficialmente.</p><p>Essa lógica de automação pode ser aplicada a diversas outras etapas da gestão patrimonial, liberando as equipes para atividades de análise, acompanhamento e tomada de decisão.</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "beb7e2vx",
+                    "type": "figure",
+                    "props": {
+                      "slot": "beb7e2vx__slot",
+                      "src": "",
+                      "fit": "contain",
+                      "size": "full",
+                      "title": "tela ilustrando a geração ou publicação automática do extrato",
+                      "caption": "",
+                      "credit": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Uma plataforma preparada para a evolução do ciclo contratual",
+                "content": "<p>Embora sua implantação tenha priorizado a fase de celebração dos contratos, a arquitetura do módulo foi concebida para suportar a gestão integrada de todo o ciclo contratual.</p><p>Entre as funcionalidades passíveis de incorporação destacam-se:</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b2ker755",
+                    "type": "columns",
+                    "props": {
+                      "count": 2,
+                      "ratio": "equal",
+                      "gap": "lg"
+                    },
+                    "children": [
+                      {
+                        "id": "bij98hq8",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "check",
+                          "icon": "check",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "",
+                              "text": "Controle automatizado de prazos. "
+                            },
+                            {
+                              "title": "",
+                              "text": "Envio de notificações e lembretes. "
+                            },
+                            {
+                              "title": "",
+                              "text": "Registro das comunicações com os destinatários. "
+                            },
+                            {
+                              "title": "",
+                              "text": "Atualização dos dados dos responsáveis. "
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "id": "b_msuzkysx_sb3w",
+                        "type": "markerlist",
+                        "props": {
+                          "variant": "check",
+                          "icon": "check",
+                          "accent": "",
+                          "items": [
+                            {
+                              "title": "",
+                              "text": "Acompanhamento do cumprimento de obrigações. "
+                            },
+                            {
+                              "title": "",
+                              "text": "Registro de evidências e documentos comprobatórios. "
+                            },
+                            {
+                              "title": "",
+                              "text": "Apoio às alterações contratuais e ao encerramento da relação jurídica. "
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "bju8snaf",
+                    "type": "prose",
+                    "props": {
+                      "html": "<p>Essa visão evidencia que a transformação digital deve ser compreendida como um processo contínuo de aperfeiçoamento da gestão, e não apenas como a informatização da celebração dos contratos.</p>"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "blm4kuzm",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para fechar",
+        "kickerIcon": "check",
+        "title": "Em síntese",
+        "body": "<p>A experiência do MGC/SPUnet demonstra que soluções tecnológicas podem fortalecer significativamente a gestão contratual patrimonial quando concebidas a partir de princípios como padronização, integração de dados, automação de procedimentos e governança centralizada dos modelos contratuais.</p><p>Independentemente da tecnologia utilizada, esses elementos podem servir de referência para outros órgãos e entidades públicas interessados em aprimorar a gestão de seus instrumentos de destinação, aumentando a eficiência administrativa, reduzindo riscos e criando bases sólidas para o acompanhamento de todo o ciclo de vida contratual.</p>"
+      },
+      "children": [
+        {
+          "id": "br2ipboo",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "mouse-pointer",
+            "title": "Saiba mais",
+            "heading": "",
+            "children": "<p>Página de <a href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/destinacao-de-imoveis/gestao-de-contratos/gestao-de-contratos\">Gestão de Contratos de Destinação</a>, apenas para servidores da SPU/MGI.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "behaomfq",
+      "type": "pagefooter",
+      "props": {
+        "code": "Gestão de contratos de destinação [M451]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Claudson Moreira"
+          },
+          {
+            "role": "Revisão",
+            "name": "Angélia Faddoul  , Andrea Cassoli Araújo  e Thiago Flores "
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
