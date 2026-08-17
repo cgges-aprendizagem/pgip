@@ -1,0 +1,510 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M611 - Por que fiscalizar e proteger o patrimônio público?",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "c8v9xk0g",
+          "text": "Afinal, o que a fiscalização busca proteger?",
+          "hidden": false
+        },
+        {
+          "id": "cu7g8brz",
+          "text": "A natureza da atividade fiscalizatória: <span style=\"font-weight: normal;\">por que o Estado pode intervir?</span>",
+          "hidden": false
+        }
+      ],
+      "enabled": false
+    }
+  },
+  "blocks": [
+    {
+      "id": "bft21zdm",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b3s4pufp",
+      "type": "hero",
+      "props": {
+        "kicker": "Fundamentos do controle e proteção do patrimônio",
+        "kickerIcon": "shield-check",
+        "title": "Por que fiscalizar e proteger o patrimônio público?",
+        "byline": "proteção dos bens imóveis públicos e dos direitos da coletividade",
+        "slot": "b3s4pufp__slot"
+      }
+    },
+    {
+      "id": "bc3887eq",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullDown": true
+      },
+      "children": [
+        {
+          "id": "bhh82tov",
+          "type": "prose",
+          "props": {
+            "html": "<p>Uma área pública pode continuar formalmente pertencendo ao Estado e, ainda assim, perder gradualmente sua integridade, seu uso adequado ou até mesmo sua disponibilidade para a coletividade.</p><p>Observe as três situações apresentadas abaixo. Elas são diferentes entre si, mas têm algo em comum: mostram problemas que podem crescer e se tornar muito mais difíceis de enfrentar quando não são identificados e acompanhados a tempo.</p><p><ol><li>Explore cada situação e reflita:  O que está em risco? Quem é afetado? Em que momento a atuação do Poder Público poderia fazer diferença?</li><li>Clique sobre cada cartão e compare as suas reflexões com as questões apresentadas.</li></ol></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b7zalnt0",
+      "type": "sectionslider",
+      "props": {
+        "loop": true
+      },
+      "children": [
+        {
+          "id": "cd5jm4qk",
+          "type": "sectionslide",
+          "props": {
+            "width": "wide",
+            "surface": "none",
+            "pad": "md",
+            "__pullUp": false,
+            "__pullDown": false
+          },
+          "children": [
+            {
+              "id": "b8fvpc9b",
+              "type": "panel",
+              "props": {
+                "variant": "box",
+                "kicker": "Situação 01",
+                "kickerIcon": "land-plot",
+                "title": "<span data-color=\"ochre-light\">Uma área pública começa a ser ocupada</span>",
+                "color": "var(--cloud-50)",
+                "bg": "var(--slate-700)",
+                "body": "<p><br></p>"
+              },
+              "children": [
+                {
+                  "id": "b6trucgh",
+                  "type": "columns",
+                  "props": {
+                    "count": 2,
+                    "ratio": "last-wide",
+                    "gap": "sm"
+                  },
+                  "children": [
+                    {
+                      "id": "b1920sz2",
+                      "type": "figure",
+                      "props": {
+                        "slot": "b1920sz2__slot",
+                        "src": "",
+                        "fit": "contain",
+                        "size": "full",
+                        "title": "",
+                        "caption": "",
+                        "credit": ""
+                      }
+                    },
+                    {
+                      "id": "b_msw9m9bl_7kvx",
+                      "type": "flashcard",
+                      "props": {
+                        "term": "",
+                        "description": "<span data-fs=\"body\">Na borda de um terreno público desocupado surgem algumas construções. Com o passar dos anos, a ocupação cresce, novas edificações aparecem e lotes começam a ser negociados informalmente. Quando o Poder Público volta sua atenção para a área, a situação já envolve muitas famílias e diferentes interesses.</span>",
+                        "definition": "<p><b><span data-fs=\"h6\"><span data-color=\"light\"><span data-fs=\"body-lg\">O que poderia ter sido identificado quando surgiram as primeiras ocupações? O que muda quando a situação permanece anos sem acompanhamento?</span></span></span></b></p>",
+                        "icon": "rotate-cw",
+                        "color": "var(--slate-800)",
+                        "showIcon": true,
+                        "useCoverImage": false,
+                        "coverSlot": "c_cpcha58__imageSlot",
+                        "coverAlt": "",
+                        "frontCue": "Reflita e compare",
+                        "backCue": "Clique para voltar"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b_mswfso44_03di",
+          "type": "sectionslide",
+          "props": {
+            "width": "wide",
+            "surface": "none",
+            "pad": "md",
+            "__pullUp": false,
+            "__pullDown": false
+          },
+          "children": [
+            {
+              "id": "b_mswfso44_t4hk",
+              "type": "panel",
+              "props": {
+                "variant": "box",
+                "kicker": "Situação 02",
+                "kickerIcon": "trees",
+                "title": "<span data-color=\"ochre-light\">Um espaço público perde o acesso coletivo</span>",
+                "color": "var(--cloud-50)",
+                "bg": "var(--petrol-700)",
+                "body": "<p><br></p>"
+              },
+              "children": [
+                {
+                  "id": "b_mswfso44_hg17",
+                  "type": "columns",
+                  "props": {
+                    "count": 2,
+                    "ratio": "first-wide",
+                    "gap": "sm"
+                  },
+                  "children": [
+                    {
+                      "id": "b_mswfso44_oeeb",
+                      "type": "flashcard",
+                      "props": {
+                        "term": "",
+                        "description": "<span style=\"font-size: 17px;\">Uma área às margens de um rio, lago ou outro espaço de acesso coletivo começa a receber cercas, píeres, construções e outras intervenções. Gradualmente, acessar aquele espaço se torna mais difícil e parcelas da área passam a ser utilizadas como se fossem privadas.&nbsp;</span>",
+                        "definition": "<p><font face=\"Red Hat Display, Archivo, system-ui, sans-serif\"><span style=\"font-size: 19px; letter-spacing: -0.204px;\"><b><span data-color=\"light\">Quem perde quando uma área destinada ao uso coletivo passa, na prática, a atender predominantemente a interesses particulares?&nbsp;</span></b></span></font></p>",
+                        "icon": "rotate-cw",
+                        "color": "var(--slate-800)",
+                        "showIcon": true,
+                        "useCoverImage": false,
+                        "coverSlot": "b_mswfso44_oeeb__coverSlot",
+                        "coverAlt": "",
+                        "frontCue": "Reflita e compare",
+                        "backCue": "Clique para voltar"
+                      }
+                    },
+                    {
+                      "id": "b_mswfso44_5iey",
+                      "type": "figure",
+                      "props": {
+                        "slot": "b_mswfso44_5iey__slot",
+                        "src": "",
+                        "fit": "contain",
+                        "size": "full",
+                        "title": "",
+                        "caption": "",
+                        "credit": ""
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b_mswfsnfe_1wsl",
+          "type": "sectionslide",
+          "props": {
+            "width": "wide",
+            "surface": "none",
+            "pad": "md",
+            "__pullUp": false,
+            "__pullDown": false
+          },
+          "children": [
+            {
+              "id": "b_mswfsnfe_98bi",
+              "type": "panel",
+              "props": {
+                "variant": "box",
+                "kicker": "Situação 03",
+                "kickerIcon": "ferris-wheel",
+                "title": "<span data-color=\"ochre-light\">Um imóvel é utilizado para outra finalidade</span>",
+                "color": "var(--cloud-50)",
+                "bg": "var(--ink-700)",
+                "body": "<p><br></p>"
+              },
+              "children": [
+                {
+                  "id": "b_mswfsnfe_2rly",
+                  "type": "columns",
+                  "props": {
+                    "count": 2,
+                    "ratio": "last-wide",
+                    "gap": "sm"
+                  },
+                  "children": [
+                    {
+                      "id": "b_mswfsnfe_fqt7",
+                      "type": "figure",
+                      "props": {
+                        "slot": "b_mswfsnfe_fqt7__slot",
+                        "src": "",
+                        "fit": "contain",
+                        "size": "full",
+                        "title": "",
+                        "caption": "",
+                        "credit": ""
+                      }
+                    },
+                    {
+                      "id": "b_mswfsnfe_g4z4",
+                      "type": "flashcard",
+                      "props": {
+                        "term": "",
+                        "description": "<span style=\"font-size: 17px;\">Um imóvel público foi destinado para determinada finalidade de interesse público, mas, com o tempo, passa a ser utilizado de forma diferente daquela prevista. A mudança não foi formalizada nem acompanhada pelo órgão responsável.&nbsp;</span>",
+                        "definition": "<p><b><span data-fs=\"h6\"><span data-color=\"light\"><span data-fs=\"body-lg\">Destinar um imóvel é suficiente para assegurar que ele continuará cumprindo a finalidade prevista?&nbsp;</span></span></span></b></p>",
+                        "icon": "rotate-cw",
+                        "color": "var(--slate-800)",
+                        "showIcon": true,
+                        "useCoverImage": false,
+                        "coverSlot": "b_mswfsnfe_g4z4__coverSlot",
+                        "coverAlt": "",
+                        "frontCue": "Reflita e compare",
+                        "backCue": "Clique para voltar"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bfsbxj7f",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c9pfk6xj",
+          "type": "titulo",
+          "props": {
+            "text": "O que essas situações têm em comum?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c0pdwroq",
+          "type": "prose",
+          "props": {
+            "html": "<p>Os exemplos mostram que proteger um imóvel público não significa apenas reagir quando um dano já ocorreu. Ocupações irregulares, usos incompatíveis com a destinação, deterioração física e intervenções não autorizadas podem começar de forma pouco perceptível e se agravar ao longo do tempo.</p><p>Essas situações podem surgir de maneiras diferentes e nem sempre são percebidas quando começam. Quando não identificadas e acompanhadas, podem se consolidar ao longo do tempo, ampliando danos, conflitos, custos e prejuízos ao interesse coletivo. É justamente a existência desses riscos que torna necessário conhecer e acompanhar permanentemente a situação do patrimônio público.</p><p>As ocupações irregulares representam uma das infrações mais recorrentes e preocupantes, sobretudo quando recaem sobre bens de uso comum do povo, como praias, margens de rios e outras áreas de livre acesso. Além de violarem o regime jurídico desses bens, tais ocupações restringem o acesso da coletividade e frequentemente provocam degradação ambiental.</p><p>Da mesma forma, o desvio de finalidade descaracteriza a destinação pública do imóvel, impedindo que ele cumpra os objetivos para os quais foi destinado.</p><p>Outro aspecto relevante refere-se à conservação do patrimônio. Imóveis públicos desocupados ou geridos de forma inadequada tendem a deteriorar-se rapidamente, depreciando-se e podendo representar riscos à integridade das edificações e à segurança da população. </p>"
+          }
+        },
+        {
+          "id": "bl1jq355",
+          "type": "kicker",
+          "props": {
+            "icon": "shield-alert",
+            "children": "Os riscos podem atingir diferentes dimensões do patrimônio"
+          }
+        },
+        {
+          "id": "bzttee0n",
+          "type": "figure",
+          "props": {
+            "slot": "bzttee0n__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "blumgvp8",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c8v9xk0g",
+          "type": "titulo",
+          "props": {
+            "text": "Afinal, o que a fiscalização busca proteger?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cvu2tcm2",
+          "type": "prose",
+          "props": {
+            "html": "<p>Pense novamente nos casos apresentado no início deste material e nas situações comuns abordadas . É justamente aí que a fiscalização patrimonial encontra sua razão de ser.</p><p>Fiscalizar permite conhecer a situação dos imóveis, identificar irregularidades e riscos, produzir evidências e agir antes que determinados problemas se consolidem. As informações produzidas também subsidiam outras atividades da gestão patrimonial, como cadastro, regularização, destinação, planejamento e adoção de medidas administrativas.</p>"
+          }
+        },
+        {
+          "id": "bdj03bxb",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>As ações de fiscalização produzem informações e evidências relevantes para a gestão patrimonial, subsidiando atividades como cadastro, regularização, destinação, planejamento e adoção de medidas administrativas relacionadas aos bens públicos. Ao identificar situações de ocupação, uso, conservação e conformidade dos imóveis, a fiscalização fornece elementos técnicos que apoiam a tomada de decisões pelos gestores públicos, contribuem para a proteção do patrimônio público e favorecem o aperfeiçoamento da gestão patrimonial.</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b_mswgzdb3_glrl",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Isso significa que <mark data-hl=\"petrol\">fiscalização e gestão não são atividades separadas</mark>. Conhecer o que está acontecendo com um imóvel é condição para decidir o que precisa ser preservado, corrigido ou transformado.</span></p><p>Ao identificar precocemente situações que possam comprometer a integridade, a destinação ou a adequada utilização dos bens públicos, a fiscalização também contribui para o gerenciamento dos riscos relacionados ao patrimônio público, favorecendo a adoção de medidas preventivas e corretivas pela Administração.</p><p>A proteção do patrimônio público é uma função permanente da Administração Pública. Independentemente de o imóvel pertencer à União, a um estado, ao Distrito Federal ou a um município, sua gestão deve assegurar que o bem permaneça protegido e seja utilizado de acordo com sua finalidade e com o interesse coletivo.</p><p>Além de sua função preventiva e repressiva, a fiscalização possui importante caráter pedagógico e dissuasório. A presença permanente do Estado transmite à sociedade a mensagem de que o patrimônio público é efetivamente protegido, reduzindo a ocorrência de novas irregularidades e fortalecendo a cultura de res peito aos bens públicos.</p><p>Assim, fiscalizar os bens imóveis públicos é assegurar que um patrimônio pertencente a toda a sociedade permaneça preservado em sua integridade física, respeitado em sua destinação legal e gerido de forma eficiente e transparente.</p>"
+          }
+        },
+        {
+          "id": "bfz9c0sd",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "attention",
+            "icon": "shield-alert",
+            "title": "",
+            "heading": "",
+            "children": "<p>Fiscalizar significa assegurar que o interesse coletivo prevaleça sobre interesses individuais incompatíveis com o regime jurídico dos bens públicos. Mais do que uma atividade administrativa, a fiscalização patrimonial constitui instrumento de proteção dos bens imóveis públicos e dos direitos da coletividade.</p>",
+            "color": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1atiult",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cu7g8brz",
+          "type": "titulo",
+          "props": {
+            "text": "A natureza da atividade fiscalizatória: <span style=\"font-weight: normal;\">por que o Estado pode intervir?</span>",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cur83go4",
+          "type": "prose",
+          "props": {
+            "html": "<p>A atividade fiscalizatória encontra fundamento no poder de polícia da Administração Pública, que confere ao Estado a prerrogativa de condicionar, restringir e controlar o exercício de direitos individuais em benefício da coletividade. Conforme leciona <span data-term=\"Hely Lopes Meirelles\" data-definition=\"MEIRELLES, Hely Lopes. &lt;b&gt;Direito administrativo brasileiro&lt;/b&gt;. 45. ed. Salvador: Juspodivm, 2025.\">Hely Lopes Meirelles</span>, trata-se da faculdade de que dispõe a Administração para <mark data-hl=\"terra\">limitar o uso de bens, atividades e direitos individuais em prol do interesse público ou da coletividade</mark>. No âmbito patrimonial, esse poder legitima a atuação do Poder Público para prevenir e identificar infrações administrativas relacionadas aos bens imóveis, adotando as medidas cabíveis e promovendo a articulação com os órgãos competentes quando constatados ilícitos de outra natureza.</p><p>A fiscalização patrimonial possui natureza <b>preventiva</b>. Ao identificar precocemente situações de irregularidade ou de risco, permite que a Administração Pública atue antes que os danos ao patrimônio público se consolidem, reduzindo custos administrativos, conflitos e prejuízos ao interesse coletivo.</p><p>Da mesma forma, caso, durante a fiscalização patrimonial, sejam identificados indícios de crime ou de outras infrações cuja apuração não seja de competência da SPU, estes devem ser comunicados aos órgãos competentes, tais como o Ministério Público, as forças policiais, os órgãos ambientais e as demais autoridades responsáveis, para adoção das medidas legais cabíveis. A atuação articulada entre os diferentes órgãos públicos fortalece a proteção do patrimônio público, permitindo que cada instituição exerça suas competências legais de forma complementar e coordenada.</p><p>Considerando a amplitude, a diversidade e a complexidade do patrimônio público, bem como as limitações de recursos humanos, materiais e orçamentários, <mark>a atividade fiscalizatória deve ser planejada e orientada por critérios técnicos de priorização</mark>. A definição desses critérios é fundamental para direcionar os esforços de fiscalização às situações de maior relevância para o interesse público, tema desenvolvido na competência seguinte.</p>"
+          }
+        },
+        {
+          "id": "bv168kmd",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo prático - Experiência da União",
+            "icon": "map-pin",
+            "color": "var(--ochre-600)",
+            "slot": "bv168kmd__slot",
+            "collapse": "closed",
+            "title": "A experiência da Secretaria do Patrimônio da União",
+            "body": "<p>Os bens imóveis da União constituem um patrimônio de valor inestimável para a sociedade brasileira. Terrenos de marinha, praias marítimas e fluviais, ilhas, rios federais, terras devolutas, imóveis funcionais, entre outros bens elencados no art. 20 da Constituição Federal de 1988, pertencem à União e devem atender a finalidades que transcendem interesses individuais, voltando-se à consecução do interesse público. </p><p>Essa finalidade é sintetizada na missão institucional da Secretaria do Patrimônio da União (SPU):</p>"
+          },
+          "children": [
+            {
+              "id": "bg8mdgdj",
+              "type": "pullquote",
+              "props": {
+                "variant": "block",
+                "fontSize": "body-lg",
+                "children": "<i>Conhecer, zelar e garantir que cada imóvel da União cumpra sua função socioambiental, em harmonia com a função arrecadadora, em apoio aos programas estratégicos para a Nação.</i>",
+                "cite": "<br>"
+              }
+            },
+            {
+              "id": "bwjt6768",
+              "type": "prose",
+              "props": {
+                "html": "<p><mark>Sem uma fiscalização patrimonial efetiva, essa missão torna-se inviável</mark>, deixando o patrimônio público vulnerável a ocupações irregulares, usos incompatíveis com sua destinação legal, degradação física e outras formas de utilização indevida que comprometem o interesse coletivo. A fiscalização patrimonial constitui, portanto, instrumento para assegurar que os bens públicos cumpram sua função social, ambiental e econômica.</p><p>No caso da União, a fiscalização patrimonial frequentemente incide sobre imóveis que abrigam ecossistemas sensíveis, como manguezais, margens de rios, praias e áreas costeiras. Nessas situações, embora a proteção ambiental constitua atribuição dos órgãos ambientais, a atuação da SPU é fundamental para identificar intervenções irregulares que afetem o patrimônio da União. Quando, no exercício da fiscalização, são constatados indícios de infrações ambientais, a SPU comunica os órgãos ambientais competentes para adoção das providências cabíveis em suas respectivas esferas de atuação.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Considerando a amplitude, a diversidade e a complexidade do patrimônio imobiliário da União, não é possível fiscalizar todos os imóveis e situações ao mesmo tempo. Por isso, a SPU organiza sua atuação a partir de planejamento e de critérios de priorização, buscando direcionar os recursos disponíveis para as demandas de maior relevância e risco. Essa experiência, incluindo o Plano Anual de Fiscalização e o uso de critérios objetivos e informações territoriais para definir prioridades, é apresentada em material específico do Programa.</span></p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b05zfdhe",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para refletir",
+        "kickerIcon": "check",
+        "title": "",
+        "body": "<p>Ao concluir a leitura, volte mentalmente às situações apresentadas no início.</p><p></p>"
+      },
+      "children": [
+        {
+          "id": "ba5idxfo",
+          "type": "markerlist",
+          "props": {
+            "variant": "ordered",
+            "icon": "check",
+            "accent": "var(--ochre-600)",
+            "items": [
+              {
+                "title": "<span data-color=\"ochre-light\" style=\"font-weight: normal;\">Na realidade que você conhece, que situações podem comprometer a integridade, o uso adequado ou a finalidade dos imóveis públicos?</span><br>",
+                "text": ""
+              },
+              {
+                "title": "<span data-color=\"ochre-light\" style=\"font-weight: normal;\">Você se recorda de algum caso em que um problema relativamente pequeno se tornou mais difícil de resolver porque não foi identificado ou enfrentado a tempo? O que uma atuação preventiva poderia ter mudado?</span><br>",
+                "text": ""
+              },
+              {
+                "title": "<span data-color=\"ochre-light\" style=\"font-weight: normal;\">Nos processos ou atividades dos quais você já participou, as informações produzidas pela fiscalização são utilizadas apenas para corrigir irregularidades ou também ajudam a tomar outras decisões sobre os imóveis?</span><br>",
+                "text": ""
+              },
+              {
+                "title": "<span data-color=\"ochre-light\" style=\"font-weight: normal;\">Quando um problema encontrado em um imóvel público envolve competências de diferentes instituições, qual é a importância da articulação entre elas para proteger o patrimônio e o interesse coletivo?</span><br>",
+                "text": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bg5rgid8",
+      "type": "pagefooter",
+      "props": {
+        "code": "Por que fiscalizar e proteger o patrimônio público? [M611]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Danilo dos Santos Silva"
+          },
+          {
+            "role": "Adaptação e Revisão",
+            "name": "Claudson Moreira, Andressa Thaís Schwingel, Karina Bonilaure"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
