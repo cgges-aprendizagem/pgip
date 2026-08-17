@@ -145,8 +145,9 @@
             "slot": "bek8mz8g__slot",
             "collapse": "closed",
             "title": "<span data-fs=\"h4\">Registro imobiliário: <br><span style=\"font-weight: normal;\">uma característica distintiva dos contratos patrimoniais</span></span>",
-            "children": "<p>Uma particularidade importante dos contratos de destinação que envolvem constituição, transferência, modificação ou extinção de direitos reais é <mark data-hl=\"terra\">a necessidade de observar, quando aplicável, as regras do sistema registral imobiliário</mark>.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Diferentemente da maioria dos contratos administrativos tradicionais, cujos efeitos decorrem essencialmente da manifestação de vontade das partes e do cumprimento das exigências legais de publicidade, determinados contratos patrimoniais dependem de registro no Cartório de Registro de Imóveis para produzir os efeitos próprios dos direitos reais perante terceiros.</span></p><p>No âmbito da Secretaria do Patrimônio da União (SPU), por exemplo, contratos com força de escritura pública que constituam ou transfiram direitos reais sobre imóveis da União são levados a registro na matrícula do imóvel, assim como os atos relacionados à extinção ou reversão desses direitos, quando cabíveis. Essa prática reforça a segurança jurídica, a publicidade registral e a adequada gestão do patrimônio imobiliário.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Embora outros entes federativos possam adotar procedimentos internos próprios para a gestão de seus instrumentos patrimoniais, a exigência de registro de direitos reais perante o Cartório de Registro de Imóveis decorre da legislação federal sobre registros públicos (<a href=\"https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 6.015, de 1973</a>) e não pode ser afastada por normatização específica de cada ente. Esse exemplo demonstra que a gestão contratual de imóveis frequentemente extrapola os limites da administração documental, exigindo atenção também aos efeitos produzidos no âmbito do registro imobiliário.</span></p>"
-          }
+            "body": "<p>Uma particularidade importante dos contratos de destinação que envolvem constituição, transferência, modificação ou extinção de direitos reais é <mark data-hl=\"terra\">a necessidade de observar, quando aplicável, as regras do sistema registral imobiliário</mark>.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Diferentemente da maioria dos contratos administrativos tradicionais, cujos efeitos decorrem essencialmente da manifestação de vontade das partes e do cumprimento das exigências legais de publicidade, determinados contratos patrimoniais dependem de registro no Cartório de Registro de Imóveis para produzir os efeitos próprios dos direitos reais perante terceiros.</span></p><p>No âmbito da Secretaria do Patrimônio da União (SPU), por exemplo, contratos com força de escritura pública que constituam ou transfiram direitos reais sobre imóveis da União são levados a registro na matrícula do imóvel, assim como os atos relacionados à extinção ou reversão desses direitos, quando cabíveis. Essa prática reforça a segurança jurídica, a publicidade registral e a adequada gestão do patrimônio imobiliário.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Embora outros entes federativos possam adotar procedimentos internos próprios para a gestão de seus instrumentos patrimoniais, a exigência de registro de direitos reais perante o Cartório de Registro de Imóveis decorre da legislação federal sobre registros públicos (<a href=\"https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 6.015, de 1973</a>) e não pode ser afastada por normatização específica de cada ente. Esse exemplo demonstra que a gestão contratual de imóveis frequentemente extrapola os limites da administração documental, exigindo atenção também aos efeitos produzidos no âmbito do registro imobiliário.</span></p>"
+          },
+          "children": []
         }
       ]
     },
@@ -173,19 +174,6 @@
           "props": {
             "html": "<p>A gestão contratual é um processo contínuo que acompanha toda a vigência da relação jurídica estabelecida entre a Administração Pública e o destinatário do imóvel. Diferentemente do processo de destinação, que compreende os estudos técnicos, a análise jurídica e a decisão sobre a melhor forma de utilização do bem, a gestão contratual tem início com a celebração do contrato e se desenvolve até sua extinção e a adequada devolução ou retomada do imóvel.</p><p>Essa visão permite compreender que o contrato não representa um fim em si mesmo. Ele constitui o ponto de partida para um conjunto de atividades destinadas a acompanhar sua execução, prevenir irregularidades, promover ajustes quando necessários e assegurar que a finalidade pública da destinação seja efetivamente alcançada.</p><p>A figura a seguir apresenta, de forma simplificada, as principais etapas desse ciclo.</p>"
           }
-        },
-        {
-          "id": "buqwa341",
-          "type": "figure",
-          "props": {
-            "slot": "buqwa341__slot",
-            "src": "",
-            "fit": "contain",
-            "size": "full",
-            "title": "",
-            "caption": "",
-            "credit": ""
-          }
         }
       ]
     },
@@ -193,7 +181,7 @@
       "id": "b7duwomx",
       "type": "section",
       "props": {
-        "width": "full",
+        "width": "wide",
         "surface": "dark",
         "pad": "md"
       },
@@ -203,7 +191,7 @@
           "type": "externalembed",
           "props": {
             "title": "Conteúdo incorporado",
-            "embed": "<iframe\n  src=\"https://luislindner.github.io/spu/m451/m451_ciclo/public/infografico.html\"\n  title=\"Ciclo de gestão contratual\"\n  loading=\"lazy\"\n  width=\"1200\"\n  height=\"900\"\n  style=\"width:100%; border:0;\"\n  allow=\"fullscreen\"\n></iframe>",
+            "embed": "https://luislindner.github.io/spu/m451/m451_ciclo/public/infografico.html",
             "responsive": false,
             "useEmbedDimensions": true,
             "width": 0,
@@ -505,8 +493,7 @@
             "icon": "lightbulb",
             "title": "",
             "heading": "",
-            "children": "<p>Uma gestão contratual eficiente não evita alterações; ao contrário, reconhece que elas podem ser necessárias para adaptar o contrato a novas circunstâncias sem comprometer sua finalidade.</p>",
-            "color": ""
+            "children": "<p>Uma gestão contratual eficiente não evita alterações; ao contrário, reconhece que elas podem ser necessárias para adaptar o contrato a novas circunstâncias sem comprometer sua finalidade.</p>"
           }
         }
       ]
@@ -560,6 +547,12 @@
                 "description": "",
                 "definition": "<p>Relacionado a obrigações acessórias, como atraso na apresentação de documentos, relatórios ou comunicações exigidas pelo contrato.</p>",
                 "icon": "file-check",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--petrol-600)"
               }
             },
@@ -571,6 +564,12 @@
                 "description": "",
                 "definition": "<p>Ocorre quando a finalidade pactuada não é implantada, é abandonada ou é substituída por uso diverso do previsto, comprometendo a própria razão de ser da destinação.</p>",
                 "icon": "file-question-mark",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--ochre-600)"
               }
             },
@@ -582,6 +581,12 @@
                 "description": "",
                 "definition": "<p>Associado a danos ao próprio bem, como degradação física, ocupações indevidas por terceiros ou alterações não autorizadas na edificação.</p>",
                 "icon": "file-sliders",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--terra-600)"
               }
             }

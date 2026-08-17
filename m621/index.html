@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M621 - Priorizando demandas de fiscalização</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"bvf63vt8__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bvf63vt8__slot.png"},"bhd3sgml__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bhd3sgml__slot.png"},"bv3gjx34__slot":{"s":1,"x":0,"y":-0.45764160156250133,"u":"assets/images/img-2-bv3gjx34__slot.png"},"bhl987rg__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bhl987rg__slot.png"},"buh2a9pk__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-buh2a9pk__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M621 - Priorizando demandas de fiscalização","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cjd67he6","text":"Complexidade e desafios para fiscalização patrimonial","hidden":false},{"id":"c3tzeubh","text":"Do Plano Anual de Fiscalização (PAF) e Plano Anual Estadual de Fiscalização","hidden":false},{"id":"c2t1r164","text":"Para além do PAF: \u003cspan style=\"font-weight: normal;\">o que essa experiência nos mostra?\u003c/span>","hidden":false}]}},"blocks":[{"id":"b03cbknw","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"buh2a9pk","type":"hero","props":{"kicker":"Instrumentos e práticas da ação fiscalizatória","kickerIcon":"shield-cog-corner","title":"Priorizando demandas de fiscalização","byline":"a experiência da Secretaria do Patrimônio da União","slot":"buh2a9pk__slot"}},{"id":"by2adkrd","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cxx7igtd","type":"prose","props":{"html":"\u003cp>No material “\u003ca href=\"https://cgges-aprendizagem.github.io/pgip/m611/\" target=\"_blank\" rel=\"noopener noreferrer\">Por que fiscalizar e proteger o patrimônio público?\u003c/a>”, vimos que fiscalizar os bens públicos permite identificar irregularidades e riscos, produzir informações para a gestão e agir antes que determinados problemas se agravem. Mas essa constatação traz uma questão prática:\u003cb> se precisamos fiscalizar, como escolher onde concentrar os esforços?\u003c/b>\u003c/p>\u003cp>Essa é uma questão que pode estar presente na realidade de diferentes órgãos e entes públicos. As demandas de fiscalização podem superar a capacidade de atendimento das equipes, envolver imóveis e situações muito diferentes entre si e exigir conhecimentos, deslocamentos e recursos específicos. Nesse contexto, estabelecer prioridades deixa de ser apenas uma escolha operacional e passa a fazer parte do próprio planejamento da fiscalização.\u003c/p>\u003cp>Este material parte da experiência da Secretaria do Patrimônio da União (SPU) para mostrar uma forma de enfrentar esse desafio. A escala e a diversidade do patrimônio imobiliário da União tornam particularmente evidente a necessidade de organizar as demandas e direcionar os recursos disponíveis. Para isso, a SPU utiliza instrumentos de planejamento, entre eles o Plano Anual de Fiscalização (PAF), combinando diretrizes nacionais com a realidade e a capacidade operacional de suas unidades nos estados.\u003c/p>\u003cp>Mais do que conhecer um instrumento específico da União, interessa compreender a lógica que está por trás dessa experiência: diante de demandas concorrentes e recursos limitados, é necessário utilizar informações e critérios que ajudem a decidir onde a atuação fiscalizatória é mais necessária. Essa reflexão pode servir de referência para servidores que lidam com desafios semelhantes em diferentes contextos da gestão de imóveis públicos.\u003c/p>"}}]},{"id":"b7e9dv3y","type":"section","props":{"width":"content","surface":"warm","pad":"lg","__pullDown":false},"children":[{"id":"cjd67he6","type":"titulo","props":{"text":"Complexidade e desafios para fiscalização patrimonial","level":"h2"}},{"id":"bkj778qm","type":"titulo","props":{"text":"O que torna a fiscalização patrimonial tão complexa?","level":"h3"}},{"id":"c52ysn4m","type":"prose","props":{"html":"\u003cp>Inicialmente, é importante discorrer brevemente sobre as particularidades, a dinâmica e o que deve ser levado em consideração dentro da atividade fiscalizatória (que engloba o planejamento, a execução e o pós-operação) e no Planejamento Anual de Fiscalização da SPU. \u003c/p>\u003cp>Um primeiro desafio está na própria diversidade do patrimônio a ser fiscalizado. Em termos qualitativos, precisamos levar em conta que há diferentes tipos de classificação de bens (dominial, especial e de uso comum) e, ainda, que há variadas caracterizações possíveis (terreno de marinha, terreno marginal, praia, rio, mar, ilha, \u003cspan data-term=\"próprios nacionais\" data-definition=\"Os próprios nacionais são imóveis pertencentes à União destinados ao uso de servidores públicos federais ou, com maior frequência, de militares da ativa e seus dependentes.\">\u003cspan data-color=\"terra\">próprios nacionais\u003c/span>\u003c/span>, faixa de segurança etc.). Cada situação pode envolver especificidades técnicas, legais e jurídicas que precisam ser consideradas pela fiscalização. \u003c/p>\u003cp>Além das características do bem, é necessário conhecer sua situação na gestão patrimonial ou seja, se um determinado imóvel está demarcado, cadastrado, destinado ou gerando receitas patrimoniais. Essas informações precisam ser consideradas tanto no planejamento (priorização) quanto na execução em si da fiscalização, pois são determinantes para compreender as possibilidades e os limites da ação fiscalizatória. \u003c/p>\u003cp>Por exemplo, se um imóvel está em uma área dominial presumida da União, ou seja, sem demarcação homologada, a ação fiscalizatória tem restrições. Se o imóvel já está destinado, a atuação da fiscalização tem também determinados limites.\u003c/p>"}},{"id":"bcepm33w","type":"callout","props":{"variant":"header","tone":"info","icon":"alert-circle","title":"","heading":"","children":"\u003cp>Priorizar uma fiscalização não depende apenas da gravidade aparente de uma situação. É preciso conhecer o imóvel, sua situação patrimonial e as condições para a atuação administrativa.\u003c/p>"}},{"id":"bf5wnjfm","type":"titulo","props":{"text":"Muitos imóveis, muitos usos, diferentes situações","level":"h3"}},{"id":"bnjkqq98","type":"prose","props":{"html":"\u003cp>Em termos quantitativos, nos deparamos com uma \u003cmark>grande quantidade de imóveis\u003c/mark> da União em todo espaço territorial e marítimo nacional, com medidas e áreas variadas, tornando praticamente impossível conseguir fiscalizar todo esse patrimônio. Além disso, há uma infinidade de possíveis tipos de usos e destinações que podem ser verificadas sobre os bens imóveis da União (residencial, comercial, turística, agrícola, regularização fundiária, unidade de conservação, aquicultura, estrutura náutica, instalação portuária, serviços público, entre outros), o que configura outra camada de temas, desafios e diretrizes para SPU e para a fiscalização patrimonial, na medida em que um determinado tipo de uso pode ter uma regulamentação específica a ser observada.\u003c/p>"}},{"id":"bhqvluaf","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bvf63vt8","type":"figure","props":{"slot":"bvf63vt8__slot","src":"","fit":"cover","size":"full","title":"","caption":"","credit":"","__pullUp":false,"__pullDown":false}},{"id":"b_mswmwwcy_ot99","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A título de exemplo, no caso de uma instalação portuária pendente de regularização, há previsão específica de que a superintendência notificará o interessado para apresentar documentação visando à regularização, que, se não atendida, o interessado sujeitar-se-á às sanções previstas no \u003c/span>\u003ca href=\"https://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/del2398compilado.htm\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">Decreto-Lei nº 2.398, de 1987\u003c/a>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">, e na \u003c/span>\u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/l9636compilado.htm\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">Lei nº 9.636, de 1998\u003c/a>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">, conforme dispõe o artigo 30 da Portaria nº 7.145, 13 de julho de 2018.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O exemplo mostra que conhecer o tipo de uso e a regulamentação aplicável é importante não apenas para executar a fiscalização, mas também para avaliar a demanda e as possibilidades de atuação administrativa.\u003c/span>\u003c/p>"}}]},{"id":"b9vblvp0","type":"callout","props":{"variant":"ear","tone":"note","icon":"anchor","title":"","heading":"","children":"\u003cp>Estas diversidades de tipologias, usos e destinações, além do grande número de imóveis da União, por si só já impõem um enorme desafio para a atividade de fiscalizatória da SPU, tanto para o planejamento quanto para a execução da fiscalização.\u003c/p>","color":""}},{"id":"b2bgrzfa","type":"titulo","props":{"text":"Os recursos para fiscalizar são limitados","level":"h3"}},{"id":"be796h08","type":"prose","props":{"html":"\u003cp>Há ainda outros desafios, principalmente no que se refere às \u003cmark>restrições orçamentárias, operacionais e de efetivo\u003c/mark> para fazer frente às demandas de fiscalização relativas ao patrimônio imobiliário da União. \u003c/p>\u003cp>A realidade enfrentada pelas unidades descentralizadas no órgão é de um quadro reduzido de servidores para as diversas atividades. Quanto aos fiscais designados, muitos também realizam atividades de outras áreas da SPU. Importante salientar que mesmo dentro da área de fiscalização há atividades além da simples ida a campo e que demandam significativo tempo e esforço, como as análises processuais, busca de documentos e informações internas e externas, subsídios para resposta a outros órgãos e para defesa da União em processos judiciais. \u003cmark>A fiscalização, portanto, não se resume à inspeção em campo. Cada ação pode exigir preparação, análise de informações e documentos, execução e providências posteriores\u003c/mark>.\u003c/p>\u003cp>Quando a atividade fiscalizatória exige determinadas qualificações, como o uso de geotecnologias e em inspeção predial, o quadro de profissionais disponíveis é ainda mais escasso.\u003c/p>"}},{"id":"bqun0uue","type":"titulo","props":{"text":"As demandas não param de chegar","level":"h3"}},{"id":"b2rny0y4","type":"prose","props":{"html":"\u003cp>Outro fator importante é a significativa quantidade de demandas que chegam constantemente de vários interessados internos e externos, relacionadas a várias situações, sendo que cada estado tem tipos de demandas que são mais recorrentes do que outras. Boa parte das ações de fiscalização da SPU acabam sendo direcionadas para atender a atores externos, como o Ministérios Público e o Judiciário.\u003c/p>"}},{"id":"b451xtru","type":"markerlist","props":{"variant":"icon","icon":"blocks","accent":"","items":[{"title":"","text":"\u003cspan data-color=\"petrol\">Isso significa que a unidade responsável pela fiscalização precisa lidar, simultaneamente, com demandas de diferentes origens e características, além das diferenças existentes entre as realidades locais.\u003c/span>\u003cbr>"}]}},{"id":"bco95kns","type":"prose","props":{"html":"\u003cp>Diante desse cenário, \u003cmark data-hl=\"petrol\">priorizar deixa de ser uma opção e passa a ser uma necessidade\u003c/mark> para o planejamento da fiscalização. É preciso compatibilizar a diversidade e a quantidade de demandas com os recursos humanos, técnicos, operacionais e orçamentários disponíveis, considerando também as características de cada unidade regional.\u003c/p>"}},{"id":"brd5rgv2","type":"callout","props":{"variant":"ear","tone":"info","icon":"list-checks","title":"","heading":"","children":"\u003cp>Definir prioridades significa fazer escolhas diante de demandas que concorrem pelos mesmos recursos. Na experiência da SPU, essas escolhas precisam considerar, entre outros elementos, as características e a situação do imóvel, o tipo de uso, as condições para atuação, as demandas existentes e a capacidade disponível para fiscalizar. \u003c/p>"}}]},{"id":"bm8ebq09","type":"section","props":{"width":"content","surface":"none","pad":"none"},"children":[{"id":"bhd3sgml","type":"bleedimage","props":{"slot":"bhd3sgml__slot","src":"","zoom":false,"fit":"cover","heightPreset":"wide","title":"","caption":"","credit":"","captionMode":"overlay","overlayBg":"rgba(14,46,43,.72)","__pullDown":false,"__pullUp":true}}]},{"id":"bkryjpju","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c3tzeubh","type":"titulo","props":{"text":"Do Plano Anual de Fiscalização (PAF) e Plano Anual Estadual de Fiscalização","level":"h2"}},{"id":"bmq6k8aq","type":"titulo","props":{"text":"Como transformar prioridades em planejamento?","level":"h3"}},{"id":"cigja5ny","type":"prose","props":{"html":"\u003cp>Anualmente, a SPU elabora o \u003cb>Plano Anual de Fiscalização – PAF\u003c/b>, definindo os objetivos, diretrizes, estratégias metas para a fiscalização do patrimônio da União, além de informar o orçamento disponível.\u003c/p>\u003cp>O PAF funciona como o instrumento que orienta o planejamento anual da fiscalização em âmbito nacional. Mas, como vimos, as Superintendências lidam com realidades muito diferentes. Como combinar essas diretrizes gerais com as demandas e capacidades de cada unidade?\u003c/p>\u003cp>O planejamento é elaborado levando em consideração os fatores apresentados anteriormente: a diversidade e o quantitativo de imóveis da União, as diferentes demandas de fiscalização, o número de fiscais, as restrições orçamentárias, as capacidades operacionais e as particularidades de cada unidade regional.\u003c/p>\u003cp>Nesse sentido, a \u003cmark>Secretaria estabelece no PAF as principais demandas para aquele ano e a meta em termos quantidade total de fiscalizações para cada Superintendência\u003c/mark>, sem, contudo, definir uma quantidade exata de fiscalizações para cada tipo de demanda. Essa definição ocorre em uma etapa posterior, pelas próprias Superintendências, que conhecem mais diretamente as demandas existentes em seu território e sua capacidade operacional para atendê-las.\u003c/p>"}},{"id":"bxgsroat","type":"titulo","props":{"text":"Do planejamento nacional à realidade de cada estado","level":"h3"}},{"id":"bxee3ruk","type":"prose","props":{"html":"\u003cp>Diante das diretrizes governamentais e das prioridades identificadas para cada ano, a SPU utiliza uma metodologia de pesos para estimular a realização de determinadas demandas. Os diferentes pesos atribuídos às fiscalizações repercutem na pontuação das Superintendências para o atingimento da meta de desempenho institucional. Essa pontuação também integra a apuração da Gratificação de Incremento à Atividade de Administração do Patrimônio da União – GIAPU.\u003c/p>\u003cp>Ainda, diante de uma situação de premente interesse público ou de risco à incolumidade pública, pode ser imposto que determinada demanda seja realizada obrigatória e tempestivamente, ainda que isso possa repercutir sobre a realização de outras demandas.\u003c/p>\u003cp>O modelo combina diferentes níveis de decisão:\u003c/p>"}},{"id":"b0amiewq","type":"markerlist","props":{"variant":"icon","icon":"arrow-big-down","accent":"var(--terra-600)","items":[{"title":"SPU/Unidade Central","text":"Estabelece objetivos, diretrizes, prioridades, metas e orçamento no PAF."},{"title":"Superintendências","text":"Organizam as fiscalizações considerando essas orientações e sua realidade local."},{"title":"Demandas urgentes ou de relevante interesse público","text":"Podem exigir atendimento obrigatório e tempestivo, repercutindo no planejamento das demais ações."}]}},{"id":"b5ljcif3","type":"titulo","props":{"text":"Nem toda demanda tem a mesma prioridade","level":"h3"}},{"id":"bvo3mm53","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Nos últimos PAFs as demandas têm sido estruturadas em\u003cb> três categorias de grupos de prioridade\u003c/b>, em que \u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">a pontuação atribuída às fiscalizações varia conforme a prioridade estabelecida pela Secretaria.\u003c/span>\u003c/p>\u003cp>Para deixar mais claro, os grupos de prioridade e a pontuação atribuída para as demandas de cada um deles são os seguintes:\u003c/p>"}},{"id":"bdn56r7b","type":"contentslider","props":{"hint":"Grupos de prioridade na fiscalização","accent":"","showTabNumbers":true,"slides":[{"showImage":false,"slot":"bdn56r7b__slides_0_slot","alt":"","caption":"","labelIcon":"","label":"Grupo I","tabLabel":"Mandatório","title":"\u003cspan data-fs=\"h3\">Mandatório\u003c/span>","subtitle":"","description":"\u003cp>Cada fiscalização contabiliza 1,1 ponto (+10%) e abrange demandas caracterizadas por maior imperatividade e urgência, frequentemente oriundas de determinações de órgãos externos em razão de irregularidades ou riscos no uso de bens imóveis da União. \u003c/p>","linkHref":"","linkLabel":""},{"showImage":false,"slot":"b_mswhkw98_gf5y__slot","alt":"","caption":"","labelIcon":"","label":"Grupo II","tabLabel":"Estratégico","title":"\u003cspan data-fs=\"h3\">Estratégico\u003c/span>","subtitle":"","description":"\u003cp>Cada fiscalização contabiliza 1,15 ponto (+15%) e compreende ações vinculadas a diretrizes estratégicas governamentais, muitas vezes alinhadas a políticas públicas e projetos de interesse nacional. Nesse sentido, é fundamental reforçar que a realização dessas fiscalizações contribui para políticas públicas e sociais de impacto direto na sociedade, ao mesmo tempo em que amplia a visibilidade institucional da SPU e fortalece seu papel como agente estratégico na gestão do patrimônio público.\u003c/p>","linkHref":"","linkLabel":""},{"showImage":false,"slot":"b_mswhkuoc_0gct__slot","alt":"","caption":"","labelIcon":"","label":"Grupo III","tabLabel":"Rotina","title":"\u003cspan data-fs=\"h3\">Rotina\u003c/span>","subtitle":"","description":"\u003cp>Cada fiscalização contabiliza 1 ponto e abrange fiscalizações de natureza predominantemente preventiva ou destinadas a verificar condições e determinações administrativas previamente estabelecidas. Apesar de apresentarem menor peso na metodologia de pontuação, essas ações possuem uma relevância estratégica significativa, pois sua realização contínua pode prevenir o aumento de irregularidades ou evitar que situações não conformes se agravem, evoluindo para demandas mais complexas e onerosas do Grupo I.\u003c/p>","linkHref":"","linkLabel":""}]}},{"id":"b50y8jpp","type":"prose","props":{"html":"\u003cp>Os diferentes pesos funcionam, assim, como um mecanismo para incentivar a priorização de determinadas demandas. Isso não significa, contudo, que as demais fiscalizações deixem de ser importantes. Como vimos em outro material do eixo, inclusive as ações de caráter preventivo contribuem para identificar problemas antes que se agravem e se transformem em situações mais complexas.\u003c/p>"}},{"id":"bjsbspqa","type":"titulo","props":{"text":"Do PAF ao planejamento de cada Superintendência\u003cbr>\u003cbr>","level":"h3"}},{"id":"bcs050xe","type":"kicker","props":{"icon":"compass","children":"Como as prioridades nacionais chegam à programação local?"}},{"id":"b58rsb4o","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Com o PAF elaborado e publicado, as Superintendências são instadas a seguir os objetivos, diretrizes e metas estabelecidas, bem como o teto orçamentário disponibilizado e a elaborar um Plano Anual Estadual de Fiscalização – PAEF com o cronograma das fiscalizações que serão realizadas para os diferentes tipos de demanda, submetendo-o à Unidade Central para aprovação.\u003c/span>\u003c/p>\u003cp>O PAEF representa, assim, o desdobramento do planejamento nacional em cada unidade regional. É nesse momento que as Superintendências organizam concretamente sua programação, considerando as prioridades estabelecidas no PAF e as demandas e condições de execução existentes em cada estado.\u003c/p>\u003cp>Em síntese, o modelo de planejamento adotado pela SPU busca conciliar, de forma técnica e racional, as diversas demandas de fiscalização com a disponibilidade de recursos humanos, orçamentários e operacionais disponíveis, permitindo que cada Superintendência organize a execução das ações considerando sua realidade e suas necessidades concretas. \u003c/p>\u003cp>Priorizar determinadas ações não significa, portanto, desconsiderar as demais demandas. Trata-se de um mecanismo de gestão para direcionar os esforços disponíveis às situações consideradas mais relevantes, urgentes ou estratégicas, sem deixar de reconhecer a importância das ações de rotina e de caráter preventivo.\u003c/p>"}},{"id":"bv3gjx34","type":"examplecard","props":{"label":"Veja um exemplo de PAF","icon":"external-link","color":"var(--terra-600)","slot":"bv3gjx34__slot","collapse":"none","title":"","body":"\u003cp>Quer conhecer como essas diretrizes e prioridades aparecem no instrumento utilizado pela SPU?&nbsp;\u003c/p>\u003cp>\u003ca href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais-2/plano-anual-de-fiscalizacao-2025-secretaria-do-patrimonio-da-uniao-spu/\" target=\"_blank\" rel=\"noopener noreferrer\" data-btn=\"secondary\">Acesse aqui um exemplo de Plano Anual de Fiscalização\u003c/a>\u003c/p>"},"children":[]},{"id":"bhl987rg","type":"figure","props":{"slot":"bhl987rg__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]},{"id":"br9gsj12","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"c2t1r164","type":"titulo","props":{"text":"Para além do PAF: \u003cspan style=\"font-weight: normal;\">o que essa experiência nos mostra?\u003c/span>","level":"h2"}},{"id":"b9kknjdz","type":"titulo","props":{"text":"Priorizar também é uma decisão de gestão","level":"h3"}},{"id":"crr1q57k","type":"prose","props":{"html":"\u003cp>A experiência da SPU mostra que fiscalizar um patrimônio amplo e diverso exige fazer escolhas. A quantidade e a variedade de imóveis e demandas, as diferentes situações encontradas e a limitação dos recursos humanos, técnicos, operacionais e orçamentários tornam inviável atender tudo ao mesmo tempo. \u003c/p>\u003cp>O Plano Anual de Fiscalização e seu desdobramento pelas Superintendências representam a forma encontrada pela SPU para organizar essas escolhas. O planejamento permite combinar diretrizes e prioridades nacionais com as demandas, capacidades e particularidades de cada unidade regional, direcionando os esforços disponíveis sem desconsiderar a importância das demais ações fiscalizatórias. \u003c/p>\u003cp>Mais do que reproduzir os instrumentos utilizados pela SPU, a experiência apresentada neste material convida a observar um desafio que pode estar presente em diferentes contextos da gestão de imóveis públicos: quando as demandas superam a capacidade de atendimento, é preciso estabelecer critérios, utilizar as informações disponíveis e planejar a atuação.\u003c/p>\u003cp>Como vimos no material \u003ca href=\"https://cgges-aprendizagem.github.io/pgip/m611/\" target=\"_blank\" rel=\"noopener noreferrer\">\u003cb>Por que fiscalizar e proteger o patrimônio público?\u003c/b>\u003c/a>, a fiscalização contribui para identificar situações que podem comprometer o patrimônio e agir antes que se agravem. O desafio acrescentado neste material é outro: reconhecer que a própria capacidade de fiscalizar é limitada e que, por isso, decidir onde concentrar os esforços também faz parte da proteção do patrimônio público.\u003c/p>"}}]},{"id":"bjjwa1zp","type":"conclusion","props":{"kicker":"Para refletir","kickerIcon":"check","title":"","body":""},"children":[{"id":"boo3cbhr","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"var(--ochre-700)","items":[{"title":"","text":"\u003cspan data-color=\"light\">Na realidade em que você atua, as demandas de fiscalização também superam a capacidade de atendimento? Como são definidas as prioridades? \u003c/span>"},{"title":"","text":"\u003cspan data-color=\"light\">Que informações sobre os imóveis, seus usos e as situações encontradas poderiam ajudar você e sua equipe a decidir o que precisa ser fiscalizado primeiro? \u003c/span>"},{"title":"","text":"\u003cspan data-color=\"light\">Como equilibrar demandas urgentes, prioridades institucionais e ações preventivas de rotina quando todas disputam os mesmos recursos? \u003c/span>"},{"title":"","text":"\u003cspan data-color=\"light\">Nos processos dos quais você participa, os critérios utilizados para definir prioridades são suficientemente claros para orientar e justificar as escolhas realizadas?\u003c/span>"}]}}]},{"id":"bjja2qoh","type":"pagefooter","props":{"code":"Priorizando demandas de fiscalização [M621]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Danilo dos Santos Silva"},{"role":"Revisão","name":"Claudson Moreira"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"bvf63vt8__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bvf63vt8__slot.png"},"bhd3sgml__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-bhd3sgml__slot.png"},"bv3gjx34__slot":{"s":1,"x":0,"y":-0.45764160156250133,"u":"assets/images/img-2-bv3gjx34__slot.png"},"bhl987rg__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bhl987rg__slot.png"},"buh2a9pk__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-buh2a9pk__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"anchor":"\u003cpath d=\"M12 6v16\"/>\u003cpath d=\"m19 13 2-1a9 9 0 0 1-18 0l2 1\"/>\u003cpath d=\"M9 11h6\"/>\u003ccircle cx=\"12\" cy=\"4\" r=\"2\"/>","arrow-big-down":"\u003cpath d=\"M9 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v6a1 1 0 0 0 1 1h3.293a.707.707 0 0 1 .5 1.207l-7.086 7.086a1 1 0 0 1-1.414 0l-7.086-7.086a.707.707 0 0 1 .5-1.207H8a1 1 0 0 0 1-1z\"/>","blocks":"\u003cpath d=\"M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2\"/>\u003crect x=\"14\" y=\"2\" width=\"8\" height=\"8\" rx=\"1\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","external-link":"\u003cpath d=\"M15 3h6v6\"/>\u003cpath d=\"M10 14 21 3\"/>\u003cpath d=\"M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6\"/>","list-checks":"\u003cpath d=\"M13 5h8\"/>\u003cpath d=\"M13 12h8\"/>\u003cpath d=\"M13 19h8\"/>\u003cpath d=\"m3 17 2 2 4-4\"/>\u003cpath d=\"m3 7 2 2 4-4\"/>","shield-cog-corner":"\u003cpath d=\"M11 22c-3.806-1.45-7-3.966-7-9V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1v4\"/>\u003cpath d=\"M14.923 16.547 14 16.164\"/>\u003cpath d=\"m14.923 18.843-.923.383\"/>\u003cpath d=\"M16.547 14.923 16.164 14\"/>\u003cpath d=\"m16.547 20.467-.383.924\"/>\u003cpath d=\"m18.843 14.923.383-.923\"/>\u003cpath d=\"m19.225 21.391-.382-.924\"/>\u003cpath d=\"m20.467 16.547.923-.383\"/>\u003cpath d=\"m20.467 18.843.923.383\"/>\u003ccircle cx=\"17.695\" cy=\"17.695\" r=\"3\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__always,.spu-csection__body{display:flex;flex-direction:column;gap:var(--flow-block)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);width:max-content;margin-top:var(--flow-block);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__summary[aria-expanded="true"] svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-csection__body[hidden]{display:none}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__body{display:flex!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint ? NS.isPrint() : window.__SPU_PRINT === true;
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing;
+        var items = React.Children.toArray(props.children);
+        function blockType(node){
+          if(!React.isValidElement(node)) return '';
+          if(node.props && node.props.block && node.props.block.type) return node.props.block.type;
+          return React.Children.toArray(node.props && node.props.children).map(blockType).filter(Boolean)[0] || '';
+        }
+        var markerIndex = items.findIndex(function(item){ return blockType(item) === 'collapsebreak'; });
+        var alwaysVisible = markerIndex >= 0 ? items.slice(0, markerIndex) : [];
+        var collapsed = markerIndex >= 0 ? items.slice(markerIndex + 1) : items;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            alwaysVisible.length && React.createElement('div', { className:'spu-csection__always spu-blockstack' }, alwaysVisible),
+            !printing && React.createElement('button', {
+                type:'button',
+                className:'spu-csection__summary',
+                'aria-expanded':forcedOpen || open,
+                onClick:function(){ if(!forcedOpen) setOpen(!open); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body spu-blockstack', hidden:!(forcedOpen || open) }, collapsed)
+          )
+        );
+      };
+      NS.CollapseBreak = function(){ return null; };
+      var markerDefinition = {
+        type:'collapsebreak', component:'CollapseBreak', label:'Botão de recolher',
+        icon:'chevron-down', cat:'Estrutura', kind:'marker', internal:true, props:{}
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container', stack:false,
+        fields:['triggerLabel'], allowedTypes:registry.childTypes.concat([markerDefinition.type]),
+        props:{ triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.blocks.push(markerDefinition);
+      registry.byType[definition.type] = definition;
+      registry.byType[markerDefinition.type] = markerDefinition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type === markerDefinition.type) return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:markerDefinition.type, props:{} };
+        if(type !== definition.type) return originalNewBlock(type, child);
+        var props = JSON.parse(JSON.stringify(definition.props));
+        props.children = [registry.newBlock(markerDefinition.type, true)];
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:props };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function safeDefinition(value){
+    var box = document.createElement('div');
+    box.innerHTML = String(value || '');
+    var allowed = ['STRONG','B','EM','I','BR','P','SPAN'];
+    Array.from(box.querySelectorAll('*')).forEach(function(el){
+      if(el.tagName === 'SCRIPT' || el.tagName === 'STYLE'){ el.remove(); return; }
+      if(allowed.indexOf(el.tagName) < 0){ el.replaceWith.apply(el, Array.from(el.childNodes)); return; }
+      Array.from(el.attributes).forEach(function(attr){ el.removeAttribute(attr.name); });
+    });
+    return box.innerHTML;
+  }
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('data-definition') || el.getAttribute('title') || el.getAttribute('data-def') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span class="spu-term-pop__def"></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('.spu-term-pop__def').innerHTML = safeDefinition(def);
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

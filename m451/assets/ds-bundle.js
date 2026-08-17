@@ -1290,7 +1290,7 @@ const BLOCKS = [
     fit: 'contain',
     size: 'full',
     title: '',
-    caption: 'Legenda da imagem.',
+    caption: '',
     credit: ''
   }
 }, {
@@ -1605,9 +1605,9 @@ const BLOCKS = [
   label: 'Card de exemplo',
   icon: 'layers',
   cat: 'Mídia',
-  kind: 'text',
+  kind: 'container',
   rich: true,
-  fields: ['label', 'title', 'children'],
+  fields: ['label', 'title', 'body'],
   propFields: [{
     key: 'collapse',
     label: 'Comportamento',
@@ -1630,7 +1630,8 @@ const BLOCKS = [
     slot: '',
     collapse: 'none',
     title: 'Título do exemplo',
-    children: '<p>Descrição do caso.</p>'
+    body: '<p>Descrição do caso.</p>',
+    children: []
   }
 }, {
   type: 'statblock',
@@ -1830,6 +1831,22 @@ const BLOCKS = [
     label: 'Ícone da frente',
     type: 'icon'
   }, {
+    key: 'showIcon',
+    label: 'Exibir ícone da frente',
+    type: 'bool'
+  }, {
+    key: 'useCoverImage',
+    label: 'Usar imagem como capa',
+    type: 'bool'
+  }, {
+    key: 'coverSlot',
+    label: 'Imagem de capa',
+    type: 'slot'
+  }, {
+    key: 'coverAlt',
+    label: 'Texto alternativo da capa',
+    type: 'text'
+  }, {
     key: 'term',
     label: 'Título da frente',
     type: 'rich',
@@ -1840,9 +1857,19 @@ const BLOCKS = [
     type: 'rich',
     inline: true
   }, {
+    key: 'frontCue',
+    label: 'Instrução para virar',
+    type: 'rich',
+    inline: true
+  }, {
     key: 'definition',
     label: 'Texto do verso',
     type: 'rich'
+  }, {
+    key: 'backCue',
+    label: 'Instrução para voltar',
+    type: 'rich',
+    inline: true
   }, {
     key: 'color',
     label: 'Cor do flashcard',
@@ -1853,6 +1880,12 @@ const BLOCKS = [
     description: 'Uma descrição curta para apresentar o conteúdo.',
     definition: '<p>Use este espaço para desenvolver o conteúdo do verso.</p>',
     icon: 'building',
+    showIcon: true,
+    useCoverImage: false,
+    coverSlot: '',
+    coverAlt: '',
+    frontCue: 'Clique para virar',
+    backCue: 'Clique para voltar',
     color: 'var(--petrol-600)'
   }
 }, {
@@ -2224,6 +2257,12 @@ function migrate(doc) {
     }
     // 10 — Panel: conteúdo textual antigo vira `body`; children passa a ser array de blocos.
     if (b.type === 'panel' && typeof b.props.children === 'string') {
+      b.props.body = b.props.body || b.props.children;
+      b.props.children = [];
+      if (!Array.isArray(b.children)) b.children = [];
+    }
+    // 11 — ExampleCard: texto legado vira `body`; children passa a receber blocos.
+    if (b.type === 'examplecard' && typeof b.props.children === 'string') {
       b.props.body = b.props.body || b.props.children;
       b.props.children = [];
       if (!Array.isArray(b.children)) b.children = [];
@@ -5188,12 +5227,15 @@ __ds_scope.injectCss('spu-examplecard-css', `
 .spu-examplecard__cover{display:block;width:100%}
 .spu-examplecard__cover img,.spu-examplecard__cover image-slot{display:block;width:100%}
 .spu-examplecard__body{padding:clamp(1.4rem,3vw,2.2rem)}
-.spu-examplecard__title{margin:0 0 var(--space-3)}
+.spu-examplecard__title{margin:0 0 var(--space-3);line-height:1.12}
+.spu-examplecard__title .spu-richtext{line-height:inherit}
+.spu-examplecard__text+:where(.spu-blockstack){margin-top:var(--space-5)}
 .spu-examplecard__body>:last-child{margin-bottom:0}
 @media print{.spu-examplecard__details:not([open])>.spu-examplecard__content{display:block!important}.spu-examplecard__details>.spu-examplecard__hd::after{display:none}}
 `);
 function ExampleCard({
   children,
+  body,
   label = 'Exemplo prático',
   icon = 'map-pin',
   color,
@@ -5243,7 +5285,9 @@ function ExampleCard({
     className: 'spu-examplecard__body'
   }, title && React.createElement('h3', {
     className: 'spu-examplecard__title'
-  }, title), __ds_scope.renderRich(children)));
+  }, title), body && React.createElement('div', {
+    className: 'spu-examplecard__text'
+  }, __ds_scope.renderRich(body)), __ds_scope.renderRich(children)));
   const collapsible = !printing && (collapse === 'open' || collapse === 'closed');
   return React.createElement('div', {
     className: __ds_scope.cx('spu-examplecard', className),
@@ -6097,6 +6141,15 @@ __ds_scope.injectCss('spu-flip-css', `
 .spu-flip__hint{position:absolute;top:var(--space-4);right:var(--space-4);color:var(--text-faint)}
 .spu-flip__face--back .spu-flip__hint{color:var(--text-on-dark-muted)}
 .spu-flip__icon{width:48px;height:48px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;background:var(--color-primary-soft);background:color-mix(in srgb,var(--spu-flip-color) 14%,var(--color-surface));color:var(--spu-flip-color);margin-bottom:var(--space-4);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--spu-flip-color) 24%,transparent)}
+.spu-flip__frontcontent{position:relative;z-index:1;display:flex;flex-direction:column;height:100%}
+.spu-flip__face--cover{padding:0;border-top-width:0}
+.spu-flip__face--cover .spu-flip__frontcontent{padding:var(--space-6);color:#fff}
+.spu-flip__cover{position:absolute;inset:0;z-index:0;display:block;background:var(--color-surface-warm);overflow:hidden}
+.spu-flip__cover image-slot,.spu-flip__cover img{display:block;width:100%;height:100%;object-fit:cover}
+.spu-flip__cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,46,43,.12) 18%,rgba(14,46,43,.82) 100%);pointer-events:none}
+.spu-flip__face--cover .spu-flip__hint{z-index:3;color:#fff}
+.spu-flip__face--cover .spu-flip__icon{background:rgba(255,255,255,.16);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
+.spu-flip__face--cover .spu-flip__term,.spu-flip__face--cover .spu-flip__description,.spu-flip__face--cover .spu-flip__cue{color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.42)}
 .spu-flip__term{font-family:var(--font-display);font-weight:700;font-size:var(--fs-h5);margin:0 0 .25em;color:var(--text-strong)}
 .spu-flip__description{font-size:var(--fs-small);line-height:1.55;color:var(--text-muted);margin-top:var(--space-1)}
 .spu-flip__def{font-size:var(--fs-small);line-height:1.62;flex:1;min-height:0;overflow:auto;padding-right:var(--space-1)}
@@ -6123,6 +6176,14 @@ function Flipcard({
   definition,
   icon,
   hint,
+  showIcon = true,
+  useCoverImage = false,
+  coverSlot,
+  coverSrc,
+  coverAlt = '',
+  coverFit = 'cover',
+  frontCue = 'Clique para virar',
+  backCue = 'Clique para voltar',
   color,
   front,
   back,
@@ -6131,13 +6192,22 @@ function Flipcard({
   style
 }) {
   const [flipped, setFlipped] = React.useState(false);
-  const frontFace = front || React.createElement('div', {
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      height: '100%'
-    }
-  }, icon && React.createElement('span', {
+  const cover = useCoverImage && React.createElement('span', {
+    className: 'spu-flip__cover'
+  }, coverSlot ? React.createElement('image-slot', {
+    id: coverSlot,
+    shape: 'rect',
+    fit: coverFit,
+    alt: coverAlt,
+    placeholder: 'Imagem de capa',
+    style: { width: '100%', height: '100%', display: 'block' }
+  }) : coverSrc ? React.createElement('img', {
+    src: coverSrc,
+    alt: coverAlt
+  }) : null);
+  const frontFace = front || React.createElement(React.Fragment, null, cover, React.createElement('div', {
+    className: 'spu-flip__frontcontent'
+  }, showIcon && icon && React.createElement('span', {
     className: 'spu-flip__icon'
   }, React.createElement(__ds_scope.Icon, {
     name: icon,
@@ -6150,9 +6220,9 @@ function Flipcard({
     className: 'spu-flip__description'
   }, __ds_scope.renderRich(description || hint, {
     inline: true
-  })), React.createElement('span', {
+  })), __ds_scope.hasRichContent(frontCue) && React.createElement('span', {
     className: 'spu-flip__cue'
-  }, 'Clique para virar'));
+  }, __ds_scope.renderRich(frontCue, { inline: true }))));
   const backFace = back || React.createElement('div', {
     style: {
       display: 'flex',
@@ -6161,9 +6231,9 @@ function Flipcard({
     }
   }, React.createElement('div', {
     className: 'spu-flip__def'
-  }, __ds_scope.renderRich(definition)), React.createElement('span', {
+  }, __ds_scope.renderRich(definition)), __ds_scope.hasRichContent(backCue) && React.createElement('span', {
     className: 'spu-flip__cue'
-  }, 'Clique para voltar'));
+  }, __ds_scope.renderRich(backCue, { inline: true })));
   const toggle = event => {
     if (event && event.target && event.target.closest && event.target.closest('a,[contenteditable="true"]')) return;
     setFlipped(f => !f);
@@ -6189,7 +6259,7 @@ function Flipcard({
       minHeight: typeof height === 'number' ? `${height}px` : height
     }
   }, React.createElement('div', {
-    className: 'spu-flip__face spu-flip__face--front'
+    className: __ds_scope.cx('spu-flip__face', 'spu-flip__face--front', useCoverImage && !front && 'spu-flip__face--cover')
   }, React.createElement('span', {
     className: 'spu-flip__hint'
   }, React.createElement(__ds_scope.Icon, {
@@ -6596,7 +6666,8 @@ __ds_scope.injectCss('spu-section-css', `
 .spu-blockstack.spu-blockstack>*:not(.spu-block-title):not(.spu-block-kicker){margin-block:0}
 .spu-block-title{margin:0}
 .spu-block-title .spu-richtext{line-height:inherit}
-.spu-section__inner>.spu-blockstack>.spu-block-title:is(h3,h4,h5,h6):not(:last-child){margin-bottom:calc(-1 * var(--flow-block) + var(--space-3))}
+.spu-section__inner>.spu-blockstack>.spu-block-title:is(h3,h4,h5,h6):not(:last-child),
+.spu-csection :is(.spu-csection__always,.spu-csection__body)>.spu-block-title:is(h3,h4,h5,h6):not(:last-child){margin-bottom:calc(-1 * var(--flow-block) + var(--space-3))}
 .spu-section__inner{margin-inline:auto;padding-inline:var(--gutter)}
 .spu-section--narrow .spu-section__inner{max-width:var(--container-prose)}
 .spu-section--content .spu-section__inner{max-width:var(--container-content)}

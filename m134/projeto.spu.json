@@ -283,6 +283,12 @@
                 "description": "",
                 "definition": "<p>Quando um serviço público ligado a direitos fundamentais está ausente ou gravemente deficiente, a intervenção judicial não viola a separação de Poderes. O juiz não precisa ficar de braços cruzados diante da omissão do Estado.</p>",
                 "icon": "scale",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--green-600)"
               }
             },
@@ -294,6 +300,12 @@
                 "description": "",
                 "definition": "<p>Como regra, a decisão judicial não deve determinar medidas pontuais (\"faça esta obra\", \"contrate aquele serviço\"). Deve, em vez disso, indicar as finalidades a serem alcançadas e determinar que a própria administração apresente um plano e os meios adequados para chegar ao resultado.</p>",
                 "icon": "octagon-x",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--terra-500)"
               }
             }
@@ -584,7 +596,7 @@
                               "size": "full",
                               "title": "",
                               "caption": "",
-                              "credit": "<a href=\"https://g1.globo.com/rj/rio-de-janeiro/noticia/2024/12/08/justica-federal-determina-que-154-familias-desocupem-predio-abandonado-do-inss-no-centro.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Portal G1</a>&nbsp;(reprodução)",
+                              "credit": "<a href=\"https://g1.globo.com/rj/rio-de-janeiro/noticia/2024/12/08/justica-federal-determina-que-154-familias-desocupem-predio-abandonado-do-inss-no-centro.ghtml\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Portal G1</a> (reprodução)",
                               "__pullDown": false,
                               "__pullUp": false
                             }
@@ -635,8 +647,8 @@
                               "fit": "contain",
                               "size": "full",
                               "title": "",
-                              "caption": "<br>",
-                              "credit": "<a href=\"https://www.hojemais.com.br/aracatuba/noticia/cultura/telhado-do-centro-cultural-ferroviario-de-aracatuba-desaba-e-defesa-civil-avaliara-danosnbsp\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Manu Zambon</a>&nbsp;(reprodução)",
+                              "caption": "",
+                              "credit": "<a href=\"https://www.hojemais.com.br/aracatuba/noticia/cultura/telhado-do-centro-cultural-ferroviario-de-aracatuba-desaba-e-defesa-civil-avaliara-danosnbsp\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Manu Zambon</a> (reprodução)",
                               "__pullDown": true
                             }
                           }
@@ -686,7 +698,7 @@
                               "size": "full",
                               "title": "",
                               "caption": "",
-                              "credit": "<a href=\"https://oimparcial.com.br/noticias/2020/03/ministerio-publico-requer-restauracao-de-antigo-orfanato/\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: O Imparcial</a>&nbsp;(reprodução)",
+                              "credit": "<a href=\"https://oimparcial.com.br/noticias/2020/03/ministerio-publico-requer-restauracao-de-antigo-orfanato/\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: O Imparcial</a> (reprodução)",
                               "__pullDown": false
                             }
                           }
@@ -737,7 +749,7 @@
                               "size": "full",
                               "title": "",
                               "caption": "",
-                              "credit": "<a href=\"https://www.otempo.com.br/cidades/predio-ocupado-no-centro-de-bh-sera-transformado-em-habitacao-residencial-1.3463422\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: O Tempo</a>&nbsp;(reprodução)",
+                              "credit": "<a href=\"https://www.otempo.com.br/cidades/predio-ocupado-no-centro-de-bh-sera-transformado-em-habitacao-residencial-1.3463422\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: O Tempo</a> (reprodução)",
                               "__pullDown": false
                             }
                           }
@@ -786,7 +798,7 @@
                               "fit": "contain",
                               "size": "full",
                               "title": "",
-                              "caption": "<br>",
+                              "caption": "",
                               "credit": "<a href=\"https://www.atribuna.com.br/cidades/santos/terreno-em-santos-sofre-nova-ocupac-o-irregular-e-provoca-impasse-sobre-moradia-no-litoral-de-s-o-paulo-entenda-1.494089\" target=\"_blank\" rel=\"noopener noreferrer\">Foto: Silvio Luiz/AT (reprodução)</a>",
                               "__pullDown": false
                             }
@@ -858,7 +870,7 @@
           "id": "brib1rrk",
           "type": "prose",
           "props": {
-            "html": "<p>Em 2021, durante a pandemia de covid-19, no âmbito da <span data-term=\"ADPF\" data-definition=\"Arguição de Descumprimento de Preceito Fundamental\">ADPF</span>&nbsp;828, que pedia proteção para famílias vulneráveis ameaçadas de remoção, o ministro Luís Roberto Barroso concedeu liminar suspendendo desocupações de imóveis ocupados antes da pandemia. Em 2022, uma nova decisão no mesmo processo determinou que todos os Tribunais de Justiça e Tribunais Regionais Federais instalassem Comissões de Conflitos Fundiários — e tornou obrigatórias, antes de qualquer ordem de desocupação coletiva, a inspeção judicial no local e a audiência de mediação.</p><p>O deslocamento é importante: a intervenção judicial deixou de ser apenas reativa (expedir o mandado de despejo) para se tornar preventiva e estrutural (entender o conflito no território antes de decidir).</p>"
+            "html": "<p>Em 2021, durante a pandemia de covid-19, no âmbito da <span data-term=\"ADPF\" data-definition=\"Arguição de Descumprimento de Preceito Fundamental\">ADPF</span> 828, que pedia proteção para famílias vulneráveis ameaçadas de remoção, o ministro Luís Roberto Barroso concedeu liminar suspendendo desocupações de imóveis ocupados antes da pandemia. Em 2022, uma nova decisão no mesmo processo determinou que todos os Tribunais de Justiça e Tribunais Regionais Federais instalassem Comissões de Conflitos Fundiários — e tornou obrigatórias, antes de qualquer ordem de desocupação coletiva, a inspeção judicial no local e a audiência de mediação.</p><p>O deslocamento é importante: a intervenção judicial deixou de ser apenas reativa (expedir o mandado de despejo) para se tornar preventiva e estrutural (entender o conflito no território antes de decidir).</p>"
           }
         },
         {
@@ -903,6 +915,12 @@
                 "description": "",
                 "definition": "<p>Funciona no CNJ, com um conselheiro e ao menos quatro magistrados. Define protocolos nacionais para ações de despejo ou reintegração de posse que atinjam moradia coletiva ou áreas produtivas de populações vulneráveis, e orienta as comissões regionais por meio de notas técnicas.</p>",
                 "icon": "file-spreadsheet",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--terra-600)"
               }
             },
@@ -914,6 +932,12 @@
                 "description": "",
                 "definition": "<p>Instaladas em cada tribunal, funcionam como estrutura de apoio à solução pacífica desses conflitos: fazem visitas técnicas ao local, promovem audiências de mediação, produzem laudos multidisciplinares (com assistentes sociais, engenheiros, antropólogos, urbanistas) e se articulam com órgãos de habitação e assistência social.</p>",
                 "icon": "handshake",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--ochre-600)"
               }
             }
@@ -1052,14 +1076,14 @@
           "id": "bbehde7e",
           "type": "prose",
           "props": {
-            "html": "<p>Enquanto o Judiciário e o Ministério Público atuam caso a caso, os órgãos de controle avaliam o sistema como um todo e o diagnóstico deles ajuda a entender por que há tanta judicialização.&nbsp;</p>"
+            "html": "<p>Enquanto o Judiciário e o Ministério Público atuam caso a caso, os órgãos de controle avaliam o sistema como um todo e o diagnóstico deles ajuda a entender por que há tanta judicialização. </p>"
           }
         },
         {
           "id": "bifbf6rr",
           "type": "titulo",
           "props": {
-            "text": "O controle externo: <span style=\"font-weight: normal;\">o diagnóstico dos tribunais de contas&nbsp;</span>",
+            "text": "O controle externo: <span style=\"font-weight: normal;\">o diagnóstico dos tribunais de contas </span>",
             "level": "h3"
           }
         },
@@ -1141,7 +1165,7 @@
           "id": "bgmz53yd",
           "type": "prose",
           "props": {
-            "html": "<p>Cada Poder e cada ente da Federação deve manter seu próprio sistema de controle interno (arts. 70 e 74 da Constituição). No Poder Executivo, essa função é exercida pelas controladorias, no nível federal, é a Controladoria- Geral da União, estados e municípios têm seus próprios órgãos de controle interno.</p><p>Essas instituições são responsáveis pela avaliação das ações dos gestores a respeito do patrimônio público e pelo incremento da transparência da gestão, por meio de auditoria, correição, prevenção da corrupção e ouvidoria. Na gestão imobiliária, a atuação do controle interno se manifesta em <b>três frentes principais</b>:</p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Cada Poder e cada ente da Federação deve manter seu próprio sistema de controle interno (arts. 70 e 74 da Constituição). No Poder Executivo, essa função é exercida pelas controladorias: no nível federal, é a Controladoria-Geral da União; já os estados e municípios têm seus próprios órgãos de controle interno.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Essas instituições são responsáveis pela avaliação das ações dos gestores a respeito do patrimônio público e pelo incremento da transparência da gestão, por meio de auditoria, correição, prevenção da corrupção e ouvidoria. Na gestão imobiliária, a atuação do controle interno se manifesta em </span><b style=\"text-wrap-mode: initial;\">três frentes principais</b><span style=\"text-wrap-mode: initial; color: inherit;\">:</span></p>"
           }
         },
         {
@@ -1338,7 +1362,7 @@
                 "items": [
                   {
                     "title": "",
-                    "text": "Pense em um imóvel público ocioso que você conheça, considerando o que vimos neste material, o que a administração responsável precisaria demonstrar em juízo para preservar sua autonomia de decisão sobre esse bem? "
+                    "text": "Pense em um imóvel público ocioso que você conheça. Considerando o que vimos neste material, o que a administração responsável precisaria demonstrar em juízo para preservar sua autonomia de decisão sobre esse bem? "
                   },
                   {
                     "title": "",
