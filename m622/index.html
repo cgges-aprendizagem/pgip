@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M622 - Infrações e sanções administrativas</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"b7wj7hv0__slot":{"s":1,"x":0,"y":16.179097493489582,"u":"assets/images/img-0-b7wj7hv0__slot.png"},"b_mt0tc8y0_x5kx__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-b_mt0tc8y0_x5kx__slot.png"},"bxm1qixa__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bxm1qixa__slot.png"},"bqyu3gdl__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bqyu3gdl__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M622 - Infrações e sanções administrativas","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"ctqp5h7m","text":"Infração","hidden":false},{"id":"c07uyo6c","text":"Responsabilização e sanções\u003cbr>\u003cspan data-fs=\"h4\" style=\"\">\u003cspan data-fs=\"h3\" style=\"font-weight: normal;\">O que acontece quando uma infração é caracterizada? \u003c/span>\u003c/span>","hidden":false},{"id":"c8qpw5br","text":"Instrumentos\u003cbr>\u003cspan data-fs=\"h4\">\u003cspan data-fs=\"h3\" style=\"font-weight: normal;\">Como a Administração formaliza e conduz a responsabilização?\u003c/span>\u003c/span>\u003cbr>","hidden":false}]}},"blocks":[{"id":"b4g1ec7k","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"bqyu3gdl","type":"hero","props":{"kicker":"Instrumentos e práticas da ação fiscalizatória","kickerIcon":"gavel","title":"Infrações e sanções administrativas na gestão de imóveis públicos","byline":"Protegendo o patrimônio e o interesse público","slot":"bqyu3gdl__slot"}},{"id":"bxa054d5","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"b3lrbruy","type":"prose","props":{"html":"\u003cp>Como assinalado em outros materiais do Programa, a gestão de imóveis públicos pressupõe a aplicação de mecanismos capazes de prevenir, identificar violações ao adequado uso, disposição, manutenção e conservação dos bens públicos. \u003cmark data-hl=\"green\">Sem instrumentos adequados de controle, proteção e responsabilização, o patrimônio público fica sujeito à ocupação irregular, ao desvio de finalidade, à degradação física, à perda de receitas e ao comprometimento de sua função socioambiental\u003c/mark>.\u003cmark data-hl=\"terra\">\u003c/mark>\u003c/p>\u003cp>Apesar da relevância do tema, o ordenamento jurídico brasileiro não possui uma lei geral nacional dedicada especificamente às infrações e sanções administrativas aplicáveis à gestão de imóveis públicos. Diferentemente do que ocorre em áreas como meio ambiente, trânsito ou defesa do consumidor, as normas relacionadas ao controle e à proteção do patrimônio imobiliário encontram-se dispersas em diferentes diplomas legais, abrangendo regras patrimoniais, urbanísticas, ambientais, contratuais e processuais.\u003c/p>\u003cp>Essa dispersão normativa também se reflete na literatura especializada. Embora existam importantes contribuições da doutrina administrativista sobre poder de polícia, processo administrativo e sanções administrativas, são relativamente escassos os estudos voltados especificamente para a fiscalização e responsabilização no contexto da gestão de imóveis públicos. Como consequência, muitos órgãos acabam construindo suas práticas a partir da adaptação de conceitos desenvolvidos em outros campos do Direito Administrativo.\u003c/p>\u003cp>Diante desse cenário, o objetivo deste material é apresentar os principais conceitos, instrumentos relacionados às infrações e sanções administrativas na gestão de imóveis públicos. A proposta não é esgotar o tema nem substituir a legislação específica aplicável a cada ente ou órgão público. Buscamos oferecer uma referência introdutória que permita compreender os fundamentos da atuação administrativa voltada à proteção do patrimônio imobiliário público, facilitando a interpretação das normas específicas e apoiando a atuação dos profissionais que trabalham com fiscalização, controle e conformidade patrimonial.\u003c/p>"}},{"id":"bv34xo74","type":"callout","props":{"variant":"ear","tone":"success","icon":"alert-triangle","title":"","heading":"","children":"\u003cp>A fiscalização integra a gestão dos imóveis públicos e permite acompanhar sua ocupação, uso, conservação e destinação, identificar situações irregulares e reunir elementos para a adoção das providências cabíveis. Neste material, avançamos para as \u003cb>infrações e sanções administrativas\u003c/b>, buscando compreender desde a caracterização de uma conduta como infração até a responsabilização, a aplicação das medidas cabíveis e os instrumentos que dão suporte à atuação da Administração Pública.\u003c/p>"}}]},{"id":"b0fei05y","type":"section","props":{"width":"content","surface":"page","pad":"lg"},"children":[{"id":"ctqp5h7m","type":"titulo","props":{"text":"Infração","level":"h2"}},{"id":"b3jd7g8c","type":"titulo","props":{"text":"Quando uma irregularidade se torna uma infração administrativa?","level":"h3"}},{"id":"b6ep1qul","type":"prose","props":{"html":"\u003cp>Como foi tratado em outros materiais deste eixo, na gestão de imóveis públicos a fiscalização pode identificar diferentes situações: uma ocupação sem título, uma obra realizada sem autorização, o descumprimento das condições estabelecidas para utilização de um imóvel, danos ao patrimônio ou outras formas de uso incompatíveis com as normas aplicáveis. Mas identificar uma irregularidade não significa, automaticamente, estar diante de uma infração administrativa.\u003c/p>"}},{"id":"bk43fidi","type":"pullquote","props":{"variant":"block","fontSize":"auto","children":"\u003ci>Infração administrativa contra o patrimônio imobiliário público é toda \u003cb>ação\u003c/b> ou \u003cb>omissão\u003c/b> que importe em violação do adequado uso, disposição, manutenção e conservação do bem.\u003c/i>","cite":"as infrações administrativas poderão se perpetrar fora de bens imóveis públicos, desde que se caracterize o comprometimento da destinação original do bem público, do uso racional e de sua integridade física."}},{"id":"cz66jnqw","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Diferentemente do que ocorre em áreas como meio ambiente, trânsito ou defesa do consumidor, o ordenamento jurídico brasileiro não dispõe de uma lei nacional que tipifique, de forma sistemática e uniforme, as infrações administrativas relacionadas à gestão de imóveis públicos.\u003c/span>\u003c/p>\u003cp>Em regra, as legislações patrimoniais estabelecem competências, instrumentos de gestão e mecanismos de proteção dos bens públicos, mas raramente apresentam um rol detalhado de condutas infracionais e respectivas sanções. Em razão da inexistência de uma legislação nacional que tipifique as infrações patrimoniais aplicáveis aos imóveis públicos, sua caracterização normalmente decorre da violação de deveres relacionados ao uso, à ocupação, à conservação e à proteção desses bens. \u003c/p>"}},{"id":"be9wbs80","type":"kicker","props":{"icon":"megaphone","children":"podem ser consideradas infrações"}},{"id":"bk229pcj","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bzvhtr4i","type":"markerlist","props":{"variant":"icon","icon":"ban","accent":"var(--terra-600)","items":[{"title":"","text":"Ocupação ou utilização de imóvel público sem autorização ou em desconformidade com o título concedido. "},{"title":"","text":"Realização de obras, intervenções ou benfeitorias sem autorização ou em desacordo com as condições estabelecidas pelo Poder Público. "},{"title":"","text":"Alteração, descaracterização, dano ou degradação do imóvel público ou de seus atributos protegidos. "}]}},{"id":"b_mswe0val_87hm","type":"markerlist","props":{"variant":"icon","icon":"ban","accent":"var(--terra-600)","items":[{"title":"","text":"Utilização do imóvel em desacordo com sua destinação legal, contratual ou administrativa. "},{"title":"","text":"Prática de atos que comprometam o uso coletivo, a conservação, a proteção ou a gestão regular do bem público."},{"title":"","text":"Descumprimento de obrigações impostas pela legislação ou por instrumentos de destinação e uso do imóvel. "}]}}]},{"id":"bohyz8jw","type":"callout","props":{"variant":"header","tone":"warning","icon":"alert-triangle","title":"","heading":"","children":"\u003cp>Uma mesma conduta pode configurar, simultaneamente, infração patrimonial e infração ambiental, urbanística, sanitária ou de outra natureza, cabendo a cada órgão atuar no âmbito de suas competências legais.\u003c/p>"}},{"id":"b4q7rhoz","type":"callout","props":{"variant":"ear","tone":"info","icon":"pencil-line","title":"Na prática","heading":"","children":"\u003cp>Imagine que uma fiscalização encontre uma construção em um imóvel público. A existência da construção, isoladamente, não permite concluir que houve uma infração. É preciso verificar, entre outras questões, se a intervenção dependia de autorização, se ela foi concedida, se a obra respeitou seus limites e quem realizou ou é responsável pela intervenção.\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É a relação entre \u003cb>fato + norma + autoria + elementos de comprovação\u003c/b> que permite caracterizar juridicamente a situação encontrada.\u003c/span>\u003c/p>"}}]},{"id":"b4soqj7g","type":"section","props":{"width":"content","surface":"dark","pad":"md"},"children":[{"id":"bha9nesa","type":"kicker","props":{"icon":"git-pull-request","children":"Saiba mais sobre Infrações explorando as questões a seguir"}}]},{"id":"b1y17q44","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"page","pad":"lg"},"children":[{"id":"cqoy0a05","type":"titulo","props":{"text":"O que precisa ser demonstrado?","level":"h3"}},{"id":"cgid1raf","type":"collapsebreak","props":{}},{"id":"cyt9ceda","type":"prose","props":{"html":"\u003cp>A caracterização de uma infração exige que a Administração reúna elementos suficientes para fundamentar sua atuação. Dois conceitos são particularmente importantes: materialidade e autoria.\u003c/p>"}},{"id":"bbtl2261","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bwygbgab","type":"flashcard","props":{"term":"Materialidade ","description":"","definition":"\u003cp>Materialidade diz respeito à comprovação da ocorrência dos fatos que configuram a infração. É preciso demonstrar, por meio dos elementos disponíveis, o que aconteceu, onde, quando e em quais circunstâncias, na medida necessária à caracterização da conduta.\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003cbr>\u003c/p>","icon":"file-question-mark","showIcon":true,"useCoverImage":false,"coverSlot":"bwygbgab__coverSlot","coverAlt":"","frontCue":"Clique para virar","backCue":"Clique para voltar","color":"var(--ochre-600)"}},{"id":"b_mswe8t1a_g67s","type":"flashcard","props":{"term":"Autoria ","description":"","definition":"\u003cp>Autoria corresponde à identificação de quem praticou ou pode ser juridicamente responsabilizado pela conduta. Identificar uma irregularidade em determinado imóvel, portanto, não significa necessariamente que já esteja identificado seu autor.\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003cbr>\u003c/p>","icon":"message-circle-question-mark","showIcon":true,"useCoverImage":false,"coverSlot":"b_mswe8t1a_g67s__coverSlot","coverAlt":"","frontCue":"Clique para virar","backCue":"Clique para voltar","color":"var(--terra-600)"}}]},{"id":"b_mswe9p70_88c8","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Essa distinção produz consequências práticas importantes. Quando ainda existem dúvidas relevantes sobre os fatos ou sobre quem os praticou, a Administração pode precisar obter novas informações antes de formalizar a imputação de uma infração.\u003c/span>\u003c/p>"}},{"id":"b7wj7hv0","type":"examplecard","props":{"label":"A experiência da SPU","icon":"pencil-line","color":"","slot":"b7wj7hv0__slot","collapse":"none","title":"","body":"\u003cp>A experiência da Secretaria do Patrimônio da União (SPU) demonstra que a atuação fiscalizatória deve ser pautada pela produção de evidências e pela cautela técnica. Quando houver dúvidas quanto à ocorrência da infração (materialidade) ou à identificação do responsável (autoria), a orientação é evitar a adoção precipitada de medidas sancionatórias e aprofundar a instrução do caso. \u003c/p>\u003cp>A regulamentação dos imóveis da União oferece um bom exemplo dessa lógica. A \u003ca href=\"https://www.in.gov.br/web/dou/-/instrucao-normativa-spu/mgi-n-304-de-30-de-julho-de-2026-722990682\" target=\"_blank\" rel=\"noopener noreferrer\">IN SPU/MGI nº 304/2026\u003c/a> determina que, havendo incerteza sobre a autoria ou algum elemento da materialidade, o servidor não lavre imediatamente o auto de infração. O suposto infrator deve ser notificado para apresentar informações ou documentos. Somente se, após essa etapa, forem constatadas a ocorrência da infração e sua autoria, deverá ser lavrado o auto. \u003c/p>\u003cp>Esse procedimento evidencia uma ideia importante para qualquer atuação: constatar uma situação no imóvel, caracterizar uma infração e atribuí-la a determinada pessoa são etapas relacionadas, mas não necessariamente coincidentes.\u003c/p>\u003cp>Na gestão dos imóveis da União, a \u003ca href=\"https://www.in.gov.br/web/dou/-/instrucao-normativa-spu/mgi-n-304-de-30-de-julho-de-2026-722990682\" target=\"_blank\" rel=\"noopener noreferrer\">IN SPU/MGI nº 304/2026\u003c/a> define expressamente as condutas consideradas infrações contra o patrimônio imobiliário federal.\u003c/p>"},"children":[{"id":"b76gklwh","type":"feature","props":{"columns":3,"card":true,"accent":"","layout":"top","items":[{"icon":"building","title":"Violação de deveres sobre o imóvel","text":"Condutas relacionadas ao adequado uso, gozo, disposição, proteção, manutenção e conservação."},{"icon":"file-x","title":"Intervenções não autorizadas","text":"Aterros, construções, obras, cercas, desmatamento, instalação de equipamentos e demais intervenções abrangidas pela norma, quando realizadas sem autorização ou em desacordo com a autorização concedida."},{"icon":"hammer","title":"Descaracterização do imóvel","text":"Descaracterização de imóvel da União sem autorização."}]}}]}]},{"id":"bp1o43px","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"page","pad":"lg"},"children":[{"id":"bwafb4vi","type":"titulo","props":{"text":"Quem é considerado infrator?","level":"h3"}},{"id":"c1lx972k","type":"collapsebreak","props":{}},{"id":"br41mkqj","type":"prose","props":{"html":"\u003cp>A identificação de uma infração não se completa apenas com a constatação da conduta irregular. Para que haja responsabilização administrativa, é necessário também identificar quem praticou a ação ou omissão à qual a infração é atribuída. Por isso, a análise da autoria é parte essencial da caracterização da infração.\u003c/p>\u003cp>A definição de quem pode ser considerado infrator depende da legislação aplicável. Não se deve presumir, por exemplo, que o ocupante do imóvel, o titular de um direito sobre ele e o responsável por determinada intervenção sejam necessariamente a mesma pessoa. A responsabilização deve estar relacionada à conduta efetivamente apurada e aos critérios estabelecidos pelo respectivo regime jurídico.\u003c/p>"}},{"id":"bbtfzkxv","type":"callout","props":{"variant":"ear","tone":"note","icon":"pencil-line","title":"A experiência da SPU","heading":"","children":"\u003cp>Para os imóveis da União, a \u003ca href=\"https://www.in.gov.br/web/dou/-/instrucao-normativa-spu/mgi-n-304-de-30-de-julho-de-2026-722990682\" target=\"_blank\" rel=\"noopener noreferrer\">IN SPU/MGI nº 304/2026\u003c/a> considera infrator aquele que, diretamente ou por interposta pessoa, por ação ou omissão, incorrer nas hipóteses de infração previstas pela própria norma. \u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A IN reforça a importância de demonstrar essa relação entre conduta e autoria: \u003cmark>quando houver incerteza sobre quem praticou a infração, o auto de infração não deve ser lavrado de imediato\u003c/mark>. O suposto infrator é inicialmente notificado para apresentar informações ou documentos, e o auto somente será lavrado se, após essa apuração, forem constatadas a ocorrência da infração e sua autoria.\u003c/span>\u003c/p>"}}]},{"id":"br7dscos","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"page","pad":"lg"},"children":[{"id":"b909idnk","type":"titulo","props":{"text":"Quais instrumentos são utilizados na apuração de uma infração?","level":"h3"}},{"id":"c3gp9pia","type":"collapsebreak","props":{}},{"id":"bow54vnc","type":"prose","props":{"html":"\u003cp>A identificação e a apuração de uma possível infração precisam ser formalizadas e comunicadas ao interessado por meio dos instrumentos previstos na legislação aplicável. Entre eles, dois aparecem com frequência nos procedimentos administrativos de fiscalização: a \u003cb>notificação administrativa\u003c/b> e o\u003cb> auto de infração\u003c/b>.\u003c/p>\u003cp>Embora possam estar relacionados, eles cumprem funções diferentes e não devem ser confundidos.\u003c/p>"}},{"id":"bwy08iqj","type":"accordion","props":{"numbered":false,"items":[{"title":"Comunicação administrativa","content":"\u003cp>A comunicação dos atos ao interessado é parte importante do processo administrativo, assegurando sua ciência e, quando cabível, a possibilidade de manifestação, apresentação de documentos ou cumprimento de providências. Essa comunicação pode assumir diferentes formas e denominações conforme a \u003cspan data-term=\"legislação aplicável\" data-definition=\"Constituição Federal, art. 5º, LIV e LV; Lei nº 9.784/1999, arts. 2º e 26 e seguintes\">legislação aplicável\u003c/span>. \u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">No contexto da apuração de infrações, ela pode desempenhar uma função particularmente importante: permitir que a Administração obtenha informações necessárias antes de concluir pela existência da infração ou por sua autoria.\u003c/span>\u003c/p>","blocks":[{"id":"bea70vnz","type":"callout","props":{"variant":"header","tone":"info","icon":"lightbulb","title":"A experiência da SPU","heading":"","children":"\u003cp>Na fiscalização dos imóveis da União, o instrumento de comunicação utilizado é a \u003cb>notificação administrativa\u003c/b>. \u003cspan style=\"color: inherit; text-wrap-mode: initial;\">A IN SPU/MGI nº 304/2026 prevê que, quando houver incerteza sobre a autoria ou algum elemento da materialidade da infração, o servidor não deve lavrar imediatamente o auto de infração. O suposto infrator é inicialmente notificado para apresentar informações ou documentos. A notificação deve advertir que o auto será lavrado se as informações não forem apresentadas ou não forem suficientes para descaracterizar a materialidade ou a autoria.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A norma admite diferentes formas de notificação: pessoalmente, por correio com aviso de recebimento, por serviços eletrônicos com confirmação de recebimento ou, nas hipóteses previstas, por edital.\u003c/span>\u003c/p>"}}]},{"title":"Auto de infração","content":"\u003cp>O auto de infração é o ato administrativo que formaliza a constatação de uma infração e registra os elementos que fundamentam a responsabilização e as medidas dela decorrentes, de acordo com a legislação aplicável. Sua finalidade principal é documentar os fatos constatados pela fiscalização, preservando elementos probatórios e garantindo transparência à atuação estatal.\u003c/p>\u003cp>Diferentemente da notificação utilizada para esclarecer uma situação ainda incerta, o auto pressupõe que a Administração tenha elementos para caracterizar a infração e atribuir sua autoria.\u003c/p>\u003cp>Importa destacar que o auto de infração, por si só, não implica condenação definitiva nem substitui o devido processo administrativo. Ele representa um ato inicial de constatação, devendo ser sucedido, quando cabível, pela garantia do contraditório e da ampla defesa antes da aplicação de sanções.\u003c/p>","blocks":[{"id":"bep48tws","type":"kicker","props":{"icon":"compass","children":"Notificação ou auto de infração?"}},{"id":"bbycdtei","type":"datatable","props":{"caption":"","columns":[{"key":"c0","label":"","align":"right"},{"key":"c1","label":"Notificação administrativa"},{"key":"c2","label":"Auto de infração"}],"rows":[{"c0":"Função","c1":"Comunicar, solicitar informações ou determinar providências, conforme o caso","c2":"Formalizar a infração constatada"},{"c0":"Há certeza sobre a infração?","c1":"Pode ser utilizada quando ainda há elementos a esclarecer","c2":"Pressupõe elementos suficientes para caracterizá-la"},{"c0":"Autoria e materialidade","c1":"Pode ajudar a esclarecê-las","c2":"Devem estar suficientemente caracterizadas"},{"c0":"Pode existir sem o outro?","c1":"Sim","c2":"Sim, conforme o caso"}],"dense":true,"highlightFirst":false,"striped":false,"tone":"terra","className":"spu-table-wrap--tone-terra"}},{"id":"b_mswewbkl_xr7m","type":"callout","props":{"variant":"header","tone":"info","icon":"lightbulb","title":"A experiência da SPU","heading":"","children":"\u003cp>Na gestão dos imóveis da União, verificada a prática de infração, o servidor responsável pela fiscalização deve lavrar o auto de infração. A IN nº 304/2026 estabelece que o documento registre, entre outros elementos, a identificação do imóvel e do responsável, a descrição e a fundamentação legal da infração, a sanção aplicada e a notificação para apresentação de defesa. \u003c/p>"}}]}]}}]},{"id":"bx2h0fsb","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"c07uyo6c","type":"titulo","props":{"text":"Responsabilização e sanções\u003cbr>\u003cspan data-fs=\"h4\" style=\"\">\u003cspan data-fs=\"h3\" style=\"font-weight: normal;\">O que acontece quando uma infração é caracterizada? \u003c/span>\u003c/span>","level":"h2"}},{"id":"clrt2006","type":"prose","props":{"html":"\u003cp>Caracterizar uma infração administrativa é apenas uma etapa da atuação do Poder Público. A partir dela, é preciso verificar quem pode ser responsabilizado, quais medidas são juridicamente cabíveis e quais garantias devem ser observadas antes e durante sua aplicação.\u003c/p>\u003cp>É nesse contexto que entram as sanções administrativas: \u003cmark data-hl=\"terra\">consequências previstas no ordenamento jurídico para determinadas ações ou omissões consideradas infrações\u003c/mark>. Sua aplicação não é automática. Deve estar amparada pela legislação aplicável e observar as garantias que regem o exercício do poder sancionador da Administração.\u003c/p>\u003cp>Assim como ocorre com as infrações, não existe um conjunto único de sanções aplicável a todos os imóveis públicos. União, estados, Distrito Federal e municípios submetem-se aos respectivos regimes jurídicos e às competências estabelecidas pelo ordenamento. Por isso, mais importante do que memorizar uma lista de penalidades é compreender a lógica da responsabilização administrativa e saber identificar, em cada caso, a norma aplicável.\u003c/p>"}},{"id":"bhoxajbw","type":"titulo","props":{"text":"O que é uma sanção administrativa?","level":"h3"}},{"id":"b13485ec","type":"prose","props":{"html":"\u003cp>No campo das infrações administrativas, a sanção está associada à consequência imposta pela Administração em razão da prática de uma conduta definida pelo ordenamento como infração. Sua finalidade e seu regime jurídico permitem distingui-la de outras providências que a Administração também pode adotar diante de uma situação irregular.\u003c/p>"}},{"id":"bcejcsqk","type":"pullquote","props":{"variant":"block","fontSize":"auto","children":"\u003ci>Essa distinção é especialmente importante na gestão de imóveis públicos. Uma mesma situação pode demandar providências destinadas a punir uma conduta, impedir sua continuidade, restabelecer a situação do imóvel, reparar um prejuízo ou promover sua regularização, quando esta for juridicamente possível. \u003c/i>","cite":"Essas providências podem coexistir, mas não possuem necessariamente a mesma natureza jurídica."}},{"id":"b_mt0ss9rw_9spk","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">As denominações, a natureza jurídica e os efeitos dessas medidas podem variar conforme o regime aplicável. Por isso, quem atua na gestão de imóveis públicos deve identificar, em cada caso, quais infrações, sanções e demais providências estão previstas na legislação do respectivo ente ou patrimônio.\u003c/span>\u003c/p>\u003cp>Na regulamentação dos imóveis da União, por exemplo, a IN SPU/MGI nº 304/2026 identifica expressamente como sanções o embargo, a multa, a desocupação e a demolição ou remoção. A norma também prevê, sem confundi-las com essas sanções, outras possíveis consequências, como indenização, responsabilidade civil e penal e eventual extinção da destinação outorgada.\u003c/p>"}},{"id":"bjc4uhpj","type":"panel","props":{"variant":"box","kicker":"Nem toda consequência de uma infração é uma sanção","kickerIcon":"badge-alert","title":"","color":"","bg":"var(--cloud-50)","body":"\u003cp>A caracterização de uma infração administrativa pode dar origem a diferentes consequências, conforme a legislação aplicável. É importante verificar a natureza e o fundamento jurídico de cada uma delas, evitando tratar como sanção toda providência adotada pela Administração.\u003c/p>\u003cp>As denominações, a natureza jurídica e os efeitos dessas providências podem variar conforme o regime aplicável. Por isso, quem atua na gestão de imóveis públicos deve identificar, em cada caso, quais infrações, sanções e demais consequências estão previstas na legislação aplicável ao respectivo patrimônio.\u003c/p>"},"children":[]}]},{"id":"b_mt0t1oy5_rjeg","type":"section","props":{"width":"content","surface":"dark","pad":"md"},"children":[{"id":"b_mt0t1oy5_8wv2","type":"kicker","props":{"icon":"git-pull-request","children":"Saiba mais sobre SanÇões explorando as questões a seguir"}}]},{"id":"bjey4ecg","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"page","pad":"lg"},"children":[{"id":"bcihfepf","type":"titulo","props":{"text":"Quais garantias orientam a aplicação das sanções?","level":"h3"}},{"id":"c3lufzpo","type":"collapsebreak","props":{}},{"id":"b_mswf962u_wl02","type":"prose","props":{"html":"\u003cp>O poder de aplicar sanções não autoriza uma atuação arbitrária da Administração. A responsabilização administrativa deve observar as garantias estabelecidas pelo ordenamento jurídico.\u003c/p>\u003cp>A Constituição Federal assegura que ninguém será privado da liberdade ou de seus bens sem o devido processo legal e garante, nos processos administrativos, o contraditório e a ampla defesa. No âmbito da Administração Pública Federal, a \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/l9784.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 9.784/1999\u003c/a> também estabelece princípios e regras para o processo administrativo: \u003c/p>"}},{"id":"b0554gay","type":"pullquote","props":{"variant":"eye","fontSize":"h4","children":"\u003cp>\u003ci>A Administração Pública obedecerá, dentre outros, aos princípios da legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público e eficiência.\u003c/i>\u003c/p>","cite":"Art. 2, Lei n. 9.784/1999"}},{"id":"b_mt0swg2a_6z59","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Em termos práticos, a Administração precisa demonstrar qual conduta está sendo atribuída ao interessado, qual norma fundamenta essa imputação e quais consequências dela podem decorrer, assegurando-lhe ciência e possibilidade de exercer sua defesa nos termos da legislação aplicável.\u003c/span>\u003c/p>"}}]},{"id":"bjvh2f86","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"page","pad":"lg"},"children":[{"id":"csk0k4mw","type":"titulo","props":{"text":"Quais sanções podem ser aplicadas?","level":"h3"}},{"id":"ct4tds90","type":"collapsebreak","props":{}},{"id":"cnm8ygxz","type":"prose","props":{"html":"\u003cp>\u003cb>Não há uma resposta única\u003c/b>. As sanções dependem da legislação aplicável ao patrimônio e à situação analisada.\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A regulamentação dos imóveis da União oferece um exemplo concreto de como essas consequências podem ser disciplinadas.\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Para as infrações contra o patrimônio da União, a IN SPU/MGI nº 304/2026 prevê expressamente\u003cb> quatro sanções\u003c/b>, que podem ser aplicadas isolada ou cumulativamente, observadas as características da infração e as disposições da legislação aplicável. \u003c/span>\u003c/p>"}},{"id":"b46d1llg","type":"contentslider","props":{"hint":"","accent":"","showTabNumbers":false,"slides":[{"showImage":false,"slot":"b46d1llg__slides_1_slot","alt":"","caption":"","labelIcon":"octagon-pause","label":"","tabLabel":"Embargo","title":"\u003cspan data-fs=\"h3\">Embargo\u003c/span>","subtitle":"","description":"\u003cp>Na regulamentação da SPU, o \u003cb>embargo\u003c/b> consiste na determinação de paralisação imediata de obra, serviço ou atividade até que a União se manifeste sobre a regularidade da situação.\u003c/p>\u003cp>A medida pode ser aplicada quando houver inadequação da destinação, inobservância do interesse público, irregularidade de uso ou comprometimento da integridade física de imóvel da União. O auto de embargo não substitui o auto de infração, e o embargo pode ser aplicado cumulativamente com outras sanções previstas na IN.\u003cbr>\u003c/p>","linkHref":"","linkLabel":""},{"showImage":false,"slot":"b_mswgqpby_mw4m__slot","alt":"","caption":"","labelIcon":"banknote-x","label":"","tabLabel":"Multa","title":"\u003cspan data-fs=\"h3\">Multa\u003c/span>","subtitle":"","description":"\u003cp>A multa é uma das sanções previstas para as infrações contra o patrimônio da União. Sua aplicação e cálculo devem observar os critérios estabelecidos na legislação patrimonial e na regulamentação específica.\u003c/p>\u003cp>Na IN nº 304/2026, a multa possui caráter pessoal: é aplicada ao responsável pela infração e não se transfere aos herdeiros ou sucessores. \u003c/p>","linkHref":"","linkLabel":""},{"showImage":false,"slot":"b_mswgqovw_egp2__slot","alt":"","caption":"","labelIcon":"baggage-claim","label":"","tabLabel":"Desocupação","title":"\u003cspan data-fs=\"h3\">Desocupação\u003c/span>","subtitle":"","description":"A desocupação também integra expressamente o conjunto de sanções previstas pela IN nº 304/2026. Sua aplicação busca fazer cessar a ocupação do imóvel da União nas hipóteses abrangidas pela legislação patrimonial.\u003cbr>","linkHref":"","linkLabel":""},{"showImage":false,"slot":"b_mswgqo1w_ivjs__slot","alt":"","caption":"","labelIcon":"brick-wall","label":"","tabLabel":"Demolição ou remoção","title":"\u003cspan style=\"font-size: 32.8px; letter-spacing: -0.3936px;\">Demolição ou remoção\u003c/span>","subtitle":"","description":"\u003cp>A demolição ou remoção pode alcançar aterros, construções, obras, cercas, benfeitorias e equipamentos instalados em imóveis da União, nas condições estabelecidas pela norma.\u003c/p>\u003cp>A IN prevê prazo para regularização, quando cabível, ou para que o próprio responsável realize a demolição ou remoção. Caso isso não ocorra, a SPU poderá promover a medida, inclusive em atuação conjunta com órgão estadual ou municipal, observados os procedimentos estabelecidos na regulamentação.\u003cbr>\u003c/p>","linkHref":"","linkLabel":""}]}}]},{"id":"b_mswfoag2_fo5t","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_mswfoag2_id4c","type":"titulo","props":{"text":"Que outras consequências podem decorrer da infração?","level":"h3"}},{"id":"b_mswfoag2_2e19","type":"collapsebreak","props":{}},{"id":"b_mswfoag2_yram","type":"prose","props":{"html":"\u003cp>Uma infração administrativa pode produzir consequências que não se confundem com as sanções administrativas. Quais serão elas depende da legislação aplicável a cada situação.\u003c/p>\u003cp>Na regulamentação dos imóveis da União, a IN SPU/MGI nº 304/2026 prevê a aplicação das sanções administrativas sem prejuízo da responsabilidade civil e penal, da indenização prevista na legislação patrimonial e, quando cabível, da extinção da destinação outorgada.\u003c/p>"}},{"id":"b_mswfoag2_7pe1","type":"titulo","props":{"text":"Responsabilidade civil e penal","level":"h4"}},{"id":"bcgnxabx","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bxm1qixa","type":"examplecard","props":{"label":"Civil","icon":"scale","color":"","slot":"bxm1qixa__slot","collapse":"none","title":"","body":"\u003cp>A \u003cb>responsabilidade civil\u003c/b> está relacionada, em termos gerais, à obrigação de reparar danos causados a terceiros ou ao patrimônio público. Assim, uma conduta que configure infração administrativa pode também gerar o dever de reparar o dano, desde que presentes os requisitos estabelecidos pela legislação aplicável.\u003c/p>"},"children":[]},{"id":"b_mt0tc8y0_x5kx","type":"examplecard","props":{"label":"Penal","icon":"scale","color":"","slot":"b_mt0tc8y0_x5kx__slot","collapse":"none","title":"","body":"\u003cp>A \u003cb>responsabilidade penal\u003c/b>, por sua vez, pode ocorrer quando a mesma conduta também estiver prevista em lei como crime ou contravenção penal. Nesse caso, sua apuração ocorre na esfera penal e não se confunde com o processo administrativo destinado à apuração da infração e à aplicação das sanções administrativas.\u003c/p>"},"children":[]}]},{"id":"b_mswfoag2_411a","type":"titulo","props":{"text":"Indenização prevista na legislação patrimonial","level":"h4"}},{"id":"b_mswfoag2_f76q","type":"prose","props":{"html":"\u003cp>A indenização não deve ser confundida com a multa. Enquanto a multa é expressamente classificada pela IN nº 304/2026 como sanção administrativa, a indenização possui fundamento próprio na legislação patrimonial.\u003c/p>"}},{"id":"b_mswfoag2_05jp","type":"callout","props":{"variant":"ear","tone":"info","icon":"pen-line","title":"A experiência da SPU","heading":"","children":"\u003cp>No caso dos imóveis da União, a Lei nº 9.636/1998 prevê indenização pela posse ou ocupação ilícita de imóvel da União. A IN nº 304/2026 mantém essa indenização separada das sanções administrativas previstas para as infrações contra o patrimônio da União.\u003c/p>\u003cp>\u003cul>\u003cli>\u003cb>MULTA\u003c/b> → sanção administrativa.\u003c/li>\u003cli>\u003cb>INDENIZAÇÃO \u003c/b>→ consequência patrimonial prevista em lei para a posse ou ocupação ilícita.\u003c/li>\u003c/ul>\u003c/p>"}},{"id":"b_mswfoag2_6b21","type":"titulo","props":{"text":"Extinção da destinação outorgada","level":"h4"}},{"id":"b_mswfoag2_3115","type":"prose","props":{"html":"\u003cp>Um imóvel público pode ter seu uso atribuído a determinada pessoa, órgão ou entidade por meio de diferentes instrumentos de destinação, sujeitos às condições estabelecidas na legislação e no respectivo ato ou contrato.\u003c/p>\u003cp>A extinção da destinação significa o encerramento dessa relação jurídica, nas hipóteses previstas no regime aplicável. Assim, \u003cmark>quando uma infração também representar descumprimento das condições que fundamentaram a destinação, poderá haver, quando cabível, sua extinção\u003c/mark>, independentemente das sanções administrativas aplicáveis.\u003c/p>"}},{"id":"b_mswfoag2_02vh","type":"callout","props":{"variant":"ear","tone":"warning","icon":"pen-line","title":"A experiência da SPU","heading":"","children":"\u003cp>A IN nº 304/2026 estabelece que, quando a infração for cometida por beneficiário de destinação outorgada pela União, a aplicação das sanções previstas na norma não prejudica a eventual extinção da destinação, se esta for cabível.\u003c/p>"}}]},{"id":"boh3m9b6","type":"section","props":{"width":"content","surface":"terra-dark","pad":"lg"},"children":[{"id":"c8qpw5br","type":"titulo","props":{"text":"Instrumentos\u003cbr>\u003cspan data-fs=\"h4\">\u003cspan data-fs=\"h3\" style=\"font-weight: normal;\">Como a Administração formaliza e conduz a responsabilização?\u003c/span>\u003c/span>\u003cbr>","level":"h2"}},{"id":"cv2f0d3l","type":"prose","props":{"html":"\u003cp>A identificação de uma infração e a previsão de uma sanção não são suficientes, por si sós, para concluir a responsabilização administrativa. Os fatos precisam ser documentados, o interessado deve tomar ciência da imputação e ter oportunidade de se manifestar, e a Administração deve analisar os elementos reunidos e decidir de forma fundamentada.\u003c/p>\u003cp>Essas etapas são desenvolvidas por meio de um processo administrativo, cuja forma e cujos instrumentos dependem da legislação aplicável a cada ente e situação. Mais do que uma formalidade, o processo organiza as informações e os atos necessários à apuração da infração e à responsabilização, ao mesmo tempo que assegura o exercício do contraditório e da ampla defesa.\u003c/p>"}},{"id":"b33ayuj7","type":"kicker","props":{"icon":"arrow-left-right","children":"Navegue pelas questões abaixo"}}]},{"id":"bx1bitux","type":"sectionslider","props":{"loop":true},"children":[{"id":"cug8s157","type":"sectionslide","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"boez808u","type":"titulo","props":{"text":"Quais elementos podem compor a instrução do processo?","level":"h3"}},{"id":"bd8mtpp0","type":"prose","props":{"html":"\u003cp>A decisão administrativa precisa estar apoiada em elementos que permitam compreender o que ocorreu, onde ocorreu, quem está envolvido e quais fatos e normas fundamentam a atuação da Administração. Dependendo da situação, podem ser utilizados relatórios, fotografias, documentos, levantamentos territoriais, imagens, pareceres e outros meios admitidos pelo regime aplicável.\u003c/p>\u003cp>Não existe uma relação única de documentos válida para todos os entes públicos. A legislação e os procedimentos adotados por cada Administração definem os elementos necessários à adequada instrução.\u003c/p>"}},{"id":"bbfn5q59","type":"callout","props":{"variant":"ear","tone":"warning","icon":"pencil-line","title":"A experiência da SPU","heading":"","children":"\u003cp>Na fiscalização dos imóveis da União, a IN SPU/MGI nº 304/2026 determina que o processo seja inicialmente instruído com ordem de fiscalização; relatório de fiscalização; auto de infração, notificação ou ambos, quando houver; croqui das condições e irregularidades apuradas, quando houver auto; relatório fotográfico ou imagem de satélite; e, quando aplicável, identificação da Linha de Preamar Médio (LPM) ou da Linha Média das Enchentes Ordinárias (LMEO). A norma exige ainda a comprovação da data da ciência quando houver auto de infração ou notificação. \u003c/p>"}}]},{"id":"b_mt0twvg5_euaq","type":"sectionslide","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_mt0twvg5_giug","type":"titulo","props":{"text":"Como se assegura o direito de defesa?","level":"h3"}},{"id":"b_mt0twvg5_annt","type":"prose","props":{"html":"\u003cp>Uma vez formalizada a imputação, deve ser assegurada ao interessado a possibilidade de conhecer os fatos que lhe são atribuídos e apresentar sua defesa, nos termos do regime jurídico aplicável.\u003c/p>\u003cp>A defesa permite contestar os fatos, apresentar documentos e outros elementos e formular os argumentos que deverão ser considerados pela Administração antes da decisão. É uma manifestação concreta das garantias do contraditório e da ampla defesa apresentadas no eixo anterior.\u003c/p>"}},{"id":"b_mt0twvg5_cebr","type":"callout","props":{"variant":"ear","tone":"info","icon":"pencil-line","title":"A experiência da SPU","heading":"","children":"\u003cp>O auto de infração da SPU deve conter a descrição e a fundamentação legal da infração, a sanção aplicada e a notificação para apresentação de defesa. \u003c/p>\u003cp>A IN nº 304/2026 estabelece prazo de dez dias úteis, contado do recebimento do auto de infração, para que o responsável ou seu representante apresente defesa. \u003c/p>"}}]},{"id":"b_mt0tsu1m_k72h","type":"sectionslide","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_mswfwrlq_6sqw","type":"titulo","props":{"text":"O que acontece depois da defesa?","level":"h3"}},{"id":"b_mswfwqav_0y9s","type":"prose","props":{"html":"\u003cp>A apresentação da defesa não encerra o processo. Os argumentos e as provas reunidos precisam ser analisados pela autoridade competente, que deverá decidir sobre a responsabilização e as consequências dela decorrentes.\u003c/p>\u003cp>A decisão administrativa deve ser motivada, explicitando os fatos e fundamentos jurídicos que sustentam a conclusão adotada. Essa exigência permite ao interessado compreender por que seus argumentos foram acolhidos ou rejeitados e possibilita o controle da própria atuação administrativa.\u003c/p>"}},{"id":"bb7ndqvb","type":"callout","props":{"variant":"header","tone":"info","icon":"book-check","title":"Decisão motivada","heading":"","children":"\u003cp>Motivar uma decisão significa explicitar as razões de fato e de direito que levaram a Administração à conclusão adotada. Não basta informar o resultado: é preciso demonstrar os fundamentos da decisão.\u003c/p>"}}]},{"id":"b_mt0tstbe_guuz","type":"sectionslide","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_mswfy5jx_id1q","type":"titulo","props":{"text":"É possível recorrer da decisão?","level":"h3"}},{"id":"b_mswfy4ad_ge49","type":"prose","props":{"html":"\u003cp>Em processo administrativo, a legislação pode prever a possibilidade de recurso, permitindo que a decisão seja reexaminada pela própria Administração.\u003c/p>\u003cp>O recurso administrativo possibilita ao interessado questionar a decisão, conforme as hipóteses, prazos e instâncias previstos no regime aplicável. Não se trata de uma nova fiscalização, mas da revisão administrativa da decisão já proferida.\u003c/p>"}},{"id":"b_mswfys5m_z46c","type":"callout","props":{"variant":"ear","tone":"attention","icon":"pencil-line","title":"A experiência da SPU","heading":"","children":"\u003cp>A SPU contém fluxogramas detalhados de defesa, julgamento e recurso que podem ser aproveitados como referência visual, mas precisam ser redesenhados e atualizados antes de sua utilização, pois refletem a regulamentação anterior. O Manual, por exemplo, apresenta julgamento motivado e fluxos de recurso em primeira e segunda instâncias.\u003c/p>"}}]},{"id":"b_mt0tss1j_66ky","type":"sectionslide","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_mt0tss1j_mkjp","type":"titulo","props":{"text":"O processo termina com a decisão?","level":"h3"}},{"id":"b_mt0tss1j_jm1e","type":"prose","props":{"html":"\u003cp>Não necessariamente. A decisão administrativa pode exigir providências para cumprir a sanção, cessar a infração, cobrar valores devidos, acompanhar a regularização, quando cabível, ou adotar outras medidas previstas na legislação.\u003c/p>\u003cp>Em determinadas situações, também pode ser necessária a atuação de outros órgãos ou mesmo o encaminhamento para adoção de medidas judiciais.\u003c/p>"}},{"id":"b_mt0tss1j_fmdb","type":"callout","props":{"variant":"ear","tone":"attention","icon":"pencil-line","title":"A experiência da SPU","heading":"\u003cspan data-color=\"muted\">Quando a atuação administrativa não é suficiente\u003c/span>","children":"\u003cp>A IN nº 304/2026 prevê que, quando forem necessárias medidas judiciais para enfrentar ações ou omissões que afetem os imóveis da União, a SPU encaminhe à Advocacia-Geral da União os subsídios técnicos necessários. Entre eles estão a descrição da infração e do bem afetado, a identificação dos responsáveis, o histórico das medidas administrativas adotadas e os elementos probatórios reunidos. \u003c/p>\u003cp>Isso evidencia a importância de uma instrução administrativa consistente: os registros produzidos durante a fiscalização e a apuração podem subsidiar providências que ultrapassam o próprio processo administrativo.\u003c/p>"}}]}]},{"id":"bnziahqn","type":"conclusion","props":{"kicker":"CONCLUSÃO","kickerIcon":"check","title":"O que considerar diante de uma possível infração em um imóvel público?","body":"\u003cp>A gestão de imóveis públicos pode colocar o agente público diante de situações muito diferentes: ocupações sem autorização, descumprimento de condições de uso, intervenções irregulares, danos ao patrimônio, entre outras. Nem toda situação irregular, porém, pode ser automaticamente tratada como infração, assim como nem toda providência adotada pela Administração possui natureza de sanção.\u003c/p>\u003cp>Ao longo deste material, vimos que a atuação administrativa exige algumas distinções fundamentais. É preciso verificar se a conduta está prevista como infração, se há elementos que demonstrem sua materialidade e autoria e quais consequências estão previstas na legislação aplicável. Quando houver responsabilização, devem ser observadas as garantias do devido processo, do contraditório e da ampla defesa.\u003c/p>\u003cp>Também vimos que os instrumentos, procedimentos e sanções não são necessariamente os mesmos em todos os entes públicos. A regulamentação da SPU permitiu observar como esses conceitos são aplicados concretamente à gestão dos imóveis da União, mas quem atua com patrimônio estadual, distrital ou municipal deve identificar as competências, normas e procedimentos aplicáveis à sua realidade.\u003c/p>\u003cp>Mais do que conhecer uma lista de infrações, sanções ou documentos, o importante é compreender a lógica que orienta a atuação administrativa: \u003cb>\u003cspan data-color=\"ochre-light\">caracterizar adequadamente a situação, fundamentar as providências adotadas, assegurar os direitos dos envolvidos e buscar a proteção do patrimônio e do interesse público\u003c/span>\u003c/b>.\u003c/p>"},"children":[{"id":"bnumom77","type":"panel","props":{"variant":"box","kicker":"Para refletir","kickerIcon":"brain","title":"","color":"","bg":"","body":""},"children":[{"id":"bxh7ul33","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bfebxwg1","type":"markerlist","props":{"variant":"icon","icon":"badge-question-mark","accent":"var(--terra-800)","items":[{"title":"","text":"Ao se deparar com uma situação irregular em um imóvel público, que elementos você precisaria conhecer antes de concluir que houve uma infração administrativa? "},{"title":"","text":"Por que é importante distinguir uma sanção administrativa de outras consequências ou providências que podem decorrer da mesma situação? "},{"title":"","text":"Que riscos podem surgir quando uma infração ou seu responsável são definidos sem elementos suficientes para demonstrar a materialidade e a autoria? "}]}},{"id":"b_mswg3t6o_gxs5","type":"markerlist","props":{"variant":"icon","icon":"badge-question-mark","accent":"var(--terra-800)","items":[{"title":"","text":"Na sua experiência profissional, você já acompanhou alguma situação em que uma irregularidade em imóvel público exigiu diferentes providências ou a atuação de mais de uma área ou instituição? O que esse caso revela sobre a complexidade da atuação administrativa? "},{"title":"","text":"Depois desta leitura, que cuidados você considera essenciais para que a atuação diante de uma possível infração proteja o patrimônio público sem deixar de assegurar os direitos dos envolvidos?"}]}}]}]}]},{"id":"b8r5yedz","type":"pagefooter","props":{"code":"Infrações e sanções administrativas [M622]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Claudson Moreira"},{"role":"Revisão","name":"Danilo dos Santos Silva"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"b7wj7hv0__slot":{"s":1,"x":0,"y":16.179097493489582,"u":"assets/images/img-0-b7wj7hv0__slot.png"},"b_mt0tc8y0_x5kx__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-b_mt0tc8y0_x5kx__slot.png"},"bxm1qixa__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-bxm1qixa__slot.png"},"bqyu3gdl__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-bqyu3gdl__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"arrow-left-right":"\u003cpath d=\"M8 3 4 7l4 4\"/>\u003cpath d=\"M4 7h16\"/>\u003cpath d=\"m16 21 4-4-4-4\"/>\u003cpath d=\"M20 17H4\"/>","badge-alert":"\u003cpath d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"/>\u003cline x1=\"12\" x2=\"12\" y1=\"8\" y2=\"12\"/>\u003cline x1=\"12\" x2=\"12.01\" y1=\"16\" y2=\"16\"/>","badge-question-mark":"\u003cpath d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"/>\u003cpath d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/>\u003cline x1=\"12\" x2=\"12.01\" y1=\"17\" y2=\"17\"/>","baggage-claim":"\u003cpath d=\"M22 18H6a2 2 0 0 1-2-2V7a2 2 0 0 0-2-2\"/>\u003cpath d=\"M17 14V4a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2v10\"/>\u003crect width=\"13\" height=\"8\" x=\"8\" y=\"6\" rx=\"1\"/>\u003ccircle cx=\"18\" cy=\"20\" r=\"2\"/>\u003ccircle cx=\"9\" cy=\"20\" r=\"2\"/>","ban":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M4.929 4.929 19.07 19.071\"/>","banknote-x":"\u003cpath d=\"M13 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5\"/>\u003cpath d=\"m17 17 5 5\"/>\u003cpath d=\"M18 12h.01\"/>\u003cpath d=\"m22 17-5 5\"/>\u003cpath d=\"M6 12h.01\"/>\u003ccircle cx=\"12\" cy=\"12\" r=\"2\"/>","book-check":"\u003cpath d=\"M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20\"/>\u003cpath d=\"m9 9.5 2 2 4-4\"/>","brain":"\u003cpath d=\"M12 18V5\"/>\u003cpath d=\"M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4\"/>\u003cpath d=\"M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5\"/>\u003cpath d=\"M17.997 5.125a4 4 0 0 1 2.526 5.77\"/>\u003cpath d=\"M18 18a4 4 0 0 0 2-7.464\"/>\u003cpath d=\"M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517\"/>\u003cpath d=\"M6 18a4 4 0 0 1-2-7.464\"/>\u003cpath d=\"M6.003 5.125a4 4 0 0 0-2.526 5.77\"/>","brick-wall":"\u003crect width=\"18\" height=\"18\" x=\"3\" y=\"3\" rx=\"2\"/>\u003cpath d=\"M12 9v6\"/>\u003cpath d=\"M16 15v6\"/>\u003cpath d=\"M16 3v6\"/>\u003cpath d=\"M3 15h18\"/>\u003cpath d=\"M3 9h18\"/>\u003cpath d=\"M8 15v6\"/>\u003cpath d=\"M8 3v6\"/>","building":"\u003cpath d=\"M12 10h.01\"/>\u003cpath d=\"M12 14h.01\"/>\u003cpath d=\"M12 6h.01\"/>\u003cpath d=\"M16 10h.01\"/>\u003cpath d=\"M16 14h.01\"/>\u003cpath d=\"M16 6h.01\"/>\u003cpath d=\"M8 10h.01\"/>\u003cpath d=\"M8 14h.01\"/>\u003cpath d=\"M8 6h.01\"/>\u003cpath d=\"M9 22v-3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3\"/>\u003crect x=\"4\" y=\"2\" width=\"16\" height=\"20\" rx=\"2\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","file-question-mark":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M12 17h.01\"/>\u003cpath d=\"M9.1 9a3 3 0 0 1 5.82 1c0 2-3 3-3 3\"/>","file-x":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"m14.5 12.5-5 5\"/>\u003cpath d=\"m9.5 12.5 5 5\"/>","gavel":"\u003cpath d=\"m14 13-8.381 8.38a1 1 0 0 1-3.001-3l8.384-8.381\"/>\u003cpath d=\"m16 16 6-6\"/>\u003cpath d=\"m21.5 10.5-8-8\"/>\u003cpath d=\"m8 8 6-6\"/>\u003cpath d=\"m8.5 7.5 8 8\"/>","git-pull-request":"\u003ccircle cx=\"18\" cy=\"18\" r=\"3\"/>\u003ccircle cx=\"6\" cy=\"6\" r=\"3\"/>\u003cpath d=\"M13 6h3a2 2 0 0 1 2 2v7\"/>\u003cline x1=\"6\" x2=\"6\" y1=\"9\" y2=\"21\"/>","hammer":"\u003cpath d=\"m15 12-9.373 9.373a1 1 0 0 1-3.001-3L12 9\"/>\u003cpath d=\"m18 15 4-4\"/>\u003cpath d=\"m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172v-.344a2 2 0 0 0-.586-1.414l-1.657-1.657A6 6 0 0 0 12.516 3H9l1.243 1.243A6 6 0 0 1 12 8.485V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","megaphone":"\u003cpath d=\"M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z\"/>\u003cpath d=\"M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14\"/>\u003cpath d=\"M8 6v8\"/>","message-circle-question-mark":"\u003cpath d=\"M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719\"/>\u003cpath d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/>\u003cpath d=\"M12 17h.01\"/>","octagon-pause":"\u003cpath d=\"M10 15V9\"/>\u003cpath d=\"M14 15V9\"/>\u003cpath d=\"M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z\"/>","pen-line":"\u003cpath d=\"M13 21h8\"/>\u003cpath d=\"M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z\"/>","pencil-line":"\u003cpath d=\"M13 21h8\"/>\u003cpath d=\"m15 5 4 4\"/>\u003cpath d=\"M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z\"/>","scale":"\u003cpath d=\"M12 3v18\"/>\u003cpath d=\"m19 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1\"/>\u003cpath d=\"m5 8 3 8a5 5 0 0 1-6 0zV7\"/>\u003cpath d=\"M7 21h10\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__always,.spu-csection__body{display:flex;flex-direction:column;gap:var(--flow-block)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);width:max-content;margin-top:var(--flow-block);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__summary[aria-expanded="true"] svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-csection__body[hidden]{display:none}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__body{display:flex!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint ? NS.isPrint() : window.__SPU_PRINT === true;
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing;
+        var items = React.Children.toArray(props.children);
+        function blockType(node){
+          if(!React.isValidElement(node)) return '';
+          if(node.props && node.props.block && node.props.block.type) return node.props.block.type;
+          return React.Children.toArray(node.props && node.props.children).map(blockType).filter(Boolean)[0] || '';
+        }
+        var markerIndex = items.findIndex(function(item){ return blockType(item) === 'collapsebreak'; });
+        var alwaysVisible = markerIndex >= 0 ? items.slice(0, markerIndex) : [];
+        var collapsed = markerIndex >= 0 ? items.slice(markerIndex + 1) : items;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            alwaysVisible.length && React.createElement('div', { className:'spu-csection__always spu-blockstack' }, alwaysVisible),
+            !printing && React.createElement('button', {
+                type:'button',
+                className:'spu-csection__summary',
+                'aria-expanded':forcedOpen || open,
+                onClick:function(){ if(!forcedOpen) setOpen(!open); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body spu-blockstack', hidden:!(forcedOpen || open) }, collapsed)
+          )
+        );
+      };
+      NS.CollapseBreak = function(){ return null; };
+      var markerDefinition = {
+        type:'collapsebreak', component:'CollapseBreak', label:'Botão de recolher',
+        icon:'chevron-down', cat:'Estrutura', kind:'marker', internal:true, props:{}
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container', stack:false,
+        fields:['triggerLabel'], allowedTypes:registry.childTypes.concat([markerDefinition.type]),
+        props:{ triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.blocks.push(markerDefinition);
+      registry.byType[definition.type] = definition;
+      registry.byType[markerDefinition.type] = markerDefinition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type === markerDefinition.type) return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:markerDefinition.type, props:{} };
+        if(type !== definition.type) return originalNewBlock(type, child);
+        var props = JSON.parse(JSON.stringify(definition.props));
+        props.children = [registry.newBlock(markerDefinition.type, true)];
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:props };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function safeDefinition(value){
+    var box = document.createElement('div');
+    box.innerHTML = String(value || '');
+    var allowed = ['STRONG','B','EM','I','BR','P','SPAN'];
+    Array.from(box.querySelectorAll('*')).forEach(function(el){
+      if(el.tagName === 'SCRIPT' || el.tagName === 'STYLE'){ el.remove(); return; }
+      if(allowed.indexOf(el.tagName) < 0){ el.replaceWith.apply(el, Array.from(el.childNodes)); return; }
+      Array.from(el.attributes).forEach(function(attr){ el.removeAttribute(attr.name); });
+    });
+    return box.innerHTML;
+  }
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('data-definition') || el.getAttribute('title') || el.getAttribute('data-def') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span class="spu-term-pop__def"></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('.spu-term-pop__def').innerHTML = safeDefinition(def);
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

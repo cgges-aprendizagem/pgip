@@ -1,0 +1,1260 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M622 - Infrações e sanções administrativas",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "ctqp5h7m",
+          "text": "Infração",
+          "hidden": false
+        },
+        {
+          "id": "c07uyo6c",
+          "text": "Responsabilização e sanções<br><span data-fs=\"h4\" style=\"\"><span data-fs=\"h3\" style=\"font-weight: normal;\">O que acontece quando uma infração é caracterizada? </span></span>",
+          "hidden": false
+        },
+        {
+          "id": "c8qpw5br",
+          "text": "Instrumentos<br><span data-fs=\"h4\"><span data-fs=\"h3\" style=\"font-weight: normal;\">Como a Administração formaliza e conduz a responsabilização?</span></span><br>",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "b4g1ec7k",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "bqyu3gdl",
+      "type": "hero",
+      "props": {
+        "kicker": "Instrumentos e práticas da ação fiscalizatória",
+        "kickerIcon": "gavel",
+        "title": "Infrações e sanções administrativas na gestão de imóveis públicos",
+        "byline": "Protegendo o patrimônio e o interesse público",
+        "slot": "bqyu3gdl__slot"
+      }
+    },
+    {
+      "id": "bxa054d5",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b3lrbruy",
+          "type": "prose",
+          "props": {
+            "html": "<p>Como assinalado em outros materiais do Programa, a gestão de imóveis públicos pressupõe a aplicação de mecanismos capazes de prevenir, identificar violações ao adequado uso, disposição, manutenção e conservação dos bens públicos. <mark data-hl=\"green\">Sem instrumentos adequados de controle, proteção e responsabilização, o patrimônio público fica sujeito à ocupação irregular, ao desvio de finalidade, à degradação física, à perda de receitas e ao comprometimento de sua função socioambiental</mark>.<mark data-hl=\"terra\"></mark></p><p>Apesar da relevância do tema, o ordenamento jurídico brasileiro não possui uma lei geral nacional dedicada especificamente às infrações e sanções administrativas aplicáveis à gestão de imóveis públicos. Diferentemente do que ocorre em áreas como meio ambiente, trânsito ou defesa do consumidor, as normas relacionadas ao controle e à proteção do patrimônio imobiliário encontram-se dispersas em diferentes diplomas legais, abrangendo regras patrimoniais, urbanísticas, ambientais, contratuais e processuais.</p><p>Essa dispersão normativa também se reflete na literatura especializada. Embora existam importantes contribuições da doutrina administrativista sobre poder de polícia, processo administrativo e sanções administrativas, são relativamente escassos os estudos voltados especificamente para a fiscalização e responsabilização no contexto da gestão de imóveis públicos. Como consequência, muitos órgãos acabam construindo suas práticas a partir da adaptação de conceitos desenvolvidos em outros campos do Direito Administrativo.</p><p>Diante desse cenário, o objetivo deste material é apresentar os principais conceitos, instrumentos relacionados às infrações e sanções administrativas na gestão de imóveis públicos. A proposta não é esgotar o tema nem substituir a legislação específica aplicável a cada ente ou órgão público. Buscamos oferecer uma referência introdutória que permita compreender os fundamentos da atuação administrativa voltada à proteção do patrimônio imobiliário público, facilitando a interpretação das normas específicas e apoiando a atuação dos profissionais que trabalham com fiscalização, controle e conformidade patrimonial.</p>"
+          }
+        },
+        {
+          "id": "bv34xo74",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "success",
+            "icon": "alert-triangle",
+            "title": "",
+            "heading": "",
+            "children": "<p>A fiscalização integra a gestão dos imóveis públicos e permite acompanhar sua ocupação, uso, conservação e destinação, identificar situações irregulares e reunir elementos para a adoção das providências cabíveis. Neste material, avançamos para as <b>infrações e sanções administrativas</b>, buscando compreender desde a caracterização de uma conduta como infração até a responsabilização, a aplicação das medidas cabíveis e os instrumentos que dão suporte à atuação da Administração Pública.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b0fei05y",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "ctqp5h7m",
+          "type": "titulo",
+          "props": {
+            "text": "Infração",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b3jd7g8c",
+          "type": "titulo",
+          "props": {
+            "text": "Quando uma irregularidade se torna uma infração administrativa?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b6ep1qul",
+          "type": "prose",
+          "props": {
+            "html": "<p>Como foi tratado em outros materiais deste eixo, na gestão de imóveis públicos a fiscalização pode identificar diferentes situações: uma ocupação sem título, uma obra realizada sem autorização, o descumprimento das condições estabelecidas para utilização de um imóvel, danos ao patrimônio ou outras formas de uso incompatíveis com as normas aplicáveis. Mas identificar uma irregularidade não significa, automaticamente, estar diante de uma infração administrativa.</p>"
+          }
+        },
+        {
+          "id": "bk43fidi",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "auto",
+            "children": "<i>Infração administrativa contra o patrimônio imobiliário público é toda <b>ação</b> ou <b>omissão</b> que importe em violação do adequado uso, disposição, manutenção e conservação do bem.</i>",
+            "cite": "as infrações administrativas poderão se perpetrar fora de bens imóveis públicos, desde que se caracterize o comprometimento da destinação original do bem público, do uso racional e de sua integridade física."
+          }
+        },
+        {
+          "id": "cz66jnqw",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Diferentemente do que ocorre em áreas como meio ambiente, trânsito ou defesa do consumidor, o ordenamento jurídico brasileiro não dispõe de uma lei nacional que tipifique, de forma sistemática e uniforme, as infrações administrativas relacionadas à gestão de imóveis públicos.</span></p><p>Em regra, as legislações patrimoniais estabelecem competências, instrumentos de gestão e mecanismos de proteção dos bens públicos, mas raramente apresentam um rol detalhado de condutas infracionais e respectivas sanções. Em razão da inexistência de uma legislação nacional que tipifique as infrações patrimoniais aplicáveis aos imóveis públicos, sua caracterização normalmente decorre da violação de deveres relacionados ao uso, à ocupação, à conservação e à proteção desses bens. </p>"
+          }
+        },
+        {
+          "id": "be9wbs80",
+          "type": "kicker",
+          "props": {
+            "icon": "megaphone",
+            "children": "podem ser consideradas infrações"
+          }
+        },
+        {
+          "id": "bk229pcj",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bzvhtr4i",
+              "type": "markerlist",
+              "props": {
+                "variant": "icon",
+                "icon": "ban",
+                "accent": "var(--terra-600)",
+                "items": [
+                  {
+                    "title": "",
+                    "text": "Ocupação ou utilização de imóvel público sem autorização ou em desconformidade com o título concedido. "
+                  },
+                  {
+                    "title": "",
+                    "text": "Realização de obras, intervenções ou benfeitorias sem autorização ou em desacordo com as condições estabelecidas pelo Poder Público. "
+                  },
+                  {
+                    "title": "",
+                    "text": "Alteração, descaracterização, dano ou degradação do imóvel público ou de seus atributos protegidos. "
+                  }
+                ]
+              }
+            },
+            {
+              "id": "b_mswe0val_87hm",
+              "type": "markerlist",
+              "props": {
+                "variant": "icon",
+                "icon": "ban",
+                "accent": "var(--terra-600)",
+                "items": [
+                  {
+                    "title": "",
+                    "text": "Utilização do imóvel em desacordo com sua destinação legal, contratual ou administrativa. "
+                  },
+                  {
+                    "title": "",
+                    "text": "Prática de atos que comprometam o uso coletivo, a conservação, a proteção ou a gestão regular do bem público."
+                  },
+                  {
+                    "title": "",
+                    "text": "Descumprimento de obrigações impostas pela legislação ou por instrumentos de destinação e uso do imóvel. "
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "bohyz8jw",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "warning",
+            "icon": "alert-triangle",
+            "title": "",
+            "heading": "",
+            "children": "<p>Uma mesma conduta pode configurar, simultaneamente, infração patrimonial e infração ambiental, urbanística, sanitária ou de outra natureza, cabendo a cada órgão atuar no âmbito de suas competências legais.</p>"
+          }
+        },
+        {
+          "id": "b4q7rhoz",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "pencil-line",
+            "title": "Na prática",
+            "heading": "",
+            "children": "<p>Imagine que uma fiscalização encontre uma construção em um imóvel público. A existência da construção, isoladamente, não permite concluir que houve uma infração. É preciso verificar, entre outras questões, se a intervenção dependia de autorização, se ela foi concedida, se a obra respeitou seus limites e quem realizou ou é responsável pela intervenção.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">É a relação entre <b>fato + norma + autoria + elementos de comprovação</b> que permite caracterizar juridicamente a situação encontrada.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b4soqj7g",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "md"
+      },
+      "children": [
+        {
+          "id": "bha9nesa",
+          "type": "kicker",
+          "props": {
+            "icon": "git-pull-request",
+            "children": "Saiba mais sobre Infrações explorando as questões a seguir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1y17q44",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cqoy0a05",
+          "type": "titulo",
+          "props": {
+            "text": "O que precisa ser demonstrado?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "cgid1raf",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "cyt9ceda",
+          "type": "prose",
+          "props": {
+            "html": "<p>A caracterização de uma infração exige que a Administração reúna elementos suficientes para fundamentar sua atuação. Dois conceitos são particularmente importantes: materialidade e autoria.</p>"
+          }
+        },
+        {
+          "id": "bbtl2261",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bwygbgab",
+              "type": "flashcard",
+              "props": {
+                "term": "Materialidade ",
+                "description": "",
+                "definition": "<p>Materialidade diz respeito à comprovação da ocorrência dos fatos que configuram a infração. É preciso demonstrar, por meio dos elementos disponíveis, o que aconteceu, onde, quando e em quais circunstâncias, na medida necessária à caracterização da conduta.</p><p><br></p><p><br></p>",
+                "icon": "file-question-mark",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "bwygbgab__coverSlot",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
+                "color": "var(--ochre-600)"
+              }
+            },
+            {
+              "id": "b_mswe8t1a_g67s",
+              "type": "flashcard",
+              "props": {
+                "term": "Autoria ",
+                "description": "",
+                "definition": "<p>Autoria corresponde à identificação de quem praticou ou pode ser juridicamente responsabilizado pela conduta. Identificar uma irregularidade em determinado imóvel, portanto, não significa necessariamente que já esteja identificado seu autor.</p><p><br></p><p><br></p>",
+                "icon": "message-circle-question-mark",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "b_mswe8t1a_g67s__coverSlot",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
+                "color": "var(--terra-600)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_mswe9p70_88c8",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Essa distinção produz consequências práticas importantes. Quando ainda existem dúvidas relevantes sobre os fatos ou sobre quem os praticou, a Administração pode precisar obter novas informações antes de formalizar a imputação de uma infração.</span></p>"
+          }
+        },
+        {
+          "id": "b7wj7hv0",
+          "type": "examplecard",
+          "props": {
+            "label": "A experiência da SPU",
+            "icon": "pencil-line",
+            "color": "",
+            "slot": "b7wj7hv0__slot",
+            "collapse": "none",
+            "title": "",
+            "body": "<p>A experiência da Secretaria do Patrimônio da União (SPU) demonstra que a atuação fiscalizatória deve ser pautada pela produção de evidências e pela cautela técnica. Quando houver dúvidas quanto à ocorrência da infração (materialidade) ou à identificação do responsável (autoria), a orientação é evitar a adoção precipitada de medidas sancionatórias e aprofundar a instrução do caso. </p><p>A regulamentação dos imóveis da União oferece um bom exemplo dessa lógica. A <a href=\"https://www.in.gov.br/web/dou/-/instrucao-normativa-spu/mgi-n-304-de-30-de-julho-de-2026-722990682\" target=\"_blank\" rel=\"noopener noreferrer\">IN SPU/MGI nº 304/2026</a> determina que, havendo incerteza sobre a autoria ou algum elemento da materialidade, o servidor não lavre imediatamente o auto de infração. O suposto infrator deve ser notificado para apresentar informações ou documentos. Somente se, após essa etapa, forem constatadas a ocorrência da infração e sua autoria, deverá ser lavrado o auto. </p><p>Esse procedimento evidencia uma ideia importante para qualquer atuação: constatar uma situação no imóvel, caracterizar uma infração e atribuí-la a determinada pessoa são etapas relacionadas, mas não necessariamente coincidentes.</p><p>Na gestão dos imóveis da União, a <a href=\"https://www.in.gov.br/web/dou/-/instrucao-normativa-spu/mgi-n-304-de-30-de-julho-de-2026-722990682\" target=\"_blank\" rel=\"noopener noreferrer\">IN SPU/MGI nº 304/2026</a> define expressamente as condutas consideradas infrações contra o patrimônio imobiliário federal.</p>"
+          },
+          "children": [
+            {
+              "id": "b76gklwh",
+              "type": "feature",
+              "props": {
+                "columns": 3,
+                "card": true,
+                "accent": "",
+                "layout": "top",
+                "items": [
+                  {
+                    "icon": "building",
+                    "title": "Violação de deveres sobre o imóvel",
+                    "text": "Condutas relacionadas ao adequado uso, gozo, disposição, proteção, manutenção e conservação."
+                  },
+                  {
+                    "icon": "file-x",
+                    "title": "Intervenções não autorizadas",
+                    "text": "Aterros, construções, obras, cercas, desmatamento, instalação de equipamentos e demais intervenções abrangidas pela norma, quando realizadas sem autorização ou em desacordo com a autorização concedida."
+                  },
+                  {
+                    "icon": "hammer",
+                    "title": "Descaracterização do imóvel",
+                    "text": "Descaracterização de imóvel da União sem autorização."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bp1o43px",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bwafb4vi",
+          "type": "titulo",
+          "props": {
+            "text": "Quem é considerado infrator?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c1lx972k",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "br41mkqj",
+          "type": "prose",
+          "props": {
+            "html": "<p>A identificação de uma infração não se completa apenas com a constatação da conduta irregular. Para que haja responsabilização administrativa, é necessário também identificar quem praticou a ação ou omissão à qual a infração é atribuída. Por isso, a análise da autoria é parte essencial da caracterização da infração.</p><p>A definição de quem pode ser considerado infrator depende da legislação aplicável. Não se deve presumir, por exemplo, que o ocupante do imóvel, o titular de um direito sobre ele e o responsável por determinada intervenção sejam necessariamente a mesma pessoa. A responsabilização deve estar relacionada à conduta efetivamente apurada e aos critérios estabelecidos pelo respectivo regime jurídico.</p>"
+          }
+        },
+        {
+          "id": "bbtfzkxv",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "note",
+            "icon": "pencil-line",
+            "title": "A experiência da SPU",
+            "heading": "",
+            "children": "<p>Para os imóveis da União, a <a href=\"https://www.in.gov.br/web/dou/-/instrucao-normativa-spu/mgi-n-304-de-30-de-julho-de-2026-722990682\" target=\"_blank\" rel=\"noopener noreferrer\">IN SPU/MGI nº 304/2026</a> considera infrator aquele que, diretamente ou por interposta pessoa, por ação ou omissão, incorrer nas hipóteses de infração previstas pela própria norma. </p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A IN reforça a importância de demonstrar essa relação entre conduta e autoria: <mark>quando houver incerteza sobre quem praticou a infração, o auto de infração não deve ser lavrado de imediato</mark>. O suposto infrator é inicialmente notificado para apresentar informações ou documentos, e o auto somente será lavrado se, após essa apuração, forem constatadas a ocorrência da infração e sua autoria.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "br7dscos",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b909idnk",
+          "type": "titulo",
+          "props": {
+            "text": "Quais instrumentos são utilizados na apuração de uma infração?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c3gp9pia",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "bow54vnc",
+          "type": "prose",
+          "props": {
+            "html": "<p>A identificação e a apuração de uma possível infração precisam ser formalizadas e comunicadas ao interessado por meio dos instrumentos previstos na legislação aplicável. Entre eles, dois aparecem com frequência nos procedimentos administrativos de fiscalização: a <b>notificação administrativa</b> e o<b> auto de infração</b>.</p><p>Embora possam estar relacionados, eles cumprem funções diferentes e não devem ser confundidos.</p>"
+          }
+        },
+        {
+          "id": "bwy08iqj",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Comunicação administrativa",
+                "content": "<p>A comunicação dos atos ao interessado é parte importante do processo administrativo, assegurando sua ciência e, quando cabível, a possibilidade de manifestação, apresentação de documentos ou cumprimento de providências. Essa comunicação pode assumir diferentes formas e denominações conforme a <span data-term=\"legislação aplicável\" data-definition=\"Constituição Federal, art. 5º, LIV e LV; Lei nº 9.784/1999, arts. 2º e 26 e seguintes\">legislação aplicável</span>. </p><p><span style=\"text-wrap-mode: initial; color: inherit;\">No contexto da apuração de infrações, ela pode desempenhar uma função particularmente importante: permitir que a Administração obtenha informações necessárias antes de concluir pela existência da infração ou por sua autoria.</span></p>",
+                "blocks": [
+                  {
+                    "id": "bea70vnz",
+                    "type": "callout",
+                    "props": {
+                      "variant": "header",
+                      "tone": "info",
+                      "icon": "lightbulb",
+                      "title": "A experiência da SPU",
+                      "heading": "",
+                      "children": "<p>Na fiscalização dos imóveis da União, o instrumento de comunicação utilizado é a <b>notificação administrativa</b>. <span style=\"color: inherit; text-wrap-mode: initial;\">A IN SPU/MGI nº 304/2026 prevê que, quando houver incerteza sobre a autoria ou algum elemento da materialidade da infração, o servidor não deve lavrar imediatamente o auto de infração. O suposto infrator é inicialmente notificado para apresentar informações ou documentos. A notificação deve advertir que o auto será lavrado se as informações não forem apresentadas ou não forem suficientes para descaracterizar a materialidade ou a autoria.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A norma admite diferentes formas de notificação: pessoalmente, por correio com aviso de recebimento, por serviços eletrônicos com confirmação de recebimento ou, nas hipóteses previstas, por edital.</span></p>"
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Auto de infração",
+                "content": "<p>O auto de infração é o ato administrativo que formaliza a constatação de uma infração e registra os elementos que fundamentam a responsabilização e as medidas dela decorrentes, de acordo com a legislação aplicável. Sua finalidade principal é documentar os fatos constatados pela fiscalização, preservando elementos probatórios e garantindo transparência à atuação estatal.</p><p>Diferentemente da notificação utilizada para esclarecer uma situação ainda incerta, o auto pressupõe que a Administração tenha elementos para caracterizar a infração e atribuir sua autoria.</p><p>Importa destacar que o auto de infração, por si só, não implica condenação definitiva nem substitui o devido processo administrativo. Ele representa um ato inicial de constatação, devendo ser sucedido, quando cabível, pela garantia do contraditório e da ampla defesa antes da aplicação de sanções.</p>",
+                "blocks": [
+                  {
+                    "id": "bep48tws",
+                    "type": "kicker",
+                    "props": {
+                      "icon": "compass",
+                      "children": "Notificação ou auto de infração?"
+                    }
+                  },
+                  {
+                    "id": "bbycdtei",
+                    "type": "datatable",
+                    "props": {
+                      "caption": "",
+                      "columns": [
+                        {
+                          "key": "c0",
+                          "label": "",
+                          "align": "right"
+                        },
+                        {
+                          "key": "c1",
+                          "label": "Notificação administrativa"
+                        },
+                        {
+                          "key": "c2",
+                          "label": "Auto de infração"
+                        }
+                      ],
+                      "rows": [
+                        {
+                          "c0": "Função",
+                          "c1": "Comunicar, solicitar informações ou determinar providências, conforme o caso",
+                          "c2": "Formalizar a infração constatada"
+                        },
+                        {
+                          "c0": "Há certeza sobre a infração?",
+                          "c1": "Pode ser utilizada quando ainda há elementos a esclarecer",
+                          "c2": "Pressupõe elementos suficientes para caracterizá-la"
+                        },
+                        {
+                          "c0": "Autoria e materialidade",
+                          "c1": "Pode ajudar a esclarecê-las",
+                          "c2": "Devem estar suficientemente caracterizadas"
+                        },
+                        {
+                          "c0": "Pode existir sem o outro?",
+                          "c1": "Sim",
+                          "c2": "Sim, conforme o caso"
+                        }
+                      ],
+                      "dense": true,
+                      "highlightFirst": false,
+                      "striped": false,
+                      "tone": "terra",
+                      "className": "spu-table-wrap--tone-terra"
+                    }
+                  },
+                  {
+                    "id": "b_mswewbkl_xr7m",
+                    "type": "callout",
+                    "props": {
+                      "variant": "header",
+                      "tone": "info",
+                      "icon": "lightbulb",
+                      "title": "A experiência da SPU",
+                      "heading": "",
+                      "children": "<p>Na gestão dos imóveis da União, verificada a prática de infração, o servidor responsável pela fiscalização deve lavrar o auto de infração. A IN nº 304/2026 estabelece que o documento registre, entre outros elementos, a identificação do imóvel e do responsável, a descrição e a fundamentação legal da infração, a sanção aplicada e a notificação para apresentação de defesa. </p>"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bx2h0fsb",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c07uyo6c",
+          "type": "titulo",
+          "props": {
+            "text": "Responsabilização e sanções<br><span data-fs=\"h4\" style=\"\"><span data-fs=\"h3\" style=\"font-weight: normal;\">O que acontece quando uma infração é caracterizada? </span></span>",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "clrt2006",
+          "type": "prose",
+          "props": {
+            "html": "<p>Caracterizar uma infração administrativa é apenas uma etapa da atuação do Poder Público. A partir dela, é preciso verificar quem pode ser responsabilizado, quais medidas são juridicamente cabíveis e quais garantias devem ser observadas antes e durante sua aplicação.</p><p>É nesse contexto que entram as sanções administrativas: <mark data-hl=\"terra\">consequências previstas no ordenamento jurídico para determinadas ações ou omissões consideradas infrações</mark>. Sua aplicação não é automática. Deve estar amparada pela legislação aplicável e observar as garantias que regem o exercício do poder sancionador da Administração.</p><p>Assim como ocorre com as infrações, não existe um conjunto único de sanções aplicável a todos os imóveis públicos. União, estados, Distrito Federal e municípios submetem-se aos respectivos regimes jurídicos e às competências estabelecidas pelo ordenamento. Por isso, mais importante do que memorizar uma lista de penalidades é compreender a lógica da responsabilização administrativa e saber identificar, em cada caso, a norma aplicável.</p>"
+          }
+        },
+        {
+          "id": "bhoxajbw",
+          "type": "titulo",
+          "props": {
+            "text": "O que é uma sanção administrativa?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b13485ec",
+          "type": "prose",
+          "props": {
+            "html": "<p>No campo das infrações administrativas, a sanção está associada à consequência imposta pela Administração em razão da prática de uma conduta definida pelo ordenamento como infração. Sua finalidade e seu regime jurídico permitem distingui-la de outras providências que a Administração também pode adotar diante de uma situação irregular.</p>"
+          }
+        },
+        {
+          "id": "bcejcsqk",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "auto",
+            "children": "<i>Essa distinção é especialmente importante na gestão de imóveis públicos. Uma mesma situação pode demandar providências destinadas a punir uma conduta, impedir sua continuidade, restabelecer a situação do imóvel, reparar um prejuízo ou promover sua regularização, quando esta for juridicamente possível. </i>",
+            "cite": "Essas providências podem coexistir, mas não possuem necessariamente a mesma natureza jurídica."
+          }
+        },
+        {
+          "id": "b_mt0ss9rw_9spk",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">As denominações, a natureza jurídica e os efeitos dessas medidas podem variar conforme o regime aplicável. Por isso, quem atua na gestão de imóveis públicos deve identificar, em cada caso, quais infrações, sanções e demais providências estão previstas na legislação do respectivo ente ou patrimônio.</span></p><p>Na regulamentação dos imóveis da União, por exemplo, a IN SPU/MGI nº 304/2026 identifica expressamente como sanções o embargo, a multa, a desocupação e a demolição ou remoção. A norma também prevê, sem confundi-las com essas sanções, outras possíveis consequências, como indenização, responsabilidade civil e penal e eventual extinção da destinação outorgada.</p>"
+          }
+        },
+        {
+          "id": "bjc4uhpj",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Nem toda consequência de uma infração é uma sanção",
+            "kickerIcon": "badge-alert",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-50)",
+            "body": "<p>A caracterização de uma infração administrativa pode dar origem a diferentes consequências, conforme a legislação aplicável. É importante verificar a natureza e o fundamento jurídico de cada uma delas, evitando tratar como sanção toda providência adotada pela Administração.</p><p>As denominações, a natureza jurídica e os efeitos dessas providências podem variar conforme o regime aplicável. Por isso, quem atua na gestão de imóveis públicos deve identificar, em cada caso, quais infrações, sanções e demais consequências estão previstas na legislação aplicável ao respectivo patrimônio.</p>"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "b_mt0t1oy5_rjeg",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "md"
+      },
+      "children": [
+        {
+          "id": "b_mt0t1oy5_8wv2",
+          "type": "kicker",
+          "props": {
+            "icon": "git-pull-request",
+            "children": "Saiba mais sobre SanÇões explorando as questões a seguir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bjey4ecg",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bcihfepf",
+          "type": "titulo",
+          "props": {
+            "text": "Quais garantias orientam a aplicação das sanções?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c3lufzpo",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mswf962u_wl02",
+          "type": "prose",
+          "props": {
+            "html": "<p>O poder de aplicar sanções não autoriza uma atuação arbitrária da Administração. A responsabilização administrativa deve observar as garantias estabelecidas pelo ordenamento jurídico.</p><p>A Constituição Federal assegura que ninguém será privado da liberdade ou de seus bens sem o devido processo legal e garante, nos processos administrativos, o contraditório e a ampla defesa. No âmbito da Administração Pública Federal, a <a href=\"https://www.planalto.gov.br/ccivil_03/leis/l9784.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 9.784/1999</a> também estabelece princípios e regras para o processo administrativo: </p>"
+          }
+        },
+        {
+          "id": "b0554gay",
+          "type": "pullquote",
+          "props": {
+            "variant": "eye",
+            "fontSize": "h4",
+            "children": "<p><i>A Administração Pública obedecerá, dentre outros, aos princípios da legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público e eficiência.</i></p>",
+            "cite": "Art. 2, Lei n. 9.784/1999"
+          }
+        },
+        {
+          "id": "b_mt0swg2a_6z59",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Em termos práticos, a Administração precisa demonstrar qual conduta está sendo atribuída ao interessado, qual norma fundamenta essa imputação e quais consequências dela podem decorrer, assegurando-lhe ciência e possibilidade de exercer sua defesa nos termos da legislação aplicável.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bjvh2f86",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "csk0k4mw",
+          "type": "titulo",
+          "props": {
+            "text": "Quais sanções podem ser aplicadas?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "ct4tds90",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "cnm8ygxz",
+          "type": "prose",
+          "props": {
+            "html": "<p><b>Não há uma resposta única</b>. As sanções dependem da legislação aplicável ao patrimônio e à situação analisada.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A regulamentação dos imóveis da União oferece um exemplo concreto de como essas consequências podem ser disciplinadas.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Para as infrações contra o patrimônio da União, a IN SPU/MGI nº 304/2026 prevê expressamente<b> quatro sanções</b>, que podem ser aplicadas isolada ou cumulativamente, observadas as características da infração e as disposições da legislação aplicável. </span></p>"
+          }
+        },
+        {
+          "id": "b46d1llg",
+          "type": "contentslider",
+          "props": {
+            "hint": "",
+            "accent": "",
+            "showTabNumbers": false,
+            "slides": [
+              {
+                "showImage": false,
+                "slot": "b46d1llg__slides_1_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "octagon-pause",
+                "label": "",
+                "tabLabel": "Embargo",
+                "title": "<span data-fs=\"h3\">Embargo</span>",
+                "subtitle": "",
+                "description": "<p>Na regulamentação da SPU, o <b>embargo</b> consiste na determinação de paralisação imediata de obra, serviço ou atividade até que a União se manifeste sobre a regularidade da situação.</p><p>A medida pode ser aplicada quando houver inadequação da destinação, inobservância do interesse público, irregularidade de uso ou comprometimento da integridade física de imóvel da União. O auto de embargo não substitui o auto de infração, e o embargo pode ser aplicado cumulativamente com outras sanções previstas na IN.<br></p>",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "b_mswgqpby_mw4m__slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "banknote-x",
+                "label": "",
+                "tabLabel": "Multa",
+                "title": "<span data-fs=\"h3\">Multa</span>",
+                "subtitle": "",
+                "description": "<p>A multa é uma das sanções previstas para as infrações contra o patrimônio da União. Sua aplicação e cálculo devem observar os critérios estabelecidos na legislação patrimonial e na regulamentação específica.</p><p>Na IN nº 304/2026, a multa possui caráter pessoal: é aplicada ao responsável pela infração e não se transfere aos herdeiros ou sucessores. </p>",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "b_mswgqovw_egp2__slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "baggage-claim",
+                "label": "",
+                "tabLabel": "Desocupação",
+                "title": "<span data-fs=\"h3\">Desocupação</span>",
+                "subtitle": "",
+                "description": "A desocupação também integra expressamente o conjunto de sanções previstas pela IN nº 304/2026. Sua aplicação busca fazer cessar a ocupação do imóvel da União nas hipóteses abrangidas pela legislação patrimonial.<br>",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "b_mswgqo1w_ivjs__slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "brick-wall",
+                "label": "",
+                "tabLabel": "Demolição ou remoção",
+                "title": "<span style=\"font-size: 32.8px; letter-spacing: -0.3936px;\">Demolição ou remoção</span>",
+                "subtitle": "",
+                "description": "<p>A demolição ou remoção pode alcançar aterros, construções, obras, cercas, benfeitorias e equipamentos instalados em imóveis da União, nas condições estabelecidas pela norma.</p><p>A IN prevê prazo para regularização, quando cabível, ou para que o próprio responsável realize a demolição ou remoção. Caso isso não ocorra, a SPU poderá promover a medida, inclusive em atuação conjunta com órgão estadual ou municipal, observados os procedimentos estabelecidos na regulamentação.<br></p>",
+                "linkHref": "",
+                "linkLabel": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mswfoag2_fo5t",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mswfoag2_id4c",
+          "type": "titulo",
+          "props": {
+            "text": "Que outras consequências podem decorrer da infração?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_mswfoag2_2e19",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mswfoag2_yram",
+          "type": "prose",
+          "props": {
+            "html": "<p>Uma infração administrativa pode produzir consequências que não se confundem com as sanções administrativas. Quais serão elas depende da legislação aplicável a cada situação.</p><p>Na regulamentação dos imóveis da União, a IN SPU/MGI nº 304/2026 prevê a aplicação das sanções administrativas sem prejuízo da responsabilidade civil e penal, da indenização prevista na legislação patrimonial e, quando cabível, da extinção da destinação outorgada.</p>"
+          }
+        },
+        {
+          "id": "b_mswfoag2_7pe1",
+          "type": "titulo",
+          "props": {
+            "text": "Responsabilidade civil e penal",
+            "level": "h4"
+          }
+        },
+        {
+          "id": "bcgnxabx",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bxm1qixa",
+              "type": "examplecard",
+              "props": {
+                "label": "Civil",
+                "icon": "scale",
+                "color": "",
+                "slot": "bxm1qixa__slot",
+                "collapse": "none",
+                "title": "",
+                "body": "<p>A <b>responsabilidade civil</b> está relacionada, em termos gerais, à obrigação de reparar danos causados a terceiros ou ao patrimônio público. Assim, uma conduta que configure infração administrativa pode também gerar o dever de reparar o dano, desde que presentes os requisitos estabelecidos pela legislação aplicável.</p>"
+              },
+              "children": []
+            },
+            {
+              "id": "b_mt0tc8y0_x5kx",
+              "type": "examplecard",
+              "props": {
+                "label": "Penal",
+                "icon": "scale",
+                "color": "",
+                "slot": "b_mt0tc8y0_x5kx__slot",
+                "collapse": "none",
+                "title": "",
+                "body": "<p>A <b>responsabilidade penal</b>, por sua vez, pode ocorrer quando a mesma conduta também estiver prevista em lei como crime ou contravenção penal. Nesse caso, sua apuração ocorre na esfera penal e não se confunde com o processo administrativo destinado à apuração da infração e à aplicação das sanções administrativas.</p>"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b_mswfoag2_411a",
+          "type": "titulo",
+          "props": {
+            "text": "Indenização prevista na legislação patrimonial",
+            "level": "h4"
+          }
+        },
+        {
+          "id": "b_mswfoag2_f76q",
+          "type": "prose",
+          "props": {
+            "html": "<p>A indenização não deve ser confundida com a multa. Enquanto a multa é expressamente classificada pela IN nº 304/2026 como sanção administrativa, a indenização possui fundamento próprio na legislação patrimonial.</p>"
+          }
+        },
+        {
+          "id": "b_mswfoag2_05jp",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "pen-line",
+            "title": "A experiência da SPU",
+            "heading": "",
+            "children": "<p>No caso dos imóveis da União, a Lei nº 9.636/1998 prevê indenização pela posse ou ocupação ilícita de imóvel da União. A IN nº 304/2026 mantém essa indenização separada das sanções administrativas previstas para as infrações contra o patrimônio da União.</p><p><ul><li><b>MULTA</b> → sanção administrativa.</li><li><b>INDENIZAÇÃO </b>→ consequência patrimonial prevista em lei para a posse ou ocupação ilícita.</li></ul></p>"
+          }
+        },
+        {
+          "id": "b_mswfoag2_6b21",
+          "type": "titulo",
+          "props": {
+            "text": "Extinção da destinação outorgada",
+            "level": "h4"
+          }
+        },
+        {
+          "id": "b_mswfoag2_3115",
+          "type": "prose",
+          "props": {
+            "html": "<p>Um imóvel público pode ter seu uso atribuído a determinada pessoa, órgão ou entidade por meio de diferentes instrumentos de destinação, sujeitos às condições estabelecidas na legislação e no respectivo ato ou contrato.</p><p>A extinção da destinação significa o encerramento dessa relação jurídica, nas hipóteses previstas no regime aplicável. Assim, <mark>quando uma infração também representar descumprimento das condições que fundamentaram a destinação, poderá haver, quando cabível, sua extinção</mark>, independentemente das sanções administrativas aplicáveis.</p>"
+          }
+        },
+        {
+          "id": "b_mswfoag2_02vh",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "warning",
+            "icon": "pen-line",
+            "title": "A experiência da SPU",
+            "heading": "",
+            "children": "<p>A IN nº 304/2026 estabelece que, quando a infração for cometida por beneficiário de destinação outorgada pela União, a aplicação das sanções previstas na norma não prejudica a eventual extinção da destinação, se esta for cabível.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "boh3m9b6",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "terra-dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c8qpw5br",
+          "type": "titulo",
+          "props": {
+            "text": "Instrumentos<br><span data-fs=\"h4\"><span data-fs=\"h3\" style=\"font-weight: normal;\">Como a Administração formaliza e conduz a responsabilização?</span></span><br>",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cv2f0d3l",
+          "type": "prose",
+          "props": {
+            "html": "<p>A identificação de uma infração e a previsão de uma sanção não são suficientes, por si sós, para concluir a responsabilização administrativa. Os fatos precisam ser documentados, o interessado deve tomar ciência da imputação e ter oportunidade de se manifestar, e a Administração deve analisar os elementos reunidos e decidir de forma fundamentada.</p><p>Essas etapas são desenvolvidas por meio de um processo administrativo, cuja forma e cujos instrumentos dependem da legislação aplicável a cada ente e situação. Mais do que uma formalidade, o processo organiza as informações e os atos necessários à apuração da infração e à responsabilização, ao mesmo tempo que assegura o exercício do contraditório e da ampla defesa.</p>"
+          }
+        },
+        {
+          "id": "b33ayuj7",
+          "type": "kicker",
+          "props": {
+            "icon": "arrow-left-right",
+            "children": "Navegue pelas questões abaixo"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bx1bitux",
+      "type": "sectionslider",
+      "props": {
+        "loop": true
+      },
+      "children": [
+        {
+          "id": "cug8s157",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "none",
+            "pad": "lg"
+          },
+          "children": [
+            {
+              "id": "boez808u",
+              "type": "titulo",
+              "props": {
+                "text": "Quais elementos podem compor a instrução do processo?",
+                "level": "h3"
+              }
+            },
+            {
+              "id": "bd8mtpp0",
+              "type": "prose",
+              "props": {
+                "html": "<p>A decisão administrativa precisa estar apoiada em elementos que permitam compreender o que ocorreu, onde ocorreu, quem está envolvido e quais fatos e normas fundamentam a atuação da Administração. Dependendo da situação, podem ser utilizados relatórios, fotografias, documentos, levantamentos territoriais, imagens, pareceres e outros meios admitidos pelo regime aplicável.</p><p>Não existe uma relação única de documentos válida para todos os entes públicos. A legislação e os procedimentos adotados por cada Administração definem os elementos necessários à adequada instrução.</p>"
+              }
+            },
+            {
+              "id": "bbfn5q59",
+              "type": "callout",
+              "props": {
+                "variant": "ear",
+                "tone": "warning",
+                "icon": "pencil-line",
+                "title": "A experiência da SPU",
+                "heading": "",
+                "children": "<p>Na fiscalização dos imóveis da União, a IN SPU/MGI nº 304/2026 determina que o processo seja inicialmente instruído com ordem de fiscalização; relatório de fiscalização; auto de infração, notificação ou ambos, quando houver; croqui das condições e irregularidades apuradas, quando houver auto; relatório fotográfico ou imagem de satélite; e, quando aplicável, identificação da Linha de Preamar Médio (LPM) ou da Linha Média das Enchentes Ordinárias (LMEO). A norma exige ainda a comprovação da data da ciência quando houver auto de infração ou notificação. </p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_mt0twvg5_euaq",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "none",
+            "pad": "lg"
+          },
+          "children": [
+            {
+              "id": "b_mt0twvg5_giug",
+              "type": "titulo",
+              "props": {
+                "text": "Como se assegura o direito de defesa?",
+                "level": "h3"
+              }
+            },
+            {
+              "id": "b_mt0twvg5_annt",
+              "type": "prose",
+              "props": {
+                "html": "<p>Uma vez formalizada a imputação, deve ser assegurada ao interessado a possibilidade de conhecer os fatos que lhe são atribuídos e apresentar sua defesa, nos termos do regime jurídico aplicável.</p><p>A defesa permite contestar os fatos, apresentar documentos e outros elementos e formular os argumentos que deverão ser considerados pela Administração antes da decisão. É uma manifestação concreta das garantias do contraditório e da ampla defesa apresentadas no eixo anterior.</p>"
+              }
+            },
+            {
+              "id": "b_mt0twvg5_cebr",
+              "type": "callout",
+              "props": {
+                "variant": "ear",
+                "tone": "info",
+                "icon": "pencil-line",
+                "title": "A experiência da SPU",
+                "heading": "",
+                "children": "<p>O auto de infração da SPU deve conter a descrição e a fundamentação legal da infração, a sanção aplicada e a notificação para apresentação de defesa. </p><p>A IN nº 304/2026 estabelece prazo de dez dias úteis, contado do recebimento do auto de infração, para que o responsável ou seu representante apresente defesa. </p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_mt0tsu1m_k72h",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "none",
+            "pad": "lg"
+          },
+          "children": [
+            {
+              "id": "b_mswfwrlq_6sqw",
+              "type": "titulo",
+              "props": {
+                "text": "O que acontece depois da defesa?",
+                "level": "h3"
+              }
+            },
+            {
+              "id": "b_mswfwqav_0y9s",
+              "type": "prose",
+              "props": {
+                "html": "<p>A apresentação da defesa não encerra o processo. Os argumentos e as provas reunidos precisam ser analisados pela autoridade competente, que deverá decidir sobre a responsabilização e as consequências dela decorrentes.</p><p>A decisão administrativa deve ser motivada, explicitando os fatos e fundamentos jurídicos que sustentam a conclusão adotada. Essa exigência permite ao interessado compreender por que seus argumentos foram acolhidos ou rejeitados e possibilita o controle da própria atuação administrativa.</p>"
+              }
+            },
+            {
+              "id": "bb7ndqvb",
+              "type": "callout",
+              "props": {
+                "variant": "header",
+                "tone": "info",
+                "icon": "book-check",
+                "title": "Decisão motivada",
+                "heading": "",
+                "children": "<p>Motivar uma decisão significa explicitar as razões de fato e de direito que levaram a Administração à conclusão adotada. Não basta informar o resultado: é preciso demonstrar os fundamentos da decisão.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_mt0tstbe_guuz",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "none",
+            "pad": "lg"
+          },
+          "children": [
+            {
+              "id": "b_mswfy5jx_id1q",
+              "type": "titulo",
+              "props": {
+                "text": "É possível recorrer da decisão?",
+                "level": "h3"
+              }
+            },
+            {
+              "id": "b_mswfy4ad_ge49",
+              "type": "prose",
+              "props": {
+                "html": "<p>Em processo administrativo, a legislação pode prever a possibilidade de recurso, permitindo que a decisão seja reexaminada pela própria Administração.</p><p>O recurso administrativo possibilita ao interessado questionar a decisão, conforme as hipóteses, prazos e instâncias previstos no regime aplicável. Não se trata de uma nova fiscalização, mas da revisão administrativa da decisão já proferida.</p>"
+              }
+            },
+            {
+              "id": "b_mswfys5m_z46c",
+              "type": "callout",
+              "props": {
+                "variant": "ear",
+                "tone": "attention",
+                "icon": "pencil-line",
+                "title": "A experiência da SPU",
+                "heading": "",
+                "children": "<p>A SPU contém fluxogramas detalhados de defesa, julgamento e recurso que podem ser aproveitados como referência visual, mas precisam ser redesenhados e atualizados antes de sua utilização, pois refletem a regulamentação anterior. O Manual, por exemplo, apresenta julgamento motivado e fluxos de recurso em primeira e segunda instâncias.</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_mt0tss1j_66ky",
+          "type": "sectionslide",
+          "props": {
+            "width": "content",
+            "surface": "none",
+            "pad": "lg"
+          },
+          "children": [
+            {
+              "id": "b_mt0tss1j_mkjp",
+              "type": "titulo",
+              "props": {
+                "text": "O processo termina com a decisão?",
+                "level": "h3"
+              }
+            },
+            {
+              "id": "b_mt0tss1j_jm1e",
+              "type": "prose",
+              "props": {
+                "html": "<p>Não necessariamente. A decisão administrativa pode exigir providências para cumprir a sanção, cessar a infração, cobrar valores devidos, acompanhar a regularização, quando cabível, ou adotar outras medidas previstas na legislação.</p><p>Em determinadas situações, também pode ser necessária a atuação de outros órgãos ou mesmo o encaminhamento para adoção de medidas judiciais.</p>"
+              }
+            },
+            {
+              "id": "b_mt0tss1j_fmdb",
+              "type": "callout",
+              "props": {
+                "variant": "ear",
+                "tone": "attention",
+                "icon": "pencil-line",
+                "title": "A experiência da SPU",
+                "heading": "<span data-color=\"muted\">Quando a atuação administrativa não é suficiente</span>",
+                "children": "<p>A IN nº 304/2026 prevê que, quando forem necessárias medidas judiciais para enfrentar ações ou omissões que afetem os imóveis da União, a SPU encaminhe à Advocacia-Geral da União os subsídios técnicos necessários. Entre eles estão a descrição da infração e do bem afetado, a identificação dos responsáveis, o histórico das medidas administrativas adotadas e os elementos probatórios reunidos. </p><p>Isso evidencia a importância de uma instrução administrativa consistente: os registros produzidos durante a fiscalização e a apuração podem subsidiar providências que ultrapassam o próprio processo administrativo.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bnziahqn",
+      "type": "conclusion",
+      "props": {
+        "kicker": "CONCLUSÃO",
+        "kickerIcon": "check",
+        "title": "O que considerar diante de uma possível infração em um imóvel público?",
+        "body": "<p>A gestão de imóveis públicos pode colocar o agente público diante de situações muito diferentes: ocupações sem autorização, descumprimento de condições de uso, intervenções irregulares, danos ao patrimônio, entre outras. Nem toda situação irregular, porém, pode ser automaticamente tratada como infração, assim como nem toda providência adotada pela Administração possui natureza de sanção.</p><p>Ao longo deste material, vimos que a atuação administrativa exige algumas distinções fundamentais. É preciso verificar se a conduta está prevista como infração, se há elementos que demonstrem sua materialidade e autoria e quais consequências estão previstas na legislação aplicável. Quando houver responsabilização, devem ser observadas as garantias do devido processo, do contraditório e da ampla defesa.</p><p>Também vimos que os instrumentos, procedimentos e sanções não são necessariamente os mesmos em todos os entes públicos. A regulamentação da SPU permitiu observar como esses conceitos são aplicados concretamente à gestão dos imóveis da União, mas quem atua com patrimônio estadual, distrital ou municipal deve identificar as competências, normas e procedimentos aplicáveis à sua realidade.</p><p>Mais do que conhecer uma lista de infrações, sanções ou documentos, o importante é compreender a lógica que orienta a atuação administrativa: <b><span data-color=\"ochre-light\">caracterizar adequadamente a situação, fundamentar as providências adotadas, assegurar os direitos dos envolvidos e buscar a proteção do patrimônio e do interesse público</span></b>.</p>"
+      },
+      "children": [
+        {
+          "id": "bnumom77",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Para refletir",
+            "kickerIcon": "brain",
+            "title": "",
+            "color": "",
+            "bg": "",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "bxh7ul33",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "bfebxwg1",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "icon",
+                    "icon": "badge-question-mark",
+                    "accent": "var(--terra-800)",
+                    "items": [
+                      {
+                        "title": "",
+                        "text": "Ao se deparar com uma situação irregular em um imóvel público, que elementos você precisaria conhecer antes de concluir que houve uma infração administrativa? "
+                      },
+                      {
+                        "title": "",
+                        "text": "Por que é importante distinguir uma sanção administrativa de outras consequências ou providências que podem decorrer da mesma situação? "
+                      },
+                      {
+                        "title": "",
+                        "text": "Que riscos podem surgir quando uma infração ou seu responsável são definidos sem elementos suficientes para demonstrar a materialidade e a autoria? "
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b_mswg3t6o_gxs5",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "icon",
+                    "icon": "badge-question-mark",
+                    "accent": "var(--terra-800)",
+                    "items": [
+                      {
+                        "title": "",
+                        "text": "Na sua experiência profissional, você já acompanhou alguma situação em que uma irregularidade em imóvel público exigiu diferentes providências ou a atuação de mais de uma área ou instituição? O que esse caso revela sobre a complexidade da atuação administrativa? "
+                      },
+                      {
+                        "title": "",
+                        "text": "Depois desta leitura, que cuidados você considera essenciais para que a atuação diante de uma possível infração proteja o patrimônio público sem deixar de assegurar os direitos dos envolvidos?"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b8r5yedz",
+      "type": "pagefooter",
+      "props": {
+        "code": "Infrações e sanções administrativas [M622]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Claudson Moreira"
+          },
+          {
+            "role": "Revisão",
+            "name": "Danilo dos Santos Silva"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
