@@ -1,0 +1,1293 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M 2.3.2 - Formas de aquisicao e constituicao de direitos imobiliarios",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "b_msulplnf_dxo7",
+          "text": "Aquisição de propriedade x constituição de direitos reais",
+          "hidden": false
+        },
+        {
+          "id": "ci7h4p3v",
+          "text": "Formas de aquisição imobiliária",
+          "hidden": false
+        },
+        {
+          "id": "c4a0k1nc",
+          "text": "Formas de aquisição originadas da norma jurídica",
+          "hidden": false
+        },
+        {
+          "id": "b_msulpij3_41tk",
+          "text": "Constituição de direitos reais sobre imóveis ",
+          "hidden": false
+        },
+        {
+          "id": "b_msulphdi_ph3e",
+          "text": "Formalização e registro:<span style=\"font-weight: normal;\"> da aquisição à oponibilidade </span>",
+          "hidden": false
+        }
+      ],
+      "enabled": true
+    }
+  },
+  "blocks": [
+    {
+      "id": "b4z000s4",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "btm8lj2g",
+      "type": "hero",
+      "props": {
+        "kicker": "Reconhecimento e cadastro de imóveis públicos na prática",
+        "kickerIcon": "map-pin-house",
+        "title": "Formas de Aquisição e Constituição e Direitos Imobiliários",
+        "byline": "Os fundamentos jurídicos do ingresso  de imóveis ao patrimônio público ",
+        "slot": "btm8lj2g__slot"
+      }
+    },
+    {
+      "id": "b8el8zl2",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c8q9uw3m",
+          "type": "prose",
+          "props": {
+            "html": "<p>Ao adquirir um imóvel, não é incomum que o Poder Público percorra um caminho inverso ao da história: resgata, por vias jurídicas próprias, bens que já pertenceram à Coroa portuguesa e Estado e que, ao longo dos séculos, se dispersaram para o domínio privado por diversas razões.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Essa, contudo, é apenas uma das dinâmicas possíveis de ingresso de imóveis no patrimônio público.&nbsp;</span><span style=\"color: inherit; text-wrap-mode: initial;\">Em muitos casos, o bem jamais integrou o patrimônio privado, passando a compor o domínio estatal em razão de características naturais, de determinação legal ou de outros fatos juridicamente relevantes.&nbsp;</span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">As formas de aquisição são variadas e podem decorrer de negócios jurídicos, de fenômenos naturais ou de hipóteses em que a própria lei atribui a determinado fato o efeito de incorporar o imóvel ao patrimônio público.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">Em qualquer dessas hipóteses, o bem passa a se qualificar como público justamente porque foi adquirido pelo Poder Público.&nbsp;</span></p><p>A fim de compreender bem o roteiro jurídico a que um determinado bem é submetido para ingressar no patrimônio público, é necessário<mark> identificar as causas dessa aquisição</mark> e então visualizar as consequências práticas e formais imediatas.</p>"
+          }
+        },
+        {
+          "id": "b4kw4r89",
+          "type": "markerlist",
+          "props": {
+            "variant": "icon",
+            "icon": "lightbulb",
+            "accent": "",
+            "items": [
+              {
+                "title": "Conhecer se um determinado imóvel ingressa no acervo público por meio de um contrato, permite saber se é necessária escritura pública e registro, se há previsão legal específica exigível, e se o bem ingressa gravado por algum ônus que a Administração precisará observar.<br><br>",
+                "text": "É exatamente este o percurso deste material."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_msulplnf_vy0a",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_msulplnf_dxo7",
+          "type": "titulo",
+          "props": {
+            "text": "Aquisição de propriedade x constituição de direitos reais",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "blz267q5",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>Antes de avançar sobre cada uma das modalidades específicas, é necessário fixar uma distinção que orienta toda a compreensão do tema. Nem toda relação jurídica que o Estado estabelece com um imóvel envolve a <b>aquisição da propriedade</b> plena sobre ele. Em diversas situações, o que se opera é a <b>constituição de um direito real</b> limitado sobre bem de titularidade alheia.</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b_msulplnf_py4f",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Essa distinção comporta, ainda, um desdobramento interno.</span></p><p>Quando o que está em jogo é, de fato, a aquisição da propriedade, a doutrina a classifica em <b>originária </b>ou <b>derivada</b>, conforme haja ou não relação de causalidade com o titular anterior do bem, distinção de que decorrem consequências práticas relevantes. Já quando o vínculo jurídico não importa transferência de domínio, mas a criação de um ônus real sobre imóvel que permanece sob titularidade alheia, fala-se em constituição de direito real.</p><p> Os tópicos a seguir apresentam os principais aspectos relacionados a essas formas de aquisição e constituição de direitos imobiliários.</p>"
+          }
+        },
+        {
+          "id": "b46q756q",
+          "type": "titulo",
+          "props": {
+            "text": "A aquisição da propriedade: <span style=\"font-weight: normal;\">formas originária e derivada</span> ",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bhk3zpsf",
+          "type": "prose",
+          "props": {
+            "html": "<p>Quanto à aquisição da propriedade em si, a doutrina tradicionalmente a classifica em originária e derivada. </p>"
+          }
+        },
+        {
+          "id": "b99uou58",
+          "type": "compareab",
+          "props": {
+            "a": {
+              "label": "originária ",
+              "icon": "sparkles",
+              "title": "",
+              "content": "<p>Diz-se originária a aquisição que se dá sem qualquer relação de causalidade com o titular anterior do bem. Nesse caso, <b>a propriedade se forma como se fosse nova</b>, livre dos vícios e ônus que porventura recaíssem sobre o domínio anterior. É o que ocorre na <span data-term=\"acessão\" data-definition=\"A acessão natural é uma forma de aquisição originária. Não há transmissão de um título anterior, tampouco relação de causalidade com titular precedente: a propriedade do acréscimo se forma como se fosse nova, independentemente de registro.\">acessão</span> e na <span data-term=\"usucapião\" data-definition=\"Na usucapião a propriedade se consolida em favor do possuidor — inclusive do Poder Público, se figurar como interessado — quando do preenchimento dos requisitos legais da posse mansa, pacífica e ininterrupta, e o atingimento do prazo exigido em cada modalidade\">usucapião</span>.</p>"
+            },
+            "b": {
+              "label": "derivada",
+              "icon": "arrow-left-right",
+              "title": "",
+              "content": "<p>&nbsp;A aquisição derivada pressupõe a <b>transmissão do direito de um patrimônio a outro</b>, com base em um título que formalizará a vontade das partes. É o que sucede na compra e venda e na doação.</p>"
+            }
+          }
+        },
+        {
+          "id": "bjlzhh4k",
+          "type": "prose",
+          "props": {
+            "html": "<p>A distinção entre aquisição originária e derivada repercute, concretamente, na existência ou não de exigências formais específicas (como a necessidade de escritura pública e de registro imobiliário), impactando, ainda, no momento em que o Poder Público passa, de fato, a titularizar o imóvel. </p><p>Nas <b>aquisições derivadas</b>, além da função de publicidade, o registro inaugura o momento da constituição da titularidade do direito real em favor do Estado, tal como ocorre na compra e venda e na doação – negócios que também exigem escritura pública. </p><p>Já nas <b>aquisições originárias</b>, a titularidade se forma com o aperfeiçoamento das condições jurídicas exigidas pela espécie, e independe do registro – que apenas confere publicidade.</p>"
+          }
+        },
+        {
+          "id": "bilm38rr",
+          "type": "examplecard",
+          "props": {
+            "label": "",
+            "icon": "notebook-pen",
+            "color": "",
+            "slot": "bilm38rr__slot",
+            "collapse": "none",
+            "title": "",
+            "body": "<p>Na usucapião, por exemplo, a propriedade se consolida em favor do possuidor — inclusive do Poder Público, se figurar como interessado — quando do preenchimento dos requisitos legais da posse mansa, pacífica e ininterrupta, e o atingimento do prazo exigido em cada modalidade. Por isso, a sentença que reconhece a usucapião — ou a ata notarial, no procedimento extrajudicial — tem natureza meramente declaratória. Ou seja: ela não cria o direito, apenas o confirma, registrando o momento exato em que todos os requisitos para a aquisição foram cumpridos.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "byoz1iwa",
+          "type": "titulo",
+          "props": {
+            "text": "A constituição de direitos reais: <span style=\"font-weight: normal;\">quando o Estado não adquire, mas institui</span>",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bs60v4n5",
+          "type": "prose",
+          "props": {
+            "html": "<p>Deferente da aquisição, a <b>constituição de direito real </b>não transfere a propriedade de um patrimônio a outro. O que se cria é apenas um vínculo jurídico real (<span data-term=\"oponível a todos\" data-definition=\"Significa que uma lei, norma ou decisão judicial possui validade geral, atingindo e obrigando toda a coletividade, e não apenas as pessoas que participaram de um processo específico. No Direito, pode aparecer como a expressão em latim: &lt;i&gt;erga omnes.&lt;/i&gt;\">oponível a todos</span>)&nbsp;sobre imóvel cuja titularidade permanece com quem já a detinha. </p><p>É o que ocorre, por exemplo, na servidão administrativa constituída em favor do Poder Público sobre imóvel particular para a passagem de linhas de transmissão de energia elétrica, para a instalação de redes de água e esgoto e para a passagem de gasodutos e oleodutos. Em nenhum desses casos há transferência de propriedade.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">O que se constitui é um direito real sobre coisa alheia: o titular original conserva o domínio do imóvel, agora gravado por um ônus real oponível a terceiros, enquanto o beneficiário — </span><span style=\"text-wrap-mode: initial; color: inherit;\">o Poder Público, na servidão</span><span style=\"text-wrap-mode: initial; color: inherit;\">,— adquire apenas a faculdade de usar o bem na medida do direito instituído.</span><br></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b9hg5zr6",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "ci7h4p3v",
+          "type": "titulo",
+          "props": {
+            "text": "Formas de aquisição imobiliária",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cszlpjnv",
+          "type": "prose",
+          "props": {
+            "html": "<p>As modalidades de aquisição se organizam em torno de três causas: <b>contratuais</b>, <b>naturais</b> e <b>jurídicas</b>. Cada uma possui contornos e consequências jurídicas próprias; por isso, vale a pena conhecê-las de perto. </p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b57i2wkf",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Confira clicando aqui",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullUp": true
+      },
+      "children": [
+        {
+          "id": "cd164kvo",
+          "type": "titulo",
+          "props": {
+            "text": "Causas contratuais ",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "by0e177f",
+          "type": "prose",
+          "props": {
+            "html": "<p>As causas contratuais decorrem de negócios jurídicos regulados pelo direito privado, mas o Poder Público também se vale desses instrumentos, ainda que com adaptações impostas pelo regime de direito público a que se submete. Quando o Estado figura como parte, os referidos negócios jurídicos não se tutelam apenas no Código Civil. Na verdade, três universos normativos se entrelaçam seguindo uma ordem lógica.&nbsp;</p>"
+          }
+        },
+        {
+          "id": "c4gicvn3",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "bohbnyr2",
+          "type": "feature",
+          "props": {
+            "columns": 3,
+            "card": true,
+            "accent": "",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "book-open-text",
+                "title": "Código Civil",
+                "text": "Fornece o regime material do negócio, os requisitos de validade da compra e venda, da doação, da permuta e da dação em pagamento. "
+              },
+              {
+                "icon": "file-pen-line",
+                "title": "Lei nº 6.015/1973<br><span style=\"font-weight: normal;\">Lei de Registros Públicos</span>",
+                "text": "Disciplina a formalização e a publicidade do ato perante o Cartório de Registro de Imóveis."
+              },
+              {
+                "icon": "book-alert",
+                "title": "Lei nº 14.133/2021 <br><span style=\"font-weight: normal;\">Nova Lei de Licitações e Contratos Administrativos</span>",
+                "text": "Impõe o procedimento publicístico que precede – e condiciona – à própria celebração do negócio."
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_msumlah1_ocwv",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Antes de qualquer negócio que envolva o Poder Público, é preciso seguir a <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 14.133/2021</a>: via de regra, a licitação. Excepcionalmente, admite-se a contratação direta. É o que ocorre, por exemplo, quando o imóvel escolhido é o único que atende às necessidades do serviço, consideradas suas características de instalação e localização — hipótese que a lei hoje trata como inexigibilidade (art. 74, V, da Lei nº 14.133/2021). Somente depois de vencida essa etapa é que se aplicam as regras do Código Civil sobre a validade do negócio e, ao final, as normas registrais sobre sua publicidade.</span></p>"
+          }
+        },
+        {
+          "id": "bywpcm9z",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo Da União",
+            "icon": "landmark",
+            "color": "",
+            "slot": "bywpcm9z__slot",
+            "collapse": "open",
+            "title": "",
+            "body": "<p>No âmbito federal, temos a <b><a href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/bens-da-uniao/arquivos/in222017_on12018_manualdeaplicacao0520181.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Instrução Normativa SPU nº 22/2017</a></b>, complementada pela Orientação Normativa nº 1/2018. Ela disciplina a aquisição, a incorporação e a regularização patrimonial de imóveis em nome da União, com procedimentos próprios para cada modalidade contratual. Trata-se de uma normativa restrita às aquisições contratuais de interesse da União, mas Estados, Distrito Federal e Municípios podem editar regulamentos análogos para disciplinar as aquisições contratuais de seus próprios imóveis. </p>"
+          },
+          "children": []
+        },
+        {
+          "id": "b1lmmd7x",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "warning",
+            "icon": "badge-alert",
+            "title": "espécies contratuais de aquisição imobiliária",
+            "heading": "",
+            "children": "<p>Antes de adentrarmos nas mais variadas espécies contratuais de aquisição imobiliária, é importante destacar que as modalidades inclusas no referido conceito (que nascem a partir do acordo e conjugação de vontades) se tratam de aquisições derivadas, cuja titularidade só se aperfeiçoará com o efetivo registro do direito real na matrícula do bem.</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b61n8cvb",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Compra e venda",
+                "content": "<p>A compra e venda é a mais conhecida das causas contratuais de aquisição imobiliária. Sua disciplina material está nos arts. 481 e seguintes do Código Civil. Quando o adquirente é o Poder Público, sua celebração se submete também à tutela da Lei nº 14.133/2021, prevendo hipóteses de inexigibilidade, como a do imóvel singular (art. 74, V).</p><p>Em âmbito federal, é regulada, ainda, pela Instrução Normativa SPU nº 22/2017. Segundo essa instrução normativa, a compra e venda é o modo de aquisição voluntária mediante acordo entre as partes e contraprestação pecuniária. Sua instrução exige a demonstração do interesse público na aquisição, a indisponibilidade de imóvel próprio do ente para atender à necessidade do órgão requerente, a disponibilidade de recursos financeiros e a avaliação prévia do bem.</p>"
+              },
+              {
+                "title": "Permuta",
+                "content": "<p>A permuta é a troca de um bem por outro, sem contraprestação em dinheiro. O Código Civil a disciplina no art. 533, aplicando-lhe, no que couber, as regras da compra e venda. Na Lei nº 14.133/2021, a permuta aparece principalmente como modalidade de alienação de bens públicos, consoante o que prevê o <span data-term=\"art. 76, I.\" data-definition=\"&lt;i&gt;Art. 76. A alienação de bens da Administração Pública, subordinada à existência de interesse público devidamente justificado, será precedida de avaliação e obedecerá às seguintes normas: &lt;br&gt;I - tratando-se de bens imóveis, inclusive os pertencentes às autarquias e às fundações, exigirá autorização legislativa e dependerá de licitação na modalidade leilão, dispensada a realização de licitação nos casos de: &lt;br&gt;[...]&lt;br&gt;c) permuta por outros imóveis que atendam aos requisitos relacionados às finalidades precípuas da Administração, desde que a diferença apurada não ultrapasse a metade do valor do imóvel que será ofertado pela União, segundo avaliação prévia, e ocorra a torna de valores, sempre que for o caso;&lt;/i&gt;\">art. 76, I.</span>, sendo a expressão normativa de tal dispositivo extremamente esclarecedora quanto ao seu âmbito de aplicação.</p><p>Como forma de aquisição de imóvel particular, porém, a nova lei não traz regra específica. Em âmbito federal, essa lacuna é suprida pela IN 22/2017. Ela equipara a permuta, procedimentalmente, à compra, tratando as duas modalidades de forma conjunta em seus modelos de instrução processual.</p><p>Distingue-se, porém, quanto ao objeto da contraprestação: em vez de pagamento em dinheiro, um imóvel é trocado por outro, o que exige a avaliação e a justificativa do preço de ambos os bens envolvidos na troca.</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Dação em pagamento",
+                "content": "<p>A dação em pagamento está prevista nos arts. 356 a 359 do Código Civil. Ocorre quando o credor concorda em receber, em vez do pagamento devido, uma prestação diversa — no caso, um imóvel. Na perspectiva da aquisição, ora tratada, é o Poder Público quem figura como credor, recebendo o imóvel do particular devedor.</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "b8nqal7m",
+                    "type": "callout",
+                    "props": {
+                      "variant": "ear",
+                      "tone": "warning",
+                      "icon": "alert-triangle",
+                      "title": "ATENÇÃO",
+                      "heading": "",
+                      "children": "<p>Não confundir essa hipótese com a dação em pagamento tratada pela Lei nº 14.133/2021 (art. 76, I), que disciplina a situação inversa: a alienação de imóvel do próprio Poder Público, oferecido para quitar dívida por ele contraída.</p>",
+                      "color": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Doação (recebimento por doação)",
+                "content": "<p>A doação está prevista nos arts. 538 e seguintes do Código Civil. É o contrato pelo qual alguém, por liberalidade, transfere bem do seu patrimônio para o de outrem. Na perspectiva da aquisição, ora tratada, é o Poder Público quem figura como donatário, recebendo o imóvel de particular ou de outro ente público. Situação distinta é a doação como forma de alienação, tratada pela Lei nº 14.133/2021 (art. 76, I), quando é o próprio Poder Público quem doa bem de seu patrimônio.</p><p>O recebimento por doação é modalidade voluntária, de iniciativa do particular, ou de outro ente público, que oferece o imóvel à Administração. A aceitação é discricionária. Depende de juízo de conveniência e oportunidade quanto ao interesse público, econômico ou social envolvido, considerando o estado do bem, suas potencialidades e eventuais ônus que o gravem. Em âmbito federal, o procedimento é regulado pela IN 22/2017.</p><p>É comum que a doação venha acompanhada de encargo — condição para viabilizar determinado empreendimento ou política pública. Nessa hipótese, a lei exige licitação e torna obrigatória a cláusula de reversão do imóvel ao doador, sob pena de nulidade do ato (art. 76, §6º, da Lei nº 14.133/2021). O descumprimento do encargo pactuado autoriza a reversão.</p><p></p><p></p><p></p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "by4ssyxx",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullUp": true
+      },
+      "children": [
+        {
+          "id": "cbbxrwac",
+          "type": "titulo",
+          "props": {
+            "text": "Causas naturais",
+            "level": "h3",
+            "__pullUp": false
+          }
+        },
+        {
+          "id": "cecrej63",
+          "type": "prose",
+          "props": {
+            "html": "<p>As causas naturais decorrem de fenômenos da natureza, independentemente de qualquer manifestação de vontade ou de disposição legal especial que atribua ao fato esse efeito. Encontram seu principal instituto na acessão natural — modo de aquisição da propriedade pelo qual algo se incorpora, por obra da natureza, a um imóvel já existente, passando o acréscimo a pertencer ao proprietário do bem principal.</p>"
+          }
+        },
+        {
+          "id": "c38pjmda",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b10il5x0",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">O Código Civil a disciplina nos <span data-term=\"arts. 1.248 a 1.252\" data-definition=\"&lt;i&gt;Art. 1.248. A acessão pode dar-se: &lt;br&gt;&amp;nbsp;I - por formação de ilhas; &lt;br&gt;&amp;nbsp;II - por aluvião; &lt;br&gt;&amp;nbsp;III - por avulsão; &lt;br&gt;&amp;nbsp;IV - por abandono de álveo; &lt;br&gt;&amp;nbsp;V - por plantações ou construções.&lt;/i&gt;\">arts. 1.248 a 1.252</span>, e prevê quatro espécies naturais:<b> </b>a<b> formação de ilhas</b>, a<b> aluvião</b>, a<b> avulsão</b> e o<b> abandono de álveo</b>. </span><span style=\"text-wrap-mode: initial; color: inherit;\">A quinta espécie mencionada pelo art. 1.248 — as plantações e construções — decorre de obra humana, e não da natureza, tendo a denominação de <b>acessão artificial</b>.</span></p><p><mark>A <b>acessão natural</b> é, em qualquer de suas espécies, forma de aquisição originária</mark>. Não há transmissão de um título anterior, tampouco relação de causalidade com titular precedente: a propriedade do acréscimo se forma como se fosse nova, independentemente de registro. </p><p>Consumado o fenômeno natural, a propriedade se transfere de pleno direito ao proprietário do imóvel beneficiado. O eventual registro cumpre, aqui também, apenas função de publicidade e de atualização cadastral perante o Cartório de Registro de Imóveis — assim como na usucapião.</p>"
+          }
+        },
+        {
+          "id": "b1hbm7a3",
+          "type": "kicker",
+          "props": {
+            "icon": "compass",
+            "children": "Tipos de acessão natural"
+          }
+        },
+        {
+          "id": "b0s6m9is",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Formação de ilhas ",
+                "content": "<p>Nos termos do art. 1.249 do Código Civil, <mark>as ilhas que se formam em correntes de água – comuns ou particulares – pertencem aos proprietários ribeirinhos fronteiros</mark>. O critério de atribuição varia conforme a posição da ilha: se formada no meio do rio, divide-se entre os proprietários de ambas as margens, na proporção da testada de cada um; se formada entre a margem e a linha que divide o álveo, pertence ao proprietário fronteiro desse lado. </p>"
+              },
+              {
+                "title": "Aluvião ",
+                "content": "A aluvião, prevista no art. 1.250 do Código Civil, consiste no acréscimo lento e imperceptível de terras às margens de rios e outras correntes, por depósitos e aterros naturais, ou pelo desvio das águas. <mark data-hl=\"terra\">Pertence, sem indenização, aos donos dos terrenos marginais</mark>. Quando o terreno aluvial se forma em frente a prédios de proprietários diferentes, divide-se entre eles, na proporção da testada de cada um sobre a antiga margem.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Avulsão ",
+                "content": "A avulsão, disciplinada pelo art. 1.251 do Código Civil, <mark data-hl=\"petrol\">ocorre quando força natural violenta desprende porção de terra de um imóvel e a desloca para outro</mark>.  <span style=\"text-wrap-mode: initial; color: inherit;\">O proprietário do imóvel que recebe o acréscimo adquire sua propriedade, mediante indenização ao proprietário do imóvel de origem — ou, independentemente de indenização, se este não reclamar o acréscimo no prazo de um ano. </span>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Abandono de álveo",
+                "content": "O abandono de álveo, previsto no art. 1.252 do Código Civil, ocorre quando um curso d'água seca ou muda de curso, deixando descoberto o leito por onde antes corria. <mark data-hl=\"green\">Esse leito abandonado passa a pertencer aos proprietários ribeirinhos das duas margens</mark>, sem indenização aos donos dos terrenos por onde as águas abrirem o novo curso.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bo9fln7k",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullDown": false,
+        "__pullUp": true
+      },
+      "children": [
+        {
+          "id": "ccol953r",
+          "type": "titulo",
+          "props": {
+            "text": "Causas jurídicas <span style=\"font-weight: normal;\">(determinação legal)</span>",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "c6dlun7w",
+          "type": "prose",
+          "props": {
+            "html": "<p>As causas jurídicas reúnem as hipóteses em que a própria norma, constitucional ou infraconstitucional<font color=\"#1c2420\" style=\"\">,</font>&nbsp;atribui a determinado bem a condição de patrimônio público, independentemente de negócio jurídico, de manifestação de vontade das partes ou de qualquer formalidade registral específica. Nessas hipóteses, é a própria norma quem define a titularidade do bem, dispensando o percurso negocial próprio das causas contratuais e o fenômeno físico próprio das causas naturais.</p>"
+          }
+        },
+        {
+          "id": "c6qtu3b8",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "bxplnp90",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A Constituição Federal é a primeira e mais relevante fonte dessas causas. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Os arts. 20 e 26 elencam, respectivamente, os bens que compõem o patrimônio da União e dos Estados.&nbsp;</span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">Entre os bens da União, o <a href=\"https://constituicao.stf.jus.br/dispositivo/cf-88-parte-1-titulo-3-capitulo-2-artigo-20\" target=\"_blank\" rel=\"noopener noreferrer\">art. 20</a> inclui os terrenos de marinha e seus acrescidos, as terras devolutas indispensáveis à defesa das fronteiras, os rios e lagos que banhem mais de um Estado ou sirvam de limite com outros países, as ilhas fluviais e lacustres nas zonas limítrofes, as praias marítimas, o mar territorial e os recursos minerais, entre outros.&nbsp;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">Entre os bens dos Estados, o <a href=\"https://constituicao.stf.jus.br/dispositivo/cf-88-parte-1-titulo-3-capitulo-3-artigo-26\" target=\"_blank\" rel=\"noopener noreferrer\">art. 26</a> inclui as águas superficiais e subterrâneas, as ilhas fluviais e lacustres não pertencentes à União e as terras devolutas não compreendidas entre as da União. Para os Municípios, remanescem todos os bens que não são inclusos nos referidos artigos.</span></li></ul></p><p>Em nenhuma dessas hipóteses há negócio jurídico ou formalidade registral que atribua a titularidade: a própria norma constitucional já a define.</p>"
+          }
+        },
+        {
+          "id": "b7veyekt",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "warning",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>A aquisição por causa jurídica não se esgota, porém, no texto constitucional. Também pode decorrer de lei ordinária, de lei complementar ou de decreto que atribua a determinado fato o efeito de transferir ao Poder Público a titularidade de um imóvel, sem que se trate de negócio jurídico bilateral ou fenômeno natural.</p>"
+          }
+        },
+        {
+          "id": "b_msuno2n8_zfuv",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\"><mark>Trata-se, em qualquer de suas manifestações, de forma de aquisição originária da propriedade</mark>. A titularidade do Poder Público não deriva de relação de causalidade com titular anterior — nasce diretamente do comando normativo. Daí decorrem consequências práticas já vistas anteriormente. </span></p><p>O bem ingressa no patrimônio público livre de ônus reais que porventura o gravassem. Sua titularidade independe de registro, que aqui cumpre apenas função de publicidade.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bprgpi0k",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c4a0k1nc",
+          "type": "titulo",
+          "props": {
+            "text": "Formas de aquisição originadas da norma jurídica",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cejs3yzx",
+          "type": "prose",
+          "props": {
+            "html": "<p>Existem diversas formas de aquisição com origem na norma jurídica, mas apresentaremos aqui as categorias mais utilizadas pelo Poder Público para a composição de seu acervo patrimonial. Explore cada uma para saber mais.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mt1x973h_om5b",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullDown": false,
+        "__pullUp": false
+      },
+      "children": [
+        {
+          "id": "b_mt1x973h_1880",
+          "type": "titulo",
+          "props": {
+            "text": "Usucapião ",
+            "level": "h3",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1x973h_gffh",
+          "type": "prose",
+          "props": {
+            "html": "<p>A <b>usucapião</b> é modo de aquisição da propriedade pela posse prolongada, mansa, pacífica e ininterrupta, exercida com a intenção de dono (<i>animus domini</i>), por prazo e sob requisitos que a lei estabelece. Cumprida essa soma de elementos, a lei atribui ao possuidor a propriedade do bem, independentemente de qualquer relação jurídica com o titular anterior. </p><p>Trata-se, por isso, de <i>causa jurídica em sentido estrito</i>: é a <b>norma</b> quem opera a transferência da titularidade — e não a vontade das partes, nem qualquer fenômeno da natureza.</p>",
+            "__pullUp": false,
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1x973h_p1a5",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mt1xdbf6_de1g",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">O </span><b style=\"text-wrap-mode: initial;\">Código Civil</b><span style=\"text-wrap-mode: initial; color: inherit;\"> disciplina a usucapião de bens imóveis em diversas modalidades, nem todas aplicáveis ao Poder Público.</span></p>",
+            "__pullUp": false,
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1x973h_rtpo",
+          "type": "contentslider",
+          "props": {
+            "hint": "modalidades de usocapião - Código Civil",
+            "accent": "",
+            "showTabNumbers": false,
+            "slides": [
+              {
+                "showImage": false,
+                "slot": "b_mt1x973h_rtpo__slides_0_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "",
+                "label": "",
+                "tabLabel": "Usucapião extraordinária ",
+                "title": "<span data-fs=\"h3\">Usucapião extraordinária </span>",
+                "subtitle": "(art. 1.238) ",
+                "description": "Exige posse ininterrupta e sem oposição por quinze anos, independentemente de título e boa-fé, reduzidos a dez anos se o possuidor houver estabelecido moradia habitual ou realizado obras e serviços de caráter produtivo. ",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "b_mt1x973h_rtpo__slides_1_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "",
+                "label": "",
+                "tabLabel": "Usucapião ordinária ",
+                "title": "<span data-fs=\"h3\">Usucapião ordinária </span>",
+                "subtitle": "(art. 1.242) ",
+                "description": "Exige posse por dez anos, com justo título e boa-fé, reduzidos a cinco anos em hipótese qualificada de aquisição onerosa com registro posteriormente cancelado. O art. 1.241 assegura ao possuidor o direito de requerer ao juiz a declaração da propriedade adquirida por usucapião. ",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "b_mt1x973h_rtpo__slides_2_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "",
+                "label": "",
+                "tabLabel": "Modalidades especiais ",
+                "title": "<span data-fs=\"h3\">Modalidades especiais </span>",
+                "subtitle": "",
+                "description": "<b>Usucapião urbana e a rural</b>, voltadas à moradia ou à exploração produtiva por pessoa natural ou por sua família, e a <b>usucapião familiar</b>, decorrente do abandono do lar por ex-cônjuge ou ex-companheiro — pressupõem finalidade incompatível com a natureza do ente público. Por isso, é a usucapião extraordinária, e eventualmente a ordinária, que se prestam a fundamentar a aquisição de imóveis pelo Poder Público.",
+                "linkHref": "",
+                "linkLabel": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mt1x973h_du9n",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "Você sabia?",
+            "heading": "A prerrogativa de adquirir por usucapião não é recíproca.",
+            "children": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">A Constituição aponta, de forma expressa, a imprescritibilidade dos bens públicos, ou seja, eles não podem ser usucapidos. O art. 102 do Código Civil reforça a mesma vedação, de aplicação geral: <mark data-hl=\"petrol\">os bens públicos não estão sujeitos a usucapião, seja qual for sua classificação</mark> — de uso comum, de uso especial ou dominical. </span></p>"
+          }
+        },
+        {
+          "id": "b_mt1x973h_4wyu",
+          "type": "prose",
+          "props": {
+            "html": "<p>O que se examina nesta seção é a situação inversa, doutrinária e jurisprudencialmente admitida: o próprio Estado, na posição de possuidor, ajuizando ação de usucapião para adquirir a propriedade de imóvel particular. Aperfeiçoados os requisitos legais (o decurso do prazo, somado à posse qualificada), a titularidade do bem ingressa no patrimônio público naquele exato momento. Não se aguarda a sentença, tampouco o registro.</p><p>Por se tratar de modalidade de aquisição originária, o registro imobiliário tem, aqui, natureza meramente declaratória, e não constitutiva. É frequente, na prática patrimonial pública, que o Poder Público exerça posse mansa, justa e pacífica sobre determinado imóvel por décadas — e seja, para todos os efeitos, seu proprietário —, ainda que o fólio registral continue a indicar, formalmente, outro titular. A sentença que reconhece a usucapião, ou a ata notarial no procedimento extrajudicial, apenas certifica um direito que já existia.</p>"
+          }
+        },
+        {
+          "id": "b_mt1x973h_6ms6",
+          "type": "markerlist",
+          "props": {
+            "variant": "icon",
+            "icon": "landmark",
+            "accent": "",
+            "items": [
+              {
+                "title": "Em âmbito federal, a IN 22/2017 disciplina a usucapião judicial nos arts. 31 e 32",
+                "text": "Verificadas as condições legais, cabe à Secretaria do Patrimônio da União solicitar à Advocacia-Geral da União o ajuizamento da ação de usucapião do imóvel ocupado ou possuído por órgão ou entidade da Administração Pública Federal. O título aquisitivo, nesse caso, é a carta de sentença extraída dos autos do processo judicial.<br><br><span data-fs=\"small\"><i>Tal regramento vincula apenas a União. Estados e Municípios podem editar normas próprias para disciplinar, em suas respectivas alçadas, o procedimento administrativo que precede o ajuizamento da ação de usucapião, bem como os atos de regularização do imóvel usucapido em seu acervo patrimonial.</i></span><br>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mt1x973h_fc9x",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "alert-triangle",
+            "title": "um esclarecimento conceitual",
+            "heading": "",
+            "children": "<p>A própria IN 22/2017 distingue a usucapião judicial do Registro por Apossamento Vintenário — RAVI, antigamente chamado, de forma imprópria, de \"usucapião administrativa\". A usucapião judicial pressupõe reconhecimento pelo Poder Judiciário e tem natureza declaratória, retroagindo ao momento em que se completaram os requisitos legais de posse. O RAVI, ao contrário, é procedido administrativamente pela própria SPU, com fundamento na Lei nº 5.972/1973, e tem natureza constitutiva: pressupõe posse ininterrupta e sem oposição por vinte anos, exercida especificamente por órgão da Administração Federal ou por unidade militar. São, portanto, institutos distintos, ainda que aparentados pela função que cumprem.</p>",
+            "color": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mt1xenbv_8eeq",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullDown": false,
+        "__pullUp": true
+      },
+      "children": [
+        {
+          "id": "b_mt1xenbv_g6cs",
+          "type": "titulo",
+          "props": {
+            "text": "Desapropriação ",
+            "level": "h3",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1xenbv_1ea0",
+          "type": "prose",
+          "props": {
+            "html": "<p>A desapropriação é o instrumento mais conhecido e, também, o mais drástico, entre as aquisições imobiliárias de direito público. Por meio dela, o Estado retira compulsoriamente de particular a propriedade de determinado bem, mediante prévia e justa indenização. </p><p>Fundamenta-se no art. 5º, XXIV, da Constituição, que ao mesmo tempo assegura o direito de propriedade e autoriza sua supressão, por lei, quando presentes necessidade pública, utilidade pública ou interesse social.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Trata-se de típica manifestação do poder de império do Estado — </span><i style=\"text-wrap-mode: initial; color: inherit;\">a supremacia do interesse público sobre o privado</i><span style=\"text-wrap-mode: initial; color: inherit;\"> —, mas submetida a limites rígidos: só se opera mediante procedimento legal e indenização correspondente ao valor do bem.</span></p>",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1xenbv_ehoz",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mt1xenbv_poli",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "scale",
+            "title": "",
+            "heading": "",
+            "children": "<p>A competência para desapropriar é da União, dos Estados, do Distrito Federal e dos Municípios (art. 2º do Decreto-Lei nº 3.365/1941), podendo ser delegada, para fins de promoção do processo expropriatório, a concessionários de serviço público e a entidades que exerçam funções delegadas do Poder Público, mediante autorização legal ou contratual (art. 3º do mesmo diploma).</p>"
+          }
+        },
+        {
+          "id": "b_mt1xg3xi_3oz9",
+          "type": "prose",
+          "props": {
+            "html": "<p><mark>O procedimento se desenvolve em duas fases.</mark> Na fase <b>declaratória</b>, o Poder Público — por decreto do Chefe do Executivo ou, excepcionalmente, por lei — declara a utilidade pública, a necessidade pública ou o interesse social do bem, delimitando seu objeto. Na fase <b>executória</b>, promove-se a desapropriação propriamente dita, por acordo administrativo quanto ao valor da indenização ou, à falta de consenso, por ação judicial.</p>",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1xenbv_rfvz",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "modalidades",
+            "kickerIcon": "map-pin",
+            "title": "",
+            "color": "var(--cloud-100)",
+            "bg": "var(--slate-700)",
+            "body": "<p><span data-color=\"light\">A Constituição e a legislação infraconstitucional preveem diferentes modalidades:</span></p>"
+          },
+          "children": [
+            {
+              "id": "b_mt1xenbv_la1l",
+              "type": "feature",
+              "props": {
+                "columns": 1,
+                "card": false,
+                "accent": "var(--cloud-100)",
+                "layout": "side",
+                "items": [
+                  {
+                    "icon": "building",
+                    "title": "<span data-color=\"ochre-light\">Desapropriação por utilidade pública e necessidade pública&nbsp;</span>",
+                    "text": "<span data-fs=\"body\"><span data-color=\"light\">(Decreto-Lei nº 3.365/1941).</span></span>"
+                  },
+                  {
+                    "icon": "users",
+                    "title": "<span data-color=\"ochre-light\">Desapropriação por interesse social&nbsp;</span>",
+                    "text": "<span data-fs=\"body\"><span data-color=\"light\">(Lei nº 4.132/1962).</span></span>"
+                  },
+                  {
+                    "icon": "sprout",
+                    "title": "<span data-color=\"ochre-light\">Desapropriação para fins de reforma agrária&nbsp;</span>",
+                    "text": "<span data-fs=\"body\"><span data-color=\"light\">(art. 184 da Constituição Federal), com indenização em títulos da dívida agrária, resgatáveis em até vinte anos a partir do segundo ano de emissão — ressalvadas as benfeitorias úteis e necessárias, indenizáveis em dinheiro.</span></span>"
+                  },
+                  {
+                    "icon": "map",
+                    "title": "<span data-color=\"ochre-light\">Desapropriação-sanção urbanística</span>",
+                    "text": "<span data-fs=\"body\"><span data-color=\"light\">(art. 182, §4º, III, da Constituição), aplicável ao imóvel urbano que não cumpre sua função social. Nessa última hipótese, a indenização se dá em títulos da dívida pública, resgatáveis em até dez anos.</span> </span>"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_mt1xenbv_mho0",
+          "type": "prose",
+          "props": {
+            "html": "<p>A regra geral, fixada pelo art. 5º, XXIV, da Constituição, é a indenização prévia, justa e em dinheiro. Vale lembrar, como já visto na Seção 2.1, que a desapropriação é classificada pela doutrina e pela jurisprudência do STJ como forma originária de aquisição — o bem ingressa livre de ônus reais anteriores, e os credores sub-rogam-se no valor da indenização.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mt1xuc46_omgs",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullDown": false,
+        "__pullUp": true
+      },
+      "children": [
+        {
+          "id": "b_mt1xuc46_o12f",
+          "type": "titulo",
+          "props": {
+            "text": "Expropriação de glebas de cultivo ilegal de plantas psicotrópicas ",
+            "level": "h3",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1xuc46_dc6j",
+          "type": "prose",
+          "props": {
+            "html": "<p>A fundamentação primeira dessa modalidade está no <span data-term=\"art. 243, caput, da Constituição Federal\" data-definition=\"&lt;i&gt;Art. 243. — As propriedades rurais e urbanas de qualquer região do País onde forem localizadas culturas ilegais de plantas psicotrópicas ou a exploração de trabalho escravo na forma da lei serão expropriadas e destinadas à reforma agrária e a programas de habitação popular, sem qualquer indenização ao proprietário e sem prejuízo de outras sanções previstas em lei, observado, no que couber, o disposto no art. 5º. (Redação da EC 81/2014)&lt;/i&gt;\">art. 243, caput, da Constituição Federal</span>. O dispositivo determina que as propriedades rurais e urbanas de qualquer região do País onde forem localizadas culturas ilegais de plantas psicotrópicas serão expropriadas e destinadas à reforma agrária e a programas de habitação popular, sem qualquer indenização ao proprietário e sem prejuízo de outras sanções previstas em lei.</p><p>A redação atual, dada pela Emenda Constitucional nº 81/2014, ampliou o alcance da norma também às propriedades urbanas e à exploração de trabalho escravo. O <span data-term=\"parágrafo único do mesmo artigo\" data-definition=\"&lt;i&gt;Parágrafo único. Todo e qualquer bem de valor econômico apreendido em decorrência do tráfico ilícito de entorpecentes e drogas afins e da exploração de trabalho escravo será confiscado e reverterá a fundo especial com destinação específica, na forma da lei. (Redação da EC 81/2014)&lt;/i&gt;\">parágrafo único do mesmo artigo</span> trata de hipótese distinta, ainda que próxima: o confisco de bens de valor econômico apreendidos em decorrência do tráfico ilícito de entorpecentes, que reverterão a fundo especial com destinação específica, na forma da lei.</p>"
+          }
+        },
+        {
+          "id": "b_mt1xuc46_l6ld",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mt1xuc46_k9c0",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">No plano legal, essa matéria é disciplinada pela Lei nº 8.257, de 26 de novembro de 1991, que regulamenta especificamente a expropriação das glebas nas quais se localizem culturas ilegais de plantas psicotrópicas. Cabe à Polícia Federal apurar a existência da cultura ilegal e comunicar o fato ao Instituto Nacional de Colonização e Reforma Agrária e ao órgão de representação judicial da União, a quem incumbe promover a ação de expropriação perante a Justiça Federal.</span></p><p>Trata-se de rito próprio, sumário, que dispensa qualquer indenização ao proprietário — inclusive quanto às benfeitorias —, ressalvada a hipótese de o proprietário comprovar que não teve qualquer responsabilidade sobre o cultivo ilegal, conforme entendimento consolidado pelo Supremo Tribunal Federal.</p><p>No plano regulamentar, a <a href=\"https://www.in.gov.br/en/web/dou/-/portaria-interministerial-senad-mjsp/spu-me-n-1-de-22-de-junho-de-2021-327562555\" target=\"_blank\" rel=\"noopener noreferrer\">Portaria Interministerial SENAD-MJSP/SPU-ME nº 1, de 22 de junho de 2021</a>, disciplina o fluxo de trabalho para a incorporação e a destinação (incluindo alienação) dos imóveis expropriados ou confiscados em decorrência do tráfico de drogas, uma vez transitada em julgado a sentença que reconhece a expropriação ou o perdimento.</p>"
+          }
+        },
+        {
+          "id": "b_mt1xuc46_53ok",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "handshake",
+            "title": "Atuação Conjunta",
+            "heading": "",
+            "children": "<p>A portaria citada resulta da atuação conjunta entre a Secretaria Nacional de Políticas sobre Drogas (SENAD), vinculada ao Ministério da Justiça e Segurança Pública, e a Secretaria do Patrimônio da União (SPU), evidenciando a necessária cooperação entre o órgão de política criminal sobre drogas e o órgão gestor do patrimônio imobiliário federal.&nbsp;</p><p>No âmbito da SPU, os atos e medidas de incorporação do bem ao patrimônio da União, após o recebimento da respectiva sentença transitada em julgado, são normatizados pela IN 22/2017, em seus artigos 33 e 34.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mt1xgnni_6eko",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullDown": false,
+        "__pullUp": true
+      },
+      "children": [
+        {
+          "id": "b_mt1xgnni_askf",
+          "type": "titulo",
+          "props": {
+            "text": "Registro por Apossamento Vintenário (RAVI) ",
+            "level": "h3",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1xgnni_icid",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Registro por Apossamento Vintenário — RAVI é forma originária e voluntária de aquisição da propriedade imobiliária pela União, fundada na <b>posse prolongada e qualificada</b> exercida por órgão da Administração Federal ou por unidade militar. Tem base legal no art. 1º, inciso II, da Lei nº 5.972, de 11 de dezembro de 1973, que autoriza o Poder Executivo a promover o registro, em nome da União, dos imóveis por ela possuídos ou ocupados, ininterruptamente e sem oposição de terceiros, por prazo mínimo de vinte anos.</p>"
+          }
+        },
+        {
+          "id": "b9iaabb6",
+          "type": "markerlist",
+          "props": {
+            "variant": "icon",
+            "icon": "landmark",
+            "accent": "var(--terra-600)",
+            "items": [
+              {
+                "title": "O RAVI é exclusivo da União",
+                "text": "Sua base legal, a Lei nº 5.972/1973, refere-se especificamente aos órgãos da Administração Federal e às unidades militares, não se estendendo a Estados e Municípios, que carecem de norma equivalente."
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mt1xgnni_kwc1",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b1dpjpou",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "attention",
+            "icon": "alert-circle",
+            "title": "Não confunda RAVI com usucapião",
+            "heading": "",
+            "children": "<p>O RAVI pode ser confundido com a usucapião pela aparente similaridade no que tange a posse prolongada. Chegou, inclusive a ser chamado de forma imprópria, de \"usucapião administrativa\", denominação hoje abandonada pela própria SPU para evitar confusões interpretativas.&nbsp;</p><p><b>Anote:</b> A usucapião (art. 1.238 do Código Civil) é reconhecida pelo Poder Judiciário e tem <mark data-hl=\"terra\"><span data-term=\"natureza declaratória\" data-definition=\"A natureza &lt;b&gt;declaratória&lt;/b&gt; apenas reconhece uma situação jurídica que já existiu no passado ou existe no presente, sem alterar a realidade\">natureza declaratória:</span></mark>&nbsp;a propriedade já pertencia ao possuidor desde o instante em que se completou o prazo legal, e a sentença apenas certifica esse fato. O RAVI, ao contrário, tem <mark data-hl=\"green\"><span data-term=\"natureza constitutiva\" data-definition=\"A natureza &lt;b&gt;constitutiva&lt;/b&gt; cria, modifica ou extingue uma relação jurídica, gerando um estado novo a partir da decisão.\">natureza constitutiva</span></mark>.&nbsp;</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b8cccb8i",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">É a própria SPU quem, administrativamente, constitui o título aquisitivo, sem qualquer participação do Poder Judiciário nessa fase. A IN SPU nº 22/2017 disciplina esse procedimento nos arts. 23 a 26.</span></p><p>Trata-se de instrumento de grande utilidade prática para a regularização de imóveis que a União ocupa e utiliza há décadas, muitas vezes por herança de órgãos e entidades extintos, sem que jamais tenha sido formalizado o correspondente título de domínio.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mt1xx2ex_3zlf",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullDown": false,
+        "__pullUp": true
+      },
+      "children": [
+        {
+          "id": "b_mt1xx2ex_tfe9",
+          "type": "titulo",
+          "props": {
+            "text": "Sucessão por Extinção de Entidades da Administração Pública ",
+            "level": "h3",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1xx2ex_vtgc",
+          "type": "prose",
+          "props": {
+            "html": "<p>A sucessão por extinção de entidades constitui, talvez, a mais pura expressão das causas jurídicas em sentido estrito. Não há, aqui, posse qualificada, fenômeno da natureza ou negócio jurídico entre partes: <mark>é a própria lei que extingue a entidade e, no mesmo ato ou em ato correlato, determina o destino de seu patrimônio</mark>. </p><p>A aquisição imobiliária, nessa hipótese, decorre diretamente da vontade expressa do legislador, não de qualquer fato que a Administração deva comprovar perante terceiros, e muito menos de qualquer manifestação de vontade da entidade extinta, que já não mais existe para expressá-la.</p>"
+          }
+        },
+        {
+          "id": "b_mt1xx2ex_fwc0",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mt1yhajg_gveq",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">O fenômeno ocorre sempre que autarquia, fundação pública ou empresa estatal é extinta por lei, e seu acervo patrimonial — nele incluídos os bens imóveis — é redistribuído a outro ente ou entidade, com maior frequência a própria União. A IN SPU nº 22/2017 disciplina o procedimento correspondente nos arts. 27 a 30, exigindo que o processo de aquisição seja instaurado na SPU a partir do recebimento da documentação dos imóveis ou de relação que os identifique.</span></p>"
+          }
+        },
+        {
+          "id": "bkzslhvq",
+          "type": "flashcard",
+          "props": {
+            "term": "<span style=\"font-weight: normal;\">Qual é o </span>título aquisitivo<span style=\"font-weight: normal;\"> do imóvel neste caso?</span>",
+            "description": "Exercitando seus conhecimentos",
+            "definition": "<p><span data-fs=\"body-lg\">O título aquisitivo, nessas hipóteses, é o próprio ato legal que determina a extinção e a sucessão.</span></p>",
+            "icon": "building",
+            "showIcon": false,
+            "useCoverImage": false,
+            "coverSlot": "bkzslhvq__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "b_mt1yiu3i_ehr0",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">É comum, na prática, que o imóvel sucedido nunca tenha sido registrado em nome da entidade extinta ou de suas antecessoras. Para essas hipóteses, a IN 22/2017 (art. 28) prevê as seguintes alternativas:&nbsp;</span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">abertura de matrícula com fundamento no art. 195-B da Lei nº 6.015/1973;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">processamento do já examinado registro por apossamento vintenário;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">transferência da mera posse — quando apenas esse direito tiver sido sucedido;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">reconhecimento da perda da posse, em caráter excepcional, quando não demonstrado o exercício efetivo do direito nos últimos vinte anos.</span></li></ul></p>"
+          }
+        },
+        {
+          "id": "bahy1spw",
+          "type": "examplecard",
+          "props": {
+            "label": "a extinção da Rede Ferroviária Federal S.A. — RFFSA",
+            "icon": "train-track",
+            "color": "var(--green-600)",
+            "slot": "bahy1spw__slot",
+            "collapse": "none",
+            "title": "",
+            "body": "<p>O exemplo mais emblemático dessa modalidade é o da extinção da Rede Ferroviária Federal S.A. — RFFSA, sociedade de economia mista federal instituída pela Lei nº 3.115/1957.</p><p>A Lei nº 11.483, de 31 de maio de 2007, encerrou o processo de liquidação da companhia e disciplinou a sucessão de seu patrimônio: a partir de 22 de janeiro de 2007, a União sucedeu a RFFSA em direitos, obrigações e ações judiciais. Quanto aos imóveis, o art. 2º, II, da referida lei transferiu à União a integralidade do acervo imobiliário da extinta RFFSA, excetuados os imóveis operacionais, que foram transferidos ao Departamento Nacional de Infraestrutura de Transportes (DNIT).</p>"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "b_mt1xxo61_vdlj",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullDown": false,
+        "__pullUp": true
+      },
+      "children": [
+        {
+          "id": "b_mt1xxo61_481w",
+          "type": "titulo",
+          "props": {
+            "text": "Arrematação e Adjudicação ",
+            "level": "h3",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1xxo61_i5fb",
+          "type": "prose",
+          "props": {
+            "html": "<p>Arrematação e adjudicação são espécies de aquisição imobiliária pela via judicial, ambas vinculadas ao processo de execução. Nelas, o Poder Público figura como credor — o exequente — que busca a satisfação de seu crédito mediante a expropriação judicial de bem do devedor. </p><p>A diferença entre as duas está no adquirente. Na <b>arrematação</b>, o bem penhorado é alienado, em leilão judicial, a quem oferecer o maior lance; o adquirente pode ser o próprio credor ou terceiro interessado. Na <b>adjudicação</b>, é o próprio credor quem requer que o bem lhe seja transferido diretamente, pelo valor da avaliação, sem necessidade de leilão — hipótese frequente quando não há licitantes interessados, ou quando o exequente prefere, desde logo, ficar com o bem em pagamento de seu crédito.</p>"
+          }
+        },
+        {
+          "id": "b_mt1xxo61_tjq7",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b9v0tyih",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Código de Processo Civil disciplina a <b>adjudicação</b> no art. 876:&nbsp;</p>"
+          }
+        },
+        {
+          "id": "blwa9t6m",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "auto",
+            "children": "<i>É lícito ao exequente, oferecendo preço não inferior ao da avaliação, requerer que lhe sejam adjudicados os bens penhorados.</i>",
+            "cite": "Art. 876 <br><span style=\"font-weight: normal;\">código de processo civil (<a href=\"https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm\" target=\"_blank\" rel=\"noopener noreferrer\">LEI Nº 13.105/2015</a>)</span>"
+          }
+        },
+        {
+          "id": "b484uq15",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A <b>arrematação</b>, por sua vez, é regulada pelos arts. 879 a 903, que tratam do leilão judicial eletrônico ou presencial, de sua publicidade, das condições de participação e da lavratura do auto de arrematação. Em ambas as hipóteses, o crédito do exequente pode ser utilizado, total ou parcialmente, para compor o preço devido, mediante compensação.</span></p><p>Tanto a arrematação quanto a adjudicação são classificadas pela doutrina e pela jurisprudência como formas originárias de aquisição da propriedade. O Poder Público adquirente, portanto, recebe o imóvel livre dos ônus reais que porventura o gravassem, tal como já visto quanto à desapropriação.</p><p><mark>O título aquisitivo é a carta de arrematação ou a carta de adjudicação</mark>, expedida pelo juízo e apta ao registro perante o Cartório de Imóveis. Uma vez assinado o auto pelo juiz, pelo arrematante e pelo leiloeiro, a arrematação é considerada perfeita, acabada e irretratável — ainda que posteriormente julgados procedentes embargos do executado ou ação autônoma correlata, hipótese em que se assegura ao prejudicado apenas o direito à reparação pelos prejuízos sofridos, e não a desconstituição da aquisição já consumada (art. 903 do Código de Processo Civil).</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mt1xye1z_1hf9",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg",
+        "__pullDown": false,
+        "__pullUp": false
+      },
+      "children": [
+        {
+          "id": "b_mt1xye1z_qxys",
+          "type": "titulo",
+          "props": {
+            "text": "Destinação de Áreas Públicas em Parcelamento do Solo Urbano ",
+            "level": "h3",
+            "__pullDown": false
+          }
+        },
+        {
+          "id": "b_mt1xye1z_a9ua",
+          "type": "prose",
+          "props": {
+            "html": "<p>A destinação de áreas públicas em parcelamento do solo urbano é outra hipótese em que a titularidade do bem decorre diretamente da lei, independentemente de qualquer negócio jurídico ou ato administrativo de incorporação.</p>"
+          }
+        },
+        {
+          "id": "b_mt1xye1z_4zkd",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mt1zp3da_efkv",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Sempre que um particular promove o loteamento de uma gleba, parte da área deve ser reservada a fins públicos — sistema viário, praças, espaços livres e equipamentos comunitários. Essa parcela, uma vez cumpridas as formalidades legais, passa automaticamente ao domínio do Município. O fundamento está no art. 22 da Lei nº 6.766, de 19 de dezembro de 1979 — a <a href=\"https://www.planalto.gov.br/ccivil_03/leis/l6766compilado.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei do Parcelamento do Solo Urbano</a>.</span></p><p>As vias e praças, os espaços livres e as áreas destinadas a edifícios públicos e outros equipamentos urbanos constantes do projeto e do memorial descritivo aprovados, <mark>passam a integrar o domínio do Município desde a data do registro do loteamento.</mark></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_msulpij3_6lwj",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_msulpij3_41tk",
+          "type": "titulo",
+          "props": {
+            "text": "Constituição de direitos reais sobre imóveis ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_msulpij3_25bb",
+          "type": "prose",
+          "props": {
+            "html": "<p>No início deste material comentamos que nem toda relação jurídica que o Estado estabelece com um imóvel envolve a aquisição da propriedade plena sobre ele. Em diversas situações, o que se opera é a <b>constituição de um direito real</b> limitado sobre bem de titularidade alheia. Vamos aprofundar agora essa segunda modalidade.</p><p><br></p>"
+          }
+        },
+        {
+          "id": "b6n38dlu",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>Na constituição de direitos reais, o Estado não adquire a propriedade de um imóvel. Ele constitui, ou tem constituído em seu favor, <mark>um direito real sobre bem que permanece sob titularidade alheia</mark>. Ou, ao contrário, ele próprio institui direitos dessa natureza em favor de terceiros, sobre bens que já lhe pertencem.</p>"
+          }
+        },
+        {
+          "id": "byw7tge0",
+          "type": "titulo",
+          "props": {
+            "text": "Direitos reais de uso e gozo instituídos pelo Poder Público ",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bo07fqnf",
+          "type": "prose",
+          "props": {
+            "html": "<p>O ordenamento pátrio conhece diversos instrumentos que permitem essa constituição. Por meio deles, o Estado permanece proprietário do imóvel, mas autoriza que terceiros exerçam sobre ele direitos reais de uso e gozo. Veja alguns exemplos:</p>"
+          }
+        },
+        {
+          "id": "btwl2vaa",
+          "type": "feature",
+          "props": {
+            "columns": 3,
+            "card": true,
+            "accent": "",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "house",
+                "title": "Aforamento",
+                "text": "Disciplinado pelo Decreto-Lei nº 9.760/1946 e pela Lei nº 9.636/1998. Nele, a União mantém o domínio direto do imóvel, e o particular exerce o domínio útil, mediante pagamento de foro anual."
+              },
+              {
+                "icon": "factory",
+                "title": "Concessão de direito real de uso (CDRU)",
+                "text": "Aplicável à destinação de terrenos públicos a fins específicos, como urbanização, industrialização, edificação e cultivo."
+              },
+              {
+                "icon": "hotel",
+                "title": "Concessão de uso especial (CUEM)",
+                "text": "Instituída pela Medida Provisória nº 2.220/2001, ela se volta à regularização fundiária de ocupações residenciais consolidadas em imóveis públicos urbanos."
+              }
+            ]
+          }
+        },
+        {
+          "id": "bq5e1nz9",
+          "type": "titulo",
+          "props": {
+            "text": "Servidão administrativa ",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bjwxzj45",
+          "type": "prose",
+          "props": {
+            "html": "<p>Diferente dos anteriores, a <b>servidão administrativa</b> não pressupõe que o imóvel gravado pertença ao Poder Público. Ao contrário, ela normalmente recai sobre bem de propriedade particular, em favor de um serviço ou obra pública. </p><p>Nestes casos, é o Estado quem se beneficia da constituição do direito real sobre imóvel alheio. <span style=\"text-wrap-mode: initial; color: inherit;\">É o que ocorre na passagem de linhas de transmissão de energia elétrica, na instalação de tubulações e dutos de gás ou petróleo, e na implantação de redes de água e esgoto sobre terrenos particulares. </span></p><p>Em todas essas hipóteses, o Estado — ou o concessionário do serviço público, por delegação — se beneficia da constituição do direito real sobre imóvel alheio, sem que se opere qualquer transferência de propriedade. Do ponto de vista registral, a servidão administrativa se constitui mediante averbação na matrícula do imóvel serviente, sem que se abra nova matrícula em nome do Poder Público. </p><p>A titularidade do bem permanece com o particular; apenas o ônus passa a constar, de forma pública e oponível a terceiros, no registro correspondente.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_msulphdi_6tud",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_msulphdi_ph3e",
+          "type": "titulo",
+          "props": {
+            "text": "Formalização e registro:<span style=\"font-weight: normal;\"> da aquisição à oponibilidade </span>",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_msulphdi_45pr",
+          "type": "prose",
+          "props": {
+            "html": "<p>Uma vez identificado o fundamento jurídico aplicável — aquisição da propriedade ou constituição de direito real —, resta uma etapa comum a quase todas as hipóteses examinadas. É a <b>formalização do ato</b> e, sempre que cabível, seu <b>registro perante o cartório de imóveis</b> competente. </p><p>Conforme você estudou no material sobre <a href=\"https://cgges-aprendizagem.github.io/pgip/m221/\" target=\"_blank\" rel=\"noopener noreferrer\">análise preventiva  de imóveis públicos</a>, o domínio de grande parte dos bens públicos decorre diretamente de disposição constitucional ou legal. Isso vale, notadamente, para os bens da União.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\"><mark>O registro, nesses casos, não é o fundamento do domínio</mark>. Isso não retira, porém, sua relevância: ele confere publicidade ao ato de aquisição ou de constituição do direito real.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">Ele também resguarda a segurança das relações jurídicas envolvendo o imóvel. Na constituição de direitos reais em favor de terceiros — </span><span style=\"text-wrap-mode: initial; color: inherit;\">como o aforamento, a CDRU e o direito de superfície</span><span style=\"text-wrap-mode: initial; color: inherit;\"> —, o registro costuma ser requisito de eficácia do direito perante terceiros, nos termos do art. 1.245 do Código Civil.</span></p>"
+          }
+        },
+        {
+          "id": "bavtp6bq",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "auto",
+            "children": "<i>O fundamento do direito pode residir na lei, na desapropriação, na acessão ou em qualquer dos demais instrumentos tratados neste texto. Ainda assim, a formalização documental e registral permanece indispensável. É ela que permite à Administração exercer, com segurança, os atos de gestão patrimonial autorizados pela aquisição ou pela constituição do direito reais.</i>",
+            "cite": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "bgs4qhw4",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para fechar",
+        "kickerIcon": "check",
+        "title": "Considerações finais ",
+        "body": "<p>Ao longo deste material, percorremos o conjunto de fundamentos jurídicos aptos a incorporar um imóvel ao patrimônio público, ou a constituir, em favor do Estado ou de terceiros, direitos reais sobre bem alheio. </p><p>A <b><span data-color=\"ochre-light\">aquisição da propriedade</span></b> mostrou-se atrelada a três ordens de causas. <span style=\"text-wrap-mode: initial; color: inherit;\">As <b>causas contratuais</b> — compra e venda, permuta, dação em pagamento e doação — tuteladas pelo Código Civil, pela Lei nº 14.133/2021 e, no âmbito federal, pela IN SPU nº 22/2017.  </span><span style=\"text-wrap-mode: initial; color: inherit;\">As <b>causas naturais</b>, centradas na acessão e em suas quatro espécies. </span><span style=\"text-wrap-mode: initial; color: inherit;\">E as <b>causas jurídicas</b>, categoria mais heterogênea, que vai da usucapião e da desapropriação à sucessão por extinção de entidades, à arrematação e adjudicação, e à destinação de áreas em parcelamento do solo urbano. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Essa pluralidade repercute, na prática, sobre o instante em que a titularidade efetivamente se transfere ao Poder Público e sobre a natureza do registro exigido. </span></p><p>Nas causas contratuais, de aquisição <b>derivada</b>, o registro é constitutivo — sem ele, a transferência não se completa. Já nas causas naturais e jurídicas, de aquisição <b>originária</b>, a titularidade se forma no momento em que se aperfeiçoam os requisitos legais, e o registro exerce apenas função de publicidade. É essa distinção que orienta o gestor patrimonial diante de cada caso concreto.</p><p>Fenômeno distinto é a <b><span data-color=\"ochre-light\">constituição de direitos reais</span></b> sobre imóvel de titularidade alheia. O Estado pode figurar como beneficiário na servidão administrativa, como instituidor no aforamento, na concessão de direito real de uso e na concessão de uso especial para fins de moradia. Em nenhuma dessas hipóteses há transferência de propriedade: há, apenas, a criação de um ônus real, cuja oponibilidade a terceiros também depende, como regra, do registro ou da averbação correspondente. </p><p>Reconhecer, em cada caso concreto, qual desses fundamentos está em jogo — contratual, natural ou jurídico; aquisitivo ou constitutivo — é  o que permite à Administração formalizar corretamente o ato, antecipar as exigências registrais aplicáveis e exercer, com segurança jurídica, os atos de gestão patrimonial que dele decorrem. </p>"
+      },
+      "children": [
+        {
+          "id": "b17l1z0k",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Referências ",
+                "content": "<p></p><span data-fs=\"small\"><p>BRASIL. <b>Constituição da República Federativa do Brasil de 1988.</b> Brasília, DF: Presidência da República, 1988.</p><p>BRASIL. <b>Decreto-Lei nº 3.365, de 21 de junho de 1941.</b> Dispõe sobre desapropriações por utilidade pública. Brasília, DF: Presidência da República, 1941.</p><p>BRASIL. <b>Decreto-Lei nº 9.760, de 5 de setembro de 1946. </b>Dispõe sobre os bens imóveis da União. Brasília, DF: Presidência da República, 1946.</p><p>BRASIL. <b>Lei nº 3.115, de 16 de março de 1957.</b> Autoriza a constituição da sociedade por ações Rede Ferroviária Federal S.A. Brasília, DF: Presidência da República, 1957.</p><p>BRASIL. <b>Lei nº 4.132, de 10 de setembro de 1962.</b> Define os casos de desapropriação por interesse social. Brasília, DF: Presidência da República, 1962.</p><p>BRASIL. <b>Decreto-Lei nº 271, de 28 de fevereiro de 1967.</b> Dispõe sobre loteamento urbano, responsabilidade do loteador, concessão de uso e espaço aéreo, e dá outras providências. Brasília, DF: Presidência da República, 1967.</p><p>BRASIL. <b>Lei nº 5.972, de 11 de dezembro de 1973.</b> Dispõe sobre a discriminação de terras devolutas da União e regula o registro dos imóveis possuídos pela União. Brasília, DF: Presidência da República, 1973.</p><p>BRASIL. <b>Lei nº 6.015, de 31 de dezembro de 1973.</b> Dispõe sobre os registros públicos. Brasília, DF: Presidência da República, 1973.</p><p>BRASIL. <b>Lei nº 6.766, de 19 de dezembro de 1979.</b> Dispõe sobre o parcelamento do solo urbano e dá outras providências. Brasília, DF: Presidência da República, 1979.</p><p>BRASIL. <b>Lei nº 8.257, de 26 de novembro de 1991.</b> Dispõe sobre a expropriação das glebas nas quais se localizem culturas ilegais de plantas psicotrópicas e dá outras providências. Brasília, DF: Presidência da República, 1991.</p><p>BRASIL. <b>Lei nº 9.636, de 15 de maio de 1998.</b> Dispõe sobre a regularização, administração, aforamento e alienação de bens imóveis de domínio da União. Brasília, DF: Presidência da República, 1998.</p><p>BRASIL. <b>Lei nº 10.257, de 10 de julho de 2001.</b> Regulamenta os arts. 182 e 183 da Constituição Federal, estabelece diretrizes gerais da política urbana e dá outras providências [Estatuto da Cidade]. Brasília, DF: Presidência da República, 2001.</p><p>BRASIL. <b>Medida Provisória nº 2.220, de 4 de setembro de 2001.</b> Dispõe sobre a concessão de uso especial de que trata o § 1º do art. 183 da Constituição Federal. Brasília, DF: Presidência da República, 2001.</p><p>BRASIL. <b>Lei nº 10.406, de 10 de janeiro de 2002.</b> Institui o Código Civil. Brasília, DF: Presidência da República, 2002.</p><p>BRASIL. <b>Lei nº 11.483, de 31 de maio de 2007.</b> Dispõe sobre a extinção da Rede Ferroviária Federal S.A. — RFFSA. Brasília, DF: Presidência da República, 2007.</p><p>BRASIL. <b>Emenda Constitucional nº 81, de 5 de junho de 2014.</b> Dá nova redação ao art. 243 da Constituição Federal. Brasília, DF: Presidência da República, 2014.</p><p>BRASIL. <b>Lei nº 13.105, de 16 de março de 1915.</b> Código de Processo Civil. Brasília, DF: Presidência da República, 2015.</p><p>BRASIL. Ministério do Planejamento, Desenvolvimento e Gestão. Secretaria do Patrimônio da União. <b>Instrução Normativa nº 22, de 30 de agosto de 2017.</b> Dispõe sobre os procedimentos gerais para aquisição, incorporação, transferência, cessão e regularização patrimonial de bens imóveis de propriedade da União. Brasília, DF: SPU, 2017.</p><p>BRASIL. Ministério do Planejamento, Desenvolvimento e Gestão. Secretaria do Patrimônio da União. <b>Orientação Normativa nº 1, de 8 de junho de 2018</b>. Brasília, DF: SPU, 2018.</p><p>BRASIL. <b>Lei nº 14.133, de 1º de abril de 2021.</b> Lei de Licitações e Contratos Administrativos. Brasília, DF: Presidência da República, 2021.</p><p>BRASIL. Ministério da Justiça e Segurança Pública; Ministério da Economia. <b>Portaria Interministerial SENAD-MJSP/SPU-ME nº 1, de 22 de junho de 2021</b>. Brasília, DF: MJSP/ME, 2021.</p><p>CARVALHO FILHO, José dos Santos. <b>Manual de direito administrativo</b>. 21. ed. São Paulo: Lumen Juris, 2008.</p><p>RIBEIRO, Moacyr Petrocelli de Ávila. <b>Alienação fiduciária de bens imóveis</b>. 4. ed. São Paulo: Revista dos Tribunais, 2025.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">TARTUCE, Flávio. <b>Direito das coisas</b>. 16. ed. Rio de Janeiro: Forense, 2024.</span></p></span><p><span style=\"text-wrap-mode: initial; color: inherit;\"></span></p>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b92rtx0w",
+      "type": "pagefooter",
+      "props": {
+        "code": "Formas de Aquisição e Constituição e Direitos Imobiliários<br>&nbsp;[M232]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Filipe Mendonça Fagundes"
+          },
+          {
+            "role": "Revisão",
+            "name": "Carlos Alberto Sobral Coimbra Junior, Claudson Moreira Santos "
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
