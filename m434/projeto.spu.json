@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "meta": {
-    "title": "[M434] - Geointeligência para a regularização fundiária",
+    "title": "M434 - Geointeligência para a regularização fundiária",
     "lang": "pt-BR",
     "builderCredit": true,
     "toc": {
@@ -93,8 +93,7 @@
             "icon": "notebook-pen",
             "title": "",
             "heading": "",
-            "children": "<p>Este conteúdo foi elaborado a partir do Relatório das ações de regularização fundiária em áreas da União (2023/2024 – apontamentos para 2025/2026), produzido pela Secretaria do Patrimônio da União (SPU). O relatório apresenta os primeiros esforços da Secretaria para reunir, qualificar, cruzar e espacializar informações sobre situações que demandam regularização fundiária em áreas sob sua gestão.</p>",
-            "color": ""
+            "children": "<p>Este conteúdo foi elaborado a partir do Relatório das ações de regularização fundiária em áreas da União (2023/2024 – apontamentos para 2025/2026), produzido pela Secretaria do Patrimônio da União (SPU). O relatório apresenta os primeiros esforços da Secretaria para reunir, qualificar, cruzar e espacializar informações sobre situações que demandam regularização fundiária em áreas sob sua gestão.</p>"
           }
         },
         {
@@ -370,7 +369,7 @@
                   "id": "bvdp6ubd",
                   "type": "prose",
                   "props": {
-                    "html": "<p>Áreas da União que incidem, total ou parcialmente, sobre territórios tradicionais de comunidades quilombolas. Nesses casos, há atuação conjunta da SPU e do INCRA: caracterizado o território pelo INCRA, seus dados espaciais são encaminhados à SPU para verificação de eventual sobreposição com áreas da União sob sua gestão.&nbsp;</p>"
+                    "html": "<p>Áreas da União que incidem, total ou parcialmente, sobre territórios tradicionais de comunidades quilombolas. Nesses casos, há atuação conjunta da SPU e do INCRA: caracterizado o território pelo INCRA, seus dados espaciais são encaminhados à SPU para verificação de eventual sobreposição com áreas da União sob sua gestão. </p>"
                   }
                 },
                 {
@@ -500,7 +499,7 @@
                   "id": "bt10jb5k",
                   "type": "prose",
                   "props": {
-                    "html": "<p>São áreas da União sobrepostas a unidades de conservação nas quais há ocupação de comunidades tradicionais compatível com o uso. A gestão das unidades de conservação federais é uma atribuição do ICMBio, que identifica e caracteriza as áreas das unidades de conservação e com base nesses estudos o MMA solicita a área à SPU.&nbsp;</p>"
+                    "html": "<p>São áreas da União sobrepostas a unidades de conservação nas quais há ocupação de comunidades tradicionais compatível com o uso. A gestão das unidades de conservação federais é uma atribuição do ICMBio, que identifica e caracteriza as áreas das unidades de conservação e com base nesses estudos o MMA solicita a área à SPU. </p>"
                   }
                 },
                 {
@@ -731,41 +730,38 @@
           }
         },
         {
-          "id": "baivyfn0",
-          "type": "columns",
+          "id": "bx1d9jw2",
+          "type": "prose",
           "props": {
-            "count": 2,
-            "ratio": "equal",
-            "gap": "lg"
-          },
-          "children": [
-            {
-              "id": "bx1d9jw2",
-              "type": "prose",
-              "props": {
-                "html": "<p>Como resultado do levantamento inicial, foram identificadas 237 áreas onde ações de regularização fundiária eram necessárias. O próprio relatório ressalta que se tratava de um universo provisório, que seria ampliado com o avanço do mapeamento.</p><p>Essas áreas estavam distribuídas por todas as unidades da Federação, alcançando 141 municípios e 20 capitais.</p>"
-              }
-            },
-            {
-              "id": "b4663x0n",
-              "type": "figure",
-              "props": {
-                "slot": "b4663x0n__slot",
-                "src": "",
-                "fit": "contain",
-                "size": "full",
-                "title": "MAPA PENDENTE",
-                "caption": "",
-                "credit": ""
-              }
-            }
-          ]
+            "html": "<p>Como resultado do levantamento inicial, foram identificadas 237 áreas onde ações de regularização fundiária eram necessárias. O próprio relatório ressalta que se tratava de um universo provisório, que seria ampliado com o avanço do mapeamento.</p><p>Essas áreas estavam distribuídas por todas as unidades da Federação, alcançando 141 municípios e 20 capitais.</p>"
+          }
+        },
+        {
+          "id": "b4663x0n",
+          "type": "figure",
+          "props": {
+            "slot": "b4663x0n__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "md",
+            "title": "áreas onde ações de regularização fundiária eram necessárias",
+            "caption": "Relatório das ações de regularização fundiária em áreas da União (2023/2024 – apontamentos para 2025/2026)",
+            "credit": ""
+          }
+        },
+        {
+          "id": "b27lwhrt",
+          "type": "kicker",
+          "props": {
+            "icon": "map-pin-pen",
+            "children": "Quanto ao tipo, o levantamento identificou:"
+          }
         },
         {
           "id": "b8tvahgs",
           "type": "datatable",
           "props": {
-            "caption": "Quanto ao tipo, o levantamento identificou:",
+            "caption": "",
             "columns": [
               {
                 "key": "c0",
@@ -1100,7 +1096,7 @@
               "id": "b4mp4693",
               "type": "prose",
               "props": {
-                "html": "<p>O mapeamento não serve apenas para localizar e conhecer as áreas públicas. Na experiência da SPU, a consolidação de um conjunto de áreas previamente identificadas e mapeadas também ampliou a capacidade de articulação institucional e de mobilização de recursos. A partir dessas informações, a Secretaria articulou com o Ministério das Cidades a destinação de recursos do Novo PAC exclusivamente para ações de regularização fundiária em áreas da União. A iniciativa foi formalizada pela <a href=\"https://www.in.gov.br/web/dou/-/portaria-interministerial-mcid/mgi-n-5-de-3-de-novembro-de-2025-671920924\">Portaria Interministerial MCID/MGI nº 5, de 3 de novembro de 2025</a>, e resultou na seleção de R$ 200 milhões da Ação Orçamentária 00SW — Apoio à Regularização Fundiária Urbana, do Programa Periferia Viva, com potencial de beneficiar cerca de 140 mil famílias. Esse exemplo mostra que<mark> a informação territorial organizada pode ultrapassar a função cadastral e se converter em instrumento de planejamento, priorização e articulação de políticas públicas</mark>.&nbsp;</p>"
+                "html": "<p>O mapeamento não serve apenas para localizar e conhecer as áreas públicas. Na experiência da SPU, a consolidação de um conjunto de áreas previamente identificadas e mapeadas também ampliou a capacidade de articulação institucional e de mobilização de recursos. A partir dessas informações, a Secretaria articulou com o Ministério das Cidades a destinação de recursos do Novo PAC exclusivamente para ações de regularização fundiária em áreas da União. A iniciativa foi formalizada pela <a href=\"https://www.in.gov.br/web/dou/-/portaria-interministerial-mcid/mgi-n-5-de-3-de-novembro-de-2025-671920924\">Portaria Interministerial MCID/MGI nº 5, de 3 de novembro de 2025</a>, e resultou na seleção de R$ 200 milhões da Ação Orçamentária 00SW — Apoio à Regularização Fundiária Urbana, do Programa Periferia Viva, com potencial de beneficiar cerca de 140 mil famílias. Esse exemplo mostra que<mark> a informação territorial organizada pode ultrapassar a função cadastral e se converter em instrumento de planejamento, priorização e articulação de políticas públicas</mark>. </p>"
               }
             },
             {
