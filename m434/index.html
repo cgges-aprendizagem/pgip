@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[M434] - Geointeligência para a regularização fundiária</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"b898486j__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-b898486j__slot.png"},"blke2ppj__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-blke2ppj__slot.png"},"b_mt21ytma_n0nm__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b_mt21ytma_n0nm__slot.png"},"b_mt222cb3_tju9__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-b_mt222cb3_tju9__slot.png"},"b_mt225y4g_v6pr__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-b_mt225y4g_v6pr__slot.png"},"b_mt228b76_j23q__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-5-b_mt228b76_j23q__slot.png"},"b_mt229sdn_u9we__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-6-b_mt229sdn_u9we__slot.png"},"b_mt2azwse_w0lh__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-7-b_mt2azwse_w0lh__slot.png"},"bxuqaft5__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-8-bxuqaft5__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"[M434] - Geointeligência para a regularização fundiária","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"c0ivxkzz","text":"Um estudo de caso: \u003cspan style=\"font-weight: normal;\">a experiência da SPU\u003c/span>","hidden":false},{"id":"c8wmeyf8","text":"Antes de mapear, é preciso entender o que se pretende regularizar","hidden":false},{"id":"b_msuttiem_jrod","text":"Universo da regularização fundiária: \u003cspan style=\"font-weight: normal;\">conhecer para planejar\u003c/span>","hidden":false},{"id":"b_msutthr8_8m6i","text":"Do mapeamento à ação","hidden":false}]}},"blocks":[{"id":"b1slscox","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"bxuqaft5","type":"hero","props":{"kicker":"Regularização da utilização de áreas públicas","kickerIcon":"land-plot","title":"Geointeligência para a regularização fundiária","byline":"relato da experiência da Secretaria do Patrimônio da União","slot":"bxuqaft5__slot"}},{"id":"b83mm97u","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"czdz5bsx","type":"prose","props":{"html":"\u003cp>A regularização fundiária é uma das formas pelas quais a gestão de imóveis públicos pode contribuir para a garantia de direitos e para uma utilização do patrimônio público comprometida com sua função socioambiental. Ela envolve situações muito diferentes entre si: desde famílias que ocupam imóveis urbanos até núcleos urbanos informais e territórios tradicionalmente ocupados.\u003c/p>\u003cp>Por isso, regularizar não significa apenas escolher um instrumento de destinação ou promover uma titulação. Antes de agir, é preciso conhecer as situações existentes, compreender onde elas estão e identificar suas características e as pessoas e comunidades envolvidas. Essas informações ajudam a dimensionar as demandas, reconhecer diferentes contextos e organizar a atuação do poder público.\u003c/p>\u003cp>É justamente esse o desafio abordado neste material.\u003c/p>"}}]},{"id":"bmelchod","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"c0ivxkzz","type":"titulo","props":{"text":"Um estudo de caso: \u003cspan style=\"font-weight: normal;\">a experiência da SPU\u003c/span>","level":"h2"}},{"id":"bosdix2i","type":"callout","props":{"variant":"ear","tone":"note","icon":"notebook-pen","title":"","heading":"","children":"\u003cp>Este conteúdo foi elaborado a partir do Relatório das ações de regularização fundiária em áreas da União (2023/2024 – apontamentos para 2025/2026), produzido pela Secretaria do Patrimônio da União (SPU). O relatório apresenta os primeiros esforços da Secretaria para reunir, qualificar, cruzar e espacializar informações sobre situações que demandam regularização fundiária em áreas sob sua gestão.\u003c/p>","color":""}},{"id":"czwdjdwc","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Como registra o próprio documento, \u003cmark>conhecer esse universo não é uma tarefa simples\u003c/mark>. É necessário reunir informações provenientes de diferentes fontes para saber, entre outros aspectos, onde estão as áreas, quantas famílias as ocupam, se existem situações de risco e se esses territórios já são atendidos por programas públicos de regularização fundiária.\u003c/span>\u003c/p>"}},{"id":"b43qup60","type":"pullquote","props":{"variant":"block","fontSize":"h5","children":"\u003ci>O que se pretende é deixar de trabalhar no ‘caso a caso’, ‘processo a processo’ e adotar uma abordagem baseada na compreensão do território, com seus contextos sociais e políticos.\u003c/i>","cite":"Relatório das ações de regularização fundiária em áreas da União \u003cbr>\u003cspan style=\"font-weight: normal;\">SPU (2025)\u003c/span>"}},{"id":"bgj6fapb","type":"prose","props":{"html":"\u003cp>A experiência relatada pela SPU será utilizada aqui como estudo de caso. O objetivo não é apresentar seus procedimentos como uma solução única para outros órgãos ou entes públicos, mas acompanhar como uma organização responsável pela gestão de um patrimônio amplo e diverso começou a estruturar informações territoriais para conhecer melhor suas demandas de regularização, definir prioridades, estabelecer metas, buscar parcerias e acompanhar as ações realizadas. \u003c/p>\u003cp>Ao longo do material, você conhecerá as diferentes situações identificadas pela SPU e acompanhará a construção desse mapeamento: de onde vieram os primeiros dados, como as demandas foram espacializadas, que informações passaram a ser cruzadas e como esse conhecimento pode apoiar o planejamento das ações de regularização fundiária.\u003c/p>\u003cp>A proposta é que essa experiência ajude a refletir sobre uma questão que interessa a quem atua com imóveis públicos em diferentes contextos: \u003cb>como transformar informações dispersas sobre imóveis, ocupações, pessoas e territórios em con\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">hecimento capaz de apoiar decisões de regularização fundiária?\u003c/span>\u003c/b>\u003c/p>\u003cp>\u003cfont color=\"#1c2420\">\u003cspan style=\"background-color: rgb(247, 237, 211);\">\u003cb>\u003c/b>\u003c/span>\u003c/font>\u003c/p>"}}]},{"id":"bn7vvchp","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c8wmeyf8","type":"titulo","props":{"text":"Antes de mapear, é preciso entender o que se pretende regularizar","level":"h2"}},{"id":"cj41sj7u","type":"prose","props":{"html":"\u003cp>A regularização fundiária em imóveis públicos pode envolver situações bastante diferentes. No caso dos imóveis da União, essas diferenças estão relacionadas às características e à localização do imóvel, às formas de ocupação e ao público a ser beneficiado, que, em determinadas situações, está relacionado a políticas públicas conduzidas por outros órgãos. \u003c/p>\u003cp>Conhecer essas diferenças é importante para compreender a experiência apresentada neste material: antes de reunir e espacializar as informações, foi necessário reconhecer quais situações de regularização deveriam ser consideradas e como a SPU atua em cada uma delas.\u003c/p>"}},{"id":"b6c6d6e1","type":"titulo","props":{"text":"Formas de atuação","level":"h3"}},{"id":"bhar05qo","type":"prose","props":{"html":"\u003cp>A regularização fundiária de imóveis da União acontece de forma direta ou indireta.\u003c/p>"}},{"id":"bdjzwa8b","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bufdl73q","type":"flashcard","props":{"term":"Forma direta","description":"Na forma direta, é a SPU/MGI quem promove a titulação das pessoas beneficiadas.","definition":"\u003cp>Um exemplo são destinações de imóveis urbanos incorporados ao patrimônio da União e com a situação cartorial resolvida, ou seja, imóveis individualizados e com matrícula. Nesse caso, é possível que a SPU/MGI efetue a transferência de domínio do imóvel diretamente para a família ocupante. \u003c/p>","icon":"file-check","showIcon":true,"useCoverImage":false,"coverSlot":"c_39yy48f__imageSlot","coverAlt":"","frontCue":"Clique para virar","backCue":"Clique para voltar","color":"var(--terra-600)"}},{"id":"b_msutw9ru_rlz3","type":"flashcard","props":{"term":" Forma indireta","description":"Na forma indireta, a SPU/MGI atua em parceria com outros agentes, órgãos ou instituições.","definition":"\u003cp>Nesse caso, a Secretaria entrega a área ocupada para um parceiro, que será responsável por promover as ações jurídicas, técnicas e administrativas necessárias à titulação das pessoas beneficiadas. Os títulos são entregues após a atuação do parceiro. \u003c/p>","icon":"file-sliders","showIcon":true,"useCoverImage":false,"coverSlot":"c_xvqlalt__imageSlot","coverAlt":"","frontCue":"Clique para virar","backCue":"Clique para voltar","color":"var(--petrol-600)"}}]},{"id":"bqztp77s","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Um exemplo são os núcleos urbanos irregulares. Nessas áreas, é necessário primeiro desenvolver projetos de regularização fundiária para a geração de matrículas individualizadas dos imóveis que permitirão a transferência de domínio para cada família ocupante do núcleo. \u003c/span>\u003c/p>\u003cp>A SPU/MGI também atua de forma indireta nos casos em que a população ocupante da área pública está relacionada a políticas de regularização fundiária conduzidas por outro órgão, como ocorre com territórios de comunidades quilombolas, terras e reservas indígenas e áreas em unidades de conservação, por exemplo.\u003c/p>\u003cp>As parcerias decorrem, em grande parte, das competências legais dos diferentes agentes envolvidos na política de regularização fundiária. Entre os principais parceiros mencionados no relatório estão municípios, estados, o Instituto Nacional de Colonização e Reforma Agrária  (Incra), Ministério do Meio Ambiente (MMA), o Instituto de Conservação e Biodiversidade Chico Mendes (ICMBio), Ministério dos Povos Indígenas e Fundação Nacional do Índio (FUNAI).\u003c/p>"}},{"id":"bfn7izeh","type":"callout","props":{"variant":"ear","tone":"info","icon":"lightbulb","title":"PARA ENTENDER O ESTUDO DE CASO","heading":"","children":"\u003cp>A distinção entre atuação direta e indireta será importante mais adiante. O mapeamento desenvolvido pela SPU não reúne apenas áreas que ainda precisam ser destinadas; inclui também áreas já transferidas a parceiros e que precisam ser acompanhadas até que a regularização produza os resultados esperados.\u003c/p>"}}]},{"id":"bssrwvmy","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"bjl4cwor","type":"titulo","props":{"text":"Que situações aparecem nesse universo?","level":"h3"}},{"id":"bqfiplu9","type":"prose","props":{"html":"\u003cp>Existem diferentes tipos de situações em áreas da União. Para fins deste estudo de caso, vale conhecê-las antes de observar como foram mapeadas.\u003c/p>"}},{"id":"b_mt21s3rc_0tmc","type":"examplecard","props":{"label":"Imóveis urbanos individualizados","icon":"house","color":"var(--terra-700)","slot":"b_mt21s3rc_0tmc__slot","collapse":"closed","title":"","body":""},"children":[{"id":"brrc3k3x","type":"columns","props":{"count":2,"ratio":"first-wide","gap":"lg"},"children":[{"id":"bbh6pmr8","type":"prose","props":{"html":"\u003cp>Imóveis em áreas com infraestrutura e integrados à malha urbana, ocupados para fins residenciais ou mistos, com ou sem matrícula. Esses casos são tratados por meio da regularização fundiária direta, em que a própria SPU realiza a titulação utilizando o instrumento de destinação aplicável. Quando o imóvel ainda não está incorporado ou não possui matrícula, essa situação precisa ser resolvida previamente.\u003c/p>"}},{"id":"blke2ppj","type":"figure","props":{"slot":"blke2ppj__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]}]},{"id":"b_mt21w470_biv0","type":"examplecard","props":{"label":"Núcleos urbanos irregulares","icon":"grid-2x2-x","color":"var(--ink-500)","slot":"b_mt21w470_biv0__slot","collapse":"closed","title":"","body":""},"children":[{"id":"bjqe3wkc","type":"columns","props":{"count":2,"ratio":"first-wide","gap":"lg"},"children":[{"id":"b225hsyz","type":"prose","props":{"html":"\u003cp>Áreas da União que reúnem ocupações urbanas consolidadas, nas quais uma única área abriga várias famílias em situação de insegurança jurídica e, muitas vezes, sem acesso a infraestrutura adequada e equipamentos públicos. A regularização exige o desenvolvimento do projeto de REURB e costuma envolver atuação em parceria.\u003c/p>"}},{"id":"b898486j","type":"figure","props":{"slot":"b898486j__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]}]},{"id":"b_mt21ytma_2jep","type":"examplecard","props":{"label":"Territórios tradicionais quilombolas","icon":"map-pin-house","color":"var(--ochre-800)","slot":"b_mt21ytma_2jep__slot","collapse":"closed","title":"","body":""},"children":[{"id":"b3ylrcky","type":"columns","props":{"count":2,"ratio":"first-wide","gap":"lg"},"children":[{"id":"bvdp6ubd","type":"prose","props":{"html":"\u003cp>Áreas da União que incidem, total ou parcialmente, sobre territórios tradicionais de comunidades quilombolas. Nesses casos, há atuação conjunta da SPU e do INCRA: caracterizado o território pelo INCRA, seus dados espaciais são encaminhados à SPU para verificação de eventual sobreposição com áreas da União sob sua gestão.&nbsp;\u003c/p>"}},{"id":"b_mt21ytma_n0nm","type":"figure","props":{"slot":"b_mt21ytma_n0nm__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]}]},{"id":"b_mt222cb3_xy1n","type":"examplecard","props":{"label":"Territórios de povos indígenaS","icon":"tree-deciduous","color":"var(--green-600)","slot":"b_mt222cb3_xy1n__slot","collapse":"closed","title":"","body":""},"children":[{"id":"b98zn3wf","type":"columns","props":{"count":2,"ratio":"first-wide","gap":"lg","__pullDown":true},"children":[{"id":"b0wfra8h","type":"prose","props":{"html":"\u003cp>Áreas identificadas e solicitadas pela FUNAI como necessárias aos Povos Indígenas. As terras indígenas – TI, após serem demarcadas são incorporadas em nome da União e matriculadas em usufruto dos povos indígenas. Nesse caso, o processo fica mais concentrado na incorporação do imóvel ao patrimônio da União.\u003cbr>\u003c/p>"}},{"id":"b_mt222cb3_tju9","type":"figure","props":{"slot":"b_mt222cb3_tju9__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]},{"id":"b_mt2azwse_0czz","type":"columns","props":{"count":2,"ratio":"first-wide","gap":"lg","__pullDown":false},"children":[{"id":"bx5xmyvm","type":"callout","props":{"variant":"ear","tone":"info","icon":"alert-circle","title":"","heading":"","children":"\u003cp>A destinação de reservas indígenas é diferente. Nesses casos a FUNAI identifica a área e a SPU/MGI faz a destinação. A SPU também costuma ser acionada quando da necessidade de identificação de áreas para comunidades em risco com necessidade de reterritorialização.\u003c/p>"}},{"id":"b_mt2azwse_w0lh","type":"figure","props":{"slot":"b_mt2azwse_w0lh__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]}]},{"id":"b_mt225y4g_u31d","type":"examplecard","props":{"label":"Áreas da União com comunidades tradicionais em unidades de conservação","icon":"trees","color":"var(--green-700)","slot":"b_mt225y4g_u31d__slot","collapse":"closed","title":"","body":""},"children":[{"id":"bw7z19ch","type":"columns","props":{"count":2,"ratio":"first-wide","gap":"lg"},"children":[{"id":"bt10jb5k","type":"prose","props":{"html":"\u003cp>São áreas da União sobrepostas a unidades de conservação nas quais há ocupação de comunidades tradicionais compatível com o uso. A gestão das unidades de conservação federais é uma atribuição do ICMBio, que identifica e caracteriza as áreas das unidades de conservação e com base nesses estudos o MMA solicita a área à SPU.&nbsp;\u003c/p>"}},{"id":"b_mt225y4g_v6pr","type":"figure","props":{"slot":"b_mt225y4g_v6pr__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]}]},{"id":"b_mt228b76_yblw","type":"examplecard","props":{"label":"Territórios de outras comunidades tradicionais","icon":"house-plus","color":"var(--slate-700)","slot":"b_mt228b76_yblw__slot","collapse":"closed","title":"","body":""},"children":[{"id":"buro1gbx","type":"columns","props":{"count":2,"ratio":"first-wide","gap":"lg"},"children":[{"id":"b4g730zf","type":"prose","props":{"html":"\u003cp>Áreas da União que incidem sobre territórios tradicionais de comunidades não tuteladas por outros órgãos. Esses territórios são locais de moradia, sustento e reprodução social e cultural de populações que se autorreconhecem como pertencentes a algum povo ou comunidade tradicional. Como não estão sob a tutela de nenhum outro órgão acabam tendo sua pauta de regularização tratada unicamente pela SPU/MGI.\u003c/p>"}},{"id":"b_mt228b76_j23q","type":"figure","props":{"slot":"b_mt228b76_j23q__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]}]},{"id":"b_mt229sdn_lhfh","type":"examplecard","props":{"label":"Áreas para a Política Nacional de Reforma Agrária","icon":"tractor","color":"var(--petrol-600)","slot":"b_mt229sdn_lhfh__slot","collapse":"closed","title":"","body":""},"children":[{"id":"bjwdt7gf","type":"columns","props":{"count":2,"ratio":"first-wide","gap":"lg"},"children":[{"id":"bzveo1rf","type":"prose","props":{"html":"\u003cp>Áreas rurais da União, ocupadas ou não, consideradas adequadas para apoiar a produção rural e que interessam ao INCRA para a promoção da Política Nacional de Reforma Agrária. Em alguns casos, já existem assentamentos para serem regularizados, em outros as áreas estão vazias e são aproveitadas para projetos de novos assentamentos rurais.\u003c/p>"}},{"id":"b_mt229sdn_u9we","type":"figure","props":{"slot":"b_mt229sdn_u9we__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]}]},{"id":"b2k9liei","type":"prose","props":{"html":"\u003cp>Essas situações mostram a diversidade do universo que a SPU precisa conhecer e acompanhar. Mas identificá-las em processos administrativos ou no conhecimento acumulado pelas equipes não significa ainda possuir uma visão organizada de sua distribuição territorial.\u003c/p>\u003cp>É justamente essa passagem que constitui o núcleo do estudo de caso apresentado a seguir: \u003cb>como reunir informações dispersas, espacializá-las e começar a construir uma visão territorial das demandas de regularização fundiária?\u003c/b>\u003c/p>"}}]},{"id":"b_msuttiem_jjjz","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"b_msuttiem_jrod","type":"titulo","props":{"text":"Universo da regularização fundiária: \u003cspan style=\"font-weight: normal;\">conhecer para planejar\u003c/span>","level":"h2"}},{"id":"b_msuttiem_5ju2","type":"prose","props":{"html":"\u003cp>Conhecidas as diferentes situações que podem demandar regularização, surge uma questão essencial para o planejamento:\u003cmark data-hl=\"petrol\"> qual é, afinal, o universo sobre o qual é preciso atuar?\u003c/mark>\u003c/p>\u003cp>No caso da SPU, responder a essa pergunta exigiu reunir informações que se encontravam dispersas em diferentes fontes e situações. O desafio não era apenas saber quantas demandas existiam, mas onde estavam, quais eram suas características, quem estava envolvido e em que estágio se encontravam. É a partir dessa necessidade que começa a experiência de mapeamento apresentada neste estudo de caso.\u003c/p>\u003cp>Esse é um trabalho de longo prazo, um processo vivo e constante, não apenas pelo volume de áreas envolvido, mas também pela natureza dinâmica dos imóveis sob gestão da SPU. Novas áreas podem ingressar nesse universo com o avanço dos processos de caracterização ou com o ingresso de novos imóveis na carteira gerencial da Secretaria, como ocorreu, por exemplo, com imóveis do Instituto Nacional do Seguro Social (INSS).\u003c/p>"}},{"id":"bbuxmg3o","type":"callout","props":{"variant":"header","tone":"attention","icon":"bookmark","title":"","heading":"","children":"\u003cp>Conhecer o universo da regularização não significa produzir um retrato definitivo. Na experiência da SPU, o mapeamento é tratado como um processo contínuo, que precisa ser atualizado à medida que novas informações e áreas são incorporadas.\u003c/p>"}},{"id":"bgfyyp6s","type":"titulo","props":{"text":"Por onde começar quando as informações estão dispersas?","level":"h3"}},{"id":"bekyxtog","type":"prose","props":{"html":"\u003cp>Em 2024, a recém-criada Coordenação-Geral de Regularização Fundiária (CGREG), da Diretoria de Destinação de Imóveis, iniciou um esforço para recolher e sistematizar informações que pudessem apoiar o mapeamento da irregularidade.\u003c/p>"}},{"id":"bgdrtfbn","type":"panel","props":{"variant":"box","kicker":"Os dados iniciais foram obtidos de três formas:","kickerIcon":"list","title":"","color":"","bg":"var(--sand-50)","body":""},"children":[{"id":"bl7fbj6q","type":"feature","props":{"columns":3,"card":false,"accent":"","layout":"top","items":[{"icon":"file-search-corner","title":"Consulta às unidades nos estados","text":"A SPU realizou agendas virtuais com as 27 Superintendências do Patrimônio da União e utilizou uma planilha colaborativa para reunir as informações disponíveis."},{"icon":"file-text","title":"Processos de destinação","text":"Foram sistematizadas informações dos processos de destinação que passaram pela Unidade Central em 2024."},{"icon":"file-input","title":"Áreas complexas já conhecidas","text":"Também foram incluídas áreas cuja situação já era de conhecimento da instituição. "}]}},{"id":"b9xkgbv1","type":"kicker","props":{"icon":"merge","children":"Esses dados foram estão reunidos e sistematizados"}}]},{"id":"bo9lyr8p","type":"titulo","props":{"text":"O primeiro retrato do território","level":"h3"}},{"id":"baivyfn0","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"bx1d9jw2","type":"prose","props":{"html":"\u003cp>Como resultado do levantamento inicial, foram identificadas 237 áreas onde ações de regularização fundiária eram necessárias. O próprio relatório ressalta que se tratava de um universo provisório, que seria ampliado com o avanço do mapeamento.\u003c/p>\u003cp>Essas áreas estavam distribuídas por todas as unidades da Federação, alcançando 141 municípios e 20 capitais.\u003c/p>"}},{"id":"b4663x0n","type":"figure","props":{"slot":"b4663x0n__slot","src":"","fit":"contain","size":"full","title":"MAPA PENDENTE","caption":"","credit":""}}]},{"id":"b8tvahgs","type":"datatable","props":{"caption":"Quanto ao tipo, o levantamento identificou:","columns":[{"key":"c0","label":"Situação mapeada"},{"key":"c1","label":"Áreas identificadas"}],"rows":[{"c0":"Núcleos urbanos para REURB","c1":"373"},{"c0":"Territórios de Povos e Comunidades Tradicionais","c1":"61"},{"c0":"Áreas para fomentar a Política Nacional de Reforma Agrária (PNRA)","c1":"31"},{"c0":"Total","c1":"465"}],"dense":true,"highlightFirst":false,"striped":false,"tone":"petrol","className":"spu-table-wrap--tone-petrol"}},{"id":"bxekp4rs","type":"prose","props":{"html":"\u003cp>As áreas passaram a ser inseridas em um mapa temático da regularização fundiária no Geoportal.\u003c/p>\u003cp>A espacialização concentrou-se nas áreas maiores, onde se encontra o maior número de pessoas beneficiárias. Por essa razão, a tipologia “imóvel urbano individualizado” não integrou esse mapeamento, por representar uma quantidade pequena de beneficiários. \u003c/p>\u003cp>No caso das comunidades tradicionais, entretanto, foram representadas no mapa tanto as titulações coletivas quanto as individuais realizadas por meio de Termos de Autorização de Uso Sustentável (TAUS). O relatório justifica essa escolha pela importância da regularização fundiária dessas comunidades e pela natureza precária do instrumento. Como exemplo, uma única área ocupada por comunidade tradicional em Corumbá (MS) correspondeu a 64 TAUS individuais entregues.\u003c/p>"}},{"id":"b2bo195f","type":"panel","props":{"variant":"box","kicker":"Mapear não é apenas identificar o que ainda precisa ser feito\u003cbr>","kickerIcon":"files","title":"","color":"","bg":"var(--cloud-100)","body":""},"children":[{"id":"bbrhx4uu","type":"prose","props":{"html":"\u003cp>Um aspecto importante da experiência é que o mapeamento não se limitou às áreas que permaneciam sob gestão exclusiva da SPU e ainda precisavam ser regularizadas.\u003c/p>\u003cp>\u003cspan data-fs=\"eyebrow\">Foram reunidos três grupos de informações:\u003c/span>\u003c/p>"}},{"id":"b79czuv7","type":"feature","props":{"columns":1,"card":false,"accent":"var(--terra-600)","layout":"side","items":[{"icon":"map-pinned","title":"Áreas para regularização ","text":"Ainda sob gestão exclusiva da SPU, em suas diferentes tipologias."},{"icon":"map-pin-check","title":"Áreas transferidas para parceiros  ","text":"Parceiros por meio da destinação indireta e que demandavam acompanhamento, considerando as destinações realizadas em 2023 e 2024."},{"icon":"map-pin-house","title":"Áreas de comunidades tradicionais","text":"Já tituladas diretamente pela SPU, por meio de TAUS individuais ou coletivos, em 2023 e 2024."}]}},{"id":"bcn4ny40","type":"prose","props":{"html":"\u003cp>Essa organização permite que o mapa reúna situações em diferentes estágios da regularização fundiária, e não apenas demandas ainda não atendidas.\u003c/p>"}}]}]},{"id":"bfzda9n7","type":"section","props":{"width":"wide","surface":"dark","pad":"lg"},"children":[{"id":"by9o08vp","type":"titulo","props":{"text":"O que as informações reunidas começaram a revelar?","level":"h3"}},{"id":"b_msuvg1uv_znci","type":"prose","props":{"html":"\u003cp>O levantamento permitiu observar não apenas quantas áreas haviam sido identificadas, mas também seu estágio de destinação e de espacialização.\u003c/p>"}},{"id":"bdfxfoi6","type":"columns","props":{"count":"2","ratio":"equal","gap":"md"},"children":[{"id":"bk43j9sp","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_mt2c3nqa_589o","type":"prose","props":{"html":"\u003cp>\u003cspan data-fs=\"h5\">Núcleos urbanos — REURB\u003c/span>\u003c/p>","__pullDown":true}},{"id":"batslkwl","type":"statblock","props":{"variant":"rule","columns":3,"stats":[{"value":"373","unit":"identificados","label":"\u003cspan data-color=\"ochre-light\">87\u003c/span> transferidos a parceiros\u003cbr>\u003cspan data-color=\"ochre-light\">118\u003c/span> em processo de destinação\u003cbr>\u003cspan data-color=\"ochre-light\">114\u003c/span> já georreferenciados\u003cbr>","description":""}]}}]},{"id":"b_mt2c5uvf_cxqy","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_mt2c5uvf_abvk","type":"prose","props":{"html":"\u003cp>\u003cfont face=\"Red Hat Display, Archivo, system-ui, sans-serif\">\u003cspan style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">\u003cb>Povos e Comunidades Tradicionais\u003c/b>\u003c/span>\u003c/font>\u003c/p>","__pullDown":true}},{"id":"b_mt2c5uvf_exus","type":"statblock","props":{"variant":"rule","columns":3,"stats":[{"value":"61","unit":"identificados","label":"\u003cfont color=\"#ebc988\">18 \u003c/font>\u003cfont color=\"#ebc988\">\u003cspan data-color=\"light\">destinadas em 2023–2024\u003c/span>\u003cbr>\u003c/font>\u003cspan data-color=\"ochre-light\">49\u003c/span> já georreferenciadas\u003cbr>","description":""}]}}]},{"id":"b_mt2c5u47_gawg","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b_mt2c5u47_8ovy","type":"prose","props":{"html":"\u003cp>\u003cfont face=\"Red Hat Display, Archivo, system-ui, sans-serif\">\u003cspan style=\"font-size: 20.8px; letter-spacing: -0.2496px;\">\u003cb>Áreas para fomentar a PNRA\u003c/b>\u003c/span>\u003c/font>\u003c/p>","__pullDown":true}},{"id":"b_mt2c5u47_bl1k","type":"statblock","props":{"variant":"rule","columns":3,"stats":[{"value":"10","unit":"transferidas ao INCRA","label":"\u003cspan data-color=\"ochre-light\">300\u003c/span> famílias beneficiadas\u003cbr>\u003cspan data-color=\"ochre-light\">30\u003c/span> áreas já georreferenciadas\u003cbr>\u003cspan data-color=\"ochre-light\">1\u003c/span> em processo de elaboração para a entrada no GeoPortal\u003cbr>","description":""}]}}]}]}]},{"id":"bwnn1gga","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"ba5prxrf","type":"titulo","props":{"text":"Do levantamento de informações à visão do território","level":"h3"}},{"id":"b6ookzy9","type":"prose","props":{"html":"\u003cp>O trabalho iniciado pela SPU busca construir progressivamente um ambiente georreferenciado com dados e informações relacionados à regularização fundiária.\u003c/p>\u003cp>No relatório, essa iniciativa é apresentada como uma mudança de visão:\u003c/p>"}},{"id":"bql56452","type":"pullquote","props":{"variant":"block","fontSize":"h5","children":"\u003ci>O que se pretende é deixar de trabalhar no ‘caso a caso’, ‘processo a processo’ e adotar uma abordagem baseada na compreensão do território, com seus contextos sociais e políticos.\u003c/i>","cite":"Relatório das ações de regularização fundiária em áreas da União\u003cbr>\u003cspan style=\"font-weight: normal;\">SPU (2025)\u003c/span>\u003cbr>"}},{"id":"blc6zbem","type":"prose","props":{"html":"\u003cp>A expectativa registrada é que essa abordagem permita qualificar o planejamento e a definição de metas, buscar apoio local e parcerias institucionais e atuar transversalmente, inclusive articulando outras destinações voltadas à qualificação de territórios vulneráveis.\u003c/p>"}},{"id":"bdu5ddel","type":"callout","props":{"variant":"header","tone":"info","icon":"book-open-check","title":"","heading":"O que esta etapa do estudo de caso mostra?","children":"\u003cp>Na experiência da SPU, a construção de uma visão territorial começou pela coleta de informações existentes, passou por sua sistematização e espacialização e produziu um primeiro retrato das áreas, de suas diferentes situações e do estágio das ações de regularização.\u003c/p>\u003cp>Os números demonstram o impacto e a importância dessa pauta, assim como o papel de protagonismo da SPU nesse tema e evidenciam a necessidade de que as áreas da União sejam priorizadas nas seleções de recursos federais e no acesso transversal a outras políticas públicas que podem qualificar os territórios de intervenção como saúde, educação, cultura, lazer, esportes etc.\u003c/p>"}}]},{"id":"b_msutthr8_qxwf","type":"section","props":{"width":"content","surface":"page","pad":"lg"},"children":[{"id":"b_msutthr8_8m6i","type":"titulo","props":{"text":"Do mapeamento à ação","level":"h2"}},{"id":"b_msutthr8_jbk6","type":"prose","props":{"html":"\u003cp>Conhecer o universo da regularização fundiária e localizar territorialmente as demandas é uma primeira etapa. Na experiência da SPU, essas informações também passaram a apoiar o planejamento e o acompanhamento das ações realizadas.\u003c/p>\u003cp>O relatório mostra que esse acompanhamento ocorre em situações distintas. Há áreas que permanecem sob gestão da SPU e ainda precisam avançar no processo de regularização; outras já destinadas a parceiros, nas quais é necessário acompanhar o desenvolvimento das ações até a titulação das famílias; e ainda, áreas em que a própria SPU realiza diretamente a titulação.\u003c/p>"}},{"id":"blith3zx","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b4mp4693","type":"prose","props":{"html":"\u003cp>O mapeamento não serve apenas para localizar e conhecer as áreas públicas. Na experiência da SPU, a consolidação de um conjunto de áreas previamente identificadas e mapeadas também ampliou a capacidade de articulação institucional e de mobilização de recursos. A partir dessas informações, a Secretaria articulou com o Ministério das Cidades a destinação de recursos do Novo PAC exclusivamente para ações de regularização fundiária em áreas da União. A iniciativa foi formalizada pela \u003ca href=\"https://www.in.gov.br/web/dou/-/portaria-interministerial-mcid/mgi-n-5-de-3-de-novembro-de-2025-671920924\">Portaria Interministerial MCID/MGI nº 5, de 3 de novembro de 2025\u003c/a>, e resultou na seleção de R$ 200 milhões da Ação Orçamentária 00SW — Apoio à Regularização Fundiária Urbana, do Programa Periferia Viva, com potencial de beneficiar cerca de 140 mil famílias. Esse exemplo mostra que\u003cmark> a informação territorial organizada pode ultrapassar a função cadastral e se converter em instrumento de planejamento, priorização e articulação de políticas públicas\u003c/mark>.&nbsp;\u003c/p>"}},{"id":"bhpi2apx","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b4bt52ic","type":"prose","props":{"html":"\u003cp>Na experiência da SPU, as informações reunidas são utilizadas de três formas:\u003c/p>","__pullDown":true}},{"id":"bpjweglb","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"var(--ochre-600)","items":[{"title":"Áreas ainda sob gestão: planejar e priorizar a regularização","text":"Usar o mapeamento para organizar as demandas, definir prioridades e pactuar metas de atuação. "},{"title":"Áreas já destinadas a parceiros: acompanhar até a titulação","text":"Acompanhar o avanço da regularização, apoiar a articulação com os parceiros e monitorar a evolução das ações até a titulação das famílias. "},{"title":"Um universo em permanente atualização: ampliar e qualificar o mapeamento","text":"Incorporar novas demandas, concluir a espacialização das áreas e cruzar diferentes bases para conhecer melhor os territórios e as famílias envolvidas."}]}}]}]}]},{"id":"bhb3p4ba","type":"conclusion","props":{"kicker":"Para refletir","kickerIcon":"check","title":"","body":"\u003cp>\u003cul>\u003cli>Na realidade em que você atua, quais informações estão disponíveis para conhecer territorialmente as demandas de regularização fundiária, e quais ainda fazem falta? \u003c/li>\u003cli>Essas informações permitem apenas conhecer casos individualmente ou também comparar situações e estabelecer prioridades de atuação? \u003c/li>\u003cli>Depois de realizada uma destinação ou iniciada uma ação de regularização, que informações seriam importantes para acompanhar se ela está avançando e produzindo os resultados esperados?\u003c/li>\u003c/ul>\u003c/p>"},"children":[{"id":"b611y95g","type":"callout","props":{"variant":"ear","tone":"info","icon":"link","title":"","heading":"","children":"\u003cp>Para mais informações, consulte a íntegra do \u003cb>\u003cspan data-color=\"terra\">Relatório\u003c/span>\u003c/b>.\u003c/p>"}}]},{"id":"bi5x9g89","type":"pagefooter","props":{"code":"Geointeligência para a regularização fundiária [M434]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Lauren Cavalheiro da Costa"},{"role":"Revisão","name":"Angélia Faddoul , Claudson Moreira "},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"b898486j__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-b898486j__slot.png"},"blke2ppj__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-1-blke2ppj__slot.png"},"b_mt21ytma_n0nm__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-2-b_mt21ytma_n0nm__slot.png"},"b_mt222cb3_tju9__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-3-b_mt222cb3_tju9__slot.png"},"b_mt225y4g_v6pr__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-4-b_mt225y4g_v6pr__slot.png"},"b_mt228b76_j23q__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-5-b_mt228b76_j23q__slot.png"},"b_mt229sdn_u9we__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-6-b_mt229sdn_u9we__slot.png"},"b_mt2azwse_w0lh__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-7-b_mt2azwse_w0lh__slot.png"},"bxuqaft5__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-8-bxuqaft5__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"book-open-check":"\u003cpath d=\"M12 21V7\"/>\u003cpath d=\"m16 12 2 2 4-4\"/>\u003cpath d=\"M22 6V4a1 1 0 0 0-1-1h-5a4 4 0 0 0-4 4 4 4 0 0 0-4-4H3a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h6a3 3 0 0 1 3 3 3 3 0 0 1 3-3h6a1 1 0 0 0 1-1v-1.3\"/>","bookmark":"\u003cpath d=\"M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","file-check":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"m9 15 2 2 4-4\"/>","file-input":"\u003cpath d=\"M4 11V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-1\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M2 15h10\"/>\u003cpath d=\"m9 18 3-3-3-3\"/>","file-search-corner":"\u003cpath d=\"M11.1 22H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.589 3.588A2.4 2.4 0 0 1 20 8v3.25\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"m21 22-2.88-2.88\"/>\u003ccircle cx=\"16\" cy=\"17\" r=\"3\"/>","file-sliders":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M8 12h8\"/>\u003cpath d=\"M10 11v2\"/>\u003cpath d=\"M8 17h8\"/>\u003cpath d=\"M14 16v2\"/>","file-text":"\u003cpath d=\"M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z\"/>\u003cpath d=\"M14 2v5a1 1 0 0 0 1 1h5\"/>\u003cpath d=\"M10 9H8\"/>\u003cpath d=\"M16 13H8\"/>\u003cpath d=\"M16 17H8\"/>","files":"\u003cpath d=\"M15 2h-4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8\"/>\u003cpath d=\"M16.706 2.706A2.4 2.4 0 0 0 15 2v5a1 1 0 0 0 1 1h5a2.4 2.4 0 0 0-.706-1.706z\"/>\u003cpath d=\"M5 7a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h8a2 2 0 0 0 1.732-1\"/>","grid-2x2-x":"\u003cpath d=\"M12 3v17a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1H3\"/>\u003cpath d=\"m16 16 5 5\"/>\u003cpath d=\"m16 21 5-5\"/>","house":"\u003cpath d=\"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8\"/>\u003cpath d=\"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/>","house-plus":"\u003cpath d=\"M12.35 21H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 .71-1.53l7-6a2 2 0 0 1 2.58 0l7 6A2 2 0 0 1 21 10v2.35\"/>\u003cpath d=\"M14.8 12.4A1 1 0 0 0 14 12h-4a1 1 0 0 0-1 1v8\"/>\u003cpath d=\"M15 18h6\"/>\u003cpath d=\"M18 15v6\"/>","land-plot":"\u003cpath d=\"m12 8 6-3-6-3v10\"/>\u003cpath d=\"m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12\"/>\u003cpath d=\"m6.49 12.85 11.02 6.3\"/>\u003cpath d=\"M17.51 12.85 6.5 19.15\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","link":"\u003cpath d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"/>\u003cpath d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"/>","list":"\u003cpath d=\"M3 5h.01\"/>\u003cpath d=\"M3 12h.01\"/>\u003cpath d=\"M3 19h.01\"/>\u003cpath d=\"M8 5h13\"/>\u003cpath d=\"M8 12h13\"/>\u003cpath d=\"M8 19h13\"/>","map-pin-check":"\u003cpath d=\"M19.43 12.935c.357-.967.57-1.955.57-2.935a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 1.202 0 32.197 32.197 0 0 0 .813-.728\"/>\u003ccircle cx=\"12\" cy=\"10\" r=\"3\"/>\u003cpath d=\"m16 18 2 2 4-4\"/>","map-pin-house":"\u003cpath d=\"M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z\"/>\u003cpath d=\"M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2\"/>\u003cpath d=\"M18 22v-3\"/>\u003ccircle cx=\"10\" cy=\"10\" r=\"3\"/>","map-pinned":"\u003cpath d=\"M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0\"/>\u003ccircle cx=\"12\" cy=\"8\" r=\"2\"/>\u003cpath d=\"M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712\"/>","merge":"\u003cpath d=\"m8 6 4-4 4 4\"/>\u003cpath d=\"M12 2v10.3a4 4 0 0 1-1.172 2.872L4 22\"/>\u003cpath d=\"m20 22-5-5\"/>","notebook-pen":"\u003cpath d=\"M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4\"/>\u003cpath d=\"M2 6h4\"/>\u003cpath d=\"M2 10h4\"/>\u003cpath d=\"M2 14h4\"/>\u003cpath d=\"M2 18h4\"/>\u003cpath d=\"M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z\"/>","tractor":"\u003cpath d=\"m10 11 11 .9a1 1 0 0 1 .8 1.1l-.665 4.158a1 1 0 0 1-.988.842H20\"/>\u003cpath d=\"M16 18h-5\"/>\u003cpath d=\"M18 5a1 1 0 0 0-1 1v5.573\"/>\u003cpath d=\"M3 4h8.129a1 1 0 0 1 .99.863L13 11.246\"/>\u003cpath d=\"M4 11V4\"/>\u003cpath d=\"M7 15h.01\"/>\u003cpath d=\"M8 10.1V4\"/>\u003ccircle cx=\"18\" cy=\"18\" r=\"2\"/>\u003ccircle cx=\"7\" cy=\"15\" r=\"5\"/>","tree-deciduous":"\u003cpath d=\"M8 19a4 4 0 0 1-2.24-7.32A3.5 3.5 0 0 1 9 6.03V6a3 3 0 1 1 6 0v.04a3.5 3.5 0 0 1 3.24 5.65A4 4 0 0 1 16 19Z\"/>\u003cpath d=\"M12 19v3\"/>","trees":"\u003cpath d=\"M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z\"/>\u003cpath d=\"M7 16v6\"/>\u003cpath d=\"M13 19v3\"/>\u003cpath d=\"M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__always,.spu-csection__body{display:flex;flex-direction:column;gap:var(--flow-block)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);width:max-content;margin-top:var(--flow-block);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__summary[aria-expanded="true"] svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-csection__body[hidden]{display:none}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__body{display:flex!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint ? NS.isPrint() : window.__SPU_PRINT === true;
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing;
+        var items = React.Children.toArray(props.children);
+        function blockType(node){
+          if(!React.isValidElement(node)) return '';
+          if(node.props && node.props.block && node.props.block.type) return node.props.block.type;
+          return React.Children.toArray(node.props && node.props.children).map(blockType).filter(Boolean)[0] || '';
+        }
+        var markerIndex = items.findIndex(function(item){ return blockType(item) === 'collapsebreak'; });
+        var alwaysVisible = markerIndex >= 0 ? items.slice(0, markerIndex) : [];
+        var collapsed = markerIndex >= 0 ? items.slice(markerIndex + 1) : items;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            alwaysVisible.length && React.createElement('div', { className:'spu-csection__always spu-blockstack' }, alwaysVisible),
+            !printing && React.createElement('button', {
+                type:'button',
+                className:'spu-csection__summary',
+                'aria-expanded':forcedOpen || open,
+                onClick:function(){ if(!forcedOpen) setOpen(!open); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body spu-blockstack', hidden:!(forcedOpen || open) }, collapsed)
+          )
+        );
+      };
+      NS.CollapseBreak = function(){ return null; };
+      var markerDefinition = {
+        type:'collapsebreak', component:'CollapseBreak', label:'Botão de recolher',
+        icon:'chevron-down', cat:'Estrutura', kind:'marker', internal:true, props:{}
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container', stack:false,
+        fields:['triggerLabel'], allowedTypes:registry.childTypes.concat([markerDefinition.type]),
+        props:{ triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.blocks.push(markerDefinition);
+      registry.byType[definition.type] = definition;
+      registry.byType[markerDefinition.type] = markerDefinition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type === markerDefinition.type) return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:markerDefinition.type, props:{} };
+        if(type !== definition.type) return originalNewBlock(type, child);
+        var props = JSON.parse(JSON.stringify(definition.props));
+        props.children = [registry.newBlock(markerDefinition.type, true)];
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:props };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function safeDefinition(value){
+    var box = document.createElement('div');
+    box.innerHTML = String(value || '');
+    var allowed = ['STRONG','B','EM','I','BR','P','SPAN'];
+    Array.from(box.querySelectorAll('*')).forEach(function(el){
+      if(el.tagName === 'SCRIPT' || el.tagName === 'STYLE'){ el.remove(); return; }
+      if(allowed.indexOf(el.tagName) < 0){ el.replaceWith.apply(el, Array.from(el.childNodes)); return; }
+      Array.from(el.attributes).forEach(function(attr){ el.removeAttribute(attr.name); });
+    });
+    return box.innerHTML;
+  }
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('data-definition') || el.getAttribute('title') || el.getAttribute('data-def') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span class="spu-term-pop__def"></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('.spu-term-pop__def').innerHTML = safeDefinition(def);
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>

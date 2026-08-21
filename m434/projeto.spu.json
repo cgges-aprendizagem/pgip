@@ -1,0 +1,1205 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "[M434] - Geointeligência para a regularização fundiária",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "c0ivxkzz",
+          "text": "Um estudo de caso: <span style=\"font-weight: normal;\">a experiência da SPU</span>",
+          "hidden": false
+        },
+        {
+          "id": "c8wmeyf8",
+          "text": "Antes de mapear, é preciso entender o que se pretende regularizar",
+          "hidden": false
+        },
+        {
+          "id": "b_msuttiem_jrod",
+          "text": "Universo da regularização fundiária: <span style=\"font-weight: normal;\">conhecer para planejar</span>",
+          "hidden": false
+        },
+        {
+          "id": "b_msutthr8_8m6i",
+          "text": "Do mapeamento à ação",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "b1slscox",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "bxuqaft5",
+      "type": "hero",
+      "props": {
+        "kicker": "Regularização da utilização de áreas públicas",
+        "kickerIcon": "land-plot",
+        "title": "Geointeligência para a regularização fundiária",
+        "byline": "relato da experiência da Secretaria do Patrimônio da União",
+        "slot": "bxuqaft5__slot"
+      }
+    },
+    {
+      "id": "b83mm97u",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "czdz5bsx",
+          "type": "prose",
+          "props": {
+            "html": "<p>A regularização fundiária é uma das formas pelas quais a gestão de imóveis públicos pode contribuir para a garantia de direitos e para uma utilização do patrimônio público comprometida com sua função socioambiental. Ela envolve situações muito diferentes entre si: desde famílias que ocupam imóveis urbanos até núcleos urbanos informais e territórios tradicionalmente ocupados.</p><p>Por isso, regularizar não significa apenas escolher um instrumento de destinação ou promover uma titulação. Antes de agir, é preciso conhecer as situações existentes, compreender onde elas estão e identificar suas características e as pessoas e comunidades envolvidas. Essas informações ajudam a dimensionar as demandas, reconhecer diferentes contextos e organizar a atuação do poder público.</p><p>É justamente esse o desafio abordado neste material.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bmelchod",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c0ivxkzz",
+          "type": "titulo",
+          "props": {
+            "text": "Um estudo de caso: <span style=\"font-weight: normal;\">a experiência da SPU</span>",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "bosdix2i",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "note",
+            "icon": "notebook-pen",
+            "title": "",
+            "heading": "",
+            "children": "<p>Este conteúdo foi elaborado a partir do Relatório das ações de regularização fundiária em áreas da União (2023/2024 – apontamentos para 2025/2026), produzido pela Secretaria do Patrimônio da União (SPU). O relatório apresenta os primeiros esforços da Secretaria para reunir, qualificar, cruzar e espacializar informações sobre situações que demandam regularização fundiária em áreas sob sua gestão.</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "czwdjdwc",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Como registra o próprio documento, <mark>conhecer esse universo não é uma tarefa simples</mark>. É necessário reunir informações provenientes de diferentes fontes para saber, entre outros aspectos, onde estão as áreas, quantas famílias as ocupam, se existem situações de risco e se esses territórios já são atendidos por programas públicos de regularização fundiária.</span></p>"
+          }
+        },
+        {
+          "id": "b43qup60",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "h5",
+            "children": "<i>O que se pretende é deixar de trabalhar no ‘caso a caso’, ‘processo a processo’ e adotar uma abordagem baseada na compreensão do território, com seus contextos sociais e políticos.</i>",
+            "cite": "Relatório das ações de regularização fundiária em áreas da União <br><span style=\"font-weight: normal;\">SPU (2025)</span>"
+          }
+        },
+        {
+          "id": "bgj6fapb",
+          "type": "prose",
+          "props": {
+            "html": "<p>A experiência relatada pela SPU será utilizada aqui como estudo de caso. O objetivo não é apresentar seus procedimentos como uma solução única para outros órgãos ou entes públicos, mas acompanhar como uma organização responsável pela gestão de um patrimônio amplo e diverso começou a estruturar informações territoriais para conhecer melhor suas demandas de regularização, definir prioridades, estabelecer metas, buscar parcerias e acompanhar as ações realizadas. </p><p>Ao longo do material, você conhecerá as diferentes situações identificadas pela SPU e acompanhará a construção desse mapeamento: de onde vieram os primeiros dados, como as demandas foram espacializadas, que informações passaram a ser cruzadas e como esse conhecimento pode apoiar o planejamento das ações de regularização fundiária.</p><p>A proposta é que essa experiência ajude a refletir sobre uma questão que interessa a quem atua com imóveis públicos em diferentes contextos: <b>como transformar informações dispersas sobre imóveis, ocupações, pessoas e territórios em con<span style=\"text-wrap-mode: initial; color: inherit;\">hecimento capaz de apoiar decisões de regularização fundiária?</span></b></p><p><font color=\"#1c2420\"><span style=\"background-color: rgb(247, 237, 211);\"><b></b></span></font></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bn7vvchp",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c8wmeyf8",
+          "type": "titulo",
+          "props": {
+            "text": "Antes de mapear, é preciso entender o que se pretende regularizar",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cj41sj7u",
+          "type": "prose",
+          "props": {
+            "html": "<p>A regularização fundiária em imóveis públicos pode envolver situações bastante diferentes. No caso dos imóveis da União, essas diferenças estão relacionadas às características e à localização do imóvel, às formas de ocupação e ao público a ser beneficiado, que, em determinadas situações, está relacionado a políticas públicas conduzidas por outros órgãos. </p><p>Conhecer essas diferenças é importante para compreender a experiência apresentada neste material: antes de reunir e espacializar as informações, foi necessário reconhecer quais situações de regularização deveriam ser consideradas e como a SPU atua em cada uma delas.</p>"
+          }
+        },
+        {
+          "id": "b6c6d6e1",
+          "type": "titulo",
+          "props": {
+            "text": "Formas de atuação",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bhar05qo",
+          "type": "prose",
+          "props": {
+            "html": "<p>A regularização fundiária de imóveis da União acontece de forma direta ou indireta.</p>"
+          }
+        },
+        {
+          "id": "bdjzwa8b",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bufdl73q",
+              "type": "flashcard",
+              "props": {
+                "term": "Forma direta",
+                "description": "Na forma direta, é a SPU/MGI quem promove a titulação das pessoas beneficiadas.",
+                "definition": "<p>Um exemplo são destinações de imóveis urbanos incorporados ao patrimônio da União e com a situação cartorial resolvida, ou seja, imóveis individualizados e com matrícula. Nesse caso, é possível que a SPU/MGI efetue a transferência de domínio do imóvel diretamente para a família ocupante. </p>",
+                "icon": "file-check",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "c_39yy48f__imageSlot",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
+                "color": "var(--terra-600)"
+              }
+            },
+            {
+              "id": "b_msutw9ru_rlz3",
+              "type": "flashcard",
+              "props": {
+                "term": " Forma indireta",
+                "description": "Na forma indireta, a SPU/MGI atua em parceria com outros agentes, órgãos ou instituições.",
+                "definition": "<p>Nesse caso, a Secretaria entrega a área ocupada para um parceiro, que será responsável por promover as ações jurídicas, técnicas e administrativas necessárias à titulação das pessoas beneficiadas. Os títulos são entregues após a atuação do parceiro. </p>",
+                "icon": "file-sliders",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "c_xvqlalt__imageSlot",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
+                "color": "var(--petrol-600)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bqztp77s",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Um exemplo são os núcleos urbanos irregulares. Nessas áreas, é necessário primeiro desenvolver projetos de regularização fundiária para a geração de matrículas individualizadas dos imóveis que permitirão a transferência de domínio para cada família ocupante do núcleo. </span></p><p>A SPU/MGI também atua de forma indireta nos casos em que a população ocupante da área pública está relacionada a políticas de regularização fundiária conduzidas por outro órgão, como ocorre com territórios de comunidades quilombolas, terras e reservas indígenas e áreas em unidades de conservação, por exemplo.</p><p>As parcerias decorrem, em grande parte, das competências legais dos diferentes agentes envolvidos na política de regularização fundiária. Entre os principais parceiros mencionados no relatório estão municípios, estados, o Instituto Nacional de Colonização e Reforma Agrária  (Incra), Ministério do Meio Ambiente (MMA), o Instituto de Conservação e Biodiversidade Chico Mendes (ICMBio), Ministério dos Povos Indígenas e Fundação Nacional do Índio (FUNAI).</p>"
+          }
+        },
+        {
+          "id": "bfn7izeh",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "PARA ENTENDER O ESTUDO DE CASO",
+            "heading": "",
+            "children": "<p>A distinção entre atuação direta e indireta será importante mais adiante. O mapeamento desenvolvido pela SPU não reúne apenas áreas que ainda precisam ser destinadas; inclui também áreas já transferidas a parceiros e que precisam ser acompanhadas até que a regularização produza os resultados esperados.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bssrwvmy",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bjl4cwor",
+          "type": "titulo",
+          "props": {
+            "text": "Que situações aparecem nesse universo?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bqfiplu9",
+          "type": "prose",
+          "props": {
+            "html": "<p>Existem diferentes tipos de situações em áreas da União. Para fins deste estudo de caso, vale conhecê-las antes de observar como foram mapeadas.</p>"
+          }
+        },
+        {
+          "id": "b_mt21s3rc_0tmc",
+          "type": "examplecard",
+          "props": {
+            "label": "Imóveis urbanos individualizados",
+            "icon": "house",
+            "color": "var(--terra-700)",
+            "slot": "b_mt21s3rc_0tmc__slot",
+            "collapse": "closed",
+            "title": "",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "brrc3k3x",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "first-wide",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "bbh6pmr8",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p>Imóveis em áreas com infraestrutura e integrados à malha urbana, ocupados para fins residenciais ou mistos, com ou sem matrícula. Esses casos são tratados por meio da regularização fundiária direta, em que a própria SPU realiza a titulação utilizando o instrumento de destinação aplicável. Quando o imóvel ainda não está incorporado ou não possui matrícula, essa situação precisa ser resolvida previamente.</p>"
+                  }
+                },
+                {
+                  "id": "blke2ppj",
+                  "type": "figure",
+                  "props": {
+                    "slot": "blke2ppj__slot",
+                    "src": "",
+                    "fit": "contain",
+                    "size": "full",
+                    "title": "",
+                    "caption": "",
+                    "credit": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b_mt21w470_biv0",
+          "type": "examplecard",
+          "props": {
+            "label": "Núcleos urbanos irregulares",
+            "icon": "grid-2x2-x",
+            "color": "var(--ink-500)",
+            "slot": "b_mt21w470_biv0__slot",
+            "collapse": "closed",
+            "title": "",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "bjqe3wkc",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "first-wide",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b225hsyz",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p>Áreas da União que reúnem ocupações urbanas consolidadas, nas quais uma única área abriga várias famílias em situação de insegurança jurídica e, muitas vezes, sem acesso a infraestrutura adequada e equipamentos públicos. A regularização exige o desenvolvimento do projeto de REURB e costuma envolver atuação em parceria.</p>"
+                  }
+                },
+                {
+                  "id": "b898486j",
+                  "type": "figure",
+                  "props": {
+                    "slot": "b898486j__slot",
+                    "src": "",
+                    "fit": "contain",
+                    "size": "full",
+                    "title": "",
+                    "caption": "",
+                    "credit": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b_mt21ytma_2jep",
+          "type": "examplecard",
+          "props": {
+            "label": "Territórios tradicionais quilombolas",
+            "icon": "map-pin-house",
+            "color": "var(--ochre-800)",
+            "slot": "b_mt21ytma_2jep__slot",
+            "collapse": "closed",
+            "title": "",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "b3ylrcky",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "first-wide",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "bvdp6ubd",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p>Áreas da União que incidem, total ou parcialmente, sobre territórios tradicionais de comunidades quilombolas. Nesses casos, há atuação conjunta da SPU e do INCRA: caracterizado o território pelo INCRA, seus dados espaciais são encaminhados à SPU para verificação de eventual sobreposição com áreas da União sob sua gestão.&nbsp;</p>"
+                  }
+                },
+                {
+                  "id": "b_mt21ytma_n0nm",
+                  "type": "figure",
+                  "props": {
+                    "slot": "b_mt21ytma_n0nm__slot",
+                    "src": "",
+                    "fit": "contain",
+                    "size": "full",
+                    "title": "",
+                    "caption": "",
+                    "credit": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b_mt222cb3_xy1n",
+          "type": "examplecard",
+          "props": {
+            "label": "Territórios de povos indígenaS",
+            "icon": "tree-deciduous",
+            "color": "var(--green-600)",
+            "slot": "b_mt222cb3_xy1n__slot",
+            "collapse": "closed",
+            "title": "",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "b98zn3wf",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "first-wide",
+                "gap": "lg",
+                "__pullDown": true
+              },
+              "children": [
+                {
+                  "id": "b0wfra8h",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p>Áreas identificadas e solicitadas pela FUNAI como necessárias aos Povos Indígenas. As terras indígenas – TI, após serem demarcadas são incorporadas em nome da União e matriculadas em usufruto dos povos indígenas. Nesse caso, o processo fica mais concentrado na incorporação do imóvel ao patrimônio da União.<br></p>"
+                  }
+                },
+                {
+                  "id": "b_mt222cb3_tju9",
+                  "type": "figure",
+                  "props": {
+                    "slot": "b_mt222cb3_tju9__slot",
+                    "src": "",
+                    "fit": "contain",
+                    "size": "full",
+                    "title": "",
+                    "caption": "",
+                    "credit": ""
+                  }
+                }
+              ]
+            },
+            {
+              "id": "b_mt2azwse_0czz",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "first-wide",
+                "gap": "lg",
+                "__pullDown": false
+              },
+              "children": [
+                {
+                  "id": "bx5xmyvm",
+                  "type": "callout",
+                  "props": {
+                    "variant": "ear",
+                    "tone": "info",
+                    "icon": "alert-circle",
+                    "title": "",
+                    "heading": "",
+                    "children": "<p>A destinação de reservas indígenas é diferente. Nesses casos a FUNAI identifica a área e a SPU/MGI faz a destinação. A SPU também costuma ser acionada quando da necessidade de identificação de áreas para comunidades em risco com necessidade de reterritorialização.</p>"
+                  }
+                },
+                {
+                  "id": "b_mt2azwse_w0lh",
+                  "type": "figure",
+                  "props": {
+                    "slot": "b_mt2azwse_w0lh__slot",
+                    "src": "",
+                    "fit": "contain",
+                    "size": "full",
+                    "title": "",
+                    "caption": "",
+                    "credit": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b_mt225y4g_u31d",
+          "type": "examplecard",
+          "props": {
+            "label": "Áreas da União com comunidades tradicionais em unidades de conservação",
+            "icon": "trees",
+            "color": "var(--green-700)",
+            "slot": "b_mt225y4g_u31d__slot",
+            "collapse": "closed",
+            "title": "",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "bw7z19ch",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "first-wide",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "bt10jb5k",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p>São áreas da União sobrepostas a unidades de conservação nas quais há ocupação de comunidades tradicionais compatível com o uso. A gestão das unidades de conservação federais é uma atribuição do ICMBio, que identifica e caracteriza as áreas das unidades de conservação e com base nesses estudos o MMA solicita a área à SPU.&nbsp;</p>"
+                  }
+                },
+                {
+                  "id": "b_mt225y4g_v6pr",
+                  "type": "figure",
+                  "props": {
+                    "slot": "b_mt225y4g_v6pr__slot",
+                    "src": "",
+                    "fit": "contain",
+                    "size": "full",
+                    "title": "",
+                    "caption": "",
+                    "credit": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b_mt228b76_yblw",
+          "type": "examplecard",
+          "props": {
+            "label": "Territórios de outras comunidades tradicionais",
+            "icon": "house-plus",
+            "color": "var(--slate-700)",
+            "slot": "b_mt228b76_yblw__slot",
+            "collapse": "closed",
+            "title": "",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "buro1gbx",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "first-wide",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b4g730zf",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p>Áreas da União que incidem sobre territórios tradicionais de comunidades não tuteladas por outros órgãos. Esses territórios são locais de moradia, sustento e reprodução social e cultural de populações que se autorreconhecem como pertencentes a algum povo ou comunidade tradicional. Como não estão sob a tutela de nenhum outro órgão acabam tendo sua pauta de regularização tratada unicamente pela SPU/MGI.</p>"
+                  }
+                },
+                {
+                  "id": "b_mt228b76_j23q",
+                  "type": "figure",
+                  "props": {
+                    "slot": "b_mt228b76_j23q__slot",
+                    "src": "",
+                    "fit": "contain",
+                    "size": "full",
+                    "title": "",
+                    "caption": "",
+                    "credit": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b_mt229sdn_lhfh",
+          "type": "examplecard",
+          "props": {
+            "label": "Áreas para a Política Nacional de Reforma Agrária",
+            "icon": "tractor",
+            "color": "var(--petrol-600)",
+            "slot": "b_mt229sdn_lhfh__slot",
+            "collapse": "closed",
+            "title": "",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "bjwdt7gf",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "first-wide",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "bzveo1rf",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p>Áreas rurais da União, ocupadas ou não, consideradas adequadas para apoiar a produção rural e que interessam ao INCRA para a promoção da Política Nacional de Reforma Agrária. Em alguns casos, já existem assentamentos para serem regularizados, em outros as áreas estão vazias e são aproveitadas para projetos de novos assentamentos rurais.</p>"
+                  }
+                },
+                {
+                  "id": "b_mt229sdn_u9we",
+                  "type": "figure",
+                  "props": {
+                    "slot": "b_mt229sdn_u9we__slot",
+                    "src": "",
+                    "fit": "contain",
+                    "size": "full",
+                    "title": "",
+                    "caption": "",
+                    "credit": ""
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b2k9liei",
+          "type": "prose",
+          "props": {
+            "html": "<p>Essas situações mostram a diversidade do universo que a SPU precisa conhecer e acompanhar. Mas identificá-las em processos administrativos ou no conhecimento acumulado pelas equipes não significa ainda possuir uma visão organizada de sua distribuição territorial.</p><p>É justamente essa passagem que constitui o núcleo do estudo de caso apresentado a seguir: <b>como reunir informações dispersas, espacializá-las e começar a construir uma visão territorial das demandas de regularização fundiária?</b></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_msuttiem_jjjz",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_msuttiem_jrod",
+          "type": "titulo",
+          "props": {
+            "text": "Universo da regularização fundiária: <span style=\"font-weight: normal;\">conhecer para planejar</span>",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_msuttiem_5ju2",
+          "type": "prose",
+          "props": {
+            "html": "<p>Conhecidas as diferentes situações que podem demandar regularização, surge uma questão essencial para o planejamento:<mark data-hl=\"petrol\"> qual é, afinal, o universo sobre o qual é preciso atuar?</mark></p><p>No caso da SPU, responder a essa pergunta exigiu reunir informações que se encontravam dispersas em diferentes fontes e situações. O desafio não era apenas saber quantas demandas existiam, mas onde estavam, quais eram suas características, quem estava envolvido e em que estágio se encontravam. É a partir dessa necessidade que começa a experiência de mapeamento apresentada neste estudo de caso.</p><p>Esse é um trabalho de longo prazo, um processo vivo e constante, não apenas pelo volume de áreas envolvido, mas também pela natureza dinâmica dos imóveis sob gestão da SPU. Novas áreas podem ingressar nesse universo com o avanço dos processos de caracterização ou com o ingresso de novos imóveis na carteira gerencial da Secretaria, como ocorreu, por exemplo, com imóveis do Instituto Nacional do Seguro Social (INSS).</p>"
+          }
+        },
+        {
+          "id": "bbuxmg3o",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "attention",
+            "icon": "bookmark",
+            "title": "",
+            "heading": "",
+            "children": "<p>Conhecer o universo da regularização não significa produzir um retrato definitivo. Na experiência da SPU, o mapeamento é tratado como um processo contínuo, que precisa ser atualizado à medida que novas informações e áreas são incorporadas.</p>"
+          }
+        },
+        {
+          "id": "bgfyyp6s",
+          "type": "titulo",
+          "props": {
+            "text": "Por onde começar quando as informações estão dispersas?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bekyxtog",
+          "type": "prose",
+          "props": {
+            "html": "<p>Em 2024, a recém-criada Coordenação-Geral de Regularização Fundiária (CGREG), da Diretoria de Destinação de Imóveis, iniciou um esforço para recolher e sistematizar informações que pudessem apoiar o mapeamento da irregularidade.</p>"
+          }
+        },
+        {
+          "id": "bgdrtfbn",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Os dados iniciais foram obtidos de três formas:",
+            "kickerIcon": "list",
+            "title": "",
+            "color": "",
+            "bg": "var(--sand-50)",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "bl7fbj6q",
+              "type": "feature",
+              "props": {
+                "columns": 3,
+                "card": false,
+                "accent": "",
+                "layout": "top",
+                "items": [
+                  {
+                    "icon": "file-search-corner",
+                    "title": "Consulta às unidades nos estados",
+                    "text": "A SPU realizou agendas virtuais com as 27 Superintendências do Patrimônio da União e utilizou uma planilha colaborativa para reunir as informações disponíveis."
+                  },
+                  {
+                    "icon": "file-text",
+                    "title": "Processos de destinação",
+                    "text": "Foram sistematizadas informações dos processos de destinação que passaram pela Unidade Central em 2024."
+                  },
+                  {
+                    "icon": "file-input",
+                    "title": "Áreas complexas já conhecidas",
+                    "text": "Também foram incluídas áreas cuja situação já era de conhecimento da instituição. "
+                  }
+                ]
+              }
+            },
+            {
+              "id": "b9xkgbv1",
+              "type": "kicker",
+              "props": {
+                "icon": "merge",
+                "children": "Esses dados foram estão reunidos e sistematizados"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bo9lyr8p",
+          "type": "titulo",
+          "props": {
+            "text": "O primeiro retrato do território",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "baivyfn0",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bx1d9jw2",
+              "type": "prose",
+              "props": {
+                "html": "<p>Como resultado do levantamento inicial, foram identificadas 237 áreas onde ações de regularização fundiária eram necessárias. O próprio relatório ressalta que se tratava de um universo provisório, que seria ampliado com o avanço do mapeamento.</p><p>Essas áreas estavam distribuídas por todas as unidades da Federação, alcançando 141 municípios e 20 capitais.</p>"
+              }
+            },
+            {
+              "id": "b4663x0n",
+              "type": "figure",
+              "props": {
+                "slot": "b4663x0n__slot",
+                "src": "",
+                "fit": "contain",
+                "size": "full",
+                "title": "MAPA PENDENTE",
+                "caption": "",
+                "credit": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "b8tvahgs",
+          "type": "datatable",
+          "props": {
+            "caption": "Quanto ao tipo, o levantamento identificou:",
+            "columns": [
+              {
+                "key": "c0",
+                "label": "Situação mapeada"
+              },
+              {
+                "key": "c1",
+                "label": "Áreas identificadas"
+              }
+            ],
+            "rows": [
+              {
+                "c0": "Núcleos urbanos para REURB",
+                "c1": "373"
+              },
+              {
+                "c0": "Territórios de Povos e Comunidades Tradicionais",
+                "c1": "61"
+              },
+              {
+                "c0": "Áreas para fomentar a Política Nacional de Reforma Agrária (PNRA)",
+                "c1": "31"
+              },
+              {
+                "c0": "Total",
+                "c1": "465"
+              }
+            ],
+            "dense": true,
+            "highlightFirst": false,
+            "striped": false,
+            "tone": "petrol",
+            "className": "spu-table-wrap--tone-petrol"
+          }
+        },
+        {
+          "id": "bxekp4rs",
+          "type": "prose",
+          "props": {
+            "html": "<p>As áreas passaram a ser inseridas em um mapa temático da regularização fundiária no Geoportal.</p><p>A espacialização concentrou-se nas áreas maiores, onde se encontra o maior número de pessoas beneficiárias. Por essa razão, a tipologia “imóvel urbano individualizado” não integrou esse mapeamento, por representar uma quantidade pequena de beneficiários. </p><p>No caso das comunidades tradicionais, entretanto, foram representadas no mapa tanto as titulações coletivas quanto as individuais realizadas por meio de Termos de Autorização de Uso Sustentável (TAUS). O relatório justifica essa escolha pela importância da regularização fundiária dessas comunidades e pela natureza precária do instrumento. Como exemplo, uma única área ocupada por comunidade tradicional em Corumbá (MS) correspondeu a 64 TAUS individuais entregues.</p>"
+          }
+        },
+        {
+          "id": "b2bo195f",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Mapear não é apenas identificar o que ainda precisa ser feito<br>",
+            "kickerIcon": "files",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-100)",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "bbrhx4uu",
+              "type": "prose",
+              "props": {
+                "html": "<p>Um aspecto importante da experiência é que o mapeamento não se limitou às áreas que permaneciam sob gestão exclusiva da SPU e ainda precisavam ser regularizadas.</p><p><span data-fs=\"eyebrow\">Foram reunidos três grupos de informações:</span></p>"
+              }
+            },
+            {
+              "id": "b79czuv7",
+              "type": "feature",
+              "props": {
+                "columns": 1,
+                "card": false,
+                "accent": "var(--terra-600)",
+                "layout": "side",
+                "items": [
+                  {
+                    "icon": "map-pinned",
+                    "title": "Áreas para regularização ",
+                    "text": "Ainda sob gestão exclusiva da SPU, em suas diferentes tipologias."
+                  },
+                  {
+                    "icon": "map-pin-check",
+                    "title": "Áreas transferidas para parceiros  ",
+                    "text": "Parceiros por meio da destinação indireta e que demandavam acompanhamento, considerando as destinações realizadas em 2023 e 2024."
+                  },
+                  {
+                    "icon": "map-pin-house",
+                    "title": "Áreas de comunidades tradicionais",
+                    "text": "Já tituladas diretamente pela SPU, por meio de TAUS individuais ou coletivos, em 2023 e 2024."
+                  }
+                ]
+              }
+            },
+            {
+              "id": "bcn4ny40",
+              "type": "prose",
+              "props": {
+                "html": "<p>Essa organização permite que o mapa reúna situações em diferentes estágios da regularização fundiária, e não apenas demandas ainda não atendidas.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bfzda9n7",
+      "type": "section",
+      "props": {
+        "width": "wide",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "by9o08vp",
+          "type": "titulo",
+          "props": {
+            "text": "O que as informações reunidas começaram a revelar?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_msuvg1uv_znci",
+          "type": "prose",
+          "props": {
+            "html": "<p>O levantamento permitiu observar não apenas quantas áreas haviam sido identificadas, mas também seu estágio de destinação e de espacialização.</p>"
+          }
+        },
+        {
+          "id": "bdfxfoi6",
+          "type": "columns",
+          "props": {
+            "count": "2",
+            "ratio": "equal",
+            "gap": "md"
+          },
+          "children": [
+            {
+              "id": "bk43j9sp",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b_mt2c3nqa_589o",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p><span data-fs=\"h5\">Núcleos urbanos — REURB</span></p>",
+                    "__pullDown": true
+                  }
+                },
+                {
+                  "id": "batslkwl",
+                  "type": "statblock",
+                  "props": {
+                    "variant": "rule",
+                    "columns": 3,
+                    "stats": [
+                      {
+                        "value": "373",
+                        "unit": "identificados",
+                        "label": "<span data-color=\"ochre-light\">87</span> transferidos a parceiros<br><span data-color=\"ochre-light\">118</span> em processo de destinação<br><span data-color=\"ochre-light\">114</span> já georreferenciados<br>",
+                        "description": ""
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "b_mt2c5uvf_cxqy",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b_mt2c5uvf_abvk",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p><font face=\"Red Hat Display, Archivo, system-ui, sans-serif\"><span style=\"font-size: 20.8px; letter-spacing: -0.2496px;\"><b>Povos e Comunidades Tradicionais</b></span></font></p>",
+                    "__pullDown": true
+                  }
+                },
+                {
+                  "id": "b_mt2c5uvf_exus",
+                  "type": "statblock",
+                  "props": {
+                    "variant": "rule",
+                    "columns": 3,
+                    "stats": [
+                      {
+                        "value": "61",
+                        "unit": "identificados",
+                        "label": "<font color=\"#ebc988\">18 </font><font color=\"#ebc988\"><span data-color=\"light\">destinadas em 2023–2024</span><br></font><span data-color=\"ochre-light\">49</span> já georreferenciadas<br>",
+                        "description": ""
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "b_mt2c5u47_gawg",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b_mt2c5u47_8ovy",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p><font face=\"Red Hat Display, Archivo, system-ui, sans-serif\"><span style=\"font-size: 20.8px; letter-spacing: -0.2496px;\"><b>Áreas para fomentar a PNRA</b></span></font></p>",
+                    "__pullDown": true
+                  }
+                },
+                {
+                  "id": "b_mt2c5u47_bl1k",
+                  "type": "statblock",
+                  "props": {
+                    "variant": "rule",
+                    "columns": 3,
+                    "stats": [
+                      {
+                        "value": "10",
+                        "unit": "transferidas ao INCRA",
+                        "label": "<span data-color=\"ochre-light\">300</span> famílias beneficiadas<br><span data-color=\"ochre-light\">30</span> áreas já georreferenciadas<br><span data-color=\"ochre-light\">1</span> em processo de elaboração para a entrada no GeoPortal<br>",
+                        "description": ""
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bwnn1gga",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "ba5prxrf",
+          "type": "titulo",
+          "props": {
+            "text": "Do levantamento de informações à visão do território",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b6ookzy9",
+          "type": "prose",
+          "props": {
+            "html": "<p>O trabalho iniciado pela SPU busca construir progressivamente um ambiente georreferenciado com dados e informações relacionados à regularização fundiária.</p><p>No relatório, essa iniciativa é apresentada como uma mudança de visão:</p>"
+          }
+        },
+        {
+          "id": "bql56452",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "h5",
+            "children": "<i>O que se pretende é deixar de trabalhar no ‘caso a caso’, ‘processo a processo’ e adotar uma abordagem baseada na compreensão do território, com seus contextos sociais e políticos.</i>",
+            "cite": "Relatório das ações de regularização fundiária em áreas da União<br><span style=\"font-weight: normal;\">SPU (2025)</span><br>"
+          }
+        },
+        {
+          "id": "blc6zbem",
+          "type": "prose",
+          "props": {
+            "html": "<p>A expectativa registrada é que essa abordagem permita qualificar o planejamento e a definição de metas, buscar apoio local e parcerias institucionais e atuar transversalmente, inclusive articulando outras destinações voltadas à qualificação de territórios vulneráveis.</p>"
+          }
+        },
+        {
+          "id": "bdu5ddel",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "book-open-check",
+            "title": "",
+            "heading": "O que esta etapa do estudo de caso mostra?",
+            "children": "<p>Na experiência da SPU, a construção de uma visão territorial começou pela coleta de informações existentes, passou por sua sistematização e espacialização e produziu um primeiro retrato das áreas, de suas diferentes situações e do estágio das ações de regularização.</p><p>Os números demonstram o impacto e a importância dessa pauta, assim como o papel de protagonismo da SPU nesse tema e evidenciam a necessidade de que as áreas da União sejam priorizadas nas seleções de recursos federais e no acesso transversal a outras políticas públicas que podem qualificar os territórios de intervenção como saúde, educação, cultura, lazer, esportes etc.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_msutthr8_qxwf",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_msutthr8_8m6i",
+          "type": "titulo",
+          "props": {
+            "text": "Do mapeamento à ação",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "b_msutthr8_jbk6",
+          "type": "prose",
+          "props": {
+            "html": "<p>Conhecer o universo da regularização fundiária e localizar territorialmente as demandas é uma primeira etapa. Na experiência da SPU, essas informações também passaram a apoiar o planejamento e o acompanhamento das ações realizadas.</p><p>O relatório mostra que esse acompanhamento ocorre em situações distintas. Há áreas que permanecem sob gestão da SPU e ainda precisam avançar no processo de regularização; outras já destinadas a parceiros, nas quais é necessário acompanhar o desenvolvimento das ações até a titulação das famílias; e ainda, áreas em que a própria SPU realiza diretamente a titulação.</p>"
+          }
+        },
+        {
+          "id": "blith3zx",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "b4mp4693",
+              "type": "prose",
+              "props": {
+                "html": "<p>O mapeamento não serve apenas para localizar e conhecer as áreas públicas. Na experiência da SPU, a consolidação de um conjunto de áreas previamente identificadas e mapeadas também ampliou a capacidade de articulação institucional e de mobilização de recursos. A partir dessas informações, a Secretaria articulou com o Ministério das Cidades a destinação de recursos do Novo PAC exclusivamente para ações de regularização fundiária em áreas da União. A iniciativa foi formalizada pela <a href=\"https://www.in.gov.br/web/dou/-/portaria-interministerial-mcid/mgi-n-5-de-3-de-novembro-de-2025-671920924\">Portaria Interministerial MCID/MGI nº 5, de 3 de novembro de 2025</a>, e resultou na seleção de R$ 200 milhões da Ação Orçamentária 00SW — Apoio à Regularização Fundiária Urbana, do Programa Periferia Viva, com potencial de beneficiar cerca de 140 mil famílias. Esse exemplo mostra que<mark> a informação territorial organizada pode ultrapassar a função cadastral e se converter em instrumento de planejamento, priorização e articulação de políticas públicas</mark>.&nbsp;</p>"
+              }
+            },
+            {
+              "id": "bhpi2apx",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b4bt52ic",
+                  "type": "prose",
+                  "props": {
+                    "html": "<p>Na experiência da SPU, as informações reunidas são utilizadas de três formas:</p>",
+                    "__pullDown": true
+                  }
+                },
+                {
+                  "id": "bpjweglb",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "ordered",
+                    "icon": "check",
+                    "accent": "var(--ochre-600)",
+                    "items": [
+                      {
+                        "title": "Áreas ainda sob gestão: planejar e priorizar a regularização",
+                        "text": "Usar o mapeamento para organizar as demandas, definir prioridades e pactuar metas de atuação. "
+                      },
+                      {
+                        "title": "Áreas já destinadas a parceiros: acompanhar até a titulação",
+                        "text": "Acompanhar o avanço da regularização, apoiar a articulação com os parceiros e monitorar a evolução das ações até a titulação das famílias. "
+                      },
+                      {
+                        "title": "Um universo em permanente atualização: ampliar e qualificar o mapeamento",
+                        "text": "Incorporar novas demandas, concluir a espacialização das áreas e cruzar diferentes bases para conhecer melhor os territórios e as famílias envolvidas."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bhb3p4ba",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para refletir",
+        "kickerIcon": "check",
+        "title": "",
+        "body": "<p><ul><li>Na realidade em que você atua, quais informações estão disponíveis para conhecer territorialmente as demandas de regularização fundiária, e quais ainda fazem falta? </li><li>Essas informações permitem apenas conhecer casos individualmente ou também comparar situações e estabelecer prioridades de atuação? </li><li>Depois de realizada uma destinação ou iniciada uma ação de regularização, que informações seriam importantes para acompanhar se ela está avançando e produzindo os resultados esperados?</li></ul></p>"
+      },
+      "children": [
+        {
+          "id": "b611y95g",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "link",
+            "title": "",
+            "heading": "",
+            "children": "<p>Para mais informações, consulte a íntegra do <b><span data-color=\"terra\">Relatório</span></b>.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bi5x9g89",
+      "type": "pagefooter",
+      "props": {
+        "code": "Geointeligência para a regularização fundiária [M434]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Lauren Cavalheiro da Costa"
+          },
+          {
+            "role": "Revisão",
+            "name": "Angélia Faddoul , Claudson Moreira "
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
