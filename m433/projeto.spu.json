@@ -1,0 +1,977 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M433 - Regularização Fundiária de Povos e Comunidades Tradicionais",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "c11n0xb4",
+          "text": "Referências constitucionais sobre a regularização fundiária de Povos e Comunidades Tradicionais (PCTs)",
+          "hidden": false
+        },
+        {
+          "id": "c0fbxoyp",
+          "text": "Conceito jurídico-institucional de PCTs e de Territórios Tradicionais",
+          "hidden": false
+        },
+        {
+          "id": "cko9syme",
+          "text": "A Diversidade de PCTs no Brasil",
+          "hidden": false
+        },
+        {
+          "id": "c80pd3jk",
+          "text": "A Secretaria de Patrimônio da União na política de regularização de comunidades tradicionais ",
+          "hidden": false
+        },
+        {
+          "id": "cycs6t8u",
+          "text": "Competências institucionais e interfaces",
+          "hidden": false
+        },
+        {
+          "id": "c5ao37ve",
+          "text": "Sistemas de informação governamentais e bases de dados relevantes para a operacionalização da política pública de Povos e Comunidades Tradicionais",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "bk1j0etg",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b614x6fl",
+      "type": "hero",
+      "props": {
+        "kicker": "Regularização da utilização de áreas públicas",
+        "kickerIcon": "compass",
+        "title": "Povos e Comunidades Tradicionais",
+        "byline": "territórios, direitos e regularização fundiária",
+        "slot": "b614x6fl__slot"
+      }
+    },
+    {
+      "id": "bpsrtwsp",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mt3jm0ra_emvy",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão de imóveis públicos envolve mais do que identificar quem detém o domínio de uma área e definir uma forma de destinação. Quando esses imóveis alcançam territórios tradicionalmente ocupados, é preciso compreender quem são os povos e comunidades que mantêm relações próprias com esses territórios, quais direitos estão envolvidos e como o Poder Público atua para reconhecê-los e protegê-los.</p><p>Este material amplia a discussão sobre regularização fundiária desenvolvida neste eixo, agora sob a perspectiva dos Povos e Comunidades Tradicionais. Você conhecerá os conceitos de PCTs e territórios tradicionais, sua diversidade no Brasil, as principais referências jurídicas e o arranjo institucional e informacional relacionado à regularização desses territórios. </p><p>Ao final, a proposta é que esses elementos ajudem você a analisar de forma mais crítica situações envolvendo a utilização e a regularização de áreas públicas, reconhecendo a relação entre território, segurança jurídica, garantia de direitos, inclusão social e proteção da diversidade sociocultural.</p>"
+          }
+        },
+        {
+          "id": "bzinn2oe",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "warning",
+            "icon": "book-open",
+            "title": "",
+            "heading": "",
+            "children": "<p>Este material é uma adaptação didática do documento “<b><a href=\"https://www.gov.br/mda/pt-br/assuntos/povos-e-comunidades-tradicionais/repositorio-de-marcos-regulatorios-de-regularizacao-fundiaria-de-povos-e-comunidades-tradicionais/federais/orgaos-publicos/sepir-2022_guia-das-politicas-publicas-para-pcts.pdf\">Estado da Arte da Regularização Territorial de Povos e Comunidades Tradicionais (PCTs) no Brasil</a></b>”, elaborado como produto de consultoria realizada para o Incra com o objetivo de subsidiar a estruturação da recém-criada Coordenação-Geral de Povos e Comunidades Tradicionais, responsável pela regularização fundiária dos territórios ocupados pelos demais segmentos de PCTs.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bwiz56nr",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c11n0xb4",
+          "type": "titulo",
+          "props": {
+            "text": "Referências constitucionais sobre a regularização fundiária de Povos e Comunidades Tradicionais (PCTs)",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cg33m01k",
+          "type": "prose",
+          "props": {
+            "html": "<p>A Constituição da República Federativa do Brasil de 1988 inaugurou um paradigma jurídico pluriétnico e multicultural, assegurando a proteção da diversidade sociocultural, dos direitos culturais, do meio ambiente ecologicamente equilibrado e da função socioambiental do território. Nesse marco constitucional, destacam-se os regimes jurídicos específicos já consolidados para povos indígenas e comunidades quilombolas, que dispõem de dispositivos constitucionais próprios, legislação infraconstitucional específica e órgãos federais com competências claramente definidas para o reconhecimento e a regularização territorial.</p>"
+          }
+        },
+        {
+          "id": "b9mspckr",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "b427e766",
+              "type": "examplecard",
+              "props": {
+                "label": "",
+                "icon": "notebook",
+                "color": "",
+                "slot": "b427e766__slot",
+                "collapse": "none",
+                "title": "",
+                "body": "<p>No que se refere aos <b>povos indígenas</b>, a política é formulada e coordenada pelo Ministério dos Povos Indígenas (MPI), criado pela <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/l14600.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Lei nº 14.600, de 19 de junho de 2023</a>, e executada pela Fundação Nacional dos Povos Indígenas (FUNAI), autarquia vinculada ao MPI, responsável pelos procedimentos administrativos de identificação, delimitação, demarcação e proteção de Terras Indígenas, nos termos dos <a href=\"https://portal.stf.jus.br/constituicao-supremo/artigo.asp?abrirBase=CF&amp;abrirArtigo=231\" target=\"_blank\" rel=\"noopener noreferrer\">arts. 231 e 232</a> da Constituição Federal.</p>"
+              },
+              "children": []
+            },
+            {
+              "id": "b_mt3jna3c_q1yd",
+              "type": "examplecard",
+              "props": {
+                "label": "",
+                "icon": "notebook",
+                "color": "",
+                "slot": "b_mt3jna3c_q1yd__slot",
+                "collapse": "none",
+                "title": "",
+                "body": "<p>No caso das <b>comunidades quilombolas</b>, a Fundação Cultural Palmares (FCP) exerce a competência de certificar as comunidades que se autodefinem como remanescentes de quilombos, ato administrativo que constitui etapa prévia ao processo de regularização fundiária conduzido pelo INCRA, nos termos do <a href=\"https://www.planalto.gov.br/ccivil_03/decreto/2003/d4887.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Decreto nº 4.887, de 20 de novembro de 2003</a>.</p>"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b_mt3k30aj_2kob",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Embora constitucionalmente amparados e reconhecidos pela Política Nacional de Desenvolvimento Sustentável dos Povos e Comunidades Tradicionais (PNPCT), estabelecida pelo </span><a href=\"https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6040.htm\" style=\"text-wrap-mode: initial;\">Decreto 6.040, de 7 de fevereiro de 2007</a><span style=\"text-wrap-mode: initial; color: inherit;\">, os demais segmentos de PCTs ainda apresentam heterogeneidade de instrumentos administrativos, assimetrias institucionais e lacunas operacionais, sobretudo no que se refere à efetivação dos direitos territoriais.</span></p><p>A Constituição Federal consagra a regularização fundiária apenas para dois grupos: Povos Indígenas e Remanescentes de Comunidades Quilombolas. </p><p>No plano internacional, são analisados os instrumentos incorporados ao direito interno brasileiro, em especial a Convenção nº 169 da Organização Internacional do Trabalho (OIT), promulgada pelo Decreto nº 5.051, de 19 de abril de 2004, e consolidada pelo Decreto nº 10.088, de 5 de novembro de 2019, e a Convenção sobre Diversidade Biológica (CDB), promulgada pelo Decreto nº 2.519, de 16 de março de 1998, ressaltando-se sua relevância para o reconhecimento identitário, a proteção territorial e a governança participativa.</p><p>Para qualificar a agenda de regularização fundiária de PCTs e seus desafios atuais e futuros, é fundamental compreender as principais referências legais, os principais conceitos, o arranjo institucional vigente e os principais sistemas governamentais relacionados, bem como a diversidade desse público no Brasil, tão invisibilizados e ameaçadas em seus territórios. </p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b0ia477x",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c0fbxoyp",
+          "type": "titulo",
+          "props": {
+            "text": "Conceito jurídico-institucional de PCTs e de Territórios Tradicionais",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cm1dimic",
+          "type": "prose",
+          "props": {
+            "html": "<p>No ordenamento jurídico brasileiro, a definição normativa expressa de Povos e Comunidades Tradicionais (PCTs) e de Territórios Tradicionais encontram-se no Decreto nº 6.040, de 7 de fevereiro de 2007, que institui a Política Nacional de Desenvolvimento Sustentável dos Povos e Comunidades Tradicionais (PNPCT). </p><p>Nos termos do art. 3º,<b> inciso I</b>, do referido decreto, consideram-se <b>Povos e Comunidades Tradicionais</b>:</p>"
+          }
+        },
+        {
+          "id": "b5nz5o8b",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "body-lg",
+            "children": "<i>grupos culturalmente diferenciados e que se reconhecem como tais, que possuem formas próprias de organização social, que ocupam e utilizam territórios e recursos naturais como condição para sua reprodução cultural, social, religiosa, ancestral e econômica, utilizando conhecimentos, inovações e práticas gerados e transmitidos pela tradição.</i>",
+            "cite": ""
+          }
+        },
+        {
+          "id": "b88m5406",
+          "type": "prose",
+          "props": {
+            "html": "<p>De acordo com o art. 3º,<b> inciso II</b>, do mesmo decreto, consideram-se <b>Territórios Tradicionais</b>: </p>"
+          }
+        },
+        {
+          "id": "b_msv0q2zs_fmpf",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "body-lg",
+            "children": "<i>os espaços necessários a reprodução cultural, social e econômica dos povos e comunidades tradicionais, sejam eles utilizados de forma permanente ou temporária, observado, no que diz respeito aos povos indígenas e quilombolas, respectivamente, o que dispõem os arts. 231 da Constituição e 68 do Ato das Disposições Constitucionais Transitórias e demais regulamentações.</i>",
+            "cite": ""
+          }
+        },
+        {
+          "id": "beol5iq7",
+          "type": "prose",
+          "props": {
+            "html": "<p>A definição de PCTs possui natureza jurídico-institucional estruturante, pois consolida no plano normativo infralegal um conceito que já encontrava respaldo constitucional e internacional. A categoria não se restringe a um enunciado programático, mas opera como parâmetro para políticas públicas específicas, inclusive no campo territorial.</p><p>O conceito normativo estabelecido pelo Decreto nº 6.040/2007 estrutura-se a partir de <b>quatro elementos centrais e interdependentes:</b></p>"
+          }
+        },
+        {
+          "id": "b4iac49g",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Autoidentificação como critério jurídico fundamental",
+                "content": "<p>O princípio da autoidentificação constitui elemento nuclear do conceito. O reconhecimento estatal não decorre de classificação administrativa externa, mas do autorreconhecimento coletivo do grupo como sujeito de identidade própria.</p><p>Esse entendimento está em plena consonância com a Convenção nº 169 da Organização Internacional do Trabalho (OIT), adotada em 1989, ratificada pelo Brasil em 2002, promulgada no Brasil a atualmente consolidada no Decreto nº 10.088, de 5 de novembro de 2019.</p><p>A Convenção estabelece que a autoidentificação deve ser considerada critério fundamental para a definição dos grupos aos quais suas disposições se aplicam (OIT, 1989; BRASIL, 2004; BRASIL, 2019).</p><p>A incorporação da Convenção nº 169 ao ordenamento jurídico brasileiro, reconhecida pelo Supremo Tribunal Federal como norma supralegal, reforça a centralidade da autoidentificação como fundamento jurídico das políticas diferenciadas voltadas a povos indígenas, comunidades quilombolas e demais PCTs.</p>"
+              },
+              {
+                "title": "Territorialidade (ocupação e uso do território e de recursos naturais)",
+                "content": "<p>O Decreto nº 6.040/2007 associa a condição PCT à relação estruturante com o território e com os recursos naturais necessários à reprodução do modo de vida, o que vincula o conceito a uma dimensão material e funcional do território, não apenas geográfica (BRASIL, 2007).</p><p>Essa dimensão é convergente com a abordagem internacional de proteção de conhecimentos e modos de vida associados à biodiversidade, presente na Convenção sobre Diversidade Biológica (CDB), promulgada no Brasil pelo Decreto nº 2.519/1998 (BRASIL, 1998).</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Modos de vida e reprodução sociocultural",
+                "content": "<p>A definição normativa enfatiza que a reprodução cultural, social, religiosa, ancestral e econômica depende do uso do território e de recursos naturais, colocando o “modo de vida” como dimensão essencial do reconhecimento estatal dos PCTs (BRASIL, 2007).</p><p>A literatura acadêmica que analisa políticas públicas para comunidades tradicionais reforça que o reconhecimento jurídico-institucional não se esgota em critérios socioeconômicos, mas depende da compreensão do território como suporte de reprodução social e cultural (NAVAS, 2014).</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Organização social própria e conhecimentos tradicionais",
+                "content": "<p>O Decreto nº 6.040/2007 explicita a existência de formas próprias de organização social e a transmissão intergeracional de conhecimentos, inovações e práticas, o que aproxima o tratamento jurídico brasileiro de referenciais internacionais sobre proteção do conhecimento tradicional e de direitos culturais coletivos (BRASIL, 2007; BRASIL, 1998).</p><p>A partir desses elementos — autoidentificação, territorialidade, modos de vida e organização social própria — o conceito jurídico-institucional de Povos e Comunidades Tradicionais, tal como consolidado no Decreto nº 6.040/2007, revela-se indissociável de um conjunto mais amplo de garantias constitucionais. Embora a Constituição Federal de 1988 não utilize expressamente a categoria “povos e comunidades tradicionais”, seu texto estabelece fundamentos normativos suficientes para sustentar políticas públicas voltadas ao reconhecimento, à proteção e à regularização de seus territórios, especialmente por meio dos direitos culturais, ambientais e territoriais. É nesse contexto que se insere a articulação entre a PNPCT e a ordem constitucional vigente. </p><p>Neste contexto, o conceito do Decreto nº 6.040/2007 se integra, no plano constitucional, a pelo menos três blocos normativos: </p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": "",
+                "blocks": [
+                  {
+                    "id": "br2tdnu6",
+                    "type": "feature",
+                    "props": {
+                      "columns": 1,
+                      "card": true,
+                      "accent": "var(--petrol-600)",
+                      "layout": "side",
+                      "items": [
+                        {
+                          "icon": "feather",
+                          "title": "Direitos culturais (arts. 215 e 216 da CF/88) ",
+                          "text": "Asseguram o pleno exercício dos direitos culturais e a proteção do patrimônio cultural brasileiro em suas múltiplas formas, o que sustenta juridicamente políticas de reconhecimento e valorização de identidades coletivas e modos de vida tradicionais (BRASIL, 1988),"
+                        },
+                        {
+                          "icon": "fish",
+                          "title": "Proteção ambiental (art. 225 da CF/88) ",
+                          "text": "Ao reconhecer o meio ambiente ecologicamente equilibrado como bem de uso comum e essencial à qualidade de vida, a Constituição fornece base para políticas que protejam territórios e recursos naturais vinculados à reprodução sociocultural de PCTs (BRASIL, 1988);"
+                        },
+                        {
+                          "icon": "heart-handshake",
+                          "title": "Integração com compromissos internacionais ambientais e socioculturais",
+                          "text": "A CDB, internalizada pelo Decreto nº 2.519/1998, fortalece a abordagem que reconhece conhecimentos e práticas tradicionais associados à conservação e ao uso sustentável da biodiversidade, o que reforça a lógica de territorialidade e de modos de vida presente na PNPCT (BRASIL, 1998)."
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "bp1h8ii9",
+          "type": "prose",
+          "props": {
+            "html": "<p> Assim, o conceito jurídico-institucional de Povos e Comunidades Tradicionais no Brasil resulta da convergência entre normas infralegais específicas, fundamentos constitucionais e compromissos internacionais incorporados ao ordenamento jurídico. Trata-se de um conceito relacional, que articula identidade coletiva, território e modos de vida, conferindo centralidade à dimensão territorial como condição para a reprodução sociocultural e para a efetividade de direitos. Essa construção normativa, contudo, não se traduz automaticamente em proteção territorial concreta, o que desloca a análise para o plano institucional e para os desafios de implementação das políticas públicas voltadas aos PCTs.</p>"
+          }
+        },
+        {
+          "id": "by92m49d",
+          "type": "figure",
+          "props": {
+            "slot": "by92m49d__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "bnbvu3hc",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "Você sabia?",
+            "heading": "",
+            "children": "<p>Apesar dos territórios parecerem estar associados à terra, eles também envolvem as águas (águas oceânicas e águas interiores como rio e lagos). Nesse contexto, um <mark>novo conceito de Territórios Tradicionais</mark> contido na proposta de Decreto sobre regularização fundiária de PCTs apresentada pela SPU/MGI, MMA e INCRA/MDA à Casa Civil da Presidência da República deverá ser:</p><p><i><span data-color=\"terra\">“Os espaços necessários à reprodução física, cultural, social e econômica dos povos e comunidades tradicionais, <b>incluindo-se os corpos d’água</b>, sejam eles utilizados de forma permanente ou temporária, nos termos do art. 3º, inciso II, do Decreto nº 6.040/2007”.</span></i></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "biz1gbtw",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cko9syme",
+          "type": "titulo",
+          "props": {
+            "text": "A Diversidade de PCTs no Brasil",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cpxn3swn",
+          "type": "prose",
+          "props": {
+            "html": "<p>A Política Nacional de Desenvolvimento Sustentável dos Povos e Comunidades Tradicionais (PNPCT) reconhece que a categoria PCT não constitui um grupo homogêneo, mas abrange uma <mark data-hl=\"green\">pluralidade de segmentos socioculturais</mark>, historicamente constituídos a partir de diferentes formas de ocupação do território, de organização social e de relação com a natureza. Essa diversidade sociocultural é elemento estruturante da política pública e orienta a atuação estatal no reconhecimento e na proteção dos modos de vida tradicionais (BRASIL, 2007).</p><p>No âmbito da implementação da PNPCT, o Estado brasileiro passou a adotar a identificação de segmentos de Povos e Comunidades Tradicionais como um instrumento institucional de visibilidade e organização da ação governamental, especialmente para fins de formulação, coordenação e execução de políticas públicas. Conforme sistematizações disponíveis nos portais institucionais do Ministério do Meio Ambiente (MMA) e do Ministério do Desenvolvimento Agrário (MDA), são atualmente reconhecidos 28 segmentos de Povos e Comunidades Tradicionais no Brasil (MMA, s.d.; MDA, s.d.).</p><p>Esse reconhecimento institucional, contudo, não substitui nem relativiza o princípio da autoidentificação, consagrado no Decreto nº 6.040/2007 e reafirmado pela Convenção nº 169 da Organização Internacional do Trabalho (OIT). A identificação por segmentos deve ser compreendida como categoria operacional de política pública, e não como tipologia fechada ou excludente, sendo sempre subordinada ao autorreconhecimento dos grupos e à sua relação específica com o território (BRASIL, 2007; BRASIL, 2019).</p><p>Para fins de sistematização e transparência, os segmentos reconhecidos no âmbito da política federal de PCTs são apresentados na figura a seguir, conforme nomenclatura adotada pelas fontes institucionais oficiais.</p>"
+          }
+        },
+        {
+          "id": "bgh9sman",
+          "type": "figure",
+          "props": {
+            "slot": "bgh9sman__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "28 segmentos de PCTs reconhecidos no Brasil",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "b3jnpu9k",
+          "type": "prose",
+          "props": {
+            "html": "<p>Conforme pode ser observado acima, apenas povos indígenas e remanescentes de quilombos possuem regime jurídico específico para a regularização fundiária, enquanto os demais segmentos carecem de uma regulamentação própria. Apesar disso, o Estado tem atuado na regularização de PCTs de outras formas, como, por exemplo, na criação de<i> Unidades de Conservação de Uso Sustentável - UCs; Reservas de Desenvolvimento Sustentável - RDS</i> (a cargo do Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio/MMA), ou na criação de Projetos de Assentamento ambientalmente diferenciados pelo INCRA, a exemplo do Projetos Agroextrativistas – PAE. </p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bi6yap7j",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c80pd3jk",
+          "type": "titulo",
+          "props": {
+            "text": "A Secretaria de Patrimônio da União na política de regularização de comunidades tradicionais ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cj1ksc5q",
+          "type": "prose",
+          "props": {
+            "html": "<p>A Secretaria do Patrimônio da União (SPU), vinculada ao Ministério da Gestão e da Inovação em Serviços Públicos (MGI), também exerce competências diretamente relevantes para diversos segmentos de PCTs, na medida em que é responsável pela administração dos bens imóveis da União, incluindo <b>terrenos de marinha, áreas costeiras, várzeas, ilhas, margens de rios federais e demais áreas de domínio da União</b>. Muitos desses espaços são historicamente ocupados por comunidades tradicionais, como pescadores artesanais, marisqueiras, caiçaras, ribeirinhos e comunidades de várzea (BRASIL, 2023).</p><p>A SPU dispõe de competência para emitir Termos de Autorização de Uso - TAUS, Concessão de Direito Real de Uso - CDRU e cessão de uso em áreas da União, instrumentos que podem assegurar segurança jurídica a comunidades tradicionais. A articulação entre SPU, INCRA e MPA tem viabilizado o reconhecimento de territórios pesqueiros tradicionais e a criação de PAEs em áreas da União.</p><p>Para disciplinar a utilização e o aproveitamento dos imóveis da União em favor das comunidades tradicionais, a fim de possibilitar a ordenação do uso racional e sustentável dos recursos naturais disponíveis na orla marítima e fluvial, a SPU editou a Portaria nº 89, de 15 de abril de 2010, por meio da qual realiza a outorga de Termo de Autorização de Uso Sustentável - TAUS a PCTs, cujo instrumento, conforme o normativo, é emitido pelas Superintendências Regionais e tem caráter transitório e precário.</p><p>A tabela a seguir apresenta os principais órgãos federais responsáveis por atender cada grupo de povos e comunidades tradicionais. No entanto, isso não significa que esses órgãos atuem de forma isolada ou com exclusividade. Na prática, as instituições trabalham de maneira conjunta e integrada para colocar em prática as políticas de desenvolvimento sustentável dessas populações.</p>"
+          }
+        },
+        {
+          "id": "bsk87r0f",
+          "type": "datatable",
+          "props": {
+            "caption": "",
+            "columns": [
+              {
+                "key": "c0",
+                "label": "Segmento de PCT"
+              },
+              {
+                "key": "c1",
+                "label": "Órgão(s) federal(ais) com competência setorial predominante"
+              },
+              {
+                "key": "c2",
+                "label": "Instrumento(s) normativo(s) de referência",
+                "align": "right"
+              }
+            ],
+            "rows": [
+              {
+                "c0": "Povos indígenas",
+                "c1": "MPI / FUNAI",
+                "c2": "CF/88, arts. 231-232; Lei nº 5.371/1967; Lei nº 14.600/2023"
+              },
+              {
+                "c0": "Comunidades quilombolas",
+                "c1": "FCP / INCRA / MIR",
+                "c2": "CF/88, art. 68 ADCT; Decreto nº 4.887/2003; Lei nº 7.668/1988"
+              },
+              {
+                "c0": "Pescadores artesanais, marisqueiras, jangadeiros, caiçaras",
+                "c1": "MPA (SNPA) / ICMBio (em RESEX marinhas) / SPU",
+                "c2": "Decreto nº 11.626/2023; Decreto nº 11.624/2023; Lei nº 11.959/2009"
+              },
+              {
+                "c0": "Extrativistas (seringueiros, castanheiros, quebradeiras de coco-babaçu)",
+                "c1": "MMA / ICMBio (RESEX) / INCRA (PAE)",
+                "c2": "Lei nº 9.985/2000; Decreto nº 98.897/1990"
+              },
+              {
+                "c0": "Ribeirinhos e comunidades de várzea",
+                "c1": "MDA / SPU / INCRA / ICMBio/MPA",
+                "c2": "Decreto nº 6.040/2007; Lei nº 9.985/2000"
+              },
+              {
+                "c0": "Comunidades de fundo e fecho de pasto",
+                "c1": "INCRA / MDA",
+                "c2": "Decreto nº 6.040/2007; legislação estadual (BA)"
+              },
+              {
+                "c0": "Ciganos/Romani",
+                "c1": "MDHC / MIR",
+                "c2": "Decreto nº 6.040/2007; Decreto nº 8.750/2016"
+              },
+              {
+                "c0": "Povos de terreiro e de matriz africana",
+                "c1": "MIR / FCP / MinC",
+                "c2": "Decreto nº 6.040/2007; Decreto nº 8.750/2016"
+              },
+              {
+                "c0": "Geraizeiros, catingueiros, retireiros, vazanteiros",
+                "c1": "MDA / INCRA / MMA",
+                "c2": "Decreto nº 6.040/2007"
+              },
+              {
+                "c0": "Pantaneiros",
+                "c1": "MMA / MDA",
+                "c2": "Decreto nº 6.040/2007"
+              },
+              {
+                "c0": "Pomeranos",
+                "c1": "MDA / MinC",
+                "c2": "Decreto nº 6.040/2007; Decreto nº 8.750/2016"
+              },
+              {
+                "c0": "Demais segmentos reconhecidos pelo CNPCT",
+                "c1": "Competência transversal (PNPCT)",
+                "c2": "Decreto nº 6.040/2007; Decreto nº 8.750/2016"
+              }
+            ],
+            "dense": true,
+            "highlightFirst": false,
+            "striped": true,
+            "tone": "terra",
+            "className": "spu-table-wrap--striped spu-table-wrap--tone-terra"
+          }
+        },
+        {
+          "id": "bb4wu1w7",
+          "type": "prose",
+          "props": {
+            "html": "<p>Sob a perspectiva transversalidade de atuação na agenda de PCTs, a <b>Portaria Interministerial nº 210, de 13 de junho de 2014</b>, constitui instrumento normativo de articulação institucional  com relevância direta para a regularização fundiária de assentamentos de reforma agrária e de territórios de comunidades remanescentes de quilombos localizados em terras sob gestão da União.</p>"
+          }
+        },
+        {
+          "id": "bo5tsvrj",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "A Portaria Interministerial nº 210, de 13 de junho de 2014",
+            "kickerIcon": "section",
+            "title": "",
+            "color": "",
+            "bg": "",
+            "body": "<p>Em seu art. 1º, a Portaria delega ao <b>Ministro de Estado do Desenvolvimento Agrário</b> a competência para outorgar, a beneficiários de projetos federais de assentamento de reforma agrária e a grupos remanescentes das comunidades dos quilombos, a Concessão de Direito Real de Uso (CDRU) ou a transferência do domínio pleno de terrenos rurais da União — abrangendo, expressamente, várzeas, ilhas, terrenos de marinha, terrenos marginais e seus acrescidos, bem como outras áreas adquiridas ou atribuídas legalmente à União e geridas exclusivamente pela SPU. No art. 2º, as competências executivas são subdelegadas ao <b>Presidente do INCRA</b>, que fica responsável pela condução dos procedimentos administrativos de outorga.</p><p>A norma estabelece, ainda, que as áreas abrangidas por projetos de assentamento ou por territórios quilombolas serão <mark data-hl=\"sand\">tituladas individualmente ou coletivamente quando destinadas à reforma agrária, e exclusivamente de forma coletiva e pró-indiviso quando reconhecidas a remanescentes de quilombos</mark> — neste caso, com base no quantitativo de área apurado no Relatório Técnico de Identificação e Delimitação (RTID) ou nos trabalhos de campo do INCRA. A Portaria prevê, adicionalmente, a possibilidade de emissão conjunta de Termos de Autorização de Uso Sustentável (TAUS) pela SPU e pelo Incra nas áreas indubitavelmente da União pendentes de incorporação ao patrimônio federal.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "b_mt6lhtm6_2s79",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Do ponto de vista jurídico-institucional, ao consolidar uma cadeia clara de delegação de competências para a outorga de títulos em áreas da União, a Portaria 210 representa um avanço significativo na coordenação entre os órgãos com maior incidência sobre terras federais potencialmente ocupadas por comunidades tradicionais. Ao lado do Decreto nº 4.887/2003 e das Instruções Normativas do INCRA, essa portaria estrutura operacionalmente a política de regularização territorial quilombola, sendo expressamente listada pelo próprio INCRA como um dos marcos normativos aplicáveis ao procedimento administrativo de titulação.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bca47x4t",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cycs6t8u",
+          "type": "titulo",
+          "props": {
+            "text": "Competências institucionais e interfaces",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "ci1hpeap",
+          "type": "prose",
+          "props": {
+            "html": "<p>A política federal voltada aos Povos e Comunidades Tradicionais (PCTs) caracteriza-se pela distribuição de competências entre múltiplos órgãos, com atribuições que se complementam e, em alguns casos, se sobrepõem parcialmente. Tal configuração decorre da própria natureza dos direitos assegurados a esses grupos, que envolvem dimensões territoriais, ambientais, culturais, produtivas e de direitos humanos, exigindo atuação interinstitucional coordenada.</p><p>O <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6040.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Decreto nº 6.040, de 7 de fevereiro de 2007</a>, ao instituir a Política Nacional de Desenvolvimento Sustentável dos Povos e Comunidades Tradicionais, adotou deliberadamente uma abordagem transversal e intersetorial, sem concentrar a execução da política em um único órgão. O <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8750.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Decreto nº 8.750, de 9 de maio de 2016</a>, ao criar o Conselho Nacional dos Povos e Comunidades Tradicionais (CNPCT), reforçou esse desenho ao instituir instância de governança destinada a articular órgãos federais e representantes da sociedade civil (BRASIL, 2007; BRASIL, 2016).</p><p>Mapear o papel de cada órgão e como eles se conectam é fundamental para entender como os direitos territoriais dos PCTs funcionam na prática. Esse mapeamento ajuda a identificar parcerias, ações complementares e possíveis lacunas no arranjo federal. Confira as competências institucionais de cada órgão federal:</p>"
+          }
+        },
+        {
+          "id": "bwwdxo5v",
+          "type": "statblock",
+          "props": {
+            "variant": "rule",
+            "columns": 2,
+            "stats": [
+              {
+                "value": "",
+                "unit": "SPU",
+                "label": "Administração do patrimônio imobiliário da União; Destinação de terras e bens da União; Emissão de Termos de Autorização de Uso Sustentável; Garantia de modos de vida sustentável de PCTs",
+                "description": "Competências constitucionais e regimentais relacionadas aos imóveis da União; Lei 9.636, de 1998; políticas de patrimônio da União"
+              },
+              {
+                "value": "",
+                "unit": "INCRA",
+                "label": "Regularização fundiária; gestão de terras públicas federais; titulação de territórios quilombolas; interface com assentamentos e territórios tradicionais",
+                "description": "Decreto nº 4.887, de 2003; Decreto nº 11.232, de 2022; Decretos nº 12.171, de 2024, e nº 12.792, de 2025; procedimentos administrativos fundiários"
+              },
+              {
+                "value": "",
+                "unit": "MDA",
+                "label": "Formulação e coordenação de políticas de desenvolvimento rural sustentável; apoio à agricultura familiar e a sistemas produtivos tradicionais; articulação territorial",
+                "description": "Lei nº 14.600, de 2023; programas e políticas públicas setoriais; instrumentos de fomento e apoio produtivo"
+              },
+              {
+                "value": "",
+                "unit": "MMA",
+                "label": "Coordenação da política ambiental; gestão da biodiversidade; vinculação institucional do CNPCT; interface com unidades de conservação",
+                "description": "Lei nº 9.985, de 2000; Decreto nº 8.750, de 2016; políticas ambientais e instrumentos de gestão territorial"
+              },
+              {
+                "value": "",
+                "unit": "Casa Civil da Presidência da República",
+                "label": "Coordenação interministerial; análise e consolidação de atos normativos; mediação institucional em agendas estratégicas",
+                "description": "Competências constitucionais e regimentais; coordenação de processos normativos complexos"
+              },
+              {
+                "value": "",
+                "unit": "FUNAI",
+                "label": "Proteção e promoção dos direitos dos povos indígenas; demarcação e proteção de terras indígenas",
+                "description": "Lei nº 5.371, de 1967; atos administrativos específicos; políticas indigenistas"
+              },
+              {
+                "value": "",
+                "unit": "Fundação Cultural Palmares",
+                "label": "Certificação de autorreconhecimento quilombola; promoção da cultura afro-brasileira",
+                "description": "Lei nº 7.668, de 1988; procedimentos administrativos de certificação&nbsp;"
+              },
+              {
+                "value": "",
+                "unit": "MPF",
+                "label": "Defesa da ordem jurídica e dos direitos fundamentais; fiscalização de políticas públicas; atuação judicial e extrajudicial",
+                "description": "Constituição Federal (arts. 127 e 129); ações civis públicas; recomendações; termos de ajustamento"
+              },
+              {
+                "value": "",
+                "unit": "Órgãos setoriais diversos (saúde, educação, pesca, cultura, direitos humanos)",
+                "label": "Execução de políticas públicas específicas que incidem sobre territórios e modos de vida tradicionais",
+                "description": "Leis e programas setoriais; instrumentos administrativos próprios"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b85vif24",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c5ao37ve",
+          "type": "titulo",
+          "props": {
+            "text": "Sistemas de informação governamentais e bases de dados relevantes para a operacionalização da política pública de Povos e Comunidades Tradicionais",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c7fvadbw",
+          "type": "prose",
+          "props": {
+            "html": "<p>A operacionalização da política pública federal voltada aos Povos e Comunidades Tradicionais (PCTs) ocorre em um ambiente institucional caracterizado pela dispersão de informações territoriais, fundiárias, ambientais e administrativas, distribuídas em múltiplos sistemas governamentais setoriais, geridos por diferentes órgãos da Administração Pública Federal. Embora não exista, até o momento, um sistema nacional unificado ou um cadastro específico voltado exclusivamente aos PCTs, <mark data-hl=\"terra\">o Estado brasileiro dispõe de um conjunto relevante de bases de dados oficiais</mark> que, direta ou indiretamente, produzem, armazenam ou tratam informações essenciais para a identificação, a caracterização territorial e o acompanhamento de políticas públicas incidentes sobre esses grupos.</p><p>Estudos institucionais do Instituto de Pesquisa Econômica Aplicada (IPEA) demonstram que a governança fundiária e territorial no Brasil se estruturou historicamente a partir de sistemas fragmentados, concebidos para finalidades específicas — agrárias, ambientais, registrais, patrimoniais ou sociais —, os quais passaram a ser mobilizados de forma transversal para subsidiar políticas públicas complexas, como aquelas voltadas aos Povos e Comunidades Tradicionais. Segundo o IPEA, a inexistência de um cadastro nacional integrado para territórios tradicionalmente ocupados não decorre da ausência de informações, mas da falta de interoperabilidade institucional, de padronização conceitual e de coordenação administrativa entre sistemas distintos, o que impõe limites à efetividade das políticas territoriais e amplia riscos de sobreposição, inconsistência de dados e lacunas operacionais (REYDON et al.,2017).</p><p>Nesse cenário, ainda que de forma indireta e não sistematizada, a política pública de PCTs já se vale de informações provenientes de bases governamentais oficiais existentes, especialmente aquelas vinculadas ao INCRA, MMA, MDA, SPU, FUNAI e a sistemas sociais federais.</p>"
+          }
+        },
+        {
+          "id": "bzxrhacg",
+          "type": "datatable",
+          "props": {
+            "caption": "",
+            "columns": [
+              {
+                "key": "c0",
+                "label": "Sistema / Módulo"
+              },
+              {
+                "key": "c1",
+                "label": "Gestor"
+              },
+              {
+                "key": "c2",
+                "label": "Função principal"
+              },
+              {
+                "key": "c3",
+                "label": "Relevância para PCTs"
+              }
+            ],
+            "rows": [
+              {
+                "c0": "SPUnet",
+                "c1": "SPU / MGI",
+                "c2": "Gestão de bens imóveis da União",
+                "c3": "Análise de dominialidade em terras da União"
+              },
+              {
+                "c0": "SNCR",
+                "c1": "INCRA",
+                "c2": "Cadastro declaratório de imóveis rurais; emissão de CCIR",
+                "c3": "Identificação de terras públicas; análise de dominialidade"
+              },
+              {
+                "c0": "CNIR",
+                "c1": "INCRA / Receita Federal",
+                "c2": "Integração cadastral-tributária (em implantação)",
+                "c3": "Integração de dados para identificação de imóveis e detentores"
+              },
+              {
+                "c0": "SIGEF",
+                "c1": "INCRA",
+                "c2": "Certificação georreferenciada de imóveis rurais",
+                "c3": "Detecção de sobreposições; vazios cadastrais; insumos cartográficos"
+              },
+              {
+                "c0": "SIGARA",
+                "c1": "INCRA",
+                "c2": "Gestão de processos de reforma agrária",
+                "c3": "Acompanhamento de assentamentos e processos quilombolas"
+              },
+              {
+                "c0": "AST (módulo)",
+                "c1": "INCRA",
+                "c2": "Gestão de assentamentos (PAE, PDS, PAF)",
+                "c3": "Identificação de assentamentos com comunidades tradicionais"
+              },
+              {
+                "c0": "SIPRA",
+                "c1": "INCRA",
+                "c2": "Informações de projetos de reforma agrária",
+                "c3": "Dados de beneficiários e situação administrativa"
+              },
+              {
+                "c0": "SISOT",
+                "c1": "INCRA",
+                "c2": "Gestão de obtenção de terras (desapropriação, arrecadação)",
+                "c3": "Processos de obtenção para regularização quilombola e de PCTs"
+              },
+              {
+                "c0": "PGT",
+                "c1": "INCRA",
+                "c2": "Governança territorial; monitoramento de cláusulas resolutivas",
+                "c3": "Acompanhamento de concessões e contratos em áreas tradicionais"
+              },
+              {
+                "c0": "Novo Cadastro Territorial",
+                "c1": "INCRA",
+                "c2": "Modernização da base cadastral",
+                "c3": "Convergência SNCR-SIGEF-ONR"
+              },
+              {
+                "c0": "Meu Imóvel Rural",
+                "c1": "INCRA",
+                "c2": "Interface de serviços cadastrais ao cidadão",
+                "c3": "Consulta e transparência cadastral"
+              },
+              {
+                "c0": "Data Lake",
+                "c1": "INCRA",
+                "c2": "Repositório centralizado de dados",
+                "c3": "Cruzamento de informações territoriais; análises integradas"
+              },
+              {
+                "c0": "Geonode",
+                "c1": "INCRA",
+                "c2": "Infraestrutura de dados geoespaciais",
+                "c3": "Publicação e consulta de camadas geográficas"
+              },
+              {
+                "c0": "NIP",
+                "c1": "INCRA",
+                "c2": "Inteligência e planejamento territorial",
+                "c3": "Diagnósticos fundiários; mapeamento de demandas"
+              },
+              {
+                "c0": "PIT",
+                "c1": "INCRA",
+                "c2": "Painel de informações territoriais",
+                "c3": "Consulta georreferenciada integrada"
+              },
+              {
+                "c0": "Bases Cartos",
+                "c1": "INCRA",
+                "c2": "Acervo cartográfico histórico",
+                "c3": "Insumos para instrução processual (limitações de precisão)"
+              },
+              {
+                "c0": "Base de Dados PCT",
+                "c1": "INCRA",
+                "c2": "Repositório sobre PCTs (em estruturação)",
+                "c3": "Potencial para gestão territorial específica de PCTs"
+              },
+              {
+                "c0": "SEI",
+                "c1": "INCRA",
+                "c2": "Gestão de processos administrativos eletrônicos",
+                "c3": "Tramitação processual de regularização territorial"
+              },
+              {
+                "c0": "Terras do Brasil",
+                "c1": "Multiinstitucional",
+                "c2": "Integração de dados fundiários e territoriais",
+                "c3": "Visão consolidada; Módulos CTD, CIT e PCT"
+              },
+              {
+                "c0": "Módulo CTD",
+                "c1": "INCRA / MDA",
+                "c2": "Câmara Técnica de Destinação de terras públicas",
+                "c3": "Destinação de glebas federais com incidência de PCTs"
+              },
+              {
+                "c0": "Módulo CIT",
+                "c1": "Multiinstitucional",
+                "c2": "Comitê de Integração Territorial",
+                "c3": "Coordenação interinstitucional territorial"
+              },
+              {
+                "c0": "Módulo PCT",
+                "c1": "Multiinstitucional",
+                "c2": "Funcionalidade dedicada a PCTs",
+                "c3": "Articulação de política territorial transversal"
+              },
+              {
+                "c0": "SINARF",
+                "c1": "INCRA",
+                "c2": "Aquisição de imóveis para reforma agrária",
+                "c3": "Fluxo de obtenção de terras para regularização"
+              },
+              {
+                "c0": "SICARF Federativo",
+                "c1": "INCRA / Estados",
+                "c2": "Cadastro da reforma agrária federativo",
+                "c3": "Articulação com entes federativos"
+              },
+              {
+                "c0": "Mapa Registro de Imóveis",
+                "c1": "ONR / Cartórios",
+                "c2": "Base registral georreferenciada",
+                "c3": "Análise de cadeia dominial; sincronização cadastral-registral"
+              },
+              {
+                "c0": "SII",
+                "c1": "FUNAI",
+                "c2": "Informações sobre Terras Indígenas",
+                "c3": "Detecção de sobreposições com Tis"
+              },
+              {
+                "c0": "PTT",
+                "c1": "MPF",
+                "c2": "Territórios Tradicionais georreferenciados",
+                "c3": "Subsídio para defesa de direitos territoriais"
+              },
+              {
+                "c0": "Sistemas Estaduais Terra",
+                "c1": "Estados",
+                "c2": "Gestão fundiária estadual",
+                "c3": "Mapeamento de terras estaduais com incidência de PCTs"
+              },
+              {
+                "c0": "SICAR Federal",
+                "c1": "SFB / MMA",
+                "c2": "Cadastro Ambiental Rural federal",
+                "c3": "Detecção de sobreposições ambientais-fundiárias"
+              },
+              {
+                "c0": "SICAR Pará",
+                "c1": "SEMAS/PA",
+                "c2": "CAR customizado do Pará",
+                "c3": "Dados ambientais georreferenciados no Pará"
+              },
+              {
+                "c0": "SICAR Customizados",
+                "c1": "Estados",
+                "c2": "CAR customizado de outras UFs",
+                "c3": "Dados ambientais georreferenciados estaduais"
+              },
+              {
+                "c0": "SINTER",
+                "c1": "Multiinstitucional",
+                "c2": "Integração cadastral, registral e geoespacial",
+                "c3": "Potencial futuro de integração territorial para PCTs"
+              }
+            ],
+            "dense": true,
+            "highlightFirst": false,
+            "striped": true,
+            "tone": "terra",
+            "className": "spu-table-wrap--striped spu-table-wrap--tone-terra"
+          }
+        },
+        {
+          "id": "bozndt1d",
+          "type": "prose",
+          "props": {
+            "html": "<p>O panorama institucional e informacional atualmente disponível demonstra que a política pública de PCTs não parte do vazio informacional, mas se apoia em um conjunto amplo e oficial de bases de dados governamentais, criadas sob diferentes marcos legais e para finalidades específicas. Esses sistemas — fundiários, ambientais, patrimoniais e sociais — contêm informações relevantes e complementares para a identificação territorial, o planejamento e o monitoramento de ações públicas incidentes sobre os PCTs.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bwvjqd1j",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para fechar",
+        "kickerIcon": "check",
+        "title": "Conclusão",
+        "body": "<p>Reconhecer e proteger os territórios tradicionalmente ocupados é também um desafio da gestão de imóveis públicos. Regular essas áreas exige compreender os direitos envolvidos, as características das comunidades e os diferentes instrumentos e responsabilidades institucionais relacionados à regularização fundiária.</p><p>União, estados e municípios, no âmbito de suas competências e de seus patrimônios, participam da gestão territorial e da implementação de políticas públicas que alcançam Povos e Comunidades Tradicionais. A articulação entre esses entes e com as próprias comunidades é, portanto, parte importante desse processo.</p><p>Para quem atua com imóveis públicos, conhecer essa realidade amplia a capacidade de analisar criticamente diferentes situações de utilização e regularização de áreas públicas, reconhecendo o patrimônio como instrumento para a garantia de direitos, a inclusão social, a proteção da diversidade sociocultural e a concretização de sua função socioambiental.</p>"
+      },
+      "children": [
+        {
+          "id": "b1050f3h",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Para refletir",
+            "kickerIcon": "brain",
+            "title": "",
+            "color": "",
+            "bg": "var(--ochre-50)",
+            "body": "<p>Agora que você compreendeu um pouco mais sobre as populações tradicionais no Brasil com a leitura desse deste material, reflita sobre sua atuação profissional tendo as seguintes questões como referência.</p><p></p>"
+          },
+          "children": [
+            {
+              "id": "b8tyl4cn",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "bomxp9hx",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--terra-600)",
+                    "items": [
+                      {
+                        "title": "",
+                        "text": "Como o processo de ocupação histórica do território brasileiro reflete na regularização fundiária de povos e comunidades tradicionais? <br>"
+                      },
+                      {
+                        "title": "",
+                        "text": "Quais os principais desafios do Estado para avançar na regularização fundiária de territórios tradicionais?<br>"
+                      },
+                      {
+                        "title": "",
+                        "text": "Você já ouviu falar nas Diretrizes Voluntárias sobre a Governança Responsável da Terra, dos Bosques e dos Recursos Pesqueiros e Florestais editadas pela FAO/ONU? Qual a sua relação com a PNPCT?<br>"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "id": "b_msv1q6p7_jirp",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "check",
+                    "icon": "check",
+                    "accent": "var(--terra-600)",
+                    "items": [
+                      {
+                        "title": "",
+                        "text": "Os territórios tradicionais têm alguma relação (positiva ou negativa) com as mudanças climáticas? <br>"
+                      },
+                      {
+                        "title": "",
+                        "text": "Qual o papel da sociedade em geral no debate sobre o processo de regularização de territórios tradicionais? "
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b4xbgzg7",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Referências bibliográficas",
+                "content": "<p>BRASIL. Lei nº 5.371, de 5 de dezembro de 1967. Autoriza a instituição da Fundação Nacional do Índio e dá outras providências. Diário Oficial da União, Brasília, DF, 6 dez. 1967. </p><p>BRASIL. [Constituição (1988)]. Constituição da República Federativa do Brasil de 1988. Brasília, DF: Presidência da República, 1988. Disponível em: <a href=\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm\">https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm</a>. </p><p>BRASIL. Lei nº 7.668, de 22 de agosto de 1988. Autoriza o Poder Executivo a constituir a Fundação Cultural Palmares. Diário Oficial da União, Brasília, DF, 23 ago. 1988b.</p><p>BRASIL. Lei nº 8.629, de 25 de fevereiro de 1993. Dispõe sobre a regulamentação dos dispositivos constitucionais relativos à reforma agrária. Diário Oficial da União, Brasília, DF, 26 fev. 1993.</p><p>BRASIL. Decreto nº 1.775, de 8 de janeiro de 1996. Dispõe sobre o procedimento administrativo de demarcação das terras indígenas. Diário Oficial da União, Brasília, DF, 9 jan. 1996.</p><p>BRASIL. Decreto nº 2.519, de 16 de março de 1998. Promulga a Convenção sobre Diversidade Biológica. Diário Oficial da União, Brasília, DF, 17 mar. 1998.</p><p>BRASIL. Lei nº 9.985, de 18 de julho de 2000. Institui o Sistema Nacional de Unidades de Conservação da Natureza. Diário Oficial da União, Brasília, DF, 19 jul. 2000.</p><p>BRASIL. Decreto Legislativo nº 143, de 20 de junho de 2002. Aprova o texto da Convenção nº 169 da Organização Internacional do Trabalho. Diário Oficial da União, Brasília, DF, 21 jun. 2002. </p><p>BRASIL. Decreto nº 4.887, de 20 de novembro de 2003. Regulamenta o procedimento para identificação, reconhecimento, delimitação, demarcação e titulação das terras ocupadas por remanescentes das comunidades dos quilombos. Diário Oficial da União, Brasília, DF, 21 nov. 2003. Disponível em: <a href=\"https://www.planalto.gov.br/ccivil_03/decreto/2003/d4887.htm\">https://www.planalto.gov.br/ccivil_03/decreto/2003/d4887.htm</a>. </p><p>BRASIL. Decreto nº 6.040, de 7 de fevereiro de 2007. Institui a Política Nacional de Desenvolvimento Sustentável dos Povos e Comunidades Tradicionais – PNPCT. Diário Oficial da União, Brasília, DF, 8 fev. 2007a. Disponível em: <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6040.htm\">https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/decreto/d6040.htm</a>. </p><p>BRASIL. Decreto nº 8.750, de 9 de maio de 2016. Institui o Conselho Nacional dos Povos e Comunidades Tradicionais. Diário Oficial da União, Brasília, DF, 10 maio 2016a. Disponível em: <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8750.htm\">https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/decreto/d8750.htm</a>. </p><p>BRASIL. Decreto nº 10.088, de 5 de novembro de 2019. Consolida atos normativos editados pelo Poder Executivo federal que dispõem sobre a promulgação de convenções e recomendações da Organização Internacional do Trabalho – OIT. Diário Oficial da União, Brasília, DF, 6 nov. 2019.</p><p>BRASIL. Lei nº 14.600, de 19 de junho de 2023. Estabelece a organização básica dos órgãos da Presidência da República e dos Ministérios. Diário Oficial da União, Brasília, DF, 20 jun. 2023. Disponível em: <a href=\"https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14600.htm\">https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/lei/L14600.htm</a>. </p><p>BRASIL. Decreto nº 11.624, de 1º de agosto de 2023. Aprova a Estrutura Regimental e o Quadro Demonstrativo dos Cargos em Comissão e das Funções de Confiança do Ministério da Pesca e Aquicultura. Diário Oficial da União, Brasília, DF, 2 ago. 2023.</p><p>BRASIL. Decreto nº 11.626, de 2 de agosto de 2023. Institui o Programa Povos da Pesca Artesanal. Diário Oficial da União, Brasília, DF, 3 ago. 2023.</p><p>BRASIL. Decreto nº 11.786, de 20 de novembro de 2023. Institui o Plano Nacional de Gestão Territorial e Ambiental Quilombola – PNGTAQ. Diário Oficial da União, Brasília, DF, 21 nov. 2023.</p><p>BRASIL. Decreto nº 12.171, de 9 de setembro de 2024. Altera o Decreto nº 11.232, de 10 de outubro de 2022. Diário Oficial da União, Brasília, DF, 10 set. 2024.</p><p>BRASIL. Decreto nº 12.792, de 22 de dezembro de 2025. Altera o Decreto nº 11.232, de 10 de outubro de 2022, e remaneja e transforma cargos em comissão e funções de confiança. Diário Oficial da União: Seção 1, Brasília, DF, p. 37, 23 dez. 2025.</p><p>BRASIL. Ministério do Meio ambiente e Mudança do Clima. Povos e Comunidades Tradicionais. Brasília, DF: MMA, [s.d.]. Disponível em: <a href=\"https://www.gov.br/mma/pt-br/assuntos/povos-e-comunidades-tradicionais\">https://www.gov.br/mma/pt-br/assuntos/povos-e-comunidades-tradicionais</a>.</p><p>BRASIL. Ministério do Desenvolvimento Agrário e Agricultura Familiar. Repositório de Marcos Regulatórios de Regularização Fundiária de Povos e Comunidades Tradicionais (Estaduais). Gov.br MDA. Disponível em: <a href=\"https://www.gov.br/mda/pt-br/assuntos/povos-e-comunidades-tradicionais/repositorio-de-marcos-regulatorios-de-regularizacao-fundiaria-de-povos-e-comunidades-tradicionais/estaduais\">https://www.gov.br/mda/pt-br/assuntos/povos-e-comunidades-tradicionais/repositorio-de-marcos-regulatorios-de-regularizacao-fundiaria-de-povos-e-comunidades-tradicionais/estaduais</a>. </p><p>NAVAS, R. Políticas públicas e comunidades tradicionais. Revista NERA, Presidente Prudente, 2014. Disponível em: <a href=\"https://revista.fct.unesp.br/index.php/nera/article/download/2543/2743/9998\">https://revista.fct.unesp.br/index.php/nera/article/download/2543/2743/9998</a>. </p><p>ORGANIZAÇÃO INTERNACIONAL DO TRABALHO (OIT). Convenção nº 169 sobre Povos Indígenas e Tribais em Países Independentes. Genebra: OIT, 1989.</p><p>REYDON, Bastiaan Philip et al. Governança de terras: da teoria à realidade brasileira. Brasília: FAO; SEAD, 2017.</p>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b1g202wa",
+      "type": "pagefooter",
+      "props": {
+        "code": "Regularização Fundiária de Povos e Comunidades Tradicionais [M433]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Sávio Silveira Feitosa"
+          },
+          {
+            "role": "Revisão",
+            "name": "Claudson Santos"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
