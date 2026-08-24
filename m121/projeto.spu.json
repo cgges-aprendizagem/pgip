@@ -1,0 +1,872 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M121 - Bens imoveis publicos",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "cgtzkji9",
+          "text": "Afinal, o que estamos chamando de imóveis públicos?",
+          "hidden": false
+        },
+        {
+          "id": "cc07md1i",
+          "text": "Quando um bem é público?",
+          "hidden": false
+        },
+        {
+          "id": "c5cpgm86",
+          "text": "Todos os bens públicos estão submetidos às mesmas regras?",
+          "hidden": false
+        },
+        {
+          "id": "c1vban04",
+          "text": "De quem são os imóveis públicos?",
+          "hidden": false
+        },
+        {
+          "id": "crg59sgb",
+          "text": "Como um imóvel passa a integrar o patrimônio público?",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "bynwa1jd",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b41tzsoz",
+      "type": "hero",
+      "props": {
+        "kicker": "Nome da competência",
+        "kickerIcon": "compass",
+        "title": "Bens imóveis públicos (sendo refeito)",
+        "byline": "conceitos, classificação e titularidade",
+        "slot": "b41tzsoz__slot"
+      }
+    },
+    {
+      "id": "bmczyeej",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cfwrv95f",
+          "type": "prose",
+          "props": {
+            "html": "<p>Os imóveis públicos são o objeto central da gestão patrimonial tratado neste Programa. Parece simples dizer isso, mas uma pergunta antecede todas as demais:<mark data-hl=\"terra\"> <b>o que estamos chamando de imóvel público?</b></mark></p><p>Na legislação, na doutrina e na prática administrativa, encontramos expressões como<i> patrimônio, bem, imóvel, terra, terreno e área</i>, além de combinações como<i> bens públicos, bens imóveis públicos e patrimônio imobiliário públic</i>o. Algumas possuem significado jurídico mais preciso; outras são utilizadas em sentido técnico ou administrativo. Nem sempre, portanto, são empregadas de maneira uniforme.</p><p>Essa diversidade não é apenas uma questão de palavras. O próprio universo dos bens públicos é muito mais amplo do que a imagem mais imediata de um terreno ou prédio pertencente ao Poder Público. Nele encontramos edifícios e unidades autônomas, ruas e praças, praias e ilhas e, conforme as categorias estabelecidas pela legislação, rios, lagos, mar territorial e outros bens e espaços de natureza territorial. </p><p>Construir uma compreensão comum sobre esses conceitos é especialmente importante em um país no qual União, estados, Distrito Federal e municípios possuem patrimônios próprios, mas compartilham o mesmo território, políticas públicas, informações e problemas de gestão. Uma linguagem minimamente harmonizada favorece a integração de cadastros e informações, o diálogo institucional e a atuação coordenada entre os diferentes entes.</p><p>Para a sociedade, muitas vezes importa menos saber qual ente público é o proprietário de determinado imóvel do que compreender o que significa aquele bem ser público e como isso repercute concretamente em sua vida: na rua por onde circula, na praça que utiliza, no acesso à praia, na escola ou unidade de saúde que frequenta, na proteção de um rio ou na disponibilidade de uma área para determinada política pública.</p><p>Para quem trabalha com gestão patrimonial imobiliária, entretanto, essas distinções são essenciais. Identificar o que está sendo gerido, a quem pertence, como se caracteriza e qual regime jurídico incide sobre ele condiciona praticamente todas as decisões posteriores de gestão.</p><p>Por isso, antes de avançarmos, vamos construir um vocabulário comum sobre o próprio objeto da nossa atuação: <b><mark data-hl=\"petrol\">o que são, afinal, os tais imóveis públicos brasileiros?</mark></b></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bz9g8nf8",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cgtzkji9",
+          "type": "titulo",
+          "props": {
+            "text": "Afinal, o que estamos chamando de imóveis públicos?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c9d1vjpk",
+          "type": "prose",
+          "props": {
+            "html": "<p>Na gestão patrimonial, palavras próximas nem sempre significam a mesma coisa. Patrimônio, bem, bem imóvel e patrimônio imobiliário, por exemplo, se relacionam, mas expressam conceitos diferentes. Antes de avançarmos para outras terminologias utilizadas na gestão, vale distingui-los.</p>"
+          }
+        },
+        {
+          "id": "bjwop51a",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Patrimônio",
+                "content": "<p>Patrimônio é o conceito mais abrangente. Em sentido jurídico, corresponde ao conjunto de bens (o ativo), direitos e relações de conteúdo patrimonial (inclusive as dívidas) vinculados a uma pessoa, seja ela física ou jurídica. Sua característica principal é o seu valor econômico.</p><p>Quando falamos em patrimônio público, portanto, não estamos falando apenas de terrenos e edificações. Esse patrimônio pode compreender bens de diferentes naturezas, direitos e outros elementos de valor ou interesse para o Poder Público.</p>",
+                "blocks": [
+                  {
+                    "id": "bw1mf55f",
+                    "type": "callout",
+                    "props": {
+                      "variant": "ear",
+                      "tone": "attention",
+                      "icon": "lightbulb",
+                      "title": "Atenção",
+                      "heading": "“Patrimônio” nem sempre tem o mesmo sentido.",
+                      "children": "<p>Em sentido jurídico, patrimônio está associado ao conjunto de bens, direitos e relações de conteúdo econômico de uma pessoa ou ente.</p><p>O termo também é utilizado de forma mais ampla para designar bens e valores considerados relevantes e merecedores de proteção, como nas expressões patrimônio cultural, histórico, artístico, arqueológico, ambiental e natural.</p><p>Essas dimensões podem se sobrepor. Um bem imóvel tombado, por exemplo, integra o patrimônio imobiliário do ente e também o patrimônio cultural protegido.</p><p>Neste Programa, patrimônio imobiliário público designará especificamente o universo de bens e situações de natureza imobiliária ou territorial submetidos à gestão patrimonial pública.</p>",
+                      "color": ""
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Bem",
+                "content": "<p>Bem é aquilo que possui relevância jurídica e pode integrar relações de direito, ou seja, que podem ser apropriadas por uma pessoa, física ou jurídica. </p><p><span style=\"color: inherit;\">Os bens podem ser classificados segundo diferentes critérios.</span><p>Uma distinção tradicional da doutrina separa os <b>bens em corpóreos ou materiais</b>, que possuem existência física, <b>e incorpóreos ou imateriais</b>, constituídos por direitos e outras realidades juridicamente reconhecidas sem materialidade correspondente.</p><p>Outra classificação fundamental distingue os bens em <b>móveis e imóveis</b>. É nesta última categoria que se encontra o objeto principal deste material.</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Bem imóvel",
+                "content": "<p>Bem imóvel é uma categoria de bem. O Código Civil estabelece, em seu <a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%2079.%20S%C3%A3o%20bens%20im%C3%B3veis%20o%20solo%20e%20tudo%20quanto%20se%20lhe%20incorporar%20natural%20ou%20artificialmente.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 79</a>, que são imóveis “o solo e tudo quanto se lhe incorporar natural ou artificialmente”.</p><p>O conceito jurídico, contudo, não se restringe à realidade física. O <a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%2080.%20Consideram,%C3%A0%20sucess%C3%A3o%20aberta.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 80 do Código Civil</a> também considera imóveis, para efeitos legais, os direitos reais sobre imóveis e as ações que os asseguram, além do direito à sucessão aberta.</p><p>Assim, <b>bem imóvel não é sinônimo apenas de terreno ou edificação</b>. Além disso, como veremos ao longo deste material, o patrimônio público apresenta bens e espaços territoriais com características próprias que exigem tratamento específico.</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Patrimônio imobiliário",
+                "content": "<p>Patrimônio imobiliário é a expressão utilizada para delimitar, dentro de um patrimônio mais amplo, o conjunto relacionado aos seus bens imóveis e aos direitos de natureza imobiliária.</p><p>Quando esse patrimônio está vinculado ao Poder Público, são utilizadas expressões como patrimônio imobiliário público, bens imóveis públicos ou, de maneira mais simples, imóveis públicos. Embora essas expressões possam assumir sentidos mais específicos conforme a norma ou o contexto em que aparecem, elas nos permitem identificar o universo patrimonial de interesse deste Programa de Desenvolvimento Profissional.</p><p>Ao longo do Programa, adotaremos “imóveis públicos” e “patrimônio imobiliário público” em sentido amplo e funcional, abrangendo os bens e espaços de natureza imobiliária ou territorial submetidos à gestão patrimonial dos entes públicos. Sempre que as diferenças jurídicas entre as categorias forem relevantes, elas serão explicitadas.</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "bmmwmudx",
+          "type": "figure",
+          "props": {
+            "slot": "bmmwmudx__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "b73qw50x",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "alert-triangle",
+            "title": "PARA GUARDAR",
+            "heading": "",
+            "children": "<p>Patrimônio, bem e imóvel não são sinônimos. Patrimônio é o conceito mais amplo; os bens integram esse patrimônio; e os bens imóveis (ou imóveis simplesmente) constituem uma categoria de bens.</p>"
+          }
+        },
+        {
+          "id": "bxi8si68",
+          "type": "titulo",
+          "props": {
+            "text": "Terra, terreno e área significam a mesma coisa?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bb0rtxc6",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": true,
+            "accent": "var(--terra-600)",
+            "layout": "side",
+            "items": [
+              {
+                "icon": "map-plus",
+                "title": "Terra",
+                "text": "Terra é uma expressão amplamente utilizada na legislação e nas políticas territoriais, especialmente quando tratamos da <b>formação, apropriação e distribuição da propriedade</b>. Ela aparece também em categorias juridicamente qualificadas, como terras devolutas e terras tradicionalmente ocupadas pelos povos indígenas. A palavra terra, isoladamente, entretanto, não corresponde a uma categoria única do direito civil."
+              },
+              {
+                "icon": "land-plot",
+                "title": "Terreno",
+                "text": "Terreno é utilizado, em geral, para <b>designar determinada porção do solo</b>. Pode estar edificado ou não e apresentar diferentes configurações e regimes jurídicos."
+              },
+              {
+                "icon": "ruler-dimension-line",
+                "title": "Área",
+                "text": "Já área é uma expressão ainda mais dependente do contexto. Pode significar uma <b>medida de superfície</b> (500 m², por exemplo ) ou um determinado <b>recorte espacial</b>. Por isso, identificar uma área em uma planta ou mapa não significa necessariamente ter identificado um imóvel juridicamente individualizado.<br>Uma mesma área pode coincidir com um imóvel, abranger apenas parte dele ou alcançar vários imóveis. E um mesmo espaço territorial pode conter bens ou  situações jurídica diferentes.<br>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "b1wqa31z",
+          "type": "titulo",
+          "props": {
+            "text": "E uma edificação: <span style=\"font-weight: normal;\">é outro imóvel?</span>",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b800pl03",
+          "type": "prose",
+          "props": {
+            "html": "<p>Como vimos, o Código Civil considera imóvel o solo e tudo aquilo que se incorpora a ele natural ou artificialmente. Por isso, terreno e edificação podem ser componentes físicos distintos para fins de cadastro físico, avaliação e gestão sem que isso signifique, necessariamente, a existência de dois imóveis juridicamente autônomos.</p><p>Podemos precisar saber, por exemplo, a área do terreno, a área construída, as características das edificações e o estado de conservação de cada construção. Essas informações descrevem componentes diferentes do bem, mas não transformam automaticamente cada componente em um imóvel distinto.</p><p>Há, entretanto, uma situação importante: as unidades autônomas.</p><p>Um único prédio pode conter vários imóveis juridicamente individualizados. É o caso de apartamentos, salas, lojas e outras unidades autônomas de um condomínio edilício. Embora façam parte da mesma edificação, essas unidades podem constituir imóveis distintos, individualizados no Registro de Imóveis e vinculados a frações ideais do terreno e das partes comuns.</p>"
+          }
+        },
+        {
+          "id": "brv4ccn5",
+          "type": "figure",
+          "props": {
+            "slot": "brv4ccn5__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "bom1n6ym",
+          "type": "titulo",
+          "props": {
+            "text": "Quais são as diferentes configurações dos bens imóveis públicos?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "be5c9x0p",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "b7nufpw4",
+              "type": "prose",
+              "props": {
+                "html": "<p>E essa é uma característica especialmente importante do patrimônio público.</p><p>A legislação brasileira reconhece bens públicos com configurações territoriais muito diferentes. Além de terrenos e edificações, encontramos praias, terrenos marginais, ilhas, entre outros.</p><p>Há situações ainda menos intuitivas. A Constituição inclui entre os bens públicos, conforme os critérios nela estabelecidos, lagos, cavidades subterrâneas, rios e outras correntes d'água, além do mar territorial. A legislação também trata de espaços físicos em águas públicas.</p><p>A imagem ajuda a perceber algo importante: um espaço que visualmente parece contínuo pode compreender bens e porções territoriais submetidos a conceitos e regimes jurídicos distintos.</p>"
+              }
+            },
+            {
+              "id": "bo6n94b3",
+              "type": "figure",
+              "props": {
+                "slot": "bo6n94b3__slot",
+                "src": "",
+                "fit": "contain",
+                "size": "full",
+                "title": "",
+                "caption": "Fonte: Manual de Regularização Fundiária em Terras da União. [p. A25]",
+                "credit": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "baa4uvpm",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">É preciso, contudo, evitar outra simplificação. Rios, lagos ou o mar não devem ser explicados simplesmente como partes do solo com base no art. 79 do Código Civil. A Constituição e a legislação estabelecem categorias próprias para águas, álveos, mar territorial e outros componentes dos espaços terrestres e aquáticos. Voltaremos a essas diferenças quando tratarmos das principais tipologias de bens públicos.</span></p>"
+          }
+        },
+        {
+          "id": "br66kmvd",
+          "type": "titulo",
+          "props": {
+            "text": "Que expressão adotaremos neste Programa?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "br8dfsy0",
+          "type": "prose",
+          "props": {
+            "html": "<p>Diante dessa diversidade, nenhuma expressão isolada consegue reproduzir com absoluta precisão todas as situações encontradas na gestão patrimonial.</p><p>Neste Programa, utilizaremos “imóveis públicos” e “patrimônio imobiliário público” em sentido amplo e funcional, para nos referirmos ao conjunto de bens e espaços de natureza imobiliária ou territorial submetidos à gestão patrimonial dos entes públicos.</p><p>Isso nos permite adotar uma linguagem comum para tratar da realidade da União, dos estados, do Distrito Federal e dos municípios, sem pressupor que todos utilizem exatamente as mesmas categorias cadastrais ou organizem seus patrimônios da mesma forma.</p><p>Essa opção não elimina as diferenças jurídicas. Sempre que essas diferenças forem relevantes, elas precisarão ser consideradas.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b0tqmp60",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cc07md1i",
+          "type": "titulo",
+          "props": {
+            "text": "Quando um bem é público?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cfv7i5rd",
+          "type": "prose",
+          "props": {
+            "html": "<p>Agora que distinguimos patrimônio, bem e imóvel, podemos avançar para outra questão fundamental: <b>o que torna um bem público?</b></p><p>O Código Civil oferece um ponto de partida objetivo. Seu art. 98 estabelece:</p>"
+          }
+        },
+        {
+          "id": "b6xa6346",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "h5",
+            "children": "<i>São públicos os bens do domínio nacional pertencentes às pessoas jurídicas de direito público interno; todos os outros são particulares, seja qual for a pessoa a que pertencerem.</i>",
+            "cite": ""
+          }
+        },
+        {
+          "id": "bp704zxr",
+          "type": "prose",
+          "props": {
+            "html": "<p>A primeira chave para reconhecer um bem público é, portanto, a <mark data-hl=\"petrol\">titularidade</mark>. <span style=\"text-wrap-mode: initial; color: inherit;\">Entre as pessoas jurídicas de direito público interno estão a União, os estados, o Distrito Federal e os municípios, além das autarquias e demais entidades de caráter público criadas por lei, conforme estabelece o art. 41 do Código Civil.</span></p>"
+          }
+        },
+        {
+          "id": "b0sfbvvz",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "body-lg",
+            "children": "<p><i>Art. 41. São pessoas jurídicas de direito público interno:<br><br></i></p><p><i>I - a União;<br><span style=\"text-wrap-mode: initial; color: inherit; font-size: inherit;\">II - os Estados, o Distrito Federal e os Territórios;<br></span><span style=\"text-wrap-mode: initial; color: inherit; font-size: inherit;\">III - os Municípios;<br></span><span style=\"text-wrap-mode: initial; color: inherit; font-size: inherit;\">IV - as autarquias, inclusive as associações públicas;<br></span><span style=\"text-wrap-mode: initial; color: inherit; font-size: inherit;\">V - as demais entidades de caráter público criadas por lei.</span></i></p><p><i>Parágrafo único. Salvo disposição em contrário, as pessoas jurídicas de direito público, a que se tenha dado estrutura de direito privado, regem-se, no que couber, quanto ao seu funcionamento, pelas normas deste Código.</i></p>",
+            "cite": ""
+          }
+        },
+        {
+          "id": "bbakzame",
+          "type": "titulo",
+          "props": {
+            "text": "Todo bem pertencente à Administração Pública é um bem público?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b3uiajgp",
+          "type": "prose",
+          "props": {
+            "html": "<p>Não necessariamente. Essa distinção é importante porque a Administração Pública compreende também entidades constituídas como pessoas jurídicas de direito privado, como empresas públicas e sociedades de economia mista.</p><p>Seus bens não se tornam automaticamente bens públicos, no sentido do art. 98 do Código Civil, apenas porque essas entidades são controladas pelo Poder Público. Dependendo da finalidade do bem, da atividade desempenhada pela entidade e da legislação aplicável, podem existir regras e proteções específicas. Mas isso não altera a distinção conceitual inicial.</p><p>Também pode ocorrer o contrário: <mark data-hl=\"petrol\">um imóvel particular pode ser utilizado pelo Poder Público sem deixar de ser particular.</mark> É o que acontece, por exemplo, quando um órgão público funciona em um prédio alugado.</p><p>Por isso, saber quem utiliza determinado imóvel não é suficiente para saber a quem ele pertence ou qual regime jurídico incide sobre ele.</p>"
+          }
+        },
+        {
+          "id": "bmolottl",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "PARA DIFERENCIAR",
+            "kickerIcon": "map-pin",
+            "title": "",
+            "color": "",
+            "bg": "",
+            "body": "<p>Imóvel pertencente a uma pessoa jurídica de direito público = bem público.</p><p>Imóvel particular utilizado por um órgão público = continua sendo bem particular.</p><p>Imóvel de empresa estatal de direito privado = não se torna automaticamente bem público apenas em razão do controle estatal.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "b65vyjbp",
+          "type": "titulo",
+          "props": {
+            "text": "Se é público, significa que pertence a todos?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bnjzhki7",
+          "type": "prose",
+          "props": {
+            "html": "<p>É comum dizer que um bem público “é de todos”. A expressão ajuda a comunicar sua vinculação à coletividade, mas não significa que o bem não tenha titular nem que qualquer pessoa possa utilizá-lo livremente.</p><p>Uma praça municipal, por exemplo, possui titularidade pública definida. O mesmo acontece com um edifício administrativo estadual ou um terreno pertencente à União. O ente titular possui competências e responsabilidades sobre esses bens e deve administrá-los de acordo com o ordenamento jurídico e com o interesse público.</p><p>Assim, bem público não é bem sem dono.</p><p>Também não devemos confundir propriedade pública com livre acesso. Uma rua ou uma praça é destinada ao uso coletivo. Um prédio administrativo também é público, mas pode possuir acesso controlado. Já um terreno público sem destinação específica não pode ser livremente ocupado apenas porque não está sendo utilizado naquele momento.</p><p>Essa diferença mostra que a titularidade responde apenas a uma das perguntas necessárias à gestão:</p>"
+          }
+        },
+        {
+          "id": "be7uygm4",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "De quem é o bem?<br>",
+            "children": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Precisamos ainda perguntar:<br></span><span style=\"text-wrap-mode: initial; color: inherit;\">A que ele se destina? Como pode ser utilizado? A quais regras está submetido?</span></p>"
+          }
+        },
+        {
+          "id": "bbt4n1ck",
+          "type": "titulo",
+          "props": {
+            "text": "O que muda quando um bem é público?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "br1tznj2",
+          "type": "prose",
+          "props": {
+            "html": "<p>A propriedade pública está submetida a um regime jurídico próprio. Isso significa que o Poder Público não administra seus imóveis exatamente como um proprietário privado administra os seus.</p><p>Uma consequência importante é a imprescritibilidade aquisitiva: os imóveis públicos não podem ser adquiridos por usucapião. A Constituição estabelece essa vedação para imóveis públicos urbanos e rurais (<a href=\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#:~:text=%C2%A7%203%C2%BA%20Os%20im%C3%B3veis%20p%C3%BAblicos%20n%C3%A3o%20ser%C3%A3o%20adquiridos%20por%20usucapi%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">arts. 183, § 3</a>º, e <a href=\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#:~:text=Art.%20191.%20Aquele,adquiridos%20por%20usucapi%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">191, parágrafo único</a>), e o Código Civil determina, em seu <a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20102.%20Os%20bens%20p%C3%BAblicos%20n%C3%A3o%20est%C3%A3o%20sujeitos%20a%20usucapi%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 102</a>, que “os bens públicos não estão sujeitos a usucapião”.</p><p>Há também regras próprias para utilização, proteção e alienação desses bens. Mas essas regras não são idênticas para todo o patrimônio público. Elas variam, entre outros fatores, conforme o ente proprietário e a finalidade à qual o bem está vinculado. <span style=\"text-wrap-mode: initial; color: inherit;\">É justamente por isso que conhecer apenas o proprietário não basta.</span></p>"
+          }
+        },
+        {
+          "id": "bcmt46sc",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "warning",
+            "icon": "book-search",
+            "title": "Você sabia?",
+            "heading": "",
+            "children": "<p>Identificar a titularidade é o ponto de partida para reconhecer um bem público, mas não encerra sua caracterização. Para compreender seu regime e suas possibilidades de utilização, precisamos saber também a que finalidade ele está destinado. É essa diferença que fundamenta a classificação dos bens públicos que veremos no próximo bloco.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bgxef2yk",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c5cpgm86",
+          "type": "titulo",
+          "props": {
+            "text": "Todos os bens públicos estão submetidos às mesmas regras?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c5o6dsq0",
+          "type": "prose",
+          "props": {
+            "html": "<p>Saber que um bem é público ainda não é suficiente para compreender como ele pode ser utilizado, administrado ou disponibilizado. Os bens públicos não estão todos submetidos exatamente às mesmas regras. Um dos elementos que fazem diferença é a finalidade à qual o bem está destinado.</p><p>O <a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Código Civil</a> organiza os bens públicos em <b>três categorias</b>: bens de uso comum do povo, bens de uso especial e bens dominicais. <span style=\"text-wrap-mode: initial; color: inherit;\">Essa classificação ajuda a compreender a relação entre o bem, sua destinação e as possibilidades de atuação do Poder Público.</span></p>"
+          }
+        },
+        {
+          "id": "bltdvg54",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Bens de uso comum do povo",
+                "content": "<p>São aqueles destinados ao uso da coletividade, como rios, mares, estradas, ruas e praças, exemplos expressamente indicados pelo <a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%2099.%20S%C3%A3o,de%20direito%20privado.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 99, I</a>, do Código Civil.</p><p>O fato de serem destinados ao uso comum não significa, porém, que qualquer utilização seja permitida ou que todos possam utilizá-los de qualquer maneira. O uso individual deve ser compatível com a destinação coletiva do bem e com as regras estabelecidas pelo Poder Público.</p><p>Uma praça, por exemplo, pode receber atividades culturais, comerciais ou esportivas, desde que realizadas nas condições admitidas pela legislação e sem descaracterizar sua finalidade pública. Da mesma forma, a utilização particular de determinado espaço de uma praia não pode impedir o acesso e o uso coletivo do restante do bem.</p><p>Outro ponto importante é que uso comum não significa necessariamente uso gratuito. O próprio Código Civil prevê, em seu <a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20103.%20O%20uso%20comum%20dos%20bens%20p%C3%BAblicos%20pode%20ser%20gratuito%20ou%20retribu%C3%ADdo%2C%20conforme%20for%20estabelecido%20legalmente%20pela%20entidade%20a%20cuja%20administra%C3%A7%C3%A3o%20pertencerem.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 103</a>, que o uso comum dos bens públicos pode ser gratuito ou retribuído, conforme estabelecido legalmente pela entidade responsável por sua administração.</p>",
+                "blocks": [
+                  {
+                    "id": "b6g1mrw1",
+                    "type": "callout",
+                    "props": {
+                      "variant": "ear",
+                      "tone": "success",
+                      "icon": "lightbulb",
+                      "title": "principal característica",
+                      "heading": "",
+                      "children": "<p>Uso comum do povo não significa uso sem regras. A característica essencial dessa categoria é a destinação do bem à coletividade.</p>"
+                    }
+                  }
+                ]
+              },
+              {
+                "title": "Bens de uso especial",
+                "content": "<p>Os bens de uso especial são aqueles destinados à execução dos serviços ou às atividades da Administração Pública. O <a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%2099.%20S%C3%A3o,de%20direito%20privado.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 99</a> do Código Civil menciona os edifícios ou terrenos destinados a serviço ou estabelecimento da administração federal, estadual, territorial ou municipal, inclusive de suas autarquias.</p><p>É o caso, por exemplo, de escolas públicas, unidades de saúde, prédios administrativos, instalações de segurança pública e terrenos destinados ao funcionamento de serviços públicos.</p><p>Aqui também é importante não associar a categoria apenas à forma física do bem. O que caracteriza o uso especial é sua destinação, e não o fato de haver uma edificação. Um terreno sem construção pode ser de uso especial se estiver juridicamente destinado a determinada finalidade administrativa.</p><p>Da mesma maneira, o acesso da população ao bem não determina sua classificação. Uma escola ou unidade de saúde atende diretamente à sociedade, mas isso não as transforma em bens de uso comum do povo: seus imóveis estão destinados à execução de um serviço público específico.</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Bens dominicais ou dominiais",
+                "content": "<p>Os bens dominicais são aqueles que integram o patrimônio das pessoas jurídicas de direito público sem estarem destinados ao uso comum do povo ou diretamente afetados a um serviço ou estabelecimento público.</p><p>O <a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=III%20%2D%20os%20dominicais%2C%20que%20constituem%20o%20patrim%C3%B4nio%20das%20pessoas%20jur%C3%ADdicas%20de%20direito%20p%C3%BAblico%2C%20como%20objeto%20de%20direito%20pessoal%2C%20ou%20real%2C%20de%20cada%20uma%20dessas%20entidades.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 99, III</a>, do Código Civil, os define como os bens que constituem o patrimônio das pessoas jurídicas de direito público “como objeto de direito pessoal, ou real, de cada uma dessas entidades”.</p><p>Podem estar nessa situação, por exemplo, terrenos sem destinação pública específica, imóveis desocupados ou bens mantidos no patrimônio enquanto se define sua utilização, desde que não estejam juridicamente afetados a uma finalidade que os enquadre nas categorias anteriores.</p><p>Isso não significa que sejam bens “sem função” ou menos públicos. Eles continuam pertencendo ao Poder Público e submetidos ao regime jurídico correspondente. Sua condição, entretanto, permite maior disponibilidade patrimonial, inclusive para determinadas formas de utilização econômica ou alienação, quando autorizadas e atendidos os requisitos legais.</p><p>O <b><a href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/\" target=\"_blank\" rel=\"noopener noreferrer\">Manual de Regularização Fundiária em Terras da União</a></b> traz ainda um exemplo particularmente interessante: as terras devolutas são, em regra, bens dominicais. Há, contudo, uma exceção constitucional relevante: as terras devolutas ou arrecadadas pelos Estados, por ações discriminatórias, necessárias à proteção dos ecossistemas naturais são indisponíveis, nos termos do<a href=\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#:~:text=%C2%A7%205%C2%BA%20S%C3%A3o%20indispon%C3%ADveis%20as%20terras%20devolutas%20ou%20arrecadadas%20pelos%20Estados%2C%20por%20a%C3%A7%C3%B5es%20discriminat%C3%B3rias%2C%20necess%C3%A1rias%20%C3%A0%20prote%C3%A7%C3%A3o%20dos%20ecossistemas%20naturais.\" target=\"_blank\" rel=\"noopener noreferrer\"> art. 225, § 5º</a>, da Constituição Federal.</p><p>Esse exemplo mostra que classificar um bem como dominical não basta, isoladamente, para concluir que ele possa ser livremente alienado ou utilizado. Podem existir regras constitucionais ou legais específicas que restrinjam sua disponibilidade.</p>",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "bizouhed",
+          "type": "titulo",
+          "props": {
+            "text": "Por que essa classificação importa?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "besb7imx",
+          "type": "prose",
+          "props": {
+            "html": "<p>A classificação não serve apenas para organizar os bens em categorias. Ela produz consequências concretas para a gestão patrimonial. <span style=\"text-wrap-mode: initial; color: inherit;\">O Código Civil estabelece que os bens de uso comum do povo e os de uso especial são inalienáveis enquanto conservarem essa qualificação (</span><a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20100.%20Os%20bens%20p%C3%BAblicos%20de%20uso%20comum%20do%20povo%20e%20os%20de%20uso%20especial%20s%C3%A3o%20inalien%C3%A1veis%2C%20enquanto%20conservarem%20a%20sua%20qualifica%C3%A7%C3%A3o%2C%20na%20forma%20que%20a%20lei%20determinar.\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">art. 100</a><span style=\"text-wrap-mode: initial; color: inherit;\">). Já os bens dominicais podem ser alienados, observadas as exigências legais (</span><a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20101.%20Os%20bens%20p%C3%BAblicos%20dominicais%20podem%20ser%20alienados%2C%20observadas%20as%20exig%C3%AAncias%20da%20lei.\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">art. 101</a><span style=\"text-wrap-mode: initial; color: inherit;\">). </span><span style=\"text-wrap-mode: initial; color: inherit;\">Isso significa, por exemplo, que um prédio efetivamente destinado ao funcionamento de uma escola pública não pode ser tratado, para fins de alienação, da mesma maneira que um imóvel dominical disponível.</span></p><p>Há, contudo, características que alcançam os bens públicos independentemente dessa classificação. Como vimos, nenhuma das três categorias está sujeita a usucapião (<a href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20102.%20Os%20bens%20p%C3%BAblicos%20n%C3%A3o%20est%C3%A3o%20sujeitos%20a%20usucapi%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 102 do Código Civil</a>). E todas permanecem submetidas às regras de proteção e gestão do patrimônio público.</p>"
+          }
+        },
+        {
+          "id": "bbixrvqf",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "building-2",
+            "title": "Utilização do bem",
+            "heading": "",
+            "children": "<p>Público é uma condição relacionada à titularidade; uso comum, uso especial e dominical dizem respeito à classificação do bem segundo sua destinação. <span style=\"text-wrap-mode: initial; color: inherit;\">Por isso, dois imóveis pertencentes ao mesmo ente público podem estar submetidos a possibilidades de utilização e disponibilidade diferentes.</span></p>"
+          }
+        },
+        {
+          "id": "bkpylv96",
+          "type": "datatable",
+          "props": {
+            "caption": "",
+            "columns": [
+              {
+                "key": "c0",
+                "label": "Categoria"
+              },
+              {
+                "key": "c1",
+                "label": "Característica principal"
+              },
+              {
+                "key": "c2",
+                "label": "Exemplos"
+              },
+              {
+                "key": "c3",
+                "label": "Disponibilidade"
+              }
+            ],
+            "rows": [
+              {
+                "c0": "Uso comum do povo",
+                "c1": "Destinado ao uso coletivo",
+                "c2": "ruas, praças, rios, mares",
+                "c3": "Inalienável enquanto mantiver essa qualificação"
+              },
+              {
+                "c0": "Uso especial",
+                "c1": "Destinado a serviço ou estabelecimento público",
+                "c2": "escola, unidade de saúde, prédio administrativo",
+                "c3": "Inalienável enquanto mantiver essa qualificação"
+              },
+              {
+                "c0": "Dominical ou dominial",
+                "c1": "Integra o patrimônio não enquadrado como uso comum ou especial",
+                "c2": "terrenos e imóveis disponíveis",
+                "c3": "Pode ser alienado, observadas as exigências legais e eventuais restrições específicas"
+              }
+            ],
+            "dense": false,
+            "highlightFirst": true,
+            "striped": false,
+            "tone": "terra",
+            "className": "spu-table-wrap--tone-terra"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b0g9reiq",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "c1vban04",
+          "type": "titulo",
+          "props": {
+            "text": "De quem são os imóveis públicos?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cy8dbnjg",
+          "type": "prose",
+          "props": {
+            "html": "<p>Até aqui vimos que identificar um bem como público exige saber quem é seu titular. Mas como saber se determinado bem pertence à União, a um Estado, ao Distrito Federal ou a um Município?</p><p>Não existe uma regra simples baseada apenas na localização. Um imóvel situado dentro de um município não pertence necessariamente ao Município; da mesma forma, estar localizado no território de determinado Estado não significa que o bem seja estadual. Em um mesmo território podem existir imóveis pertencentes a diferentes entes públicos (e também a particulares, claro).</p><p>A Constituição Federal estabelece diretamente a titularidade de diversas categorias de bens da União e dos Estados. Para os Municípios, não existe um rol constitucional equivalente: seu patrimônio é formado por diferentes processos de aquisição e por bens que a legislação lhes atribui.</p><p>Compreender essa distribuição é essencial para a gestão patrimonial porque a titularidade define quem possui competências e responsabilidades sobre o bem, ainda que sua utilização ou proteção possa envolver a atuação de outros entes e instituições.</p>"
+          }
+        },
+        {
+          "id": "blsijphr",
+          "type": "titulo",
+          "props": {
+            "text": "Quais bens pertencem à União?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b2tu5kyb",
+          "type": "prose",
+          "props": {
+            "html": "<p>O ponto de partida é o art. 20 da Constituição Federal, que relaciona os bens da União. </p><p>O inciso I merece ser observado separadamente. Ele estabelece que pertencem à União os bens que atualmente lhe pertencem e os que lhe vierem a ser atribuídos. Isso significa que o patrimônio federal não se limita às categorias territoriais enumeradas nos demais incisos da Constituição.</p><p>Na ocasião da proclamação da Constituição de 1988 a União já era detentora de um patrimônio imobiliário que ainda faz parte do seu acervo. É o caso, por exemplo, dos antigos aldeamentos indígenas e das ilhas com influência de maré, previstos na Constituição de 1891.</p><p>Além desses, a União também pode incorporar novos imóveis ao seu patrimônio por diferentes formas juridicamente admitidas, como compra, permuta, desapropriação e doação.</p><p>Além dessa regra geral, os incisos II a XI do art. 20 atribuem expressamente à União os seguintes bens:</p>"
+          }
+        },
+        {
+          "id": "b8p142go",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "body",
+            "children": "<p><i><br>II — as terras devolutas indispensáveis à defesa das fronteiras, das fortificações e construções militares, das vias federais de comunicação e à preservação ambiental, definidas em lei; <br><br></i></p><p><i>III — os lagos, rios e quaisquer correntes de água em terrenos de seu domínio, ou que banhem mais de um Estado, sirvam de limites com outros países, se estendam a território estrangeiro ou dele provenham, bem como os terrenos marginais e as praias fluviais; </i></p><p><i>IV — as ilhas fluviais e lacustres nas zonas limítrofes com outros países; as praias marítimas; as ilhas oceânicas e as costeiras, excluídas destas as que contenham a sede de Municípios, exceto aquelas áreas afetadas ao serviço público e a unidade ambiental federal, e as referidas no art. 26, II; </i></p><p><i>V — os recursos naturais da plataforma continental e da zona econômica exclusiva; </i></p><p><i>VI — o mar territorial; </i></p><p><i>VII — os terrenos de marinha e seus acrescidos; </i></p><p><i>VIII — os potenciais de energia hidráulica; </i></p><p><i>IX — os recursos minerais, inclusive os do subsolo; </i></p><p><i>X — as cavidades naturais subterrâneas e os sítios arqueológicos e pré-históricos; </i></p><p><i>XI — as terras tradicionalmente ocupadas pelos povos indígenas.</i></p>",
+            "cite": ""
+          }
+        },
+        {
+          "id": "bjpyoouj",
+          "type": "prose",
+          "props": {
+            "html": "<p>Voltando aos conceitos tratados no início deste material, cabe atentar que o art. 20 relaciona bens da União, e não apenas bens imóveis. Recursos minerais, potenciais de energia hidráulica e recursos naturais da plataforma continental e da zona econômica exclusiva, por exemplo, possuem natureza e regimes próprios. A lista é apresentada integralmente para que se compreenda a extensão do patrimônio constitucional da União, sem pressupor que todos esses bens sejam imóveis no mesmo sentido.</p><p>Outra distinção importante: <b>patrimônio nacional não se confunde com patrimônio da União</b>. A Constituição Federal utiliza a expressão “patrimônio nacional” em sentido próprio no art. 225, § 4º, ao estabelecer que a Floresta Amazônica brasileira, a Mata Atlântica, a Serra do Mar, o Pantanal Mato-Grossense e a Zona Costeira são patrimônio nacional. </p><p>Nesse dispositivo, a expressão não está definindo a titularidade pública das áreas abrangidas. Trata-se de uma qualificação constitucional relacionada à proteção ambiental e ao regime de utilização desses espaços, cuja exploração deve observar condições que assegurem a preservação do meio ambiente, inclusive quanto ao uso dos recursos naturais. </p><p>Por isso, não se deve concluir que os imóveis situados nesses biomas ou regiões pertençam à União. Em uma mesma área reconhecida como patrimônio nacional podem existir imóveis de diferentes titulares, inclusive da União, dos Estados, do Distrito Federal, dos Municípios e de particulares. A Zona Costeira, por exemplo, contém bens da União, como os terrenos de marinha e seus acrescidos, expressamente relacionados no art. 20, VII, da Constituição, mas isso não significa que toda a área abrangida pela Zona Costeira constitua patrimônio imobiliário da União.</p><p>Em suma, para fixar: patrimônio nacional não é sinônimo de patrimônio da União. O primeiro identifica áreas submetidas a uma proteção constitucional especial, especialmente relacionada ao meio ambiente; o segundo corresponde ao conjunto de bens cuja titularidade ou tutela é atribuída à União.</p>"
+          }
+        },
+        {
+          "id": "bsjs8tq1",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "Você sabia?",
+            "heading": "",
+            "children": "<p>O<b><a href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/?utm_source=chatgpt.com\" target=\"_blank\" rel=\"noopener noreferrer\"> Manual de Regularização Fundiária em Terras da União</a></b> apresenta de forma didática e ilustrada os principais bens enumerados no art. 20, explicando conceitos como terras devolutas, rios e lagos, terrenos marginais, praias, ilhas, mar territorial, terrenos de marinha e seus acrescidos, recursos minerais, cavidades naturais e terras tradicionalmente ocupadas pelos povos indígenas.</p>"
+          }
+        },
+        {
+          "id": "bw0se1ev",
+          "type": "titulo",
+          "props": {
+            "text": "E quais bens pertencem aos Estados?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "becz2t59",
+          "type": "prose",
+          "props": {
+            "html": "<p>A Constituição também estabelece expressamente os bens dos Estados. De acordo com o art. 26, incluem-se entre eles:</p><p><ul><li>as águas superficiais ou subterrâneas, fluentes, emergentes e em depósito, ressalvadas, na forma da lei, as decorrentes de obras da União; </li><li>as áreas, nas ilhas oceânicas e costeiras, que estiverem no seu domínio, excluídas aquelas sob domínio da União, dos Municípios ou de terceiros; </li><li>as ilhas fluviais e lacustres não pertencentes à União; </li><li>as terras devolutas não compreendidas entre as da União. </li></ul></p><p>O último caso é especialmente importante para compreender a estrutura fundiária brasileira. <span style=\"text-wrap-mode: initial; color: inherit;\">Como vimos ao estudar a formação da propriedade no Brasil, as terras devolutas estão ligadas ao processo histórico de separação entre o domínio público e o particular. Com a Constituição de 1891, grande parte das terras devolutas passou aos Estados, lógica que permanece refletida na distribuição constitucional atual.</span></p><p>Assim, em matéria de terras devolutas, a regra é estadual; a titularidade da União corresponde às hipóteses constitucionalmente estabelecidas. <span style=\"text-wrap-mode: initial; color: inherit;\">Essa conexão é importante porque mostra que a distribuição atual dos imóveis públicos também é resultado da formação histórica do território e da propriedade que estudamos anteriormente no Programa. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Assim como a União, os Estados também possuem muitos outros imóveis adquiridos por diferentes formas: prédios administrativos, escolas, hospitais, terrenos, unidades autônomas e outros bens que integram seus patrimônios.</span></p>"
+          }
+        },
+        {
+          "id": "bdrh68mk",
+          "type": "titulo",
+          "props": {
+            "text": "E o Distrito Federal?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bu6gjb94",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Distrito Federal apresenta uma situação própria. A Constituição não lhe dedica um rol patrimonial específico equivalente aos arts. 20 e 26.</p><p>Como ente federativo que acumula competências legislativas reservadas aos Estados e aos Municípios (<a href=\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#:~:text=Art.%2032.%20O%20Distrito%20Federal%2C%20vedada%20sua%20divis%C3%A3o%20em%20Munic%C3%ADpios%2C%20reger%2D%20se%2D%C3%A1%20por%20lei%20org%C3%A2nica%2C%20votada%20em%20dois%20turnos%20com%20interst%C3%ADcio%20m%C3%ADnimo%20de%20dez%20dias%2C%20e%20aprovada%20por%20dois%20ter%C3%A7os%20da%20C%C3%A2mara%20Legislativa%2C%20que%20a%20promulgar%C3%A1%2C%20atendidos%20os%20princ%C3%ADpios%20estabelecidos%20nesta%20Constitui%C3%A7%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 32, § 1º, da Constituição</a>), seu patrimônio deve ser compreendido considerando essa configuração constitucional e a legislação aplicável.</p><p>Além disso, a própria formação territorial e patrimonial de Brasília e do Distrito Federal possui particularidades históricas e jurídicas. Para os objetivos deste material, o essencial é reconhecer que o Distrito Federal também possui patrimônio imobiliário próprio e exerce sua gestão no âmbito das competências que lhe são atribuídas.</p>"
+          }
+        },
+        {
+          "id": "bdrlb1xs",
+          "type": "titulo",
+          "props": {
+            "text": "E quais são os bens dos Municípios?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bix2p033",
+          "type": "prose",
+          "props": {
+            "html": "<p>Aqui encontramos uma diferença importante. <span style=\"text-wrap-mode: initial; color: inherit;\">Ao contrário do que ocorre com a União e os Estados, a Constituição não apresenta um rol geral de bens pertencentes aos Municípios. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Isso não significa, evidentemente, que o patrimônio municipal tenha menor importância. Os Municípios possuem terrenos, edifícios administrativos, escolas, unidades de saúde, vias, praças, parques e inúmeros outros imóveis necessários à prestação de serviços e à organização da cidade. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Esses bens podem chegar ao patrimônio municipal por diferentes caminhos: compra, doação, desapropriação, transferência por outro ente público, sucessão e outras hipóteses previstas em lei.</span></p><p>Há ainda situações em que a própria legislação atribui determinados bens ao Município. Um exemplo particularmente importante está na<a href=\"https://www.planalto.gov.br/ccivil_03/leis/l6766.htm\" target=\"_blank\" rel=\"noopener noreferrer\"> Lei nº 6.766/1979</a>, que disciplina o parcelamento do solo urbano. <span style=\"text-wrap-mode: initial; color: inherit;\">Seu <a href=\"https://www.planalto.gov.br/ccivil_03/leis/l6766.htm#:~:text=Art.%2022.%20Desde%20a%20data%20de%20registro%20do%20loteamento%2C%20passam%20a%20integrar%20o%20dom%C3%ADnio%20do%20Munic%C3%ADpio%20as%20vias%20e%20pra%C3%A7as%2C%20os%20espa%C3%A7os%20livres%20e%20as%20%C3%A1reas%20destinadas%20a%20edif%C3%ADcios%20p%C3%BAblicos%20e%20outros%20equipamentos%20urbanos%2C%20constantes%20do%20projeto%20e%20do%20memorial%20descritivo.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 22</a> estabelece que, com o registro do loteamento, passam a integrar o domínio do Município as vias e praças, os espaços livres e as áreas destinadas a edifícios públicos e outros equipamentos urbanos constantes do projeto e do memorial descritivo.</span></p>"
+          }
+        },
+        {
+          "id": "bcu9hyed",
+          "type": "figure",
+          "props": {
+            "slot": "bcu9hyed__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        },
+        {
+          "id": "bhj2xpkl",
+          "type": "prose",
+          "props": {
+            "html": "<p>O patrimônio imobiliário público, portanto, não é algo formado apenas no passado: novos imóveis e áreas continuam ingressando nos patrimônios dos entes públicos como consequência de diferentes processos jurídicos e territoriais</p>"
+          }
+        },
+        {
+          "id": "bvfre3ys",
+          "type": "figure",
+          "props": {
+            "slot": "bvfre3ys__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "",
+            "caption": "",
+            "credit": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "bonh0jzk",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "crg59sgb",
+          "type": "titulo",
+          "props": {
+            "text": "Como um imóvel passa a integrar o patrimônio público?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c0hos7fm",
+          "type": "prose",
+          "props": {
+            "html": "<p>Os patrimônios imobiliários da União, dos estados, do Distrito Federal e dos municípios foram formados ao longo do tempo e continuam se modificando. Imóveis podem ingressar no patrimônio público por diferentes caminhos, conforme a legislação aplicável a cada ente e a cada situação.</p><p>Alguns bens pertencem aos entes públicos por atribuição constitucional ou legal. É o caso das categorias que acabamos de conhecer nos arts. 20 e 26 da Constituição. Outro exemplo está no parcelamento do solo urbano: com o registro do loteamento, determinadas áreas indicadas no projeto passam ao domínio do Município, conforme estabelece o art. 22 da Lei nº 6.766/1979.</p><p>Em outras situações, o ingresso decorre de um ato de aquisição. O Poder Público pode adquirir imóveis por compra, receber uma doação, realizar uma permuta ou utilizar instrumentos próprios de sua atuação, como a desapropriação. Há ainda outras formas previstas na legislação.</p><p>A origem do domínio também pode ser muito mais antiga. Como vimos ao estudar a formação territorial e fundiária brasileira, parte expressiva das terras públicas não ingressou no patrimônio por uma aquisição realizada pelo Estado nos moldes atuais. Sua condição pública resulta da própria formação histórica do território e das sucessivas regras que disciplinaram a constituição da propriedade pública e privada no país.</p><p>Essa diversidade tem uma consequência prática importante: nem todo imóvel público terá a mesma documentação de origem. A comprovação e o reconhecimento da titularidade precisam considerar a forma pela qual aquele bem passou a pertencer ao ente público.</p><p>Também não devemos confundir aquisição com registro imobiliário. O registro no Cartório de Registro de Imóveis é fundamental para a publicidade e a segurança das relações imobiliárias, mas a análise da propriedade pública pode envolver situações em que a titularidade decorre diretamente da Constituição ou da lei, além de particularidades históricas e registrais que exigem investigação específica.</p><p>Não aprofundaremos aqui os procedimentos utilizados para identificar, adquirir, registrar e incorporar esses imóveis. Eles envolvem uma etapa própria da gestão patrimonial e serão tratados especificamente em outro momento do Programa (Eixo 2).</p>"
+          }
+        },
+        {
+          "id": "bbib40hz",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "Você sabia?",
+            "heading": "",
+            "children": "<p>O patrimônio público não nasce de uma única forma. A titularidade de um imóvel pode decorrer da formação histórica do domínio público, de atribuição constitucional ou legal ou de diferentes formas de aquisição. <span style=\"text-wrap-mode: initial; color: inherit;\">Por isso, reconhecer um imóvel público exige compreender a origem do domínio e os documentos e atos capazes de demonstrá-la em cada situação.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b2etmzv3",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para fechar",
+        "kickerIcon": "check",
+        "title": "Afinal, o que significa conhecer um imóvel público?",
+        "body": "<p>Começamos este material com uma pergunta aparentemente simples: o que são imóveis públicos? Ao longo do percurso, vimos que a resposta exige combinar diferentes conceitos e informações.</p><p>Patrimônio, bem, bem imóvel e patrimônio imobiliário não são sinônimos. Também não são equivalentes expressões como terra, terreno, área, edificação e unidade autônoma. Saber diferenciá-las permite descrever com maior precisão aquilo que está sob gestão pública.</p><p>Vimos também que ser público não significa simplesmente ser utilizado pelo governo ou estar disponível ao uso de qualquer pessoa. A titularidade é o ponto de partida para reconhecer um bem público, enquanto sua destinação permite distingui-lo como bem de uso comum do povo, de uso especial ou dominical.</p><p>A distribuição desses bens pelo território acrescenta outra dimensão. União, estados, Distrito Federal e municípios podem possuir imóveis em um mesmo espaço, e a localização, sozinha, não determina a titularidade. A Constituição, a legislação, a formação histórica do domínio e os atos de aquisição ajudam a explicar por que determinado bem pertence a um ente e não a outro.</p><p>Esses conceitos podem parecer abstratos, mas têm efeitos muito concretos. Identificar corretamente o que é o bem, a quem pertence, qual sua destinação e como se constituiu a propriedade pública interfere na forma de reconhecê-lo, protegê-lo, avaliá-lo, utilizá-lo, destiná-lo e tomar decisões sobre ele. É por isso que construir uma linguagem comum sobre o patrimônio imobiliário é também uma condição para integrar informações e fortalecer a gestão entre os diferentes entes públicos.</p>"
+      },
+      "children": [
+        {
+          "id": "bmfoqic2",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "PARA REFLETIR",
+            "kickerIcon": "brain",
+            "title": "",
+            "color": "",
+            "bg": "",
+            "body": ""
+          },
+          "children": [
+            {
+              "id": "b7r2q6lv",
+              "type": "columns",
+              "props": {
+                "count": 2,
+                "ratio": "equal",
+                "gap": "lg"
+              },
+              "children": [
+                {
+                  "id": "b0dupzgp",
+                  "type": "markerlist",
+                  "props": {
+                    "variant": "ordered",
+                    "icon": "check",
+                    "accent": "",
+                    "items": [
+                      {
+                        "title": "",
+                        "text": "Pense em uma praça, uma escola pública e um terreno público sem destinação específica. O que muda na gestão desses bens quando consideramos sua classificação como uso comum do povo, uso especial ou dominical?"
+                      },
+                      {
+                        "title": "",
+                        "text": "Uma área delimitada em um mapa ou cadastrada em um sistema corresponde necessariamente a um único imóvel juridicamente constituído? Que problemas podem surgir quando essa diferença não é percebida?"
+                      },
+                      {
+                        "title": "",
+                        "text": "União, estados e municípios mantêm seus próprios cadastros e formas de descrever os imóveis. Que dificuldades a ausência de conceitos e informações minimamente harmonizados pode produzir quando diferentes entes precisam atuar sobre um mesmo território?"
+                      },
+                      {
+                        "title": "",
+                        "text": "Se para a sociedade muitas vezes importa mais o que o patrimônio público proporciona do que saber qual ente figura como proprietário, como conciliar essa expectativa com a necessidade de definir claramente titularidades, competências e responsabilidades?"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bmxruuv8",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Referências",
+                "content": "<p>Loureiro, Luiz Guilherme. Direitos reais à luz do Código Civil e do Direito Registral. São Paulo: editora Método, 2004</p><p>Pólis – Instituto de Estudos, Formação e Assessoria em Políticas Sociais – Centro de Documentação e Informação. Secretaria do Patrimônio da União. Manual de Regularização Fundiária em Terras da União, Brasília,  2006.</p>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bpck09rf",
+      "type": "pagefooter",
+      "props": {
+        "code": "Bens imóveis públicos [M121]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Claudson Moreira"
+          },
+          {
+            "role": "Revisão",
+            "name": "Carlos Alberto Coimbra Júnior, Andrea Cassoli Araújo"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}

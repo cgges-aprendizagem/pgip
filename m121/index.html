@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M121 - Bens imoveis publicos</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M121 - Bens imoveis publicos","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cgtzkji9","text":"Afinal, o que estamos chamando de imóveis públicos?","hidden":false},{"id":"cc07md1i","text":"Quando um bem é público?","hidden":false},{"id":"c5cpgm86","text":"Todos os bens públicos estão submetidos às mesmas regras?","hidden":false},{"id":"c1vban04","text":"De quem são os imóveis públicos?","hidden":false},{"id":"crg59sgb","text":"Como um imóvel passa a integrar o patrimônio público?","hidden":false}]}},"blocks":[{"id":"bynwa1jd","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"b41tzsoz","type":"hero","props":{"kicker":"Nome da competência","kickerIcon":"compass","title":"Bens imóveis públicos (sendo refeito)","byline":"conceitos, classificação e titularidade","slot":"b41tzsoz__slot"}},{"id":"bmczyeej","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cfwrv95f","type":"prose","props":{"html":"\u003cp>Os imóveis públicos são o objeto central da gestão patrimonial tratado neste Programa. Parece simples dizer isso, mas uma pergunta antecede todas as demais:\u003cmark data-hl=\"terra\"> \u003cb>o que estamos chamando de imóvel público?\u003c/b>\u003c/mark>\u003c/p>\u003cp>Na legislação, na doutrina e na prática administrativa, encontramos expressões como\u003ci> patrimônio, bem, imóvel, terra, terreno e área\u003c/i>, além de combinações como\u003ci> bens públicos, bens imóveis públicos e patrimônio imobiliário públic\u003c/i>o. Algumas possuem significado jurídico mais preciso; outras são utilizadas em sentido técnico ou administrativo. Nem sempre, portanto, são empregadas de maneira uniforme.\u003c/p>\u003cp>Essa diversidade não é apenas uma questão de palavras. O próprio universo dos bens públicos é muito mais amplo do que a imagem mais imediata de um terreno ou prédio pertencente ao Poder Público. Nele encontramos edifícios e unidades autônomas, ruas e praças, praias e ilhas e, conforme as categorias estabelecidas pela legislação, rios, lagos, mar territorial e outros bens e espaços de natureza territorial. \u003c/p>\u003cp>Construir uma compreensão comum sobre esses conceitos é especialmente importante em um país no qual União, estados, Distrito Federal e municípios possuem patrimônios próprios, mas compartilham o mesmo território, políticas públicas, informações e problemas de gestão. Uma linguagem minimamente harmonizada favorece a integração de cadastros e informações, o diálogo institucional e a atuação coordenada entre os diferentes entes.\u003c/p>\u003cp>Para a sociedade, muitas vezes importa menos saber qual ente público é o proprietário de determinado imóvel do que compreender o que significa aquele bem ser público e como isso repercute concretamente em sua vida: na rua por onde circula, na praça que utiliza, no acesso à praia, na escola ou unidade de saúde que frequenta, na proteção de um rio ou na disponibilidade de uma área para determinada política pública.\u003c/p>\u003cp>Para quem trabalha com gestão patrimonial imobiliária, entretanto, essas distinções são essenciais. Identificar o que está sendo gerido, a quem pertence, como se caracteriza e qual regime jurídico incide sobre ele condiciona praticamente todas as decisões posteriores de gestão.\u003c/p>\u003cp>Por isso, antes de avançarmos, vamos construir um vocabulário comum sobre o próprio objeto da nossa atuação: \u003cb>\u003cmark data-hl=\"petrol\">o que são, afinal, os tais imóveis públicos brasileiros?\u003c/mark>\u003c/b>\u003c/p>"}}]},{"id":"bz9g8nf8","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cgtzkji9","type":"titulo","props":{"text":"Afinal, o que estamos chamando de imóveis públicos?","level":"h2"}},{"id":"c9d1vjpk","type":"prose","props":{"html":"\u003cp>Na gestão patrimonial, palavras próximas nem sempre significam a mesma coisa. Patrimônio, bem, bem imóvel e patrimônio imobiliário, por exemplo, se relacionam, mas expressam conceitos diferentes. Antes de avançarmos para outras terminologias utilizadas na gestão, vale distingui-los.\u003c/p>"}},{"id":"bjwop51a","type":"accordion","props":{"numbered":false,"items":[{"title":"Patrimônio","content":"\u003cp>Patrimônio é o conceito mais abrangente. Em sentido jurídico, corresponde ao conjunto de bens (o ativo), direitos e relações de conteúdo patrimonial (inclusive as dívidas) vinculados a uma pessoa, seja ela física ou jurídica. Sua característica principal é o seu valor econômico.\u003c/p>\u003cp>Quando falamos em patrimônio público, portanto, não estamos falando apenas de terrenos e edificações. Esse patrimônio pode compreender bens de diferentes naturezas, direitos e outros elementos de valor ou interesse para o Poder Público.\u003c/p>","blocks":[{"id":"bw1mf55f","type":"callout","props":{"variant":"ear","tone":"attention","icon":"lightbulb","title":"Atenção","heading":"“Patrimônio” nem sempre tem o mesmo sentido.","children":"\u003cp>Em sentido jurídico, patrimônio está associado ao conjunto de bens, direitos e relações de conteúdo econômico de uma pessoa ou ente.\u003c/p>\u003cp>O termo também é utilizado de forma mais ampla para designar bens e valores considerados relevantes e merecedores de proteção, como nas expressões patrimônio cultural, histórico, artístico, arqueológico, ambiental e natural.\u003c/p>\u003cp>Essas dimensões podem se sobrepor. Um bem imóvel tombado, por exemplo, integra o patrimônio imobiliário do ente e também o patrimônio cultural protegido.\u003c/p>\u003cp>Neste Programa, patrimônio imobiliário público designará especificamente o universo de bens e situações de natureza imobiliária ou territorial submetidos à gestão patrimonial pública.\u003c/p>","color":""}}]},{"title":"Bem","content":"\u003cp>Bem é aquilo que possui relevância jurídica e pode integrar relações de direito, ou seja, que podem ser apropriadas por uma pessoa, física ou jurídica. \u003c/p>\u003cp>\u003cspan style=\"color: inherit;\">Os bens podem ser classificados segundo diferentes critérios.\u003c/span>\u003cp>Uma distinção tradicional da doutrina separa os \u003cb>bens em corpóreos ou materiais\u003c/b>, que possuem existência física, \u003cb>e incorpóreos ou imateriais\u003c/b>, constituídos por direitos e outras realidades juridicamente reconhecidas sem materialidade correspondente.\u003c/p>\u003cp>Outra classificação fundamental distingue os bens em \u003cb>móveis e imóveis\u003c/b>. É nesta última categoria que se encontra o objeto principal deste material.\u003c/p>","linkHref":"","linkLabel":"","linkButton":""},{"title":"Bem imóvel","content":"\u003cp>Bem imóvel é uma categoria de bem. O Código Civil estabelece, em seu \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%2079.%20S%C3%A3o%20bens%20im%C3%B3veis%20o%20solo%20e%20tudo%20quanto%20se%20lhe%20incorporar%20natural%20ou%20artificialmente.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 79\u003c/a>, que são imóveis “o solo e tudo quanto se lhe incorporar natural ou artificialmente”.\u003c/p>\u003cp>O conceito jurídico, contudo, não se restringe à realidade física. O \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%2080.%20Consideram,%C3%A0%20sucess%C3%A3o%20aberta.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 80 do Código Civil\u003c/a> também considera imóveis, para efeitos legais, os direitos reais sobre imóveis e as ações que os asseguram, além do direito à sucessão aberta.\u003c/p>\u003cp>Assim, \u003cb>bem imóvel não é sinônimo apenas de terreno ou edificação\u003c/b>. Além disso, como veremos ao longo deste material, o patrimônio público apresenta bens e espaços territoriais com características próprias que exigem tratamento específico.\u003c/p>","linkHref":"","linkLabel":"","linkButton":""},{"title":"Patrimônio imobiliário","content":"\u003cp>Patrimônio imobiliário é a expressão utilizada para delimitar, dentro de um patrimônio mais amplo, o conjunto relacionado aos seus bens imóveis e aos direitos de natureza imobiliária.\u003c/p>\u003cp>Quando esse patrimônio está vinculado ao Poder Público, são utilizadas expressões como patrimônio imobiliário público, bens imóveis públicos ou, de maneira mais simples, imóveis públicos. Embora essas expressões possam assumir sentidos mais específicos conforme a norma ou o contexto em que aparecem, elas nos permitem identificar o universo patrimonial de interesse deste Programa de Desenvolvimento Profissional.\u003c/p>\u003cp>Ao longo do Programa, adotaremos “imóveis públicos” e “patrimônio imobiliário público” em sentido amplo e funcional, abrangendo os bens e espaços de natureza imobiliária ou territorial submetidos à gestão patrimonial dos entes públicos. Sempre que as diferenças jurídicas entre as categorias forem relevantes, elas serão explicitadas.\u003c/p>","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"bmmwmudx","type":"figure","props":{"slot":"bmmwmudx__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}},{"id":"b73qw50x","type":"callout","props":{"variant":"ear","tone":"info","icon":"alert-triangle","title":"PARA GUARDAR","heading":"","children":"\u003cp>Patrimônio, bem e imóvel não são sinônimos. Patrimônio é o conceito mais amplo; os bens integram esse patrimônio; e os bens imóveis (ou imóveis simplesmente) constituem uma categoria de bens.\u003c/p>"}},{"id":"bxi8si68","type":"titulo","props":{"text":"Terra, terreno e área significam a mesma coisa?","level":"h3"}},{"id":"bb0rtxc6","type":"feature","props":{"columns":1,"card":true,"accent":"var(--terra-600)","layout":"side","items":[{"icon":"map-plus","title":"Terra","text":"Terra é uma expressão amplamente utilizada na legislação e nas políticas territoriais, especialmente quando tratamos da \u003cb>formação, apropriação e distribuição da propriedade\u003c/b>. Ela aparece também em categorias juridicamente qualificadas, como terras devolutas e terras tradicionalmente ocupadas pelos povos indígenas. A palavra terra, isoladamente, entretanto, não corresponde a uma categoria única do direito civil."},{"icon":"land-plot","title":"Terreno","text":"Terreno é utilizado, em geral, para \u003cb>designar determinada porção do solo\u003c/b>. Pode estar edificado ou não e apresentar diferentes configurações e regimes jurídicos."},{"icon":"ruler-dimension-line","title":"Área","text":"Já área é uma expressão ainda mais dependente do contexto. Pode significar uma \u003cb>medida de superfície\u003c/b> (500 m², por exemplo ) ou um determinado \u003cb>recorte espacial\u003c/b>. Por isso, identificar uma área em uma planta ou mapa não significa necessariamente ter identificado um imóvel juridicamente individualizado.\u003cbr>Uma mesma área pode coincidir com um imóvel, abranger apenas parte dele ou alcançar vários imóveis. E um mesmo espaço territorial pode conter bens ou  situações jurídica diferentes.\u003cbr>"}]}},{"id":"b1wqa31z","type":"titulo","props":{"text":"E uma edificação: \u003cspan style=\"font-weight: normal;\">é outro imóvel?\u003c/span>","level":"h3"}},{"id":"b800pl03","type":"prose","props":{"html":"\u003cp>Como vimos, o Código Civil considera imóvel o solo e tudo aquilo que se incorpora a ele natural ou artificialmente. Por isso, terreno e edificação podem ser componentes físicos distintos para fins de cadastro físico, avaliação e gestão sem que isso signifique, necessariamente, a existência de dois imóveis juridicamente autônomos.\u003c/p>\u003cp>Podemos precisar saber, por exemplo, a área do terreno, a área construída, as características das edificações e o estado de conservação de cada construção. Essas informações descrevem componentes diferentes do bem, mas não transformam automaticamente cada componente em um imóvel distinto.\u003c/p>\u003cp>Há, entretanto, uma situação importante: as unidades autônomas.\u003c/p>\u003cp>Um único prédio pode conter vários imóveis juridicamente individualizados. É o caso de apartamentos, salas, lojas e outras unidades autônomas de um condomínio edilício. Embora façam parte da mesma edificação, essas unidades podem constituir imóveis distintos, individualizados no Registro de Imóveis e vinculados a frações ideais do terreno e das partes comuns.\u003c/p>"}},{"id":"brv4ccn5","type":"figure","props":{"slot":"brv4ccn5__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}},{"id":"bom1n6ym","type":"titulo","props":{"text":"Quais são as diferentes configurações dos bens imóveis públicos?","level":"h3"}},{"id":"be5c9x0p","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b7nufpw4","type":"prose","props":{"html":"\u003cp>E essa é uma característica especialmente importante do patrimônio público.\u003c/p>\u003cp>A legislação brasileira reconhece bens públicos com configurações territoriais muito diferentes. Além de terrenos e edificações, encontramos praias, terrenos marginais, ilhas, entre outros.\u003c/p>\u003cp>Há situações ainda menos intuitivas. A Constituição inclui entre os bens públicos, conforme os critérios nela estabelecidos, lagos, cavidades subterrâneas, rios e outras correntes d'água, além do mar territorial. A legislação também trata de espaços físicos em águas públicas.\u003c/p>\u003cp>A imagem ajuda a perceber algo importante: um espaço que visualmente parece contínuo pode compreender bens e porções territoriais submetidos a conceitos e regimes jurídicos distintos.\u003c/p>"}},{"id":"bo6n94b3","type":"figure","props":{"slot":"bo6n94b3__slot","src":"","fit":"contain","size":"full","title":"","caption":"Fonte: Manual de Regularização Fundiária em Terras da União. [p. A25]","credit":""}}]},{"id":"baa4uvpm","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É preciso, contudo, evitar outra simplificação. Rios, lagos ou o mar não devem ser explicados simplesmente como partes do solo com base no art. 79 do Código Civil. A Constituição e a legislação estabelecem categorias próprias para águas, álveos, mar territorial e outros componentes dos espaços terrestres e aquáticos. Voltaremos a essas diferenças quando tratarmos das principais tipologias de bens públicos.\u003c/span>\u003c/p>"}},{"id":"br66kmvd","type":"titulo","props":{"text":"Que expressão adotaremos neste Programa?","level":"h3"}},{"id":"br8dfsy0","type":"prose","props":{"html":"\u003cp>Diante dessa diversidade, nenhuma expressão isolada consegue reproduzir com absoluta precisão todas as situações encontradas na gestão patrimonial.\u003c/p>\u003cp>Neste Programa, utilizaremos “imóveis públicos” e “patrimônio imobiliário público” em sentido amplo e funcional, para nos referirmos ao conjunto de bens e espaços de natureza imobiliária ou territorial submetidos à gestão patrimonial dos entes públicos.\u003c/p>\u003cp>Isso nos permite adotar uma linguagem comum para tratar da realidade da União, dos estados, do Distrito Federal e dos municípios, sem pressupor que todos utilizem exatamente as mesmas categorias cadastrais ou organizem seus patrimônios da mesma forma.\u003c/p>\u003cp>Essa opção não elimina as diferenças jurídicas. Sempre que essas diferenças forem relevantes, elas precisarão ser consideradas.\u003c/p>"}}]},{"id":"b0tqmp60","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"cc07md1i","type":"titulo","props":{"text":"Quando um bem é público?","level":"h2"}},{"id":"cfv7i5rd","type":"prose","props":{"html":"\u003cp>Agora que distinguimos patrimônio, bem e imóvel, podemos avançar para outra questão fundamental: \u003cb>o que torna um bem público?\u003c/b>\u003c/p>\u003cp>O Código Civil oferece um ponto de partida objetivo. Seu art. 98 estabelece:\u003c/p>"}},{"id":"b6xa6346","type":"pullquote","props":{"variant":"block","fontSize":"h5","children":"\u003ci>São públicos os bens do domínio nacional pertencentes às pessoas jurídicas de direito público interno; todos os outros são particulares, seja qual for a pessoa a que pertencerem.\u003c/i>","cite":""}},{"id":"bp704zxr","type":"prose","props":{"html":"\u003cp>A primeira chave para reconhecer um bem público é, portanto, a \u003cmark data-hl=\"petrol\">titularidade\u003c/mark>. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Entre as pessoas jurídicas de direito público interno estão a União, os estados, o Distrito Federal e os municípios, além das autarquias e demais entidades de caráter público criadas por lei, conforme estabelece o art. 41 do Código Civil.\u003c/span>\u003c/p>"}},{"id":"b0sfbvvz","type":"pullquote","props":{"variant":"block","fontSize":"body-lg","children":"\u003cp>\u003ci>Art. 41. São pessoas jurídicas de direito público interno:\u003cbr>\u003cbr>\u003c/i>\u003c/p>\u003cp>\u003ci>I - a União;\u003cbr>\u003cspan style=\"text-wrap-mode: initial; color: inherit; font-size: inherit;\">II - os Estados, o Distrito Federal e os Territórios;\u003cbr>\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit; font-size: inherit;\">III - os Municípios;\u003cbr>\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit; font-size: inherit;\">IV - as autarquias, inclusive as associações públicas;\u003cbr>\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit; font-size: inherit;\">V - as demais entidades de caráter público criadas por lei.\u003c/span>\u003c/i>\u003c/p>\u003cp>\u003ci>Parágrafo único. Salvo disposição em contrário, as pessoas jurídicas de direito público, a que se tenha dado estrutura de direito privado, regem-se, no que couber, quanto ao seu funcionamento, pelas normas deste Código.\u003c/i>\u003c/p>","cite":""}},{"id":"bbakzame","type":"titulo","props":{"text":"Todo bem pertencente à Administração Pública é um bem público?","level":"h3"}},{"id":"b3uiajgp","type":"prose","props":{"html":"\u003cp>Não necessariamente. Essa distinção é importante porque a Administração Pública compreende também entidades constituídas como pessoas jurídicas de direito privado, como empresas públicas e sociedades de economia mista.\u003c/p>\u003cp>Seus bens não se tornam automaticamente bens públicos, no sentido do art. 98 do Código Civil, apenas porque essas entidades são controladas pelo Poder Público. Dependendo da finalidade do bem, da atividade desempenhada pela entidade e da legislação aplicável, podem existir regras e proteções específicas. Mas isso não altera a distinção conceitual inicial.\u003c/p>\u003cp>Também pode ocorrer o contrário: \u003cmark data-hl=\"petrol\">um imóvel particular pode ser utilizado pelo Poder Público sem deixar de ser particular.\u003c/mark> É o que acontece, por exemplo, quando um órgão público funciona em um prédio alugado.\u003c/p>\u003cp>Por isso, saber quem utiliza determinado imóvel não é suficiente para saber a quem ele pertence ou qual regime jurídico incide sobre ele.\u003c/p>"}},{"id":"bmolottl","type":"panel","props":{"variant":"box","kicker":"PARA DIFERENCIAR","kickerIcon":"map-pin","title":"","color":"","bg":"","body":"\u003cp>Imóvel pertencente a uma pessoa jurídica de direito público = bem público.\u003c/p>\u003cp>Imóvel particular utilizado por um órgão público = continua sendo bem particular.\u003c/p>\u003cp>Imóvel de empresa estatal de direito privado = não se torna automaticamente bem público apenas em razão do controle estatal.\u003c/p>"},"children":[]},{"id":"b65vyjbp","type":"titulo","props":{"text":"Se é público, significa que pertence a todos?","level":"h3"}},{"id":"bnjzhki7","type":"prose","props":{"html":"\u003cp>É comum dizer que um bem público “é de todos”. A expressão ajuda a comunicar sua vinculação à coletividade, mas não significa que o bem não tenha titular nem que qualquer pessoa possa utilizá-lo livremente.\u003c/p>\u003cp>Uma praça municipal, por exemplo, possui titularidade pública definida. O mesmo acontece com um edifício administrativo estadual ou um terreno pertencente à União. O ente titular possui competências e responsabilidades sobre esses bens e deve administrá-los de acordo com o ordenamento jurídico e com o interesse público.\u003c/p>\u003cp>Assim, bem público não é bem sem dono.\u003c/p>\u003cp>Também não devemos confundir propriedade pública com livre acesso. Uma rua ou uma praça é destinada ao uso coletivo. Um prédio administrativo também é público, mas pode possuir acesso controlado. Já um terreno público sem destinação específica não pode ser livremente ocupado apenas porque não está sendo utilizado naquele momento.\u003c/p>\u003cp>Essa diferença mostra que a titularidade responde apenas a uma das perguntas necessárias à gestão:\u003c/p>"}},{"id":"be7uygm4","type":"callout","props":{"variant":"ear","tone":"info","icon":"lightbulb","title":"","heading":"De quem é o bem?\u003cbr>","children":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Precisamos ainda perguntar:\u003cbr>\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A que ele se destina? Como pode ser utilizado? A quais regras está submetido?\u003c/span>\u003c/p>"}},{"id":"bbt4n1ck","type":"titulo","props":{"text":"O que muda quando um bem é público?","level":"h3"}},{"id":"br1tznj2","type":"prose","props":{"html":"\u003cp>A propriedade pública está submetida a um regime jurídico próprio. Isso significa que o Poder Público não administra seus imóveis exatamente como um proprietário privado administra os seus.\u003c/p>\u003cp>Uma consequência importante é a imprescritibilidade aquisitiva: os imóveis públicos não podem ser adquiridos por usucapião. A Constituição estabelece essa vedação para imóveis públicos urbanos e rurais (\u003ca href=\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#:~:text=%C2%A7%203%C2%BA%20Os%20im%C3%B3veis%20p%C3%BAblicos%20n%C3%A3o%20ser%C3%A3o%20adquiridos%20por%20usucapi%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">arts. 183, § 3\u003c/a>º, e \u003ca href=\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#:~:text=Art.%20191.%20Aquele,adquiridos%20por%20usucapi%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">191, parágrafo único\u003c/a>), e o Código Civil determina, em seu \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20102.%20Os%20bens%20p%C3%BAblicos%20n%C3%A3o%20est%C3%A3o%20sujeitos%20a%20usucapi%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 102\u003c/a>, que “os bens públicos não estão sujeitos a usucapião”.\u003c/p>\u003cp>Há também regras próprias para utilização, proteção e alienação desses bens. Mas essas regras não são idênticas para todo o patrimônio público. Elas variam, entre outros fatores, conforme o ente proprietário e a finalidade à qual o bem está vinculado. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É justamente por isso que conhecer apenas o proprietário não basta.\u003c/span>\u003c/p>"}},{"id":"bcmt46sc","type":"callout","props":{"variant":"header","tone":"warning","icon":"book-search","title":"Você sabia?","heading":"","children":"\u003cp>Identificar a titularidade é o ponto de partida para reconhecer um bem público, mas não encerra sua caracterização. Para compreender seu regime e suas possibilidades de utilização, precisamos saber também a que finalidade ele está destinado. É essa diferença que fundamenta a classificação dos bens públicos que veremos no próximo bloco.\u003c/p>"}}]},{"id":"bgxef2yk","type":"section","props":{"width":"content","surface":"white","pad":"lg"},"children":[{"id":"c5cpgm86","type":"titulo","props":{"text":"Todos os bens públicos estão submetidos às mesmas regras?","level":"h2"}},{"id":"c5o6dsq0","type":"prose","props":{"html":"\u003cp>Saber que um bem é público ainda não é suficiente para compreender como ele pode ser utilizado, administrado ou disponibilizado. Os bens públicos não estão todos submetidos exatamente às mesmas regras. Um dos elementos que fazem diferença é a finalidade à qual o bem está destinado.\u003c/p>\u003cp>O \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm\" target=\"_blank\" rel=\"noopener noreferrer\">Código Civil\u003c/a> organiza os bens públicos em \u003cb>três categorias\u003c/b>: bens de uso comum do povo, bens de uso especial e bens dominicais. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Essa classificação ajuda a compreender a relação entre o bem, sua destinação e as possibilidades de atuação do Poder Público.\u003c/span>\u003c/p>"}},{"id":"bltdvg54","type":"accordion","props":{"numbered":false,"items":[{"title":"Bens de uso comum do povo","content":"\u003cp>São aqueles destinados ao uso da coletividade, como rios, mares, estradas, ruas e praças, exemplos expressamente indicados pelo \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%2099.%20S%C3%A3o,de%20direito%20privado.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 99, I\u003c/a>, do Código Civil.\u003c/p>\u003cp>O fato de serem destinados ao uso comum não significa, porém, que qualquer utilização seja permitida ou que todos possam utilizá-los de qualquer maneira. O uso individual deve ser compatível com a destinação coletiva do bem e com as regras estabelecidas pelo Poder Público.\u003c/p>\u003cp>Uma praça, por exemplo, pode receber atividades culturais, comerciais ou esportivas, desde que realizadas nas condições admitidas pela legislação e sem descaracterizar sua finalidade pública. Da mesma forma, a utilização particular de determinado espaço de uma praia não pode impedir o acesso e o uso coletivo do restante do bem.\u003c/p>\u003cp>Outro ponto importante é que uso comum não significa necessariamente uso gratuito. O próprio Código Civil prevê, em seu \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20103.%20O%20uso%20comum%20dos%20bens%20p%C3%BAblicos%20pode%20ser%20gratuito%20ou%20retribu%C3%ADdo%2C%20conforme%20for%20estabelecido%20legalmente%20pela%20entidade%20a%20cuja%20administra%C3%A7%C3%A3o%20pertencerem.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 103\u003c/a>, que o uso comum dos bens públicos pode ser gratuito ou retribuído, conforme estabelecido legalmente pela entidade responsável por sua administração.\u003c/p>","blocks":[{"id":"b6g1mrw1","type":"callout","props":{"variant":"ear","tone":"success","icon":"lightbulb","title":"principal característica","heading":"","children":"\u003cp>Uso comum do povo não significa uso sem regras. A característica essencial dessa categoria é a destinação do bem à coletividade.\u003c/p>"}}]},{"title":"Bens de uso especial","content":"\u003cp>Os bens de uso especial são aqueles destinados à execução dos serviços ou às atividades da Administração Pública. O \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%2099.%20S%C3%A3o,de%20direito%20privado.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 99\u003c/a> do Código Civil menciona os edifícios ou terrenos destinados a serviço ou estabelecimento da administração federal, estadual, territorial ou municipal, inclusive de suas autarquias.\u003c/p>\u003cp>É o caso, por exemplo, de escolas públicas, unidades de saúde, prédios administrativos, instalações de segurança pública e terrenos destinados ao funcionamento de serviços públicos.\u003c/p>\u003cp>Aqui também é importante não associar a categoria apenas à forma física do bem. O que caracteriza o uso especial é sua destinação, e não o fato de haver uma edificação. Um terreno sem construção pode ser de uso especial se estiver juridicamente destinado a determinada finalidade administrativa.\u003c/p>\u003cp>Da mesma maneira, o acesso da população ao bem não determina sua classificação. Uma escola ou unidade de saúde atende diretamente à sociedade, mas isso não as transforma em bens de uso comum do povo: seus imóveis estão destinados à execução de um serviço público específico.\u003c/p>","linkHref":"","linkLabel":"","linkButton":""},{"title":"Bens dominicais ou dominiais","content":"\u003cp>Os bens dominicais são aqueles que integram o patrimônio das pessoas jurídicas de direito público sem estarem destinados ao uso comum do povo ou diretamente afetados a um serviço ou estabelecimento público.\u003c/p>\u003cp>O \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=III%20%2D%20os%20dominicais%2C%20que%20constituem%20o%20patrim%C3%B4nio%20das%20pessoas%20jur%C3%ADdicas%20de%20direito%20p%C3%BAblico%2C%20como%20objeto%20de%20direito%20pessoal%2C%20ou%20real%2C%20de%20cada%20uma%20dessas%20entidades.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 99, III\u003c/a>, do Código Civil, os define como os bens que constituem o patrimônio das pessoas jurídicas de direito público “como objeto de direito pessoal, ou real, de cada uma dessas entidades”.\u003c/p>\u003cp>Podem estar nessa situação, por exemplo, terrenos sem destinação pública específica, imóveis desocupados ou bens mantidos no patrimônio enquanto se define sua utilização, desde que não estejam juridicamente afetados a uma finalidade que os enquadre nas categorias anteriores.\u003c/p>\u003cp>Isso não significa que sejam bens “sem função” ou menos públicos. Eles continuam pertencendo ao Poder Público e submetidos ao regime jurídico correspondente. Sua condição, entretanto, permite maior disponibilidade patrimonial, inclusive para determinadas formas de utilização econômica ou alienação, quando autorizadas e atendidos os requisitos legais.\u003c/p>\u003cp>O \u003cb>\u003ca href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/\" target=\"_blank\" rel=\"noopener noreferrer\">Manual de Regularização Fundiária em Terras da União\u003c/a>\u003c/b> traz ainda um exemplo particularmente interessante: as terras devolutas são, em regra, bens dominicais. Há, contudo, uma exceção constitucional relevante: as terras devolutas ou arrecadadas pelos Estados, por ações discriminatórias, necessárias à proteção dos ecossistemas naturais são indisponíveis, nos termos do\u003ca href=\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#:~:text=%C2%A7%205%C2%BA%20S%C3%A3o%20indispon%C3%ADveis%20as%20terras%20devolutas%20ou%20arrecadadas%20pelos%20Estados%2C%20por%20a%C3%A7%C3%B5es%20discriminat%C3%B3rias%2C%20necess%C3%A1rias%20%C3%A0%20prote%C3%A7%C3%A3o%20dos%20ecossistemas%20naturais.\" target=\"_blank\" rel=\"noopener noreferrer\"> art. 225, § 5º\u003c/a>, da Constituição Federal.\u003c/p>\u003cp>Esse exemplo mostra que classificar um bem como dominical não basta, isoladamente, para concluir que ele possa ser livremente alienado ou utilizado. Podem existir regras constitucionais ou legais específicas que restrinjam sua disponibilidade.\u003c/p>","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"bizouhed","type":"titulo","props":{"text":"Por que essa classificação importa?","level":"h3"}},{"id":"besb7imx","type":"prose","props":{"html":"\u003cp>A classificação não serve apenas para organizar os bens em categorias. Ela produz consequências concretas para a gestão patrimonial. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O Código Civil estabelece que os bens de uso comum do povo e os de uso especial são inalienáveis enquanto conservarem essa qualificação (\u003c/span>\u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20100.%20Os%20bens%20p%C3%BAblicos%20de%20uso%20comum%20do%20povo%20e%20os%20de%20uso%20especial%20s%C3%A3o%20inalien%C3%A1veis%2C%20enquanto%20conservarem%20a%20sua%20qualifica%C3%A7%C3%A3o%2C%20na%20forma%20que%20a%20lei%20determinar.\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">art. 100\u003c/a>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">). Já os bens dominicais podem ser alienados, observadas as exigências legais (\u003c/span>\u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20101.%20Os%20bens%20p%C3%BAblicos%20dominicais%20podem%20ser%20alienados%2C%20observadas%20as%20exig%C3%AAncias%20da%20lei.\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">art. 101\u003c/a>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">). \u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Isso significa, por exemplo, que um prédio efetivamente destinado ao funcionamento de uma escola pública não pode ser tratado, para fins de alienação, da mesma maneira que um imóvel dominical disponível.\u003c/span>\u003c/p>\u003cp>Há, contudo, características que alcançam os bens públicos independentemente dessa classificação. Como vimos, nenhuma das três categorias está sujeita a usucapião (\u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm#:~:text=Art.%20102.%20Os%20bens%20p%C3%BAblicos%20n%C3%A3o%20est%C3%A3o%20sujeitos%20a%20usucapi%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 102 do Código Civil\u003c/a>). E todas permanecem submetidas às regras de proteção e gestão do patrimônio público.\u003c/p>"}},{"id":"bbixrvqf","type":"callout","props":{"variant":"header","tone":"info","icon":"building-2","title":"Utilização do bem","heading":"","children":"\u003cp>Público é uma condição relacionada à titularidade; uso comum, uso especial e dominical dizem respeito à classificação do bem segundo sua destinação. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Por isso, dois imóveis pertencentes ao mesmo ente público podem estar submetidos a possibilidades de utilização e disponibilidade diferentes.\u003c/span>\u003c/p>"}},{"id":"bkpylv96","type":"datatable","props":{"caption":"","columns":[{"key":"c0","label":"Categoria"},{"key":"c1","label":"Característica principal"},{"key":"c2","label":"Exemplos"},{"key":"c3","label":"Disponibilidade"}],"rows":[{"c0":"Uso comum do povo","c1":"Destinado ao uso coletivo","c2":"ruas, praças, rios, mares","c3":"Inalienável enquanto mantiver essa qualificação"},{"c0":"Uso especial","c1":"Destinado a serviço ou estabelecimento público","c2":"escola, unidade de saúde, prédio administrativo","c3":"Inalienável enquanto mantiver essa qualificação"},{"c0":"Dominical ou dominial","c1":"Integra o patrimônio não enquadrado como uso comum ou especial","c2":"terrenos e imóveis disponíveis","c3":"Pode ser alienado, observadas as exigências legais e eventuais restrições específicas"}],"dense":false,"highlightFirst":true,"striped":false,"tone":"terra","className":"spu-table-wrap--tone-terra"}}]},{"id":"b0g9reiq","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c1vban04","type":"titulo","props":{"text":"De quem são os imóveis públicos?","level":"h2"}},{"id":"cy8dbnjg","type":"prose","props":{"html":"\u003cp>Até aqui vimos que identificar um bem como público exige saber quem é seu titular. Mas como saber se determinado bem pertence à União, a um Estado, ao Distrito Federal ou a um Município?\u003c/p>\u003cp>Não existe uma regra simples baseada apenas na localização. Um imóvel situado dentro de um município não pertence necessariamente ao Município; da mesma forma, estar localizado no território de determinado Estado não significa que o bem seja estadual. Em um mesmo território podem existir imóveis pertencentes a diferentes entes públicos (e também a particulares, claro).\u003c/p>\u003cp>A Constituição Federal estabelece diretamente a titularidade de diversas categorias de bens da União e dos Estados. Para os Municípios, não existe um rol constitucional equivalente: seu patrimônio é formado por diferentes processos de aquisição e por bens que a legislação lhes atribui.\u003c/p>\u003cp>Compreender essa distribuição é essencial para a gestão patrimonial porque a titularidade define quem possui competências e responsabilidades sobre o bem, ainda que sua utilização ou proteção possa envolver a atuação de outros entes e instituições.\u003c/p>"}},{"id":"blsijphr","type":"titulo","props":{"text":"Quais bens pertencem à União?","level":"h3"}},{"id":"b2tu5kyb","type":"prose","props":{"html":"\u003cp>O ponto de partida é o art. 20 da Constituição Federal, que relaciona os bens da União. \u003c/p>\u003cp>O inciso I merece ser observado separadamente. Ele estabelece que pertencem à União os bens que atualmente lhe pertencem e os que lhe vierem a ser atribuídos. Isso significa que o patrimônio federal não se limita às categorias territoriais enumeradas nos demais incisos da Constituição.\u003c/p>\u003cp>Na ocasião da proclamação da Constituição de 1988 a União já era detentora de um patrimônio imobiliário que ainda faz parte do seu acervo. É o caso, por exemplo, dos antigos aldeamentos indígenas e das ilhas com influência de maré, previstos na Constituição de 1891.\u003c/p>\u003cp>Além desses, a União também pode incorporar novos imóveis ao seu patrimônio por diferentes formas juridicamente admitidas, como compra, permuta, desapropriação e doação.\u003c/p>\u003cp>Além dessa regra geral, os incisos II a XI do art. 20 atribuem expressamente à União os seguintes bens:\u003c/p>"}},{"id":"b8p142go","type":"pullquote","props":{"variant":"block","fontSize":"body","children":"\u003cp>\u003ci>\u003cbr>II — as terras devolutas indispensáveis à defesa das fronteiras, das fortificações e construções militares, das vias federais de comunicação e à preservação ambiental, definidas em lei; \u003cbr>\u003cbr>\u003c/i>\u003c/p>\u003cp>\u003ci>III — os lagos, rios e quaisquer correntes de água em terrenos de seu domínio, ou que banhem mais de um Estado, sirvam de limites com outros países, se estendam a território estrangeiro ou dele provenham, bem como os terrenos marginais e as praias fluviais; \u003c/i>\u003c/p>\u003cp>\u003ci>IV — as ilhas fluviais e lacustres nas zonas limítrofes com outros países; as praias marítimas; as ilhas oceânicas e as costeiras, excluídas destas as que contenham a sede de Municípios, exceto aquelas áreas afetadas ao serviço público e a unidade ambiental federal, e as referidas no art. 26, II; \u003c/i>\u003c/p>\u003cp>\u003ci>V — os recursos naturais da plataforma continental e da zona econômica exclusiva; \u003c/i>\u003c/p>\u003cp>\u003ci>VI — o mar territorial; \u003c/i>\u003c/p>\u003cp>\u003ci>VII — os terrenos de marinha e seus acrescidos; \u003c/i>\u003c/p>\u003cp>\u003ci>VIII — os potenciais de energia hidráulica; \u003c/i>\u003c/p>\u003cp>\u003ci>IX — os recursos minerais, inclusive os do subsolo; \u003c/i>\u003c/p>\u003cp>\u003ci>X — as cavidades naturais subterrâneas e os sítios arqueológicos e pré-históricos; \u003c/i>\u003c/p>\u003cp>\u003ci>XI — as terras tradicionalmente ocupadas pelos povos indígenas.\u003c/i>\u003c/p>","cite":""}},{"id":"bjpyoouj","type":"prose","props":{"html":"\u003cp>Voltando aos conceitos tratados no início deste material, cabe atentar que o art. 20 relaciona bens da União, e não apenas bens imóveis. Recursos minerais, potenciais de energia hidráulica e recursos naturais da plataforma continental e da zona econômica exclusiva, por exemplo, possuem natureza e regimes próprios. A lista é apresentada integralmente para que se compreenda a extensão do patrimônio constitucional da União, sem pressupor que todos esses bens sejam imóveis no mesmo sentido.\u003c/p>\u003cp>Outra distinção importante: \u003cb>patrimônio nacional não se confunde com patrimônio da União\u003c/b>. A Constituição Federal utiliza a expressão “patrimônio nacional” em sentido próprio no art. 225, § 4º, ao estabelecer que a Floresta Amazônica brasileira, a Mata Atlântica, a Serra do Mar, o Pantanal Mato-Grossense e a Zona Costeira são patrimônio nacional. \u003c/p>\u003cp>Nesse dispositivo, a expressão não está definindo a titularidade pública das áreas abrangidas. Trata-se de uma qualificação constitucional relacionada à proteção ambiental e ao regime de utilização desses espaços, cuja exploração deve observar condições que assegurem a preservação do meio ambiente, inclusive quanto ao uso dos recursos naturais. \u003c/p>\u003cp>Por isso, não se deve concluir que os imóveis situados nesses biomas ou regiões pertençam à União. Em uma mesma área reconhecida como patrimônio nacional podem existir imóveis de diferentes titulares, inclusive da União, dos Estados, do Distrito Federal, dos Municípios e de particulares. A Zona Costeira, por exemplo, contém bens da União, como os terrenos de marinha e seus acrescidos, expressamente relacionados no art. 20, VII, da Constituição, mas isso não significa que toda a área abrangida pela Zona Costeira constitua patrimônio imobiliário da União.\u003c/p>\u003cp>Em suma, para fixar: patrimônio nacional não é sinônimo de patrimônio da União. O primeiro identifica áreas submetidas a uma proteção constitucional especial, especialmente relacionada ao meio ambiente; o segundo corresponde ao conjunto de bens cuja titularidade ou tutela é atribuída à União.\u003c/p>"}},{"id":"bsjs8tq1","type":"callout","props":{"variant":"header","tone":"info","icon":"lightbulb","title":"Você sabia?","heading":"","children":"\u003cp>O\u003cb>\u003ca href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais/manual-de-regularizacao-fundiaria-em-terras-da-uniao/?utm_source=chatgpt.com\" target=\"_blank\" rel=\"noopener noreferrer\"> Manual de Regularização Fundiária em Terras da União\u003c/a>\u003c/b> apresenta de forma didática e ilustrada os principais bens enumerados no art. 20, explicando conceitos como terras devolutas, rios e lagos, terrenos marginais, praias, ilhas, mar territorial, terrenos de marinha e seus acrescidos, recursos minerais, cavidades naturais e terras tradicionalmente ocupadas pelos povos indígenas.\u003c/p>"}},{"id":"bw0se1ev","type":"titulo","props":{"text":"E quais bens pertencem aos Estados?","level":"h3"}},{"id":"becz2t59","type":"prose","props":{"html":"\u003cp>A Constituição também estabelece expressamente os bens dos Estados. De acordo com o art. 26, incluem-se entre eles:\u003c/p>\u003cp>\u003cul>\u003cli>as águas superficiais ou subterrâneas, fluentes, emergentes e em depósito, ressalvadas, na forma da lei, as decorrentes de obras da União; \u003c/li>\u003cli>as áreas, nas ilhas oceânicas e costeiras, que estiverem no seu domínio, excluídas aquelas sob domínio da União, dos Municípios ou de terceiros; \u003c/li>\u003cli>as ilhas fluviais e lacustres não pertencentes à União; \u003c/li>\u003cli>as terras devolutas não compreendidas entre as da União. \u003c/li>\u003c/ul>\u003c/p>\u003cp>O último caso é especialmente importante para compreender a estrutura fundiária brasileira. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Como vimos ao estudar a formação da propriedade no Brasil, as terras devolutas estão ligadas ao processo histórico de separação entre o domínio público e o particular. Com a Constituição de 1891, grande parte das terras devolutas passou aos Estados, lógica que permanece refletida na distribuição constitucional atual.\u003c/span>\u003c/p>\u003cp>Assim, em matéria de terras devolutas, a regra é estadual; a titularidade da União corresponde às hipóteses constitucionalmente estabelecidas. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Essa conexão é importante porque mostra que a distribuição atual dos imóveis públicos também é resultado da formação histórica do território e da propriedade que estudamos anteriormente no Programa. \u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Assim como a União, os Estados também possuem muitos outros imóveis adquiridos por diferentes formas: prédios administrativos, escolas, hospitais, terrenos, unidades autônomas e outros bens que integram seus patrimônios.\u003c/span>\u003c/p>"}},{"id":"bdrh68mk","type":"titulo","props":{"text":"E o Distrito Federal?","level":"h3"}},{"id":"bu6gjb94","type":"prose","props":{"html":"\u003cp>O Distrito Federal apresenta uma situação própria. A Constituição não lhe dedica um rol patrimonial específico equivalente aos arts. 20 e 26.\u003c/p>\u003cp>Como ente federativo que acumula competências legislativas reservadas aos Estados e aos Municípios (\u003ca href=\"https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm#:~:text=Art.%2032.%20O%20Distrito%20Federal%2C%20vedada%20sua%20divis%C3%A3o%20em%20Munic%C3%ADpios%2C%20reger%2D%20se%2D%C3%A1%20por%20lei%20org%C3%A2nica%2C%20votada%20em%20dois%20turnos%20com%20interst%C3%ADcio%20m%C3%ADnimo%20de%20dez%20dias%2C%20e%20aprovada%20por%20dois%20ter%C3%A7os%20da%20C%C3%A2mara%20Legislativa%2C%20que%20a%20promulgar%C3%A1%2C%20atendidos%20os%20princ%C3%ADpios%20estabelecidos%20nesta%20Constitui%C3%A7%C3%A3o.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 32, § 1º, da Constituição\u003c/a>), seu patrimônio deve ser compreendido considerando essa configuração constitucional e a legislação aplicável.\u003c/p>\u003cp>Além disso, a própria formação territorial e patrimonial de Brasília e do Distrito Federal possui particularidades históricas e jurídicas. Para os objetivos deste material, o essencial é reconhecer que o Distrito Federal também possui patrimônio imobiliário próprio e exerce sua gestão no âmbito das competências que lhe são atribuídas.\u003c/p>"}},{"id":"bdrlb1xs","type":"titulo","props":{"text":"E quais são os bens dos Municípios?","level":"h3"}},{"id":"bix2p033","type":"prose","props":{"html":"\u003cp>Aqui encontramos uma diferença importante. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Ao contrário do que ocorre com a União e os Estados, a Constituição não apresenta um rol geral de bens pertencentes aos Municípios. \u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Isso não significa, evidentemente, que o patrimônio municipal tenha menor importância. Os Municípios possuem terrenos, edifícios administrativos, escolas, unidades de saúde, vias, praças, parques e inúmeros outros imóveis necessários à prestação de serviços e à organização da cidade. \u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Esses bens podem chegar ao patrimônio municipal por diferentes caminhos: compra, doação, desapropriação, transferência por outro ente público, sucessão e outras hipóteses previstas em lei.\u003c/span>\u003c/p>\u003cp>Há ainda situações em que a própria legislação atribui determinados bens ao Município. Um exemplo particularmente importante está na\u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/l6766.htm\" target=\"_blank\" rel=\"noopener noreferrer\"> Lei nº 6.766/1979\u003c/a>, que disciplina o parcelamento do solo urbano. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Seu \u003ca href=\"https://www.planalto.gov.br/ccivil_03/leis/l6766.htm#:~:text=Art.%2022.%20Desde%20a%20data%20de%20registro%20do%20loteamento%2C%20passam%20a%20integrar%20o%20dom%C3%ADnio%20do%20Munic%C3%ADpio%20as%20vias%20e%20pra%C3%A7as%2C%20os%20espa%C3%A7os%20livres%20e%20as%20%C3%A1reas%20destinadas%20a%20edif%C3%ADcios%20p%C3%BAblicos%20e%20outros%20equipamentos%20urbanos%2C%20constantes%20do%20projeto%20e%20do%20memorial%20descritivo.\" target=\"_blank\" rel=\"noopener noreferrer\">art. 22\u003c/a> estabelece que, com o registro do loteamento, passam a integrar o domínio do Município as vias e praças, os espaços livres e as áreas destinadas a edifícios públicos e outros equipamentos urbanos constantes do projeto e do memorial descritivo.\u003c/span>\u003c/p>"}},{"id":"bcu9hyed","type":"figure","props":{"slot":"bcu9hyed__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}},{"id":"bhj2xpkl","type":"prose","props":{"html":"\u003cp>O patrimônio imobiliário público, portanto, não é algo formado apenas no passado: novos imóveis e áreas continuam ingressando nos patrimônios dos entes públicos como consequência de diferentes processos jurídicos e territoriais\u003c/p>"}},{"id":"bvfre3ys","type":"figure","props":{"slot":"bvfre3ys__slot","src":"","fit":"contain","size":"full","title":"","caption":"","credit":""}}]},{"id":"bonh0jzk","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"crg59sgb","type":"titulo","props":{"text":"Como um imóvel passa a integrar o patrimônio público?","level":"h2"}},{"id":"c0hos7fm","type":"prose","props":{"html":"\u003cp>Os patrimônios imobiliários da União, dos estados, do Distrito Federal e dos municípios foram formados ao longo do tempo e continuam se modificando. Imóveis podem ingressar no patrimônio público por diferentes caminhos, conforme a legislação aplicável a cada ente e a cada situação.\u003c/p>\u003cp>Alguns bens pertencem aos entes públicos por atribuição constitucional ou legal. É o caso das categorias que acabamos de conhecer nos arts. 20 e 26 da Constituição. Outro exemplo está no parcelamento do solo urbano: com o registro do loteamento, determinadas áreas indicadas no projeto passam ao domínio do Município, conforme estabelece o art. 22 da Lei nº 6.766/1979.\u003c/p>\u003cp>Em outras situações, o ingresso decorre de um ato de aquisição. O Poder Público pode adquirir imóveis por compra, receber uma doação, realizar uma permuta ou utilizar instrumentos próprios de sua atuação, como a desapropriação. Há ainda outras formas previstas na legislação.\u003c/p>\u003cp>A origem do domínio também pode ser muito mais antiga. Como vimos ao estudar a formação territorial e fundiária brasileira, parte expressiva das terras públicas não ingressou no patrimônio por uma aquisição realizada pelo Estado nos moldes atuais. Sua condição pública resulta da própria formação histórica do território e das sucessivas regras que disciplinaram a constituição da propriedade pública e privada no país.\u003c/p>\u003cp>Essa diversidade tem uma consequência prática importante: nem todo imóvel público terá a mesma documentação de origem. A comprovação e o reconhecimento da titularidade precisam considerar a forma pela qual aquele bem passou a pertencer ao ente público.\u003c/p>\u003cp>Também não devemos confundir aquisição com registro imobiliário. O registro no Cartório de Registro de Imóveis é fundamental para a publicidade e a segurança das relações imobiliárias, mas a análise da propriedade pública pode envolver situações em que a titularidade decorre diretamente da Constituição ou da lei, além de particularidades históricas e registrais que exigem investigação específica.\u003c/p>\u003cp>Não aprofundaremos aqui os procedimentos utilizados para identificar, adquirir, registrar e incorporar esses imóveis. Eles envolvem uma etapa própria da gestão patrimonial e serão tratados especificamente em outro momento do Programa (Eixo 2).\u003c/p>"}},{"id":"bbib40hz","type":"callout","props":{"variant":"header","tone":"info","icon":"lightbulb","title":"Você sabia?","heading":"","children":"\u003cp>O patrimônio público não nasce de uma única forma. A titularidade de um imóvel pode decorrer da formação histórica do domínio público, de atribuição constitucional ou legal ou de diferentes formas de aquisição. \u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Por isso, reconhecer um imóvel público exige compreender a origem do domínio e os documentos e atos capazes de demonstrá-la em cada situação.\u003c/span>\u003c/p>"}}]},{"id":"b2etmzv3","type":"conclusion","props":{"kicker":"Para fechar","kickerIcon":"check","title":"Afinal, o que significa conhecer um imóvel público?","body":"\u003cp>Começamos este material com uma pergunta aparentemente simples: o que são imóveis públicos? Ao longo do percurso, vimos que a resposta exige combinar diferentes conceitos e informações.\u003c/p>\u003cp>Patrimônio, bem, bem imóvel e patrimônio imobiliário não são sinônimos. Também não são equivalentes expressões como terra, terreno, área, edificação e unidade autônoma. Saber diferenciá-las permite descrever com maior precisão aquilo que está sob gestão pública.\u003c/p>\u003cp>Vimos também que ser público não significa simplesmente ser utilizado pelo governo ou estar disponível ao uso de qualquer pessoa. A titularidade é o ponto de partida para reconhecer um bem público, enquanto sua destinação permite distingui-lo como bem de uso comum do povo, de uso especial ou dominical.\u003c/p>\u003cp>A distribuição desses bens pelo território acrescenta outra dimensão. União, estados, Distrito Federal e municípios podem possuir imóveis em um mesmo espaço, e a localização, sozinha, não determina a titularidade. A Constituição, a legislação, a formação histórica do domínio e os atos de aquisição ajudam a explicar por que determinado bem pertence a um ente e não a outro.\u003c/p>\u003cp>Esses conceitos podem parecer abstratos, mas têm efeitos muito concretos. Identificar corretamente o que é o bem, a quem pertence, qual sua destinação e como se constituiu a propriedade pública interfere na forma de reconhecê-lo, protegê-lo, avaliá-lo, utilizá-lo, destiná-lo e tomar decisões sobre ele. É por isso que construir uma linguagem comum sobre o patrimônio imobiliário é também uma condição para integrar informações e fortalecer a gestão entre os diferentes entes públicos.\u003c/p>"},"children":[{"id":"bmfoqic2","type":"panel","props":{"variant":"box","kicker":"PARA REFLETIR","kickerIcon":"brain","title":"","color":"","bg":"","body":""},"children":[{"id":"b7r2q6lv","type":"columns","props":{"count":2,"ratio":"equal","gap":"lg"},"children":[{"id":"b0dupzgp","type":"markerlist","props":{"variant":"ordered","icon":"check","accent":"","items":[{"title":"","text":"Pense em uma praça, uma escola pública e um terreno público sem destinação específica. O que muda na gestão desses bens quando consideramos sua classificação como uso comum do povo, uso especial ou dominical?"},{"title":"","text":"Uma área delimitada em um mapa ou cadastrada em um sistema corresponde necessariamente a um único imóvel juridicamente constituído? Que problemas podem surgir quando essa diferença não é percebida?"},{"title":"","text":"União, estados e municípios mantêm seus próprios cadastros e formas de descrever os imóveis. Que dificuldades a ausência de conceitos e informações minimamente harmonizados pode produzir quando diferentes entes precisam atuar sobre um mesmo território?"},{"title":"","text":"Se para a sociedade muitas vezes importa mais o que o patrimônio público proporciona do que saber qual ente figura como proprietário, como conciliar essa expectativa com a necessidade de definir claramente titularidades, competências e responsabilidades?"}]}}]}]},{"id":"bmxruuv8","type":"accordion","props":{"numbered":false,"items":[{"title":"Referências","content":"\u003cp>Loureiro, Luiz Guilherme. Direitos reais à luz do Código Civil e do Direito Registral. São Paulo: editora Método, 2004\u003c/p>\u003cp>Pólis – Instituto de Estudos, Formação e Assessoria em Políticas Sociais – Centro de Documentação e Informação. Secretaria do Patrimônio da União. Manual de Regularização Fundiária em Terras da União, Brasília,  2006.\u003c/p>"}]}}]},{"id":"bpck09rf","type":"pagefooter","props":{"code":"Bens imóveis públicos [M121]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"Claudson Moreira"},{"role":"Revisão","name":"Carlos Alberto Coimbra Júnior, Andrea Cassoli Araújo"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{}</script>
+<script id="spu-lucide-icons" type="application/json">{"book-search":"\u003cpath d=\"M11 22H5.5a1 1 0 0 1 0-5h4.501\"/>\u003cpath d=\"m21 22-1.879-1.878\"/>\u003cpath d=\"M3 19.5v-15A2.5 2.5 0 0 1 5.5 2H18a1 1 0 0 1 1 1v8\"/>\u003ccircle cx=\"17\" cy=\"18\" r=\"3\"/>","brain":"\u003cpath d=\"M12 18V5\"/>\u003cpath d=\"M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4\"/>\u003cpath d=\"M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5\"/>\u003cpath d=\"M17.997 5.125a4 4 0 0 1 2.526 5.77\"/>\u003cpath d=\"M18 18a4 4 0 0 0 2-7.464\"/>\u003cpath d=\"M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517\"/>\u003cpath d=\"M6 18a4 4 0 0 1-2-7.464\"/>\u003cpath d=\"M6.003 5.125a4 4 0 0 0-2.526 5.77\"/>","building-2":"\u003cpath d=\"M10 12h4\"/>\u003cpath d=\"M10 8h4\"/>\u003cpath d=\"M14 21v-3a2 2 0 0 0-4 0v3\"/>\u003cpath d=\"M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2\"/>\u003cpath d=\"M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","land-plot":"\u003cpath d=\"m12 8 6-3-6-3v10\"/>\u003cpath d=\"m8 11.99-5.5 3.14a1 1 0 0 0 0 1.74l8.5 4.86a2 2 0 0 0 2 0l8.5-4.86a1 1 0 0 0 0-1.74L16 12\"/>\u003cpath d=\"m6.49 12.85 11.02 6.3\"/>\u003cpath d=\"M17.51 12.85 6.5 19.15\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map-pin":"\u003cpath d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/>\u003ccircle cx=\"12\" cy=\"10\" r=\"3\"/>","map-plus":"\u003cpath d=\"m11 19-1.106-.552a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0l4.212 2.106a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619V12\"/>\u003cpath d=\"M15 5.764V12\"/>\u003cpath d=\"M18 15v6\"/>\u003cpath d=\"M21 18h-6\"/>\u003cpath d=\"M9 3.236v15\"/>","ruler-dimension-line":"\u003cpath d=\"M10 15v-3\"/>\u003cpath d=\"M14 15v-3\"/>\u003cpath d=\"M18 15v-3\"/>\u003cpath d=\"M2 8V4\"/>\u003cpath d=\"M22 6H2\"/>\u003cpath d=\"M22 8V4\"/>\u003cpath d=\"M6 15v-3\"/>\u003crect x=\"2\" y=\"12\" width=\"20\" height=\"8\" rx=\"2\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__always,.spu-csection__body{display:flex;flex-direction:column;gap:var(--flow-block)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);width:max-content;margin-top:var(--flow-block);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__summary[aria-expanded="true"] svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-csection__body[hidden]{display:none}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__body{display:flex!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint ? NS.isPrint() : window.__SPU_PRINT === true;
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing;
+        var items = React.Children.toArray(props.children);
+        function blockType(node){
+          if(!React.isValidElement(node)) return '';
+          if(node.props && node.props.block && node.props.block.type) return node.props.block.type;
+          return React.Children.toArray(node.props && node.props.children).map(blockType).filter(Boolean)[0] || '';
+        }
+        var markerIndex = items.findIndex(function(item){ return blockType(item) === 'collapsebreak'; });
+        var alwaysVisible = markerIndex >= 0 ? items.slice(0, markerIndex) : [];
+        var collapsed = markerIndex >= 0 ? items.slice(markerIndex + 1) : items;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            alwaysVisible.length && React.createElement('div', { className:'spu-csection__always spu-blockstack' }, alwaysVisible),
+            !printing && React.createElement('button', {
+                type:'button',
+                className:'spu-csection__summary',
+                'aria-expanded':forcedOpen || open,
+                onClick:function(){ if(!forcedOpen) setOpen(!open); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body spu-blockstack', hidden:!(forcedOpen || open) }, collapsed)
+          )
+        );
+      };
+      NS.CollapseBreak = function(){ return null; };
+      var markerDefinition = {
+        type:'collapsebreak', component:'CollapseBreak', label:'Botão de recolher',
+        icon:'chevron-down', cat:'Estrutura', kind:'marker', internal:true, props:{}
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container', stack:false,
+        fields:['triggerLabel'], allowedTypes:registry.childTypes.concat([markerDefinition.type]),
+        props:{ triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.blocks.push(markerDefinition);
+      registry.byType[definition.type] = definition;
+      registry.byType[markerDefinition.type] = markerDefinition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type === markerDefinition.type) return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:markerDefinition.type, props:{} };
+        if(type !== definition.type) return originalNewBlock(type, child);
+        var props = JSON.parse(JSON.stringify(definition.props));
+        props.children = [registry.newBlock(markerDefinition.type, true)];
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:props };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function safeDefinition(value){
+    var box = document.createElement('div');
+    box.innerHTML = String(value || '');
+    var allowed = ['STRONG','B','EM','I','BR','P','SPAN'];
+    Array.from(box.querySelectorAll('*')).forEach(function(el){
+      if(el.tagName === 'SCRIPT' || el.tagName === 'STYLE'){ el.remove(); return; }
+      if(allowed.indexOf(el.tagName) < 0){ el.replaceWith.apply(el, Array.from(el.childNodes)); return; }
+      Array.from(el.attributes).forEach(function(attr){ el.removeAttribute(attr.name); });
+    });
+    return box.innerHTML;
+  }
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('data-definition') || el.getAttribute('title') || el.getAttribute('data-def') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span class="spu-term-pop__def"></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('.spu-term-pop__def').innerHTML = safeDefinition(def);
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>
