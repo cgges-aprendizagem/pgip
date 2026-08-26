@@ -1,0 +1,522 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M511 - O PATRIMÔNIO PÚBLICO COMO ATIVO ESTRATÉGICO",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "co9p38uz",
+          "text": "Por que mudar a forma de olhar para os imóveis públicos?",
+          "hidden": false
+        },
+        {
+          "id": "c6ihgx71",
+          "text": "O que muda quando a gestão do patrimônio passa a ser estratégica?",
+          "hidden": false
+        },
+        {
+          "id": "cg95hwqs",
+          "text": "De que formas um imóvel público pode gerar valor para a sociedade? ",
+          "hidden": false
+        },
+        {
+          "id": "c7bfzwiy",
+          "text": "O que ainda dificulta uma gestão mais estratégica dos imóveis públicos?",
+          "hidden": false
+        },
+        {
+          "id": "czvirst7",
+          "text": "Como conciliar geração de valor, sustentabilidade fiscal e interesse público? ",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "b6piarub",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b23lx222",
+      "type": "hero",
+      "props": {
+        "kicker": "ativo estratégico",
+        "kickerIcon": "land-plot",
+        "title": "O Patrimônio Público como ativo estratégico",
+        "byline": "TRANSFORMANDO PATRIMÔNIO IMOBILIÁRIO EM VALOR PÚBLICO<br>",
+        "slot": "b23lx222__slot"
+      }
+    },
+    {
+      "id": "bnwydvam",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "caph3399",
+          "type": "prose",
+          "props": {
+            "html": "<p>Um imóvel público pode estar regularizado, cadastrado e em boas condições de conservação e, ainda assim, não estar sendo utilizado da melhor forma. Pode haver espaços ociosos ou subutilizados, custos elevados de manutenção ou locação e oportunidades de compartilhamento, requalificação ou mudança de uso que ainda não foram consideradas. Situações como essas mostram que<mark data-hl=\"terra\"> gerir imóveis públicos exige também avaliar como cada ativo contribui para as necessidades e os resultados do Estado</mark>.  </p><p>É justamente esse olhar que a gestão estratégica de ativos acrescenta à gestão patrimonial. Em termos simples, significa conectar as decisões sobre os imóveis ao planejamento, considerando não apenas sua situação física e documental, mas também custos, riscos, desempenho, necessidades futuras e benefícios produzidos para a sociedade.</p><p>Essa perspectiva é útil mesmo para quem não atua diretamente em uma unidade de patrimônio. Decisões sobre ocupar, manter, compartilhar, requalificar, destinar ou deixar de utilizar um imóvel afetam recursos, espaços e condições para a execução das políticas públicas. O material convida, portanto, a compreender a lógica dessas escolhas e os elementos que podem torná-las mais estratégicas.  </p><p>Ao longo da leitura, uma ideia será especialmente importante: <b>gerar valor não significa apenas gerar receita</b>.  </p>"
+          }
+        },
+        {
+          "id": "b7glv8t3",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "Valor público envolve os benefícios econômicos, sociais, ambientais e institucionais que podem resultar da adequada utilização dos recursos públicos. <br>",
+            "children": "<p>É a partir dessa perspectiva mais ampla que serão discutidos os fundamentos, as possibilidades e os desafios da gestão estratégica dos imóveis públicos. </p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "btdz3bpu",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bn9vzaiy",
+          "type": "kicker",
+          "props": {
+            "icon": "goal",
+            "children": "Patrimônio público como ativo estratégico"
+          }
+        },
+        {
+          "id": "co9p38uz",
+          "type": "titulo",
+          "props": {
+            "text": "Por que mudar a forma de olhar para os imóveis públicos?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c06ug64m",
+          "type": "prose",
+          "props": {
+            "html": "<p>O patrimônio imobiliário público constitui um dos principais recursos disponíveis ao Estado para viabilizar políticas públicas e assegurar a prestação de serviços à sociedade. Unidades administrativas, escolas, hospitais, centros culturais e demais imóveis públicos representam não apenas a infraestrutura necessária ao funcionamento da Administração Pública, mas também ativos capazes de ampliar a capacidade estatal de atender às demandas da população. </p><p>A importância desses ativos é corroborada por estudos que indicam que os níveis de ativos não financeiros representam, em diversos países, a maior parte de seus Produtos Internos Brutos, superando, frequentemente, os ativos financeiros (BOVA et al., 2013; ESPIRITO SANTO, 2024). </p><p>Nas últimas décadas, a crescente restrição orçamentária, o aumento das demandas sociais e a maior exigência por transparência e qualidade do gasto público evidenciaram a necessidade de aperfeiçoar a gestão desses ativos. A sociedade passou a exigir que os recursos públicos fossem administrados com maior eficiência, economicidade e foco em resultados, reforçando a importância de uma gestão patrimonial capaz de contribuir para a sustentabilidade fiscal e para a geração de valor público (SCHAPPER, VEIGA MALTA &amp; GILBERT, 2017; DANTAS, 2022).</p>"
+          }
+        },
+        {
+          "id": "bp6na6t6",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "movimento que acompanha a evolução da própria Administração Pública",
+            "kickerIcon": "map-pin",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-100)",
+            "body": "<p>No Brasil, a incorporação do <b>princípio da eficiência</b> ao <a href=\"https://constituicao.stf.jus.br/dispositivo/cf-88-parte-1-titulo-3-capitulo-7-secao-1-artigo-37\" target=\"_blank\" rel=\"noopener noreferrer\">art. 37 da Constituição Federal</a> consolidou a necessidade de uma atuação administrativa orientada não apenas pela legalidade, mas também pela <mark>obtenção dos melhores resultados possíveis com os recursos disponíveis</mark>.&nbsp;</p><p>No âmbito patrimonial, essa mudança significou superar uma visão tradicional, centrada exclusivamente no controle físico e documental dos imóveis, para adotar uma perspectiva estratégica voltada à maximização de sua contribuição na geração de valor para a sociedade.</p><p>Assim, o patrimônio imobiliário deixa de ser compreendido apenas como um conjunto de bens pertencentes ao Estado e passa a ser reconhecido como um <b>ativo estratégico</b>, cuja adequada gestão influencia diretamente a qualidade dos serviços públicos, a racionalização dos gastos governamentais e a capacidade estatal de produzir benefícios econômicos, sociais e ambientais.</p>"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "bgfmu7rp",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bsmytdx6",
+          "type": "kicker",
+          "props": {
+            "icon": "waypoints",
+            "children": "GESTÃO IMOBILIÁRIA PÚBLICA E GESTÃO ESTRATÉGICA DE ATIVOS"
+          }
+        },
+        {
+          "id": "c6ihgx71",
+          "type": "titulo",
+          "props": {
+            "text": "O que muda quando a gestão do patrimônio passa a ser estratégica?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cp34xwy5",
+          "type": "prose",
+          "props": {
+            "html": "<p>Em sentido amplo, a gestão consiste no processo de planejar, organizar, dirigir e controlar recursos com o objetivo de alcançar resultados previamente estabelecidos. Sob a ótica econômica, a gestão pode ser definida como a atividade intencional de alocação de um estoque limitado (trabalho, capital e terra) para atender a necessidades humanas concorrentes e infinitas. </p><p>Na Administração Pública, entretanto, esse processo apresenta particularidades decorrentes da necessidade de atender ao interesse coletivo, observando os princípios constitucionais da legalidade, impessoalidade, moralidade, publicidade e eficiência (DE PAIVA, FONSECA e DE PAIVA, 2017; BECLA, CZAJA &amp; ZIELIŃSKA, 2012).</p>"
+          }
+        },
+        {
+          "id": "bgiwhd5i",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "auto",
+            "children": "<i>Nesse contexto, a gestão imobiliária pública compreende o conjunto de atividades destinadas ao planejamento, aquisição, utilização, manutenção, compartilhamento, requalificação, destinação e alienação dos imóveis públicos, buscando assegurar que esses ativos contribuam para o cumprimento das finalidades institucionais do Estado. Trata-se de uma atividade multidisciplinar que envolve aspectos jurídicos, econômicos, financeiros, urbanísticos, ambientais e de engenharia, exigindo planejamento integrado e visão de longo prazo.</i>",
+            "cite": "(TROJANEK, 2015)"
+          }
+        },
+        {
+          "id": "b_mtadnaqy_833j",
+          "type": "prose",
+          "props": {
+            "html": "<p>Em sentido amplo, a gestão consiste no processo de planejar, organizar, dirigir e controlar recursos com o objetivo de alcançar resultados previamente estabelecidos. Sob a ótica econômica, a gestão pode ser definida como a atividade intencional de alocação de um estoque limitado (trabalho, capital e terra) para atender a necessidades humanas concorrentes e infinitas. </p><p>Na Administração Pública, entretanto, esse processo apresenta particularidades decorrentes da necessidade de atender ao interesse coletivo, observando os princípios constitucionais da legalidade, impessoalidade, moralidade, publicidade e eficiência (DE PAIVA, FONSECA e DE PAIVA, 2017; BECLA, CZAJA &amp; ZIELIŃSKA, 2012). </p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Historicamente, a administração patrimonial concentrou-se, ainda que de forma incipiente, no controle cadastral, na regularização documental, na manutenção dos imóveis e no atendimento às exigências legais relacionadas à aquisição e alienação de bens. Embora essas atividades continuem sendo indispensáveis, mostram-se insuficientes diante da crescente complexidade da gestão pública contemporânea (TROJANEK, 2015; TRAJANO, 2023).&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">Como resposta a esse cenário, consolidou-se internacionalmente a abordagem da gestão estratégica de ativos, segundo a qual os ativos públicos deixam de ser tratados apenas como patrimônio físico e passam a integrar o conjunto de ativos estratégicos da organização.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">Essa abordagem pressupõe que cada decisão relacionada ao patrimônio esteja alinhada ao planejamento institucional, considerando custos, riscos, desempenho, necessidades futuras e benefícios produzidos para a sociedade (TROJANEK, 2015; DETTER e FÖLSTER, 2016).</span></p><p>A gestão estratégica de ativos incorpora instrumentos de <b>planejamento</b>, <b>gestão de riscos</b>, <b>avaliação de desempenho</b>, <b>indicadores</b>, <b>governança</b> e <b>monitoramento do ciclo de vida</b> dos imóveis, permitindo que as <mark data-hl=\"green\">decisões patrimoniais sejam fundamentadas em critérios técnicos e orientadas para resultados</mark>. Dessa forma, o desempenho da gestão deixa de ser medido apenas pela conservação dos imóveis ou pela regularidade dos registros patrimoniais, passando a considerar também sua capacidade de gerar valor público e ampliar a eficiência da atuação estatal (MARQUES NETO, 2014; DETTER e FÖLSTER, 2016; TROJANEK, 2015). </p>"
+          }
+        },
+        {
+          "id": "b84eorxx",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>A gestão estratégica conecta as decisões sobre os imóveis ao planejamento institucional. Além da situação física e documental do patrimônio, entram na análise custos, riscos, desempenho, necessidades futuras e resultados esperados. </p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "begl3hlz",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "brsfjve3",
+          "type": "kicker",
+          "props": {
+            "icon": "undo-2",
+            "children": "PATRIMÔNIO IMOBILIÁRIO PÚBLICO COMO ATIVO ESTRATÉGICO"
+          }
+        },
+        {
+          "id": "cg95hwqs",
+          "type": "titulo",
+          "props": {
+            "text": "De que formas um imóvel público pode gerar valor para a sociedade? ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "ccg16fel",
+          "type": "prose",
+          "props": {
+            "html": "<p>A adoção da gestão estratégica de ativos representa uma mudança de paradigma na administração patrimonial. O patrimônio imobiliário passa a ser compreendido como um recurso capaz de apoiar políticas públicas, reduzir custos, fortalecer a governança e ampliar a capacidade do Estado de produzir resultados para a sociedade. </p><p>Essa perspectiva parte do reconhecimento de que <mark data-hl=\"green\">o valor de um imóvel público não decorre exclusivamente de sua propriedade, mas da forma como ele é utilizado</mark>. Imóveis ociosos, subutilizados ou inadequadamente ocupados representam custos de manutenção, despesas operacionais e perda de oportunidades para a Administração Pública. Por outro lado, ativos corretamente destinados podem melhorar a prestação de serviços públicos, racionalizar despesas, reduzir gastos com locações, favorecer o compartilhamento entre órgãos e apoiar processos de desenvolvimento urbano (SILVA, 2013; ANDRADE, 2005; WADSWORTH et al., 1993).</p>"
+          }
+        },
+        {
+          "id": "b1fsvnrs",
+          "type": "kicker",
+          "props": {
+            "icon": "asterisk",
+            "children": "a gestão patrimonial deve:"
+          }
+        },
+        {
+          "id": "buru05yh",
+          "type": "feature",
+          "props": {
+            "columns": 2,
+            "card": true,
+            "accent": "",
+            "layout": "side",
+            "items": [
+              {
+                "icon": "square-chart-gantt",
+                "title": "Integrar o planejamento governamental",
+                "text": "Deve-se avaliar continuamente quais imóveis precisam ser mantidos, requalificados, compartilhados, permutados, alienados ou destinados a outras finalidades compatíveis com o interesse público. Essas decisões exigem <b>planejamento integrado</b>, informações patrimoniais confiáveis, avaliações técnicas, indicadores de desempenho e mecanismos de governança capazes de assegurar transparência e racionalidade ao processo decisório."
+              },
+              {
+                "icon": "refresh-ccw",
+                "title": "Observar o ciclo de vida do patrimônio",
+                "text": "Cada imóvel deve ser acompanhado desde sua aquisição até sua eventual destinação final, considerando custos de implantação, operação, manutenção, modernização e desmobilização. Essa abordagem permite reduzir desperdícios, otimizar investimentos e assegurar que os ativos permaneçam alinhados às necessidades institucionais ao longo do tempo (MARQUES NETO, 2014)."
+              }
+            ]
+          }
+        },
+        {
+          "id": "by2ya97e",
+          "type": "prose",
+          "props": {
+            "html": "<p>Mais do que conservar imóveis, a moderna gestão patrimonial busca maximizar a contribuição de cada ativo para o cumprimento das políticas públicas. O patrimônio deixa de ser percebido apenas como elemento do balanço patrimonial para se tornar instrumento de geração de valor público, entendido como o conjunto de benefícios econômicos, sociais, ambientais e institucionais produzidos pela adequada utilização dos recursos públicos.</p><p>Essa transformação exige uma atuação gerencial baseada em planejamento, governança e avaliação permanente dos resultados, aproximando a gestão patrimonial das melhores práticas internacionais de administração de ativos e reforçando seu papel como componente estratégico da capacidade institucional do Estado.</p>"
+          }
+        },
+        {
+          "id": "baofs22z",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>O valor estratégico de um imóvel não está apenas em pertencer ao Estado. Está também no que sua utilização permite realizar. Por isso, manter, requalificar, compartilhar ou dar outra destinação a um imóvel são decisões que precisam considerar sua contribuição para o interesse público. </p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bxl3itu2",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b462hu9f",
+          "type": "kicker",
+          "props": {
+            "icon": "brick-wall",
+            "children": "DESAFIOS DA GESTÃO IMOBILIÁRIA PÚBLICA"
+          }
+        },
+        {
+          "id": "c7bfzwiy",
+          "type": "titulo",
+          "props": {
+            "text": "O que ainda dificulta uma gestão mais estratégica dos imóveis públicos?",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "cjwdht1d",
+          "type": "prose",
+          "props": {
+            "html": "<p>Apesar da evolução conceitual da gestão patrimonial, a Administração Pública brasileira ainda enfrenta desafios que limitam a utilização estratégica de seu patrimônio imobiliário. Em muitos órgãos, predominam modelos de gestão voltados ao cumprimento de rotinas administrativas e ao controle documental, com reduzida integração entre planejamento governamental, institucional, de gestão orçamentária e de administração patrimonial.</p>"
+          }
+        },
+        {
+          "id": "ba1gjmmr",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "warning",
+            "icon": "badge-alert",
+            "title": "deficiência das informações cadastrais",
+            "heading": "",
+            "children": "<p>Entre os principais desafios destaca-se um problema elementar: <b>a deficiência das informações cadastrais</b>. Cadastros incompletos, registros desatualizados, ausência de avaliações periódicas e baixa integração entre sistemas dificultam o conhecimento do patrimônio disponível e comprometem o processo decisório. Sem informações confiáveis, torna-se inviável estabelecer prioridades, acompanhar o desempenho dos ativos ou planejar sua utilização de forma eficiente (DE MOURA, 2020).</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b_mtaekkn4_0kgz",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Outro problema recorrente, principalmente após o aperfeiçoamento e a ampliação do teletrabalho, é a <b>existência de imóveis ociosos ou subutilizados</b>, coexistindo com despesas significativas decorrentes da locação de imóveis privados para instalação de órgãos públicos. Essa situação evidencia a <mark>necessidade de uma gestão integrada do portfólio imobiliário</mark>, capaz de identificar oportunidades de compartilhamento de espaços, racionalização da ocupação, requalificação de edificações, permutas, alienações e outras formas de destinação compatíveis com o interesse público.</span></p><p>A superação desses desafios exige a profissionalização da gestão patrimonial. A crescente complexidade das decisões relacionadas aos ativos imobiliários demanda equipes multidisciplinares, indicadores de desempenho, metodologias de avaliação, gestão de riscos e instrumentos de governança que permitam decisões técnicas, transparentes e alinhadas ao planejamento institucional. </p><p>Além disso, a gestão dos imóveis públicos deve observar a função social e a função socioambiental da propriedade. Isso significa que a utilização dos ativos deve promover não apenas eficiência econômica, mas também benefícios sociais, acessibilidade, sustentabilidade ambiental e desenvolvimento urbano, assegurando que o patrimônio público cumpra sua finalidade estabelecida pela Constituição Federal (DE PAIVA, FONSECA E DE PAIVA, 2017). </p>"
+          }
+        },
+        {
+          "id": "brw5zdco",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>Uma gestão mais estratégica depende de condições básicas: informações confiáveis, integração com o planejamento, equipes capacitadas e instrumentos de avaliação e governança. Sem elas, fica mais difícil comparar alternativas e tomar decisões fundamentadas. </p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b0fu0i42",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bbssuq98",
+          "type": "kicker",
+          "props": {
+            "icon": "atom",
+            "children": "GESTÃO DE ATIVOS, SUSTENTABILIDADE FISCAL E GOVERNANÇA PÚBLICA"
+          }
+        },
+        {
+          "id": "czvirst7",
+          "type": "titulo",
+          "props": {
+            "text": "Como conciliar geração de valor, sustentabilidade fiscal e interesse público? ",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c6l46kr7",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão estratégica de ativos possui <mark data-hl=\"petrol\">papel relevante na sustentabilidade fiscal e na governança pública</mark>. Em um cenário de restrições orçamentárias, a adequada utilização do patrimônio imobiliário permite reduzir despesas operacionais, racionalizar investimentos e ampliar a capacidade do Estado de atender às demandas da sociedade (SICILIA &amp; STECCOLINI, 2016; SCHICK,2007). </p><p>Nesse contexto, a destinação dos imóveis públicos deve integrar o planejamento institucional do Estado e considerar diferentes alternativas de utilização. A relevância dessa estratégia foi consagrada na Constituição Federal pela Emenda Constitucional nº 109/2021, que incluiu expressamente o “planejamento de alienação de ativos com vistas à redução do montante da dívida pública” (Art. 163, VIII, 'e') como medida de governança e sustentabilidade fiscal (DANTAS, 2022; ESPIRITO SANTO, 2024).</p><p>Compartilhamento entre órgãos, requalificação de edificações, cessão de uso, permutas, utilização de instrumentos de financeirização, a exemplo da composição da fundos imobiliários, e alienações representam instrumentos de gestão que podem contribuir para otimizar o portfólio imobiliário e direcionar recursos para ativos efetivamente estratégicos.</p>"
+          }
+        },
+        {
+          "id": "b3vzur6b",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>A <b>alienação patrimonial</b>, em particular, <mark>não deve ser compreendida apenas como mecanismo de arrecadação de receitas</mark>, mas como parte de uma política permanente de gestão de ativos. Para fundamentar tecnicamente essa decisão, o gestor deve distinguir o '<b>valor de uso</b>' (potencial econômico decorrente da utilidade direta do bem para o serviço público) do '<b>valor de troca</b>' (potencial econômico decorrente da alienação no mercado).&nbsp;</p><p>Conforme defende Marques Neto (2014), quando o valor de troca supera a utilidade do uso institucional, a alienação torna- se um imperativo da eficiência para evitar a subutilização de ativos estratégicos. Assim, quando precedida por planejamento, avaliação técnica e análise de custo-benefício, a alienação pode reduzir custos de manutenção, eliminar ativos sem função pública relevante e fortalecer a sustentabilidade fiscal da Administração.</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b_mtaepapv_qn9l",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Da mesma forma, instrumentos inovadores de gestão patrimonial, inclusive aqueles inspirados nas práticas de mercado, a exemplo dos Fundos de Investimentos Imobiliários podem ampliar a eficiência da administração dos ativos e consequentemente a otimização da sua monetização. Entretanto, sua utilização tende a produzir resultados quando inserida em uma política consistente de gestão patrimonial, sustentada por informações confiáveis, planejamento estratégico e mecanismos efetivos de governança. Assim, <mark data-hl=\"petrol\">a inovação na gestão patrimonial deve ser compreendida como consequência do amadurecimento institucional, e não como solução isolada para problemas estruturais</mark> (ESPIRITO SANTO, 2024).</span></p>"
+          }
+        },
+        {
+          "id": "b1h6e2j4",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>Racionalizar espaços, compartilhar, requalificar, ceder, permutar ou alienar são possibilidades de gestão, não objetivos em si mesmas. A escolha entre elas deve resultar de planejamento e avaliação e considerar o papel do imóvel na geração de valor público. </p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b3s2z13u",
+      "type": "conclusion",
+      "props": {
+        "kicker": "Para fechar",
+        "kickerIcon": "check",
+        "title": "Conclusão",
+        "body": "<p>A evolução da gestão patrimonial reflete a transformação da Administração Pública em direção a um modelo orientado por resultados, governança e geração de valor público. Nesse contexto, o patrimônio imobiliário deixa de ser compreendido apenas como um conjunto de bens destinados ao funcionamento da máquina pública e passa a constituir ativo estratégico capaz de apoiar políticas públicas, otimizar recursos e fortalecer a capacidade institucional do Estado gerando valor público para a sociedade. </p><p>A adoção da gestão estratégica de ativos amplia a eficiência da utilização do patrimônio ao integrar planejamento, avaliação de desempenho, gestão de riscos e monitoramento contínuo do ciclo de vida dos imóveis. Essa abordagem favorece a tomada de decisões mais transparentes, redução de desperdícios, racionalização de investimentos e de contribuição para a sustentabilidade ambiental e fiscal. </p><p>Importa observar, entretanto, que a efetividade desse modelo depende da superação de desafios históricos, como a deficiência das informações patrimoniais, a fragmentação da gestão, a ausência de profissionalização da temática e a limitada integração entre patrimônio, planejamento e orçamento. Nesse sentido, o fortalecimento da governança e da gestão patrimonial, aliado à profissionalização das equipes e ao desenvolvimento de instrumentos modernos de gestão, apresentam-se como condição essencial e alternativa relevante para transformar o patrimônio imobiliário em um verdadeiro instrumento de geração de valor público para a sociedade. </p>"
+      },
+      "children": [
+        {
+          "id": "bmucoujp",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Para refletir",
+            "kickerIcon": "brain",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-100)",
+            "body": "<p>Depois desta leitura, pense na forma como os imóveis públicos são tratados na realidade que você conhece. Não é necessário chegar a uma resposta única: a proposta é exercitar um olhar mais estratégico sobre o patrimônio. <br><br></p>"
+          },
+          "children": [
+            {
+              "id": "bydwqhla",
+              "type": "markerlist",
+              "props": {
+                "variant": "icon",
+                "icon": "badge-question-mark",
+                "accent": "",
+                "items": [
+                  {
+                    "title": "<span style=\"font-weight: normal;\">Quando podemos dizer que um imóvel público está, de fato, gerando valor para a sociedade? Que aspectos você consideraria além do seu valor financeiro?  </span>",
+                    "text": ""
+                  },
+                  {
+                    "title": "<span style=\"font-weight: normal;\">Manter um imóvel no patrimônio público é sempre a melhor alternativa? Que informações você precisaria conhecer antes de avaliar possibilidades como manter, compartilhar, requalificar, dar outro uso ou alienar esse bem?  </span>",
+                    "text": ""
+                  },
+                  {
+                    "title": "<span style=\"font-weight: normal;\">Um imóvel pode ser importante para o Estado e, ao mesmo tempo, representar custos elevados ou estar sendo pouco utilizado. Como essas diferentes dimensões poderiam ser consideradas em uma decisão?  </span>",
+                    "text": ""
+                  },
+                  {
+                    "title": "<span style=\"font-weight: normal;\">Na realidade que você conhece e nos processos dos quais já teve a oportunidade de participar, o patrimônio imobiliário é tratado mais como um conjunto de bens a controlar e conservar ou como um recurso capaz de contribuir para os objetivos e as políticas públicas? Na sua atuação, o que poderia ajudar a aproximar a gestão de uma perspectiva mais estratégica? </span>",
+                    "text": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "bxs51i50",
+          "type": "referencias",
+          "props": {
+            "title": "Referências",
+            "defaultOpen": false,
+            "items": [
+              "BRASIL. [Constituição (1988)]. Constituição da República Federativa do Brasil. Brasília, DF: Presidência da República, [2023a]. Disponível em: &lt;https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm&gt;. Acesso em: 21 dez. 2023. ",
+              "BOVA, E. et al. Another look at governments’ balance sheets: The role of nonfinancial assets. [s.l: s.n.]. ",
+              "BECLA, A.; CZAJA, S.; ZIELIŃSKA, A. Analiza kosztów-korzyści w wycenie środowiska przyrodniczego. [s.l.] Difin, 2012. ",
+              "DANTAS, F. L. Direito financeiro estratégico. São Paulo: Editora D’PLÁCIDO, 2022. DE ALBUQUERQUE BRAGA, M. DO C. A Propriedade Imobiliária Pública do Brasil Colônia e Império ao Início do Século XX e sua Importância Estratégica na Dinamica Urbana. Revista Movimentos Sociais e Dinâmicas Espaciais, v. 1, n. 2, p. 60–79, 2012. ",
+              "DE MOURA, J. M. Patrimônio Imobiliário Público: Um Diagnóstico da Situação de Ocupação dos Imóveis da União das Cidades Brasileiras. VI Encontro da Associação Nacional de Pesquisa e Pós-graduação em Arquitetura e Urbanismo, 2020. ",
+              "DE PAIVA, C. C.; FONSECA, S. A.; DE PAIVA, S. C. F. A política nacional de gestão do patrimônio da União: uma análise a partir da gestão dos imóveis não operacionais da extinta RFFSA. Revista do Serviço Público, v. 68, n. 3, 2017. ",
+              "DETTER, D.; FÖLSTER, S. A riqueza pública das Nações: como a gestão de ativos públicos pode impulsionar ou prejudicar o crescimento econômico. [s.l.] Tradução Claudia Gerpe Duarte, Eduardo Gerpe Duarte. São Paulo: Cultrix, 2016. ",
+              "LEITE, R. V. O princípio da eficiência na Administração Pública. Revista de Direito Administrativo, v. 226, 2015. ",
+              "MARQUES NETO, F. P. DE A.; DI PIETRO, M. S. Z.; MEDAUAR, O. Bens públicos: função social e exploração econômica: o regime jurídico das utilidades públicas. 2014. ",
+              "MODESTO, P. Notas para um debate sobre o princípio da eficiência. Revista do Serviço Público, v. 51, n. 2, 2014. ",
+              "ESPIRITO SANTO, THIAGO REIS DO. A financeirização na gestão pública: o capitalismo de gestor de ativos imobiliários públicos por meio do Fundo de Investimento Imobiliário do Estado de SP. 2024. ",
+              "SICILIA, M.; STECCOLINI, I. Public budgeting in search for an identity: state of the art and future challenges. Public Management Review, v. 19, n. 7, p. 905–910, 2016. ",
+              "SILVA, W. C. DA et al. O planejamento estratégico na administração pública: um estudo multicaso. 2013. ",
+              "TRAJANO, R. P. A estratégia de gestão dos imóveis públicos da União. [s.l.] Escola Brasileira de Administração Pública e de Empresas, 2023. ",
+              "TROJANEK, M. Strategic municipal real estate management. Journal of International Studies, v. 8, n. 2, p. 9–17, 10 nov. 2015.",
+              "WADSWORTH, J. J.; STAIERT, J. J.; ROTAN, B. Strategic Planning: A conceptual Model for Small  "
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "befzg0fo",
+      "type": "pagefooter",
+      "props": {
+        "code": "O PATRIMÔNIO PÚBLICO COMO ATIVO ESTRATÉGICO: TRANSFORMANDO PATRIMÔNIO IMOBILIÁRIO EM VALOR PÚBLICO [M511]<br>",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Thiago Reis do Espirito Santo "
+          },
+          {
+            "role": "Revisão",
+            "name": "-"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
