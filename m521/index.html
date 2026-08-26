@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M521 - Fundamentos para compreender e gerir receitas provenientes de imóveis públicos</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={"bksz8zso__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bksz8zso__slot.png"}};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M521 - Fundamentos para compreender e gerir receitas provenientes de imóveis públicos","lang":"pt-BR","builderCredit":true,"toc":{"items":[{"id":"cyqpyxsg","text":"Quando a utilização de um imóvel público pode justificar uma contrapartida financeira?&nbsp;","hidden":false},{"id":"b_mtafjio8_61yl","text":"Quais instrumentos podem transformar esse potencial em receita?&nbsp;","hidden":false},{"id":"b_mtafo75e_8asw","text":"O que é preciso conhecer para identificar esse potencial?","hidden":false},{"id":"b_mtagtxyd_4wau","text":"Legitimidade e natureza da cobrança\u003cbr>\u003cspan style=\"font-weight: normal;\">Afinal, qual a natureza das receitas patrimoniais?\u003c/span>\u003cbr>","hidden":false},{"id":"czzudqdr","text":"Como as receitas patrimoniais são classificadas?&nbsp;","hidden":false},{"id":"c2rrvxaw","text":"A lógica econômica das receitas patrimoniais&nbsp;","hidden":false},{"id":"cw5sg4sf","text":"Da cobrança ao recebimento&nbsp;\u003cbr>\u003cspan style=\"font-weight: normal;\">O que envolve a gestão de receitas patrimoniais?&nbsp;\u003c/span>\u003cbr>","hidden":false}]}},"blocks":[{"id":"b3b1yloe","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"bksz8zso","type":"hero","props":{"kicker":"Instrumentos de arrecadação patrimonial imobiliária","kickerIcon":"compass","title":"Fundamentos para compreender e gerir receitas provenientes de imóveis públicos","byline":"o que são, como se diferenciam dos tributos e quais são suas principais formas de geração","slot":"bksz8zso__slot"}},{"id":"bwvbolfx","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b3dlh8m3","type":"prose","props":{"html":"\u003cp>Nem todo imóvel público precisa ou pode ser utilizado diretamente para a instalação de uma escola, hospital, repartição ou outro equipamento público para cumprir uma finalidade de interesse coletivo. Como vimos em outros momentos deste Programa, os imóveis públicos podem produzir diferentes formas de valor para a sociedade, e a melhor utilização de cada bem depende de sua vocação, de suas características e do contexto em que está inserido.&nbsp;\u003c/p>\u003cp>Localização, características físicas, regras urbanísticas, condições do mercado, demanda social, custos de manutenção e potencial econômico são alguns dos fatores que podem levar a alternativas muito diferentes. Em determinados casos, a utilização direta por uma política pública será a melhor escolha. Em outros, poderá ser mais adequado preservar o imóvel, destiná-lo a terceiros, explorá-lo economicamente ou mesmo aliená-lo.&nbsp;\u003c/p>\u003cp>É nesse contexto que deve ser compreendida a geração de receitas patrimoniais. Arrecadar não constitui um fim em si mesmo, nem o potencial econômico deve ser o único critério para decidir o destino de um imóvel público. Mas há situações em que, consideradas sua vocação e as alternativas possíveis, permitir sua utilização econômica ou privativa mediante uma contrapartida financeira pode, e por vezes deve, representar a aplicação mais adequada daquele patrimônio. Os recursos gerados ingressam no orçamento público e podem contribuir para o financiamento das atividades e políticas do Estado.&nbsp;&nbsp;\u003c/p>\u003cp>Na experiência da União, a administração dos bens públicos esteve historicamente ligada às estruturas fazendárias e à arrecadação. Essa dimensão econômica marcou grande parte da trajetória institucional da gestão do patrimônio federal, contribuindo para uma visão predominantemente arrecadatória do patrimônio, que, por muito tempo, limitou sua compreensão como recurso estratégico para a implementação de políticas públicas, o desenvolvimento territorial e a geração de outras formas de valor para a sociedade.&nbsp;\u003c/p>"}},{"id":"bw281h9p","type":"callout","props":{"variant":"ear","tone":"info","icon":"landmark","title":"","heading":"\u003cbr>","children":"\u003cp>Este material avança nessa discussão para compreender especificamente as\u003cmark> receitas associadas ao patrimônio público: o que são, como se diferenciam dos tributos e quais são suas principais formas de geração\u003c/mark>.&nbsp;&nbsp;\u003c/p>\u003cp>A experiência da União será utilizada em diferentes momentos para concretizar esses conceitos, sem perder de vista que estados e municípios também administram seus patrimônios e podem adotar instrumentos próprios de utilização econômica e geração de receitas, conforme seus respectivos regimes jurídicos.&nbsp;\u003c/p>"}}]},{"id":"bmd1hg09","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cyqpyxsg","type":"titulo","props":{"text":"Quando a utilização de um imóvel público pode justificar uma contrapartida financeira?&nbsp;","level":"h2"}},{"id":"cxmex06d","type":"prose","props":{"html":"\u003cp>A cobrança de uma contrapartida financeira pela utilização de um imóvel público está relacionada às condições em que esse patrimônio é colocado à disposição de determinado usuário. Quando o uso proporciona um benefício individualizado ou permite a exploração econômica do imóvel, surge uma questão importante para a gestão patrimonial: \u003cb>em que condições parte desse benefício deve retornar à sociedade?&nbsp;\u003c/b>\u003c/p>\u003cp>Essa lógica não significa que todo uso exclusivo ou toda atividade econômica realizada em imóvel público deva ser necessariamente onerosa. Cada ente público administra seu patrimônio de acordo com as competências e regras que lhe são aplicáveis, que definem as possibilidades de utilização dos imóveis, os instrumentos disponíveis e as hipóteses em que pode haver gratuidade ou cobrança de contrapartida. Assim, a cobrança depende do regime jurídico, da finalidade da utilização e do instrumento adotado.&nbsp;\u003c/p>"}},{"id":"bgk18lp4","type":"markerlist","props":{"variant":"icon","icon":"landmark","accent":"","items":[{"title":"\u003cspan data-color=\"petrol\">A experiência da União ajuda a visualizar essa relação:&nbsp;\u003c/span>\u003cbr>","text":"\u003cspan data-color=\"petrol\">A legislação que rege o patrimônio imobiliário da União admite diferentes formas de utilização onerosa dos imóveis (locação, cessão onerosa, aforamento oneroso, venda, entre outros) e, em determinadas situações de exploração econômica, exige que essa utilização seja acompanhada de retribuição financeira. Assim, conforme a finalidade, as características do imóvel e as condições de sua utilização, o patrimônio pode ser colocado à disposição de terceiros mediante contrapartida, permitindo que parte do benefício econômico decorrente de um bem público retorne à coletividade na forma de receita pública.&nbsp;\u003c/span>"}]}},{"id":"b_mtafl2sb_0wyq","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">O ponto de partida, portanto, é compreender que \u003cmark data-hl=\"petrol\">o patrimônio é coletivo, mas pode ser colocado à disposição de determinados usuários em condições distintas\u003c/mark>. Quando essa utilização proporciona vantagem particular ou retorno econômico ao beneficiário, a legislação pode estabelecer uma retribuição ao Poder Público.&nbsp;&nbsp;\u003c/span>\u003c/p>\u003cp>É a partir dessa relação entre uso do patrimônio público, benefício proporcionado e eventual contrapartida financeira que avançaremos aqui.&nbsp;\u003c/p>"}}]},{"id":"bwjgsxgx","type":"collapsiblesection","props":{"triggerLabel":"Saiba mais sobre os instrumentos onerosos","defaultOpen":false,"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_mtafjio8_61yl","type":"titulo","props":{"text":"Quais instrumentos podem transformar esse potencial em receita?&nbsp;","level":"h2"}},{"id":"b_mtafjio8_r5ev","type":"prose","props":{"html":"\u003cp>O potencial econômico de um imóvel, por si só, não gera receita. É necessário que a legislação do respectivo ente ofereça instrumentos que permitam sua utilização econômica e que esses instrumentos sejam efetivamente empregados pela Administração.&nbsp;\u003c/p>\u003cp>Esse é um ponto especialmente relevante para quem atua com patrimônio público: conhecer o repertório de instrumentos existentes permite enxergar possibilidades que nem sempre são evidentes quando a gestão se concentra apenas na manutenção, ocupação administrativa ou alienação dos imóveis.&nbsp;\u003c/p>\u003cp>A experiência da União oferece um conjunto diversificado de exemplos. Sem entrar ainda nas regras e formas de cálculo de cada um, podemos agrupá-los conforme a maneira pela qual o patrimônio produz retorno financeiro:&nbsp;\u003c/p>"}},{"id":"b290mun3","type":"panel","props":{"variant":"box","kicker":"ExemploS da UNião","kickerIcon":"map-pin","title":"\u003cspan data-fs=\"h5\">\u003cspan data-fs=\"h4\">Como o patrimônio gera receita\u003c/span>\u003c/span>","color":"","bg":"","body":""},"children":[{"id":"bua63sx0","type":"feature","props":{"columns":3,"card":true,"accent":"","layout":"top","items":[{"icon":"badge-dollar-sign","title":"Uso do imóvel por terceiro&nbsp;","text":"locação, arrendamento, inscrição de ocupação,  cessão de uso onerosa, permissão de uso&nbsp;"},{"icon":"banknote-arrow-up","title":"Receitas associadas a esses regimes","text":"foro, taxa de ocupação e laudêmio&nbsp;"},{"icon":"replace","title":"Transferência da propriedade","text":"venda e outras hipóteses de alienação previstas em lei&nbsp;"}]}}]},{"id":"c83yhj0k","type":"collapsebreak","props":{}},{"id":"b4n3pvn8","type":"markerlist","props":{"variant":"check","icon":"check","accent":"","items":[{"title":"Autorização de passagem onerosa","text":"Ato unilateral, precário e discricionário. Autoriza, a título oneroso com pagamento único, a instalação de tubulação subterrânea ou subaquática para passagem de cabos ou tubos de petróleo, gás natural, bem como nas destinações para prestação de serviços de coleta, tratamento e distribuição de água potável, esgoto sanitário e destinação final de resíduos sólidos."},{"title":"Aporte a Fundo de Investimento Imobiliário","text":"Transmite a propriedade de imóvel público à instituição administradora de fundo de investimento imobiliário, em caráter fiduciário, para o fim de integralização de cotas do fundo visando à capitalização patrimonial ou participação na estrutura dos investimentos."},{"title":"Permissão de uso","text":"Autoriza, a título precário, a utilização de áreas para a realização de eventos de curta duração, de natureza recreativa, esportiva, cultural, religiosa ou educacional, por prazo determinado e finalidade específica."},{"title":"Concessão de direito real de uso (CDRU) onerosa","text":"Concede, onerosamente, o direito real de uso sobre imóvel, por tempo certo ou indeterminado, como direito real resolúvel, com finalidade determinada."},{"title":"Cessão de uso onerosa","text":"Concede o uso de imóvel, a título oneroso, com finalidade determinada."},{"title":"Aforamento oneroso (enfiteuse)","text":"Transfere ao particular o chamado domínio útil do imóvel, correspondente a 83% do valor. À União ou ao ente público remanesce o domínio direto (17%). Instituto tradicional, aplicado principalmente aos terrenos de marinha. Gera cobrança anual de foro."},{"title":"Inscrição de ocupação","text":"Registro cadastral precário, sem transferência de domínio. A União mantém 100% do domínio; o ocupante paga taxa de ocupação.&nbsp;"},{"title":"Locação e arrendamento","text":"Contratos típicos, com o Estado atuando como locador ou arrendador. A locação é aplicada tipicamente para imóveis edificados; o arrendamento, para exploração econômica (rural, industrial, extrativa).["},{"title":"Venda","text":"Transmite, onerosamente, a propriedade de imóvel, em caráter definitivo e sem finalidade determinada, mediante pagamento de certo preço em dinheiro."}]}},{"id":"bf08gvu1","type":"prose","props":{"html":"\u003cp>Cada regime possui finalidade, requisitos e efeitos próprios. Alguns geram receitas periódicas, outros estão associados a determinados eventos ou operações e outros podem resultar no ingresso de recursos mediante transferência do próprio ativo.&nbsp;\u003c/p>"}}]},{"id":"b_mtafo75e_hxlz","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"b_mtafo75e_8asw","type":"titulo","props":{"text":"O que é preciso conhecer para identificar esse potencial?","level":"h2"}},{"id":"b_mtafo75e_bg4n","type":"prose","props":{"html":"\u003cp>Conhecer os instrumentos é apenas uma parte da análise. Para perceber o potencial de geração de receitas, é preciso conhecer também o próprio patrimônio. Localização, dimensão, características físicas, usos permitidos pela legislação urbanística, situação de ocupação, infraestrutura disponível, dinâmica econômica do entorno e valor do imóvel são informações que podem revelar possibilidades muito diferentes de aproveitamento econômico.\u003c/p>\u003cp>Um imóvel situado em área de intensa atividade comercial, por exemplo, apresenta condições distintas de outro localizado em área sem demanda para exploração econômica. Da mesma forma, características urbanísticas ou restrições incidentes sobre o imóvel podem ampliar, limitar ou até inviabilizar determinadas formas de utilização.\u003c/p>\u003cp>Isso explica por que a gestão econômica de ativos não se reduz à cobrança de receitas já constituídas. Ela também envolve a capacidade de reconhecer imóveis com potencial econômico e estudar formas juridicamente possíveis de aproveitá-los.&nbsp;\u003c/p>"}},{"id":"bmj04m5k","type":"callout","props":{"variant":"ear","tone":"info","icon":"lightbulb","title":"","heading":"","children":"\u003cp>Os imóveis públicos também possuem uma dimensão econômica. Dependendo das regras aplicáveis a cada ente, essa dimensão pode ser explorada por diferentes regimes, gerando receitas pelo uso, pela exploração econômica, por direitos associados ao imóvel ou por sua alienação. Conhecer essas possibilidades não significa privilegiar a arrecadação sobre outras finalidades públicas, mas evitar que o potencial econômico do patrimônio permaneça desconhecido ou seja desconsiderado na gestão.\u003c/p>"}}]},{"id":"b_mtagtxyd_n6l1","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"b_mtagtxyd_4wau","type":"titulo","props":{"text":"Legitimidade e natureza da cobrança\u003cbr>\u003cspan style=\"font-weight: normal;\">Afinal, qual a natureza das receitas patrimoniais?\u003c/span>\u003cbr>","level":"h2"}},{"id":"bdo3u95s","type":"markerlist","props":{"variant":"icon","icon":"badge-question-mark","accent":"","items":[{"title":"\u003cspan style=\"font-weight: normal;\">Com que fundamento o Estado cobra?&nbsp;\u003c/span>\u003cbr>","text":""},{"title":"\u003cspan style=\"font-weight: normal;\">Qual a natureza jurídica dessas cobranças?\u003c/span>\u003cbr>","text":""},{"title":"\u003cspan style=\"font-weight: normal;\">Por que elas não são consideradas tributos?\u003c/span>\u003cbr>","text":""}]}},{"id":"b_mtagtxyd_crnv","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Essas perguntas não são apenas técnicas. Elas têm consequências práticas relevantes — inclusive para o servidor que opera a cobrança no dia a dia.\u003c/span>\u003c/p>\u003cp>Depois de compreender como a utilização econômica dos imóveis públicos pode gerar contrapartidas, é importante entender a natureza dos recursos arrecadados.&nbsp;\u003c/p>"}},{"id":"bjplvi2o","type":"titulo","props":{"text":"Por que a receita patrimonial não é tributo?","level":"h3"}},{"id":"b9us4i7x","type":"prose","props":{"html":"\u003cp>A distinção não é apenas terminológica. Tem implicações concretas na forma de instituir, cobrar, contestar e destinar essas receitas.&nbsp;\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">No \u003cb>tributo\u003c/b>, o Estado atua no exercício de sua competência tributária. Na \u003cb>geração de receitas patrimoniais\u003c/b>, atua como gestor de seu patrimônio, estabelecendo, nos limites da legislação, as condições para sua utilização ou exploração econômica.\u003c/span>\u003c/p>\u003cp>Essa distinção ajuda a compreender porque cobrar pela utilização econômica de um imóvel público não significa criar um novo tributo. O Estado está, nesse caso, administrando seu patrimônio e recebendo a retribuição prevista para determinada forma de utilização do bem.\u003c/p>\u003cp>Veja as diferenças mais importantes:\u003c/p>"}},{"id":"by5fc6f9","type":"datatable","props":{"caption":"","columns":[{"key":"c0","label":"Aspecto"},{"key":"c1","label":"Tributo"},{"key":"c2","label":"Receita Patrimonial"}],"rows":[{"c0":"Natureza do vínculo","c1":"Decorre do poder de império do Estado. Sua obrigação nasce ex lege (da simples ocorrência do fato gerador previsto em lei) e independe da vontade do contribuinte.","c2":"Decorre de relação contratual ou administrativa: o particular usa o bem público em razão de um instrumento formal de outorga (contrato de cessão, aforamento, locação, arrendamento, inscrição de ocupação). O vínculo é bilateral, ainda que assimétrico."},{"c0":"Sujeitos da relação","c1":"O Estado como sujeito ativo (poder tributante) e o contribuinte como sujeito passivo.","c2":"O Estado atua como proprietário-gestor de seu próprio patrimônio; o particular, como usuário privativo de um bem alheio. A relação é análoga, guardadas as devidas proporções, a uma relação entre locador e locatário — mas com particularidades de direito público."},{"c0":"Princípios aplicáveis","c1":"Aplicam-se os princípios constitucionais tributários: legalidade estrita (só se cria tributo por lei), anterioridade (não pode ser cobrado no mesmo exercício em que instituído), noventena, irretroatividade, capacidade contributiva, vedação ao confisco.","c2":"Os princípios não se aplicam integralmente. Aplica-se a legalidade em sentido amplo (é preciso base legal), mas não a legalidade tributária estrita. Não há princípio da anterioridade, tampouco da noventena. O que se aplica é o princípio da segurança jurídica dos contratos administrativos."},{"c0":"Contraprestação","c1":"Não pressupõe contraprestação individualizada. O contribuinte paga porque a lei manda; o Estado usa o recurso conforme a legislação orçamentária.","c2":"Pressupõe contraprestação: o particular está usando um bem público específico. A cobrança é justamente pela contraprestação desse uso."},{"c0":"Destinação","c1":"As duas receitas, uma vez arrecadadas, ingressam na Conta Única do Tesouro (da União, estado ou município) e são geridas conforme o orçamento aprovado.&nbsp;","c2":"Não há, portanto, diferença essencial na destinação dos recursos após arrecadados, embora existam exceções pontuais (como o repasse de 20% das receitas patrimoniais da União aos municípios, previsto na Lei nº 13.240/2015)."}],"dense":true,"highlightFirst":true,"striped":true,"tone":"petrol","className":"spu-table-wrap--striped spu-table-wrap--tone-petrol"}}]},{"id":"bccx0ee2","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"czzudqdr","type":"titulo","props":{"text":"Como as receitas patrimoniais são classificadas?&nbsp;","level":"h2"}},{"id":"ceag808d","type":"prose","props":{"html":"\u003cp>Além de compreender sua origem, é importante saber que a receita patrimonial também integra as classificações utilizadas para organizar e registrar as receitas públicas.&nbsp;&nbsp;\u003c/p>\u003cp>A gestão de um imóvel público pode gerar diferentes tipos de ingresso de recursos. Embora, em sentido amplo, possamos falar em receitas provenientes da gestão do patrimônio imobiliário, nem todas elas são classificadas orçamentariamente como receita patrimonial.&nbsp;\u003c/p>\u003cp>A classificação depende da natureza do ingresso e do fato que lhe deu origem. Assim, \u003cb>é importante distinguir pelo menos duas grandes situações\u003c/b>:&nbsp;\u003c/p>"}},{"id":"bssdyy91","type":"compareab","props":{"a":{"label":"Fruição ou exploração do patrimônio imobiliário","icon":"circle-dollar-sign","title":"\u003cspan data-fs=\"eyebrow\">Classificação\u003c/span>\u003cbr>Receita Corrente → Receita Patrimonial → Exploração do Patrimônio Imobiliário do Estado","content":"\u003cp>Exemplos: aluguel/locação, arrendamento, foro, taxa de ocupação, laudêmio, cessão onerosa de uso.\u003c/p>"},"b":{"label":"Alienação do \u003cbr>próprio imóvel&nbsp;","icon":"circle-dollar-sign","title":"\u003cspan data-fs=\"eyebrow\">Classificação\u003c/span>\u003cbr>Receita de Capital → Alienação de Bens → Alienação de Bens Imóveis&nbsp;\u003cbr>","content":"\u003cp>Exemplos: venda de terreno, prédio ou outro imóvel público.\u003c/p>"}}},{"id":"b5ys720b","type":"prose","props":{"html":"\u003cp>Do ponto de vista orçamentário, as receitas provenientes da gestão de imóveis públicos não pertencem necessariamente a uma única classificação. A classificação por natureza da receita considera o fato que dá origem ao ingresso. Assim, as receitas decorrentes da exploração ou fruição do patrimônio imobiliário integram as Receitas Correntes, na origem Receita Patrimonial, que compreende a espécie Exploração do Patrimônio Imobiliário do Estado. Já os recursos obtidos com a venda de imóveis são classificados como Receitas de Capital, na origem Alienação de Bens.\u003c/p>\u003cp>O \u003ca href=\"https://thot-arquivos.tesouro.gov.br/publicacao/51045\" target=\"_blank\" rel=\"noopener noreferrer\">Manual de Contabilidade Aplicada ao Setor Público (MCASP)\u003c/a> também distingue as receitas orçamentárias segundo seu impacto sobre a situação patrimonial líquida em efetivas e não efetivas. Receitas decorrentes da exploração do imóvel, como aluguéis e arrendamentos, em regra produzem variação patrimonial aumentativa. A alienação de um imóvel, por sua vez, constitui, em regra, receita orçamentária não efetiva, pois corresponde à conversão de um ativo patrimonial em recurso financeiro.&nbsp;\u003c/p>"}}]},{"id":"br2ihtav","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"c2rrvxaw","type":"titulo","props":{"text":"A lógica econômica das receitas patrimoniais&nbsp;","level":"h2"}},{"id":"cj5fsqwk","type":"prose","props":{"html":"\u003cp>As contrapartidas financeiras associadas à utilização de imóveis públicos podem assumir formas e valores distintos. Isso ocorre porque não existe uma única lógica econômica aplicável a todas as situações: a forma de cobrança depende do instrumento utilizado, da natureza da relação com o imóvel, da base de cálculo definida e das regras estabelecidas pela legislação do respectivo ente.&nbsp;\u003c/p>\u003cp>Por isso, é importante evitar interpretações simplificadoras. Percentuais, valores e critérios de cobrança não devem ser explicados apenas por uma suposta “racionalidade econômica” presumida. Em muitos casos, eles resultam de escolhas legislativas e administrativas construídas ao longo do tempo e podem refletir diferentes objetivos, condições históricas e características do regime jurídico aplicável.&nbsp;\u003c/p>\u003cp>Isso não impede, contudo, que se examine como a dimensão econômica aparece na estrutura das cobranças. Algumas contrapartidas são calculadas mediante percentuais estabelecidos em lei; outras podem considerar avaliações, valores de mercado, características da utilização ou condições específicas do instrumento.&nbsp;\u003c/p>"}},{"id":"bg9xwz5p","type":"callout","props":{"variant":"ear","tone":"warning","icon":"lightbulb","title":"","heading":"","children":"\u003cp>Para quem atua na gestão patrimonial, mais importante do que procurar uma explicação econômica única para cada cobrança é compreender o que está sendo remunerado, qual é a base utilizada para determinar seu valor e quais regras incidem sobre aquela relação.&nbsp;\u003c/p>","color":""}}]},{"id":"bkbcllc0","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"none","pad":"lg"},"children":[{"id":"beua5mqi","type":"titulo","props":{"text":"Por que as contrapartidas podem variar?&nbsp;","level":"h3"}},{"id":"bvx7lj5x","type":"prose","props":{"html":"\u003cp>A utilização de um imóvel público pode ocorrer em condições muito diferentes. Uma área pode ser disponibilizada por um período curto ou por vários anos; a utilização pode abranger todo o imóvel ou apenas uma parcela; pode proporcionar ao usuário um benefício exclusivo ou servir de suporte a uma atividade que produz retorno econômico. Essas diferenças ajudam a compreender por que a legislação pode estabelecer formas também distintas de determinar a contrapartida.&nbsp;\u003c/p>"}},{"id":"cjmtk72m","type":"collapsebreak","props":{}},{"id":"b43ubmk2","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O próprio valor do imóvel pode assumir papéis diferentes. Em algumas situações, ele constitui diretamente a base sobre a qual incide determinado percentual. Em outras, uma avaliação imobiliária ou uma referência de mercado pode contribuir para estabelecer o valor a ser pago pelo uso. Também podem ser consideradas características específicas da utilização ou da exploração econômica, conforme as regras do instrumento adotado:\u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>o tipo de utilização do imóvel;&nbsp;&nbsp;\u003c/li>\u003cli>o grau de exclusividade ou benefício econômico obtido pelo usuário;&nbsp;&nbsp;\u003c/li>\u003cli>a duração da utilização;&nbsp;&nbsp;\u003c/li>\u003cli>o valor do imóvel ou da parcela utilizada;&nbsp;&nbsp;\u003c/li>\u003cli>a forma de exploração econômica admitida;&nbsp;&nbsp;\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">os critérios definidos em lei ou em regulamento.&nbsp;\u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Esses elementos não funcionam necessariamente da mesma maneira em todos os entes públicos. União, estados, Distrito Federal e municípios administram seus patrimônios sob regras próprias, de modo que os instrumentos disponíveis, as bases de cálculo e as formas de remuneração podem variar. Por isso, conhecer a legislação patrimonial do próprio ente é indispensável para identificar não apenas se determinada utilização pode ser onerosa, mas também como a correspondente contrapartida deve ser estabelecida.&nbsp;\u003c/span>\u003c/p>"}},{"id":"boyq52ob","type":"callout","props":{"variant":"header","tone":"info","icon":"landmark","title":"Experiência da União","heading":"","children":"\u003cp>A experiência federal ajuda a visualizar essa diversidade. Entre as receitas associadas aos imóveis da União, há cobranças cujo valor decorre da aplicação de percentuais definidos em lei sobre determinada base de cálculo, enquanto outras formas de utilização onerosa podem envolver avaliação do imóvel e critérios próprios de remuneração.&nbsp;\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O exemplo é útil não para estabelecer uma regra aplicável aos demais entes, mas para mostrar que, mesmo dentro de um único patrimônio público, podem coexistir diferentes mecanismos de formação das contrapartidas.&nbsp;\u003c/span>\u003c/p>"}}]},{"id":"b_mtaia5bg_c49z","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"none","pad":"lg","__pullUp":true},"children":[{"id":"b_mtaia5bg_zknr","type":"titulo","props":{"text":"Cobrar mais significa necessariamente gerir melhor?","level":"h3"}},{"id":"b_mtaia5bg_sdzw","type":"prose","props":{"html":"\u003cp>Não é possível avaliar a qualidade da gestão apenas pelo valor cobrado. Uma contrapartida mais elevada pode significar maior ingresso de recursos em determinada situação, mas isso não permite concluir, isoladamente, que o patrimônio esteja sendo mais bem administrado. O valor precisa estar amparado pela legislação, ser corretamente calculado e corresponder às condições estabelecidas para aquela forma de utilização.&nbsp;\u003c/p>"}},{"id":"b_mtaia5bg_6bpe","type":"collapsebreak","props":{}},{"id":"b_mtaia5bg_v0jd","type":"prose","props":{"html":"\u003cp>A mesma cautela vale no sentido contrário. Uma contrapartida reduzida, ou mesmo a ausência de cobrança, não significa necessariamente que o ente esteja deixando de gerir adequadamente seu patrimônio. Há utilizações para as quais a legislação admite gratuidade ou estabelece condições diferenciadas, especialmente quando outros interesses públicos estão envolvidos. É justamente por isso que a dimensão econômica não pode ser analisada separadamente do regime jurídico que disciplina o imóvel e sua utilização.&nbsp;\u003c/p>\u003cp>Também é importante distinguir geração de receitas de maximização de receitas. Reconhecer que os imóveis públicos possuem potencial econômico e que sua utilização pode produzir retorno para a coletividade não significa afirmar que a maior arrecadação possível deva orientar toda decisão patrimonial. Como discutido desde a abertura deste material, a geração de receitas é uma das formas pelas quais o patrimônio pode produzir valor público, e não um fim que se sobreponha automaticamente às demais finalidades públicas.&nbsp;\u003c/p>\u003cp>Essa distinção é particularmente importante para evitar duas leituras opostas. De um lado, a ideia de que explorar economicamente um imóvel público seria incompatível com sua função pública. De outro, a compreensão de que todo imóvel com potencial econômico deveria ser necessariamente utilizado da forma mais rentável. Entre esses extremos, cabe reconhecer a legitimidade da dimensão econômica do patrimônio e aplicar corretamente os instrumentos onerosos quando forem juridicamente cabíveis.&nbsp;\u003c/p>"}}]},{"id":"b_mtaiav8l_08bg","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"none","pad":"lg","__pullUp":true},"children":[{"id":"b_mtaiav8l_nyzz","type":"titulo","props":{"text":"A legislação pode prever isenções, reduções ou outros tratamentos diferenciados?","level":"h3"}},{"id":"b_mtaiav8l_r0nh","type":"prose","props":{"html":"\u003cp>A possibilidade de cobrar pela utilização de um patrimônio público não significa que a cobrança deva ocorrer sempre, nem que todos os usuários estejam necessariamente sujeitos às mesmas condições. A própria legislação pode estabelecer hipóteses em que determinada contrapartida é afastada, reduzida, remitida ou submetida a tratamento específico.&nbsp;\u003c/p>"}},{"id":"b_mtaiav8l_xw6d","type":"collapsebreak","props":{}},{"id":"b_mtaiav8l_nhv5","type":"prose","props":{"html":"\u003cp>Essas diferenciações são relevantes para compreender a lógica econômica das receitas patrimoniais. A regra de cobrança e suas exceções fazem parte de um mesmo regime jurídico. Portanto, conhecer apenas o percentual ou a fórmula normalmente aplicada não é suficiente: é necessário verificar se aquela situação se enquadra em alguma hipótese legal de isenção, redução ou outro tratamento diferenciado.&nbsp;\u003c/p>\u003cp>As soluções adotadas podem variar significativamente entre União, estados e municípios. Não é possível, portanto, generalizar para os demais entes as hipóteses existentes na legislação federal. A experiência da União, entretanto, demonstra concretamente que a disciplina das receitas patrimoniais pode combinar regras de onerosidade com mecanismos que modulam ou afastam a cobrança em situações determinadas pela legislação.&nbsp;\u003c/p>"}},{"id":"b_mtaiav8l_0zvb","type":"callout","props":{"variant":"header","tone":"info","icon":"landmark","title":"Experiência da União","heading":"","children":"\u003cp>A legislação federal prevê hipóteses em que determinadas receitas associadas aos imóveis da União podem ser afastadas, reduzidas ou tratadas de forma diferenciada, conforme os requisitos definidos em lei.&nbsp;\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Esses exemplos mostram que a cobrança patrimonial não funciona de forma automática ou uniforme: ela pode ser modulada pelo ordenamento conforme a situação concreta e a finalidade pública envolvida.&nbsp;&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Além da calibragem dos percentuais, o ordenamento jurídico federal prevê hipóteses de isenção e redução das cobranças patrimoniais, para atender a situações específicas em que a cobrança padrão seria contraproducente ou injusta.\u003c/span>\u003c/p>"}}]},{"id":"b_mtaicp3l_knr5","type":"collapsiblesection","props":{"triggerLabel":"Clique para expandir","defaultOpen":false,"width":"content","surface":"none","pad":"lg","__pullUp":true},"children":[{"id":"b_mtaicp3l_cqn2","type":"titulo","props":{"text":"O que essa lógica revela para a gestão patrimonial?&nbsp;","level":"h3"}},{"id":"b_mtaicp3l_yvbb","type":"prose","props":{"html":"\u003cp>Compreender a dimensão econômica das contrapartidas exige mais do que conhecer tabelas, percentuais ou fórmulas de cálculo. Para o servidor que atua com imóveis públicos, interessa compreender a relação que existe entre o patrimônio, sua utilização, o benefício proporcionado ao usuário e a forma pela qual a legislação determina (ou não) uma retribuição ao Poder Público.&nbsp;\u003c/p>"}},{"id":"b_mtaicp3l_v8nc","type":"collapsebreak","props":{}},{"id":"b_mtaicp3l_zn7j","type":"prose","props":{"html":"\u003cp>Esse olhar é importante inclusive para identificar situações em que o potencial econômico do patrimônio pode estar sendo pouco conhecido ou explorado. Um ente pode possuir imóveis capazes de gerar receitas e, ao mesmo tempo, dispor de poucos instrumentos para fazê-lo; pode possuir instrumentos previstos em sua legislação, mas utilizá-los pouco; ou pode não conhecer suficientemente as características e os valores de seus imóveis para avaliar esse potencial. Reconhecer essas possibilidades já constitui um passo importante para uma gestão patrimonial mais qualificada.&nbsp;\u003c/p>\u003cp>Ao mesmo tempo, identificar potencial econômico não equivale a decidir a destinação do imóvel. Essa decisão envolve uma análise mais ampla das alternativas de utilização do patrimônio e das políticas públicas envolvidas, objeto de outros conteúdos do Programa. Aqui, a perspectiva é mais específica: tornar visível a dimensão econômica dos imóveis e compreender os mecanismos pelos quais sua utilização pode gerar retorno financeiro para a coletividade.&nbsp;\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Isso permite evitar dois extremos: tratar todo imóvel público como ativo que deve necessariamente maximizar receitas ou, no sentido oposto, desconsiderar sua capacidade de produzir retorno econômico mesmo quando essa possibilidade está prevista na legislação e é compatível com sua utilização.&nbsp;\u003c/span>\u003c/p>\u003cp>Para quem atua na gestão patrimonial, portanto, uma questão relevante é conhecer o repertório disponível em seu próprio ente: quais utilizações podem ser onerosas? Quais instrumentos existem? Como são definidas as contrapartidas? Há hipóteses de gratuidade ou tratamento diferenciado? Esses mecanismos são efetivamente utilizados? As respostas podem revelar possibilidades ainda pouco exploradas na gestão do patrimônio.&nbsp;\u003c/p>"}},{"id":"b_mtaicp3m_hmxi","type":"callout","props":{"variant":"ear","tone":"attention","icon":"lightbulb","title":"","heading":"","children":"\u003cp>As contrapartidas financeiras não seguem uma lógica única. Seus valores e condições dependem do instrumento, da forma de utilização, da base de cálculo e das regras estabelecidas para cada situação. A experiência da União mostra que também podem existir isenções, reduções e outros tratamentos diferenciados. Compreender essa dimensão econômica significa, portanto, conhecer tanto as possibilidades de geração de receitas quanto as condições e os limites estabelecidos para sua cobrança, sem transformar a arrecadação em finalidade exclusiva da gestão dos imóveis públicos.&nbsp;\u003c/p>","color":""}}]},{"id":"bfg25fqy","type":"section","props":{"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"cw5sg4sf","type":"titulo","props":{"text":"Da cobrança ao recebimento&nbsp;\u003cbr>\u003cspan style=\"font-weight: normal;\">O que envolve a gestão de receitas patrimoniais?&nbsp;\u003c/span>\u003cbr>","level":"h2"}},{"id":"cksuqv52","type":"prose","props":{"html":"\u003cp>Conhecer os instrumentos de geração de receitas e compreender a lógica das contrapartidas é importante, mas há uma questão adicional para quem atua na gestão patrimonial: como saber se o potencial econômico do patrimônio está efetivamente se convertendo em recursos para o Poder Público?&nbsp;\u003c/p>\u003cp>Comparar entes públicos exige cautela. União, estados e municípios possuem patrimônios, legislações, instrumentos e estruturas administrativas diferentes.&nbsp;&nbsp;\u003c/p>"}},{"id":"byexahvw","type":"accordion","props":{"numbered":false,"items":[{"title":"Quando uma possibilidade de cobrança se transforma em obrigação?&nbsp;","content":"\u003cp>A existência de uma hipótese legal de cobrança não significa, por si só, que determinado valor já seja devido. É preciso que se configure a situação prevista na legislação ou no instrumento que dá origem à obrigação.&nbsp;Dependendo da receita, essa situação pode decorrer da utilização do imóvel durante determinado período, da celebração ou execução de um instrumento oneroso, da ocorrência de uma operação específica ou de outro fato definido pela legislação.&nbsp;\u003c/p>\u003cp>Para quem atua na gestão de receitas, identificar corretamente o fato que dá origem à obrigação, o responsável pelo pagamento, a base de cálculo e o período ou momento a que a cobrança se refere é fundamental. Erros nesses elementos podem produzir cobranças indevidas, valores incorretos ou dificuldades posteriores para sua recuperação. Relembrando: É também o fato que origina o ingresso que ajuda a compreender sua classificação como receita pública.&nbsp;\u003c/p>"},{"title":"Por que a qualidade das informações é tão importante?","content":"A gestão das receitas depende diretamente da qualidade das informações que sustentam a cobrança. \u003cmark data-hl=\"terra\">Quem deve pagar? Por qual imóvel? Em razão de qual utilização ou operação? Qual é a base de cálculo? Qual o período da obrigação? O valor foi atualizado corretamente? Houve pagamento?\u003c/mark>\u003cp>Essas perguntas mostram que a gestão de receitas está conectada a diferentes informações patrimoniais, cadastrais, financeiras e jurídicas. Cadastros desatualizados, inconsistências na identificação do responsável ou informações inadequadas sobre o imóvel podem repercutir diretamente na cobrança.&nbsp;\u003cp>Mais do que uma questão operacional, trata-se de segurança jurídica para o Poder Público e para o usuário. Uma receita bem administrada precisa estar apoiada em informações que permitam demonstrar porque determinado valor é devido e como ele foi calculado.&nbsp;\u003c/p>\u003c/p>","linkHref":"","linkLabel":"","linkButton":""},{"title":"E quando o valor não é pago?","content":"O não pagamento não encerra a obrigação. A partir do vencimento, o crédito pode ficar sujeito aos mecanismos de cobrança previstos na legislação aplicável, inclusive incidência de acréscimos, cobrança administrativa e, quando cabível, encaminhamento para os procedimentos de recuperação do crédito.&nbsp;\u003cp>É importante distinguir essa situação das multas decorrentes de infrações. Juros, atualização ou outros encargos decorrentes do atraso no pagamento de uma obrigação não se confundem, necessariamente, com uma sanção aplicada pela prática de uma infração patrimonial. Essa diferenciação ajuda a evitar uma confusão conceitual bastante comum.&nbsp;\u003c/p>","linkHref":"","linkLabel":"","linkButton":""}]}},{"id":"blhazvl8","type":"prose","props":{"html":"\u003cp>A gestão de receitas começa quando uma situação prevista na legislação ou em determinado instrumento dá origem a uma obrigação financeira e não termina com a emissão da cobrança. Identificar corretamente o responsável, apurar o valor devido, cobrar, arrecadar e tratar os créditos não pagos são dimensões de um processo que depende de informações confiáveis, regras claras e segurança jurídica. Os procedimentos variam entre os entes, mas compreender essa lógica ajuda a reconhecer o que está envolvido na administração das receitas provenientes dos imóveis públicos.&nbsp;\u003c/p>"}}]},{"id":"b0kq6dtj","type":"conclusion","props":{"kicker":"Para fechar","kickerIcon":"check","title":"Conclusão","body":"\u003cp>A geração e a gestão de receitas constituem uma dimensão relevante da administração dos imóveis públicos. Quando a legislação admite a utilização onerosa do patrimônio ou estabelece obrigações financeiras relacionadas aos imóveis, cabe ao Poder Público conhecer essas possibilidades e administrar adequadamente as receitas delas decorrentes.&nbsp;\u003c/p>\u003cp>Ao longo deste material, vimos que a cobrança de uma contrapartida pode se justificar quando a utilização do patrimônio proporciona benefício individualizado ou retorno econômico ao usuário, sem que isso signifique que todo uso exclusivo ou economicamente vantajoso deva ser necessariamente oneroso. As possibilidades, condições e instrumentos dependem das regras aplicáveis a cada ente e da situação concreta.&nbsp;\u003c/p>\u003cp>Também vimos que as receitas provenientes dos imóveis não formam uma categoria única no sistema de receitas públicas. Recursos decorrentes da fruição ou exploração do patrimônio, da alienação de imóveis, de multas ou de outras obrigações podem receber classificações distintas. Compreender essas diferenças é importante para utilizar corretamente conceitos como receita patrimonial e reconhecer a natureza dos recursos administrados.&nbsp;\u003c/p>\u003cp>A dimensão econômica das contrapartidas também exige cautela. Não há uma lógica única que explique todas as cobranças. Valores, percentuais, bases de cálculo, isenções e tratamentos diferenciados decorrem das regras estabelecidas pelo ordenamento. A experiência da União oferece exemplos desse repertório, mas estados e municípios possuem patrimônios e marcos jurídicos próprios, que precisam ser conhecidos por quem atua em sua gestão.&nbsp;\u003c/p>\u003cp>Por fim, a gestão de uma receita não se resume à definição do valor a ser pago. Ela envolve conhecer a obrigação e seu fundamento, identificar corretamente o responsável e o imóvel, apurar os valores devidos, realizar a cobrança e acompanhar seu pagamento, adotando, quando necessário, as providências previstas para os créditos não pagos. Informações confiáveis e regras claras são fundamentais para conferir segurança jurídica a todo esse processo.&nbsp;\u003c/p>\u003cp>O desafio, portanto, é incorporar a dimensão econômica à gestão dos imóveis públicos sem reduzi-los à sua capacidade de produzir receitas, mas também sem ignorar as possibilidades legítimas de retorno financeiro à coletividade quando elas estiverem previstas no ordenamento.&nbsp;\u003c/p>"},"children":[{"id":"buftnfmi","type":"panel","props":{"variant":"box","kicker":"Para refletir","kickerIcon":"brain","title":"","color":"","bg":"var(--cloud-100)","body":""},"children":[{"id":"b9dzj2xw","type":"markerlist","props":{"variant":"icon","icon":"circle-question-mark","accent":"","items":[{"title":"\u003cspan style=\"font-weight: normal;\">Ao lidar com uma cobrança relacionada a um imóvel público, você costuma compreender o que justifica aquela contrapartida ou apenas aplicar as regras e procedimentos estabelecidos?&nbsp;\u003c/span>\u003cbr>","text":""},{"title":"\u003cspan style=\"font-weight: normal;\">Como evitar que a busca pela arrecadação leve a uma aplicação automática das cobranças, sem considerar as particularidades da situação e os tratamentos diferenciados previstos na legislação?&nbsp;\u003c/span>\u003cbr>","text":""},{"title":"\u003cspan style=\"font-weight: normal;\">Em sua atuação, como conciliar a responsabilidade de assegurar as receitas devidas ao Poder Público com a compreensão de que a arrecadação não é, por si só, a finalidade da gestão dos imóveis públicos?&nbsp;\u003c/span>\u003cbr>","text":""}]}}]},{"id":"bi8vpq1k","type":"referencias","props":{"title":"Referências","defaultOpen":false,"items":["BRASIL. \u003cb>Decreto-Lei nº 2.398, de 21 de dezembro de 1987\u003c/b>. Dispõe sobre foros, aforamentos e taxas de ocupação relativas aos imóveis de propriedade da União, e dá outras providências. Brasília, DF: Presidência da República, 1987.","BRASIL. \u003cb>Decreto-Lei nº 9.760, de 5 de setembro de 1946\u003c/b>. Dispõe sobre os bens imóveis da União e dá outras providências. Rio de Janeiro: Presidência da República, 1946.","BRASIL. \u003cb>Lei nº 4.320, de 17 de março de 1964\u003c/b>. Estatui Normas Gerais de Direito Financeiro para elaboração e controle dos orçamentos e balanços da União, dos Estados, dos Municípios e do Distrito Federal. Brasília, DF: Presidência da República, 1964. Art. 11.","BRASIL. \u003cb>Lei nº 9.636, de 15 de maio de 1998\u003c/b>. Dispõe sobre a regularização, administração, aforamento e alienação de bens imóveis de domínio da União, e dá outras providências. Brasília, DF: Presidência da República, 1998.","BRASIL. \u003cb>Lei nº 10.406, de 10 de janeiro de 2002\u003c/b>. Institui o Código Civil. Brasília, DF: Presidência da República, 2002. Arts. 98–101.","BRASIL. \u003cb>Lei nº 13.240, de 30 de dezembro de 2015\u003c/b>. Dispõe sobre a administração, a alienação, a transferência de gestão de imóveis da União, e dá outras providências. Brasília, DF: Presidência da República, 2015.","BRASIL. Secretaria do Tesouro Nacional; SECRETARIA DE ORÇAMENTO FEDERAL. \u003cb>Manual de receita nacional\u003c/b>. Brasília, DF: STN/SOF, 2008.","GONÇALVES, M. Receitas patrimoniais: laudêmio, foro e taxa de ocupação. \u003cb>Boletim Jurídico\u003c/b>, [S. l.], n. 651, 2009."]}}]},{"id":"bik3xe45","type":"pagefooter","props":{"code":"Fundamentos para compreender e gerir receitas provenientes de imóveis públicos [M521]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo","name":"William de Sousa Dias, Clauber Teixeira Rodrigues&nbsp;"},{"role":"Revisão e Adaptação didática","name":"Claudson Moreira"},{"role":"Design Educacional","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Agosto de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{"bksz8zso__slot":{"s":1,"x":0,"y":0,"u":"assets/images/img-0-bksz8zso__slot.png"}}</script>
+<script id="spu-lucide-icons" type="application/json">{"badge-dollar-sign":"\u003cpath d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"/>\u003cpath d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"/>\u003cpath d=\"M12 18V6\"/>","badge-question-mark":"\u003cpath d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"/>\u003cpath d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/>\u003cline x1=\"12\" x2=\"12.01\" y1=\"17\" y2=\"17\"/>","banknote-arrow-up":"\u003cpath d=\"M12 18H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5\"/>\u003cpath d=\"M18 12h.01\"/>\u003cpath d=\"M19 22v-6\"/>\u003cpath d=\"m22 19-3-3-3 3\"/>\u003cpath d=\"M6 12h.01\"/>\u003ccircle cx=\"12\" cy=\"12\" r=\"2\"/>","brain":"\u003cpath d=\"M12 18V5\"/>\u003cpath d=\"M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4\"/>\u003cpath d=\"M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5\"/>\u003cpath d=\"M17.997 5.125a4 4 0 0 1 2.526 5.77\"/>\u003cpath d=\"M18 18a4 4 0 0 0 2-7.464\"/>\u003cpath d=\"M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517\"/>\u003cpath d=\"M6 18a4 4 0 0 1-2-7.464\"/>\u003cpath d=\"M6.003 5.125a4 4 0 0 0-2.526 5.77\"/>","check":"\u003cpath d=\"M20 6 9 17l-5-5\"/>","circle-dollar-sign":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8\"/>\u003cpath d=\"M12 18V6\"/>","circle-question-mark":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"/>\u003cpath d=\"M12 17h.01\"/>","compass":"\u003ccircle cx=\"12\" cy=\"12\" r=\"10\"/>\u003cpath d=\"m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z\"/>","landmark":"\u003cpath d=\"M10 18v-7\"/>\u003cpath d=\"M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z\"/>\u003cpath d=\"M14 18v-7\"/>\u003cpath d=\"M18 18v-7\"/>\u003cpath d=\"M3 22h18\"/>\u003cpath d=\"M6 18v-7\"/>","lightbulb":"\u003cpath d=\"M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5\"/>\u003cpath d=\"M9 18h6\"/>\u003cpath d=\"M10 22h4\"/>","map-pin":"\u003cpath d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"/>\u003ccircle cx=\"12\" cy=\"10\" r=\"3\"/>","replace":"\u003cpath d=\"M14 4a1 1 0 0 1 1-1\"/>\u003cpath d=\"M15 10a1 1 0 0 1-1-1\"/>\u003cpath d=\"M21 4a1 1 0 0 0-1-1\"/>\u003cpath d=\"M21 9a1 1 0 0 1-1 1\"/>\u003cpath d=\"m3 7 3 3 3-3\"/>\u003cpath d=\"M6 10V5a2 2 0 0 1 2-2h2\"/>\u003crect x=\"3\" y=\"14\" width=\"7\" height=\"7\" rx=\"1\"/>"}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__always,.spu-csection__body{display:flex;flex-direction:column;gap:var(--flow-block)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);width:max-content;margin-top:var(--flow-block);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__summary[aria-expanded="true"] svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-csection__body[hidden]{display:none}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__body{display:flex!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint ? NS.isPrint() : window.__SPU_PRINT === true;
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing;
+        var items = React.Children.toArray(props.children);
+        function blockType(node){
+          if(!React.isValidElement(node)) return '';
+          if(node.props && node.props.block && node.props.block.type) return node.props.block.type;
+          return React.Children.toArray(node.props && node.props.children).map(blockType).filter(Boolean)[0] || '';
+        }
+        var markerIndex = items.findIndex(function(item){ return blockType(item) === 'collapsebreak'; });
+        var alwaysVisible = markerIndex >= 0 ? items.slice(0, markerIndex) : [];
+        var collapsed = markerIndex >= 0 ? items.slice(markerIndex + 1) : items;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            alwaysVisible.length && React.createElement('div', { className:'spu-csection__always spu-blockstack' }, alwaysVisible),
+            !printing && React.createElement('button', {
+                type:'button',
+                className:'spu-csection__summary',
+                'aria-expanded':forcedOpen || open,
+                onClick:function(){ if(!forcedOpen) setOpen(!open); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body spu-blockstack', hidden:!(forcedOpen || open) }, collapsed)
+          )
+        );
+      };
+      NS.CollapseBreak = function(){ return null; };
+      var markerDefinition = {
+        type:'collapsebreak', component:'CollapseBreak', label:'Botão de recolher',
+        icon:'chevron-down', cat:'Estrutura', kind:'marker', internal:true, props:{}
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container', stack:false,
+        fields:['triggerLabel'], allowedTypes:registry.childTypes.concat([markerDefinition.type]),
+        props:{ triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.blocks.push(markerDefinition);
+      registry.byType[definition.type] = definition;
+      registry.byType[markerDefinition.type] = markerDefinition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type === markerDefinition.type) return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:markerDefinition.type, props:{} };
+        if(type !== definition.type) return originalNewBlock(type, child);
+        var props = JSON.parse(JSON.stringify(definition.props));
+        props.children = [registry.newBlock(markerDefinition.type, true)];
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:props };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function safeDefinition(value){
+    var box = document.createElement('div');
+    box.innerHTML = String(value || '');
+    var allowed = ['STRONG','B','EM','I','BR','P','SPAN'];
+    Array.from(box.querySelectorAll('*')).forEach(function(el){
+      if(el.tagName === 'SCRIPT' || el.tagName === 'STYLE'){ el.remove(); return; }
+      if(allowed.indexOf(el.tagName) < 0){ el.replaceWith.apply(el, Array.from(el.childNodes)); return; }
+      Array.from(el.attributes).forEach(function(attr){ el.removeAttribute(attr.name); });
+    });
+    return box.innerHTML;
+  }
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('data-definition') || el.getAttribute('title') || el.getAttribute('data-def') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span class="spu-term-pop__def"></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('.spu-term-pop__def').innerHTML = safeDefinition(def);
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>
