@@ -1,0 +1,1073 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M531 - Benchmarking modelos de gestão profissional de imóveis públicos",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": [
+        {
+          "id": "bzhydct5",
+          "text": "Experiências brasileiras",
+          "hidden": false
+        },
+        {
+          "id": "b2lz51js",
+          "text": "Experiências internacionais",
+          "hidden": false
+        },
+        {
+          "id": "csvj9cri",
+          "text": "Análise comparativa",
+          "hidden": false
+        }
+      ]
+    }
+  },
+  "blocks": [
+    {
+      "id": "b0d6t86v",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "bmml5die",
+      "type": "hero",
+      "props": {
+        "kicker": "Modelos de negócio e inovação patrimonial",
+        "kickerIcon": "compass",
+        "title": "Modelos de gestão profissional de imóveis públicos",
+        "byline": "Benchmarking nacional e internacional",
+        "slot": "bmml5die__slot"
+      }
+    },
+    {
+      "id": "b9okykr0",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cgf36vir",
+          "type": "prose",
+          "props": {
+            "html": "<p>A gestão do patrimônio imobiliário público vem passando por importantes transformações em diversos países. Em vez de enxergar imóveis públicos apenas como bens a serem cadastrados, conservados ou alienados, governos têm adotado modelos de administração cada vez mais estratégicos, buscando utilizar esses ativos para reduzir despesas, apoiar políticas públicas, induzir o desenvolvimento urbano e territorial, melhorar a prestação de serviços e gerar valor para a sociedade.</p>"
+          }
+        },
+        {
+          "id": "b1t7573a",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "globe-check",
+            "title": "Aprendendo com outras Experiências",
+            "heading": "",
+            "children": "<p>A análise comparativa de iniciativas nacionais e internacionais permite identificar diferentes arranjos institucionais, modelos de governança, instrumentos financeiros e estratégias de gestão patrimonial que, observadas as especificidades jurídicas, administrativas e fiscais de cada realidade, podem servir de referência para o aperfeiçoamento da gestão dos imóveis públicos e para o desenvolvimento de soluções inovadoras.</p>"
+          }
+        },
+        {
+          "id": "b_mta7ctyr_6zks",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Apresentaremos aqui alguns casos representativos, destacando as principais características, resultados alcançados e potenciais contribuições para a formulação e implementação de políticas de gestão patrimonial no setor público.&nbsp;</span><mark data-hl=\"terra\" style=\"text-wrap-mode: initial;\">A proposta não é indicar um modelo único ou defender a reprodução integral de qualquer experiência</mark><span style=\"text-wrap-mode: initial; color: inherit;\">. Ao contrário, busca-se demonstrar que diferentes instrumentos, como fundos patrimoniais, agências especializadas, estruturas de gestão profissional, mecanismos de reinvestimento e modelos de governança inovadores, podem contribuir para ampliar o valor público gerado pelos imóveis, desde que estejam alinhados às necessidades da Administração Pública e às funções sociais, ambientais, econômicas e territoriais do patrimônio.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Nesta leitura, você perceberá que a gestão patrimonial contemporânea envolve escolhas estratégicas sobre como utilizar o patrimônio imobiliário para apoiar políticas públicas, fortalecer a capacidade do Estado e promover o desenvolvimento sustentável dos territórios. Esperamos que esse conhecimento contribua na identificação de oportunidades, avaliação de alternativas e compreensão das tendências contemporâneas na administração de ativos imobiliários públicos.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bboh5sk0",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bzhydct5",
+          "type": "titulo",
+          "props": {
+            "text": "Experiências brasileiras",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "bth8yyoa",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Brasil possui experiências relevantes de profissionalização da gestão patrimonial, desenvolvidas em diferentes contextos e com objetivos variados. Embora adotem instrumentos distintos, essas iniciativas compartilham uma preocupação comum: utilizar o patrimônio imobiliário de forma mais estratégica, superando uma visão meramente registral ou arrecadatória e buscando ampliar o valor público gerado pelos ativos. Nesta seção, são apresentados três casos que ilustram diferentes modelos de governança, financiamento e gestão: o Fundo de Investimento Imobiliário do Estado de São Paulo, o Fun-Patrimônio do Município de Porto Alegre e a Operação Urbana Consorciada Porto Maravilha, no Rio de Janeiro.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "blrjy027",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para ver essa experiência",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bkucrmpe",
+          "type": "kicker",
+          "props": {
+            "icon": "map-pin",
+            "children": "<span data-fs=\"body-lg\">Estado de São Paulo</span>"
+          }
+        },
+        {
+          "id": "biwe5frg",
+          "type": "titulo",
+          "props": {
+            "text": "Fundo de Investimento Imobiliário",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bbygug48",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Estado de São Paulo enfrentava, ao final dos anos 2010, um desafio significativo de gestão patrimonial, com um acervo imobiliário caracterizado por ociosidade, subutilização e deterioração. O patrimônio estadual compreendia aproximadamente trinta mil imóveis, muitos deles em desuso, que geravam custos permanentes sem gerar retorno, enquanto a administração tentava há anos alienar esses bens com pouco sucesso. </p>"
+          }
+        },
+        {
+          "id": "ckf4jft1",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "bzolakws",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "info",
+            "icon": "circle-question-mark",
+            "title": "por que criar o FII?",
+            "heading": "",
+            "children": "<p>A motivação para criar o Fundo de Investimento Imobiliário – FII derivava da necessidade de modernizar a gestão deste patrimônio, permitir sua comercialização de forma estruturada. </p>"
+          }
+        },
+        {
+          "id": "bot9oxvo",
+          "type": "prose",
+          "props": {
+            "html": "<p>O FII do Estado de São Paulo foi constituído sob a regulação da Lei Estadual 16.388, de dezembro de 2016 (primeira lei estadual no Brasil a autorizar expressamente a criação de fundo de investimento imobiliário por ente público), operando sob os marcos jurídicos federais que regem fundos imobiliários (Lei 8.668/1993 e Instrução CVM 472/2008). O Estado de São Paulo atuou como cotista único inicial do fundo. A administração foi contratada por licitação pública, sendo a Socopa Corretora Paulista e a TG Core Asset selecionadas para estruturar, administrar, custodiar e operar o fundo por período inicial de cinco anos. O FII do Estado de São Paulo foi estruturado com portfólio inicial de 264 imóveis distribuídos em 56 municípios do Estado, com valor total estimado em aproximadamente R$ 1 bilhão e imóveis de uso misto. </p>"
+          }
+        },
+        {
+          "id": "bvjc5t69",
+          "type": "statblock",
+          "props": {
+            "variant": "rule",
+            "columns": 3,
+            "stats": [
+              {
+                "value": "264 ",
+                "unit": "imóveis",
+                "label": "portfólio inicial",
+                "description": ""
+              },
+              {
+                "value": "56",
+                "unit": "municípios",
+                "label": "do estado de SP",
+                "description": ""
+              },
+              {
+                "value": "1 bi",
+                "unit": "&nbsp;R$",
+                "label": "valor total estimado",
+                "description": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b70me2w2",
+          "type": "prose",
+          "props": {
+            "html": "<p>As atividades tiveram início em março de 2018, com expectativa de arrecadação de aproximadamente R$ 300 milhões no primeiro ano. A seleção priorizou propriedades subutilizadas e ociosas em centros regionais e áreas urbanas de maior potencial de comercialização, incluindo edifícios comerciais, galpões industriais, terrenos e imóveis de uso misto <span data-fs=\"caption\"><span data-color=\"terra\"><span data-term=\"[1]\" data-definition=\"Secretaria da Fazenda do Estado de São Paulo. Relatório de Gestão do FII Patrimônio SP. São Paulo: Subsecretaria de Patrimônio do Estado, 2022. Disponível em: www.fazenda.sp.gov.br\">[1]</span></span></span>.</p>"
+          }
+        },
+        {
+          "id": "bprzmmf0",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>O modelo se diferenciou do processo tradicional de alienação direta ao permitir que a Secretaria de Patrimônio Estadual comercializasse ativos de forma profissionalizada, sem necessidade de aprovação legislativa para cada operação individual.&nbsp;</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b_mta8mf3t_tdxr",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A Subsecretaria de Patrimônio do Estado gerou R$ 1,33 bilhão em receitas, incluindo R$ 700 milhões em vendas de imóveis e R$ 470 milhões em cotas do fundo. O modelo repercutiu em outras unidades federadas: Bahia e Alagoas iniciaram iniciativas inspiradas na experiência paulista </span><span data-fs=\"caption\" style=\"text-wrap-mode: initial; color: inherit;\"><span data-color=\"terra\"><span data-term=\"[2]\" data-definition=\"Os dados incluem R$ 700 milhões em receitas de vendas de imóveis e R$ 470 milhões em cotas do fundo, conforme relatório oficial da Subsecretaria de Patrimônio do Estado de São Paulo.\">[2]</span></span></span><span style=\"text-wrap-mode: initial; color: inherit;\">. A escala de venda mostrou-se inferior à projetada em alguns períodos, refletindo oscilações no mercado imobiliário e a dificuldade de realizar transações de grande volume em prazos curtos. A liquidez das cotas no mercado secundário permaneceu limitada, com períodos de baixíssimo volume de negociação.</span></p>"
+          }
+        },
+        {
+          "id": "bgcve870",
+          "type": "examplecard",
+          "props": {
+            "label": "<br>",
+            "icon": "notebook-pen",
+            "color": "var(--green-700)",
+            "slot": "bgcve870__slot",
+            "collapse": "none",
+            "title": "",
+            "body": "<p>Embora tenha ampliado a capacidade de alienação dos imóveis públicos, <mark data-hl=\"terra\">a experiência não solucionou integralmente o problema da subutilização patrimonial</mark>. A venda dos ativos, desacompanhada de uma estratégia permanente de requalificação e reocupação, não interrompe o ciclo de deterioração do patrimônio remanescente. Além disso, a estrutura legal do fundo não vincula as receitas obtidas com as alienações ao reinvestimento no patrimônio imobiliário estadual. Assim, os recursos arrecadados ingressam no Tesouro Estadual como receitas de capital e podem ser destinados a outras despesas de capital, <mark>sem garantia de retorno ao ciclo de melhoria patrimonial</mark>.</p><p>O modelo paulista apresenta grande relevância como referência jurídica e operacional: foi o primeiro fundo imobiliário público estruturado no Brasil, e demonstrou a viabilidade do arranjo com resultados concretos.</p>"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "b_mta82md4_pwmj",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para ver essa experiência",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mta82md4_wz0y",
+          "type": "kicker",
+          "props": {
+            "icon": "map-pin",
+            "children": "<span data-fs=\"body-lg\">Porto Alegre</span>"
+          }
+        },
+        {
+          "id": "b_mta82md4_bm72",
+          "type": "titulo",
+          "props": {
+            "text": "Fun-Patrimônio",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_mta82md4_s9a3",
+          "type": "prose",
+          "props": {
+            "html": "<p>A Prefeitura Municipal de Porto Alegre criou o Fundo do Patrimônio Imobiliário (Fun-Patrimônio) em contexto dificuldades orçamentárias que caracterizaram a administração municipal ao longo da década de 2020. O diagnóstico municipal indicava que o patrimônio urbano acumulava atrasos significativos em manutenção preventiva e corretiva, com consequências para a prestação de serviços e a preservação de bens de valor histórico e cultural.</p>"
+          }
+        },
+        {
+          "id": "b_mta82md4_gg0r",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mta82md4_cclw",
+          "type": "prose",
+          "props": {
+            "html": "<p>O fundo surgiu como resposta à necessidade de financiar projetos de restauração, revitalização e manutenção do patrimônio histórico e imobiliário da cidade (particularmente edifícios emblemáticos como o Hospital de Pronto Socorro – HPS, o Centro Histórico e o Mercado Público), sem aumentar a carga fiscal municipal ou depender exclusivamente de alocações orçamentárias. F<span style=\"color: inherit; text-wrap-mode: initial;\">oi instituído pela Lei Complementar Municipal 942, de 25 de maio de 2022, e regulamentado pelo Decreto Municipal 21.658, de 23 de setembro de 2022 </span><span data-fs=\"caption\" style=\"color: inherit; text-wrap-mode: initial;\"><span data-color=\"terra\">[3]</span></span><span style=\"color: inherit; text-wrap-mode: initial;\">.&nbsp;</span></p>"
+          }
+        },
+        {
+          "id": "b_mta82md4_byel",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "como funciona?",
+            "kickerIcon": "circle-dollar-sign",
+            "title": "",
+            "color": "",
+            "bg": "var(--cloud-100)",
+            "body": "<p>Diferentemente do FII estadual paulista, o Fun-Patrimônio não assume a forma de fundo de investimento imobiliário, mas opera como <b>fundo de gestão patrimonial municipal</b>.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Funciona como repositório de recursos financeiros provenientes de receitas especiais: venda ou alienação de bens imóveis municipais, indenizações por danos ao patrimônio público, contribuições de terceiros e outras fontes determinadas por lei.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">O Fundo é administrado por um Comitê Gestor composto por representantes de cinco órgãos da Prefeitura Municipal de Porto Alegre (PMPA), presidido pela Secretaria Municipal de Administração e Patrimônio (SMAP). A governança é exercida pela Secretaria Municipal de Administração e Patrimônio (SMAP). Para solicitar recursos do Fun-Patrimônio, é necessário encaminhar um processo administrativo com um projeto técnico e uma estimativa de valor da obra. O Comitê Gestor analisa e aprova as destinações de recursos do Fun-Patrimônio. São priorizados os imóveis de valor histórico, cultural ou essencial aos serviços públicos.</span></p>"
+          },
+          "children": []
+        },
+        {
+          "id": "bhs8o5ql",
+          "type": "statblock",
+          "props": {
+            "variant": "rule",
+            "columns": 3,
+            "stats": [
+              {
+                "value": "R$ 23,4",
+                "unit": "&nbsp;mi",
+                "label": "arrecadação total de 2023",
+                "description": "oriunda principalmente de permissões de uso e receitas de capital decorrentes da alienação de imóveis"
+              },
+              {
+                "value": "R$ 13,9",
+                "unit": "&nbsp;mi",
+                "label": "arrecadação total de 2024",
+                "description": "predominância das receitas vinculadas à alienação e à exploração de ativos existentes"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bq99p8r2",
+          "type": "examplecard",
+          "props": {
+            "label": "",
+            "icon": "notebook-pen",
+            "color": "var(--green-700)",
+            "slot": "bq99p8r2__slot",
+            "collapse": "none",
+            "title": "<span data-fs=\"h4\">O Fun-Patrimônio produziu resultados concretos</span>",
+            "body": "<p>O projeto de maior destaque foi a alocação de R$ 4,2 milhões para revitalização da fachada do <b>Hospital de Pronto Socorro</b>, edifício histórico que necessitava urgentemente de restauro. O fundo financiou ainda projetos de revitalização do Centro Histórico e melhorias em prédios de uso público. O modelo também permitiu arrecadar recursos por meio de ressarcimento de danos ao patrimônio público.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "b_mta82md4_ofrv",
+          "type": "markerlist",
+          "props": {
+            "variant": "icon",
+            "icon": "alert-circle",
+            "accent": "var(--green-700)",
+            "items": [
+              {
+                "title": "<span style=\"font-weight: normal;\"> A escala do Fun-Patrimônio é limitada pela quantidade e valor de alienações imobiliárias disponíveis no mercado municipal, restringindo a capacidade de financiar reformas ambiciosas.</span>",
+                "text": ""
+              },
+              {
+                "title": "<span style=\"font-weight: normal;\">O modelo também não inclui gestão operacional pós-reforma (<i>facilities</i>): imóveis restaurados continuam sob responsabilidade direta da administração municipal para manutenção futura, sem rompimento do ciclo de deterioração.</span>",
+                "text": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mta83x41_sm2h",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para ver essa experiência",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mta83x42_7vy3",
+          "type": "kicker",
+          "props": {
+            "icon": "map-pin",
+            "children": "<span data-fs=\"body-lg\">Rio de Janeiro</span>"
+          }
+        },
+        {
+          "id": "b_mta83x42_uoqj",
+          "type": "titulo",
+          "props": {
+            "text": "Operação urbana consorciada Porto Maravilha ",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_mta83x42_p3e7",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Fundo de Investimento Imobiliário Porto Maravilha nasceu como peça central de um projeto de revitalização urbana da zona portuária do Rio de Janeiro, no contexto da preparação para a Copa do Mundo de 2014 e, principalmente, das Olimpíadas de 2016. A região portuária carioca permanecia em abandono por décadas, com prédios deteriorados, infraestrutura obsoleta e baixa ocupação econômica. A Operação Urbana Consorciada Porto Maravilha, criada pela Lei Complementar Municipal 101, de 13 de novembro de 2009, instituiu o marco legal para essa transformação, permitindo ao município captar recursos por meio da venda de Certificados de Potencial Construtivo Adicional (CEPACs), títulos que conferem aos empreendedores o direito de construir acima dos limites urbanísticos originalmente estabelecidos para a região.</p>"
+          }
+        },
+        {
+          "id": "b_mta83x42_8efn",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mta9f7xr_6iq4",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A Lei Complementar Municipal nº 102, de 2009, criou a Companhia de Desenvolvimento Urbano da Região do Porto do Rio de Janeiro (CDURP), entidade responsável pela coordenação e acompanhamento da operação urbana. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Em 2011, foi constituído o Fundo de Investimento Imobiliário Porto Maravilha (FIIPM), administrado pela Caixa Econômica Federal. O fundo adquiriu, em leilão único, a totalidade dos 6.436.722 CEPACs emitidos pelo Município do Rio de Janeiro, mediante investimento de aproximadamente R$ 3,5 bilhões proveniente de recursos do Fundo de Garantia do Tempo de Serviço (FGTS).</span></p><p>A modelagem adotada resultou em uma separação relevante entre os riscos assumidos pelos diferentes agentes envolvidos. O Município recebeu antecipadamente os recursos decorrentes da alienação dos <span data-term=\"CEPACs\" data-definition=\"Certificados de Potencial Construtivo Adicional\">CEPACs</span>, destinando-os ao financiamento das obras e intervenções urbanas previstas. Por sua vez, o FIIPM passou a assumir o risco associado à futura comercialização desses certificados no mercado imobiliário, de forma a recuperar o investimento realizado. <span style=\"text-wrap-mode: initial; color: inherit;\">Paralelamente, foi estruturada uma Parceria Público-Privada (PPP) para execução e manutenção das obras e serviços urbanos da região, envolvendo consórcio privado responsável pela implantação das intervenções previstas.</span></p><p>A partir de 2015, a desaceleração da economia brasileira e a retração do mercado imobiliário reduziram significativamente a demanda por CEPACs, comprometendo a dinâmica originalmente prevista para geração de receitas do fundo. <span style=\"text-wrap-mode: initial; color: inherit;\">Além disso, empresas integrantes do consórcio responsável pelas obras foram impactadas pelas investigações decorrentes da Operação Lava Jato, contribuindo para atrasos e dificuldades na continuidade da execução contratual. Em 2017, o Consórcio Porto Novo suspendeu parte de suas atividades, exigindo maior participação do poder público na manutenção dos espaços urbanos implantados.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">Diante desse cenário, foram realizados aportes adicionais de recursos do FGTS para assegurar a continuidade das operações e preservar os ativos do empreendimento.</span></p>"
+          }
+        },
+        {
+          "id": "bnmvcxyx",
+          "type": "feature",
+          "props": {
+            "columns": 3,
+            "card": true,
+            "accent": "var(--terra-600)",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "ship",
+                "title": "Intervenções estruturantes na região portuária",
+                "text": "Sob a perspectiva urbanística, a operação viabilizou um amplo conjunto de intervenções estruturantes na região portuária, incluindo a implantação do Veículo Leve sobre Trilhos (VLT), construção de túneis, requalificação viária, ampliação de áreas públicas e implantação de equipamentos culturais de grande porte, como o Museu do Amanhã.<br>"
+              },
+              {
+                "icon": "house-plus",
+                "title": "Atração de investimentos privados e expansão da oferta imobiliária na região",
+                "text": "Dados divulgados pela CDURP indicam a realização de diversos empreendimentos residenciais e comerciais, com perspectiva de ampliação significativa da população residente na área revitalizada.<br>"
+              },
+              {
+                "icon": "banknote-arrow-up",
+                "title": "Retorno inicial abaixo do esperado para o investidor",
+                "text": "Sob a ótica financeira, entretanto, o desempenho do fundo foi afetado pela baixa liquidez do mercado de CEPACs durante parte relevante do período de maturação do projeto. Como consequência, o retorno esperado para o investidor mostrou-se inferior às projeções iniciais, exigindo reestruturações ao longo do tempo. Nos anos mais recentes, observou-se retomada gradual da comercialização de ativos e distribuição de rendimentos aos cotistas.<br>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bxfue65l",
+          "type": "examplecard",
+          "props": {
+            "label": "",
+            "icon": "notebook-pen",
+            "color": "var(--green-700)",
+            "slot": "bxfue65l__slot",
+            "collapse": "none",
+            "title": "",
+            "body": "<p>A experiência do Porto Maravilha oferece importantes aprendizados para a estruturação de veículos de investimento voltados ao desenvolvimento urbano:</p>"
+          },
+          "children": [
+            {
+              "id": "bihi0np6",
+              "type": "markerlist",
+              "props": {
+                "variant": "icon",
+                "icon": "check-circle",
+                "accent": "",
+                "items": [
+                  {
+                    "title": "<span style=\"font-weight: 400;\">A segregação entre o financiamento das intervenções públicas e o risco de comercialização dos ativos permite antecipar recursos para execução das obras, mas transfere ao investidor a exposição às oscilações do mercado imobiliário.<br></span>",
+                    "text": ""
+                  },
+                  {
+                    "title": "<span style=\"font-weight: 400;\">Modelos excessivamente dependentes da valorização imobiliária futura ou da demanda por instrumentos urbanísticos podem apresentar elevada sensibilidade a ciclos econômicos.<br></span>",
+                    "text": ""
+                  },
+                  {
+                    "title": "<span style=\"font-weight: 400;\">Projetos urbanos de grande escala exigem horizonte de maturação compatível com a dinâmica do mercado imobiliário e mecanismos de mitigação de riscos para cenários adversos.<br></span>",
+                    "text": ""
+                  },
+                  {
+                    "title": "<span style=\"font-weight: 400;\">A avaliação dos resultados deve considerar separadamente os impactos urbanísticos e os resultados financeiros, uma vez que o sucesso de uma política pública de requalificação urbana não necessariamente se traduz em retorno financeiro equivalente para os investidores envolvidos.<br></span>",
+                    "text": ""
+                  }
+                ]
+              }
+            },
+            {
+              "id": "bcm0u1qi",
+              "type": "prose",
+              "props": {
+                "html": "<p>A experiência demonstra que fundos imobiliários podem atuar como instrumentos relevantes de transformação urbana, desde que sua modelagem financeira esteja adequadamente alinhada aos riscos de mercado e ao horizonte de desenvolvimento dos projetos apoiados.</p>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "be41pe9v",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "terra-dark",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b2lz51js",
+          "type": "titulo",
+          "props": {
+            "text": "Experiências internacionais",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "bo7cvf5i",
+          "type": "prose",
+          "props": {
+            "html": "<p>Diversos países reformularam suas políticas de gestão patrimonial nas últimas décadas, criando organizações especializadas, adotando mecanismos inovadores de governança e incorporando princípios de eficiência, transparência e sustentabilidade financeira à administração dos imóveis públicos. Embora cada modelo reflita as características institucionais e jurídicas do respectivo país, é possível identificar tendências comuns, como a gestão integrada de carteiras imobiliárias, a cobrança pelo uso dos imóveis pelos órgãos públicos, o reinvestimento de receitas patrimoniais e a utilização de indicadores para apoiar a tomada de decisão.</p><p>As experiências apresentadas a seguir demonstram que a profissionalização da gestão patrimonial não está necessariamente associada à alienação de imóveis. Em muitos casos, o foco está na otimização da ocupação, na redução de custos, na modernização da infraestrutura pública e na criação de mecanismos capazes de assegurar que o patrimônio imobiliário contribua efetivamente para a consecução das políticas públicas e para a geração de valor para a sociedade.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bo8ux2mt",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b56j0cms",
+          "type": "kicker",
+          "props": {
+            "icon": "map-pin",
+            "children": "<span data-fs=\"body-lg\">Alemanha</span>"
+          }
+        },
+        {
+          "id": "b9q1tctd",
+          "type": "titulo",
+          "props": {
+            "text": "Bundesanstalt für Immobilienaufgaben (BImA)",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bpxr7yb4",
+          "type": "prose",
+          "props": {
+            "html": "<p>A Alemanha enfrentava, até o início dos anos 2000, um problema crônico de gestão descentralizada de seu patrimônio imobiliário federal. Cada ministério e órgão mantinha seus imóveis sob gestão direta, resultando em ineficiência administrativa, falta de transparência de custos e impossibilidade de implementar economias de escala. O governo federal gastava recursos significativos em manutenção fragmentada de edifícios, sem coordenação central sobre alocação de espaço, reformas necessárias ou alienação de propriedades ociosas.&nbsp;</p><p>A decisão de criar uma instituição centralizada respondeu à necessidade de transformar esse modelo não profissionalizado em uma operação mais moderna, capaz de reduzir custos enquanto assegurava espaço adequado para as funções dos órgãos públicos.</p>"
+          }
+        },
+        {
+          "id": "cf9aaz1z",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "bptnf6hs",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "b_mtaa9g2q_21x0",
+              "type": "prose",
+              "props": {
+                "html": "<p>A BImA foi criada pela Lei de 9 de dezembro de 2004 (<i>Gesetz zur Gründung einer Bundesanstalt für Immobilienaufgaben</i>) e iniciou suas operações em 1º de janeiro de 2005. Trata-se de uma instituição de direito público (<i>Anstalt des öffentlichen Rechts</i>), dotada de autonomia administrativa e operacional, responsável pela gestão do patrimônio imobiliário da União Federal alemã. As receitas geradas por suas operações retornam ao orçamento federal, contribuindo para os objetivos fiscais do governo alemão.</p><p>A lei dissolveu as estruturas anteriores (Escritórios Federais de Patrimônio, Escritórios Federais de Silvicultura e Departamentos de Patrimônio dos Conselhos Financeiros), transferindo seus ativos, passivos e quadro de pessoal para a nova instituição, concentrando em uma única organização toda a expertise de gestão imobiliária que estava dispersa.</p>"
+              }
+            },
+            {
+              "id": "b8beodf9",
+              "type": "figure",
+              "props": {
+                "slot": "b8beodf9__slot",
+                "src": "",
+                "fit": "contain",
+                "size": "full",
+                "title": "A BlmA responde ao Ministério de Finanças (Bundesfinanzministerium), que supervisiona sua estratégia geral",
+                "caption": "",
+                "credit": "Foto: dts Nachrichtenagentur",
+                "__pullDown": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "bxa0flhm",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>O sistema da BImA funciona sob o modelo locatário-locador (<i>Mieter-Vermieter-Modell</i>). Nesse sistema, os órgãos federais que ocupam imóveis geridos pela BImA pagam aluguéis baseados em preços de mercado, criando transparência de custos e incentivos para uso eficiente do espaço. Essa estrutura transforma o custo de ocupação de imóvel, anteriormente invisível no orçamento federal, em uma linha orçamentária explícita para cada ministério, criando incentivo econômico para racionalizar demandas por espaço. As receitas de aluguéis, juntamente com os valores obtidos pela venda de propriedades desnecessárias, são reinvestidas em reformas e modernização de prédios do portfólio, criando ciclo contínuo de melhoria sem necessidade de dotações orçamentárias adicionais.</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b_mtaa3o7u_0udm",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A BImA se consolidou como uma das maiores proprietárias imobiliárias da Alemanha. Seu portfólio compreende aproximadamente 453 mil hectares de terra, mais de 38 mil apartamentos para residência de servidores federais, e cerca de 5.100 propriedades destinadas a atividades administrativas. O balanço patrimonial da instituição atinge aproximadamente 22,3 bilhões de euros. A BImA gera anualmente cerca de 1,3 bilhão de euros em receitas de vendas e aluguéis, devolvidas ao orçamento federal, além de planejar a alienação gradual de aproximadamente 30 mil propriedades, com meta de 3 mil imóveis por ano, para financiar reformas do portfólio remanescente.</span></p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mtaa07r3_oh1l",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mtaa07r3_l96n",
+          "type": "kicker",
+          "props": {
+            "icon": "map-pin",
+            "children": "<span data-fs=\"body-lg\">Reino Unido</span>"
+          }
+        },
+        {
+          "id": "b_mtaa07r3_q81v",
+          "type": "titulo",
+          "props": {
+            "text": "Government Property Agency (GPA)",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_mtaa07r3_d0av",
+          "type": "prose",
+          "props": {
+            "html": "<p>O Reino Unido identificou, na década de 2010, que o conjunto de propriedades ocupadas pelo governo central britânico apresentava ineficiências significativas: volume excessivo de espaço por servidor, baixa ocupação, distribuição fragmentada entre agências em diferentes regiões, e falta de coordenação entre órgãos que poderiam compartilhar espaço. O <span data-term=\"Cabinet Office\" data-definition=\"O Cabinet Office (Gabinete) é um departamento do Governo do Reino Unido responsável por apoiar o primeiro-ministro e coordenar a execução das políticas públicas entre os demais ministérios\">Cabinet Office</span> reconheceu que a centralização da gestão dessas propriedades, combinada com estratégia de compartilhamento de espaço, representaria oportunidade significativa de economia de recursos públicos. A Government Property Agency (GPA), anunciada em 2017 e oficialmente estabelecida em 1º de abril de 2018, foi criada para operacionalizar essa racionalização.</p>"
+          }
+        },
+        {
+          "id": "b_mtaa07r3_pgoi",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "barpu024",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "first-wide",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "b96rxfv9",
+              "type": "prose",
+              "props": {
+                "html": "<p>A GPA constitui-se como <i>executive agency</i> do Cabinet Office, com mandato triplo:&nbsp;</p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">atuar como proprietária e gestora dos imóveis do governo central;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">consolidar e racionalizar o portfólio de propriedades; e&nbsp;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">gerar economias financeiras significativas.&nbsp;</span></li></ul></p><p>Possui autonomia operacional maior que um departamento governamental tradicional, mas permanece subordinada ao Cabinet Office em suas diretrizes estratégicas. Sua estrutura permite negociar com ministérios e agências como em uma relação de mercado interno, exigindo pagamento pelos metros quadrados ocupados.</p>"
+              }
+            },
+            {
+              "id": "bp13pcoc",
+              "type": "figure",
+              "props": {
+                "slot": "bp13pcoc__slot",
+                "src": "",
+                "fit": "cover",
+                "size": "full",
+                "title": "",
+                "caption": "",
+                "credit": "",
+                "__pullDown": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "bwh2qwz3",
+          "type": "kicker",
+          "props": {
+            "icon": "megaphone",
+            "children": "Destaques"
+          }
+        },
+        {
+          "id": "b74ezmta",
+          "type": "feature",
+          "props": {
+            "columns": 2,
+            "card": true,
+            "accent": "var(--slate-600)",
+            "layout": "top",
+            "items": [
+              {
+                "icon": "chart-column-decreasing",
+                "title": "Cross-charging",
+                "text": "<span data-fs=\"body\">O mecanismo central da GPA é o <b>cross-charging</b>: cada ministério ou agência paga pela quantidade de espaço que ocupa, fazendo com que esse custo apareça explicitamente em sua linha orçamentária. O cross-charging cria incentivo econômico poderoso para redução de área ocupada: <mark>ministérios que otimizam sua ocupação de espaço veem redução imediata em seus custos</mark>.&nbsp;</span><br>"
+              },
+              {
+                "icon": "building",
+                "title": "Government Hubs",
+                "text": "<span data-fs=\"body\">Government Hubs são centros regionais de escritórios compartilhados em cidades fora de Londres, baseados em espaço flexível, onde funcionários de múltiplos departamentos compartilham um único edifício. Por exemplo, o Birmingham Three Arena Central abrigou 4.600 servidores de três departamentos; o Erskine House, em Belfast, concentrou 1.600 servidores públicos.</span>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bxx1socu",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "attention",
+            "icon": "lightbulb",
+            "title": "",
+            "heading": "",
+            "children": "<p>O fechamento de oito edifícios de escritórios ineficientes em Londres gerou economia de aproximadamente 2 milhões de libras por ano. A consolidação do portfólio em Londres resultou em economias de 33,4 milhões de libras por ano em aluguéis e custos operacionais. A HMRC (agência fiscal britânica) projeta economias superiores a 90 milhões anuais a partir de 2026 <span data-fs=\"caption\"><span data-color=\"terra\">[8]</span></span> .</p>",
+            "color": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mtaa0kpd_duj0",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mtaa0kpd_jeaj",
+          "type": "kicker",
+          "props": {
+            "icon": "map-pin",
+            "children": "<span data-fs=\"body-lg\">Finlândia</span>"
+          }
+        },
+        {
+          "id": "b_mtaa0kpd_uhy8",
+          "type": "titulo",
+          "props": {
+            "text": "Senate Properties",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_mtaa0kpd_yc8i",
+          "type": "prose",
+          "props": {
+            "html": "<p>A Finlândia promoveu, durante os anos 1990, reformas estruturais amplas no setor público como parte de uma estratégia de modernização administrativa. O governo finlandês identificou que a gestão de seu patrimônio imobiliário, realizada por departamentos governamentais tradicionais, estava aquém dos padrões de eficiência desejados. A transformação de um departamento de gestão governamental em empresa estatal representava inovação nas práticas administrativas finlandesas, com objetivo de criar entidade que mantivesse natureza pública mas operasse com autonomia financeira e responsabilidade de autossustentação.</p>"
+          }
+        },
+        {
+          "id": "b_mtaa0kpd_rbva",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b4y5c0n7",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bhgl0wqz",
+              "type": "prose",
+              "props": {
+                "html": "<p>A <b>Senate Properties </b>(Senaatti-kiinteistöt em finlandês) constitui-se como empresa estatal não incorporada, operando sob supervisão do Ministério das Finanças da Finlândia. Sua forma jurídica (<i>unincorporated state enterprise</i>) não configura entidade legalmente separada do Estado, mas confere autonomia financeira considerável: a Senate Properties não aparece nos orçamentos da administração central, sendo autossustentável por suas receitas operacionais (similar a empresas estatais não-dependentes, no Brasil).</p>"
+              }
+            },
+            {
+              "id": "ba2pxtt1",
+              "type": "figure",
+              "props": {
+                "slot": "ba2pxtt1__slot",
+                "src": "",
+                "fit": "contain",
+                "size": "full",
+                "title": "",
+                "caption": "Escritório de Hämeenlinna",
+                "credit": "Foto: <a href=\"https://www.senaatti.fi/en/contact-us/offices/\" target=\"_blank\" rel=\"noopener noreferrer\">Senaatti</a>",
+                "__pullDown": true
+              }
+            }
+          ]
+        },
+        {
+          "id": "b_mtaaz3r6_99aa",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">O grupo Senate Properties compreende a entidade principal de gestão imobiliária e a subsidiária Defence Properties Finland, responsável por imóveis de defesa e segurança. O cerne do modelo é a precificação baseada no custo real (</span><i style=\"text-wrap-mode: initial; color: inherit;\">cost-price principle</i><span style=\"text-wrap-mode: initial; color: inherit;\">). Desde 2016, os aluguéis cobrados de órgãos governamentais são determinados estritamente para cobrir os custos operacionais reais: manutenção básica, renovações necessárias para manutenção de padrão funcional, custos de empréstimos relacionados a investimentos e impostos sobre a propriedade. A entidade declara explicitamente que não gera lucro das atividades de aluguel para clientes do governo central. Pesquisas independentes de benchmarking de mercado revelam que, comparativamente a propriedades privadas similares, os aluguéis cobrados por Senate Properties para espaço de escritório padrão situam-se aproximadamente 13% abaixo dos níveis de mercado.</span></p><p>O portfólio gerido por Senate Properties compreende aproximadamente 9 mil edifícios com 5,9 milhões de metros quadrados de espaço, incluindo 1.000 edifícios tombados, instalações de polícia, tribunais, presídios, laboratórios, museus, ministérios e instalações das Forças Armadas Finlandesas. Em 2025, o Senate Group implementou aproximadamente 19 milhões de euros em reduções de aluguel para agências e departamentos estatais, com planejamento de alcançar economias totais de 53 milhões de euros durante o período 2025-2027. Como Senate Properties mantém propriedade e responsabilidade de manutenção de longo prazo, tem incentivo direto para investir em eficiência energética, pois esses custos refletem diretamente em suas contas operacionais.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mtaa1624_2c6n",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mtaa1624_v7g1",
+          "type": "kicker",
+          "props": {
+            "icon": "map-pin",
+            "children": "<span data-fs=\"body-lg\">França</span>"
+          }
+        },
+        {
+          "id": "b_mtaa1624_9m6f",
+          "type": "titulo",
+          "props": {
+            "text": "France Domaine e a Política Imobiliária do Estado",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_mtaa1624_r3ig",
+          "type": "prose",
+          "props": {
+            "html": "<p>A França enfrentou, nos anos 2000, desafios significativos na gestão de seu patrimônio imobiliário federal. O diagnóstico elaborado pelo relatório Gilles Carrez em 2009 identificou deficiências graves: falta de transparência sobre o inventário de propriedades, ausência de critérios coerentes para manutenção versus venda de edifícios e impossibilidade de implementar estratégia de longo prazo. A Tabela Geral de Propriedades do Estado, que deveria servir como inventário centralizado, sofria de incompletude crônica. O valor total do patrimônio imobiliário federal francês foi estimado em 32,8 bilhões de euros em 2004. O diagnóstico levou à promulgação, em 2006, do Código Geral de Propriedade das Pessoas Públicas (CG3P), que consolidou regras aplicáveis ao patrimônio público e introduziu inovações nos procedimentos de desafetação.</p>"
+          }
+        },
+        {
+          "id": "b_mtaa1624_864k",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mtabbcjm_ub6p",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A resposta francesa foi estruturar programa agressivo de alienações de propriedades consideradas desnecessárias. <b>France Domaine</b>, o serviço governamental de gestão e venda de propriedades estatais, foi encarregado de executar essa estratégia. As receitas seriam capturadas em mecanismo orçamentário especial: o </span><i style=\"text-wrap-mode: initial; color: inherit;\">Compte d'Affectation Spéciale</i><span style=\"text-wrap-mode: initial; color: inherit;\"> (CAS) \"</span><i style=\"text-wrap-mode: initial; color: inherit;\">Gestion du Patrimoine Immobilier de l'État\"</i><span style=\"text-wrap-mode: initial; color: inherit;\">, fundo orçamentário dedicado onde receitas de vendas são depositadas e potencialmente direcionadas a despesas de modernização do patrimônio remanescente. Entre 2020 e 2023, as receitas anuais de vendas flutuaram entre 157 e 190 milhões de euros.</span></p>"
+          }
+        },
+        {
+          "id": "bw538iwm",
+          "type": "callout",
+          "props": {
+            "variant": "ear",
+            "tone": "warning",
+            "icon": "alert-triangle",
+            "title": "",
+            "heading": "",
+            "children": "<p>A estratégia de alienações massivas apresentou problemas estruturais documentados pela Cour des Comptes (equivalente ao TCU francês). A pressão fiscal para gerar receitas criou incentivo perverso de vender propriedades no momento errado do ciclo imobiliário, sem visão estratégica sobre quais imóveis deveriam ser mantidos e renovados. A lógica de \"vender para arrecadar\" prevaleceu sobre a lógica de \"investir em renovação seletiva do patrimônio estratégico\", resultando na alienação de alguns edifícios que retrospectivamente seria preferível manter e reformar. A Cour des Comptes assinalou também a falta de estratégia integrada de renovação, tornando o modelo reativo: decisões de venda obedeciam a necessidades orçamentárias imediatas, não a prioridades estratégicas de modernização.</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b_mtabcr7o_q8kq",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Reconhecendo essas limitações, a França iniciou, na segunda metade dos anos 2010, uma transição estratégica. A <i>Politique Immobilière de l'État</i> (PIE), estruturada com base em relatório do Senado francês de 2016 intitulado \"</span><i style=\"text-wrap-mode: initial; color: inherit;\">De la Rationalisation à la Valorisation</i><span style=\"text-wrap-mode: initial; color: inherit;\">\" (Da Racionalização à Valorização), representa mudança de paradigma: ao invés de modelo centrado em desinvestimento, propõe abordagem de gestão ativa do patrimônio, combinando racionalização do portfólio por consolidação estratégica, valorização do patrimônio remanescente por investimentos seletivos em renovação, e alinhamento com objetivos de política pública (transição energética, modernização administrativa). A criação da <b>Direction Immobilière de l'État</b> (DIE) em 2016 incorporou essa transição, funcionando como órgão que representa o Estado enquanto proprietário de imóveis e desenvolve estratégia integrada de gestão.</span></p><p><b>O caso francês oferece uma lição crítica:</b> ilustra os riscos de um modelo que privilegia alienação (liquidez de ativos) sobre gestão estratégica de patrimônio de longo prazo. Ao estruturar France Domaine com foco em receitas de venda para financiar o orçamento federal, a França descobriu que esse modelo criava pressão para tomar decisões de venda mal sincronizadas com o ciclo imobiliário e sem visão integrada de qual patrimônio deveria ser mantido e modernizado. A transição para a PIE mantém alienações como instrumento, mas as subordina a estratégia mais ampla de gestão ativa e renovação, representando uma correção de curso na gestão de imóveis públicos.</p>"
+          }
+        },
+        {
+          "id": "bpud12pl",
+          "type": "figure",
+          "props": {
+            "slot": "bpud12pl__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "Direction Immobilière de l'État",
+            "caption": "Órgão que representa o Estado francês enquanto proprietário de imóveis e desenvolve estratégia integrada de gestão",
+            "credit": "Foto: immobilier-etat.gouv.fr"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b_mtaa1nwv_4ys7",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Clique para expandir",
+        "defaultOpen": false,
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_mtaa1nwv_cp7s",
+          "type": "kicker",
+          "props": {
+            "icon": "map-pin",
+            "children": "<span data-fs=\"body\">Colômbia</span>"
+          }
+        },
+        {
+          "id": "b_mtaa1nwv_yxrv",
+          "type": "titulo",
+          "props": {
+            "text": "Central de Inversiones S.A. (CISA)",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "b_mtaa1nwv_cm2b",
+          "type": "prose",
+          "props": {
+            "html": "<p>A Colômbia enfrentou, como outros países latino-americanos, desafios estruturais na gestão de seu patrimônio imobiliário público: déficit fiscal persistente, imóveis públicos ociosos e deteriorados gerando custos sem gerar retorno, e órgãos federais recorrendo a contratos de aluguel onerosos diante da indisponibilidade de imóveis públicos adequados. A ausência de controle centralizado sobre o portfólio de ativos e a incapacidade de gerar receitas suficientes para financiar reformas criavam ciclo vicioso análogo ao identificado no contexto brasileiro. A pressão por racionalização das despesas públicas criou o ambiente institucional que permitiu a profissionalização da gestão patrimonial colombiana.</p>"
+          }
+        },
+        {
+          "id": "b_mtaa1nwv_r4qn",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b_mtabv9pu_defr",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A <b>Central de Inversiones S.A. (CISA)</b> é pessoa jurídica de direito privado vinculada ao Ministério de Hacienda y Crédito Público (Ministério das Finanças). Criada originalmente em 1975 e reformulada pela Lei 795 de 2003 e pelo Decreto 4.819 de 2007, CISA funciona como entidade centralizadora única para gestão de ativos imobiliários do setor público colombiano. Seu mandato é comprar, comercializar e administrar todos os tipos de bens imóveis e portfólios financeiros pertencentes a entidades públicas de qualquer esfera (nacional, departamental ou municipal), bem como organizações autônomas previstas na Constituição e patrimônios autônomos.</span></p><p>O modelo de operação de CISA baseia-se em ciclo de geração de receitas e reinvestimento: a entidade compra, administra e comercializa imóveis, gerando fluxo de caixa que cobre custos operacionais e contribui ao Tesouro Nacional. A Lei 1.420 de 2010 estabelece que órgãos do orçamento nacional devem transferir imóveis regularizados e designar portfólios para CISA. A entidade os comercializa por vendas diretas, leilões ou licitações, com as receitas retornando parcialmente como capital de operação ou sendo revertidas ao Tesouro.&nbsp;</p><p>Em 2022, a CISA projetava receitas operacionais de 158 bilhões de pesos colombianos, com lucro estimado de 41 bilhões de pesos. Nos 24 meses anteriores, comercializou 485 propriedades (incluindo casas, apartamentos, terrenos e imóveis comerciais) em todo o território nacional. A plataforma <b>Ziruma</b>, sistema de informação geográfica integrado, representa um avanço importante: é o primeiro inventário geoespacial centralizado e atualizado dos ativos imobiliários colombianos, permitindo decisões de alocação baseadas em informação.</p>"
+          }
+        },
+        {
+          "id": "bkq0s64r",
+          "type": "mediaembed",
+          "props": {
+            "type": "video",
+            "title": "Conheça Ziruma, a plataforma de informação geográfica da Colômbia",
+            "provider": "",
+            "url": "https://youtu.be/THRReU1lAh0"
+          }
+        },
+        {
+          "id": "bmbt3b31",
+          "type": "prose",
+          "props": {
+            "html": "<p>A experiência colombiana demonstra a viabilidade de centralizar, regularizar e profissionalizar a gestão de patrimônio público disperso por meio de estrutura especializada submetida a regime de direito privado, em contexto institucional latino-americano com desafios análogos aos do Brasil: restrições fiscais, imóveis ociosos, dependência de aluguéis e déficits de informação cadastral. Duas lições são diretamente transferíveis: a separação institucional entre a entidade gestora e o ministério supervisor confere agilidade operacional; e o investimento em sistemas integrados de informação geoespacial é condição necessária para gestão patrimonial eficaz em escala.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bhcabg3h",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "white",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "csvj9cri",
+          "type": "titulo",
+          "props": {
+            "text": "Análise comparativa",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c3yhk3zi",
+          "type": "prose",
+          "props": {
+            "html": "<p>A análise das experiências apresentadas evidencia que não existe um modelo único de gestão patrimonial pública. Os casos estudados foram concebidos para atender objetivos distintos — redução de despesas administrativas, racionalização da ocupação de imóveis, restauração do patrimônio histórico, geração de receitas patrimoniais ou financiamento de investimentos públicos. Ainda assim, é possível identificar princípios comuns que contribuem para o sucesso dessas iniciativas:</p>"
+          }
+        },
+        {
+          "id": "bzh8o1co",
+          "type": "feature",
+          "props": {
+            "columns": 1,
+            "card": false,
+            "accent": "",
+            "layout": "side",
+            "items": [
+              {
+                "icon": "landmark",
+                "title": "Existência de estruturas especializadas de gestão patrimonial",
+                "text": "Nos casos da BImA alemã, da Senate Properties finlandesa, da Government Property Agency britânica e da CISA colombiana, a gestão dos imóveis foi concentrada em entidades dedicadas exclusivamente a essa função, dotadas de maior autonomia operacional, equipes especializadas e mecanismos próprios de governança. A centralização permitiu ganhos de escala, profissionalização da gestão, melhoria da qualidade das informações patrimoniais e maior capacidade de planejamento de longo prazo."
+              },
+              {
+                "icon": "book-open-check",
+                "title": "Transparência dos custos de ocupação e manutenção",
+                "text": "Em diferentes formatos, Alemanha, Finlândia e Reino Unido adotaram mecanismos que tornam explícito o custo dos imóveis utilizados pelos órgãos públicos. Seja por meio de aluguéis de mercado, cobrança pelo custo real ou sistemas internos de rateio, a ocupação dos imóveis deixa de ser percebida como um recurso gratuito. Essa mudança cria incentivos para a racionalização dos espaços, estimula a eficiência na utilização dos ativos e favorece decisões mais conscientes sobre expansão, compartilhamento ou desmobilização de imóveis."
+              },
+              {
+                "icon": "chart-area",
+                "title": "Adoção de mecanismos de sustentabilidade financeira baseados na reciclagem de capital",
+                "text": "Nos modelos alemão, finlandês e, em certa medida, francês, as receitas provenientes da utilização, locação ou alienação de imóveis são reinvestidas na manutenção, modernização e requalificação do próprio patrimônio. Esse ciclo contínuo de geração e reaplicação de recursos reduz a dependência de dotações orçamentárias e amplia a capacidade de conservação e valorização dos ativos públicos ao longo do tempo."
+              },
+              {
+                "icon": "atom",
+                "title": "Vinculação da gestão patrimonial a objetivos mais amplos de política pública",
+                "text": "Nos casos analisados, os imóveis não são tratados apenas como ativos financeiros. Eles são utilizados para apoiar a prestação de serviços públicos, reduzir gastos governamentais, promover a revitalização urbana, preservar o patrimônio histórico, fomentar o desenvolvimento econômico ou melhorar a eficiência administrativa do Estado. A gestão patrimonial deixa de ser uma atividade meramente operacional para assumir papel estratégico na implementação de políticas públicas."
+              }
+            ]
+          }
+        },
+        {
+          "id": "b_mtacbkzd_8s34",
+          "type": "prose",
+          "props": {
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A análise também permite identificar <mark data-hl=\"terra\">fatores de risco relevantes</mark>. O primeiro deles é a <b>excessiva dependência de uma única fonte de receita ou de condições específicas de mercado</b>. A experiência do Porto Maravilha ilustra os desafios associados a modelos cuja sustentabilidade financeira depende fortemente da valorização imobiliária futura. A retração do mercado imobiliário ocorrida a partir de 2015 afetou significativamente o ritmo de comercialização dos CEPACs e exigiu adaptações na estrutura originalmente concebida. Nos modelos apoiados no mercado privado, devem ser pensados mecanismos capazes de acomodar ciclos econômicos, diversificar receitas e permitir ajustes institucionais ao longo da implementação.</span></p><p>Por outro lado, os modelos baseados predominantemente em receitas recorrentes geradas pela ocupação de imóveis por órgãos públicos tendem a apresentar maior previsibilidade financeira. Essa característica pode ser observada na BImA, na Senate Properties e na GPA, cujas receitas decorrem essencialmente da prestação de serviços imobiliários ao próprio setor público, reduzindo a exposição às oscilações do mercado imobiliário.</p><p>O segundo fator de risco refere-se à <b>utilização da alienação patrimonial como finalidade em si mesma</b>. A experiência francesa demonstra que a busca por receitas imediatas pode induzir à venda de ativos estratégicos sem adequada avaliação de longo prazo. A posterior reformulação da política imobiliária francesa evidenciou a importância de subordinar as alienações a uma estratégia patrimonial abrangente, orientada por critérios de eficiência, necessidade operacional e geração de valor público.</p><p><mark data-hl=\"green\">Os instrumentos jurídicos e financeiros devem ser compatíveis com os objetivos pretendidos</mark>. Enquanto fundos imobiliários podem ser adequados para organizar processos de alienação ou gestão de ativos, fundos patrimoniais podem favorecer o reinvestimento de receitas em conservação e revitalização. Da mesma forma, agências especializadas podem ser mais apropriadas quando o objetivo principal é racionalizar a ocupação dos imóveis e reduzir despesas operacionais. A escolha do modelo deve decorrer das necessidades da política pública e das características do patrimônio administrado, e não da simples replicação de experiências bem-sucedidas em outros contextos.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "b4709iuh",
+      "type": "conclusion",
+      "props": {
+        "kicker": "PARA CONCLUIR",
+        "kickerIcon": "check",
+        "title": "",
+        "body": "<p>Os casos analisados demonstram que a profissionalização da gestão patrimonial depende menos do instrumento adotado e mais da combinação entre governança adequada, autonomia operacional, transparência de custos, capacidade técnica, sustentabilidade financeira e alinhamento com objetivos públicos claramente definidos. As experiências internacionais e nacionais indicam que o patrimônio imobiliário pode deixar de ser percebido apenas como um conjunto de bens a serem administrados e passar a atuar como instrumento estratégico para geração de valor público, fortalecimento institucional e desenvolvimento econômico e social dos territórios.</p>"
+      },
+      "children": [
+        {
+          "id": "bl78ioav",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "success",
+            "icon": "scroll-text",
+            "title": "",
+            "heading": "",
+            "children": "<p>Este material foi elaborado a partir da Nota Técnica “Benchmarking nacional e internacional de modelos de gestão profissional de imóveis públicos”, de autoria de Felipe Guth, economista, e Thaís Xavier, Coordenadora-Geral de Parcerias e Projetos da Secretaria do Patrimônio da União (SPU).</p><p>O estudo reúne e analisa experiências brasileiras e internacionais de gestão patrimonial, identificando modelos de governança, mecanismos de financiamento e estratégias de utilização dos ativos públicos que podem inspirar o aperfeiçoamento da administração imobiliária no Brasil.</p>",
+            "color": ""
+          }
+        },
+        {
+          "id": "b9oauz82",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": "Referências",
+                "content": "<p>[1] Secretaria da Fazenda do Estado de São Paulo. Relatório de Gestão do FII Patrimônio SP. São Paulo: Subsecretaria de Patrimônio do Estado, 2022. Disponível em: www.fazenda.sp.gov.br </p><p>[2] Os dados incluem R$ 700 milhões em receitas de vendas de imóveis e R$ 470 milhões em cotas do fundo, conforme relatório oficial da Subsecretaria de Patrimônio do Estado de São Paulo. </p><p>[3] Porto Alegre. Lei Complementar Municipal n.º 942, de 25 de maio de 2022, e Decreto Municipal n.º 21.658, de 23 de setembro de 2022. Diário Oficial do Município de Porto Alegre, 2022. </p><p>[4] Rio de Janeiro. Lei Complementar Municipal n.º 101/2009 — Operação Urbana Consorciada da Região do Porto do Rio. Câmara Municipal do Rio de Janeiro, 2009. O valor de emissão e aquisição pela Caixa consta do Acórdão TCU 3273/2019. </p><p>[5] Tribunal de Contas da União. Acórdão 3.273/2019-TCU-Plenário: Auditoria sobre o FGTS e o Fundo de Investimento Imobiliário Porto Maravilha. Brasília: TCU, 2019. Ver também: Observatório das Metrópoles. Porto Maravilha: promessa e crise. Rio de Janeiro, 2018. </p><p>[6] Bundesanstalt für Immobilienaufgaben (BImA). Geschäftsbericht 2022. Berlin: BImA, 2023. Disponível em: www.bundesimmobilien.de. O balanço de €22,3 bilhões e as receitas anuais de €1,3 bilhão referem-se ao exercício 2022. </p><p>[7] Government Property Agency (GPA). Annual Report and Accounts 2022–2023. London: HM Government, 2023. Disponível em: www.gov.uk/government/organisations/government-property-agency </p><p>[8] Idem. As economias de £33,4 milhões/ano e as projeções de £300 milhões da HMRC até 2025 constam do relatório anual da GPA e do Spending Review de 2021 da HM Revenue and Customs.</p><p>[9] Senate Properties (Senaatti-kiinteistöt). Annual Report 2022. Helsinki: Senaatti, 2023. Disponível em: www.senaatti.fi. O diferencial de 13% em relação ao mercado é apurado em benchmarking independente realizado pela própria entidade. </p><p>[10] Carrez, Gilles. Rapport sur la politique immobilière de l'État. Paris: Assemblée Nationale, 2009. O valor de €32,8 bilhões refere-se à avaliação do patrimônio federal constante da Tabela Geral de Propriedades do Estado (TGPE) reportada no diagnóstico. </p><p>[11] CISA — Central de Inversiones S.A. Informe de Gestión 2022. Bogotá: Ministerio de Hacienda y Crédito Público, 2023. Disponível em: www.cisa.gov.co </p><p>[12] https://prefeitura.poa.br/smap/fundo-do-patrimonio-imobiliario-fun-patrimonio. Acessado em abril de 2026.</p>"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bli6ha41",
+      "type": "pagefooter",
+      "props": {
+        "code": "modelos de gestão profissional de imóveis públicos, Benchmarking nacional e internacional [M531]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Adaptação",
+            "name": "Thaís Xavier Nunes"
+          },
+          {
+            "role": "Revisão",
+            "name": "-"
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
