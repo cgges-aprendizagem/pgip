@@ -24,3 +24,7 @@ Depois, substitua \`__SPU_FEEDBACK_ENDPOINT__\` no arquivo \`m212/index.html\` p
 O formulário solicita apenas o nome do revisor e o comentário. Não há conta para o comentarista. O endpoint limita o piloto ao material M212, higieniza fórmulas potencialmente perigosas e usa trava de escrita para impedir colisões entre envios simultâneos.
 
 Enquanto a URL não for configurada, o botão permanece visível em modo de diagnóstico e informa que a ativação ainda está pendente. Nenhum comentário é enviado nesse estado.
+
+## Teste após a implantação
+
+Abra a URL do Apps Script diretamente. Ela deve exibir um JSON com `"ok": true`. Em seguida, envie um comentário de teste pelo M212 e confirme que surgiu uma nova linha na aba **Comentários**.
