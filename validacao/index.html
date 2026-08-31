@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Índice de validação dos materiais do Programa de Aprendizagem em Gestão de Imóveis Públicos.">
+  <meta property="og:title" content="Validação dos materiais · SPU">
+  <meta property="og:description" content="Acesse o material indicado e registre seus comentários diretamente no Pastel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://luislindner.github.io/spu/validacao/">
+  <meta property="og:image" content="https://luislindner.github.io/spu/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="629">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Validação dos materiais · SPU</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172b2a;
+      --muted: #5f6d6b;
+      --petrol: #0f5b59;
+      --petrol-dark: #123f3e;
+      --terra: #c45f3c;
+      --paper: #f7f4ed;
+      --surface: #fffdf8;
+      --line: #dcd8cf;
+      --shadow: 0 18px 50px rgba(23, 43, 42, .09);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--paper); }
+    body { margin: 0; color: var(--ink); background: var(--paper); min-height: 100vh; }
+    a { color: inherit; }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background: var(--petrol-dark);
+      padding: clamp(2rem, 6vw, 5.5rem) max(1.25rem, calc((100vw - 1180px) / 2));
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 36rem;
+      height: 36rem;
+      right: -12rem;
+      top: -20rem;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 50%;
+      box-shadow: 0 0 0 5rem rgba(255,255,255,.025), 0 0 0 10rem rgba(255,255,255,.018);
+    }
+
+    .hero__inner { position: relative; max-width: 760px; }
+    .brand { display: flex; align-items: center; gap: .7rem; margin: 0 0 2.5rem; font-size: .76rem; font-weight: 750; letter-spacing: .16em; text-transform: uppercase; }
+    .brand::before { content: ""; width: 2.5rem; height: 3px; background: var(--terra); }
+    h1 { max-width: 680px; margin: 0; font-size: clamp(2.5rem, 7vw, 5.2rem); line-height: .96; letter-spacing: -.055em; }
+    .hero p { max-width: 650px; margin: 1.5rem 0 0; color: rgba(255,255,255,.76); font-size: clamp(1rem, 2vw, 1.25rem); line-height: 1.65; }
+
+    main { width: min(1180px, calc(100% - 2.5rem)); margin: 0 auto; padding: clamp(2.5rem, 6vw, 5rem) 0 5rem; }
+
+    .review-guide { margin-bottom: clamp(3rem, 7vw, 5rem); padding: clamp(1.4rem, 4vw, 2.4rem); border: 1px solid var(--line); border-radius: 1.25rem; background: var(--surface); box-shadow: var(--shadow); }
+    .review-guide__head { display: grid; grid-template-columns: 1fr 2fr; align-items: end; gap: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+    .review-guide__head .eyebrow { align-self: start; }
+    .review-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin: 0; padding: 1.8rem 0 0; list-style: none; counter-reset: step; }
+    .review-steps li { counter-increment: step; }
+    .review-steps strong { display: block; margin-bottom: .35rem; font-size: .95rem; }
+    .review-steps strong::before { content: counter(step) ". "; color: var(--terra); }
+    .review-steps span { display: block; color: var(--muted); font-size: .86rem; line-height: 1.55; }
+    .review-tip { margin-top: 1.8rem; padding: 1rem 1.15rem; border-left: 4px solid var(--terra); border-radius: .2rem .8rem .8rem .2rem; background: #f9eee9; color: #674438; font-size: .9rem; line-height: 1.6; }
+
+    .catalog-head { display: grid; grid-template-columns: 1fr minmax(260px, 390px); align-items: end; gap: 2rem; margin-bottom: 2rem; }
+    .eyebrow { margin: 0 0 .55rem; color: var(--terra); font-size: .72rem; font-weight: 800; letter-spacing: .15em; text-transform: uppercase; }
+    h2 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.5rem); letter-spacing: -.035em; }
+    .catalog-meta { margin: .65rem 0 0; color: var(--muted); }
+
+    .search { display: grid; gap: .45rem; }
+    .search label { font-size: .74rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    .search input { width: 100%; border: 1px solid var(--line); border-radius: .8rem; background: var(--surface); color: var(--ink); padding: .9rem 1rem; font: inherit; box-shadow: 0 5px 16px rgba(23,43,42,.04); }
+    .search input:focus { outline: 3px solid rgba(15,91,89,.18); border-color: var(--petrol); }
+
+    .catalog { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+    .content-card { --card-accent: var(--petrol); position: relative; display: flex; min-height: 230px; flex-direction: column; padding: 1.4rem; overflow: hidden; border: 1px solid var(--line); border-top: 4px solid var(--card-accent); border-radius: 1rem; background: var(--surface); box-shadow: 0 7px 24px rgba(23,43,42,.045); text-decoration: none; transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
+    .content-card[data-track="1"] { --card-accent: #c45f3c; }
+    .content-card[data-track="2"] { --card-accent: #5a7655; }
+    .content-card[data-track="4"] { --card-accent: #0f5b59; }
+    .content-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--card-accent) 55%, var(--line)); box-shadow: var(--shadow); }
+    .content-card:focus-visible { outline: 3px solid color-mix(in srgb, var(--card-accent) 28%, transparent); outline-offset: 3px; }
+    .content-card__code { align-self: flex-start; margin-bottom: 1.3rem; padding: .38rem .58rem; border-radius: 999px; background: color-mix(in srgb, var(--card-accent) 11%, transparent); color: var(--card-accent); font-size: .72rem; font-weight: 850; letter-spacing: .1em; }
+    .content-card__title { font-size: 1.15rem; line-height: 1.3; font-weight: 760; letter-spacing: -.02em; }
+    .content-card__description { display: -webkit-box; margin-top: .7rem; overflow: hidden; color: var(--muted); font-size: .88rem; line-height: 1.5; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
+    .content-card__action { display: flex; justify-content: space-between; gap: 1rem; margin-top: auto; padding-top: 1.5rem; color: var(--card-accent); font-size: .83rem; font-weight: 760; }
+
+    .empty { display: none; padding: 3rem 1rem; border: 1px dashed var(--line); border-radius: 1rem; color: var(--muted); text-align: center; }
+    .empty.is-visible { display: block; }
+    footer { border-top: 1px solid var(--line); padding: 1.5rem max(1.25rem, calc((100vw - 1180px) / 2)); color: var(--muted); font-size: .8rem; }
+
+    @media (max-width: 880px) {
+      .catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .catalog-head, .review-guide__head { grid-template-columns: 1fr; align-items: start; }
+      .review-steps { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .hero { padding-top: 2rem; padding-bottom: 3.25rem; }
+      .brand { margin-bottom: 2rem; }
+      main { width: min(100% - 1.5rem, 1180px); padding-top: 2.5rem; }
+      .catalog { grid-template-columns: 1fr; }
+      .content-card { min-height: 205px; }
+      .review-guide { border-radius: 1rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .content-card { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__inner">
+      <p class="brand">SPU · Gestão de Imóveis Públicos</p>
+      <h1>Validação dos materiais</h1>
+      <p>Escolha o material que você recebeu para revisar. Cada link abre diretamente a versão correspondente no Pastel.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="review-guide" aria-labelledby="como-comentar">
+      <div class="review-guide__head">
+        <p class="eyebrow">Antes de começar</p>
+        <h2 id="como-comentar">Como comentar no Pastel</h2>
+      </div>
+      <ol class="review-steps">
+        <li><strong>Abra o seu material</strong><span>Use a lista abaixo para acessar diretamente a página que você irá revisar.</span></li>
+        <li><strong>Ative o modo de comentários</strong><span>Na barra inferior, alterne entre navegação e comentários para marcar o ponto exato do ajuste.</span></li>
+        <li><strong>Identifique o comentário</strong><span>O Pastel pode pedir nome e e-mail, mas não é necessário criar conta nem fazer login.</span></li>
+      </ol>
+      <div class="review-tip" role="note"><strong>Dica:</strong> se algum botão, link ou interação do material não responder, mude temporariamente para o <strong>modo de navegação</strong>. Depois, volte ao modo de comentários para registrar o ajuste.</div>
+    </section>
+
+    <div class="catalog-head">
+      <div>
+        <p class="eyebrow">Índice de validação</p>
+        <h2>Materiais para revisão</h2>
+        <p class="catalog-meta"><strong id="result-count">31</strong> materiais para revisão</p>
+      </div>
+      <div class="search">
+        <label for="search">Buscar por código ou título</label>
+        <input id="search" type="search" placeholder="Ex.: M411 ou função socioambiental" autocomplete="off">
+      </div>
+    </div>
+
+    <section class="catalog" id="catalog" aria-label="Materiais para revisão">
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m112/" target="_blank" rel="noreferrer" data-search="m112 breve histórico da propriedade no brasil como a formação histórica da propriedade da terra no brasil ajuda a entender a gestão de imóveis públicos." data-track="1">
+          <span class="content-card__code">M112</span>
+          <span class="content-card__title">Breve histórico da propriedade no Brasil</span>
+          <span class="content-card__description">Como a formação histórica da propriedade da terra no Brasil ajuda a entender a gestão de imóveis públicos.</span>
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m121/" target="_blank" rel="noreferrer" data-search="m121 bens imóveis públicos " data-track="1">
+          <span class="content-card__code">M121</span>
+          <span class="content-card__title">Bens imóveis públicos</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m122/" target="_blank" rel="noreferrer" data-search="m122 o patrimônio imobiliário público " data-track="1">
+          <span class="content-card__code">M122</span>
+          <span class="content-card__title">O patrimônio imobiliário público</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m131/" target="_blank" rel="noreferrer" data-search="m131 arquitetura normativa da gestão de bens imóveis públicos no brasil " data-track="1">
+          <span class="content-card__code">M131</span>
+          <span class="content-card__title">Arquitetura normativa da gestão de bens imóveis públicos no Brasil</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m133/" target="_blank" rel="noreferrer" data-search="m133 a gestão dos imóveis públicos no brasil ao longo do tempo " data-track="1">
+          <span class="content-card__code">M133</span>
+          <span class="content-card__title">A gestão dos imóveis públicos no Brasil ao longo do tempo</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m134/" target="_blank" rel="noreferrer" data-search="m134 órgãos de controle " data-track="1">
+          <span class="content-card__code">M134</span>
+          <span class="content-card__title">Órgãos de controle</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m135/" target="_blank" rel="noreferrer" data-search="m135 administração e governança de terras no brasil " data-track="1">
+          <span class="content-card__code">M135</span>
+          <span class="content-card__title">Administração e governança de terras no Brasil</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m141/" target="_blank" rel="noreferrer" data-search="m141 marcos balizadores da gestão territorial (vídeo) " data-track="1">
+          <span class="content-card__code">M141</span>
+          <span class="content-card__title">Marcos balizadores da Gestão Territorial (vídeo)</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m151/" target="_blank" rel="noreferrer" data-search="m151 conhecendo a gestão patrimonial imobiliária " data-track="1">
+          <span class="content-card__code">M151</span>
+          <span class="content-card__title">Conhecendo a gestão patrimonial imobiliária</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m152/" target="_blank" rel="noreferrer" data-search="m152 noções básicas de registro imobiliário " data-track="1">
+          <span class="content-card__code">M152</span>
+          <span class="content-card__title">Noções básicas de registro imobiliário</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m153/" target="_blank" rel="noreferrer" data-search="m153 sistemas estruturantes " data-track="1">
+          <span class="content-card__code">M153</span>
+          <span class="content-card__title">Sistemas estruturantes</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m211/" target="_blank" rel="noreferrer" data-search="m211 reconhecendo imóveis públicos: histórico, conceitos e funções " data-track="2">
+          <span class="content-card__code">M211</span>
+          <span class="content-card__title">Reconhecendo imóveis públicos: histórico, conceitos e funções</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m212/" target="_blank" rel="noreferrer" data-search="m212 evolução histórico-jurídica do sistema patrimonial imobiliário público e privado " data-track="2">
+          <span class="content-card__code">M212</span>
+          <span class="content-card__title">Evolução histórico-jurídica do sistema patrimonial imobiliário público e privado</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m221/" target="_blank" rel="noreferrer" data-search="m221 análise preventiva de imóveis públicos " data-track="2">
+          <span class="content-card__code">M221</span>
+          <span class="content-card__title">Análise preventiva de imóveis públicos</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m231/" target="_blank" rel="noreferrer" data-search="m231 aspectos práticos do reconhecimento e cadastro " data-track="2">
+          <span class="content-card__code">M231</span>
+          <span class="content-card__title">Aspectos práticos do reconhecimento e cadastro</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m232/" target="_blank" rel="noreferrer" data-search="m232 formas de aquisição e constituição de direitos imobiliários " data-track="2">
+          <span class="content-card__code">M232</span>
+          <span class="content-card__title">Formas de aquisição e constituição de direitos imobiliários</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m233/" target="_blank" rel="noreferrer" data-search="m233 registro de imóveis e patrimônio público " data-track="2">
+          <span class="content-card__code">M233</span>
+          <span class="content-card__title">Registro de imóveis e patrimônio público</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m411/" target="_blank" rel="noreferrer" data-search="m411 a função socioambiental dos imóveis públicos " data-track="4">
+          <span class="content-card__code">M411</span>
+          <span class="content-card__title">A função socioambiental dos imóveis públicos</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m412/" target="_blank" rel="noreferrer" data-search="m412 regimes de destinação " data-track="4">
+          <span class="content-card__code">M412</span>
+          <span class="content-card__title">Regimes de destinação</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m413/" target="_blank" rel="noreferrer" data-search="m413 destinar um imóvel público: um problema imobiliário ou uma decisão de estado " data-track="4">
+          <span class="content-card__code">M413</span>
+          <span class="content-card__title">Destinar um imóvel público: um problema imobiliário ou uma decisão de Estado</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m421/" target="_blank" rel="noreferrer" data-search="m421 destinação de imóveis públicos " data-track="4">
+          <span class="content-card__code">M421</span>
+          <span class="content-card__title">Destinação de imóveis públicos</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m433/" target="_blank" rel="noreferrer" data-search="m433 regularização fundiária de povos e comunidades tradicionais " data-track="4">
+          <span class="content-card__code">M433</span>
+          <span class="content-card__title">Regularização fundiária de povos e comunidades tradicionais</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m434/" target="_blank" rel="noreferrer" data-search="m434 geointeligência para a regularização fundiária " data-track="4">
+          <span class="content-card__code">M434</span>
+          <span class="content-card__title">Geointeligência para a regularização fundiária</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m451/" target="_blank" rel="noreferrer" data-search="m451 gestão de contratos de destinação " data-track="4">
+          <span class="content-card__code">M451</span>
+          <span class="content-card__title">Gestão de contratos de destinação</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m511/" target="_blank" rel="noreferrer" data-search="m511 o patrimônio público como ativo estratégico " data-track="5">
+          <span class="content-card__code">M511</span>
+          <span class="content-card__title">O patrimônio público como ativo estratégico</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m512/" target="_blank" rel="noreferrer" data-search="m512 o patrimônio público vale mais do que seu preço? " data-track="5">
+          <span class="content-card__code">M512</span>
+          <span class="content-card__title">O patrimônio público vale mais do que seu preço?</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m521/" target="_blank" rel="noreferrer" data-search="m521 fundamentos para compreender e gerir receitas provenientes de imóveis públicos " data-track="5">
+          <span class="content-card__code">M521</span>
+          <span class="content-card__title">Fundamentos para compreender e gerir receitas provenientes de imóveis públicos</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m531/" target="_blank" rel="noreferrer" data-search="m531 modelos de gestão profissional de imóveis públicos: benchmarkings nacionais e internacionais " data-track="5">
+          <span class="content-card__code">M531</span>
+          <span class="content-card__title">Modelos de gestão profissional de imóveis públicos: benchmarkings nacionais e internacionais</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m611/" target="_blank" rel="noreferrer" data-search="m611 por que fiscalizar e proteger o patrimônio público? " data-track="6">
+          <span class="content-card__code">M611</span>
+          <span class="content-card__title">Por que fiscalizar e proteger o patrimônio público?</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m621/" target="_blank" rel="noreferrer" data-search="m621 priorizando demandas de fiscalização " data-track="6">
+          <span class="content-card__code">M621</span>
+          <span class="content-card__title">Priorizando demandas de fiscalização</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+        <a class="content-card" href="https://usepastel.com/link/328qded3/#/spu/m622/" target="_blank" rel="noreferrer" data-search="m622 infrações e sanções administrativas " data-track="6">
+          <span class="content-card__code">M622</span>
+          <span class="content-card__title">Infrações e sanções administrativas</span>
+          
+          <span class="content-card__action">Revisar no Pastel <span aria-hidden="true">↗</span></span>
+        </a>
+    </section>
+    <p class="empty" id="empty">Nenhum conteúdo encontrado para esta busca.</p>
+  </main>
+
+  <footer>Secretaria do Patrimônio da União · Programa de Aprendizagem em Gestão de Imóveis Públicos</footer>
+
+  <script>
+    const input = document.getElementById('search');
+    const cards = Array.from(document.querySelectorAll('.content-card'));
+    const count = document.getElementById('result-count');
+    const empty = document.getElementById('empty');
+
+    input.addEventListener('input', () => {
+      const query = input.value.trim().toLocaleLowerCase('pt-BR');
+      let visible = 0;
+      cards.forEach((card) => {
+        const match = !query || card.dataset.search.includes(query);
+        card.hidden = !match;
+        if (match) visible += 1;
+      });
+      count.textContent = String(visible);
+      empty.classList.toggle('is-visible', visible === 0);
+    });
+  </script>
+</body>
+</html>
