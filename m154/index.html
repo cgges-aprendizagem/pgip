@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M154 - Noções básicas de Cartografia [vídeo]</title>
+<script src="assets/react.js"></script>
+<script src="assets/react-dom.js"></script>
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+.spu-figure--small,
+.spu-figure--pequena { width: min(100%, 340px); margin-inline: auto; }
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media { width: min(100%, 560px); margin-inline: auto; }
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla { width: min(100%, 820px); margin-inline: auto; }
+.spu-figure--total { width: 100%; }
+.spu-block-title:is(h2) { line-height: 1.06; }
+.spu-block-title .spu-richtext { line-height: inherit; }
+.spu-content-slider__title .spu-richtext { line-height: inherit; }
+.spu-conclusion .spu-richtext :is(strong, b) { color: inherit; }
+.spu-accordion-blocks,
+.spu-embedded-blocks { display:flex; flex-direction:column; gap:var(--flow-block); margin-top:var(--space-5); }
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+.spu-term-pop.is-open { display: block; }
+</style>
+
+<script>(function(){var DATA={};var f=window.fetch?window.fetch.bind(window):null;window.fetch=function(i,n){var u=typeof i==='string'?i:(i&&i.url)||'';if(u&&u.indexOf('.image-slots.state.json')>=0){return Promise.resolve(new Response(JSON.stringify(DATA),{headers:{'Content-Type':'application/json'}}));}return f?f(i,n):Promise.reject(new Error('no fetch'));};})();</script>
+
+
+</head>
+<body>
+<div id="root"></div>
+<script id="spu-doc" type="application/json">{"schema":1,"meta":{"title":"M154 - Noções básicas de Cartografia [vídeo]","lang":"pt-BR","builderCredit":true,"toc":{"items":[]}},"blocks":[{"id":"bb6uvooc","type":"masthead","props":{"org":"SPU","program":"Programa Gestão de Imóveis Públicos"}},{"id":"b56f5n7i","type":"section","props":{"width":"content","surface":"none","pad":"lg"},"children":[{"id":"bu2vs8sg","type":"mediaembed","props":{"type":"video","title":"Noções básicas de Cartografia aplicadas à Gestão de Imóveis Públicos","provider":"M154","url":"https://youtu.be/TGWB4pOIGqg"}}]},{"id":"bg9jx39v","type":"collapsiblesection","props":{"triggerLabel":"Mostrar/ocultar a transcrição","defaultOpen":true,"width":"content","surface":"warm","pad":"lg"},"children":[{"id":"b_msuw92o1_3h74","type":"prose","props":{"html":"\u003cp>Confira abaixo a transcrição completa do vídeo.\u003c/p>"}},{"id":"cej90aqy","type":"collapsebreak","props":{}},{"id":"b4mpxoeg","type":"prose","props":{"html":"\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Quando pensamos em um imóvel público, podemos imaginar um terreno, uma edificação, uma ilha, uma área ocupada ou mesmo uma extensa gleba.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Mas, para gerir esses imóveis, não basta saber que eles existem.&nbsp;&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É preciso saber onde estão, quais são seus limites, quanto medem e como se relacionam com o território ao seu redor.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cb>É aí que entra a cartografia.&nbsp;\u003c/b>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003c/p>\u003cp>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>O que é cartografia?&nbsp;\u003c/p>\u003cp>\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A cartografia reúne conhecimentos, técnicas e ferramentas utilizados para representar espacialmente a superfície terrestre e as informações associadas a ela.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Na gestão de imóveis públicos, essas representações aparecem de muitas formas: em mapas, plantas, imagens aéreas ou de satélite, memoriais descritivos, sistemas de informação geográfica e outros documentos técnicos.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Por isso, compreender algumas noções básicas de cartografia é importante mesmo para quem não trabalha diretamente com levantamentos ou com a produção de mapas.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O objetivo aqui não é formar especialistas em cartografia.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É fornecer conhecimentos básicos para interpretar informações territoriais e reconhecer como elas são utilizadas na gestão patrimonial imobiliária.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>Como representamos o território?&nbsp;\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Vamos começar por uma ideia simples.&nbsp;\u003c/span>\u003c/p>\u003cp>O território é extenso, complexo e tridimensional. Para analisá-lo, precisamos representá-lo de maneira reduzida e organizada.&nbsp;\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Nessas representações, diferentes elementos podem ser apresentados como pontos, linhas ou áreas.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Um ponto pode indicar, por exemplo, a localização de uma edificação.&nbsp;\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Uma linha pode representar um limite, uma via ou um curso d'água.&nbsp;\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">E uma área, representada por um polígono, pode delimitar um imóvel ou outro recorte territorial.&nbsp;\u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Esses elementos podem aparecer em diferentes tipos de representação.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Um mapa, por exemplo, pode representar uma área extensa e combinar informações como imóveis, limites administrativos, vias e hidrografia.&nbsp;\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Uma planta normalmente representa uma área mais restrita e com maior nível de detalhe, como um terreno, uma edificação ou uma área objeto de determinado procedimento.&nbsp;\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Já uma imagem aérea ou de satélite registra características visíveis da superfície e pode ajudar a reconhecer edificações, ocupações, vegetação, vias e transformações ocorridas no território.&nbsp;\u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">São formas diferentes de observar e representar uma mesma realidade territorial.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>Escala — quanto do território estamos vendo?&nbsp;\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Toda representação cartográfica precisa lidar com uma questão: o território real é muito maior do que o espaço disponível em uma tela, folha ou documento.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É daí que surge o conceito de escala.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A escala expressa a relação entre uma medida na representação e a medida correspondente no terreno.&nbsp;&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Uma planta de um imóvel, por exemplo, pode apresentar muitos detalhes de uma área relativamente pequena.&nbsp;&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Um mapa do Brasil representa uma área imensa, mas necessariamente com muito menos detalhe.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Isso significa que a escala interfere diretamente naquilo que conseguimos visualizar e analisar.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Na prática, nem todo mapa é adequado para qualquer finalidade.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Quando precisamos examinar os limites de um imóvel ou uma pequena ocupação, necessitamos de um nível de detalhe diferente daquele utilizado para observar a distribuição dos imóveis públicos em uma região inteira.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003cbr>\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003c/span>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Medindo o território&nbsp;\u003c/span>\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Além de representar o território, precisamos medi-lo.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Na gestão patrimonial, encontramos informações como distâncias, áreas, perímetros e, em determinadas situações, altitudes.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A distância indica o comprimento entre dois pontos.&nbsp;\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O perímetro corresponde ao comprimento do contorno de uma área.&nbsp;\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A área expressa a extensão da superfície delimitada.&nbsp;\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">E a altitude está relacionada à posição vertical de um ponto em relação aao nível do mar.&nbsp;\u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Essas informações aparecem com frequência em plantas, memoriais descritivos, cadastros e outros documentos técnicos relacionados aos imóveis.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>Limites, vértices e perímetros&nbsp;\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Medir, porém, não é suficiente.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Precisamos também estabelecer onde começa e onde termina determinada área.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Os limites de um imóvel podem ser representados por linhas que conectam diferentes pontos, chamados de vértices.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A sequência desses vértices permite formar o perímetro que delimita espacialmente a área.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Em documentos técnicos, como memoriais descritivos, esses vértices podem ser identificados por coordenadas e relacionados por informações de direção e distância.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Assim, aquilo que aparece escrito em um documento pode ser relacionado à representação espacial do imóvel.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003cbr>\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003c/span>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Coordenadas — como localizar um ponto?&nbsp;\u003c/span>\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Mas como podemos indicar com precisão a localização de um ponto na superfície terrestre?&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Para isso utilizamos coordenadas.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Coordenadas são valores utilizados para determinar a posição de um ponto segundo determinado sistema.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Uma das formas mais conhecidas utiliza as chamadas coordenadas geográficas: latitude e longitude.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cul>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A latitude indica a posição em relação ao Equador.&nbsp;\u003c/span>\u003c/li>\u003cli>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A longitude indica a posição em relação ao meridiano de referência.&nbsp;\u003c/span>\u003c/li>\u003c/ul>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A combinação das duas permite localizar um ponto na superfície terrestre.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">As coordenadas geográficas podem ser apresentadas em diferentes formatos, como graus decimais ou graus, minutos e segundos.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Por isso, ao encontrar coordenadas em documentos ou sistemas, é importante reconhecer também a maneira como elas estão expressas.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>O sistema UTM&nbsp;\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Além das coordenadas geográficas, é muito comum encontrarmos, em documentos técnicos relacionados a imóveis, coordenadas no sistema UTM — Universal Transversa de Mercator.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Para transformar a terra em um plano, podemos esticar e deformar o planeta, mas no lugar de tentar esticar o mundo inteiro de uma vez só, o sistema UTM divide a Terra em 60 fatias verticais estreitas, chamadas de Fusos (ou zonas).&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Cada fatia dessas é muito estreita (tem só 6 graus de largura). Como a fatia é \"fina\", ela é quase plana. Fica muito mais fácil desenhar um mapa super preciso de cada pedaço sem distorcer a realidade&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O território brasileiro é atravessado por diferentes fusos UTM.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Dentro de cada um deles, as posições são normalmente expressas por duas componentes métricas: Leste e Norte, ou pelas siglas, que podem aparecer em português ou inglês: L (W)  e N (N).&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Isso facilita a utilização de medidas em metros em diversas atividades técnicas.&nbsp;\u003c/span>\u003c/p>\u003cp>Por isso, um conjunto de números isolado nem sempre é suficiente para identificar corretamente uma localização.&nbsp;\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">É necessário conhecer também o sistema utilizado, o fuso correspondente e o sistema de referência adotado.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003cspan data-fs=\"h3\">Sistema de referência e datum\u003c/span>&nbsp;\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Chegamos, então, a outro conceito importante: o sistema de referência.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A Terra não é plana e sua forma também não corresponde exatamente a uma esfera.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Para determinar posições sobre sua superfície, precisamos utilizar modelos e referenciais que permitam relacionar as coordenadas a posições no mundo real.&nbsp;&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">É nesse contexto que aparece o conceito de datum geodésico.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">O datum integra o referencial utilizado para definir a posição dos pontos representados.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003cspan data-fs=\"h3\">SIRGAS2000 e outros referenciais&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">No Brasil, o sistema geodésico de referência oficialmente adotado é o SIRGAS2000 — Sistema de Referência Geocêntrico para as Américas.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Em documentos produzidos em períodos anteriores, entretanto, podemos encontrar outros referenciais, como Córrego Alegre e SAD69.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Também é comum encontrar o WGS84, um referencial global amplamente utilizado em sistemas de posicionamento por satélite, como o Google Earth.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Esses nomes podem aparecer em plantas, memoriais, bases cartográficas e sistemas.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Mais importante do que memorizar cada um deles é compreender que as coordenadas precisam estar associadas a um sistema de referência.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>Por que conhecer o sistema de referência?&nbsp;\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Por que essa informação é importante?&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Porque uma coordenada não deve ser interpretada isoladamente.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A posição representada depende também do sistema de coordenadas e do referencial utilizado.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Assim, quando encontramos coordenadas em uma planta, um memorial ou uma base de dados, não devemos olhar apenas para os números.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Precisamos saber como aquela localização foi representada.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Essa informação é particularmente importante quando precisamos combinar dados produzidos em fontes ou momentos diferentes.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003cspan data-fs=\"h3\">Azimute e distância&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Outros dois conceitos encontrados em documentos técnicos são azimute e distância.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O azimute expressa uma direção por meio de um ângulo medido a partir do norte até a direção de referência.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A distância indica o comprimento entre dois pontos. J\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">untos, esses elementos podem ser utilizados para descrever os segmentos que conectam os diferentes vértices e formam o perímetro de uma área.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003cspan data-fs=\"h4\">\u003cspan data-fs=\"h3\">Planimetria e planialtimetria&nbsp;\u003c/span>\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Os levantamentos realizados para conhecer as características de uma área podem considerar diferentes dimensões do terreno.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Nos levantamentos planimétricos, são consideradas principalmente as posições e medidas no plano horizontal.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Já os levantamentos planialtimétricos incorporam também informações relacionadas às diferenças de nível e ao relevo.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Esses levantamentos podem produzir informações utilizadas em plantas, mapas e outros documentos técnicos.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Para quem atua na gestão patrimonial, mais importante do que dominar as técnicas utilizadas para realizá-los é saber reconhecer as informações produzidas e compreender o que elas representam.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>Da informação territorial à geoinformação&nbsp;\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Até aqui falamos de pontos, linhas, áreas, limites, medidas e coordenadas.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Mas essas informações tornam-se ainda mais úteis quando podemos associá-las a outros dados sobre o território.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Imagine um imóvel público representado em um mapa.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Além de sua localização e de seus limites, podemos associar a ele informações como identificação, área, tipo de uso, situação de ocupação, destinação ou outras características relevantes para a gestão.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Quando uma informação pode ser relacionada a uma posição ou área no território, passamos a trabalhar com informação geográfica, ou geoinformação.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003cbr>\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">\u003cspan data-fs=\"h3\">Sistemas de Informações Geográficas — SIG&nbsp;\u003c/span>\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Para organizar e trabalhar com grandes conjuntos de informações geográficas, podemos utilizar os Sistemas de Informações Geográficas, conhecidos pela sigla SIG ou em inglês GIS.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Esses sistemas permitem armazenar, visualizar, combinar e analisar informações segundo sua localização no território.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Uma de suas características mais conhecidas é a organização das informações em camadas.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Podemos ter, por exemplo, uma camada com imóveis públicos, outra com vias, outra com hidrografia, limites administrativos, áreas protegidas ou ocupações.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Quando combinamos essas informações, podemos observar relações espaciais que dificilmente seriam percebidas analisando cada dado isoladamente.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Os SIGs mais famosos são QGis e ArcGis.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003cspan data-fs=\"h3\">O que tudo isso tem a ver com a gestão patrimonial?&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Agora podemos voltar à pergunta inicial.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Por que essas noções de cartografia são importantes para quem trabalha com imóveis públicos?&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Porque a gestão patrimonial acontece, em grande medida, sobre o território.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Identificar e caracterizar um imóvel exige compreender sua localização, suas dimensões e seus limites.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Atividades relacionadas à incorporação e à regularização patrimonial dependem da correta identificação das áreas envolvidas.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A avaliação de um imóvel considera características do próprio bem e de sua localização.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">A destinação exige compreender o imóvel, seu entorno e as possibilidades de uso.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">E as atividades de controle e fiscalização também dependem da capacidade de localizar áreas, identificar ocupações e acompanhar transformações no território.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003c/p>\u003cspan data-fs=\"h3\">\u003cp>Informação territorial e integração da gestão&nbsp;\u003c/p>\u003cp>\u003c/p>\u003c/span>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Por isso, a cartografia não deve ser entendida apenas como uma técnica para produzir mapas.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Ela oferece recursos para representar, localizar, medir e interpretar o território.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Quando essas informações são organizadas e relacionadas a outros dados patrimoniais, tornam-se também instrumentos de integração da gestão.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Uma localização corretamente representada pode ser utilizada em diferentes documentos, cadastros, análises e sistemas.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Isso favorece uma visão mais integrada dos imóveis públicos e permite relacionar informações produzidas em diferentes atividades da gestão patrimonial.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cbr>\u003c/p>\u003cp>\u003cspan data-fs=\"h3\">Para concluir\u003c/span>&nbsp;\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Neste vídeo, conhecemos algumas noções fundamentais para compreender a representação do território.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Vimos que pontos, linhas e polígonos permitem representar diferentes elementos espaciais.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Conhecemos a importância da escala e de medidas como distância, perímetro, área e altitude.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Vimos também como coordenadas permitem localizar pontos e por que precisamos conhecer os sistemas de coordenadas e de referência utilizados.&nbsp;\u003c/span>\u003cspan style=\"color: inherit; text-wrap-mode: initial;\">Falamos ainda de azimute, de levantamentos planimétricos e planialtimétricos e chegamos ao conceito de geoinformação e aos Sistemas de Informações Geográficas.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Você não precisa memorizar todos esses termos técnicos neste primeiro contato.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">O mais importante é reconhecer o que eles representam e perceber onde aparecem no cotidiano da gestão patrimonial.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Uma planta, um mapa, uma coordenada ou uma área exibida em um sistema são diferentes maneiras de traduzir o território em informação.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">E compreender essa informação é uma competência básica para quem atua na gestão de imóveis públicos.&nbsp;\u003c/span>\u003c/p>\u003cp>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">Porque conhecer o patrimônio também significa saber onde ele está, como se organiza no território e como as informações sobre ele podem ser utilizadas de forma integrada na gestão pública.&nbsp;\u003c/span>\u003cspan style=\"text-wrap-mode: initial; color: inherit;\">&nbsp;\u003c/span>\u003c/p>"}}]},{"id":"bxq5rodj","type":"pagefooter","props":{"code":"Noções básicas de Cartografia aplicadas à Gestão de Imóveis Públicos [M154]","context":"Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.","license":true,"licenseKind":"byncsa","credits":[{"role":"Conteúdo/Roteiro","name":"Daniel Fonseca"},{"role":"Revisão","name":"Claudson Moreira"},{"role":"Design e Edição do vídeo","name":"Luís Henrique Lindner"},{"role":"Versão","name":"Julho de 2026"}]}}]}</script>
+<script id="spu-image-slots" type="application/json">{}</script>
+<script id="spu-lucide-icons" type="application/json">{}</script>
+<script id="spu-lucide-license" type="text/plain">ISC License
+
+Copyright (c) 2026 Lucide Icons and Contributors
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+---
+
+The following Lucide icons are derived from the Feather project:
+
+airplay, alert-circle, alert-octagon, alert-triangle, aperture, arrow-down-circle, arrow-down-left, arrow-down-right, arrow-down, arrow-left-circle, arrow-left, arrow-right-circle, arrow-right, arrow-up-circle, arrow-up-left, arrow-up-right, arrow-up, at-sign, calendar, cast, check, chevron-down, chevron-left, chevron-right, chevron-up, chevrons-down, chevrons-left, chevrons-right, chevrons-up, circle, clipboard, clock, code, columns, command, compass, corner-down-left, corner-down-right, corner-left-down, corner-left-up, corner-right-down, corner-right-up, corner-up-left, corner-up-right, crosshair, database, divide-circle, divide-square, dollar-sign, download, external-link, feather, frown, hash, headphones, help-circle, info, italic, key, layout, life-buoy, link-2, link, loader, lock, log-in, log-out, maximize, meh, minimize, minimize-2, minus-circle, minus-square, minus, monitor, moon, more-horizontal, more-vertical, move, music, navigation-2, navigation, octagon, pause-circle, percent, plus-circle, plus-square, plus, power, radio, rss, search, server, share, shopping-bag, sidebar, smartphone, smile, square, table-2, tablet, target, terminal, trash-2, trash, triangle, tv, type, upload, x-circle, x-octagon, x-square, x, zoom-in, zoom-out
+
+The MIT License (MIT) (for the icons listed above)
+
+Copyright (c) 2013-present Cole Bemis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script id="spu-react-license" type="text/plain">MIT License
+
+Copyright (c) Facebook, Inc. and its affiliates.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</script>
+<script src="assets/ds-bundle.js"></script>
+<script>
+(function(){
+  window.__SPU_INSTALL_DS_COMPAT = function(NS){
+    if(!NS || NS.__spuBuilderCompat) return;
+    var COMPAT_TYPES = ['pagefooter','markerlist','reflexao','mapfigure','statblock','feature','accordion','timeline','quiz','flashcard','compareab','carousel','contentslider'];
+    var RICH_ITEM_FIELDS = {
+      pagefooter:['role','name'],
+      markerlist:['title','text'],
+      reflexao:[''],
+      mapfigure:['title','description'],
+      statblock:['value','unit','label','description'],
+      feature:['title','text'],
+      accordion:['title','content','linkLabel'],
+      timeline:['label','period','date','title','content','linkLabel'],
+      quiz:['question','text','feedback'],
+      carousel:['title','caption','credit'],
+      contentslider:['label','tabLabel','title','subtitle','description','linkLabel','caption']
+    };
+    var RICH_PROP_FIELDS = {
+      flashcard:['term','description','definition'],
+      compareab:['label','title','content']
+    };
+    var RICH_DIRECT_FIELDS = {
+      pagefooter:['code','context'],
+      mapfigure:['caption','credit','label','title']
+    };
+    function markFieldsRich(fields, richKeys){
+      return (fields || []).map(function(field){
+        var next = richKeys.indexOf(field.key) >= 0
+          ? Object.assign({}, field, { type: 'rich', inline: field.inline != null ? field.inline : ['content','definition','feedback'].indexOf(field.key) < 0 })
+          : Object.assign({}, field);
+        if(next.itemFields) next.itemFields = markFieldsRich(next.itemFields, richKeys);
+        if(next.fields) next.fields = markFieldsRich(next.fields, richKeys);
+        return next;
+      });
+    }
+    if(NS.BlockRegistry && NS.BlockRegistry.byType){
+      if(NS.BlockRegistry.byType.masthead) NS.BlockRegistry.byType.masthead.rich = true;
+      if(NS.BlockRegistry.byType.conclusion) NS.BlockRegistry.byType.conclusion.rich = true;
+      if(NS.BlockRegistry.byType.pagefooter){
+        NS.BlockRegistry.byType.pagefooter.rich = true;
+      }
+      if(NS.BlockRegistry.byType.mapfigure){
+        NS.BlockRegistry.byType.mapfigure.rich = true;
+        NS.BlockRegistry.byType.mapfigure.fields = Array.from(new Set([].concat(NS.BlockRegistry.byType.mapfigure.fields || [], ['caption','credit','label'])));
+      }
+      Object.keys(NS.BlockRegistry.byType).forEach(function(type){
+        var def = NS.BlockRegistry.byType[type];
+        if(RICH_ITEM_FIELDS[type] && def.itemFields) def.itemFields = markFieldsRich(def.itemFields, RICH_ITEM_FIELDS[type]);
+        if(RICH_PROP_FIELDS[type] && def.propFields) def.propFields = markFieldsRich(def.propFields, RICH_PROP_FIELDS[type]);
+      });
+    }
+    function inline(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value, as: 'span', className: 'spu-richtext--inline' });
+    }
+    function block(value){
+      value = normalizeWhitespace(value);
+      if(typeof value !== 'string' || !/[<&]/.test(value) || !NS.RichText) return value;
+      return React.createElement(NS.RichText, { html: value });
+    }
+    function normalizeWhitespace(value){
+      if(typeof value !== 'string') return value;
+      var html = value.replace(/(?:&nbsp;| )/gi, ' ');
+      if(!/[<>]/.test(html)) return hasRichContent(html) ? html : '';
+      html = html.replace(/<div(?:\s[^>]*)?>/gi, '<p>').replace(/<\/div>/gi, '</p>');
+      if(!/<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html) && /(?:<br\s*\/?>\s*){2,}/i.test(html)){
+        html = '<p>' + html.replace(/(?:<br\s*\/?>\s*){2,}/gi, '</p><p>') + '</p>';
+      }
+      if(/<p\b/i.test(html) && !/^\s*<(?:p|ul|ol|blockquote|h[1-6])\b/i.test(html)){
+        html = html.replace(/^([\s\S]*?)(?=<p\b)/i, '<p>$1</p>');
+      }
+      html = html.replace(/<p>\s*<p>/gi, '<p>')
+        .replace(/<\/p>\s*<\/p>/gi, '</p>')
+        .replace(/<p>\s*<br\s*\/?>\s*<\/p>/gi, '<p><br></p>');
+      return hasRichContent(html) ? html : '';
+    }
+    function hasRichContent(value){
+      if(value == null) return false;
+      if(typeof value !== 'string') return true;
+      var visible = value.replace(/<!--[\s\S]*?-->/g, '')
+        .replace(/<br\s*\/?>/gi, '')
+        .replace(/<[^>]*>/g, '')
+        .replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ')
+        .replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+      return visible.length > 0;
+    }
+    function installCollapsibleSection(){
+      var registry = NS.BlockRegistry;
+      if(!registry || registry.byType.collapsiblesection) return;
+      var css = '.spu-csection__always,.spu-csection__body{display:flex;flex-direction:column;gap:var(--flow-block)}' +
+        '.spu-csection__summary{display:inline-flex;align-items:center;gap:var(--space-2);width:max-content;margin-top:var(--flow-block);padding:.68em .95em;border:1px solid var(--color-primary);border-radius:var(--radius);color:var(--color-primary-strong);background:transparent;font-family:var(--font-display);font-weight:700;cursor:pointer}' +
+        '.spu-csection__summary:hover{background:var(--color-primary-soft)}' +
+        '.spu-csection__summary svg{transition:transform var(--dur) var(--ease-out)}' +
+        '.spu-csection__summary[aria-expanded="true"] svg{transform:rotate(180deg)}' +
+        '.spu-csection__body{margin-top:var(--space-6)}' +
+        '.spu-csection__body[hidden]{display:none}' +
+        '.spu-section--dark .spu-csection__summary{border-color:var(--text-on-dark);color:var(--text-on-dark)}' +
+        '.spu-section--dark .spu-csection__summary:hover{background:rgba(255,255,255,.1)}' +
+        '@media print{.spu-csection__body{display:flex!important}.spu-csection__summary{display:none!important}}';
+      if(NS.injectCss) NS.injectCss('spu-collapsible-section-css', css);
+      else if(!document.getElementById('spu-collapsible-section-css')){
+        var style = document.createElement('style');
+        style.id = 'spu-collapsible-section-css';
+        style.textContent = css;
+        document.head.appendChild(style);
+      }
+      NS.CollapsibleSection = function(props){
+        props = props || {};
+        var triggerLabel = props.triggerLabel || 'Clique para expandir';
+        var printing = NS.isPrint ? NS.isPrint() : window.__SPU_PRINT === true;
+        var state = React.useState(!!props.defaultOpen);
+        var open = state[0];
+        var setOpen = state[1];
+        var forcedOpen = printing;
+        var items = React.Children.toArray(props.children);
+        function blockType(node){
+          if(!React.isValidElement(node)) return '';
+          if(node.props && node.props.block && node.props.block.type) return node.props.block.type;
+          return React.Children.toArray(node.props && node.props.children).map(blockType).filter(Boolean)[0] || '';
+        }
+        var markerIndex = items.findIndex(function(item){ return blockType(item) === 'collapsebreak'; });
+        var alwaysVisible = markerIndex >= 0 ? items.slice(0, markerIndex) : [];
+        var collapsed = markerIndex >= 0 ? items.slice(markerIndex + 1) : items;
+        var sectionProps = Object.assign({}, props, {
+          width: props.width || 'content',
+          surface: props.surface || 'none',
+          pad: props.pad || 'lg',
+          className: ['spu-csection', props.className].filter(Boolean).join(' ')
+        });
+        ['title','lead','triggerLabel','defaultOpen','__builderEditing','children'].forEach(function(key){ delete sectionProps[key]; });
+        return React.createElement(NS.Section, sectionProps,
+          React.createElement(React.Fragment, null,
+            alwaysVisible.length && React.createElement('div', { className:'spu-csection__always spu-blockstack' }, alwaysVisible),
+            !printing && React.createElement('button', {
+                type:'button',
+                className:'spu-csection__summary',
+                'aria-expanded':forcedOpen || open,
+                onClick:function(){ if(!forcedOpen) setOpen(!open); }
+              },
+                NS.renderRich ? NS.renderRich(triggerLabel, { inline:true }) : triggerLabel,
+                React.createElement(NS.Icon, { name:'chevron-down', size:18 })
+              ),
+              React.createElement('div', { className:'spu-csection__body spu-blockstack', hidden:!(forcedOpen || open) }, collapsed)
+          )
+        );
+      };
+      NS.CollapseBreak = function(){ return null; };
+      var markerDefinition = {
+        type:'collapsebreak', component:'CollapseBreak', label:'Botão de recolher',
+        icon:'chevron-down', cat:'Estrutura', kind:'marker', internal:true, props:{}
+      };
+      var definition = {
+        type:'collapsiblesection', component:'CollapsibleSection', label:'Seção expansível',
+        icon:'chevron-down', cat:'Estrutura', kind:'container', stack:false,
+        fields:['triggerLabel'], allowedTypes:registry.childTypes.concat([markerDefinition.type]),
+        props:{ triggerLabel:'Clique para expandir', defaultOpen:false, width:'content', surface:'none', pad:'lg', children:[] },
+        propFields:[{ key:'defaultOpen', label:'Iniciar aberta', type:'bool' }]
+      };
+      var sectionIndex = registry.blocks.findIndex(function(item){ return item.type === 'section'; });
+      registry.blocks.splice(sectionIndex >= 0 ? sectionIndex + 1 : registry.blocks.length, 0, definition);
+      registry.blocks.push(markerDefinition);
+      registry.byType[definition.type] = definition;
+      registry.byType[markerDefinition.type] = markerDefinition;
+      if(registry.structuralTypes.indexOf(definition.type) < 0){
+        var structuralIndex = registry.structuralTypes.indexOf('section');
+        registry.structuralTypes.splice(structuralIndex >= 0 ? structuralIndex + 1 : registry.structuralTypes.length, 0, definition.type);
+      }
+      var originalNewBlock = registry.newBlock.bind(registry);
+      registry.newBlock = function(type, child){
+        if(type === markerDefinition.type) return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:markerDefinition.type, props:{} };
+        if(type !== definition.type) return originalNewBlock(type, child);
+        var props = JSON.parse(JSON.stringify(definition.props));
+        props.children = [registry.newBlock(markerDefinition.type, true)];
+        return { id:(child ? 'c' : 'b') + Math.random().toString(36).slice(2, 9), type:definition.type, props:props };
+      };
+    }
+    installCollapsibleSection();
+    var Masthead = NS.Masthead;
+    if(Masthead){
+      NS.Masthead = function(props){
+        props = props || {};
+        return React.createElement(Masthead, Object.assign({}, props, {
+          org: inline(props.org),
+          program: inline(props.program)
+        }));
+      };
+    }
+    var Conclusion = NS.Conclusion;
+    if(Conclusion){
+      NS.Conclusion = function(props){
+        props = props || {};
+        return React.createElement(Conclusion, Object.assign({}, props, {
+          body: block(props.body)
+        }));
+      };
+    }
+    function richifyValue(value, field){
+      if((field.type === 'rich' || field.type === 'text') && typeof value === 'string'){
+        return field.inline != null ? (field.inline ? inline(value) : block(value)) : (['content','definition','feedback'].indexOf(field.key) >= 0 ? block(value) : inline(value));
+      }
+      if(field.type === 'object' && value && typeof value === 'object' && !Array.isArray(value)) return richifyObject(value, field.fields || []);
+      if(field.type === 'list' && Array.isArray(value)) return value.map(function(item){ return richifyItem(item, field.itemFields || []); });
+      return value;
+    }
+    function richifyItem(item, fields){
+      if(fields.length === 1 && fields[0].key === '') return richifyValue(item, fields[0]);
+      if(!item || typeof item !== 'object' || Array.isArray(item)) return item;
+      return richifyObject(item, fields);
+    }
+    function richifyObject(value, fields){
+      var next = Object.assign({}, value);
+      (fields || []).forEach(function(field){
+        if(!field.key) return;
+        next[field.key] = richifyValue(value[field.key], field);
+      });
+      return next;
+    }
+    function richifyProps(type, props){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var next = Object.assign({}, props || {});
+      var direct = [].concat((def && def.fields) || [], RICH_DIRECT_FIELDS[type] || []);
+      direct.forEach(function(key){ if(next[key] !== undefined) next[key] = inline(next[key]); });
+      if(def && def.itemsKey && def.itemFields && Array.isArray(next[def.itemsKey])) next[def.itemsKey] = next[def.itemsKey].map(function(item){ return richifyItem(item, def.itemFields || []); });
+      ((def && def.propFields) || []).forEach(function(field){ if(field.key && next[field.key] !== undefined) next[field.key] = richifyValue(next[field.key], field); });
+      return next;
+    }
+    COMPAT_TYPES.forEach(function(type){
+      var def = NS.BlockRegistry && NS.BlockRegistry.byType && NS.BlockRegistry.byType[type];
+      var Original = def && def.component && NS[def.component];
+      if(!Original) return;
+      NS[def.component] = function(props){
+        return React.createElement(Original, richifyProps(type, props || {}));
+      };
+    });
+    var Accordion = NS.Accordion;
+    if(Accordion){
+      NS.Accordion = function(props){
+        props = props || {};
+        var items = Array.isArray(props.items) ? props.items.map(function(item){
+          if(!item || typeof item !== 'object' || Array.isArray(item) || !Array.isArray(item.blocks) || !item.blocks.length) return item;
+          return Object.assign({}, item, {
+            content: React.createElement(React.Fragment, null,
+              block(item.content),
+              React.createElement('div', { className:'spu-accordion-blocks' }, item.blocks.map(function(nested, index){
+                return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+              }))
+            )
+          });
+        }) : props.items;
+        return React.createElement(Accordion, Object.assign({}, props, { items:items }));
+      };
+    }
+    var Timeline = NS.Timeline;
+    if(Timeline){
+      NS.Timeline = function(props){
+        props = props || {};
+        var eras = Array.isArray(props.eras) ? props.eras.map(function(era){
+          if(!era || typeof era !== 'object' || Array.isArray(era) || !Array.isArray(era.milestones)) return era;
+          return Object.assign({}, era, {
+            milestones: era.milestones.map(function(milestone){
+              if(!milestone || typeof milestone !== 'object' || Array.isArray(milestone) || !Array.isArray(milestone.blocks) || !milestone.blocks.length) return milestone;
+              return Object.assign({}, milestone, {
+                content: React.createElement(React.Fragment, null,
+                  block(milestone.content),
+                  React.createElement('div', { className:'spu-embedded-blocks' }, milestone.blocks.map(function(nested, index){
+                    return React.createElement(NS.BlockView, { key:nested.id || index, block:nested, mode:'preview' });
+                  }))
+                )
+              });
+            })
+          });
+        }) : props.eras;
+        return React.createElement(Timeline, Object.assign({}, props, { eras:eras }));
+      };
+    }
+    NS.__spuBuilderCompat = true;
+  };
+})();</script>
+<script>
+(function () {
+  var LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  function walkBlocks(blocks, visit) {
+    (blocks || []).forEach(function (block) {
+      visit(block);
+      if (block.children) walkBlocks(block.children, visit);
+    });
+  }
+  function QuizAnswerKey(props) {
+    var keys = [];
+    walkBlocks(props.doc && props.doc.blocks, function (block) {
+      if (block.type !== 'quiz') return;
+      var questions = block.props && block.props.questions || [];
+      questions.forEach(function (q) {
+        var idx = (q.options || []).findIndex(function (o) { return !!o.correct; });
+        if (idx >= 0) keys.push(LETTERS[idx] || String(idx + 1));
+      });
+    });
+    if (!keys.length) return null;
+    return React.createElement('section', { className: 'spu-print-answer-key' },
+      React.createElement('p', { className: 'spu-print-answer-key__title' }, 'Gabarito'),
+      React.createElement('ol', null, keys.map(function (k, i) {
+        return React.createElement('li', { key: i }, k);
+      }))
+    );
+  }
+  function start(tries){
+    var NS = window[Object.keys(window).filter(function(k){return /DesignSystem/.test(k);})[0]];
+    if (!NS || !NS.BlockDocument) { if(tries>0) return setTimeout(function(){start(tries-1);},50);
+      document.getElementById('root').textContent = 'Kit do design system não carregado.'; return; }
+    if (window.__SPU_INSTALL_DS_COMPAT) window.__SPU_INSTALL_DS_COMPAT(NS);
+    var lucideIcons = JSON.parse(document.getElementById('spu-lucide-icons').textContent || '{}');
+    if (NS.ICONS) Object.assign(NS.ICONS, lucideIcons);
+    if (Array.isArray(NS.ICON_NAMES)) Object.keys(lucideIcons).forEach(function(name){
+      if (NS.ICON_NAMES.indexOf(name) < 0) NS.ICON_NAMES.push(name);
+    });
+    var doc = JSON.parse(document.getElementById('spu-doc').textContent);
+    var children = [React.createElement(NS.BlockDocument, { key: 'doc', doc: doc, mode: 'preview', showBuilderCredit: true })];
+    if (false) {
+      children.push(React.createElement(QuizAnswerKey, { key: 'quiz-key', doc: doc }));
+      if ((!doc.meta || doc.meta.builderCredit !== false) && NS.BuilderCredit) {
+        children.push(React.createElement(NS.BuilderCredit, { key: 'builder-credit' }));
+      }
+    }
+    ReactDOM.createRoot(document.getElementById('root')).render(
+      React.createElement('div', { className: '' }, children));
+    setTimeout(function(){ if(window.__SPU_ENHANCE_GLOSSARY) window.__SPU_ENHANCE_GLOSSARY(); }, 80);
+    
+  }
+  start(40);
+})();
+</script>
+<script>
+(function(){
+  var popById = {};
+  var positionById = {};
+  var nextId = 1;
+  function safeDefinition(value){
+    var box = document.createElement('div');
+    box.innerHTML = String(value || '');
+    var allowed = ['STRONG','B','EM','I','BR','P','SPAN'];
+    Array.from(box.querySelectorAll('*')).forEach(function(el){
+      if(el.tagName === 'SCRIPT' || el.tagName === 'STYLE'){ el.remove(); return; }
+      if(allowed.indexOf(el.tagName) < 0){ el.replaceWith.apply(el, Array.from(el.childNodes)); return; }
+      Array.from(el.attributes).forEach(function(attr){ el.removeAttribute(attr.name); });
+    });
+    return box.innerHTML;
+  }
+  function closeAll(except){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      if(el !== except){
+        el.classList.remove('spu-term-open');
+        el.setAttribute('aria-expanded','false');
+        var pop = popById[el.dataset.spuTermPortalId];
+        if(pop) pop.classList.remove('is-open');
+      }
+    });
+  }
+  function enhance(){
+    document.querySelectorAll('.spu-richtext [data-term]').forEach(function(el){
+      if(el.dataset.spuTermReady) return;
+      var term = (el.getAttribute('data-term') || el.textContent || '').trim();
+      var def = (el.getAttribute('data-definition') || el.getAttribute('title') || el.getAttribute('data-def') || '').trim();
+      if(!term || !def) return;
+      el.dataset.spuTermReady = '1';
+      el.setAttribute('role','button');
+      el.setAttribute('tabindex','0');
+      el.setAttribute('aria-expanded','false');
+      el.setAttribute('data-definition',def);
+      el.removeAttribute('title');
+      var id = 'spu-term-' + nextId++;
+      el.dataset.spuTermPortalId = id;
+      var pop = document.createElement('span');
+      pop.className = 'spu-term-pop';
+      pop.setAttribute('role','tooltip');
+      pop.innerHTML = '<strong></strong><span class="spu-term-pop__def"></span>';
+      pop.querySelector('strong').textContent = term;
+      pop.querySelector('.spu-term-pop__def').innerHTML = safeDefinition(def);
+      document.body.appendChild(pop);
+      popById[id] = pop;
+      var position = function(){
+        var rect = el.getBoundingClientRect();
+        var width = Math.min(320, window.innerWidth - 24);
+        var left = Math.min(Math.max(12, rect.left), window.innerWidth - width - 12);
+        var below = rect.top < 150 && window.innerHeight - rect.bottom > rect.top;
+        var arrow = Math.min(Math.max(18, rect.left + rect.width / 2 - left), width - 18);
+        pop.style.left = left + 'px';
+        pop.style.width = width + 'px';
+        pop.style.top = below ? rect.bottom + 10 + 'px' : 'auto';
+        pop.style.bottom = below ? 'auto' : window.innerHeight - rect.top + 10 + 'px';
+        pop.style.setProperty('--spu-term-arrow',arrow + 'px');
+        pop.dataset.placement = below ? 'bottom' : 'top';
+      };
+      positionById[id] = position;
+      var toggle = function(ev){
+        ev.preventDefault();
+        ev.stopPropagation();
+        var open = el.classList.toggle('spu-term-open');
+        el.setAttribute('aria-expanded', open ? 'true' : 'false');
+        pop.classList.toggle('is-open',open);
+        if(open){ closeAll(el); position(); }
+      };
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', function(ev){
+        if(ev.key === 'Enter' || ev.key === ' '){ toggle(ev); }
+        if(ev.key === 'Escape'){ closeAll(); }
+      });
+    });
+  }
+  document.addEventListener('click', function(){ closeAll(); });
+  function repositionOpen(){
+    document.querySelectorAll('.spu-term-open').forEach(function(el){
+      var position = positionById[el.dataset.spuTermPortalId];
+      if(position) position();
+    });
+  }
+  window.addEventListener('resize',repositionOpen);
+  window.addEventListener('scroll',repositionOpen,true);
+  enhance();
+  window.__SPU_ENHANCE_GLOSSARY = enhance;
+})();</script>
+</body>
+</html>
