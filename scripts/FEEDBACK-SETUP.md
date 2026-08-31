@@ -22,3 +22,5 @@ Depois, substitua \`__SPU_FEEDBACK_ENDPOINT__\` no arquivo \`m212/index.html\` p
 ## Privacidade e segurança
 
 O formulário solicita apenas o nome do revisor e o comentário. Não há conta para o comentarista. O endpoint limita o piloto ao material M212, higieniza fórmulas potencialmente perigosas e usa trava de escrita para impedir colisões entre envios simultâneos.
+
+Enquanto a URL não for configurada, o botão permanece visível em modo de diagnóstico e informa que a ativação ainda está pendente. Nenhum comentário é enviado nesse estado.
