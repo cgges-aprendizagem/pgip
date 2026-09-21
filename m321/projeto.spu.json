@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M321 - O tripé da avaliação",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": []
+    }
+  },
+  "blocks": [
+    {
+      "id": "bb6uvooc",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b56f5n7i",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bu2vs8sg",
+          "type": "mediaembed",
+          "props": {
+            "type": "video",
+            "title": "O tripé da avaliação",
+            "provider": "M321",
+            "url": "https://www.youtube.com/watch?v=0ftCgS8nOcY"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bg9jx39v",
+      "type": "collapsiblesection",
+      "props": {
+        "triggerLabel": "Mostrar/ocultar a transcrição",
+        "defaultOpen": true,
+        "width": "content",
+        "surface": "warm",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b_msuw92o1_3h74",
+          "type": "prose",
+          "props": {
+            "html": "<p>Confira abaixo a transcrição completa do vídeo.</p>"
+          }
+        },
+        {
+          "id": "cej90aqy",
+          "type": "collapsebreak",
+          "props": {}
+        },
+        {
+          "id": "b4mpxoeg",
+          "type": "prose",
+          "props": {
+            "html": "<p>A.</p>"
+          }
+        }
+      ]
+    },
+    {
+      "id": "bxq5rodj",
+      "type": "pagefooter",
+      "props": {
+        "code": "O tripé da avaliação [M321]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo/Roteiro",
+            "name": "Alexandre Marcolino"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}
