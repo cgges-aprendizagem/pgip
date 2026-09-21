@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M142 - O padrão de uso e ocupação do território brasileiro",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": []
+    }
+  },
+  "blocks": [
+    {
+      "id": "bz5clsam",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "bn913j0t",
+      "type": "hero",
+      "props": {
+        "kicker": "Fundamentos da gestão e da ordenamento territorial e urbano",
+        "kickerIcon": "compass",
+        "title": "O padrão de uso e ocupação do território brasileiro",
+        "byline": "documento base da PNOT - p.37 - 108",
+        "slot": "bn913j0t__slot"
+      }
+    },
+    {
+      "id": "bt71qcej",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b1qf3sm2",
+          "type": "prose",
+          "props": {
+            "html": "<p>O trecho que selecionamos para leitura concentra uma parte especialmente relevante do diagnóstico sobre o território brasileiro. A leitura parte das fortes desigualdades que marcam o padrão de ocupação do país e acompanha algumas de suas principais transformações demográficas, econômicas e urbanas. Ao longo dessas páginas, o estudo ajuda a perceber como população, riqueza, atividades produtivas e infraestrutura se distribuem de maneira desigual pelo território — e como esses padrões foram sendo modificados pela expansão de novas frentes de ocupação e pela reorganização das atividades econômicas.&nbsp;</p><p>Para quem atua na gestão de imóveis públicos, merece atenção especial a discussão sobre as terras em poder da União. O documento destaca que o conhecimento e a gestão da propriedade pública constituem componentes importantes do ordenamento territorial, examinando temas como terras devolutas, áreas destinadas à conservação ambiental, terras indígenas, reforma agrária e outros espaços sob responsabilidade pública. Essa perspectiva permite compreender o patrimônio imobiliário não apenas como um conjunto de bens isolados, mas como parte de uma estrutura territorial mais ampla, sujeita a diferentes usos, interesses institucionais e finalidades públicas.&nbsp;</p><p>A leitura avança ainda sobre a logística do território brasileiro, explorando redes de transportes, energia, comunicações, cidades e grandes sistemas produtivos, além de seus efeitos sobre a organização do espaço. O texto mostra como essas redes conectam — ou deixam de conectar — diferentes partes do país e como infraestrutura, acessibilidade e localização das atividades ajudam a explicar muitas das desigualdades territoriais observadas.&nbsp;</p>"
+          }
+        },
+        {
+          "id": "bnowob15",
+          "type": "callout",
+          "props": {
+            "variant": "header",
+            "tone": "info",
+            "icon": "lightbulb",
+            "title": "Acesse o material completo",
+            "heading": "",
+            "children": "<p>Para aprofundar essa visão integrada do território e suas relações com a atuação do Estado, convidamos você a consultar o documento completo, dedicando atenção especial às páginas 37 a 108, que constituem o foco desta etapa do estudo.</p><p><a href=\"https://http://cgges-aprendizagem.github.io/pgip/m142/M142_PNOT.pdf\" target=\"_blank\" rel=\"noopener noreferrer\" data-btn=\"primary\">Clique aqui e acesse o PDF</a></p>"
+          }
+        },
+        {
+          "id": "b47mx4jg",
+          "type": "figure",
+          "props": {
+            "slot": "b47mx4jg__slot",
+            "src": "",
+            "fit": "contain",
+            "size": "full",
+            "title": "Capítulo de diagnóstico | documento Base da pnot",
+            "caption": "<a href=\"https://http://cgges-aprendizagem.github.io/pgip/m142/M142_PNOT.pdf\">Clique aqui para acessar o material na íntegra</a> ",
+            "credit": "",
+            "__pullDown": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "bafioq1n",
+      "type": "pagefooter",
+      "props": {
+        "code": "O padrão de uso e ocupação do território brasileiro [142]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncnd",
+        "credits": []
+      }
+    }
+  ]
+}
