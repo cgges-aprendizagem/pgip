@@ -903,7 +903,7 @@ const BLOCKS = [
   }],
   props: {
     code: 'Unidade · Tema',
-    context: 'Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.',
+    context: 'Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.',
     license: true,
     licenseKind: 'byncsa',
     credits: [{
