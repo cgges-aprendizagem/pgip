@@ -15,6 +15,11 @@
           "id": "cz42pocd",
           "text": "Da República à criação da Diretoria do Patrimônio Nacional",
           "hidden": false
+        },
+        {
+          "id": "clk23isk",
+          "text": "<span data-fs=\"h4\">Formação e transformação da gestão do patrimônio da União</span>",
+          "hidden": false
         }
       ],
       "enabled": false
@@ -65,7 +70,7 @@
             "icon": "landmark",
             "title": "",
             "heading": "",
-            "children": "<p>A experiência da União é utilizada como referência histórica para observar como a administração pública estrutura competências e responsabilidades para gerir seu patrimônio imobiliário. Uma questão que, com diferentes arranjos institucionais e jurídicos, também se coloca para estados e municípios.</p>"
+            "children": "<p>A experiência da União é utilizada como referência histórica para observar como a administração pública estrutura competências e responsabilidades para gerir seu patrimônio imobiliário. Essa é uma questão que, com diferentes arranjos institucionais e jurídicos, também se coloca para estados e municípios.</p>"
           }
         },
         {
@@ -217,7 +222,7 @@
           "id": "blk6mszi",
           "type": "prose",
           "props": {
-            "html": "<p>A diferenciação entre essas estruturas fica ainda mais clara em 1850, ano marcado tanto pela <b>Lei de Terras</b> quanto por mudanças na organização responsável pela gestão do patrimônio nacional.</p><p>A partir do Tribunal do Desembargo do Paço surgiu a <b>Repartição Geral de Terras Públicas</b>, posteriormente transformada na 3ª Diretoria, de Terras Públicas e Colonização, vinculada à Secretaria de Estado dos Negócios da Agricultura, Comércio e Obras Públicas, conforme registrado no Caderno nº 4 do projeto Memória da Administração Pública Brasileira – MAPA:</p>"
+            "html": "<p>A diferenciação entre essas estruturas fica ainda mais clara em 1850, ano marcado tanto pela <b>Lei de Terras</b> quanto por mudanças na organização responsável pela gestão do patrimônio nacional.</p><p>A partir do Tribunal do Desembargo do Paço surgiu a <b>Repartição Geral de Terras Públicas</b>, posteriormente transformada na 3ª Diretoria de Terras Públicas e Colonização, vinculada à Secretaria de Estado dos Negócios da Agricultura, Comércio e Obras Públicas, conforme registrado no Caderno nº 4 do projeto Memória da Administração Pública Brasileira – MAPA:</p>"
           }
         },
         {
@@ -458,7 +463,7 @@
           "id": "b73g7ymj",
           "type": "prose",
           "props": {
-            "html": "<p>A consolidação, no ordenamento jurídico, do entendimento de que o órgão patrimonial seria responsável por gerir os terrenos de marinha e os terrenos marginais refletiu-se nos atos de <mark data-hl=\"petrol\">criação e reorganização das unidades responsáveis pela gestão do patrimônio da União</mark> após a Proclamação da República. </p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Essas estruturas organizacionais passaram a responder pelos seguintes macroprocessos: </span><mark style=\"text-wrap-mode: initial;\"><b>demarcação</b> e <b>cadastro</b>, <b>destinação</b>, <b>arrecadação</b> e <b>fiscalização</b></mark><span style=\"text-wrap-mode: initial; color: inherit;\"> dos bens imóveis da União. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Tal organização em torno de macroprocessos pode ser observada nas diferentes denominações atribuídas ao órgão responsável pela gestão patrimonial após a instituição da República, sintetizadas na linha do tempo abaixo. Além das principais denominações, você pode observar os ministérios aos quais esteve vinculado e os respectivos atos de criação ou reorganização.</span></p>"
+            "html": "<p>A consolidação, no ordenamento jurídico, do entendimento de que o órgão patrimonial seria responsável por gerir os terrenos de marinha e os terrenos marginais refletiu-se nos atos de <mark data-hl=\"petrol\">criação e reorganização das unidades responsáveis pela gestão do patrimônio da União</mark> após a Proclamação da República. </p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Essas estruturas organizacionais passaram a responder pelos seguintes macroprocessos: </span><mark style=\"text-wrap-mode: initial;\"><b>demarcação</b> e <b>cadastro</b>, <b>destinação</b>, <b>arrecadação</b> e <b>fiscalização</b></mark><span style=\"text-wrap-mode: initial; color: inherit;\"> dos bens imóveis da União. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Tal organização em torno de macroprocessos pode ser observada nas diferentes estruturas ou arranjos institucionais atribuídas ao órgão responsável pela gestão patrimonial após a instituição da República, sintetizadas na linha do tempo abaixo. Além das principais denominações, você pode observar os ministérios aos quais esteve vinculado e os respectivos atos de criação ou reorganização.</span></p>"
           }
         },
         {
@@ -554,8 +559,6 @@
       "id": "bq9e6d3j",
       "type": "collapsiblesection",
       "props": {
-        "title": "<span data-fs=\"h4\">Formação e transformação da gestão do patrimônio da União</span>",
-        "lead": "<p>Entenda por que a história da instituição não deve ser vista apenas como uma sequência de mudanças de nomes, mas como um processo de construção e redefinição da própria ideia de patrimônio público nacional.<br><br></p>",
         "triggerLabel": "Veja mais ",
         "defaultOpen": false,
         "width": "content",
@@ -563,6 +566,26 @@
         "pad": "lg"
       },
       "children": [
+        {
+          "id": "clk23isk",
+          "type": "titulo",
+          "props": {
+            "text": "<span data-fs=\"h4\">Formação e transformação da gestão do patrimônio da União</span>",
+            "level": "h2"
+          }
+        },
+        {
+          "id": "c1says7y",
+          "type": "prose",
+          "props": {
+            "html": "<p>Entenda por que a história da instituição não deve ser vista apenas como uma sequência de mudanças de nomes, mas como um processo de construção e redefinição da própria ideia de patrimônio público nacional.<br><br></p>"
+          }
+        },
+        {
+          "id": "cvprrdec",
+          "type": "collapsebreak",
+          "props": {}
+        },
         {
           "id": "bbvf799s",
           "type": "timeline",
@@ -772,7 +795,7 @@
         "kicker": "Conclusões",
         "kickerIcon": "check",
         "title": "O que essa trajetória nos ajuda a compreender?",
-        "body": "<p>A linha do tempo revela um processo de reorganização contínua da gestão do patrimônio imobiliário da União, sem ruptura completa com as funções historicamente exercidas. Ao longo desse percurso, estruturas administrativas, denominações dos órgãos e vinculações ministeriais foram alteradas para acompanhar as transformações políticas, jurídicas e administrativas do Estado brasileiro. Nesse tempo, a gestão patrimonial se especializou e incorporou atribuições centrais, como demarcação, cadastro, destinação, arrecadação e fiscalização.</p><p><span style=\"color: inherit; text-wrap-mode: initial;\">Os documentos históricos mostram ainda que, desde a transformação do Tesouro Real em Tesouro Nacional, em 1831, e suas reorganizações posteriores, uma das principais funções da gestão patrimonial foi a arrecadação de rendas fundiárias por meio do aforamento e da ocupação, aplicados principalmente aos terrenos de marinha e aos terrenos marginais.</span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">Essa trajetória mostra que a forma como o Poder Público organiza a gestão de seus imóveis resulta de escolhas institucionais construídas ao longo do tempo, com competências redistribuídas e estruturas sucessivamente criadas ou reorganizadas.</span></p><p>Embora este conteúdo tenha focado na experiência da União, essa perspectiva também se aplica a estados, municípios e demais órgãos e entidades que administram imóveis públicos. Conhecer quem exerce cada competência e como essas responsabilidades se articulam é parte fundamental da gestão patrimonial.</p>"
+        "body": "<p>A linha do tempo revela um processo de reorganização contínua da gestão do patrimônio imobiliário da União, sem ruptura completa com as funções historicamente exercidas. Ao longo desse percurso, estruturas administrativas, denominações dos órgãos e vinculações ministeriais foram alteradas para acompanhar as transformações políticas, jurídicas e administrativas do Estado brasileiro. Nesse período, a gestão patrimonial se especializou e incorporou atribuições centrais, como demarcação, cadastro, destinação, arrecadação e fiscalização.</p><p><span style=\"color: inherit; text-wrap-mode: initial;\">Os documentos históricos mostram ainda que, desde a transformação do Tesouro Real em Tesouro Nacional, em 1831, e suas reorganizações posteriores, uma das principais funções da gestão patrimonial foi a arrecadação de rendas fundiárias por meio do aforamento e da ocupação, aplicados principalmente aos terrenos de marinha e aos terrenos marginais.</span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">Essa trajetória mostra que a forma como o Poder Público organiza a gestão de seus imóveis resulta de escolhas institucionais construídas ao longo do tempo, com competências redistribuídas e estruturas sucessivamente criadas ou reorganizadas.</span></p><p>Embora este conteúdo tenha focado na experiência da União, essa perspectiva também se aplica a estados, municípios e demais órgãos e entidades que administram imóveis públicos. Conhecer quem exerce cada competência e como essas responsabilidades se articulam é parte fundamental da gestão patrimonial.</p>"
       },
       "children": [
         {
@@ -810,7 +833,7 @@
                   },
                   {
                     "title": "",
-                    "text": "Que desafios atuais da gestão do patrimônio da União podem ter relação com essa longa trajetória histórica? "
+                    "text": "Que desafios atuais da gestão do patrimônio imobiliário público podem ter relação com essa longa trajetória histórica? "
                   },
                   {
                     "title": "",
@@ -841,7 +864,7 @@
       "type": "pagefooter",
       "props": {
         "code": "A gestão dos imóveis públicos no Brasil ao longo do tempo [M133]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [

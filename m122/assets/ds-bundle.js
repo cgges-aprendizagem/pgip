@@ -62,9 +62,6 @@ try { (() => {
 
 (() => {
   const STATE_FILE = '.image-slots.state.json';
-  // 2× a ~600px slot in a 1920-wide deck — retina-sharp without making the
-  // sidecar enormous. A 1200px WebP at q=0.85 is ~150-300KB.
-  const MAX_DIM = 1200;
   // Raster formats only. SVG is excluded (can carry script; createImageBitmap
   // on SVG blobs is inconsistent). GIF is excluded because the canvas
   // re-encode keeps only the first frame, so an animated GIF would silently
@@ -78,6 +75,7 @@ try { (() => {
   // the host allowlists to *.state.json basenames only.
   const subs = new Set();
   let slots = {};
+  let storeRevision = 0;
   // ids explicitly cleared before the sidecar fetch resolved — otherwise
   // the merge below can't tell "never set" from "just deleted" and would
   // resurrect the sidecar's stale value.
@@ -86,7 +84,9 @@ try { (() => {
   let loadP = null;
   function load() {
     if (loadP) return loadP;
+    const revision = storeRevision;
     loadP = fetch(STATE_FILE).then(r => r.ok ? r.json() : null).then(j => {
+      if (revision !== storeRevision) return;
       // Merge: sidecar loses to any in-memory change that raced ahead of
       // the fetch (drop or clear) so neither is clobbered by hydration.
       if (j && typeof j === 'object') {
@@ -163,30 +163,21 @@ try { (() => {
     if (loaded) save();else load().then(save);
   }
 
-  // ── Image downscale ─────────────────────────────────────────────────────
-  // Encode through a canvas so the sidecar carries resized bytes, not the
-  // raw upload. Longest side is capped at 2× the slot's rendered width
-  // (retina) and at MAX_DIM. WebP keeps alpha and is ~10× smaller than PNG
-  // for photos, so there's no need for per-image format picking.
-  async function toDataUrl(file, targetW) {
-    const bitmap = await createImageBitmap(file);
-    try {
-      const cap = Math.min(MAX_DIM, Math.max(1, Math.round(targetW * 2)) || MAX_DIM);
-      const scale = Math.min(1, cap / Math.max(bitmap.width, bitmap.height));
-      const w = Math.max(1, Math.round(bitmap.width * scale));
-      const h = Math.max(1, Math.round(bitmap.height * scale));
-      const canvas = document.createElement('canvas');
-      canvas.width = w;
-      canvas.height = h;
-      canvas.getContext('2d').drawImage(bitmap, 0, 0, w, h);
-      return canvas.toDataURL('image/webp', 0.85);
-    } finally {
-      bitmap.close && bitmap.close();
-    }
+  // ── Original image persistence ──────────────────────────────────────────
+  // Keep the uploaded bytes intact. Compact WebP variants are generated only
+  // when the author chooses a compact export, so the editor and high-quality
+  // packages never depend on an already-downscaled copy.
+  function toDataUrl(file) {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = () => resolve(String(reader.result || ''));
+      reader.onerror = () => reject(reader.error || new Error('Could not read image.'));
+      reader.readAsDataURL(file);
+    });
   }
 
   // ── Custom element ──────────────────────────────────────────────────────
-  const stylesheet = ':host{display:inline-block;position:relative;vertical-align:top;' + '  font:13px/1.3 system-ui,-apple-system,sans-serif;color:rgba(0,0,0,.55);width:240px;height:160px}' + '.frame{position:absolute;inset:0;overflow:hidden;background:rgba(0,0,0,.04)}' +
+  const stylesheet = ':host{display:inline-block;position:relative;vertical-align:top;' + '  font:13px/1.3 system-ui,-apple-system,sans-serif;color:rgba(0,0,0,.55);width:240px;height:160px}' + ':host([data-auto-height][data-filled]){height:auto;min-height:0!important}' + '.frame{position:absolute;inset:0;overflow:hidden;background:rgba(0,0,0,.04)}' +
   // .frame img (clipped) and .spill (unclipped ghost + handles) share the
   // same left/top/width/height in frame-%, computed by _applyView(), so the
   // inside-mask crop and the outside-mask spill stay pixel-aligned.
@@ -254,7 +245,10 @@ try { (() => {
       });
       // naturalWidth/Height aren't known until load — re-apply so the cover
       // baseline is computed from real dimensions, not the 100%×100% fallback.
-      this._img.addEventListener('load', () => this._applyView());
+      this._img.addEventListener('load', () => {
+        this._syncAutoHeight();
+        this._applyView();
+      });
       // Gated on editable + fit=cover so share links and contain/fill slots
       // stay static.
       this.addEventListener('dblclick', e => {
@@ -457,13 +451,11 @@ try { (() => {
         this._setError('Drop a PNG, JPEG, WebP, or AVIF image.');
         return;
       }
-      // toDataUrl can take hundreds of ms on a large photo. A Clear or a
-      // newer drop during that window would be clobbered when this await
-      // resumes — bump + capture a generation so stale encodes bail.
+      // Reading can take hundreds of ms on a large image. A Clear or a newer
+      // drop during that window must not be clobbered when this await resumes.
       const gen = ++this._gen;
       try {
-        const w = this.clientWidth || this.offsetWidth || MAX_DIM;
-        const url = await toDataUrl(file, w);
+        const url = await toDataUrl(file);
         if (gen !== this._gen) return;
         // Only exit reframe once the new image is in hand — a rejected type
         // or decode failure leaves the in-progress crop untouched.
@@ -574,7 +566,9 @@ try { (() => {
       this._spill.style.top = t;
     }
     _commitView() {
+      const current = this.id ? getSlot(this.id) : this._local;
       const v = {
+        ...(current || {}),
         s: this._view.s,
         x: this._view.x,
         y: this._view.y
@@ -584,6 +578,13 @@ try { (() => {
       // crop; clearing the sidecar still falls through to src=.
       if (this.id) setSlot(this.id, v);else {
         this._local = v;
+      }
+    }
+    _syncAutoHeight() {
+      if (this.hasAttribute('data-auto-height') && this._img.naturalWidth && this._img.naturalHeight) {
+        this.style.aspectRatio = `${this._img.naturalWidth} / ${this._img.naturalHeight}`;
+      } else {
+        this.style.removeProperty('aspect-ratio');
       }
     }
     _render() {
@@ -637,9 +638,11 @@ try { (() => {
         this._empty.style.display = 'none';
         this.setAttribute('data-filled', '');
         this.style.display = '';
+        this._syncAutoHeight();
         this._clampView();
         this._applyView();
       } else {
+        this.style.removeProperty('aspect-ratio');
         this._img.style.display = 'none';
         this._img.removeAttribute('src');
         this._ghost.removeAttribute('src');
@@ -650,6 +653,32 @@ try { (() => {
       }
     }
   }
+  window.__SPU_IMAGE_SLOT_RUNTIME = {
+    snapshot() {
+      return loaded || Object.keys(slots).length ? JSON.stringify(slots) : '';
+    },
+    replace(content) {
+      try {
+        const next = typeof content === 'string' ? JSON.parse(content) : content;
+        slots = next && typeof next === 'object' && !Array.isArray(next) ? next : {};
+      } catch {
+        slots = {};
+      }
+      storeRevision++;
+      tombstones.clear();
+      loaded = true;
+      subs.forEach(fn => fn());
+      save();
+    },
+    clear() {
+      slots = {};
+      storeRevision++;
+      tombstones.clear();
+      loaded = true;
+      subs.forEach(fn => fn());
+      save();
+    }
+  };
   if (!customElements.get('image-slot')) {
     customElements.define('image-slot', ImageSlot);
   }
@@ -684,7 +713,7 @@ const BLOCKS = [
   rich: true,
   props: {
     org: 'SPU',
-    program: 'Programa de Aprendizagem em Gestão de Imóveis Públicos'
+    program: 'Programa Gestão de Imóveis Públicos'
   }
 }, {
   type: 'section',
@@ -693,6 +722,37 @@ const BLOCKS = [
   icon: 'layout',
   cat: 'Estrutura',
   kind: 'container',
+  props: {
+    width: 'content',
+    surface: 'none',
+    pad: 'lg',
+    children: []
+  }
+}, {
+  type: 'sectionslider',
+  component: 'SectionSlider',
+  label: 'Seção-slider',
+  icon: 'chevrons-right',
+  cat: 'Estrutura',
+  kind: 'container',
+  stack: false,
+  props: {
+    loop: true,
+    children: []
+  },
+  propFields: [{
+    key: 'loop',
+    label: 'Navegação circular',
+    type: 'bool'
+  }]
+}, {
+  type: 'sectionslide',
+  component: 'Section',
+  label: 'Slide (seção)',
+  icon: 'layout',
+  cat: 'Estrutura',
+  kind: 'container',
+  internal: true,
   props: {
     width: 'content',
     surface: 'none',
@@ -768,10 +828,10 @@ const BLOCKS = [
   },
   fields: ['kicker', 'title', 'byline'],
   props: {
-    kicker: 'Unidade · Tema',
+    kicker: 'Nome da competência',
     kickerIcon: 'compass',
     title: 'Título da unidade',
-    byline: '',
+    byline: 'Eixo X · Competência X',
     slot: ''
   }
 }, {
@@ -843,12 +903,21 @@ const BLOCKS = [
   }],
   props: {
     code: 'Unidade · Tema',
-    context: 'Descrição curta.',
+    context: 'Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.',
     license: true,
     licenseKind: 'byncsa',
     credits: [{
-      role: 'Produção',
-      name: '—'
+      role: 'Conteúdo',
+      name: 'Autor'
+    }, {
+      role: 'Revisão',
+      name: '-'
+    }, {
+      role: 'Design Educacional',
+      name: 'Luís Henrique Lindner'
+    }, {
+      role: 'Versão',
+      name: 'Julho de 2026'
     }]
   }
 }, {
@@ -962,10 +1031,43 @@ const BLOCKS = [
       value: 'block',
       label: 'Bloco'
     }]
+  }, {
+    key: 'fontSize',
+    label: 'Tamanho do texto',
+    type: 'select',
+    options: [{
+      value: 'auto',
+      label: 'Padrão do estilo'
+    }, {
+      value: 'small',
+      label: 'Pequeno'
+    }, {
+      value: 'body',
+      label: 'Corpo'
+    }, {
+      value: 'body-lg',
+      label: 'Corpo grande'
+    }, {
+      value: 'h6',
+      label: 'Destaque pequeno'
+    }, {
+      value: 'h5',
+      label: 'Destaque médio'
+    }, {
+      value: 'h4',
+      label: 'Grande'
+    }, {
+      value: 'h3',
+      label: 'Muito grande'
+    }, {
+      value: 'h2',
+      label: 'Extra grande'
+    }]
   }],
   fields: ['children', 'cite'],
   props: {
     variant: 'eye',
+    fontSize: 'auto',
     children: 'Uma frase marcante que merece destaque.',
     cite: 'Fonte, ano'
   }
@@ -1021,10 +1123,15 @@ const BLOCKS = [
     key: 'icon',
     label: 'Ícone do bullet',
     type: 'icon'
+  }, {
+    key: 'accent',
+    label: 'Cor dos marcadores',
+    type: 'accent'
   }],
   props: {
     variant: 'ordered',
     icon: 'check',
+    accent: '',
     items: [{
       title: 'Identificar',
       text: 'Localizar o imóvel no cadastro SPU.'
@@ -1113,9 +1220,9 @@ const BLOCKS = [
   label: 'Bloco de destaque',
   icon: 'square',
   cat: 'Destaques',
-  kind: 'text',
+  kind: 'container',
   rich: true,
-  fields: ['kicker', 'title', 'children'],
+  fields: ['kicker', 'title', 'body'],
   propFields: [{
     key: 'variant',
     label: 'Estilo',
@@ -1164,7 +1271,8 @@ const BLOCKS = [
     title: 'Título do bloco',
     color: '',
     bg: '',
-    children: '<p>Conteúdo do bloco.</p>'
+    body: '<p>Conteúdo do bloco.</p>',
+    children: []
   }
 },
 // ── Mídia ──
@@ -1182,7 +1290,7 @@ const BLOCKS = [
     fit: 'contain',
     size: 'full',
     title: '',
-    caption: 'Legenda da imagem.',
+    caption: '',
     credit: ''
   }
 }, {
@@ -1263,6 +1371,124 @@ const BLOCKS = [
       caption: 'Legenda da imagem.',
       credit: '',
       alt: ''
+    }]
+  }
+}, {
+  type: 'contentslider',
+  component: 'ContentSlider',
+  label: 'Slider de conteúdo',
+  icon: 'panels-top-left',
+  cat: 'Interativos',
+  kind: 'list',
+  itemsKey: 'slides',
+  itemFields: [{
+    key: 'showImage',
+    label: 'Exibir imagem',
+    type: 'bool'
+  }, {
+    key: 'slot',
+    label: 'Imagem (opcional)',
+    type: 'slot',
+    optional: true
+  }, {
+    key: 'alt',
+    label: 'Texto alternativo',
+    type: 'text',
+    optional: true
+  }, {
+    key: 'caption',
+    label: 'Legenda da imagem',
+    type: 'rich',
+    inline: true,
+    optional: true
+  }, {
+    key: 'labelIcon',
+    label: 'Ícone da etiqueta',
+    type: 'icon',
+    optional: true
+  }, {
+    key: 'label',
+    label: 'Etiqueta',
+    type: 'rich',
+    inline: true,
+    optional: true
+  }, {
+    key: 'tabLabel',
+    label: 'Rótulo da aba',
+    type: 'rich',
+    inline: true
+  }, {
+    key: 'title',
+    label: 'Título',
+    type: 'rich',
+    inline: true
+  }, {
+    key: 'subtitle',
+    label: 'Subtítulo',
+    type: 'rich',
+    inline: true,
+    optional: true
+  }, {
+    key: 'description',
+    label: 'Descrição',
+    type: 'rich',
+    optional: true
+  }, {
+    key: 'linkHref',
+    label: 'URL do link',
+    type: 'text',
+    optional: true
+  }, {
+    key: 'linkLabel',
+    label: 'Texto do link',
+    type: 'rich',
+    inline: true,
+    optional: true
+  }],
+  propFields: [{
+    key: 'hint',
+    label: 'Chamada superior',
+    type: 'rich',
+    inline: true
+  }, {
+    key: 'accent',
+    label: 'Cor de acento',
+    type: 'accent'
+  }, {
+    key: 'showTabNumbers',
+    label: 'Mostrar números nas abas',
+    type: 'bool'
+  }],
+  props: {
+    hint: 'Explore os slides',
+    accent: '',
+    showTabNumbers: true,
+    slides: [{
+      showImage: true,
+      slot: '',
+      alt: '',
+      caption: '',
+      labelIcon: '',
+      label: 'Etiqueta',
+      tabLabel: 'Slide 1',
+      title: 'Título do slide',
+      subtitle: 'Subtítulo opcional',
+      description: '<p>Descrição opcional do conteúdo.</p>',
+      linkHref: '',
+      linkLabel: ''
+    }, {
+      showImage: false,
+      slot: '',
+      alt: '',
+      caption: '',
+      labelIcon: '',
+      label: '',
+      tabLabel: 'Slide 2',
+      title: 'Outro título de slide',
+      subtitle: '',
+      description: '',
+      linkHref: '',
+      linkLabel: ''
     }]
   }
 }, {
@@ -1379,16 +1605,33 @@ const BLOCKS = [
   label: 'Card de exemplo',
   icon: 'layers',
   cat: 'Mídia',
-  kind: 'text',
+  kind: 'container',
   rich: true,
-  fields: ['label', 'title', 'children'],
+  fields: ['label', 'title', 'body'],
+  propFields: [{
+    key: 'collapse',
+    label: 'Comportamento',
+    type: 'select',
+    options: [{
+      value: 'none',
+      label: 'Sempre aberto'
+    }, {
+      value: 'open',
+      label: 'Retrátil, inicialmente aberto'
+    }, {
+      value: 'closed',
+      label: 'Retrátil, inicialmente fechado'
+    }]
+  }],
   props: {
     label: 'Exemplo prático',
     icon: 'map-pin',
     color: '',
     slot: '',
+    collapse: 'none',
     title: 'Título do exemplo',
-    children: '<p>Descrição do caso.</p>'
+    body: '<p>Descrição do caso.</p>',
+    children: []
   }
 }, {
   type: 'statblock',
@@ -1452,6 +1695,22 @@ const BLOCKS = [
   cat: 'Mídia',
   kind: 'list',
   itemsKey: 'items',
+  propFields: [{
+    key: 'accent',
+    label: 'Cor do conjunto de ícones',
+    type: 'accent'
+  }, {
+    key: 'layout',
+    label: 'Posição do ícone',
+    type: 'select',
+    options: [{
+      value: 'top',
+      label: 'Acima do conteúdo'
+    }, {
+      value: 'side',
+      label: 'À esquerda do conteúdo'
+    }]
+  }],
   itemFields: [{
     key: 'icon',
     label: 'Ícone',
@@ -1470,6 +1729,8 @@ const BLOCKS = [
   props: {
     columns: 3,
     card: true,
+    accent: '',
+    layout: 'top',
     items: [{
       icon: 'building',
       title: 'Título',
@@ -1510,6 +1771,52 @@ const BLOCKS = [
     provider: 'Externo',
     url: 'https://'
   }
+}, {
+  type: 'externalembed',
+  component: 'ExternalEmbed',
+  label: 'Conteúdo externo (iframe)',
+  icon: 'code',
+  cat: 'Mídia',
+  kind: 'list',
+  propFields: [{
+    key: 'title',
+    label: 'Título acessível',
+    type: 'text'
+  }, {
+    key: 'embed',
+    label: 'URL ou código iframe',
+    type: 'text'
+  }, {
+    key: 'responsive',
+    label: 'Responsivo na largura',
+    type: 'bool'
+  }, {
+    key: 'useEmbedDimensions',
+    label: 'Herdar dimensões do iframe',
+    type: 'bool'
+  }, {
+    key: 'width',
+    label: 'Largura máxima (px)',
+    type: 'number',
+    min: 240,
+    max: 2400,
+    step: 10
+  }, {
+    key: 'height',
+    label: 'Altura (px)',
+    type: 'number',
+    min: 120,
+    max: 2400,
+    step: 10
+  }],
+  props: {
+    title: 'Conteúdo incorporado',
+    embed: '',
+    responsive: true,
+    useEmbedDimensions: true,
+    width: 960,
+    height: 540
+  }
 },
 // ── Interativos ──
 {
@@ -1520,23 +1827,66 @@ const BLOCKS = [
   cat: 'Interativos',
   kind: 'list',
   propFields: [{
+    key: 'icon',
+    label: 'Ícone da frente',
+    type: 'icon'
+  }, {
+    key: 'showIcon',
+    label: 'Exibir ícone da frente',
+    type: 'bool'
+  }, {
+    key: 'useCoverImage',
+    label: 'Usar imagem como capa',
+    type: 'bool'
+  }, {
+    key: 'coverSlot',
+    label: 'Imagem de capa',
+    type: 'slot'
+  }, {
+    key: 'coverAlt',
+    label: 'Texto alternativo da capa',
+    type: 'text'
+  }, {
     key: 'term',
-    label: 'Conceito',
+    label: 'Título da frente',
+    type: 'rich',
+    inline: true
+  }, {
+    key: 'description',
+    label: 'Descrição curta da frente',
+    type: 'rich',
+    inline: true
+  }, {
+    key: 'frontCue',
+    label: 'Instrução para virar',
     type: 'rich',
     inline: true
   }, {
     key: 'definition',
-    label: 'Definição',
+    label: 'Texto do verso',
     type: 'rich'
   }, {
-    key: 'icon',
-    label: 'Ícone',
-    type: 'icon'
+    key: 'backCue',
+    label: 'Instrução para voltar',
+    type: 'rich',
+    inline: true
+  }, {
+    key: 'color',
+    label: 'Cor do flashcard',
+    type: 'accent'
   }],
   props: {
-    term: 'Conceito',
-    definition: 'Definição do conceito.',
-    icon: 'building'
+    term: 'Título do flashcard',
+    description: 'Uma descrição curta para apresentar o conteúdo.',
+    definition: '<p>Use este espaço para desenvolver o conteúdo do verso.</p>',
+    icon: 'building',
+    showIcon: true,
+    useCoverImage: false,
+    coverSlot: '',
+    coverAlt: '',
+    frontCue: 'Clique para virar',
+    backCue: 'Clique para voltar',
+    color: 'var(--petrol-600)'
   }
 }, {
   type: 'accordion',
@@ -1555,11 +1905,6 @@ const BLOCKS = [
     key: 'content',
     label: 'Resposta',
     type: 'rich'
-  }, {
-    key: 'imageSlot',
-    label: 'Imagem (opcional)',
-    type: 'slot',
-    optional: true
   }, {
     key: 'linkHref',
     label: 'Link (opcional)',
@@ -1634,11 +1979,6 @@ const BLOCKS = [
       key: 'content',
       label: 'Descrição',
       type: 'rich'
-    }, {
-      key: 'imageSlot',
-      label: 'Imagem (opcional)',
-      type: 'slot',
-      optional: true
     }, {
       key: 'linkHref',
       label: 'Link (opcional)',
@@ -1754,11 +2094,30 @@ const BLOCKS = [
   icon: 'image',
   cat: 'Interativos',
   kind: 'list',
+  propFields: [{
+    key: 'heightMode',
+    label: 'Altura da imagem',
+    type: 'select',
+    options: [{
+      value: 'original',
+      label: 'Proporção original'
+    }, {
+      value: 'adapted',
+      label: 'Adaptada ao quadro'
+    }]
+  }, {
+    key: 'caption',
+    label: 'Legenda',
+    type: 'rich',
+    inline: true
+  }],
   props: {
     beforeLabel: 'Antes',
     afterLabel: 'Depois',
     beforeSlot: '',
-    afterSlot: ''
+    afterSlot: '',
+    heightMode: 'original',
+    caption: ''
   }
 }, {
   type: 'quiz',
@@ -1812,8 +2171,10 @@ const BLOCKS = [
 const BLOCK_BY_TYPE = Object.fromEntries(BLOCKS.map(b => [b.type, b]));
 const BLOCK_CATS = ['Estrutura', 'Texto', 'Destaques', 'Mídia', 'Interativos'];
 // Tipos que NÃO podem viver dentro de uma Section (são estrutura de página).
-const STRUCTURAL_TYPES = ['masthead', 'section', 'hero', 'conclusion', 'pagefooter'];
-const CHILD_TYPES = BLOCKS.map(b => b.type).filter(t => STRUCTURAL_TYPES.indexOf(t) === -1);
+const STRUCTURAL_TYPES = ['masthead', 'section', 'sectionslider', 'hero', 'conclusion', 'pagefooter'];
+const CHILD_TYPES = BLOCKS.filter(b => !b.internal && STRUCTURAL_TYPES.indexOf(b.type) === -1).map(b => b.type);
+BLOCK_BY_TYPE.sectionslider.allowedTypes = ['sectionslide'];
+BLOCK_BY_TYPE.sectionslide.allowedTypes = CHILD_TYPES;
 function uid(p) {
   return p + Math.random().toString(36).slice(2, 9);
 }
@@ -1828,6 +2189,8 @@ function newBlock(type, child) {
     props: JSON.parse(JSON.stringify(def.props || {}))
   };
   if (type === 'section') b.props.children = [newBlock('titulo', true), newBlock('prose', true)];
+  if (type === 'sectionslide') b.props.children = [newBlock('titulo', true), newBlock('prose', true)];
+  if (type === 'sectionslider') b.props.children = [newBlock('sectionslide', true), newBlock('sectionslide', true)];
   return b;
 }
 const BlockRegistry = {
@@ -1891,6 +2254,18 @@ function migrate(doc) {
     if (b.type === 'conclusion' && typeof b.props.children === 'string') {
       b.props.body = b.props.body || b.props.children;
       b.props.children = [];
+    }
+    // 10 — Panel: conteúdo textual antigo vira `body`; children passa a ser array de blocos.
+    if (b.type === 'panel' && typeof b.props.children === 'string') {
+      b.props.body = b.props.body || b.props.children;
+      b.props.children = [];
+      if (!Array.isArray(b.children)) b.children = [];
+    }
+    // 11 — ExampleCard: texto legado vira `body`; children passa a receber blocos.
+    if (b.type === 'examplecard' && typeof b.props.children === 'string') {
+      b.props.body = b.props.body || b.props.children;
+      b.props.children = [];
+      if (!Array.isArray(b.children)) b.children = [];
     }
     if (b.children) walk(b.children);
   });
@@ -2231,6 +2606,7 @@ __ds_scope.injectCss('spu-table-css', `
 .spu-table-wrap--tone-petrol .spu-table th{background:var(--petrol-700);color:#fff}
 .spu-table-wrap--tone-terra .spu-table th{background:var(--terra-700);color:#fff}
 .spu-table-wrap--tone-ochre .spu-table th{background:var(--ochre-700);color:#fff}
+.spu-table .spu-richtext{line-height:inherit}
 `);
 function DataTable({
   columns = [],
@@ -2249,15 +2625,21 @@ function DataTable({
     style
   }, React.createElement('table', {
     className: __ds_scope.cx('spu-table', dense && 'spu-table--dense', highlightFirst && 'spu-table__firstcol')
-  }, caption && React.createElement('caption', null, caption), React.createElement('thead', null, React.createElement('tr', null, columns.map((c, i) => React.createElement('th', {
-    key: i,
-    className: alignCls(c.align)
-  }, c.label)))), React.createElement('tbody', null, rows.map((r, ri) => React.createElement('tr', {
+  },
+  caption && React.createElement('caption', null, __ds_scope.renderRich(caption, { inline: true })),
+  React.createElement('thead', null,
+    React.createElement('tr', null, columns.map((c, i) => React.createElement('th', {
+      key: i,
+      className: alignCls(c.align)
+    }, __ds_scope.renderRich(c.label, { inline: true }))))
+  ),
+  React.createElement('tbody', null, rows.map((r, ri) => React.createElement('tr', {
     key: ri
   }, columns.map((c, ci) => React.createElement('td', {
     key: ci,
     className: alignCls(c.align)
-  }, r[c.key])))))));
+  }, __ds_scope.renderRich(r[c.key], { inline: true })))))
+  )));
 }
 Object.assign(__ds_scope, { DataTable });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/DataTable.jsx", error: String((e && e.message) || e) }); }
@@ -2329,7 +2711,26 @@ const SPU_MARKS = {
     id: 'green-light',
     label: 'Verde claro',
     swatch: 'var(--green-400)'
-  }]
+  }],
+  fonts: [
+    { id: 'display', label: 'Display' },
+    { id: 'body', label: 'Corpo' },
+    { id: 'serif', label: 'Serifada' },
+    { id: 'mono', label: 'Monoespaçada' }
+  ],
+  sizes: [
+    { id: 'display', label: 'Display' },
+    { id: 'h2', label: 'H2' },
+    { id: 'h3', label: 'H3' },
+    { id: 'h4', label: 'H4' },
+    { id: 'h5', label: 'H5' },
+    { id: 'h6', label: 'H6' },
+    { id: 'body-lg', label: 'Corpo grande' },
+    { id: 'body', label: 'Corpo' },
+    { id: 'small', label: 'Pequeno' },
+    { id: 'caption', label: 'Legenda' },
+    { id: 'eyebrow', label: 'Eyebrow' }
+  ]
 };
 __ds_scope.injectCss('spu-editable-css', `
 [data-spu-editable]{outline:none;cursor:text;border-radius:var(--radius-sm)}
@@ -2354,6 +2755,9 @@ __ds_scope.injectCss('spu-editable-css', `
 .spu-mtpop__btns button{flex:1;border:0;border-radius:7px;padding:7px 10px;font:inherit;font-size:12px;font-weight:600;cursor:pointer;background:rgba(255,255,255,.14);color:#fff}
 .spu-mtpop__btns button.is-primary{background:var(--color-accent,#c2613a);color:#fff}
 .spu-mtpop__btns button:hover{filter:brightness(1.12)}
+.spu-mtpop__list{display:flex;flex-direction:column;min-width:170px;max-height:min(330px,60vh);overflow:auto}
+.spu-mtpop__list button{border:0;background:transparent;color:#fff;text-align:left;padding:7px 9px;border-radius:7px;cursor:pointer;font:inherit;font-size:12px}
+.spu-mtpop__list button:hover{background:rgba(255,255,255,.16)}
 `);
 
 // ── helpers de seleção ──
@@ -2486,16 +2890,33 @@ function applyColor(id) {
     'data-color': id
   }, `span[data-color="${id}"]`);
 }
+function applyFont(id) {
+  wrapSelection('span', {
+    'data-font': id
+  }, `span[data-font="${id}"]`);
+}
+function applyFontSize(id) {
+  wrapSelection('span', {
+    'data-fs': id
+  }, `span[data-fs="${id}"]`);
+}
 function applyEmphasis(cmd) {
   document.execCommand(cmd, false, null);
   const sel = window.getSelection();
   fireInput(sel ? closestEditable(sel.anchorNode) : null);
+}
+function isExternalLink(url) {
+  return /^https?:\/\//i.test(String(url || '').trim());
 }
 function applyLink(url, asButton) {
   if (!url) return;
   const attrs = {
     href: url
   };
+  if (isExternalLink(url)) {
+    attrs.target = '_blank';
+    attrs.rel = 'noopener noreferrer';
+  }
   if (asButton) attrs['data-btn'] = asButton === true ? 'primary' : asButton; // primary|secondary|ghost
   wrapSelection('a', attrs, 'a[href]');
 }
@@ -2527,8 +2948,8 @@ function applyTerm() {
     if (!def) return;
     if (active && active.isConnected) {
       active.setAttribute('data-term', word);
-      active.setAttribute('title', def);
-      active.removeAttribute('data-definition');
+      active.setAttribute('data-definition', def);
+      active.removeAttribute('title');
       active.removeAttribute('data-def');
       fireInput(host);
       return;
@@ -2538,7 +2959,7 @@ function applyTerm() {
     s.addRange(saved);
     wrapSelection('span', {
       'data-term': word,
-      title: def
+      'data-definition': def
     }, 'span[data-term]');
   });
 }
@@ -2550,7 +2971,7 @@ function clearMarks() {
   if (!host) return;
   const tmp = document.createElement('div');
   tmp.appendChild(range.cloneContents());
-  tmp.querySelectorAll('mark, [data-color], [data-term], b, strong, i, em, a').forEach(unwrap);
+  tmp.querySelectorAll('span:not([data-term]), mark, [data-color], [data-font], [data-fs], [data-term], b, strong, i, em, a').forEach(unwrap);
   range.deleteContents();
   range.insertNode(document.createRange().createContextualFragment(tmp.innerHTML));
   sel.removeAllRanges();
@@ -2593,9 +3014,18 @@ function Editable({
       document.execCommand('insertText', false, t);
     },
     onKeyDown: e => {
-      if (single && e.key === 'Enter') {
+      if (single && e.key === 'Enter' && e.shiftKey) {
+        e.preventDefault();
+        document.execCommand('insertLineBreak', false, null);
+        ref.current && fireInput(ref.current);
+      } else if (single && e.key === 'Enter') {
         e.preventDefault();
         ref.current && ref.current.blur();
+      } else if (!single && e.key === 'Enter' && !e.shiftKey) {
+        e.preventDefault();
+        document.execCommand('defaultParagraphSeparator', false, 'p');
+        document.execCommand('insertParagraph', false, null);
+        ref.current && fireInput(ref.current);
       }
     },
     onMouseDown: e => e.stopPropagation()
@@ -2613,7 +3043,7 @@ function MarkToolbar({
   linkButtons = true
 }) {
   const [box, setBox] = React.useState(null);
-  const [menu, setMenu] = React.useState(null); // 'hl' | 'color' | 'link' | null
+  const [menu, setMenu] = React.useState(null); // 'hl' | 'color' | 'font' | 'size' | 'link' | null
   const savedRange = React.useRef(null);
   const [linkUrl, setLinkUrl] = React.useState('https://');
   React.useEffect(() => {
@@ -2726,6 +3156,21 @@ function MarkToolbar({
       height: 16
     }
   })))));
+  const optionMenu = (which, items, apply) => menu === which && React.createElement('div', {
+    className: 'spu-mtpop',
+    style: {
+      top: box.top + 38,
+      left: box.left
+    },
+    onMouseDown: e => e.preventDefault()
+  }, React.createElement('div', {
+    className: 'spu-mtpop__list'
+  }, items.map(item => React.createElement('button', {
+    key: item.id,
+    onClick: () => run(() => apply(item.id))
+  }, item.label))));
+  const popFont = optionMenu('font', SPU_MARKS.fonts, applyFont);
+  const popSize = optionMenu('size', SPU_MARKS.sizes, applyFontSize);
   const popLink = menu === 'link' && React.createElement('div', {
     className: 'spu-mtpop',
     style: {
@@ -2781,6 +3226,13 @@ function MarkToolbar({
     style: {
       fontWeight: 700
     }
+  }), btn('font', 'Família tipográfica', ['F', caret], () => openMenu('font'), {
+    className: menu === 'font' ? 'is-open' : undefined
+  }), btn('size', 'Tamanho do texto', ['Aa', caret], () => openMenu('size'), {
+    className: menu === 'size' ? 'is-open' : undefined,
+    style: {
+      fontSize: 11
+    }
   }), lists && box.allowLists && sep('s3'), lists && box.allowLists && btn('ul', 'Lista', '•', () => applyEmphasis('insertUnorderedList')), lists && box.allowLists && btn('ol', 'Lista numerada', '1.', () => applyEmphasis('insertOrderedList')), (links || glossary) && sep('s4'), links && btn('a', 'Link', ['🔗', caret], () => openMenu('link'), {
     className: menu === 'link' ? 'is-open' : undefined
   }), glossary && btn('t', 'Termo de glossário', 'termo', applyTerm, {
@@ -2788,10 +3240,10 @@ function MarkToolbar({
       borderBottom: '1.5px dotted #fff',
       fontSize: 12
     }
-  }), sep('s5'), btn('x', 'Limpar marcas', '✕', clearMarks)]);
-  return React.createElement(React.Fragment, null, bar, popHL, popColor, popLink);
+  }), sep('s5'), btn('x', 'Limpar formatação da seleção', '✕', clearMarks)]);
+  return React.createElement(React.Fragment, null, bar, popHL, popColor, popFont, popSize, popLink);
 }
-Object.assign(__ds_scope, { SPU_MARKS, applyHighlight, applyColor, applyEmphasis, applyLink, applyTerm, clearMarks, Editable, MarkToolbar });
+Object.assign(__ds_scope, { SPU_MARKS, applyHighlight, applyColor, applyFont, applyFontSize, applyEmphasis, applyLink, applyTerm, clearMarks, Editable, MarkToolbar });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/Editable.jsx", error: String((e && e.message) || e) }); }
 
 // components/content/LicenseBadge.jsx
@@ -2899,6 +3351,16 @@ function resolveMedia(url) {
   };
   const u = url.trim();
   let m;
+  // O Eduplay expõe páginas públicas em /app/video/:id e /app/audio/:id,
+  // enquanto o player próprio para incorporação usa /embed/ no mesmo caminho.
+  // Guardamos sempre a URL pública no documento e derivamos o player em runtime,
+  // evitando persistir links temporários/assinados do CDN.
+  if (m = u.match(/^https?:\/\/eduplay\.rnp\.br\/app\/(video|audio)\/(?:embed\/)?([\w-]+)(?:[/?#]|$)/i)) return {
+    kind: 'iframe',
+    src: `https://eduplay.rnp.br/app/${m[1].toLowerCase()}/embed/${m[2]}`,
+    provider: 'Eduplay',
+    audio: m[1].toLowerCase() === 'audio'
+  };
   if (m = u.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([\w-]{11})/)) return {
     kind: 'iframe',
     src: `https://www.youtube.com/embed/${m[1]}`
@@ -2931,6 +3393,16 @@ function resolveMedia(url) {
     src: u
   }; // desconhecido → mantém placeholder + link na legenda
 }
+function mediaTitleText(value) {
+  let html = typeof value === 'string' ? value : React.isValidElement(value) && value.props && typeof value.props.html === 'string' ? value.props.html : '';
+  if (!html) return '';
+  if (typeof DOMParser !== 'undefined') {
+    try {
+      return new DOMParser().parseFromString('<body>' + html + '</body>', 'text/html').body.textContent.trim();
+    } catch (e) {}
+  }
+  return html.replace(/<[^>]*>/g, '').trim();
+}
 function MediaEmbed({
   type = 'video',
   src,
@@ -2942,6 +3414,7 @@ function MediaEmbed({
   style
 }) {
   const isAudio = type === 'audio' || type === 'podcast';
+  const accessibleTitle = mediaTitleText(title);
   const ratio = aspect || (isAudio ? '21 / 9' : '16 / 9');
   const icon = isAudio ? 'headphones' : 'play-circle';
   // src explícito tem prioridade; senão deriva o player a partir da url.
@@ -2961,14 +3434,19 @@ function MediaEmbed({
     };
     player = React.createElement('iframe', {
       src: media.src,
-      title: title || 'Spotify',
+      title: accessibleTitle || 'Spotify',
       loading: 'lazy',
       allow: 'autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture'
     });
   } else if (media.kind === 'iframe') {
+    if (media.audio) frameStyle = {
+      aspectRatio: 'auto',
+      height: 180,
+      minHeight: 180
+    };
     player = React.createElement('iframe', {
       src: media.src,
-      title: title || 'mídia',
+      title: accessibleTitle || 'mídia',
       loading: 'lazy',
       allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share',
       allowFullScreen: true
@@ -3045,6 +3523,184 @@ function MediaEmbed({
 Object.assign(__ds_scope, { MediaEmbed });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/MediaEmbed.jsx", error: String((e && e.message) || e) }); }
 
+// components/content/ExternalEmbed.jsx
+try { (() => {
+__ds_scope.injectCss('spu-external-embed-css', `
+.spu-external-embed{width:100%;margin-inline:auto}
+.spu-external-embed__frame{position:relative;width:100%;overflow:hidden;border:1px solid var(--color-border);border-radius:var(--radius-md);background:var(--color-surface);box-shadow:var(--shadow-sm)}
+.spu-external-embed__frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;display:block}
+.spu-external-embed__empty{display:grid;place-items:center;min-height:220px;padding:var(--space-6);color:var(--text-muted);text-align:center;background:var(--color-surface-warm)}
+.spu-external-embed__print{padding:var(--space-4);border:1px solid var(--color-border);border-radius:var(--radius-md);word-break:break-all}
+.spu-external-embed__print a{color:var(--color-primary-strong)}
+@media print{.spu-external-embed{break-inside:avoid}}
+`);
+function parseExternalEmbed(value) {
+  const raw = String(value || '').trim();
+  if (!raw) return {};
+  let src = raw;
+  let width;
+  let height;
+  if (/^<iframe\b/i.test(raw) && typeof DOMParser !== 'undefined') {
+    try {
+      const doc = new DOMParser().parseFromString(raw, 'text/html');
+      const iframe = doc.querySelector('iframe');
+      if (iframe) {
+        src = iframe.getAttribute('src') || '';
+        width = Number.parseFloat(iframe.getAttribute('width') || '') || undefined;
+        height = Number.parseFloat(iframe.getAttribute('height') || '') || undefined;
+      }
+    } catch (e) {}
+  }
+  if (!/^https?:\/\//i.test(src)) return {};
+  return { src, width, height };
+}
+function externalTitleText(value) {
+  if (typeof value === 'string') return value.replace(/<[^>]*>/g, '').trim();
+  if (React.isValidElement(value) && value.props && typeof value.props.html === 'string') return value.props.html.replace(/<[^>]*>/g, '').trim();
+  return 'Conteúdo incorporado';
+}
+function ExternalEmbed({
+  embed,
+  title = 'Conteúdo incorporado',
+  responsive = true,
+  useEmbedDimensions = true,
+  width,
+  height = 600,
+  className,
+  style
+}) {
+  const parsed = parseExternalEmbed(embed);
+  const accessibleTitle = externalTitleText(title);
+  const intrinsicWidth = useEmbedDimensions && parsed.width || Number(width) || undefined;
+  const intrinsicHeight = useEmbedDimensions && parsed.height || Number(height) || 600;
+  const ratio = intrinsicWidth && intrinsicHeight ? `${intrinsicWidth} / ${intrinsicHeight}` : undefined;
+  const rootStyle = {
+    maxWidth: intrinsicWidth ? `${intrinsicWidth}px` : undefined,
+    ...style
+  };
+  if (!parsed.src) return React.createElement('div', {
+    className: __ds_scope.cx('spu-external-embed', className),
+    style: rootStyle
+  }, React.createElement('div', { className: 'spu-external-embed__empty' }, 'Cole uma URL pública ou o código de incorporação <iframe>.'));
+  if (__ds_scope.isPrint()) return React.createElement('div', {
+    className: __ds_scope.cx('spu-external-embed', className),
+    style: rootStyle
+  }, React.createElement('div', { className: 'spu-external-embed__print' }, React.createElement('strong', null, accessibleTitle), React.createElement('br'), React.createElement('a', {
+    href: parsed.src,
+    target: '_blank',
+    rel: 'noopener'
+  }, parsed.src)));
+  const frameStyle = responsive && ratio ? {
+    aspectRatio: ratio
+  } : {
+    height: `${intrinsicHeight}px`,
+    minHeight: 120
+  };
+  return React.createElement('div', {
+    className: __ds_scope.cx('spu-external-embed', className),
+    style: rootStyle
+  }, React.createElement('div', {
+    className: 'spu-external-embed__frame',
+    style: frameStyle
+  }, React.createElement('iframe', {
+    src: parsed.src,
+    title: accessibleTitle,
+    loading: 'lazy',
+    allow: 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen',
+    allowFullScreen: true
+  })));
+}
+Object.assign(__ds_scope, { ExternalEmbed });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/ExternalEmbed.jsx", error: String((e && e.message) || e) }); }
+
+// components/layout/SectionSlider.jsx
+try { (() => {
+__ds_scope.injectCss('spu-section-slider-css', `
+.spu-section-slider{position:relative;background:var(--color-page)}
+.spu-section-slider__viewport{position:relative;overflow:hidden}
+.spu-section-slider__track{display:flex;width:100%;transition:transform var(--dur) var(--ease-out);will-change:transform}
+.spu-section-slider__track>*{flex:0 0 100%;min-width:0}
+.spu-section-slider__arrow{position:absolute;z-index:5;top:50%;transform:translateY(-50%);width:44px;height:44px;display:grid;place-items:center;border:1px solid var(--color-primary);border-radius:var(--radius-pill);background:var(--color-surface);color:var(--color-primary-strong);box-shadow:var(--shadow-md);cursor:pointer}
+.spu-section-slider__arrow:hover{background:var(--color-primary-soft)}
+.spu-section-slider__arrow--prev{left:var(--space-32)}.spu-section-slider__arrow--next{right:var(--space-32)}
+.spu-section-slider__nav{display:flex;align-items:center;justify-content:center;margin-top:var(--space-4)}
+.spu-section-slider__center{display:flex;flex-direction:column;align-items:center;gap:var(--space-2)}
+.spu-section-slider__dots{display:flex;align-items:center;gap:var(--space-2)}
+.spu-section-slider__dot{width:8px;height:8px;border-radius:var(--radius-pill);background:var(--slate-300);border:0;padding:0;cursor:pointer;transition:width var(--dur) var(--ease-out),background var(--dur) var(--ease-out)}
+.spu-section-slider__dot--active{width:24px;background:var(--color-primary)}
+.spu-section-slider__count{font-family:var(--font-mono);font-size:var(--fs-caption);color:var(--text-muted);text-align:center}
+.spu-section-slider--editing{outline:1px dashed color-mix(in srgb,var(--color-primary) 40%,transparent);outline-offset:-1px}
+.spu-section-slider--print .spu-section-slider__viewport{overflow:visible}.spu-section-slider--print .spu-section-slider__track{display:flex;flex-direction:column;transform:none!important;gap:var(--flow-block)}.spu-section-slider--print .spu-section-slider__track>*{flex:auto;width:100%}.spu-section-slider--print .spu-section-slider__arrow,.spu-section-slider--print .spu-section-slider__nav{display:none}
+@media(max-width:720px){.spu-section-slider__arrow{width:38px;height:38px}.spu-section-slider__arrow--prev{left:var(--space-4)}.spu-section-slider__arrow--next{right:var(--space-4)}}
+@media print{.spu-section-slider__viewport{overflow:visible!important}.spu-section-slider__track{display:flex!important;flex-direction:column!important;transform:none!important;gap:var(--flow-block)}.spu-section-slider__track>*{flex:auto!important;width:100%!important}.spu-section-slider__arrow,.spu-section-slider__nav{display:none!important}}
+`);
+function SectionSlider({ children, loop = true, className, style, __builderEditing = false }) {
+  const slides = React.Children.toArray(children);
+  const [current, setCurrent] = React.useState(0);
+  const printing = __ds_scope.isPrint();
+  const count = slides.length;
+  React.useEffect(() => {
+    if (current >= count) setCurrent(Math.max(0, count - 1));
+  }, [current, count]);
+  const go = delta => {
+    if (count < 2) return;
+    setCurrent(value => loop ? (value + delta + count) % count : Math.max(0, Math.min(count - 1, value + delta)));
+  };
+  if (!count) return React.createElement('div', {
+    className: __ds_scope.cx('spu-section-slider', className),
+    style
+  });
+  return React.createElement('div', {
+    className: __ds_scope.cx('spu-section-slider', printing && 'spu-section-slider--print', __builderEditing && 'spu-section-slider--editing', className),
+    style,
+    tabIndex: printing ? undefined : 0,
+    role: 'region',
+    'aria-roledescription': 'carrossel',
+    'aria-label': 'Seções em carrossel',
+    onKeyDown: printing ? undefined : event => {
+      if (event.key === 'ArrowLeft') { event.preventDefault(); go(-1); }
+      if (event.key === 'ArrowRight') { event.preventDefault(); go(1); }
+    }
+  }, React.createElement('div', {
+    className: 'spu-section-slider__viewport'
+  }, React.createElement('div', {
+      className: 'spu-section-slider__track',
+      style: { transform: printing ? undefined : `translateX(-${current * 100}%)` }
+    }, slides.map((slide, index) => React.createElement('div', {
+      key: React.isValidElement(slide) && slide.key || index,
+      className: 'spu-section-slider__slide',
+      'aria-hidden': printing ? undefined : index !== current,
+      inert: !printing && !__builderEditing && index !== current ? true : undefined
+    }, slide))), !printing && count > 1 && React.createElement(React.Fragment, null,
+    React.createElement('button', {
+      type: 'button', className: 'spu-section-slider__arrow spu-section-slider__arrow--prev',
+      onClick: () => go(-1), disabled: !loop && current === 0, 'aria-label': 'Seção anterior'
+    }, React.createElement(__ds_scope.Icon, { name: 'arrow-left', size: 20 })),
+    React.createElement('button', {
+      type: 'button', className: 'spu-section-slider__arrow spu-section-slider__arrow--next',
+      onClick: () => go(1), disabled: !loop && current === count - 1, 'aria-label': 'Próxima seção'
+    }, React.createElement(__ds_scope.Icon, { name: 'arrow-right', size: 20 }))
+  )), !printing && count > 1 && React.createElement('div', {
+    className: 'spu-section-slider__nav'
+  }, React.createElement('div', {
+    className: 'spu-section-slider__center'
+  }, React.createElement('div', {
+    className: 'spu-section-slider__dots'
+  }, slides.map((_, index) => React.createElement('button', {
+    key: index,
+    type: 'button',
+    className: __ds_scope.cx('spu-section-slider__dot', index === current && 'spu-section-slider__dot--active'),
+    onClick: () => setCurrent(index),
+    'aria-label': `Ir para a seção ${index + 1}`,
+    'aria-current': index === current ? 'true' : undefined
+  }))), React.createElement('div', {
+    className: 'spu-section-slider__count',
+    'aria-live': 'polite'
+  }, `${current + 1} / ${count}`))));
+}
+Object.assign(__ds_scope, { SectionSlider });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/layout/SectionSlider.jsx", error: String((e && e.message) || e) }); }
+
 // components/content/PageToc.jsx
 try { (() => {
 __ds_scope.injectCss('spu-pagetoc-css', `
@@ -3118,13 +3774,20 @@ Object.assign(__ds_scope, { PageToc });
 try { (() => {
 __ds_scope.injectCss('spu-quote-css', `
 .spu-quote{margin:var(--flow-block) 0}
-.spu-quote--block{border-left:var(--border-accent) solid var(--color-accent);padding-left:var(--space-6)}
-.spu-quote--eye{text-align:center;max-width:42rem;margin-inline:auto;padding:var(--space-4) 0}
+.spu-quote--block{--spu-quote-font-size:var(--fs-h4);--spu-quote-line-height:var(--lh-snug);border-left:var(--border-accent) solid var(--color-accent);padding-left:var(--space-6)}
+.spu-quote--eye{--spu-quote-font-size:var(--fs-h3);--spu-quote-line-height:var(--lh-snug);text-align:center;max-width:42rem;margin-inline:auto;padding:var(--space-4) 0}
 .spu-quote__glyph{color:var(--color-accent);display:flex}
 .spu-quote--eye .spu-quote__glyph{justify-content:center;margin-bottom:var(--space-3)}
-.spu-quote__text{font-family:var(--font-serif);font-weight:500;color:var(--text-strong);line-height:var(--lh-snug);margin:0}
-.spu-quote--block .spu-quote__text{font-size:var(--fs-h4)}
-.spu-quote--eye .spu-quote__text{font-size:var(--fs-h3)}
+.spu-quote__text{font-family:var(--font-serif);font-size:var(--spu-quote-font-size);font-weight:500;color:var(--text-strong);line-height:var(--spu-quote-line-height);margin:0}
+.spu-quote__text .spu-richtext{font-size:inherit;line-height:inherit}
+.spu-quote[data-font-size="small"]{--spu-quote-font-size:var(--fs-small);--spu-quote-line-height:1.55}
+.spu-quote[data-font-size="body"]{--spu-quote-font-size:var(--fs-body);--spu-quote-line-height:1.52}
+.spu-quote[data-font-size="body-lg"]{--spu-quote-font-size:var(--fs-body-lg);--spu-quote-line-height:1.46}
+.spu-quote[data-font-size="h6"]{--spu-quote-font-size:var(--fs-h6);--spu-quote-line-height:1.4}
+.spu-quote[data-font-size="h5"]{--spu-quote-font-size:var(--fs-h5);--spu-quote-line-height:1.32}
+.spu-quote[data-font-size="h4"]{--spu-quote-font-size:var(--fs-h4);--spu-quote-line-height:1.24}
+.spu-quote[data-font-size="h3"]{--spu-quote-font-size:var(--fs-h3);--spu-quote-line-height:1.18}
+.spu-quote[data-font-size="h2"]{--spu-quote-font-size:var(--fs-h2);--spu-quote-line-height:1.12}
 .spu-quote__cite{display:block;font-family:var(--font-mono);font-size:var(--fs-caption);font-weight:500;text-transform:uppercase;letter-spacing:.07em;color:var(--text-muted);margin-top:var(--space-4)}
 .spu-quote__cite b{color:var(--color-primary-strong);font-weight:600}
 `);
@@ -3134,6 +3797,7 @@ function PullQuote({
   cite,
   source,
   variant = 'block',
+  fontSize = 'auto',
   className,
   style
 }) {
@@ -3141,6 +3805,7 @@ function PullQuote({
   const cls = __ds_scope.cx('spu-quote', `spu-quote--${variant}`, className);
   return React.createElement('figure', {
     className: cls,
+    'data-font-size': fontSize === 'auto' ? undefined : fontSize,
     style
   }, React.createElement('span', {
     key: 'g',
@@ -3865,6 +4530,110 @@ function Carousel({
 Object.assign(__ds_scope, { Carousel });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/interactive/Carousel.jsx", error: String((e && e.message) || e) }); }
 
+// components/interactive/ContentSlider.jsx
+try { (() => {
+__ds_scope.injectCss('spu-content-slider-css', `
+.spu-content-slider{--_cs:var(--color-primary);overflow:hidden;border:1px solid var(--color-border);border-radius:calc(var(--radius-md) + 4px);background:var(--color-surface);box-shadow:var(--shadow-md)}
+.spu-content-slider__top{display:flex;align-items:center;justify-content:space-between;gap:var(--space-4);padding:var(--space-4) var(--space-5);border-bottom:1px solid var(--color-border);background:color-mix(in srgb,var(--_cs) 7%,var(--color-surface))}
+.spu-content-slider__hint{font-family:var(--font-mono);font-size:var(--fs-caption);font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--_cs)}
+.spu-content-slider__count{font-family:var(--font-mono);font-size:var(--fs-small);color:var(--text-faint);white-space:nowrap}.spu-content-slider__count strong{color:var(--_cs);font-size:1.12em}
+.spu-content-slider__viewport{overflow:hidden}.spu-content-slider__track{display:flex;transition:transform 560ms var(--ease-out);touch-action:pan-y}
+.spu-content-slider__slide{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr);min-width:100%;background:var(--color-surface)}
+.spu-content-slider__slide--text{grid-template-columns:1fr}.spu-content-slider__slide--text .spu-content-slider__body{width:min(100%,780px);min-height:390px;margin-inline:auto}
+.spu-content-slider__media{position:relative;min-height:390px;margin:0;overflow:hidden;background:var(--color-surface-warm)}
+.spu-content-slider__media image-slot,.spu-content-slider__media img{display:block;width:100%;height:100%;object-fit:cover}.spu-content-slider__media image-slot{position:absolute;inset:0}
+.spu-content-slider__media figcaption{position:absolute;left:var(--space-4);bottom:var(--space-4);z-index:1;max-width:calc(100% - var(--space-8));padding:.55em .8em;border-radius:var(--radius);background:rgba(18,35,31,.84);color:#fff;font-family:var(--font-mono);font-size:var(--fs-caption)}
+.spu-content-slider__body{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:clamp(var(--space-6),5vw,var(--space-10))}
+.spu-content-slider__label{display:inline-flex;padding:.35em .65em;border-radius:var(--radius-pill);background:color-mix(in srgb,var(--_cs) 12%,var(--color-surface));color:var(--_cs);font-family:var(--font-mono);font-size:var(--fs-eyebrow);font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.spu-content-slider__label--icon{align-items:center;justify-content:center;width:44px;height:44px;padding:0;border-radius:var(--radius)}
+.spu-content-slider__title{margin:var(--space-3) 0 0;font-family:var(--font-display);font-size:clamp(1.75rem,3.5vw,var(--fs-h2));line-height:1.04;letter-spacing:var(--ls-heading);color:var(--text-strong)}
+.spu-content-slider__subtitle{margin:var(--space-3) 0 0;font-family:var(--font-display);font-size:var(--fs-h5);font-weight:600;line-height:1.25;color:var(--_cs)}
+.spu-content-slider__description{margin-top:var(--space-4);color:var(--text-muted)}
+.spu-content-slider__link{display:inline-flex;align-items:center;gap:var(--space-2);margin-top:var(--space-6);padding:.72em 1em;border:1px solid var(--_cs);border-radius:var(--radius);background:var(--_cs);color:#fff;text-decoration:none;font-family:var(--font-display);font-weight:700}.spu-content-slider__link:hover{filter:brightness(1.06)}
+.spu-content-slider__controls{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:stretch;border-top:1px solid var(--color-border)}
+.spu-content-slider__arrow{display:grid;place-items:center;min-width:72px;padding:var(--space-4);border:0;background:var(--color-surface);color:var(--text-strong);cursor:pointer}.spu-content-slider__arrow:hover{background:var(--color-surface-warm)}
+.spu-content-slider__nav{display:grid;grid-template-columns:repeat(var(--_count),minmax(90px,1fr));overflow-x:auto;border-inline:1px solid var(--color-border)}
+.spu-content-slider__tab{position:relative;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:.15em;min-width:0;padding:var(--space-3) var(--space-4);border:0;border-right:1px solid var(--color-border);background:var(--color-surface);color:var(--text-muted);text-align:left;cursor:pointer}.spu-content-slider__tab:last-child{border-right:0}.spu-content-slider__tab::after{content:"";position:absolute;inset:auto 0 0;height:4px;background:transparent}.spu-content-slider__tab.is-active{background:color-mix(in srgb,var(--_cs) 7%,var(--color-surface));color:var(--text-strong)}.spu-content-slider__tab.is-active::after{background:var(--_cs)}
+.spu-content-slider__tab span{font-family:var(--font-mono);font-size:var(--fs-eyebrow);color:var(--_cs)}.spu-content-slider__tab b{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-family:var(--font-display);font-size:var(--fs-small)}
+.spu-content-slider:focus-visible{outline:3px solid var(--color-focus-ring);outline-offset:3px}
+.spu-content-slider--print .spu-content-slider__track{display:block;transform:none!important}.spu-content-slider--print .spu-content-slider__slide{break-inside:avoid;margin-bottom:var(--space-6)}.spu-content-slider--print .spu-content-slider__controls{display:none}
+@media(max-width:760px){.spu-content-slider__slide{grid-template-columns:1fr}.spu-content-slider__media{min-height:0;aspect-ratio:16/10}.spu-content-slider__body,.spu-content-slider__slide--text .spu-content-slider__body{min-height:0;padding:var(--space-6)}.spu-content-slider__top{padding:var(--space-3) var(--space-4)}.spu-content-slider__arrow{min-width:52px;padding:var(--space-3)}.spu-content-slider__tab{align-items:center;padding:var(--space-3) var(--space-2)}.spu-content-slider__tab b{display:none}}
+@media print{.spu-content-slider__track{display:block!important;transform:none!important}.spu-content-slider__slide{break-inside:avoid;margin-bottom:var(--space-6)}.spu-content-slider__controls{display:none!important}}
+`);
+
+function ContentSliderImage({ id, alt }) {
+  return React.createElement('image-slot', {
+    id,
+    shape: 'rect',
+    fit: 'cover',
+    alt: alt || '',
+    placeholder: 'Arraste uma imagem',
+    style: { display: 'block', width: '100%', height: '100%' }
+  });
+}
+function ContentSlider({ slides = [], hint = 'Explore os slides', accent, showTabNumbers = true, className, style }) {
+  const [current, setCurrent] = React.useState(0);
+  const startX = React.useRef(null);
+  const printing = __ds_scope.isPrint();
+  const n = slides.length;
+  React.useEffect(() => { if (current >= n) setCurrent(Math.max(0, n - 1)); }, [current, n]);
+  const go = next => { if (n) setCurrent((next + n) % n); };
+  const vars = { ...style, ...(accent ? { '--_cs': accent } : {}) };
+  if (!n) return null;
+  return React.createElement('div', {
+    className: __ds_scope.cx('spu-content-slider', printing && 'spu-content-slider--print', className),
+    style: vars,
+    tabIndex: printing ? undefined : 0,
+    role: 'region',
+    'aria-roledescription': 'carrossel',
+    'aria-label': 'Slider de conteúdo',
+    onKeyDown: printing ? undefined : e => { if (e.key === 'ArrowLeft') { e.preventDefault(); go(current - 1); } if (e.key === 'ArrowRight') { e.preventDefault(); go(current + 1); } }
+  }, React.createElement('div', { className: 'spu-content-slider__top' },
+    React.createElement('span', { className: 'spu-content-slider__hint' }, __ds_scope.renderRich(hint, { inline: true })),
+    React.createElement('span', { className: 'spu-content-slider__count' }, React.createElement('strong', null, String(current + 1).padStart(2, '0')), ' / ', String(n).padStart(2, '0'))
+  ), React.createElement('div', { className: 'spu-content-slider__viewport' },
+    React.createElement('div', {
+      className: 'spu-content-slider__track',
+      style: { transform: printing ? undefined : `translateX(-${current * 100}%)` },
+      onPointerDown: printing ? undefined : e => { startX.current = e.clientX; },
+      onPointerUp: printing ? undefined : e => { if (startX.current == null) return; const d = e.clientX - startX.current; if (Math.abs(d) > 48) go(current + (d < 0 ? 1 : -1)); startX.current = null; },
+      onPointerCancel: () => { startX.current = null; }
+    }, slides.map((slide, index) => {
+      const hasImage = !!slide.showImage && !!slide.slot;
+      const href = typeof slide.linkHref === 'string' ? slide.linkHref.trim() : slide.linkHref;
+      return React.createElement('article', {
+        key: slide.id || slide.slot || index,
+        className: __ds_scope.cx('spu-content-slider__slide', !hasImage && 'spu-content-slider__slide--text'),
+        'aria-hidden': printing ? undefined : index !== current,
+        inert: !printing && index !== current ? true : undefined
+      }, hasImage && React.createElement('figure', { className: 'spu-content-slider__media' },
+        React.createElement(ContentSliderImage, { id: slide.slot, alt: slide.alt }),
+        slide.caption && React.createElement('figcaption', null, __ds_scope.renderRich(slide.caption, { inline: true }))
+      ), React.createElement('div', { className: 'spu-content-slider__body' },
+        slide.labelIcon ? React.createElement('span', { className: 'spu-content-slider__label spu-content-slider__label--icon', 'aria-hidden': 'true' }, React.createElement(__ds_scope.Icon, { name: slide.labelIcon, size: 22 })) : slide.label && React.createElement('span', { className: 'spu-content-slider__label' }, __ds_scope.renderRich(slide.label, { inline: true })),
+        __ds_scope.hasRichContent(slide.title) && React.createElement('h3', { className: 'spu-content-slider__title' }, __ds_scope.renderRich(slide.title, { inline: true })),
+        slide.subtitle && React.createElement('p', { className: 'spu-content-slider__subtitle' }, __ds_scope.renderRich(slide.subtitle, { inline: true })),
+        slide.description && React.createElement('div', { className: 'spu-content-slider__description' }, __ds_scope.renderRich(slide.description)),
+        href && React.createElement('a', { className: 'spu-content-slider__link', href, target: /^https?:/i.test(href) ? '_blank' : undefined, rel: /^https?:/i.test(href) ? 'noopener' : undefined }, __ds_scope.renderRich(slide.linkLabel || 'Saiba mais', { inline: true }), React.createElement(__ds_scope.Icon, { name: 'arrow-right', size: 16 }))
+      ));
+    }))
+  ), !printing && n > 1 && React.createElement('div', { className: 'spu-content-slider__controls' },
+    React.createElement('button', { type: 'button', className: 'spu-content-slider__arrow', onClick: () => go(current - 1), 'aria-label': 'Slide anterior' }, React.createElement(__ds_scope.Icon, { name: 'arrow-left', size: 20 })),
+    React.createElement('div', { className: 'spu-content-slider__nav', role: 'tablist', style: { '--_count': n } }, slides.map((slide, index) => React.createElement('button', {
+      key: index,
+      type: 'button',
+      role: 'tab',
+      className: __ds_scope.cx('spu-content-slider__tab', index === current && 'is-active'),
+      'aria-selected': index === current,
+      tabIndex: index === current ? 0 : -1,
+      onClick: () => setCurrent(index)
+    }, showTabNumbers && React.createElement('span', null, String(index + 1).padStart(2, '0')), React.createElement('b', null, __ds_scope.renderRich(slide.tabLabel || slide.title || `Slide ${index + 1}`, { inline: true }))))),
+    React.createElement('button', { type: 'button', className: 'spu-content-slider__arrow', onClick: () => go(current + 1), 'aria-label': 'Próximo slide' }, React.createElement(__ds_scope.Icon, { name: 'arrow-right', size: 20 }))
+  ));
+}
+Object.assign(__ds_scope, { ContentSlider });
+})(); } catch (e) { __ds_ns.__errors.push({ path: "components/interactive/ContentSlider.jsx", error: String((e && e.message) || e) }); }
+
 // components/interactive/GlossaryTerm.jsx
 try { (() => {
 __ds_scope.injectCss('spu-gloss-css', `
@@ -3876,6 +4645,7 @@ __ds_scope.injectCss('spu-gloss-css', `
 .spu-gloss__pop[data-placement="bottom"]::after{top:auto;bottom:100%;transform:translate(-50%,50%) rotate(225deg)}
 .spu-gloss__term{font-family:var(--font-display);font-weight:700;font-size:var(--fs-small);color:var(--text-strong);margin:0 0 .25em}
 .spu-gloss__def{font-size:var(--fs-small);font-weight:400;color:var(--text-body);line-height:1.5;margin:0}
+.spu-gloss__def p{margin:0 0 .55em}.spu-gloss__def p:last-child{margin-bottom:0}
 .spu-gloss__src{display:block;font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.05em;color:var(--text-faint);margin-top:var(--space-2)}
 @keyframes spu-pop{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
 .spu-gloss__fn{font-family:var(--font-mono);font-size:.7em;font-weight:600;color:var(--color-accent-strong);vertical-align:super;line-height:0;margin-left:.1em}
@@ -3900,6 +4670,24 @@ function _registerNote(term, definition, source) {
     idx = _glossNotes.length - 1;
   }
   return idx + 1;
+}
+function _safeGlossaryDefinition(value) {
+  if (typeof document === 'undefined') return '';
+  const box = document.createElement('div');
+  box.innerHTML = String(value || '');
+  const allowed = new Set(['STRONG', 'B', 'EM', 'I', 'BR', 'P', 'SPAN']);
+  Array.from(box.querySelectorAll('*')).forEach(el => {
+    if (el.tagName === 'SCRIPT' || el.tagName === 'STYLE') {
+      el.remove();
+      return;
+    }
+    if (!allowed.has(el.tagName)) {
+      el.replaceWith(...Array.from(el.childNodes));
+      return;
+    }
+    Array.from(el.attributes).forEach(attr => el.removeAttribute(attr.name));
+  });
+  return box.innerHTML;
 }
 function GlossaryTerm({
   children,
@@ -3944,9 +4732,9 @@ function GlossaryTerm({
     const popTerm = document.createElement('p');
     popTerm.className = 'spu-gloss__term';
     popTerm.textContent = term;
-    const popDef = document.createElement('p');
+    const popDef = document.createElement('div');
     popDef.className = 'spu-gloss__def';
-    popDef.textContent = definition;
+    popDef.innerHTML = _safeGlossaryDefinition(definition);
     pop.append(popTerm, popDef);
     if (source) {
       const popSource = document.createElement('span');
@@ -4004,7 +4792,10 @@ function GlossaryFootnotes({
     className: 'spu-gloss-notes__h'
   }, title), React.createElement('ol', null, _glossNotes.map((nt, i) => React.createElement('li', {
     key: i
-  }, React.createElement('strong', null, nt.term), ' — ', nt.definition, nt.source && React.createElement('em', null, nt.source)))));
+  }, React.createElement('strong', null, nt.term), ' — ', React.createElement(__ds_scope.RichText, {
+    html: nt.definition,
+    as: 'div'
+  }), nt.source && React.createElement('em', null, nt.source)))));
 }
 Object.assign(__ds_scope, { GlossaryTerm, GlossaryFootnotes });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/interactive/GlossaryTerm.jsx", error: String((e && e.message) || e) }); }
@@ -4079,6 +4870,23 @@ __ds_scope.injectCss('spu-richtext-css', `
 .spu-richtext [data-color="terra-light"]{color:var(--terra-300)}
 .spu-richtext [data-color="petrol-light"]{color:var(--petrol-300)}
 .spu-richtext [data-color="green-light"]{color:var(--green-400)}
+/* Família e tamanho aplicáveis a trechos selecionados. */
+.spu-richtext [data-font="display"]{font-family:var(--font-display)}
+.spu-richtext [data-font="body"]{font-family:var(--font-body)}
+.spu-richtext [data-font="serif"]{font-family:var(--font-serif)}
+.spu-richtext [data-font="mono"]{font-family:var(--font-mono)}
+.spu-richtext [data-fs="eyebrow"]{font-family:var(--font-mono);font-size:var(--fs-eyebrow);font-weight:600;line-height:1.3;letter-spacing:var(--ls-eyebrow);text-transform:uppercase}
+.spu-richtext [data-fs="caption"]{font-size:var(--fs-caption)}
+.spu-richtext [data-fs="small"]{font-size:var(--fs-small)}
+.spu-richtext [data-fs="body"]{font-size:var(--fs-body)}
+.spu-richtext [data-fs="body-lg"]{font-size:var(--fs-body-lg)}
+.spu-richtext [data-fs="h6"],.spu-richtext [data-fs="h5"],.spu-richtext [data-fs="h4"],.spu-richtext [data-fs="h3"],.spu-richtext [data-fs="h2"],.spu-richtext [data-fs="display"]{font-family:var(--font-display);font-weight:700;line-height:var(--lh-heading);letter-spacing:var(--ls-heading);text-transform:none}
+.spu-richtext [data-fs="h6"]{font-size:var(--fs-h6)}
+.spu-richtext [data-fs="h5"]{font-size:var(--fs-h5)}
+.spu-richtext [data-fs="h4"]{font-size:var(--fs-h4)}
+.spu-richtext [data-fs="h3"]{font-size:var(--fs-h3)}
+.spu-richtext [data-fs="h2"]{font-size:var(--fs-h2)}
+.spu-richtext [data-fs="display"]{font-size:var(--fs-display);line-height:var(--lh-tight);letter-spacing:var(--ls-display, var(--ls-heading))}
 /* Termo de glossário (marcação) */
 .spu-richtext [data-term]{text-decoration:underline dotted;text-underline-offset:.2em;text-decoration-color:var(--color-primary);cursor:help}
 /* Variante inline (campos de uma linha: legenda, título) */
@@ -4172,6 +4980,9 @@ function _attrs(el, key) {
   }
   return props;
 }
+function isExternalLink(url) {
+  return /^https?:\/\//i.test(String(url || '').trim());
+}
 function _convert(node, key) {
   if (node.nodeType === 3) return node.nodeValue; // texto
   if (node.nodeType !== 1) return null; // comentários etc.
@@ -4184,7 +4995,7 @@ function _convert(node, key) {
     return React.createElement(__ds_scope.GlossaryTerm, {
       key,
       term,
-      definition: node.getAttribute('title') || node.getAttribute('data-def') || '',
+      definition: node.getAttribute('data-definition') || node.getAttribute('title') || node.getAttribute('data-def') || '',
       source: node.getAttribute('data-source') || undefined
     }, kids.length ? kids : term);
   }
@@ -4193,6 +5004,13 @@ function _convert(node, key) {
   if (tag === 'a') {
     const href = node.getAttribute('href') || '';
     const props = _attrs(node, key);
+    if (isExternalLink(href)) {
+      props.target = props.target || '_blank';
+      const rel = new Set(String(props.rel || '').split(/\s+/).filter(Boolean));
+      rel.add('noopener');
+      rel.add('noreferrer');
+      props.rel = Array.from(rel).join(' ');
+    }
     if (/^https?:/i.test(href) && __ds_scope.isPrint()) {
       const label = (node.textContent || href).trim();
       const n = _registerLink(label, href);
@@ -4285,7 +5103,7 @@ RichText.COLORS = COLOR;
 // RichText; ReactNode é devolvido como está. `inline` para campos de uma linha.
 function renderRich(value, opts) {
   const o = opts || {};
-  if (value == null || value === '') return null;
+  if (!hasRichContent(value)) return null;
   if (typeof value === 'string') {
     return React.createElement(RichText, {
       html: value,
@@ -4296,7 +5114,13 @@ function renderRich(value, opts) {
   }
   return value;
 }
-Object.assign(__ds_scope, { RichText, RichTextLinkNotes, renderRich });
+function hasRichContent(value) {
+  if (value == null) return false;
+  if (typeof value !== 'string') return true;
+  const visible = value.replace(/<!--[\s\S]*?-->/g, '').replace(/<br\s*\/?>/gi, '').replace(/<[^>]*>/g, '').replace(/(?:&nbsp;|&#160;|&#x0*a0;|\u00a0)/gi, ' ').replace(/[\s\u00a0\u200b-\u200d\ufeff]/g, '');
+  return visible.length > 0;
+}
+Object.assign(__ds_scope, { RichText, RichTextLinkNotes, renderRich, hasRichContent });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/RichText.jsx", error: String((e && e.message) || e) }); }
 
 // components/content/Callout.jsx
@@ -4396,14 +5220,22 @@ __ds_scope.injectCss('spu-examplecard-css', `
 .spu-examplecard{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);overflow:hidden;margin:var(--flow-block) 0;box-shadow:var(--shadow-sm)}
 .spu-examplecard__hd{display:flex;align-items:center;gap:.55em;padding:.72em 1.1em;background:var(--_ec, var(--color-primary));color:#fff;font-family:var(--font-mono);font-size:var(--fs-eyebrow);font-weight:600;letter-spacing:.1em;text-transform:uppercase;line-height:1.3}
 .spu-examplecard__hd svg{flex:0 0 auto}
+.spu-examplecard__details>.spu-examplecard__hd{cursor:pointer;list-style:none}
+.spu-examplecard__details>.spu-examplecard__hd::-webkit-details-marker{display:none}
+.spu-examplecard__details>.spu-examplecard__hd::after{content:"";width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform var(--dur) var(--ease-out);margin-left:auto;margin-right:.25em;flex:0 0 auto}
+.spu-examplecard__details[open]>.spu-examplecard__hd::after{transform:rotate(-135deg)}
 .spu-examplecard__cover{display:block;width:100%}
 .spu-examplecard__cover img,.spu-examplecard__cover image-slot{display:block;width:100%}
 .spu-examplecard__body{padding:clamp(1.4rem,3vw,2.2rem)}
-.spu-examplecard__title{margin:0 0 var(--space-3)}
+.spu-examplecard__title{margin:0 0 var(--space-3);line-height:1.12}
+.spu-examplecard__title .spu-richtext{line-height:inherit}
+.spu-examplecard__text+:where(.spu-blockstack){margin-top:var(--space-5)}
 .spu-examplecard__body>:last-child{margin-bottom:0}
+@media print{.spu-examplecard__details:not([open])>.spu-examplecard__content{display:block!important}.spu-examplecard__details>.spu-examplecard__hd::after{display:none}}
 `);
 function ExampleCard({
   children,
+  body,
   label = 'Exemplo prático',
   icon = 'map-pin',
   color,
@@ -4414,9 +5246,11 @@ function ExampleCard({
   coverHeight = 300,
   fit = 'cover',
   placeholder = 'Foto de capa',
+  collapse = 'none',
   className,
   style
 }) {
+  const printing = __ds_scope.isPrint();
   let cover = null;
   if (slot) {
     cover = React.createElement('image-slot', {
@@ -4436,6 +5270,25 @@ function ExampleCard({
       alt
     });
   }
+  const headerContent = [React.createElement(__ds_scope.Icon, {
+    key: 'icon',
+    name: icon,
+    size: 18
+  }), React.createElement('span', {
+    key: 'label'
+  }, label)];
+  const content = React.createElement('div', {
+    className: 'spu-examplecard__content'
+  }, cover && React.createElement('div', {
+    className: 'spu-examplecard__cover'
+  }, cover), React.createElement('div', {
+    className: 'spu-examplecard__body'
+  }, title && React.createElement('h3', {
+    className: 'spu-examplecard__title'
+  }, title), body && React.createElement('div', {
+    className: 'spu-examplecard__text'
+  }, __ds_scope.renderRich(body)), __ds_scope.renderRich(children)));
+  const collapsible = !printing && (collapse === 'open' || collapse === 'closed');
   return React.createElement('div', {
     className: __ds_scope.cx('spu-examplecard', className),
     style: {
@@ -4444,18 +5297,17 @@ function ExampleCard({
       } : null),
       ...style
     }
-  }, React.createElement('div', {
+  }, collapsible ? React.createElement('details', {
+    className: 'spu-examplecard__details',
+    open: collapse === 'open'
+  }, React.createElement('summary', {
     className: 'spu-examplecard__hd'
-  }, React.createElement(__ds_scope.Icon, {
-    name: icon,
-    size: 18
-  }), React.createElement('span', null, label)), cover && React.createElement('div', {
-    className: 'spu-examplecard__cover'
-  }, cover), React.createElement('div', {
-    className: 'spu-examplecard__body'
-  }, title && React.createElement('h3', {
-    className: 'spu-examplecard__title'
-  }, title), __ds_scope.renderRich(children)));
+  }, headerContent), content) : [React.createElement('div', {
+    key: 'header',
+    className: 'spu-examplecard__hd'
+  }, headerContent), React.cloneElement(content, {
+    key: 'content'
+  })]);
 }
 Object.assign(__ds_scope, { ExampleCard });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/content/ExampleCard.jsx", error: String((e && e.message) || e) }); }
@@ -4463,33 +5315,41 @@ Object.assign(__ds_scope, { ExampleCard });
 // components/content/FeatureGrid.jsx
 try { (() => {
 __ds_scope.injectCss('spu-features-css', `
-.spu-features{display:grid;gap:var(--space-6)}
+.spu-features{display:grid;grid-template-columns:repeat(var(--spu-feature-columns,3),minmax(0,1fr));gap:var(--space-6)}
+@media(max-width:900px){.spu-features[data-columns="3"],.spu-features[data-columns="4"]{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.spu-features{grid-template-columns:1fr}}
 .spu-feature__icon{width:48px;height:48px;border-radius:var(--radius-md);background:var(--color-primary-soft);color:var(--color-primary-strong);display:flex;align-items:center;justify-content:center;margin-bottom:var(--space-3)}
 .spu-feature__title{font-family:var(--font-display);font-weight:700;font-size:var(--fs-h6);line-height:1.25;margin:0 0 .3em;color:var(--text-strong)}
 .spu-feature__text{color:var(--text-muted);font-size:var(--fs-small);margin:0}
 .spu-feature--card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-5);box-shadow:var(--shadow-sm)}
+.spu-feature--side{display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:var(--space-4);align-items:start}
+.spu-feature--side .spu-feature__icon{grid-row:1 / span 2;margin-bottom:0}
+.spu-feature--side .spu-feature__title{grid-column:2}
+.spu-feature--side .spu-feature__text{grid-column:2}
 `);
 function FeatureGrid({
   items = [],
   columns,
   card = false,
   accent,
+  layout = 'top',
   className,
   style
 }) {
-  // Responsivo: `columns` é o alvo em telas largas; auto-fit quebra quando
-  // não cabe e min() evita overflow (cai para 1 coluna no celular).
-  const minw = columns >= 4 ? 180 : columns === 3 ? 210 : columns === 2 ? 250 : 220;
+  // Respeita a quantidade escolhida em telas largas. As media queries reduzem
+  // grades maiores no tablet e todas as grades para uma coluna no celular.
+  const columnCount = Math.max(1, Math.min(4, Math.round(Number(columns) || 3)));
   const gridStyle = {
-    gridTemplateColumns: `repeat(auto-fit, minmax(min(${minw}px, 100%), 1fr))`,
+    '--spu-feature-columns': columnCount,
     ...style
   };
   return React.createElement('div', {
     className: __ds_scope.cx('spu-features', className),
+    'data-columns': columnCount,
     style: gridStyle
   }, items.map((it, i) => React.createElement('div', {
     key: i,
-    className: __ds_scope.cx('spu-feature', card && 'spu-feature--card')
+    className: __ds_scope.cx('spu-feature', card && 'spu-feature--card', layout === 'side' && 'spu-feature--side')
   }, React.createElement('div', {
     className: 'spu-feature__icon',
     style: accent ? {
@@ -4499,7 +5359,7 @@ function FeatureGrid({
   }, React.createElement(__ds_scope.Icon, {
     name: it.icon || 'sparkles',
     size: 24
-  })), React.createElement('p', {
+  })), __ds_scope.hasRichContent(it.title) && React.createElement('p', {
     className: 'spu-feature__title'
   }, __ds_scope.renderRich(it.title, {
     inline: true
@@ -4517,17 +5377,18 @@ try { (() => {
 __ds_scope.injectCss('spu-mlist-css', `
 .spu-mlist{list-style:none;margin:var(--flow-text) 0;padding:0;display:flex;flex-direction:column;gap:var(--space-2)}
 .spu-mlist__item{display:flex;gap:var(--space-3);align-items:flex-start}
-.spu-mlist__num{flex:0 0 auto;width:30px;height:30px;border-radius:var(--radius-pill);background:var(--color-primary);color:var(--color-on-primary);font-family:var(--font-mono);font-size:.85rem;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:1px}
-.spu-mlist__check{flex:0 0 auto;width:26px;height:26px;border-radius:var(--radius-pill);background:var(--status-success-soft);color:var(--status-success);display:flex;align-items:center;justify-content:center;margin-top:2px}
-.spu-mlist__icon{flex:0 0 auto;width:30px;height:30px;border-radius:var(--radius-pill);background:var(--color-primary-soft);color:var(--color-primary-strong);display:flex;align-items:center;justify-content:center;margin-top:1px}
-.spu-mlist__dot{flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:var(--color-accent);margin-top:.58em}
-.spu-mlist__body{color:var(--text-body)}
-.spu-mlist__title{display:block;font-weight:700;color:var(--text-strong)}
+.spu-mlist__num{flex:0 0 auto;width:30px;height:30px;border-radius:var(--radius-pill);background:var(--_ml-color,var(--color-primary));color:var(--color-on-primary);font-family:var(--font-mono);font-size:.85rem;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.spu-mlist__check{flex:0 0 auto;width:26px;height:26px;border-radius:var(--radius-pill);background:var(--_ml-soft,var(--status-success-soft));color:var(--_ml-color,var(--status-success));display:flex;align-items:center;justify-content:center;margin-top:2px}
+.spu-mlist__icon{flex:0 0 auto;width:30px;height:30px;border-radius:var(--radius-pill);background:var(--_ml-soft,var(--color-primary-soft));color:var(--_ml-color,var(--color-primary-strong));display:flex;align-items:center;justify-content:center;margin-top:1px}
+.spu-mlist__dot{flex:0 0 auto;width:6px;height:6px;border-radius:50%;background:var(--_ml-color,var(--color-accent));margin-top:.58em}
+.spu-mlist__body{color:var(--text-body);line-height:var(--lh-snug)}
+.spu-mlist__title{display:block;font-weight:700;color:var(--text-strong);margin-bottom:.2rem;margin-top:.3rem}
 `);
 function MarkerList({
   items = [],
   variant = 'ordered',
   icon = 'check',
+  accent,
   className,
   style
 }) {
@@ -4535,7 +5396,13 @@ function MarkerList({
   const Tag = ordered ? 'ol' : 'ul';
   return React.createElement(Tag, {
     className: __ds_scope.cx('spu-mlist', className),
-    style
+    style: {
+      ...(accent ? {
+        '--_ml-color': accent,
+        '--_ml-soft': `color-mix(in srgb, ${accent} 14%, transparent)`
+      } : null),
+      ...style
+    }
   }, items.map((it, i) => {
     const obj = typeof it === 'string' ? {
       text: it
@@ -4621,7 +5488,7 @@ const richInline = value => __ds_scope.renderRich(value, {
   inline: true
 });
 __ds_scope.injectCss('spu-pagefooter-css', `
-.spu-pagefooter{background:var(--petrol-800);background-image:var(--texture-topo);background-size:420px;color:var(--text-on-dark);padding:var(--space-12) var(--gutter);margin-top:var(--space-12)}
+.spu-pagefooter{background:var(--petrol-800);background-image:var(--texture-topo);background-size:420px;color:var(--text-on-dark);padding:var(--space-12) var(--gutter)}
 .spu-pagefooter__inner{max-width:var(--container-content);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(1.5rem,5vw,4rem);align-items:start}
 .spu-pagefooter__code{font-family:var(--font-mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-on-dark);opacity:.8;margin:0 0 var(--space-4)}
 .spu-pagefooter__context{font-size:var(--fs-small);color:var(--text-on-dark-muted);max-width:46ch;margin:0;line-height:1.6}
@@ -4691,8 +5558,13 @@ __ds_scope.injectCss('spu-panel-css', `
 .spu-panel{background:var(--color-surface-warm);background-image:var(--texture-topo);background-size:360px;border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:clamp(1.4rem,3vw,2.2rem);margin:var(--flow-block) 0}
 .spu-panel__kicker{margin-bottom:var(--space-3)}
 .spu-panel__title{margin:0 0 var(--space-4)}
+.spu-panel__body{color:var(--text-body)}
+.spu-panel__body+:where(.spu-blockstack){margin-top:var(--space-5)}
 .spu-panel>:last-child{margin-bottom:0}
-.spu-panel--accent{border-left:var(--border-accent) solid var(--_pc, var(--color-accent))}
+.spu-panel--accent{--_panel-accent:var(--_pc,var(--color-accent));background:color-mix(in srgb,var(--_panel-accent) 9%,var(--color-surface));background-image:none;border-color:color-mix(in srgb,var(--_panel-accent) 30%,var(--color-border));box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--_panel-accent) 10%,transparent)}
+.spu-panel--colored .spu-panel__kicker{color:var(--_pc,var(--color-accent))}
+.spu-panel--colored .spu-panel__kicker .spu-kicker__rule{background:var(--_pc,var(--color-accent))}
+.spu-panel--colored .spu-panel__title{color:color-mix(in srgb,var(--_pc,var(--color-accent)) 78%,var(--text-strong))}
 /* Card que extravasa a coluna de leitura (mais largo, centrado na viewport) */
 .spu-panel--wide{width:min(var(--container-wide), calc(100vw - 2 * var(--gutter)));margin-left:50%;transform:translateX(-50%)}
 /* Faixa full-bleed — largura total (como o hero) */
@@ -4702,6 +5574,7 @@ __ds_scope.injectCss('spu-panel-css', `
 `);
 function Panel({
   children,
+  body,
   variant = 'box',
   wide = false,
   kicker,
@@ -4724,10 +5597,12 @@ function Panel({
     key: 't',
     className: 'spu-panel__title'
   }, title)];
-  const inner = [...head, __ds_scope.renderRich(children)];
+  const inner = [...head, body && React.createElement('div', {
+    className: 'spu-panel__body'
+  }, __ds_scope.renderRich(body)), __ds_scope.renderRich(children)];
   if (variant === 'feature') {
     return React.createElement('div', {
-      className: __ds_scope.cx('spu-panel', 'spu-panel--feature', color && 'spu-panel--accent', className),
+      className: __ds_scope.cx('spu-panel', 'spu-panel--feature', color && 'spu-panel--colored', className),
       style: {
         ...(color ? {
           '--_pc': color
@@ -4740,7 +5615,7 @@ function Panel({
     }, inner));
   }
   return React.createElement('div', {
-    className: __ds_scope.cx('spu-panel', wide && 'spu-panel--wide', color && 'spu-panel--accent', className),
+    className: __ds_scope.cx('spu-panel', wide && 'spu-panel--wide', variant === 'accent' && 'spu-panel--accent', (color || variant === 'accent') && 'spu-panel--colored', className),
     style: {
       ...(color ? {
         '--_pc': color
@@ -4822,9 +5697,12 @@ function dsNamespace() {
 //   block = { id, type, props:{…}, (children[] se container) }
 //   mode  = 'preview' | 'edit'   (edit habilitará handles/Editable depois)
 
-// Campos cujo valor é texto rico (string HTML) — passam por renderRich.
+// `fields` é o contrato do registry para texto editável salvo como HTML.
+// O antigo `def.rich` não pode ser usado como trava: vários componentes
+// históricos (Figure, PullQuote, Kicker, BleedImage...) já aceitam RichText no
+// canvas sem terem recebido essa flag no registry.
 function richField(def, key) {
-  return def && def.rich && (def.fields || []).indexOf(key) !== -1;
+  return def && (def.fields || []).indexOf(key) !== -1;
 }
 
 // Campos rich tratados como bloco (multilinha); o resto é inline (uma linha).
@@ -4832,7 +5710,8 @@ const BLOCK_LEVEL = {
   children: 1,
   body: 1,
   html: 1,
-  content: 1
+  content: 1,
+  lead: 1
 };
 
 // Rótulos PT-BR para placeholders de campos vazios no modo edit.
@@ -4851,7 +5730,9 @@ const FIELD_PLACEHOLDER = {
   term: 'Termo',
   definition: 'Definição',
   org: 'Identidade',
-  program: 'Nome do programa'
+  program: 'Nome do programa',
+  lead: 'Texto de apresentação',
+  triggerLabel: 'Clique para expandir'
 };
 function BlockView({
   block,
@@ -4868,6 +5749,17 @@ function BlockView({
     }
   }, `Bloco desconhecido: ${block.type}`);
   const props = block.props || {};
+  const spacingStyle = {
+    ...(props.style || {}),
+    ...(props.__pullUp ? { marginTop: 'calc(-1 * var(--flow-block))' } : null),
+    ...(props.__pullDown ? { marginBottom: 'calc(-1 * var(--flow-block))' } : null)
+  };
+  const componentProps = {
+    ...props,
+    style: spacingStyle
+  };
+  delete componentProps.__pullUp;
+  delete componentProps.__pullDown;
   const editing = mode === 'edit';
   const emit = patch => onEdit && onEdit(block, patch);
 
@@ -4891,10 +5783,12 @@ function BlockView({
 
   // —— Título simples (sem componente) ——
   if (block.type === 'titulo') {
+    if (!editing && !__ds_scope.hasRichContent(props.text)) return null;
     const tag = props.level || 'h2';
     return React.createElement(tag, {
       id: block.id,
-      className: 'spu-block-title'
+      className: 'spu-block-title',
+      style: spacingStyle
     }, editing ? React.createElement(__ds_scope.Editable, {
       html: props.text || '',
       single: true,
@@ -4910,13 +5804,16 @@ function BlockView({
 
   // —— Parágrafo (RichText puro) ——
   if (block.type === 'prose') {
+    if (!editing && !__ds_scope.hasRichContent(props.html)) return null;
     return editing ? React.createElement(__ds_scope.Editable, {
       html: typeof props.html === 'string' ? props.html : '',
+      style: spacingStyle,
       onChange: h => emit({
         html: h
       })
     }) : React.createElement(__ds_scope.RichText, {
-      html: typeof props.html === 'string' ? props.html : undefined
+      html: typeof props.html === 'string' ? props.html : undefined,
+      style: spacingStyle
     });
   }
   const NS = dsNamespace();
@@ -4941,14 +5838,14 @@ function BlockView({
     if (def.stack === false) {
       // Columns/grade: filhos vão direto como children do componente.
       return React.createElement(Comp, {
-        ...props,
+        ...componentProps,
         ...extra,
         children: undefined
       }, kids);
     }
     const hasKids = (block.children || []).length > 0;
     return React.createElement(Comp, {
-      ...props,
+      ...componentProps,
       ...extra,
       children: undefined
     }, hasKids && React.createElement('div', {
@@ -4963,7 +5860,7 @@ function BlockView({
 
   // —— Demais blocos ——
   const resolved = {
-    ...props
+    ...componentProps
   };
   if (block.type === 'kicker') {
     resolved.className = __ds_scope.cx(props.className, 'spu-block-kicker');
@@ -4971,8 +5868,13 @@ function BlockView({
   (def.fields || []).forEach(k => {
     if (editing) {
       resolved[k] = fieldNode(k, !BLOCK_LEVEL[k]); // todos os fields viram Editable
-    } else if (richField(def, k) && typeof resolved[k] === 'string' && k === 'children') {
-      resolved.children = __ds_scope.renderRich(resolved.children); // preview: comportamento atual
+    } else if (richField(def, k) && typeof resolved[k] === 'string') {
+      // Preview/export must resolve every field declared as rich text, not
+      // only `children`. Otherwise captions, credits, bylines and similar
+      // fields display their HTML markup literally outside edit mode.
+      resolved[k] = __ds_scope.renderRich(resolved[k], {
+        inline: !BLOCK_LEVEL[k]
+      });
     }
   });
   return React.createElement(Comp, resolved);
@@ -5226,22 +6128,32 @@ Object.assign(__ds_scope, { CompareAB });
 // components/interactive/Flipcard.jsx
 try { (() => {
 __ds_scope.injectCss('spu-flip-css', `
-.spu-flip{perspective:1400px;background:none;border:0;padding:0;width:100%;font:inherit;text-align:left;cursor:pointer;display:block;isolation:isolate}
+.spu-flip{--spu-flip-color:var(--color-primary);perspective:1400px;background:none;border:0;padding:0;width:100%;font:inherit;text-align:left;cursor:pointer;display:block;isolation:isolate;border-radius:var(--radius-lg)}
+.spu-flip:focus-visible{outline:3px solid var(--color-focus-ring);outline-offset:3px}
 .spu-flip__inner{position:relative;transition:transform var(--dur-slow) var(--ease-in-out);transform-style:preserve-3d;-webkit-transform-style:preserve-3d}
 .spu-flip--flipped .spu-flip__inner{transform:rotateY(180deg)}
-.spu-flip__face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--radius-lg);padding:var(--space-6);display:flex;flex-direction:column;border:1px solid var(--color-border);box-shadow:var(--shadow-sm);overflow:hidden;transform:translateZ(1px);transition:box-shadow var(--dur) var(--ease-out)}
+.spu-flip__face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--radius-lg);padding:var(--space-6);display:flex;flex-direction:column;border:1px solid var(--color-border);border-top:4px solid var(--spu-flip-color);box-shadow:var(--shadow-sm);overflow:hidden;transform:translateZ(1px);transition:box-shadow var(--dur) var(--ease-out)}
 .spu-flip:hover .spu-flip__face{box-shadow:var(--shadow-md)}
-.spu-flip__face--front{background:var(--color-surface);opacity:1}
-.spu-flip__face--back{background:var(--color-primary);color:var(--text-on-dark);transform:rotateY(180deg) translateZ(1px);border-color:transparent;opacity:0}
+.spu-flip__face--front{background:var(--color-surface);background:color-mix(in srgb,var(--spu-flip-color) 7%,var(--color-surface));border-color:color-mix(in srgb,var(--spu-flip-color) 38%,var(--color-border));border-top-color:var(--spu-flip-color);opacity:1}
+.spu-flip__face--back{background:var(--color-primary);background:color-mix(in srgb,var(--spu-flip-color) 62%,var(--ink-900));color:var(--text-on-dark);transform:rotateY(180deg) translateZ(1px);border-color:transparent;opacity:0}
 .spu-flip--flipped .spu-flip__face--front{opacity:0}
 .spu-flip--flipped .spu-flip__face--back{opacity:1}
-.spu-flip__face--back .spu-flip__term{color:#fff}
 .spu-flip__hint{position:absolute;top:var(--space-4);right:var(--space-4);color:var(--text-faint)}
 .spu-flip__face--back .spu-flip__hint{color:var(--text-on-dark-muted)}
-.spu-flip__icon{width:46px;height:46px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;background:var(--color-primary-soft);color:var(--color-primary-strong);margin-bottom:var(--space-3)}
-.spu-flip__face--back .spu-flip__icon{background:rgba(255,255,255,.16);color:#fff}
+.spu-flip__icon{width:48px;height:48px;border-radius:var(--radius-md);display:flex;align-items:center;justify-content:center;background:var(--color-primary-soft);background:color-mix(in srgb,var(--spu-flip-color) 14%,var(--color-surface));color:var(--spu-flip-color);margin-bottom:var(--space-4);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--spu-flip-color) 24%,transparent)}
+.spu-flip__frontcontent{position:relative;z-index:1;display:flex;flex-direction:column;height:100%}
+.spu-flip__face--cover{padding:0;border-top-width:0}
+.spu-flip__face--cover .spu-flip__frontcontent{padding:var(--space-6);color:#fff}
+.spu-flip__cover{position:absolute;inset:0;z-index:0;display:block;background:var(--color-surface-warm);overflow:hidden}
+.spu-flip__cover image-slot,.spu-flip__cover img{display:block;width:100%;height:100%;object-fit:cover}
+.spu-flip__cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,46,43,.12) 18%,rgba(14,46,43,.82) 100%);pointer-events:none}
+.spu-flip__face--cover .spu-flip__hint{z-index:3;color:#fff}
+.spu-flip__face--cover .spu-flip__icon{background:rgba(255,255,255,.16);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
+.spu-flip__face--cover .spu-flip__term,.spu-flip__face--cover .spu-flip__description,.spu-flip__face--cover .spu-flip__cue{color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.42)}
 .spu-flip__term{font-family:var(--font-display);font-weight:700;font-size:var(--fs-h5);margin:0 0 .25em;color:var(--text-strong)}
-.spu-flip__def{font-size:var(--fs-small);line-height:1.55}
+.spu-flip__description{font-size:var(--fs-small);line-height:1.55;color:var(--text-muted);margin-top:var(--space-1)}
+.spu-flip__def{font-size:var(--fs-small);line-height:1.62;flex:1;min-height:0;overflow:auto;padding-right:var(--space-1)}
+.spu-flip__def>:first-child{margin-top:0}.spu-flip__def>:last-child{margin-bottom:0}
 .spu-flip__cue{font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.06em;color:var(--text-faint);margin-top:auto;padding-top:var(--space-3)}
 .spu-flip__face--back .spu-flip__cue{color:var(--text-on-dark-muted)}
 @media print{
@@ -5250,6 +6162,7 @@ __ds_scope.injectCss('spu-flip-css', `
   .spu-flip__face{position:static !important;transform:none !important;backface-visibility:visible !important;-webkit-backface-visibility:visible !important;box-shadow:none;opacity:1 !important}
   .spu-flip__face--front{border-radius:var(--radius-lg) var(--radius-lg) 0 0;border-bottom:0}
   .spu-flip__face--back{border-radius:0 0 var(--radius-lg) var(--radius-lg)}
+  .spu-flip__def{overflow:visible}
   .spu-flip__hint,.spu-flip__cue{display:none !important}
 }
 @media (prefers-reduced-motion: reduce){
@@ -5259,61 +6172,86 @@ __ds_scope.injectCss('spu-flip-css', `
 `);
 function Flipcard({
   term,
+  description,
   definition,
   icon,
   hint,
+  showIcon = true,
+  useCoverImage = false,
+  coverSlot,
+  coverSrc,
+  coverAlt = '',
+  coverFit = 'cover',
+  frontCue = 'Clique para virar',
+  backCue = 'Clique para voltar',
+  color,
   front,
   back,
-  height = 230,
+  height = 280,
   className,
   style
 }) {
   const [flipped, setFlipped] = React.useState(false);
-  const frontFace = front || React.createElement('div', {
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      height: '100%'
-    }
-  }, icon && React.createElement('span', {
+  const cover = useCoverImage && React.createElement('span', {
+    className: 'spu-flip__cover'
+  }, coverSlot ? React.createElement('image-slot', {
+    id: coverSlot,
+    shape: 'rect',
+    fit: coverFit,
+    alt: coverAlt,
+    placeholder: 'Imagem de capa',
+    style: { width: '100%', height: '100%', display: 'block' }
+  }) : coverSrc ? React.createElement('img', {
+    src: coverSrc,
+    alt: coverAlt
+  }) : null);
+  const frontFace = front || React.createElement(React.Fragment, null, cover, React.createElement('div', {
+    className: 'spu-flip__frontcontent'
+  }, showIcon && icon && React.createElement('span', {
     className: 'spu-flip__icon'
   }, React.createElement(__ds_scope.Icon, {
     name: icon,
     size: 24
-  })), React.createElement('p', {
+  })), __ds_scope.hasRichContent(term) && React.createElement('h3', {
     className: 'spu-flip__term'
   }, __ds_scope.renderRich(term, {
     inline: true
-  })), hint && React.createElement('p', {
-    className: 'spu-flip__def',
-    style: {
-      color: 'var(--text-muted)'
-    }
-  }, __ds_scope.renderRich(hint, {
+  })), __ds_scope.hasRichContent(description || hint) && React.createElement('div', {
+    className: 'spu-flip__description'
+  }, __ds_scope.renderRich(description || hint, {
     inline: true
-  })), React.createElement('span', {
+  })), __ds_scope.hasRichContent(frontCue) && React.createElement('span', {
     className: 'spu-flip__cue'
-  }, 'Clique para virar'));
+  }, __ds_scope.renderRich(frontCue, { inline: true }))));
   const backFace = back || React.createElement('div', {
     style: {
       display: 'flex',
       flexDirection: 'column',
       height: '100%'
     }
-  }, React.createElement('p', {
-    className: 'spu-flip__term'
-  }, __ds_scope.renderRich(term, {
-    inline: true
-  })), React.createElement('div', {
+  }, React.createElement('div', {
     className: 'spu-flip__def'
-  }, __ds_scope.renderRich(definition)), React.createElement('span', {
+  }, __ds_scope.renderRich(definition)), __ds_scope.hasRichContent(backCue) && React.createElement('span', {
     className: 'spu-flip__cue'
-  }, 'Clique para voltar'));
-  return React.createElement('button', {
-    type: 'button',
+  }, __ds_scope.renderRich(backCue, { inline: true })));
+  const toggle = event => {
+    if (event && event.target && event.target.closest && event.target.closest('a,[contenteditable="true"]')) return;
+    setFlipped(f => !f);
+  };
+  return React.createElement('div', {
+    role: 'button',
+    tabIndex: 0,
     className: __ds_scope.cx('spu-flip', flipped && 'spu-flip--flipped', className),
-    style,
-    onClick: () => setFlipped(f => !f),
+    style: {
+      '--spu-flip-color': color || 'var(--color-primary)',
+      ...style
+    },
+    onClick: toggle,
+    onKeyDown: event => {
+      if (event.target !== event.currentTarget || event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      toggle(event);
+    },
     'aria-pressed': flipped
   }, React.createElement('div', {
     className: 'spu-flip__inner',
@@ -5321,7 +6259,7 @@ function Flipcard({
       minHeight: typeof height === 'number' ? `${height}px` : height
     }
   }, React.createElement('div', {
-    className: 'spu-flip__face spu-flip__face--front'
+    className: __ds_scope.cx('spu-flip__face', 'spu-flip__face--front', useCoverImage && !front && 'spu-flip__face--cover')
   }, React.createElement('span', {
     className: 'spu-flip__hint'
   }, React.createElement(__ds_scope.Icon, {
@@ -5728,6 +6666,8 @@ __ds_scope.injectCss('spu-section-css', `
 .spu-blockstack.spu-blockstack>*:not(.spu-block-title):not(.spu-block-kicker){margin-block:0}
 .spu-block-title{margin:0}
 .spu-block-title .spu-richtext{line-height:inherit}
+.spu-section__inner>.spu-blockstack>.spu-block-title:is(h3,h4,h5,h6):not(:last-child),
+.spu-csection :is(.spu-csection__always,.spu-csection__body)>.spu-block-title:is(h3,h4,h5,h6):not(:last-child){margin-bottom:calc(-1 * var(--flow-block) + var(--space-3))}
 .spu-section__inner{margin-inline:auto;padding-inline:var(--gutter)}
 .spu-section--narrow .spu-section__inner{max-width:var(--container-prose)}
 .spu-section--content .spu-section__inner{max-width:var(--container-content)}
@@ -5766,6 +6706,7 @@ __ds_scope.injectCss('spu-section-css', `
 /* —— Cartões com fundo próprio claro: restauram os tokens escuros —— */
 .spu-section--dark .spu-callout,
 .spu-section--dark .spu-panel,
+.spu-section--dark .spu-table-wrap,
 .spu-section--dark .spu-acc,
 .spu-section--dark .spu-example,
 .spu-section--dark .spu-examplecard,
@@ -6420,14 +7361,14 @@ __ds_scope.injectCss('spu-hero-css', `
 .spu-hero__h1{font-family:var(--font-display);font-weight:800;font-size:clamp(1.85rem,4.2vw,var(--fs-h1));line-height:1.08;letter-spacing:var(--ls-display);color:#fff;margin:.5em 0 0;text-wrap:balance}
 .spu-hero__h1 .spu-richtext{line-height:inherit;color:inherit}
 .spu-hero__h1 .spu-richtext strong,.spu-hero__h1 .spu-richtext b{color:inherit}
-.spu-hero__byline{align-self:flex-start;width:fit-content;max-width:100%;margin-top:clamp(.9rem,1.8vw,1.4rem);background:var(--ochre-800);color:#F6EFE3;font-family:var(--font-mono);font-size:.86rem;letter-spacing:.04em;padding:.85em 1.4em;border-radius:var(--radius);box-shadow:var(--shadow-md)}
+.spu-hero__byline{align-self:flex-start;width:fit-content;max-width:100%;margin-top:clamp(.9rem,1.8vw,1.4rem);background:var(--ochre-800);color:#F6EFE3;font-family:var(--font-mono);font-size:.86rem;letter-spacing:.04em;text-transform:uppercase;padding:.85em 1.4em;border-radius:var(--radius);box-shadow:var(--shadow-md)}
 .spu-hero__kicker .spu-richtext,.spu-hero__byline .spu-richtext{color:inherit;line-height:inherit}
 .spu-hero__kicker .spu-richtext strong,.spu-hero__kicker .spu-richtext b,.spu-hero__byline .spu-richtext strong,.spu-hero__byline .spu-richtext b{color:inherit}
 @media (max-width:720px){
   .spu-hero{display:block;min-height:0 !important}
-  .spu-hero__bg{position:relative;inset:auto;height:40vh;min-height:220px}
-  .spu-hero__inner{display:block;min-height:0;padding:0 var(--gutter) clamp(1.75rem,6vw,2.5rem)}
-  .spu-hero__boxes{transform:none !important;max-width:none;position:relative;margin-top:clamp(-3rem,-7vw,-2rem)}
+  .spu-hero__bg{position:absolute;inset:0;height:auto;min-height:0}
+  .spu-hero__inner{display:block;min-height:0;padding:max(12rem,calc(40vh - 3rem)) var(--gutter) clamp(1.75rem,6vw,2.5rem)}
+  .spu-hero__boxes{transform:none !important;max-width:none;position:relative;margin-top:0}
   .spu-hero__title{box-shadow:var(--shadow-md)}
 }
 @media (prefers-reduced-motion:reduce){.spu-hero__bg,.spu-hero__boxes{transform:none !important}}
@@ -6543,19 +7484,27 @@ Object.assign(__ds_scope, { Hero });
 // components/media/ImageReveal.jsx
 try { (() => {
 __ds_scope.injectCss('spu-reveal-css', `
+.spu-reveal-figure{margin:var(--flow-block) 0}
 .spu-reveal{position:relative;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border);user-select:none;touch-action:none;background:var(--color-surface-warm)}
 .spu-reveal img{display:block;width:100%;pointer-events:none}
-.spu-reveal__after{position:absolute;inset:0;will-change:clip-path}
+.spu-reveal--adapted{height:clamp(260px,46vw,520px)}
+.spu-reveal--adapted>img,.spu-reveal--adapted>image-slot{height:100%;object-fit:cover}
+.spu-reveal--adapted>.spu-ph{height:100%;min-height:0}
+.spu-reveal__after{position:absolute;inset:0;z-index:2;will-change:clip-path}
 .spu-reveal__after img{position:absolute;inset:0;height:100%;object-fit:cover}
-.spu-reveal__handle{position:absolute;top:0;bottom:0;width:3px;background:#fff;box-shadow:0 0 0 1px rgba(28,36,32,.25);transform:translateX(-50%);cursor:ew-resize}
+.spu-reveal__after .spu-ph{height:100%;min-height:0}
+.spu-reveal__handle{position:absolute;z-index:3;top:0;bottom:0;width:3px;background:#fff;box-shadow:0 0 0 1px rgba(28,36,32,.25);transform:translateX(-50%);cursor:ew-resize}
 .spu-reveal__grip{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:var(--radius-pill);background:#fff;color:var(--color-primary-strong);display:flex;align-items:center;justify-content:center;gap:-2px;box-shadow:var(--shadow-md)}
-.spu-reveal__label{position:absolute;bottom:var(--space-3);font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:rgba(14,46,43,.7);padding:.3em .7em;border-radius:var(--radius-pill);pointer-events:none}
+.spu-reveal__label{position:absolute;z-index:1;bottom:var(--space-3);font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:rgba(14,46,43,.7);padding:.3em .7em;border-radius:var(--radius-pill);pointer-events:none}
 .spu-reveal__label--a{left:var(--space-3)}
 .spu-reveal__label--b{right:var(--space-3)}
+.spu-reveal__caption{font-size:var(--fs-caption);color:var(--text-muted);margin-top:var(--space-3);line-height:1.55}
+.spu-reveal__caption b,.spu-reveal__caption strong{font:inherit;font-weight:700;color:inherit}
 .spu-reveal-print{display:flex;flex-direction:column;gap:var(--space-3);break-inside:avoid}
 .spu-reveal-print figure{position:relative;margin:0;border-radius:var(--radius-md);overflow:hidden;border:1px solid var(--color-border)}
 .spu-reveal-print img{display:block;width:100%}
 .spu-reveal-print__tag{position:absolute;top:var(--space-3);left:var(--space-3);font-family:var(--font-mono);font-size:var(--fs-eyebrow);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:rgba(14,46,43,.78);padding:.3em .7em;border-radius:var(--radius-pill)}
+.spu-reveal-print__caption{font-size:var(--fs-caption);color:var(--text-muted);line-height:1.55}
 `);
 function Ph(label) {
   return React.createElement('div', {
@@ -6582,10 +7531,15 @@ function ImageReveal({
   afterLabel = 'Depois',
   alt = '',
   start = 50,
+  heightMode = 'original',
+  caption,
   className,
   style
 }) {
+  const adapted = heightMode === 'adapted';
+  const beforeSlotRef = React.useRef(null);
   const beforeMedia = beforeSlot ? React.createElement('image-slot', {
+    ref: beforeSlotRef,
     id: beforeSlot,
     shape: 'rect',
     fit: 'cover',
@@ -6593,7 +7547,8 @@ function ImageReveal({
     style: {
       display: 'block',
       width: '100%',
-      minHeight: 260
+      height: adapted ? '100%' : undefined,
+      minHeight: adapted ? 0 : 260
     }
   }) : before ? React.createElement('img', {
     src: before,
@@ -6618,6 +7573,35 @@ function ImageReveal({
   const [pct, setPct] = React.useState(start);
   const ref = React.useRef(null);
   const dragging = React.useRef(false);
+  React.useEffect(() => {
+    if (!beforeSlot || adapted) return undefined;
+    const el = beforeSlotRef.current;
+    if (!el) return undefined;
+    const sync = () => {
+      const img = el.shadowRoot && el.shadowRoot.querySelector('.frame img');
+      if (img && img.naturalWidth) {
+        const width = el.clientWidth || el.offsetWidth || 1;
+        el.style.height = Math.round(width * img.naturalHeight / img.naturalWidth) + 'px';
+      } else {
+        el.style.height = '260px';
+      }
+    };
+    const img = el.shadowRoot && el.shadowRoot.querySelector('.frame img');
+    if (img) img.addEventListener('load', sync);
+    const resizeObserver = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(sync) : null;
+    if (resizeObserver) resizeObserver.observe(el);
+    const stateObserver = typeof MutationObserver !== 'undefined' ? new MutationObserver(sync) : null;
+    if (stateObserver) stateObserver.observe(el, {
+      attributes: true,
+      attributeFilter: ['data-filled']
+    });
+    sync();
+    return () => {
+      if (img) img.removeEventListener('load', sync);
+      if (resizeObserver) resizeObserver.disconnect();
+      if (stateObserver) stateObserver.disconnect();
+    };
+  }, [beforeSlot, adapted]);
   const move = clientX => {
     const el = ref.current;
     if (!el) return;
@@ -6670,11 +7654,17 @@ function ImageReveal({
     }) : after ? React.createElement('img', {
       src: after,
       alt
-    }) : Ph(afterLabel)));
+    }) : Ph(afterLabel)), caption && React.createElement('div', {
+      className: 'spu-reveal-print__caption'
+    }, __ds_scope.renderRich(caption, {
+      inline: true
+    })));
   }
   return React.createElement('figure', {
-    className: __ds_scope.cx('spu-reveal', className),
-    style,
+    className: __ds_scope.cx('spu-reveal-figure', className),
+    style
+  }, React.createElement('div', {
+    className: __ds_scope.cx('spu-reveal', adapted && 'spu-reveal--adapted'),
     ref,
     onPointerDown: onDown,
     onPointerMove: onMove,
@@ -6683,13 +7673,13 @@ function ImageReveal({
   }, beforeMedia, React.createElement('div', {
     className: 'spu-reveal__after',
     style: {
-      clipPath: `inset(0 ${100 - pct}% 0 0)`
+      clipPath: `inset(0 0 0 ${pct}%)`
     }
-  }, afterMedia), React.createElement('span', {
-    className: 'spu-reveal__label spu-reveal__label--a'
-  }, beforeLabel), React.createElement('span', {
+  }, afterMedia, React.createElement('span', {
     className: 'spu-reveal__label spu-reveal__label--b'
-  }, afterLabel), React.createElement('div', {
+  }, afterLabel)), React.createElement('span', {
+    className: 'spu-reveal__label spu-reveal__label--a'
+  }, beforeLabel), React.createElement('div', {
     className: 'spu-reveal__handle',
     style: {
       left: `${pct}%`
@@ -6702,7 +7692,11 @@ function ImageReveal({
   }), React.createElement(__ds_scope.Icon, {
     name: 'chevron-right',
     size: 16
-  }))));
+  })))), caption && React.createElement('figcaption', {
+    className: 'spu-reveal__caption'
+  }, __ds_scope.renderRich(caption, {
+    inline: true
+  })));
 }
 Object.assign(__ds_scope, { ImageReveal });
 })(); } catch (e) { __ds_ns.__errors.push({ path: "components/media/ImageReveal.jsx", error: String((e && e.message) || e) }); }
@@ -6755,6 +7749,7 @@ function MapFigure({
     id: slot,
     shape: 'rect',
     fit: 'cover',
+    'data-auto-height': '',
     placeholder: 'Arraste uma imagem',
     style: {
       width: '100%',
@@ -8324,6 +9319,16 @@ __ds_ns.Masthead = __ds_scope.Masthead;
 
 __ds_ns.MediaEmbed = __ds_scope.MediaEmbed;
 
+__ds_ns.ExternalEmbed = __ds_scope.ExternalEmbed;
+
+__ds_ns.SectionSlider = __ds_scope.SectionSlider;
+
+__ds_ns.injectCss = __ds_scope.injectCss;
+
+__ds_ns.isPrint = __ds_scope.isPrint;
+
+__ds_ns.renderRich = __ds_scope.renderRich;
+
 __ds_ns.PageFooter = __ds_scope.PageFooter;
 
 __ds_ns.BuilderCredit = __ds_scope.BuilderCredit;
@@ -8379,6 +9384,8 @@ __ds_ns.TONES = __ds_scope.TONES;
 __ds_ns.Accordion = __ds_scope.Accordion;
 
 __ds_ns.Carousel = __ds_scope.Carousel;
+
+__ds_ns.ContentSlider = __ds_scope.ContentSlider;
 
 __ds_ns.CompareAB = __ds_scope.CompareAB;
 

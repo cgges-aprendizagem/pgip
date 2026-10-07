@@ -53,8 +53,8 @@
       "props": {
         "kicker": "Fundamentos da Propriedade Pública no Brasil",
         "kickerIcon": "book-open",
-        "title": "O patrimônio imobiliário público: <span style=\"font-weight: normal;\">panorama, relevância e potencial transformador</span>",
-        "byline": "Eixo 1 · Competência 2",
+        "title": "O patrimônio imobiliário público",
+        "byline": "panorama, relevância e potencial transformador",
         "slot": "br7ttpso__slot"
       }
     },
@@ -79,7 +79,7 @@
           "id": "cqovb4of",
           "type": "prose",
           "props": {
-            "html": "<p>Os imóveis públicos constituem uma das mais importantes infraestruturas do Estado brasileiro. Presentes em cidades, áreas rurais, florestas, rios, ilhas, zonas costeiras e regiões de fronteira, esses bens sustentam a prestação de serviços públicos, viabilizam políticas sociais, protegem ecossistemas estratégicos e contribuem para o desenvolvimento econômico e territorial.</p><p>Quando se fala em patrimônio público, é comum que a atenção se concentre em escolas, hospitais, prédios administrativos e equipamentos governamentais. Entretanto, <mark data-hl=\"green\">o universo dos imóveis públicos é muito mais amplo</mark>. Ele inclui áreas destinadas à conservação ambiental, terras ocupadas por comunidades tradicionais, imóveis utilizados para habitação social, infraestrutura urbana, pesquisa científica, defesa nacional, cultura, lazer e diversas outras finalidades de interesse coletivo.</p><p><mark data-hl=\"terra\">Mais do que ativos imobiliários</mark>, esses bens são instrumentos permanentes de atuação do Estado sobre o território. Sua relevância não decorre apenas do valor financeiro a ser contabilizado, mas principalmente da sua capacidade de gerar benefícios para a sociedade.</p>"
+            "html": "<p>No material <mark data-hl=\"terra\">“Conceitos de direito imobiliário e bens públicos: fundamentos para a gestão patrimonial”</mark>, apresentamos conceitos fundamentais para compreender a propriedade pública, como bem, patrimônio, imóvel, propriedade e posse, além das principais classificações e características dos bens públicos. Esses conceitos ajudam a entender o que integra o patrimônio imobiliário de um ente público e por que sua administração se submete a regras e finalidades próprias.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Se você ainda não conhece esse material,  ou sente necessidade de compreender melhor os principais conceitos e classificações relacionados aos bens imóveis públicos, vale a pena consultá-lo antes de prosseguir ou retomá-lo sempre que necessário.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Aqui, vamos ampliar esse olhar. Em vez de observar o imóvel público individualmente, a proposta é compreender o patrimônio imobiliário público como um conjunto de recursos à disposição do Estado e da sociedade. Sua importância não se mede apenas pela quantidade de imóveis ou pelo valor registrado contabilmente, mas também pelo que esse patrimônio torna possível realizar.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">É por meio de imóveis públicos que o Estado instala serviços e equipamentos, viabiliza políticas sociais, protege áreas de interesse ambiental, reconhece e assegura direitos territoriais, implanta infraestruturas e cria condições para diferentes atividades de interesse coletivo. Em outros casos, a própria conservação de determinado espaço ou sua disponibilidade para usos futuros pode representar valor para a sociedade.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Por isso, compreender o patrimônio imobiliário público exige ir além da ideia de um estoque de propriedades pertencentes ao Estado. Trata-se de<mark data-hl=\"petrol\"> reconhecer sua dimensão territorial e seu potencial para gerar valor público</mark> — social, ambiental, econômico e institucional — quando adequadamente conhecido e gerido.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">É essa mudança de perspectiva  que orienta este material.</span></p>"
           }
         },
         {
@@ -130,7 +130,7 @@
             "icon": "lightbulb",
             "title": "CASO DA UNIÃO",
             "heading": "Muito além de prédios públicos",
-            "children": "A experiência da União ilustra bem essa realidade. Seu patrimônio imobiliário compreende centenas de milhares de imóveis distribuídos em todas as regiões do país, abrangendo desde terrenos urbanos até praias. Estamos falando de incluindo terrenos de marinha, terrenos marginais de rios federais, praias marítimas, ilhas oceânicas, cavernas, florestas públicas, terras indígenas, áreas militares e demais prédios públicos e imóveis destinados a universidades, portos, aeroportos e infraestrutura."
+            "children": "A experiência da União ilustra bem essa realidade. Seu patrimônio imobiliário compreende centenas de milhares de imóveis distribuídos em todas as regiões do país, abrangendo desde terrenos urbanos até praias. Estamos falando de terrenos de marinha, terrenos marginais de rios federais, praias marítimas, ilhas oceânicas, cavernas, florestas públicas, terras indígenas, áreas militares e demais prédios públicos e imóveis destinados a universidades, portos, aeroportos e infraestrutura."
           }
         },
         {
@@ -149,7 +149,7 @@
             "fit": "cover",
             "size": "full",
             "title": "Uma ideia da escala do patrimônio imobiliário da União",
-            "caption": "Para você ter uma ideia, só a extensão dos terrenos de marinha equivale a mais de uma volta completa no planeta Terra. E a extensão dos terrenos marginais de rios federais é ainda maior: é quase igual a distância entre a Terra e a Lua.",
+            "caption": "Para você ter uma ideia, só a extensão dos terrenos de marinha equivale a mais de uma volta completa no planeta Terra. E a extensão dos terrenos marginais de rios federais é ainda maior: é quase igual à distância entre a Terra e a Lua.",
             "credit": ""
           }
         }
@@ -173,7 +173,7 @@
             "icon": "alert-circle",
             "title": "Dimensões estratégicas",
             "heading": "Social, econômica e ambiental",
-            "children": "Navegue pelas dimensões abaixo compreender como a gestão de imóveis públicos pode contribuir na promoção do desenvolvimento econômico, da inclusão social e da sustentabilidade ambiental."
+            "children": "Navegue pelas dimensões abaixo para compreender como a gestão de imóveis públicos pode contribuir na promoção do desenvolvimento econômico, da inclusão social e da sustentabilidade ambiental."
           }
         },
         {
@@ -189,7 +189,7 @@
               },
               {
                 "title": "Dimensão Econômica",
-                "content": "Embora frequentemente associados a custos de manutenção, os imóveis públicos também possuem enorme <b>relevância econômica</b>. Eles representam ativos de elevado valor patrimonial e funcionam como suporte para atividades essenciais ao desenvolvimento do país. Rodovias, portos, aeroportos, sistemas de energia, saneamento, telecomunicações e um novo e crescente setor relacionado à economia verde, como mercado de carbono, por exemplo. Todos esses setores dependem da existência de áreas públicas adequadamente destinadas. A gestão patrimonial moderna busca maximizar esse valor público, promovendo usos capazes de gerar benefícios econômicos, sociais e ambientais simultaneamente.<br><br><div><span style=\"color: inherit;\">Áreas públicas são utilizados como suporte para infraestrutura de saneamento, energia, telecomunicações, transporte e logística, setores que respondem diretamente pela competitividade econômica do país. Quando destinados de forma planejada, tornam-se catalisadores do desenvolvimento urbano e regional, estimulando atividades produtivas, atraindo investimentos privados e fomentando cadeias locais de emprego e renda. Essa contribuição não se limita ao uso imediato, mas também envolve a valorização indireta de áreas urbanas e rurais, que passam a receber serviços públicos, regularização fundiária e equipamentos coletivos.</span><div><span style=\"color: inherit;\"><br></span></div><div><span style=\"color: inherit;\">A dimensão econômica, portanto, </span><mark data-hl=\"terra\">não deve ser vista apenas pela ótica fiscal ou contábil</mark><span style=\"color: inherit;\">, mas pela capacidade do patrimônio imobiliário público de funcionar como <b>infraestrutura de Estado a serviço do desenvolvimento sustentável</b>. Gerir esses ativos de forma eficiente e articulada com outras políticas públicas significa ampliar sua função multiplicadora e reforçar seu caráter estratégico para a economia nacional.</span><span style=\"color: inherit;\"></span></div><div><span style=\"color: inherit;\"></span></div></div>",
+                "content": "<p>Embora frequentemente associados a custos de manutenção, os imóveis públicos também possuem enorme <b>relevância econômica</b>. Eles representam ativos de elevado valor patrimonial e funcionam como suporte para atividades essenciais ao desenvolvimento do país. Rodovias, portos, aeroportos, sistemas de energia, saneamento, telecomunicações e um novo e crescente setor relacionado à economia verde, como mercado de carbono, por exemplo. Todos esses setores dependem da existência de áreas públicas adequadamente destinadas. A gestão patrimonial moderna busca maximizar esse valor público, promovendo usos capazes de gerar benefícios econômicos, sociais e ambientais simultaneamente.<br><br></p><p><span style=\"color: inherit;\">Áreas públicas são utilizados como suporte para infraestrutura de saneamento, energia, telecomunicações, transporte e logística, setores que respondem diretamente pela competitividade econômica do país. Quando destinados de forma planejada, tornam-se catalisadores do desenvolvimento urbano e regional, estimulando atividades produtivas, atraindo investimentos privados e fomentando cadeias locais de emprego e renda. Essa contribuição não se limita ao uso imediato, mas também envolve a valorização indireta de áreas urbanas e rurais, que passam a receber serviços públicos, regularização fundiária e equipamentos coletivos.</span><p><span style=\"color: inherit;\"><br></span></p><p><span style=\"color: inherit;\">A dimensão econômica, portanto, </span><mark data-hl=\"terra\">não deve ser vista apenas pela ótica fiscal ou contábil</mark><span style=\"color: inherit;\">, mas pela capacidade do patrimônio imobiliário público de funcionar como <b>infraestrutura de Estado a serviço do desenvolvimento sustentável</b>. Gerir esses ativos de forma eficiente e articulada com outras políticas públicas significa ampliar sua função multiplicadora e reforçar seu caráter estratégico para a economia nacional.</span><span style=\"color: inherit;\"></span></p><p><span style=\"color: inherit;\"></span></p>",
                 "imageSlot": "c_9b1wj2f__imageSlot",
                 "linkHref": "",
                 "linkLabel": "",
@@ -197,61 +197,13 @@
               },
               {
                 "title": "Dimensão Ambiental",
-                "content": "Os imóveis públicos possuem uma relação direta com a <b>proteção do meio ambiente</b>. Grande parte deles está localizada em áreas de elevada relevância ecológica, como zonas costeiras, margens de rios, florestas, áreas úmidas, manguezais, restingas e regiões de recarga hídrica. Essas áreas desempenham funções essenciais para a conservação da biodiversidade, a manutenção dos recursos hídricos, a regulação do clima e a proteção das populações contra eventos extremos.<br><div><span style=\"color: inherit;\">Por isso, a gestão patrimonial moderna deve incorporar preocupações ambientais em suas decisões. A destinação, utilização ou ocupação de imóveis públicos pode contribuir para preservar ecossistemas, recuperar áreas degradadas, ampliar áreas verdes urbanas e fortalecer a adaptação às mudanças climáticas.<br><br></span></div><div><span style=\"color: inherit;\">Os efeitos das mudanças climáticas reforçam ainda mais essa importância. Enchentes, secas prolongadas, erosão costeira e elevação do nível do mar afetam diretamente diversos imóveis públicos, exigindo planejamento territorial e ações preventivas. Nesse contexto, os imóveis públicos deixam de ser apenas objetos de administração patrimonial para se tornarem<mark data-hl=\"petrol\"> instrumentos ativos de proteção ambiental e resiliência climática</mark>.<br><br></span></div>",
+                "content": "<p>Os imóveis públicos possuem uma relação direta com a <b>proteção do meio ambiente</b>. Grande parte deles está localizada em áreas de elevada relevância ecológica, como zonas costeiras, margens de rios, florestas, áreas úmidas, manguezais, restingas e regiões de recarga hídrica. Essas áreas desempenham funções essenciais para a conservação da biodiversidade, a manutenção dos recursos hídricos, a regulação do clima e a proteção das populações contra eventos extremos.<br></p><p><span style=\"color: inherit;\">Por isso, a gestão patrimonial moderna deve incorporar preocupações ambientais em suas decisões. A destinação, utilização ou ocupação de imóveis públicos pode contribuir para preservar ecossistemas, recuperar áreas degradadas, ampliar áreas verdes urbanas e fortalecer a adaptação às mudanças climáticas.<br><br></span></p><p><span style=\"color: inherit;\">Os efeitos das mudanças climáticas reforçam ainda mais essa importância. Enchentes, secas prolongadas, erosão costeira e elevação do nível do mar afetam diretamente diversos imóveis públicos, exigindo planejamento territorial e ações preventivas. Nesse contexto, os imóveis públicos deixam de ser apenas objetos de administração patrimonial para se tornarem<mark data-hl=\"petrol\"> instrumentos ativos de proteção ambiental e resiliência climática</mark>.<br><br></span></p>",
                 "imageSlot": "c_vduu69o__imageSlot",
                 "linkHref": "",
                 "linkLabel": "",
                 "linkButton": ""
               }
             ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "bfxgq6mp",
-      "type": "section",
-      "props": {
-        "width": "content",
-        "surface": "none",
-        "pad": "lg"
-      },
-      "children": [
-        {
-          "id": "b0gz15zr",
-          "type": "kicker",
-          "props": {
-            "icon": "compass",
-            "children": "Patrimônio público e biodiversidade"
-          }
-        },
-        {
-          "id": "be4jywzh",
-          "type": "statblock",
-          "props": {
-            "variant": "card",
-            "columns": 3,
-            "stats": [
-              {
-                "value": "336",
-                "unit": "+",
-                "label": "unidades de conservação federais",
-                "description": "atualmente, em todo o país"
-              },
-              {
-                "value": "166",
-                "unit": "mi",
-                "label": "hectares protegidos",
-                "description": "correspondem a uma área maior que muitos países do mundo"
-              }
-            ]
-          }
-        },
-        {
-          "id": "c18o1f1p",
-          "type": "prose",
-          "props": {
-            "html": "<p>O patrimônio da União está diretamente relacionado à gestão de ecossistemas estratégicos. Muitas dessas áreas estão associadas a imóveis sob domínio da União, contribuindo para:</p><p><ul><li>conservação da biodiversidade;</li><li>proteção de mananciais;</li><li>manutenção de serviços ecossistêmicos;</li><li>mitigação dos efeitos das mudanças climáticas.</li></ul></p>"
           }
         }
       ]
@@ -285,6 +237,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "Independentemente da esfera de governo (federal, distrital/estadual ou municipal), o patrimônio imobiliário público possui potencial para apoiar uma ampla variedade de programas e iniciativas voltados ao desenvolvimento sustentável. Terras, edifícios, áreas urbanas, imóveis rurais, espaços costeiros e equipamentos públicos podem ser mobilizados para promover inclusão social, proteção ambiental, adaptação climática e desenvolvimento econômico. Assim, a gestão patrimonial passa a dialogar diretamente com políticas setoriais de habitação, meio ambiente, infraestrutura, desenvolvimento urbano, assistência social, cultura, educação e segurança pública.",
             "cite": ""
           }
@@ -324,8 +277,7 @@
             "icon": "lightbulb",
             "title": "POtencial",
             "heading": "",
-            "children": "<p>Imóveis públicos podem apoiar a criação e consolidação de unidades de conservação, a recuperação de áreas degradadas, a implantação de corredores ecológicos e a proteção de mananciais. Também podem servir de suporte para programas de reflorestamento, restauração ambiental e adaptação às mudanças climáticas.</p>",
-            "color": ""
+            "children": "<p>Imóveis públicos podem apoiar a criação e consolidação de unidades de conservação, a recuperação de áreas degradadas, a implantação de corredores ecológicos e a proteção de mananciais. Também podem servir de suporte para programas de reflorestamento, restauração ambiental e adaptação às mudanças climáticas.</p>"
           }
         },
         {
@@ -380,8 +332,7 @@
             "icon": "lightbulb",
             "title": "Potencial",
             "heading": "",
-            "children": "<p>Imóveis públicos podem ser utilizados para implantação de moradias, parques urbanos, escolas, unidades de saúde, equipamentos culturais, sistemas de mobilidade e projetos de requalificação urbana.<span style=\"text-wrap-mode: initial; color: inherit;\">Além de viabilizar investimentos públicos, a adequada utilização desses imóveis permite reduzir desigualdades territoriais, fortalecer centralidades urbanas e melhorar a qualidade de vida da população. O patrimônio público torna-se, assim, um elemento estruturador das cidades.</span></p>",
-            "color": ""
+            "children": "<p>Imóveis públicos podem ser utilizados para implantação de moradias, parques urbanos, escolas, unidades de saúde, equipamentos culturais, sistemas de mobilidade e projetos de requalificação urbana. <span style=\"text-wrap-mode: initial; color: inherit;\">Além de viabilizar investimentos públicos, a adequada utilização desses imóveis permite reduzir desigualdades territoriais, fortalecer centralidades urbanas e melhorar a qualidade de vida da população. O patrimônio público torna-se, assim, um elemento estruturador das cidades.</span></p>"
           }
         }
       ]
@@ -407,7 +358,7 @@
           "id": "cyebv6tv",
           "type": "prose",
           "props": {
-            "html": "<p>A conexão entre gestão patrimonial e políticas sociais é particularmente importante em países marcados por desigualdades territoriais e fundiárias.<span style=\"text-wrap-mode: initial; color: inherit;\">Muitos imóveis públicos encontram-se ocupados por populações de baixa renda, comunidades tradicionais, povos indígenas, quilombolas, pescadores artesanais e outros grupos socialmente vulneráveis. A gestão desses territórios influencia diretamente o acesso à moradia, à segurança jurídica e a diversos direitos fundamentais.</span></p>"
+            "html": "<p>A conexão entre gestão patrimonial e políticas sociais é particularmente importante em países marcados por desigualdades territoriais e fundiárias. <span style=\"text-wrap-mode: initial; color: inherit;\">Muitos imóveis públicos encontram-se ocupados por populações de baixa renda, comunidades tradicionais, povos indígenas, quilombolas, pescadores artesanais e outros grupos socialmente vulneráveis. A gestão desses territórios influencia diretamente o acesso à moradia, à segurança jurídica e a diversos direitos fundamentais.</span></p>"
           }
         },
         {
@@ -419,8 +370,7 @@
             "icon": "lightbulb",
             "title": "Potencial",
             "heading": "",
-            "children": "<p>Quando articulada a programas habitacionais e de regularização fundiária, a gestão patrimonial pode transformar passivos fundiários em oportunidades de inclusão social. A destinação de imóveis públicos para habitação de interesse social, por exemplo, contribui para reduzir o déficit habitacional e ampliar o acesso à cidade. Da mesma forma, a regularização de territórios ocupados por comunidades tradicionais fortalece a proteção cultural, a segurança jurídica e a preservação ambiental associada a esses modos de vida.</p>",
-            "color": ""
+            "children": "<p>Quando articulada a programas habitacionais e de regularização fundiária, a gestão patrimonial pode transformar passivos fundiários em oportunidades de inclusão social. A destinação de imóveis públicos para habitação de interesse social, por exemplo, contribui para reduzir o déficit habitacional e ampliar o acesso à cidade. Da mesma forma, a regularização de territórios ocupados por comunidades tradicionais fortalece a proteção cultural, a segurança jurídica e a preservação ambiental associada a esses modos de vida.</p>"
           }
         },
         {
@@ -475,8 +425,7 @@
             "icon": "lightbulb",
             "title": "Potencial",
             "heading": "",
-            "children": "<p>Nesse cenário, os imóveis públicos podem desempenhar diferentes funções. Alguns atuam como áreas de proteção ambiental e infraestrutura verde. Outros podem servir como espaços de drenagem urbana, corredores ecológicos ou áreas destinadas ao reassentamento de populações expostas a riscos. Também existe crescente potencial para utilização de imóveis públicos em projetos de energia renovável, infraestrutura resiliente e soluções baseadas na natureza.</p>",
-            "color": ""
+            "children": "<p>Nesse cenário, os imóveis públicos podem desempenhar diferentes funções. Alguns atuam como áreas de proteção ambiental e infraestrutura verde. Outros podem servir como espaços de drenagem urbana, corredores ecológicos ou áreas destinadas ao reassentamento de populações expostas a riscos. Também existe crescente potencial para utilização de imóveis públicos em projetos de energia renovável, infraestrutura resiliente e soluções baseadas na natureza.</p>"
           }
         },
         {
@@ -507,8 +456,9 @@
             "title": "Governança, cooperação e financiamento",
             "color": "",
             "bg": "var(--bg-paper)",
-            "children": "<p>A crescente complexidade dos desafios socioambientais exige que a gestão patrimonial seja desenvolvida <b>de forma colaborativa</b>. A utilização estratégica dos imóveis públicos depende da articulação entre diferentes órgãos governamentais, entes federativos, instituições de pesquisa e organizações da sociedade civil. Nenhuma instituição, isoladamente, possui capacidade para enfrentar todos os desafios relacionados ao território.</p><p>Além disso, diversas iniciativas ambientais, climáticas e urbanas dependem de fontes de financiamento específicas. Os imóveis públicos podem servir como infraestrutura de suporte para projetos financiados por fundos climáticos, organismos multilaterais e programas de cooperação internacional. Essa capacidade de articulação amplia o potencial de transformação dos patrimônios públicos e fortalece sua contribuição para o desenvolvimento sustentável.</p>"
-          }
+            "body": "<p>A crescente complexidade dos desafios socioambientais exige que a gestão patrimonial seja desenvolvida <b>de forma colaborativa</b>. A utilização estratégica dos imóveis públicos depende da articulação entre diferentes órgãos governamentais, entes federativos, instituições de pesquisa e organizações da sociedade civil. Nenhuma instituição, isoladamente, possui capacidade para enfrentar todos os desafios relacionados ao território.</p><p>Além disso, diversas iniciativas ambientais, climáticas e urbanas dependem de fontes de financiamento específicas. Os imóveis públicos podem servir como infraestrutura de suporte para projetos financiados por fundos climáticos, organismos multilaterais e programas de cooperação internacional. Essa capacidade de articulação amplia o potencial de transformação dos patrimônios públicos e fortalece sua contribuição para o desenvolvimento sustentável.</p>"
+          },
+          "children": []
         }
       ]
     },
@@ -526,27 +476,7 @@
           "id": "bp5i4v4b",
           "type": "prose",
           "props": {
-            "html": "<p>As dimensõ<span data-color=\"light\">es ambiental, social e econômica dos i</span>móveis públicos estão profundamente interligadas. Um mesmo imóvel pode simultaneamente proteger ecossistemas, apoiar políticas habitacionais, estimular o desenvolvimento econômico e promover segurança jurídica. Essa capacidade de gerar múltiplos benefícios torna o patrimônio público <b><span data-color=\"ochre-light\">um dos mais importantes instrumentos disponíveis para a atuação do Estado</span></b>.</p><p>A experiência do patrimônio da União demonstra que os imóveis públicos não devem ser vistos apenas como bens administrativos ou ativos financeiros. Eles constituem uma infraestrutura territorial estratégica, capaz de promover inclusão social, conservação ambiental, desenvolvimento econômico e melhoria da qualidade de vida.</p><p>Compreender essa dimensão é o primeiro passo para uma gestão patrimonial moderna, integrada e orientada à geração de valor público.</p>"
-          }
-        }
-      ]
-    },
-    {
-      "id": "bhdl8rj0",
-      "type": "section",
-      "props": {
-        "width": "content",
-        "surface": "none",
-        "pad": "lg"
-      },
-      "children": [
-        {
-          "id": "b7c35f6m",
-          "type": "pullquote",
-          "props": {
-            "variant": "block",
-            "children": "Mais do que administrar bens, a gestão patrimonial contemporânea consiste em gerar valor público por meio do uso sustentável, eficiente e socialmente relevante do patrimônio imobiliário. ",
-            "cite": ""
+            "html": "<p>As dimensõ<span data-color=\"light\">es ambiental, social e econômica dos i</span>móveis públicos estão profundamente interligadas. Um mesmo imóvel pode simultaneamente proteger ecossistemas, apoiar políticas habitacionais, estimular o desenvolvimento econômico e promover segurança jurídica. Essa capacidade de gerar múltiplos benefícios torna o patrimônio público <b><span data-color=\"ochre-light\">um dos mais importantes instrumentos disponíveis para a atuação do Estado</span></b>.</p>"
           }
         },
         {
@@ -556,7 +486,7 @@
             "title": "Referências",
             "defaultOpen": false,
             "items": [
-              "BARBOZA CARNEIRO, J. C. <b>Proposta de tema</b>: agenda ambiental para projetos de interesse da SPU. [S. l.]: Secretaria do Patrimônio da União, 2023. Documento interno para discussão.<div><br></div><div>BARBOZA CARNEIRO, J. C. <b>Anotações sobre a Agenda Ambiental</b>. [S. l.]: Secretaria do Patrimônio da União, 2024. Apresentação interna.</div><div><br></div><div>BRASIL. Instituto Chico Mendes de Conservação da Biodiversidade. <b>Mapa temático e dados geoestatísticos das Unidades de Conservação Federais</b>. [S. l.]: ICMBio, 2025. Disponível em: https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais. Acesso em: 22 jul. 2026.</div><div><br></div><div>BRASIL. Secretaria do Patrimônio da União. <b>Documento de entendimento da CT AMB</b>: temas x produtos. [S. l.]: Secretaria do Patrimônio da União, 2025a. Documento de trabalho interno da Câmara Técnica da Agenda Ambiental.</div><div><br></div><div>BRASIL. Secretaria do Patrimônio da União. <b>Links de documentos de referência compartilhados na Câmara Técnica da Agenda Ambiental</b>. [S. l.]: Secretaria do Patrimônio da União, 2025b. Documento interno.</div><div><br></div><div>BRASIL. Secretaria do Patrimônio da União. <b>Relatório 02</b>: benchmarking de políticas públicas internacionais exitosas de valorização e potencialização da função socioambiental de terras públicas e proposta conceitual da agenda socioambiental da SPU. [S. l.]: PNUD, 2025c. Consultoria PNUD, produto 2.</div><div><br></div>"
+              "<p>BARBOZA CARNEIRO, J. C. <b>Proposta de tema</b>: agenda ambiental para projetos de interesse da SPU. [S. l.]: Secretaria do Patrimônio da União, 2023. Documento interno para discussão.</p><p><br></p><p>BARBOZA CARNEIRO, J. C. <b>Anotações sobre a Agenda Ambiental</b>. [S. l.]: Secretaria do Patrimônio da União, 2024. Apresentação interna.</p><p><br></p><p>BRASIL. Instituto Chico Mendes de Conservação da Biodiversidade. <b>Mapa temático e dados geoestatísticos das Unidades de Conservação Federais</b>. [S. l.]: ICMBio, 2025. Disponível em: https://www.gov.br/icmbio/pt-br/assuntos/dados_geoespaciais/mapa-tematico-e-dados-geoestatisticos-das-unidades-de-conservacao-federais. Acesso em: 22 jul. 2026.</p><p><br></p><p>BRASIL. Secretaria do Patrimônio da União. <b>Documento de entendimento da CT AMB</b>: temas x produtos. [S. l.]: Secretaria do Patrimônio da União, 2025a. Documento de trabalho interno da Câmara Técnica da Agenda Ambiental.</p><p><br></p><p>BRASIL. Secretaria do Patrimônio da União. <b>Links de documentos de referência compartilhados na Câmara Técnica da Agenda Ambiental</b>. [S. l.]: Secretaria do Patrimônio da União, 2025b. Documento interno.</p><p><br></p><p>BRASIL. Secretaria do Patrimônio da União. <b>Relatório 02</b>: benchmarking de políticas públicas internacionais exitosas de valorização e potencialização da função socioambiental de terras públicas e proposta conceitual da agenda socioambiental da SPU. [S. l.]: PNUD, 2025c. Consultoria PNUD, produto 2.</p><p><br></p>"
             ]
           }
         }
