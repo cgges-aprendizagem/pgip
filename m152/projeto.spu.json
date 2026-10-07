@@ -90,7 +90,7 @@
             "title": "",
             "color": "",
             "bg": "",
-            "body": " "
+            "body": ""
           },
           "children": [
             {
@@ -290,7 +290,7 @@
           "id": "bhir4j55",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"color: inherit;\"><b>Quando se abre uma matrícula:</b></span><br><ul><li>No primeiro registro do imóvel (art. 228 da Lei nº 6.015/1973).</li><li>Por unificação de imóveis contíguos do mesmo titular.</li><li>Por desmembramento ou determinação judicial (usucapião, adjudicação).</li><li>Por incorporação de área ao patrimônio público</li></ul></p><p></p>"
+            "html": "<p><span style=\"color: inherit;\"><b>Quando se abre uma matrícula:</b></span><br></p><ul><li>No primeiro registro do imóvel (art. 228 da Lei nº 6.015/1973).</li><li>Por unificação de imóveis contíguos do mesmo titular.</li><li>Por desmembramento ou determinação judicial (usucapião, adjudicação).</li><li>Por incorporação de área ao patrimônio público.</li></ul><p></p><p></p>"
           }
         },
         {
@@ -408,7 +408,7 @@
             "title": "",
             "color": "",
             "bg": "var(--petrol-50)",
-            "body": " "
+            "body": ""
           },
           "children": [
             {
@@ -418,6 +418,7 @@
                 "columns": 2,
                 "card": true,
                 "accent": "var(--green-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "file-check",
@@ -648,7 +649,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Registro imobiliário aplicado à gestão de imóveis públicos [M152]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [

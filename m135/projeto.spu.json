@@ -7,11 +7,6 @@
     "toc": {
       "items": [
         {
-          "id": "cezss6qb",
-          "text": "Por que esse tema é importante?",
-          "hidden": false
-        },
-        {
           "id": "cxd0n5zd",
           "text": "Como o Estado organiza as informações sobre o território",
           "hidden": false
@@ -69,14 +64,6 @@
       },
       "children": [
         {
-          "id": "cezss6qb",
-          "type": "titulo",
-          "props": {
-            "text": "Por que esse tema é importante?",
-            "level": "h2"
-          }
-        },
-        {
           "id": "cryoasr1",
           "type": "prose",
           "props": {
@@ -118,7 +105,7 @@
           "id": "cpxodobj",
           "type": "prose",
           "props": {
-            "html": "<p>A gestão da terra depende, antes de tudo, de informações confiáveis. Antes de destinar um imóvel público, implantar uma política pública, reconhecer direitos ou resolver um conflito fundiário, é necessário responder a questões como: <mark data-hl=\"petrol\">onde está localizada a área, quem exerce direitos sobre ela, quais são seus limites, como ela é utilizada e quais restrições incidem sobre seu uso.</mark><span style=\"text-wrap-mode: initial; color: inherit;\">&nbsp; Produzir, organizar e manter essas informações é a finalidade da administração de terras.</span></p>"
+            "html": "<p>A gestão da terra depende, antes de tudo, de informações confiáveis. Antes de destinar um imóvel público, implantar uma política pública, reconhecer direitos ou resolver um conflito fundiário, é necessário responder a questões como: <mark data-hl=\"petrol\">onde está localizada a área, quem exerce direitos sobre ela, quais são seus limites, como ela é utilizada e quais restrições incidem sobre seu uso.</mark><span style=\"text-wrap-mode: initial; color: inherit;\">  Produzir, organizar e manter essas informações é a finalidade da administração de terras.</span></p>"
           }
         },
         {
@@ -126,6 +113,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "A administração de terras corresponde ao conjunto de processos responsáveis por registrar, atualizar e disponibilizar informações sobre a posse, a propriedade, o valor e o uso da terra. Essas informações subsidiam tanto a garantia de direitos quanto o planejamento territorial e a implementação de políticas públicas.",
             "cite": "ARAÚJO, 2022"
           }
@@ -146,7 +134,7 @@
             "fit": "contain",
             "size": "full",
             "title": "O paradigma de gestão da terra",
-            "caption": "<br>",
+            "caption": "",
             "credit": "Adaptado de Enemark <i>et al</i>, 2005."
           }
         },
@@ -214,8 +202,8 @@
                 "fit": "contain",
                 "size": "full",
                 "title": "Hierarquia de questões fundiárias",
-                "caption": "<br>",
-                "credit": "Adaptado de Williamson <i>et al,</i>&nbsp;2010."
+                "caption": "",
+                "credit": "Adaptado de Williamson <i>et al,</i> 2010."
               }
             }
           ]
@@ -254,85 +242,10 @@
           }
         },
         {
-          "id": "ce7ezk45",
-          "type": "prose",
-          "props": {
-            "html": "<p>Os sistemas de administração de terras são resultado de processos históricos. As instituições, os cadastros, os registros e as normas que organizam a gestão territorial não surgem de uma única vez, mas são construídos ao longo do tempo em resposta às necessidades e aos desafios de cada período.</p><p>No Brasil, como já pontuado em outros materiais, essa trajetória foi marcada por sucessivas mudanças na forma de ocupação, apropriação e controle da terra. Entre os principais marcos desse processo estão o regime de sesmarias, predominante no período colonial; a ocupação baseada na posse; a Lei de Terras de 1850, que estabeleceu a compra como forma ordinária de acesso às terras públicas; a criação dos registros públicos; o Estatuto da Terra; o Sistema Nacional de Cadastro Rural (SNCR) e, mais recentemente, a Lei nº 10.267/2001, que fortaleceu a integração entre cadastro e registro por meio do georreferenciamento dos imóveis rurais. </p>"
-          }
-        },
-        {
-          "id": "byneh2de",
-          "type": "timeline",
-          "props": {
-            "eras": [
-              {
-                "label": "",
-                "period": "",
-                "color": "var(--petrol-600)",
-                "milestones": [
-                  {
-                    "date": "Período Colonial          ",
-                    "title": "Regime de Sesmarias",
-                    "content": ""
-                  },
-                  {
-                    "date": "Século XIX",
-                    "title": "Lei de Terras",
-                    "content": "Compra como forma de acesso às terras públicas",
-                    "linkHref": "",
-                    "linkLabel": "",
-                    "linkButton": ""
-                  },
-                  {
-                    "date": "1850",
-                    "title": "Criação dos Registros Públicos",
-                    "content": "",
-                    "linkHref": "",
-                    "linkLabel": "",
-                    "linkButton": ""
-                  },
-                  {
-                    "date": "1864",
-                    "title": "Criação dos Registros Públicos",
-                    "content": "",
-                    "linkHref": "",
-                    "linkLabel": "",
-                    "linkButton": ""
-                  },
-                  {
-                    "date": "1964",
-                    "title": "Estatuto da Terra",
-                    "content": "",
-                    "linkHref": "",
-                    "linkLabel": "",
-                    "linkButton": ""
-                  },
-                  {
-                    "date": "1972",
-                    "title": "Sistema Nacional de Cadastro Rural (SNCR)",
-                    "content": "",
-                    "linkHref": "",
-                    "linkLabel": "",
-                    "linkButton": ""
-                  },
-                  {
-                    "date": "2001",
-                    "title": "Lei nº 10.267",
-                    "content": "Integra cadastro e registro por meio do georreferenciamento",
-                    "linkHref": "",
-                    "linkLabel": "",
-                    "linkButton": ""
-                  }
-                ]
-              }
-            ]
-          }
-        },
-        {
           "id": "b_msf5guvu_rapw",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Cada uma dessas mudanças contribuiu para aperfeiçoar os instrumentos de gestão territorial. Ao mesmo tempo, a incorporação gradual de novas instituições e sistemas fez com que a administração de terras passasse a ser exercida por diferentes órgãos, cada qual responsável por determinadas competências e bases de informação.</span></p><p>Como resultado, consolidou-se um modelo caracterizado pela existência de múltiplos cadastros, registros e instituições, nem sempre plenamente integrados entre si. Essa fragmentação dificulta o compartilhamento de informações e a coordenação das políticas públicas relacionadas à terra, constituindo um dos principais desafios da administração fundiária brasileira. </p><p>Entre os avanços recentes, destaca-se a Lei nº 10.267/2001, considerada um importante marco na modernização da administração de terras ao promover o georreferenciamento dos imóveis rurais e fortalecer a integração entre cadastro e registro. Essas iniciativas ampliaram a confiabilidade das informações territoriais e criaram melhores condições para o aperfeiçoamento da gestão fundiária. </p><p>Compreender essa evolução histórica permite entender por que a administração de terras no Brasil ainda enfrenta desafios relacionados à integração institucional e à organização das informações territoriais. Também evidencia que o aperfeiçoamento da gestão da terra depende não apenas da criação de novos instrumentos, mas da capacidade de articular instituições, sistemas de informação e políticas públicas de forma coordenada.</p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Os sistemas de administração de terras são resultado de processos históricos. As instituições, os cadastros, os registros e as normas que organizam a gestão territorial não surgem de uma única vez, mas são construídos ao longo do tempo em resposta às necessidades e aos desafios de cada período.</span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">No Brasil, como já pontuado em outros materiais, essa trajetória foi marcada por sucessivas mudanças na forma de ocupação, apropriação e controle da terra. Entre os principais marcos desse processo estão o regime de sesmarias, predominante no período colonial; a ocupação baseada na posse; a Lei de Terras de 1850, que estabeleceu a compra como forma ordinária de acesso às terras públicas; a criação dos registros públicos; o Estatuto da Terra; o Sistema Nacional de Cadastro Rural (SNCR) e, mais recentemente, a Lei nº 10.267/2001, que fortaleceu a integração entre cadastro e registro por meio do georreferenciamento dos imóveis rurais.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Cada uma dessas mudanças contribuiu para aperfeiçoar os instrumentos de gestão territorial. Ao mesmo tempo, a incorporação gradual de novas instituições e sistemas fez com que a administração de terras passasse a ser exercida por diferentes órgãos, cada qual responsável por determinadas competências e bases de informação.</span></p><p>Como resultado, consolidou-se um modelo caracterizado pela existência de múltiplos cadastros, registros e instituições, nem sempre plenamente integrados entre si. Essa fragmentação dificulta o compartilhamento de informações e a coordenação das políticas públicas relacionadas à terra, constituindo um dos principais desafios da administração fundiária brasileira. </p><p>Entre os avanços recentes, destaca-se a Lei nº 10.267/2001, considerada um importante marco na modernização da administração de terras ao promover o georreferenciamento dos imóveis rurais e fortalecer a integração entre cadastro e registro. Essas iniciativas ampliaram a confiabilidade das informações territoriais e criaram melhores condições para o aperfeiçoamento da gestão fundiária. </p><p>Compreender essa evolução histórica permite entender por que a administração de terras no Brasil ainda enfrenta desafios relacionados à integração institucional e à organização das informações territoriais. Também evidencia que o aperfeiçoamento da gestão da terra depende não apenas da criação de novos instrumentos, mas da capacidade de articular instituições, sistemas de informação e políticas públicas de forma coordenada.</p>"
           }
         },
         {
@@ -509,7 +422,7 @@
           "id": "bhpf3cxz",
           "type": "prose",
           "props": {
-            "html": "<p>Alcançar uma boa governança de terras não é uma tarefa fácil, mas é possível. A transição de uma governança débil para uma boa governança de terras é um processo de longo prazo e contínuo. O fortalecimento desse processo exige vontade política para superar a oposição daqueles que se beneficiam de tomadas de decisões não transparentes e da corrupção. Na prática, a melhoria da governança requer um forte comprometimento das pessoas envolvidas e o desenvolvimento da capacidade de viabilizar mudanças (FAO, 2007; PALMER et al, 2009).\"</p>"
+            "html": "<p>Alcançar uma boa governança de terras não é uma tarefa fácil, mas é possível. A transição de uma governança débil para uma boa governança de terras é um processo de longo prazo e contínuo. O fortalecimento desse processo exige vontade política para superar a oposição daqueles que se beneficiam de tomadas de decisão não transparentes e da corrupção. Na prática, a melhoria da governança requer um forte comprometimento das pessoas envolvidas e o desenvolvimento da capacidade de viabilizar mudanças (FAO, 2007; PALMER et al, 2009).\"</p>"
           }
         }
       ]
@@ -593,7 +506,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Administração e governança de terras no Brasil [M135]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
