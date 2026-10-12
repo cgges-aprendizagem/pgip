@@ -419,8 +419,8 @@
           "props": {
             "variant": "block",
             "fontSize": "body-lg",
-            "children": "<i>A infraestrutura terrestre de transportes percorre&nbsp;<span style=\"color: inherit; font-size: inherit;\">dezenas <br>de milhares de quilômetros do território brasileiro.</span></i>",
-            "cite": "<br>",
+            "children": "<i>A infraestrutura terrestre de transportes percorre <span style=\"color: inherit; font-size: inherit;\">dezenas <br>de milhares de quilômetros do território brasileiro.</span></i>",
+            "cite": "",
             "__pullDown": false
           }
         },
@@ -495,7 +495,7 @@
                 "size": "full",
                 "title": "",
                 "caption": "Em 2025, o transporte aéreo doméstico regular conectou 163 aeroportos brasileiros, que movimentaram 101,2 milhões de passageiros em voos domésticos (BRASIL, 2026).",
-                "credit": "Foto: Ministério de Portos e Aeroportos&nbsp;",
+                "credit": "Foto: Ministério de Portos e Aeroportos ",
                 "alt": "Vista aérea de terminal aeroportuário, pátios e aeronaves.",
                 "zoom": true,
                 "__pullDown": true
@@ -585,7 +585,7 @@
                 "size": "full",
                 "title": "",
                 "caption": "A infraestrutura portuária articula áreas em terra e espaços aquáticos, além de acessos e estruturas de apoio.",
-                "credit": "Foto: ANTAQ&nbsp;",
+                "credit": "Foto: ANTAQ ",
                 "alt": "Vista aérea de navio de carga navegando junto a área portuária urbana.",
                 "zoom": true
               }
@@ -670,7 +670,7 @@
             "zoom": false,
             "fit": "cover",
             "heightPreset": "medium",
-            "title": "<br>",
+            "title": "",
             "caption": "",
             "credit": "",
             "captionMode": "below",
@@ -726,7 +726,7 @@
             "size": "full",
             "title": "Potencial eólico offshore",
             "caption": "A geração eólica offshore exige articulação entre política energética, gestão dos espaços públicos, planejamento espacial marinho e licenciamento ambiental.",
-            "credit": "Fonte: <a href=\"https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/painel-de-dados-sobre-eolicas-offshore\" target=\"_blank\" rel=\"noopener noreferrer\">Painel de dados sobre eólicas offshore, EPE&nbsp;</a>",
+            "credit": "Fonte: <a href=\"https://www.epe.gov.br/pt/publicacoes-dados-abertos/publicacoes/painel-de-dados-sobre-eolicas-offshore\" target=\"_blank\" rel=\"noopener noreferrer\">Painel de dados sobre eólicas offshore, EPE </a>",
             "alt": "Mapa do Brasil com áreas de potencial eólico offshore destacadas no litoral.",
             "zoom": true
           }
@@ -816,8 +816,7 @@
             "icon": "scaling",
             "title": "Para ter uma dimensão",
             "heading": "Índice Brasileiro de Conectividade (IBC)",
-            "children": "<p>Entre 2024 e 2025, 4.614 dos 5.570 municípios brasileiros (82,8% do total) avançaram no Índice Brasileiro de Conectividade (IBC), indicador da Anatel que considera, entre outros fatores, cobertura móvel, estações rádio-base, <i><span data-term=\"backhaul\" data-definition=\"Backhaul é a parte da rede de telecomunicações que liga a rede local de uma cidade ou região às redes de maior capacidade que transportam os dados para outros pontos da rede e para a internet.\">backhaul</span></i> de fibra óptica e acesso à banda larga. <mark>A média nacional do índice passou de 52,4 para 55,35 pontos</mark> (ANATEL, 2026).</p>",
-            "color": ""
+            "children": "<p>Entre 2024 e 2025, 4.614 dos 5.570 municípios brasileiros (82,8% do total) avançaram no Índice Brasileiro de Conectividade (IBC), indicador da Anatel que considera, entre outros fatores, cobertura móvel, estações rádio-base, <i><span data-term=\"backhaul\" data-definition=\"Backhaul é a parte da rede de telecomunicações que liga a rede local de uma cidade ou região às redes de maior capacidade que transportam os dados para outros pontos da rede e para a internet.\">backhaul</span></i> de fibra óptica e acesso à banda larga. <mark>A média nacional do índice passou de 52,4 para 55,35 pontos</mark> (ANATEL, 2026).</p>"
           }
         }
       ]
@@ -869,8 +868,7 @@
             "icon": "lightbulb",
             "title": "",
             "heading": "",
-            "children": "<p>Essa dimensão imobiliária torna-se especialmente importante quando os sistemas precisam ser ampliados ou adaptados. Encontrar uma área tecnicamente adequada não basta: é preciso conhecer sua titularidade e situação patrimonial, verificar a compatibilidade do uso pretendido e estabelecer as condições jurídicas necessárias à implantação e à permanência da infraestrutura.</p>",
-            "color": ""
+            "children": "<p>Essa dimensão imobiliária torna-se especialmente importante quando os sistemas precisam ser ampliados ou adaptados. Encontrar uma área tecnicamente adequada não basta: é preciso conhecer sua titularidade e situação patrimonial, verificar a compatibilidade do uso pretendido e estabelecer as condições jurídicas necessárias à implantação e à permanência da infraestrutura.</p>"
           }
         },
         {
@@ -1014,7 +1012,7 @@
             "title": "",
             "color": "",
             "bg": "var(--sand-50)",
-            "body": "<p>A aquicultura continental e marinha (piscicultura, carcinicultura, malacocultura) consolidou-se como um vetor vital para a segurança alimentar do país. Em 2024, a produção superou 148.564 toneladas. No entanto, a verdadeira magnitude do setor reside no futuro: a produção continental atual representa apenas 17,93% do volume total já outorgado e regularizado pelo Estado. <mark data-hl=\"green\">Há uma vasta infraestrutura operacional pronta para ser ativada, projetando um crescimento expressivo para os próximos anos.</mark>&nbsp;&nbsp;</p><p>A gestão inteligente de espelhos d'água transforma lagos, rios e a costa marítima em relevantes polos de produção de alimentos, fixando o trabalhador em sua comunidade e gerando riqueza local.&nbsp;</p><p>&nbsp;</p>"
+            "body": "<p>A aquicultura continental e marinha (piscicultura, carcinicultura, malacocultura) consolidou-se como um vetor vital para a segurança alimentar do país. Em 2024, a produção superou 148.564 toneladas. No entanto, a verdadeira magnitude do setor reside no futuro: a produção continental atual representa apenas 17,93% do volume total já outorgado e regularizado pelo Estado. <mark data-hl=\"green\">Há uma vasta infraestrutura operacional pronta para ser ativada, projetando um crescimento expressivo para os próximos anos.</mark>  </p><p>A gestão inteligente de espelhos d'água transforma lagos, rios e a costa marítima em relevantes polos de produção de alimentos, fixando o trabalhador em sua comunidade e gerando riqueza local. </p><p> </p>"
           },
           "children": [
             {
@@ -1211,7 +1209,7 @@
             "title": "<span data-fs=\"h3\">Uma linguagem comum para classificar os usos dos imóveis</span>",
             "color": "",
             "bg": "var(--cloud-200)",
-            "body": "Ao longo deste capítulo, vimos imóveis públicos utilizados para finalidades muito diferentes: rodovias e ferrovias, portos e aeroportos, geração e transmissão de energia, saneamento, telecomunicações, atividades produtivas e conservação ambiental.&nbsp;<p><br></p>"
+            "body": "<p>Ao longo deste capítulo, vimos imóveis públicos utilizados para finalidades muito diferentes: rodovias e ferrovias, portos e aeroportos, geração e transmissão de energia, saneamento, telecomunicações, atividades produtivas e conservação ambiental. </p><p><br></p>"
           },
           "children": [
             {
@@ -1457,7 +1455,7 @@
         "kicker": "Em síntese",
         "kickerIcon": "check",
         "title": "Infraestrutura precisa de território",
-        "body": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Chegamos ao final deste percurso. Que tal reunir as principais ideias e conexões que exploramos?&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Dê o play e confira esta síntese.&nbsp;</span></p>"
+        "body": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Chegamos ao final deste percurso. Que tal reunir as principais ideias e conexões que exploramos? </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Dê o play e confira esta síntese. </span></p>"
       },
       "children": [
         {

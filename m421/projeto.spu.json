@@ -162,6 +162,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "<i>A configuração territorial é produto e produtora de novas configurações.</i>",
             "cite": "Documento Técnico da PNOT (2006)"
           }
@@ -209,6 +210,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "<i>Ordenamento territorial é a regulação das ações que têm impacto na distribuição da população, das atividades produtivas, dos equipamentos e de suas tendências [...], segundo uma visão estratégica e mediante articulação institucional e negociação de múltiplos atores.</i>",
             "cite": "Documento Técnico da PNOT (2006)"
           }
@@ -293,6 +295,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "<i>Trata-se, pois, de um recurso público federal, entendido como \"patrimônio de todos\".</i>",
             "cite": "– Borges e Leal (2011)"
           }
@@ -317,6 +320,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "<i>O valor estratégico dos bens imóveis que compõem o Patrimônio da União reside no fato de se constituírem em terrenos e edificações geralmente localizados em áreas de grande valorização econômica [...] ou de significativa fragilidade ambiental [...].</i>",
             "cite": "– Borges e Leal (2011)"
           }
@@ -361,6 +365,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "<i>A gestão do Patrimônio da União, além de condicionada pelo planejamento municipal, é conduzida sob influência da governança urbana [...] o que se reflete na adoção de diferentes orientações de desenvolvimento urbano na destinação desses imóveis.</i>",
             "cite": "Borges e Leal (2011)"
           }
@@ -423,6 +428,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "<i>A análise da governança na sua dimensão territorial considera as articulações e interdependências entre atores sociais na definição de formas de coordenação horizontal e vertical da ação pública e regulação dos processos econômicos e sociais territoriais.</i>",
             "cite": "Pires et al. (2011)"
           }
@@ -466,6 +472,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "<i>A governança territorial interfere na competitividade das regiões ao definir formas de distribuição de poder em cadeias produtivas e outras formas de relacionamento comercial, institucional e industrial [...].</i>",
             "cite": "Pires et al., 2011. "
           }
@@ -513,6 +520,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "<i>Das diversas modalidades de relacionamento entre atores e recursos é que virão as mudanças nos conteúdos dos processos de desenvolvimento dos diversos lugares.</i>",
             "cite": "Pires et al., 2011."
           }
@@ -559,7 +567,7 @@
           "id": "c9q8a6dr",
           "type": "prose",
           "props": {
-            "html": "<p>Os três referenciais percorridos partem de objetos distintos. A primeira lente discute a organização e o ordenamento do território; a segunda examina o patrimônio imobiliário da União como recurso relacionado ao desenvolvimento urbano; e terceira e última, por sua vez, concentra sua análise nas formas de governança e articulação entre os atores que participam dos processos de desenvolvimento territorial.</p><p>Colocadas lado a lado, essas três lentes permitem retomar a questão que orientou esta leitura: <b><mark data-hl=\"petrol\">o que esses referenciais acrescentam ao olhar de quem atua com a destinação de imóveis públicos?</mark></b></p>"
+            "html": "<p>Os três referenciais percorridos partem de objetos distintos: a primeira lente discute a organização e o ordenamento do território; a segunda examina o patrimônio imobiliário da União como recurso relacionado ao desenvolvimento urbano; e a terceira e última, por sua vez, concentra sua análise nas formas de governança e articulação entre os atores que participam dos processos de desenvolvimento territorial.</p><p>Colocadas lado a lado, essas três lentes permitem retomar a questão que orientou esta leitura: <b><mark data-hl=\"petrol\">o que esses referenciais acrescentam ao olhar de quem atua com a destinação de imóveis públicos?</mark></b></p>"
           }
         },
         {
@@ -789,7 +797,7 @@
                 "tabLabel": "Governança",
                 "title": "<span data-fs=\"h4\">Governança Territorial</span>",
                 "subtitle": "",
-                "description": "Trata-se do processo descentralizado de formular estratégias para coordenar atores locais (setor público, empresas privadas e sociedade civil) que precisam negociar e cooperar para resolver problemas e conduzir projetos coletivos de desenvolvimento regional. Essa governança ocorre quando o espaço geográfico deixa de ser considerado um mero \"cenário\" e passa a ser compreendido como um espaço de poder, regido por uma complexa teia onde os diversos atores disputam e cooperam no território",
+                "description": "Trata-se do processo descentralizado de formular estratégias para coordenar atores locais (setor público, empresas privadas e sociedade civil) que precisam negociar e cooperar para resolver problemas e conduzir projetos coletivos de desenvolvimento regional. Essa governança ocorre quando o espaço geográfico deixa de ser considerado um mero \"cenário\" e passa a ser compreendido como um espaço de poder, regido por uma complexa teia onde os diversos atores disputam e cooperam no território.",
                 "linkHref": "",
                 "linkLabel": ""
               }
@@ -815,7 +823,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Gestão de imóveis públicos na perspectiva do desenvolvimento territorial [M421]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
