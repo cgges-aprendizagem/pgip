@@ -141,7 +141,7 @@
           "id": "bszp5ior",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A</span><b style=\"text-wrap-mode: initial;\"> análise preventiva</b><span style=\"text-wrap-mode: initial; color: inherit;\"> busca identificar riscos e inconsistências antes da tomada de decisão. A </span><b style=\"text-wrap-mode: initial;\">regularização imobiliária </b><span style=\"text-wrap-mode: initial; color: inherit;\">tem por finalidade solucionar as pendências encontradas durante essa investigação. Já a </span><b style=\"text-wrap-mode: initial;\">assessoria contratual</b><span style=\"text-wrap-mode: initial; color: inherit;\"> procura conferir segurança jurídica à formalização do negócio ou do ato pretendido.</span></p><p>Embora complementares, trata-se de atividades distintas, que exigem métodos, estratégias e competências próprias.</p>",
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A</span><b style=\"text-wrap-mode: initial;\"> análise preventiva</b><span style=\"text-wrap-mode: initial; color: inherit;\"> busca identificar riscos e inconsistências antes da tomada de decisão. A </span><b style=\"text-wrap-mode: initial;\">regularização imobiliária </b><span style=\"text-wrap-mode: initial; color: inherit;\">tem por finalidade solucionar as pendências encontradas durante essa investigação. Já a </span><b style=\"text-wrap-mode: initial;\">assessoria contratual</b><span style=\"text-wrap-mode: initial; color: inherit;\"> procura conferir segurança jurídica à formalização do negócio ou do ato pretendido.</span></p><p>Embora complementares, tratam-se de atividades distintas, que exigem métodos, estratégias e competências próprias.</p>",
             "__pullDown": true
           }
         }
@@ -297,6 +297,7 @@
           "type": "pullquote",
           "props": {
             "variant": "block",
+            "fontSize": "auto",
             "children": "Se a análise preventiva pode ser comparada ao diagnóstico realizado antes de um tratamento médico, a regularização imobiliária corresponde ao conjunto de medidas adotadas para solucionar os problemas encontrados, ou seja, corresponde ao tratamento em si.",
             "cite": ""
           }
@@ -362,7 +363,7 @@
           "id": "b_mrzhgv1t_lag9",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Nesse momento, o profissional responsável atua para garantir que os instrumentos jurídicos produzidos reflitam adequadamente as cautelas identificadas nas etapas preliminares, observando as exigências legais aplicáveis e os interesses envolvidos.</span></p><p>Mais do que redigir um documento, a assessoria contratual procura garantir que a decisão tomada seja corretamente traduzida para o plano jurídico, conferindo maior segurança à sua execução.</p><p>Assim, embora análise preventiva, a regularização imobiliária e a assessoria contratual possam coexistir em uma mesma demanda, elas representam momentos distintos do processo decisório relacionado ao imóvel, cada qual desempenhando papel próprio na construção de decisões patrimoniais mais seguras.</p>"
+            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Nesse momento, o profissional responsável atua para garantir que os instrumentos jurídicos produzidos reflitam adequadamente as cautelas identificadas nas etapas preliminares, observando as exigências legais aplicáveis e os interesses envolvidos.</span></p><p>Mais do que redigir um documento, a assessoria contratual procura garantir que a decisão tomada seja corretamente traduzida para o plano jurídico, conferindo maior segurança à sua execução.</p><p>Assim, embora a<span style=\"text-wrap-mode: initial; color: inherit;\">&nbsp;análise preventiva, a regularização imobiliária e a assessoria contratual possam coexistir em uma mesma demanda, elas representam momentos distintos do processo decisório relacionado ao imóvel, cada qual desempenhando papel próprio na construção de decisões patrimoniais mais seguras.</span></p>"
           }
         },
         {
@@ -676,8 +677,9 @@
             "slot": "b10w44os__slot",
             "collapse": "none",
             "title": "Caso prático simplificado",
-            "children": "<p>Imagine uma área ocupada há décadas por particulares. Em que pese essa ocupação, o cadastro patrimonial indica tratar-se de área pertencente a determinado ente público. <span style=\"text-wrap-mode: initial; color: inherit;\">Por outro lado, o cartório apresenta matrícula em nome de terceiros.</span></p><p><b>E agora? <span style=\"text-wrap-mode: initial; color: inherit;\">Como regularizar esta área, preservando a titularidade do ente público, sem prejudicar o direito daqueles que construíram seus imóveis naquele espaço? </span></b></p><p>A resposta não pode surgir apenas do que consta no registro ou no cadastro patrimonial isoladamente.<span style=\"text-wrap-mode: initial; color: inherit;\">Será necessário examinar a cadeia dominial, confrontar plantas e memoriais, analisar dados territoriais, impedimentos urbanísticos ou ambientais e verificar o perfil socioeconômico dos particulares, até compreender o histórico jurídico da área e quais regimes de regularização são aplicáveis à situação.</span></p><p>Esse é um exemplo típico de análise técnico-jurídica preventiva aplicada à gestão de imóveis públicos.</p>"
-          }
+            "body": "<p>Imagine uma área ocupada há décadas por particulares. Em que pese essa ocupação, o cadastro patrimonial indica tratar-se de área pertencente a determinado ente público. <span style=\"text-wrap-mode: initial; color: inherit;\">Por outro lado, o cartório apresenta matrícula em nome de terceiros.</span></p><p><b>E agora? <span style=\"text-wrap-mode: initial; color: inherit;\">Como regularizar esta área, preservando a titularidade do ente público, sem prejudicar o direito daqueles que construíram seus imóveis naquele espaço? </span></b></p><p>A resposta não pode surgir apenas do que consta no registro ou no cadastro patrimonial isoladamente.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Será necessário examinar a cadeia dominial, confrontar plantas e memoriais, analisar dados territoriais, impedimentos urbanísticos ou ambientais e verificar o perfil socioeconômico dos particulares, até compreender o histórico jurídico da área e quais regimes de regularização são aplicáveis à situação.</span></p><p>Esse é um exemplo típico de análise técnico-jurídica preventiva aplicada à gestão de imóveis públicos.</p>"
+          },
+          "children": []
         }
       ]
     },
@@ -721,7 +723,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Análise preventiva de imóveis públicos [M221]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncnd",
         "credits": [
