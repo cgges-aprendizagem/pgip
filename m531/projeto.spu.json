@@ -76,7 +76,7 @@
           "id": "b_mta7ctyr_6zks",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Apresentaremos aqui alguns casos representativos, destacando as principais características, resultados alcançados e potenciais contribuições para a formulação e implementação de políticas de gestão patrimonial no setor público.&nbsp;</span><mark data-hl=\"terra\" style=\"text-wrap-mode: initial;\">A proposta não é indicar um modelo único ou defender a reprodução integral de qualquer experiência</mark><span style=\"text-wrap-mode: initial; color: inherit;\">. Ao contrário, busca-se demonstrar que diferentes instrumentos, como fundos patrimoniais, agências especializadas, estruturas de gestão profissional, mecanismos de reinvestimento e modelos de governança inovadores, podem contribuir para ampliar o valor público gerado pelos imóveis, desde que estejam alinhados às necessidades da Administração Pública e às funções sociais, ambientais, econômicas e territoriais do patrimônio.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Nesta leitura, você perceberá que a gestão patrimonial contemporânea envolve escolhas estratégicas sobre como utilizar o patrimônio imobiliário para apoiar políticas públicas, fortalecer a capacidade do Estado e promover o desenvolvimento sustentável dos territórios. Esperamos que esse conhecimento contribua na identificação de oportunidades, avaliação de alternativas e compreensão das tendências contemporâneas na administração de ativos imobiliários públicos.</span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Apresentaremos aqui alguns casos representativos, destacando as principais características, resultados alcançados e potenciais contribuições para a formulação e implementação de políticas de gestão patrimonial no setor público. </span><mark data-hl=\"terra\" style=\"text-wrap-mode: initial;\">A proposta não é indicar um modelo único ou defender a reprodução integral de qualquer experiência</mark><span style=\"text-wrap-mode: initial; color: inherit;\">. Ao contrário, busca-se demonstrar que diferentes instrumentos, como fundos patrimoniais, agências especializadas, estruturas de gestão profissional, mecanismos de reinvestimento e modelos de governança inovadores, podem contribuir para ampliar o valor público gerado pelos imóveis, desde que estejam alinhados às necessidades da Administração Pública e às funções sociais, ambientais, econômicas e territoriais do patrimônio.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Nesta leitura, você perceberá que a gestão patrimonial contemporânea envolve escolhas estratégicas sobre como utilizar o patrimônio imobiliário para apoiar políticas públicas, fortalecer a capacidade do Estado e promover o desenvolvimento sustentável dos territórios. Esperamos que esse conhecimento contribua para a identificação de oportunidades, a avaliação de alternativas e a compreensão das tendências contemporâneas na administração de ativos imobiliários públicos.</span></p>"
           }
         }
       ]
@@ -186,7 +186,7 @@
               },
               {
                 "value": "1 bi",
-                "unit": "&nbsp;R$",
+                "unit": " R$",
                 "label": "valor total estimado",
                 "description": ""
               }
@@ -209,8 +209,7 @@
             "icon": "lightbulb",
             "title": "",
             "heading": "",
-            "children": "<p>O modelo se diferenciou do processo tradicional de alienação direta ao permitir que a Secretaria de Patrimônio Estadual comercializasse ativos de forma profissionalizada, sem necessidade de aprovação legislativa para cada operação individual.&nbsp;</p>",
-            "color": ""
+            "children": "<p>O modelo se diferenciou do processo tradicional de alienação direta ao permitir que a Secretaria de Patrimônio Estadual comercializasse ativos de forma profissionalizada, sem necessidade de aprovação legislativa para cada operação individual. </p>"
           }
         },
         {
@@ -224,7 +223,7 @@
           "id": "bgcve870",
           "type": "examplecard",
           "props": {
-            "label": "<br>",
+            "label": "",
             "icon": "notebook-pen",
             "color": "var(--green-700)",
             "slot": "bgcve870__slot",
@@ -267,7 +266,7 @@
           "id": "b_mta82md4_s9a3",
           "type": "prose",
           "props": {
-            "html": "<p>A Prefeitura Municipal de Porto Alegre criou o Fundo do Patrimônio Imobiliário (Fun-Patrimônio) em contexto dificuldades orçamentárias que caracterizaram a administração municipal ao longo da década de 2020. O diagnóstico municipal indicava que o patrimônio urbano acumulava atrasos significativos em manutenção preventiva e corretiva, com consequências para a prestação de serviços e a preservação de bens de valor histórico e cultural.</p>"
+            "html": "<p>A Prefeitura Municipal de Porto Alegre criou o Fundo do Patrimônio Imobiliário (Fun-Patrimônio) em contexto de dificuldades orçamentárias que caracterizou a administração municipal ao longo da década de 2020. O diagnóstico municipal indicava que o patrimônio urbano acumulava atrasos significativos em manutenção preventiva e corretiva, com consequências para a prestação de serviços e a preservação de bens de valor histórico e cultural.</p>"
           }
         },
         {
@@ -279,7 +278,7 @@
           "id": "b_mta82md4_cclw",
           "type": "prose",
           "props": {
-            "html": "<p>O fundo surgiu como resposta à necessidade de financiar projetos de restauração, revitalização e manutenção do patrimônio histórico e imobiliário da cidade (particularmente edifícios emblemáticos como o Hospital de Pronto Socorro – HPS, o Centro Histórico e o Mercado Público), sem aumentar a carga fiscal municipal ou depender exclusivamente de alocações orçamentárias. F<span style=\"color: inherit; text-wrap-mode: initial;\">oi instituído pela Lei Complementar Municipal 942, de 25 de maio de 2022, e regulamentado pelo Decreto Municipal 21.658, de 23 de setembro de 2022 </span><span data-fs=\"caption\" style=\"color: inherit; text-wrap-mode: initial;\"><span data-color=\"terra\">[3]</span></span><span style=\"color: inherit; text-wrap-mode: initial;\">.&nbsp;</span></p>"
+            "html": "<p>O fundo surgiu como resposta à necessidade de financiar projetos de restauração, revitalização e manutenção do patrimônio histórico e imobiliário da cidade (particularmente edifícios emblemáticos como o Hospital de Pronto Socorro – HPS, o Centro Histórico e o Mercado Público), sem aumentar a carga fiscal municipal ou depender exclusivamente de alocações orçamentárias. F<span style=\"color: inherit; text-wrap-mode: initial;\">oi instituído pela Lei Complementar Municipal 942, de 25 de maio de 2022, e regulamentado pelo Decreto Municipal 21.658, de 23 de setembro de 2022 </span><span data-fs=\"caption\" style=\"color: inherit; text-wrap-mode: initial;\"><span data-color=\"terra\">[3]</span></span><span style=\"color: inherit; text-wrap-mode: initial;\">. </span></p>"
           }
         },
         {
@@ -292,7 +291,7 @@
             "title": "",
             "color": "",
             "bg": "var(--cloud-100)",
-            "body": "<p>Diferentemente do FII estadual paulista, o Fun-Patrimônio não assume a forma de fundo de investimento imobiliário, mas opera como <b>fundo de gestão patrimonial municipal</b>.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Funciona como repositório de recursos financeiros provenientes de receitas especiais: venda ou alienação de bens imóveis municipais, indenizações por danos ao patrimônio público, contribuições de terceiros e outras fontes determinadas por lei.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">O Fundo é administrado por um Comitê Gestor composto por representantes de cinco órgãos da Prefeitura Municipal de Porto Alegre (PMPA), presidido pela Secretaria Municipal de Administração e Patrimônio (SMAP). A governança é exercida pela Secretaria Municipal de Administração e Patrimônio (SMAP). Para solicitar recursos do Fun-Patrimônio, é necessário encaminhar um processo administrativo com um projeto técnico e uma estimativa de valor da obra. O Comitê Gestor analisa e aprova as destinações de recursos do Fun-Patrimônio. São priorizados os imóveis de valor histórico, cultural ou essencial aos serviços públicos.</span></p>"
+            "body": "<p>Diferentemente do FII estadual paulista, o Fun-Patrimônio não assume a forma de fundo de investimento imobiliário, mas opera como <b>fundo de gestão patrimonial municipal</b>. <span style=\"text-wrap-mode: initial; color: inherit;\">Funciona como repositório de recursos financeiros provenientes de receitas especiais: venda ou alienação de bens imóveis municipais, indenizações por danos ao patrimônio público, contribuições de terceiros e outras fontes determinadas por lei.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">O Fundo é administrado por um Comitê Gestor composto por representantes de cinco órgãos da Prefeitura Municipal de Porto Alegre (PMPA), presidido pela Secretaria Municipal de Administração e Patrimônio (SMAP). A governança é exercida pela Secretaria Municipal de Administração e Patrimônio (SMAP). Para solicitar recursos do Fun-Patrimônio, é necessário encaminhar um processo administrativo com um projeto técnico e uma estimativa de valor da obra. O Comitê Gestor analisa e aprova as destinações de recursos do Fun-Patrimônio. São priorizados os imóveis de valor histórico, cultural ou essencial aos serviços públicos.</span></p>"
           },
           "children": []
         },
@@ -305,13 +304,13 @@
             "stats": [
               {
                 "value": "R$ 23,4",
-                "unit": "&nbsp;mi",
+                "unit": " mi",
                 "label": "arrecadação total de 2023",
                 "description": "oriunda principalmente de permissões de uso e receitas de capital decorrentes da alienação de imóveis"
               },
               {
                 "value": "R$ 13,9",
-                "unit": "&nbsp;mi",
+                "unit": " mi",
                 "label": "arrecadação total de 2024",
                 "description": "predominância das receitas vinculadas à alienação e à exploração de ativos existentes"
               }
@@ -396,7 +395,7 @@
           "id": "b_mta9f7xr_6iq4",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A Lei Complementar Municipal nº 102, de 2009, criou a Companhia de Desenvolvimento Urbano da Região do Porto do Rio de Janeiro (CDURP), entidade responsável pela coordenação e acompanhamento da operação urbana. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Em 2011, foi constituído o Fundo de Investimento Imobiliário Porto Maravilha (FIIPM), administrado pela Caixa Econômica Federal. O fundo adquiriu, em leilão único, a totalidade dos 6.436.722 CEPACs emitidos pelo Município do Rio de Janeiro, mediante investimento de aproximadamente R$ 3,5 bilhões proveniente de recursos do Fundo de Garantia do Tempo de Serviço (FGTS).</span></p><p>A modelagem adotada resultou em uma separação relevante entre os riscos assumidos pelos diferentes agentes envolvidos. O Município recebeu antecipadamente os recursos decorrentes da alienação dos <span data-term=\"CEPACs\" data-definition=\"Certificados de Potencial Construtivo Adicional\">CEPACs</span>, destinando-os ao financiamento das obras e intervenções urbanas previstas. Por sua vez, o FIIPM passou a assumir o risco associado à futura comercialização desses certificados no mercado imobiliário, de forma a recuperar o investimento realizado. <span style=\"text-wrap-mode: initial; color: inherit;\">Paralelamente, foi estruturada uma Parceria Público-Privada (PPP) para execução e manutenção das obras e serviços urbanos da região, envolvendo consórcio privado responsável pela implantação das intervenções previstas.</span></p><p>A partir de 2015, a desaceleração da economia brasileira e a retração do mercado imobiliário reduziram significativamente a demanda por CEPACs, comprometendo a dinâmica originalmente prevista para geração de receitas do fundo. <span style=\"text-wrap-mode: initial; color: inherit;\">Além disso, empresas integrantes do consórcio responsável pelas obras foram impactadas pelas investigações decorrentes da Operação Lava Jato, contribuindo para atrasos e dificuldades na continuidade da execução contratual. Em 2017, o Consórcio Porto Novo suspendeu parte de suas atividades, exigindo maior participação do poder público na manutenção dos espaços urbanos implantados.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">Diante desse cenário, foram realizados aportes adicionais de recursos do FGTS para assegurar a continuidade das operações e preservar os ativos do empreendimento.</span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A Lei Complementar Municipal nº 102, de 2009, criou a Companhia de Desenvolvimento Urbano da Região do Porto do Rio de Janeiro (CDURP), entidade responsável pela coordenação e acompanhamento da operação urbana. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Em 2011, foi constituído o Fundo de Investimento Imobiliário Porto Maravilha (FIIPM), administrado pela Caixa Econômica Federal. O fundo adquiriu, em leilão único, a totalidade dos 6.436.722 CEPACs emitidos pelo Município do Rio de Janeiro, mediante investimento de aproximadamente R$ 3,5 bilhões proveniente de recursos do Fundo de Garantia do Tempo de Serviço (FGTS).</span></p><p>A modelagem adotada resultou em uma separação relevante entre os riscos assumidos pelos diferentes agentes envolvidos. O Município recebeu antecipadamente os recursos decorrentes da alienação dos <span data-term=\"CEPACs\" data-definition=\"Certificados de Potencial Construtivo Adicional\">CEPACs</span>, destinando-os ao financiamento das obras e intervenções urbanas previstas. Por sua vez, o FIIPM passou a assumir o risco associado à futura comercialização desses certificados no mercado imobiliário, de forma a recuperar o investimento realizado. <span style=\"text-wrap-mode: initial; color: inherit;\">Paralelamente, foi estruturada uma Parceria Público-Privada (PPP) para execução e manutenção das obras e serviços urbanos da região, envolvendo consórcio privado responsável pela implantação das intervenções previstas.</span></p><p>A partir de 2015, a desaceleração da economia brasileira e a retração do mercado imobiliário reduziram significativamente a demanda por CEPACs, comprometendo a dinâmica originalmente prevista para geração de receitas do fundo. <span style=\"text-wrap-mode: initial; color: inherit;\">Além disso, empresas integrantes do consórcio responsável pelas obras foram impactadas pelas investigações decorrentes da Operação Lava Jato, contribuindo para atrasos e dificuldades na continuidade da execução contratual. Em 2017, o Consórcio Porto Novo suspendeu parte de suas atividades, exigindo maior participação do poder público na manutenção dos espaços urbanos implantados. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Diante desse cenário, foram realizados aportes adicionais de recursos do FGTS para assegurar a continuidade das operações e preservar os ativos do empreendimento.</span></p>"
           }
         },
         {
@@ -534,7 +533,7 @@
           "id": "bpxr7yb4",
           "type": "prose",
           "props": {
-            "html": "<p>A Alemanha enfrentava, até o início dos anos 2000, um problema crônico de gestão descentralizada de seu patrimônio imobiliário federal. Cada ministério e órgão mantinha seus imóveis sob gestão direta, resultando em ineficiência administrativa, falta de transparência de custos e impossibilidade de implementar economias de escala. O governo federal gastava recursos significativos em manutenção fragmentada de edifícios, sem coordenação central sobre alocação de espaço, reformas necessárias ou alienação de propriedades ociosas.&nbsp;</p><p>A decisão de criar uma instituição centralizada respondeu à necessidade de transformar esse modelo não profissionalizado em uma operação mais moderna, capaz de reduzir custos enquanto assegurava espaço adequado para as funções dos órgãos públicos.</p>"
+            "html": "<p>A Alemanha enfrentava, até o início dos anos 2000, um problema crônico de gestão descentralizada de seu patrimônio imobiliário federal. Cada ministério e órgão mantinha seus imóveis sob gestão direta, o que resultava em ineficiência administrativa, falta de transparência nos custos e impossibilidade de implementar economias de escala. O governo federal gastava recursos significativos em manutenção fragmentada de edifícios, sem coordenação central sobre alocação de espaço, reformas necessárias ou alienação de propriedades ociosas. </p><p>A decisão de criar uma instituição centralizada respondeu à necessidade de transformar esse modelo não profissionalizado em uma operação mais moderna, capaz de reduzir custos enquanto assegurava espaço adequado para as funções dos órgãos públicos.</p>"
           }
         },
         {
@@ -583,8 +582,7 @@
             "icon": "lightbulb",
             "title": "",
             "heading": "",
-            "children": "<p>O sistema da BImA funciona sob o modelo locatário-locador (<i>Mieter-Vermieter-Modell</i>). Nesse sistema, os órgãos federais que ocupam imóveis geridos pela BImA pagam aluguéis baseados em preços de mercado, criando transparência de custos e incentivos para uso eficiente do espaço. Essa estrutura transforma o custo de ocupação de imóvel, anteriormente invisível no orçamento federal, em uma linha orçamentária explícita para cada ministério, criando incentivo econômico para racionalizar demandas por espaço. As receitas de aluguéis, juntamente com os valores obtidos pela venda de propriedades desnecessárias, são reinvestidas em reformas e modernização de prédios do portfólio, criando ciclo contínuo de melhoria sem necessidade de dotações orçamentárias adicionais.</p>",
-            "color": ""
+            "children": "<p>O sistema da BImA funciona sob o modelo locatário-locador (<i>Mieter-Vermieter-Modell</i>). Nesse sistema, os órgãos federais que ocupam imóveis geridos pela BImA pagam aluguéis baseados em preços de mercado, criando transparência de custos e incentivos para uso eficiente do espaço. Essa estrutura transforma o custo de ocupação de imóvel, anteriormente invisível no orçamento federal, em uma linha orçamentária explícita para cada ministério, criando incentivo econômico para racionalizar demandas por espaço. As receitas de aluguéis, juntamente com os valores obtidos pela venda de propriedades desnecessárias, são reinvestidas em reformas e modernização de prédios do portfólio, criando ciclo contínuo de melhoria sem necessidade de dotações orçamentárias adicionais.</p>"
           }
         },
         {
@@ -627,7 +625,7 @@
           "id": "b_mtaa07r3_d0av",
           "type": "prose",
           "props": {
-            "html": "<p>O Reino Unido identificou, na década de 2010, que o conjunto de propriedades ocupadas pelo governo central britânico apresentava ineficiências significativas: volume excessivo de espaço por servidor, baixa ocupação, distribuição fragmentada entre agências em diferentes regiões, e falta de coordenação entre órgãos que poderiam compartilhar espaço. O <span data-term=\"Cabinet Office\" data-definition=\"O Cabinet Office (Gabinete) é um departamento do Governo do Reino Unido responsável por apoiar o primeiro-ministro e coordenar a execução das políticas públicas entre os demais ministérios\">Cabinet Office</span> reconheceu que a centralização da gestão dessas propriedades, combinada com estratégia de compartilhamento de espaço, representaria oportunidade significativa de economia de recursos públicos. A Government Property Agency (GPA), anunciada em 2017 e oficialmente estabelecida em 1º de abril de 2018, foi criada para operacionalizar essa racionalização.</p>"
+            "html": "<p>O Reino Unido identificou, na década de 2010, que o conjunto de propriedades ocupadas pelo governo central britânico apresentava ineficiências significativas: volume excessivo de espaço por servidor, baixa ocupação, distribuição fragmentada entre agências em diferentes regiões e falta de coordenação entre órgãos que poderiam compartilhar espaço. O <span data-term=\"Cabinet Office\" data-definition=\"O Cabinet Office (Gabinete) é um departamento do Governo do Reino Unido responsável por apoiar o primeiro-ministro e coordenar a execução das políticas públicas entre os demais ministérios\">Cabinet Office</span> reconheceu que a centralização da gestão dessas propriedades, combinada com estratégia de compartilhamento de espaço, representaria oportunidade significativa de economia de recursos públicos. A Government Property Agency (GPA), anunciada em 2017 e oficialmente estabelecida em 1º de abril de 2018, foi criada para operacionalizar essa racionalização.</p>"
           }
         },
         {
@@ -648,7 +646,7 @@
               "id": "b96rxfv9",
               "type": "prose",
               "props": {
-                "html": "<p>A GPA constitui-se como <i>executive agency</i> do Cabinet Office, com mandato triplo:&nbsp;</p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">atuar como proprietária e gestora dos imóveis do governo central;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">consolidar e racionalizar o portfólio de propriedades; e&nbsp;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">gerar economias financeiras significativas.&nbsp;</span></li></ul></p><p>Possui autonomia operacional maior que um departamento governamental tradicional, mas permanece subordinada ao Cabinet Office em suas diretrizes estratégicas. Sua estrutura permite negociar com ministérios e agências como em uma relação de mercado interno, exigindo pagamento pelos metros quadrados ocupados.</p>"
+                "html": "<p>A GPA constitui-se como <i>executive agency</i> do Cabinet Office, com mandato triplo: </p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">atuar como proprietária e gestora dos imóveis do governo central;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">consolidar e racionalizar o portfólio de propriedades; e </span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">gerar economias financeiras significativas. </span></li></ul></p><p>Possui autonomia operacional maior que um departamento governamental tradicional, mas permanece subordinada ao Cabinet Office em suas diretrizes estratégicas. Sua estrutura permite negociar com ministérios e agências como em uma relação de mercado interno, exigindo pagamento pelos metros quadrados ocupados.</p>"
               }
             },
             {
@@ -658,7 +656,7 @@
                 "slot": "bp13pcoc__slot",
                 "src": "",
                 "fit": "cover",
-                "size": "full",
+                "size": "lg",
                 "title": "",
                 "caption": "",
                 "credit": "",
@@ -687,7 +685,7 @@
               {
                 "icon": "chart-column-decreasing",
                 "title": "Cross-charging",
-                "text": "<span data-fs=\"body\">O mecanismo central da GPA é o <b>cross-charging</b>: cada ministério ou agência paga pela quantidade de espaço que ocupa, fazendo com que esse custo apareça explicitamente em sua linha orçamentária. O cross-charging cria incentivo econômico poderoso para redução de área ocupada: <mark>ministérios que otimizam sua ocupação de espaço veem redução imediata em seus custos</mark>.&nbsp;</span><br>"
+                "text": "<span data-fs=\"body\">O mecanismo central da GPA é o <b>cross-charging</b>: cada ministério ou agência paga pela quantidade de espaço que ocupa, fazendo com que esse custo apareça explicitamente em sua linha orçamentária. O cross-charging cria incentivo econômico poderoso para redução de área ocupada: <mark>ministérios que otimizam sua ocupação de espaço veem redução imediata em seus custos</mark>. </span><br>"
               },
               {
                 "icon": "building",
@@ -706,8 +704,7 @@
             "icon": "lightbulb",
             "title": "",
             "heading": "",
-            "children": "<p>O fechamento de oito edifícios de escritórios ineficientes em Londres gerou economia de aproximadamente 2 milhões de libras por ano. A consolidação do portfólio em Londres resultou em economias de 33,4 milhões de libras por ano em aluguéis e custos operacionais. A HMRC (agência fiscal britânica) projeta economias superiores a 90 milhões anuais a partir de 2026 <span data-fs=\"caption\"><span data-color=\"terra\">[8]</span></span> .</p>",
-            "color": ""
+            "children": "<p>O fechamento de oito edifícios de escritórios ineficientes em Londres gerou economia de aproximadamente 2 milhões de libras por ano. A consolidação do portfólio em Londres resultou em economias de 33,4 milhões de libras por ano em aluguéis e custos operacionais. A HMRC (agência fiscal britânica) projeta economias superiores a 90 milhões anuais a partir de 2026 <span data-fs=\"caption\"><span data-color=\"terra\">[8]</span></span> .</p>"
           }
         }
       ]
@@ -743,7 +740,7 @@
           "id": "b_mtaa0kpd_yc8i",
           "type": "prose",
           "props": {
-            "html": "<p>A Finlândia promoveu, durante os anos 1990, reformas estruturais amplas no setor público como parte de uma estratégia de modernização administrativa. O governo finlandês identificou que a gestão de seu patrimônio imobiliário, realizada por departamentos governamentais tradicionais, estava aquém dos padrões de eficiência desejados. A transformação de um departamento de gestão governamental em empresa estatal representava inovação nas práticas administrativas finlandesas, com objetivo de criar entidade que mantivesse natureza pública mas operasse com autonomia financeira e responsabilidade de autossustentação.</p>"
+            "html": "<p>A Finlândia promoveu, durante os anos 1990, reformas estruturais amplas no setor público como parte de uma estratégia de modernização administrativa. O governo finlandês identificou que a gestão de seu patrimônio imobiliário, realizada por departamentos governamentais tradicionais, estava aquém dos padrões de eficiência desejados. A transformação de um departamento de gestão governamental em empresa estatal representava inovação nas práticas administrativas finlandesas, com o objetivo de criar uma entidade que mantivesse natureza pública mas operasse com autonomia financeira e responsabilidade de autossustentação.</p>"
           }
         },
         {
@@ -823,7 +820,7 @@
           "id": "b_mtaa1624_r3ig",
           "type": "prose",
           "props": {
-            "html": "<p>A França enfrentou, nos anos 2000, desafios significativos na gestão de seu patrimônio imobiliário federal. O diagnóstico elaborado pelo relatório Gilles Carrez em 2009 identificou deficiências graves: falta de transparência sobre o inventário de propriedades, ausência de critérios coerentes para manutenção versus venda de edifícios e impossibilidade de implementar estratégia de longo prazo. A Tabela Geral de Propriedades do Estado, que deveria servir como inventário centralizado, sofria de incompletude crônica. O valor total do patrimônio imobiliário federal francês foi estimado em 32,8 bilhões de euros em 2004. O diagnóstico levou à promulgação, em 2006, do Código Geral de Propriedade das Pessoas Públicas (CG3P), que consolidou regras aplicáveis ao patrimônio público e introduziu inovações nos procedimentos de desafetação.</p>"
+            "html": "<p>A França enfrentou, nos anos 2000, desafios significativos na gestão de seu patrimônio imobiliário federal. O diagnóstico elaborado pelo relatório Gilles Carrez em 2009 identificou deficiências graves: falta de transparência sobre o inventário de propriedades, ausência de critérios coerentes para a manutenção ou venda de edifícios e impossibilidade de implementar estratégia de longo prazo. A Tabela Geral de Propriedades do Estado, que deveria servir como inventário centralizado, sofria de incompletude crônica. O valor total do patrimônio imobiliário federal francês foi estimado em 32,8 bilhões de euros em 2004. O diagnóstico levou à promulgação, em 2006, do Código Geral de Propriedade das Pessoas Públicas (CG3P), que consolidou regras aplicáveis ao patrimônio público e introduziu inovações nos procedimentos de desafetação.</p>"
           }
         },
         {
@@ -847,8 +844,7 @@
             "icon": "alert-triangle",
             "title": "",
             "heading": "",
-            "children": "<p>A estratégia de alienações massivas apresentou problemas estruturais documentados pela Cour des Comptes (equivalente ao TCU francês). A pressão fiscal para gerar receitas criou incentivo perverso de vender propriedades no momento errado do ciclo imobiliário, sem visão estratégica sobre quais imóveis deveriam ser mantidos e renovados. A lógica de \"vender para arrecadar\" prevaleceu sobre a lógica de \"investir em renovação seletiva do patrimônio estratégico\", resultando na alienação de alguns edifícios que retrospectivamente seria preferível manter e reformar. A Cour des Comptes assinalou também a falta de estratégia integrada de renovação, tornando o modelo reativo: decisões de venda obedeciam a necessidades orçamentárias imediatas, não a prioridades estratégicas de modernização.</p>",
-            "color": ""
+            "children": "<p>A estratégia de alienações massivas apresentou problemas estruturais documentados pela Cour des Comptes (equivalente ao TCU francês). A pressão fiscal para gerar receitas criou incentivo perverso de vender propriedades no momento errado do ciclo imobiliário, sem visão estratégica sobre quais imóveis deveriam ser mantidos e renovados. A lógica de \"vender para arrecadar\" prevaleceu sobre a lógica de \"investir em renovação seletiva do patrimônio estratégico\", resultando na alienação de alguns edifícios que retrospectivamente seria preferível manter e reformar. A Cour des Comptes assinalou também a falta de estratégia integrada de renovação, tornando o modelo reativo: decisões de venda obedeciam a necessidades orçamentárias imediatas, não a prioridades estratégicas de modernização.</p>"
           }
         },
         {
@@ -916,7 +912,7 @@
           "id": "b_mtabv9pu_defr",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A <b>Central de Inversiones S.A. (CISA)</b> é pessoa jurídica de direito privado vinculada ao Ministério de Hacienda y Crédito Público (Ministério das Finanças). Criada originalmente em 1975 e reformulada pela Lei 795 de 2003 e pelo Decreto 4.819 de 2007, CISA funciona como entidade centralizadora única para gestão de ativos imobiliários do setor público colombiano. Seu mandato é comprar, comercializar e administrar todos os tipos de bens imóveis e portfólios financeiros pertencentes a entidades públicas de qualquer esfera (nacional, departamental ou municipal), bem como organizações autônomas previstas na Constituição e patrimônios autônomos.</span></p><p>O modelo de operação de CISA baseia-se em ciclo de geração de receitas e reinvestimento: a entidade compra, administra e comercializa imóveis, gerando fluxo de caixa que cobre custos operacionais e contribui ao Tesouro Nacional. A Lei 1.420 de 2010 estabelece que órgãos do orçamento nacional devem transferir imóveis regularizados e designar portfólios para CISA. A entidade os comercializa por vendas diretas, leilões ou licitações, com as receitas retornando parcialmente como capital de operação ou sendo revertidas ao Tesouro.&nbsp;</p><p>Em 2022, a CISA projetava receitas operacionais de 158 bilhões de pesos colombianos, com lucro estimado de 41 bilhões de pesos. Nos 24 meses anteriores, comercializou 485 propriedades (incluindo casas, apartamentos, terrenos e imóveis comerciais) em todo o território nacional. A plataforma <b>Ziruma</b>, sistema de informação geográfica integrado, representa um avanço importante: é o primeiro inventário geoespacial centralizado e atualizado dos ativos imobiliários colombianos, permitindo decisões de alocação baseadas em informação.</p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A <b>Central de Inversiones S.A. (CISA)</b> é pessoa jurídica de direito privado vinculada ao Ministério de Hacienda y Crédito Público (Ministério das Finanças). Criada originalmente em 1975 e reformulada pela Lei 795 de 2003 e pelo Decreto 4.819 de 2007, CISA funciona como entidade centralizadora única para gestão de ativos imobiliários do setor público colombiano. Seu mandato é comprar, comercializar e administrar todos os tipos de bens imóveis e portfólios financeiros pertencentes a entidades públicas de qualquer esfera (nacional, departamental ou municipal), bem como organizações autônomas previstas na Constituição e patrimônios autônomos.</span></p><p>O modelo de operação de CISA baseia-se em ciclo de geração de receitas e reinvestimento: a entidade compra, administra e comercializa imóveis, gerando fluxo de caixa que cobre custos operacionais e contribui ao Tesouro Nacional. A Lei 1.420 de 2010 estabelece que órgãos do orçamento nacional devem transferir imóveis regularizados e designar portfólios para CISA. A entidade os comercializa por vendas diretas, leilões ou licitações, com as receitas retornando parcialmente como capital de operação ou sendo revertidas ao Tesouro. </p><p>Em 2022, a CISA projetava receitas operacionais de 158 bilhões de pesos colombianos, com lucro estimado de 41 bilhões de pesos. Nos 24 meses anteriores, comercializou 485 propriedades (incluindo casas, apartamentos, terrenos e imóveis comerciais) em todo o território nacional. A plataforma <b>Ziruma</b>, sistema de informação geográfica integrado, representa um avanço importante: é o primeiro inventário geoespacial centralizado e atualizado dos ativos imobiliários colombianos, permitindo decisões de alocação baseadas em informação.</p>"
           }
         },
         {
@@ -1010,7 +1006,7 @@
         "kicker": "PARA CONCLUIR",
         "kickerIcon": "check",
         "title": "",
-        "body": "<p>Os casos analisados demonstram que a profissionalização da gestão patrimonial depende menos do instrumento adotado e mais da combinação entre governança adequada, autonomia operacional, transparência de custos, capacidade técnica, sustentabilidade financeira e alinhamento com objetivos públicos claramente definidos. As experiências internacionais e nacionais indicam que o patrimônio imobiliário pode deixar de ser percebido apenas como um conjunto de bens a serem administrados e passar a atuar como instrumento estratégico para geração de valor público, fortalecimento institucional e desenvolvimento econômico e social dos territórios.</p>"
+        "body": "<p>Os casos analisados demonstram que a profissionalização da gestão patrimonial depende menos do instrumento adotado e mais da combinação entre governança adequada, autonomia operacional, transparência de custos, capacidade técnica, sustentabilidade financeira e alinhamento com objetivos públicos claramente definidos. As experiências internacionais e nacionais indicam que o patrimônio imobiliário pode deixar de ser percebido apenas como um conjunto de bens a serem administrados e passar a ser utilizado como instrumento estratégico para geração de valor público, fortalecimento institucional e desenvolvimento econômico e social dos territórios.</p>"
       },
       "children": [
         {
@@ -1022,8 +1018,7 @@
             "icon": "scroll-text",
             "title": "",
             "heading": "",
-            "children": "<p>Este material foi elaborado a partir da Nota Técnica “Benchmarking nacional e internacional de modelos de gestão profissional de imóveis públicos”, de autoria de Felipe Guth, economista, e Thaís Xavier, Coordenadora-Geral de Parcerias e Projetos da Secretaria do Patrimônio da União (SPU).</p><p>O estudo reúne e analisa experiências brasileiras e internacionais de gestão patrimonial, identificando modelos de governança, mecanismos de financiamento e estratégias de utilização dos ativos públicos que podem inspirar o aperfeiçoamento da administração imobiliária no Brasil.</p>",
-            "color": ""
+            "children": "<p>Este material foi elaborado a partir da Nota Técnica “Benchmarking nacional e internacional de modelos de gestão profissional de imóveis públicos”, de autoria de Felipe Guth, economista, e Thaís Xavier, Coordenadora-Geral de Parcerias e Projetos da Secretaria do Patrimônio da União (SPU).</p><p>O estudo reúne e analisa experiências brasileiras e internacionais de gestão patrimonial, identificando modelos de governança, mecanismos de financiamento e estratégias de utilização dos ativos públicos que podem inspirar o aperfeiçoamento da administração imobiliária no Brasil.</p>"
           }
         },
         {
@@ -1046,7 +1041,7 @@
       "type": "pagefooter",
       "props": {
         "code": "modelos de gestão profissional de imóveis públicos, Benchmarking nacional e internacional [M531]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
