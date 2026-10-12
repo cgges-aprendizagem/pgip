@@ -76,7 +76,7 @@
           "id": "bo01yr8e",
           "type": "prose",
           "props": {
-            "html": "<p>A distinção entre a celebração do contrato e sua efetiva execução é fundamental pois a <b>função pública do patrimônio imobiliário não se concretiza pelo simples ato de destinação ou pela assinatura do contrato</b>. Um imóvel somente gera valor para a sociedade quando é efetivamente utilizado para os fins que motivaram sua destinação e quando as condições pactuadas são observadas ao longo de toda a vigência da relação jurídica. Em outras palavras, é a adequada gestão contratual que transforma uma decisão administrativa em resultados concretos, assegurando que o patrimônio público permaneça a serviço do interesse coletivo.</p><p>Os contratos de destinação apresentam características que os diferenciam dos contratos administrativos tradicionalmente associados à aquisição de bens, execução de obras ou prestação de serviços. Em geral, envolvem relações jurídicas de longa duração, acompanhamento permanente do uso do imóvel, monitoramento do cumprimento de finalidades específicas e, em determinadas situações, até mesmo a constituição ou transferência de direitos reais sujeitos a registro imobiliário. Essas peculiaridades demandam mecanismos próprios de gestão e fiscalização.</p>"
+            "html": "<p>A distinção entre a celebração do contrato e sua efetiva execução é fundamental, pois a <b>função pública do patrimônio imobiliário não se concretiza pelo simples ato de destinação ou pela assinatura do contrato</b>. Um imóvel somente gera valor para a sociedade quando é efetivamente utilizado para os fins que motivaram sua destinação e quando as condições pactuadas são observadas ao longo de toda a vigência da relação jurídica. Em outras palavras, é a adequada gestão contratual que transforma uma decisão administrativa em resultados concretos, assegurando que o patrimônio público permaneça a serviço do interesse coletivo.</p><p>Os contratos de destinação apresentam características que os diferenciam dos contratos administrativos tradicionalmente associados à aquisição de bens, execução de obras ou prestação de serviços. Em geral, envolvem relações jurídicas de longa duração, acompanhamento permanente do uso do imóvel, monitoramento do cumprimento de finalidades específicas e, em determinadas situações, até mesmo a constituição ou transferência de direitos reais sujeitos a registro imobiliário. Essas peculiaridades demandam mecanismos próprios de gestão e fiscalização.</p>"
           }
         },
         {
@@ -245,7 +245,7 @@
               {
                 "icon": "file-check",
                 "title": "",
-                "text": "<span data-fs=\"body\">Cadastramento do contrato e do imóvel nos sistemas utilizados pelo órgão (que pode ser automática, como no caso da SPU/MGI). </span>"
+                "text": "<span data-fs=\"body\">Cadastramento do contrato e do imóvel nos sistemas utilizados pelo órgão (que pode ser automático, como no caso da SPU/MGI). </span>"
               },
               {
                 "icon": "notebook-pen",
@@ -596,7 +596,7 @@
           "id": "b9zrzqts",
           "type": "prose",
           "props": {
-            "html": "<p>Essa distinção ajuda o gestor a calibrar a resposta: um atraso documental pontual normalmente não justifica a mesma gravidade de medida que um desvio de finalidade ou um dano patrimonial relevante.</p>"
+            "html": "<p>Essa distinção ajuda o gestor a calibrar a resposta: um atraso documental pontual normalmente não justifica uma medida de mesma gravidade&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">que um desvio de finalidade ou um dano patrimonial relevante.</span></p>"
           }
         },
         {
@@ -718,7 +718,7 @@
           "id": "cu52pwv5",
           "type": "prose",
           "props": {
-            "html": "<p>Sistemas modernos podem atuar como instrumentos de governança, promovendo padronização, integração de dados, rastreabilidade dos atos administrativos e maior eficiência na gestão do ciclo de vida dos contratos.</p><p>Com essa perspectiva, a Secretaria do Patrimônio da União (SPU) desenvolveu o <b>Módulo de Gestão de Atos e Contratos (MGC)</b>, integrado ao SPUNet, como uma solução destinada a apoiar a formalização e a gestão dos instrumentos de destinação de imóveis da União. Desde sua concepção, o módulo foi estruturado para acompanhar todas as etapas do ciclo de vida contratual, desde a celebração até o monitoramento da execução, alterações, tratamento de inadimplementos e encerramento da relação jurídica.</p><p>A implementação foi iniciada pela primeira etapa desse ciclo (a celebração do contrato e a organização inicial da gestão), concentrando esforços na padronização dos instrumentos, na automação de procedimentos e na integração com as bases corporativas de informação. Essa estratégia permitiu estabelecer uma base sólida para a evolução futura da solução, que já se encontra preparada para incorporar funcionalidades voltadas ao acompanhamento da execução contratual, como notificações automáticas, gestão das comunicações com os destinatários, atualização cadastral dos responsáveis, controle de obrigações e outras ferramentas de monitoramento contínuo.</p><p>Embora desenvolvido para atender às especificidades da União, o MGC reúne práticas que podem inspirar outros órgãos e entidades públicas, especialmente no que se refere à utilização de modelos padronizados, integração entre sistemas, automação de atividades repetitivas e fortalecimento da governança contratual.</p>"
+            "html": "<p>Sistemas modernos podem atuar como instrumentos de governança, promovendo padronização, integração de dados, rastreabilidade dos atos administrativos e maior eficiência na gestão do ciclo de vida dos contratos.</p><p>Com essa perspectiva, a Secretaria do Patrimônio da União (SPU) desenvolveu o <b>Módulo de Gestão de Atos e Contratos (MGC)</b>, integrado ao SPUNet, como uma solução destinada a apoiar a formalização e a gestão dos instrumentos de destinação de imóveis da União. Desde sua concepção, o módulo foi estruturado para acompanhar todas as etapas do ciclo de vida contratual, desde a celebração até o monitoramento da execução, alterações, tratamento de inadimplementos e encerramento da relação jurídica.</p><p>A implementação foi iniciada pela primeira etapa desse ciclo (a celebração do contrato e a organização inicial da gestão), concentrando esforços na padronização dos instrumentos, na automação de procedimentos e na integração com as bases corporativas de informação. Essa estratégia permitiu estabelecer uma base sólida para a evolução futura da solução, que já se encontra preparada para incorporar funcionalidades voltadas ao acompanhamento da execução contratual, como notificações automáticas, gestão das comunicações com os destinatários, atualização cadastral dos responsáveis, controle de obrigações e outras ferramentas de monitoramento contínuo.</p><p>Embora desenvolvido para atender às especificidades da União, o MGC reúne práticas que podem inspirar outros órgãos e entidades públicas, especialmente no que se refere a utilização de modelos padronizados, a integração entre sistemas, a automação de atividades repetitivas e fortalecimento da governança contratual.</p>"
           }
         },
         {
@@ -901,7 +901,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Gestão de contratos de destinação [M451]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
