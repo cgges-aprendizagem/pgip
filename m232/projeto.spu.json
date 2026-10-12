@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "meta": {
-    "title": "M 2.3.2 - Formas de aquisicao e constituicao de direitos imobiliarios",
+    "title": "M232 - Formas de aquisicao e constituicao de direitos imobiliarios",
     "lang": "pt-BR",
     "builderCredit": true,
     "toc": {
@@ -68,7 +68,7 @@
           "id": "c8q9uw3m",
           "type": "prose",
           "props": {
-            "html": "<p>Ao adquirir um imóvel, não é incomum que o Poder Público percorra um caminho inverso ao da história: resgata, por vias jurídicas próprias, bens que já pertenceram à Coroa portuguesa e Estado e que, ao longo dos séculos, se dispersaram para o domínio privado por diversas razões.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Essa, contudo, é apenas uma das dinâmicas possíveis de ingresso de imóveis no patrimônio público.&nbsp;</span><span style=\"color: inherit; text-wrap-mode: initial;\">Em muitos casos, o bem jamais integrou o patrimônio privado, passando a compor o domínio estatal em razão de características naturais, de determinação legal ou de outros fatos juridicamente relevantes.&nbsp;</span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">As formas de aquisição são variadas e podem decorrer de negócios jurídicos, de fenômenos naturais ou de hipóteses em que a própria lei atribui a determinado fato o efeito de incorporar o imóvel ao patrimônio público.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">Em qualquer dessas hipóteses, o bem passa a se qualificar como público justamente porque foi adquirido pelo Poder Público.&nbsp;</span></p><p>A fim de compreender bem o roteiro jurídico a que um determinado bem é submetido para ingressar no patrimônio público, é necessário<mark> identificar as causas dessa aquisição</mark> e então visualizar as consequências práticas e formais imediatas.</p>"
+            "html": "<p>Ao adquirir um imóvel, não é incomum que o Poder Público percorra um caminho inverso ao da história: resgata, por vias jurídicas próprias, bens que já pertenceram à Coroa portuguesa e ao Estado e que, ao longo dos séculos, se dispersaram para o domínio privado por diversas razões. <span style=\"text-wrap-mode: initial; color: inherit;\">Essa, contudo, é apenas uma das dinâmicas possíveis de ingresso de imóveis no patrimônio público. </span><span style=\"color: inherit; text-wrap-mode: initial;\">Em muitos casos, o bem jamais integrou o patrimônio privado, passando a compor o domínio estatal em razão de características naturais, de determinação legal ou de outros fatos juridicamente relevantes. </span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">As formas de aquisição são variadas e podem decorrer de negócios jurídicos, de fenômenos naturais ou de hipóteses em que a própria lei atribui a determinado fato o efeito de incorporar o imóvel ao patrimônio público. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Em qualquer dessas hipóteses, o bem passa a se qualificar como público justamente porque foi adquirido pelo Poder Público. </span></p><p>A fim de compreender bem o roteiro jurídico a que um determinado bem é submetido para ingressar no patrimônio público, é necessário<mark> identificar as causas dessa aquisição</mark> e então visualizar as consequências práticas e formais imediatas.</p>"
           }
         },
         {
@@ -80,7 +80,7 @@
             "accent": "",
             "items": [
               {
-                "title": "Conhecer se um determinado imóvel ingressa no acervo público por meio de um contrato, permite saber se é necessária escritura pública e registro, se há previsão legal específica exigível, e se o bem ingressa gravado por algum ônus que a Administração precisará observar.<br><br>",
+                "title": "<p>Conhecer se um determinado imóvel ingressa no acervo público por meio de um contrato permite saber se é necessária escritura pública e registro, se há previsão legal específica exigível, e se o bem ingressa gravado por algum ônus que a Administração precisará observar.</p><p></p>",
                 "text": "É exatamente este o percurso deste material."
               }
             ]
@@ -114,8 +114,7 @@
             "icon": "lightbulb",
             "title": "",
             "heading": "",
-            "children": "<p>Antes de avançar sobre cada uma das modalidades específicas, é necessário fixar uma distinção que orienta toda a compreensão do tema. Nem toda relação jurídica que o Estado estabelece com um imóvel envolve a <b>aquisição da propriedade</b> plena sobre ele. Em diversas situações, o que se opera é a <b>constituição de um direito real</b> limitado sobre bem de titularidade alheia.</p>",
-            "color": ""
+            "children": "<p>Antes de avançar sobre cada uma das modalidades específicas, é necessário fixar uma distinção que orienta toda a compreensão do tema. Nem toda relação jurídica que o Estado estabelece com um imóvel envolve a <b>aquisição da propriedade</b> plena sobre ele. Em diversas situações, o que se opera é a <b>constituição de um direito real</b> limitado sobre bem de titularidade alheia.</p>"
           }
         },
         {
@@ -148,13 +147,13 @@
               "label": "originária ",
               "icon": "sparkles",
               "title": "",
-              "content": "<p>Diz-se originária a aquisição que se dá sem qualquer relação de causalidade com o titular anterior do bem. Nesse caso, <b>a propriedade se forma como se fosse nova</b>, livre dos vícios e ônus que porventura recaíssem sobre o domínio anterior. É o que ocorre na <span data-term=\"acessão\" data-definition=\"A acessão natural é uma forma de aquisição originária. Não há transmissão de um título anterior, tampouco relação de causalidade com titular precedente: a propriedade do acréscimo se forma como se fosse nova, independentemente de registro.\">acessão</span> e na <span data-term=\"usucapião\" data-definition=\"Na usucapião a propriedade se consolida em favor do possuidor — inclusive do Poder Público, se figurar como interessado — quando do preenchimento dos requisitos legais da posse mansa, pacífica e ininterrupta, e o atingimento do prazo exigido em cada modalidade\">usucapião</span>.</p>"
+              "content": "<p>Diz-se originária a aquisição que se dá sem qualquer relação de causalidade com o titular anterior do bem. Nesse caso, <b>a propriedade se forma como se fosse nova</b>, livre dos vícios e ônus que porventura recaíssem sobre o domínio anterior. É o que ocorre na <span data-term=\"acessão\" data-definition=\"A acessão natural é uma forma de aquisição originária. Não há transmissão de um título anterior, tampouco relação de causalidade com titular precedente: a propriedade do acréscimo se forma como se fosse nova, independentemente de registro.\">acessão</span>, na <span data-term=\"usucapião\" data-definition=\"Na usucapião a propriedade se consolida em favor do possuidor — inclusive do Poder Público, se figurar como interessado — quando do preenchimento dos requisitos legais da posse mansa, pacífica e ininterrupta, e o atingimento do prazo exigido em cada modalidade\">usucapião</span>&nbsp;e na legitimação fundiária urbana.</p>"
             },
             "b": {
               "label": "derivada",
               "icon": "arrow-left-right",
               "title": "",
-              "content": "<p>&nbsp;A aquisição derivada pressupõe a <b>transmissão do direito de um patrimônio a outro</b>, com base em um título que formalizará a vontade das partes. É o que sucede na compra e venda e na doação.</p>"
+              "content": "<p> A aquisição derivada pressupõe a <b>transmissão do direito de um patrimônio a outro</b>, com base em um título que formalizará a vontade das partes. É o que sucede na compra e venda e na doação.</p>"
             }
           }
         },
@@ -191,7 +190,7 @@
           "id": "bs60v4n5",
           "type": "prose",
           "props": {
-            "html": "<p>Deferente da aquisição, a <b>constituição de direito real </b>não transfere a propriedade de um patrimônio a outro. O que se cria é apenas um vínculo jurídico real (<span data-term=\"oponível a todos\" data-definition=\"Significa que uma lei, norma ou decisão judicial possui validade geral, atingindo e obrigando toda a coletividade, e não apenas as pessoas que participaram de um processo específico. No Direito, pode aparecer como a expressão em latim: &lt;i&gt;erga omnes.&lt;/i&gt;\">oponível a todos</span>)&nbsp;sobre imóvel cuja titularidade permanece com quem já a detinha. </p><p>É o que ocorre, por exemplo, na servidão administrativa constituída em favor do Poder Público sobre imóvel particular para a passagem de linhas de transmissão de energia elétrica, para a instalação de redes de água e esgoto e para a passagem de gasodutos e oleodutos. Em nenhum desses casos há transferência de propriedade.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">O que se constitui é um direito real sobre coisa alheia: o titular original conserva o domínio do imóvel, agora gravado por um ônus real oponível a terceiros, enquanto o beneficiário — </span><span style=\"text-wrap-mode: initial; color: inherit;\">o Poder Público, na servidão</span><span style=\"text-wrap-mode: initial; color: inherit;\">,— adquire apenas a faculdade de usar o bem na medida do direito instituído.</span><br></p>"
+            "html": "<p>Diferente da aquisição, a <b>constituição de direito real </b>não transfere a propriedade de um patrimônio a outro. O que se cria é apenas um vínculo jurídico real (<span data-term=\"oponível a todos\" data-definition=\"Significa que um direito pode ser exercido e protegido perante qualquer pessoa, impondo a terceiros o dever de respeitá-lo. No Direito, essa característica é própria dos direitos reais, que produzem efeitos em relação a todos (&lt;i&gt;erga omnes&lt;/i&gt;).\">oponível a todos</span>) sobre imóvel cuja titularidade permanece com quem já a detinha. </p><p>É o que ocorre, por exemplo, na servidão administrativa constituída em favor do Poder Público sobre imóvel particular para a passagem de linhas de transmissão de energia elétrica, para a instalação de redes de água e esgoto e para a passagem de gasodutos e oleodutos. Em nenhum desses casos há transferência de propriedade. <span style=\"text-wrap-mode: initial; color: inherit;\">O que se constitui é um direito real sobre coisa alheia: o titular original conserva o domínio do imóvel, agora gravado por um ônus real oponível a terceiros, enquanto o beneficiário,&nbsp;&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">o Poder Público na servidão</span><span style=\"text-wrap-mode: initial; color: inherit;\">, adquire apenas a faculdade de usar o bem na medida do direito instituído.</span><br></p>"
           }
         }
       ]
@@ -246,7 +245,7 @@
           "id": "by0e177f",
           "type": "prose",
           "props": {
-            "html": "<p>As causas contratuais decorrem de negócios jurídicos regulados pelo direito privado, mas o Poder Público também se vale desses instrumentos, ainda que com adaptações impostas pelo regime de direito público a que se submete. Quando o Estado figura como parte, os referidos negócios jurídicos não se tutelam apenas no Código Civil. Na verdade, três universos normativos se entrelaçam seguindo uma ordem lógica.&nbsp;</p>"
+            "html": "<p>As causas contratuais decorrem de negócios jurídicos regulados pelo direito privado, mas o Poder Público também se vale desses instrumentos, ainda que com adaptações impostas pelo regime de direito público a que se submete. Quando o Estado figura como parte, os referidos negócios jurídicos não se tutelam apenas no Código Civil. Na verdade, três universos normativos se entrelaçam seguindo uma ordem lógica. </p>"
           }
         },
         {
@@ -311,8 +310,7 @@
             "icon": "badge-alert",
             "title": "espécies contratuais de aquisição imobiliária",
             "heading": "",
-            "children": "<p>Antes de adentrarmos nas mais variadas espécies contratuais de aquisição imobiliária, é importante destacar que as modalidades inclusas no referido conceito (que nascem a partir do acordo e conjugação de vontades) se tratam de aquisições derivadas, cuja titularidade só se aperfeiçoará com o efetivo registro do direito real na matrícula do bem.</p>",
-            "color": ""
+            "children": "<p>Antes de adentrarmos nas mais variadas espécies contratuais de aquisição imobiliária, é importante destacar que as modalidades inclusas no referido conceito (que nascem a partir do acordo e conjugação de vontades) se tratam de aquisições derivadas, cuja titularidade só se aperfeiçoará com o efetivo registro do direito real na matrícula do bem.</p>"
           }
         },
         {
@@ -475,7 +473,7 @@
           "id": "c6dlun7w",
           "type": "prose",
           "props": {
-            "html": "<p>As causas jurídicas reúnem as hipóteses em que a própria norma, constitucional ou infraconstitucional<font color=\"#1c2420\" style=\"\">,</font>&nbsp;atribui a determinado bem a condição de patrimônio público, independentemente de negócio jurídico, de manifestação de vontade das partes ou de qualquer formalidade registral específica. Nessas hipóteses, é a própria norma quem define a titularidade do bem, dispensando o percurso negocial próprio das causas contratuais e o fenômeno físico próprio das causas naturais.</p>"
+            "html": "<p>As causas jurídicas reúnem as hipóteses em que a própria norma, constitucional ou infraconstitucional<font color=\"#1c2420\" style=\"\">,</font> atribui a determinado bem a condição de patrimônio público, independentemente de negócio jurídico, de manifestação de vontade das partes ou de qualquer formalidade registral específica. Nessas hipóteses, é a própria norma quem define a titularidade do bem, dispensando o percurso negocial próprio das causas contratuais e o fenômeno físico próprio das causas naturais.</p>"
           }
         },
         {
@@ -487,7 +485,7 @@
           "id": "bxplnp90",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A Constituição Federal é a primeira e mais relevante fonte dessas causas. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Os arts. 20 e 26 elencam, respectivamente, os bens que compõem o patrimônio da União e dos Estados.&nbsp;</span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">Entre os bens da União, o <a href=\"https://constituicao.stf.jus.br/dispositivo/cf-88-parte-1-titulo-3-capitulo-2-artigo-20\" target=\"_blank\" rel=\"noopener noreferrer\">art. 20</a> inclui os terrenos de marinha e seus acrescidos, as terras devolutas indispensáveis à defesa das fronteiras, os rios e lagos que banhem mais de um Estado ou sirvam de limite com outros países, as ilhas fluviais e lacustres nas zonas limítrofes, as praias marítimas, o mar territorial e os recursos minerais, entre outros.&nbsp;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">Entre os bens dos Estados, o <a href=\"https://constituicao.stf.jus.br/dispositivo/cf-88-parte-1-titulo-3-capitulo-3-artigo-26\" target=\"_blank\" rel=\"noopener noreferrer\">art. 26</a> inclui as águas superficiais e subterrâneas, as ilhas fluviais e lacustres não pertencentes à União e as terras devolutas não compreendidas entre as da União. Para os Municípios, remanescem todos os bens que não são inclusos nos referidos artigos.</span></li></ul></p><p>Em nenhuma dessas hipóteses há negócio jurídico ou formalidade registral que atribua a titularidade: a própria norma constitucional já a define.</p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A Constituição Federal é a primeira e mais relevante fonte dessas causas. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Os arts. 20 e 26 elencam, respectivamente, os bens que compõem o patrimônio da União e dos Estados. </span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">Entre os bens da União, o <a href=\"https://constituicao.stf.jus.br/dispositivo/cf-88-parte-1-titulo-3-capitulo-2-artigo-20\" target=\"_blank\" rel=\"noopener noreferrer\">art. 20</a> inclui os terrenos de marinha e seus acrescidos, as terras devolutas indispensáveis à defesa das fronteiras, os rios e lagos que banhem mais de um Estado ou sirvam de limite com outros países, as ilhas fluviais e lacustres nas zonas limítrofes, as praias marítimas, o mar territorial e os recursos minerais, entre outros. </span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">Entre os bens dos Estados, o <a href=\"https://constituicao.stf.jus.br/dispositivo/cf-88-parte-1-titulo-3-capitulo-3-artigo-26\" target=\"_blank\" rel=\"noopener noreferrer\">art. 26</a> inclui as águas superficiais e subterrâneas, as ilhas fluviais e lacustres não pertencentes à União e as terras devolutas não compreendidas entre as da União. Para os Municípios, remanescem todos os bens que não são inclusos nos referidos artigos.</span></li></ul></p><p>Em nenhuma dessas hipóteses há negócio jurídico ou formalidade registral que atribua a titularidade: a própria norma constitucional já a define.</p>"
           }
         },
         {
@@ -664,7 +662,7 @@
             "items": [
               {
                 "title": "Em âmbito federal, a IN 22/2017 disciplina a usucapião judicial nos arts. 31 e 32",
-                "text": "Verificadas as condições legais, cabe à Secretaria do Patrimônio da União solicitar à Advocacia-Geral da União o ajuizamento da ação de usucapião do imóvel ocupado ou possuído por órgão ou entidade da Administração Pública Federal. O título aquisitivo, nesse caso, é a carta de sentença extraída dos autos do processo judicial.<br><br><span data-fs=\"small\"><i>Tal regramento vincula apenas a União. Estados e Municípios podem editar normas próprias para disciplinar, em suas respectivas alçadas, o procedimento administrativo que precede o ajuizamento da ação de usucapião, bem como os atos de regularização do imóvel usucapido em seu acervo patrimonial.</i></span><br>"
+                "text": "<p>Verificadas as condições legais, cabe à Secretaria do Patrimônio da União solicitar à Advocacia-Geral da União o ajuizamento da ação de usucapião do imóvel ocupado ou possuído por órgão ou entidade da Administração Pública Federal. O título aquisitivo, nesse caso, é a carta de sentença extraída dos autos do processo judicial.</p><p><span data-fs=\"small\"><i>Tal regramento vincula apenas a União. Estados e Municípios podem editar normas próprias para disciplinar, em suas respectivas alçadas, o procedimento administrativo que precede o ajuizamento da ação de usucapião, bem como os atos de regularização do imóvel usucapido em seu acervo patrimonial.</i></span><br></p>"
               }
             ]
           }
@@ -678,8 +676,7 @@
             "icon": "alert-triangle",
             "title": "um esclarecimento conceitual",
             "heading": "",
-            "children": "<p>A própria IN 22/2017 distingue a usucapião judicial do Registro por Apossamento Vintenário — RAVI, antigamente chamado, de forma imprópria, de \"usucapião administrativa\". A usucapião judicial pressupõe reconhecimento pelo Poder Judiciário e tem natureza declaratória, retroagindo ao momento em que se completaram os requisitos legais de posse. O RAVI, ao contrário, é procedido administrativamente pela própria SPU, com fundamento na Lei nº 5.972/1973, e tem natureza constitutiva: pressupõe posse ininterrupta e sem oposição por vinte anos, exercida especificamente por órgão da Administração Federal ou por unidade militar. São, portanto, institutos distintos, ainda que aparentados pela função que cumprem.</p>",
-            "color": ""
+            "children": "<p>A própria IN 22/2017 distingue a usucapião judicial do Registro por Apossamento Vintenário — RAVI, antigamente chamado, de forma imprópria, de \"usucapião administrativa\". A usucapião judicial pressupõe reconhecimento pelo Poder Judiciário e tem natureza declaratória, retroagindo ao momento em que se completaram os requisitos legais de posse. O RAVI, ao contrário, é procedido administrativamente pela própria SPU, com fundamento na Lei nº 5.972/1973, e tem natureza constitutiva: pressupõe posse ininterrupta e sem oposição por vinte anos, exercida especificamente por órgão da Administração Federal ou por unidade militar. São, portanto, institutos distintos, ainda que aparentados pela função que cumprem.</p>"
           }
         }
       ]
@@ -710,7 +707,7 @@
           "id": "b_mt1xenbv_1ea0",
           "type": "prose",
           "props": {
-            "html": "<p>A desapropriação é o instrumento mais conhecido e, também, o mais drástico, entre as aquisições imobiliárias de direito público. Por meio dela, o Estado retira compulsoriamente de particular a propriedade de determinado bem, mediante prévia e justa indenização. </p><p>Fundamenta-se no art. 5º, XXIV, da Constituição, que ao mesmo tempo assegura o direito de propriedade e autoriza sua supressão, por lei, quando presentes necessidade pública, utilidade pública ou interesse social.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Trata-se de típica manifestação do poder de império do Estado — </span><i style=\"text-wrap-mode: initial; color: inherit;\">a supremacia do interesse público sobre o privado</i><span style=\"text-wrap-mode: initial; color: inherit;\"> —, mas submetida a limites rígidos: só se opera mediante procedimento legal e indenização correspondente ao valor do bem.</span></p>",
+            "html": "<p>A desapropriação é o instrumento mais conhecido e, também, o mais drástico, entre as aquisições imobiliárias de direito público. Por meio dela, o Estado retira compulsoriamente de particular a propriedade de determinado bem, mediante prévia e justa indenização. </p><p>Fundamenta-se no art. 5º, XXIV, da Constituição, que ao mesmo tempo assegura o direito de propriedade e autoriza sua supressão, por lei, quando presentes necessidade pública, utilidade pública ou interesse social. <span style=\"text-wrap-mode: initial; color: inherit;\">Trata-se de típica manifestação do poder de império do Estado — </span><i style=\"text-wrap-mode: initial; color: inherit;\">a supremacia do interesse público sobre o privado</i><span style=\"text-wrap-mode: initial; color: inherit;\"> —, mas submetida a limites rígidos: só se opera mediante procedimento legal e indenização correspondente ao valor do bem.</span></p>",
             "__pullDown": false
           }
         },
@@ -763,17 +760,17 @@
                 "items": [
                   {
                     "icon": "building",
-                    "title": "<span data-color=\"ochre-light\">Desapropriação por utilidade pública e necessidade pública&nbsp;</span>",
+                    "title": "<span data-color=\"ochre-light\">Desapropriação por utilidade pública e necessidade pública </span>",
                     "text": "<span data-fs=\"body\"><span data-color=\"light\">(Decreto-Lei nº 3.365/1941).</span></span>"
                   },
                   {
                     "icon": "users",
-                    "title": "<span data-color=\"ochre-light\">Desapropriação por interesse social&nbsp;</span>",
+                    "title": "<span data-color=\"ochre-light\">Desapropriação por interesse social </span>",
                     "text": "<span data-fs=\"body\"><span data-color=\"light\">(Lei nº 4.132/1962).</span></span>"
                   },
                   {
                     "icon": "sprout",
-                    "title": "<span data-color=\"ochre-light\">Desapropriação para fins de reforma agrária&nbsp;</span>",
+                    "title": "<span data-color=\"ochre-light\">Desapropriação para fins de reforma agrária </span>",
                     "text": "<span data-fs=\"body\"><span data-color=\"light\">(art. 184 da Constituição Federal), com indenização em títulos da dívida agrária, resgatáveis em até vinte anos a partir do segundo ano de emissão — ressalvadas as benfeitorias úteis e necessárias, indenizáveis em dinheiro.</span></span>"
                   },
                   {
@@ -845,7 +842,7 @@
             "icon": "handshake",
             "title": "Atuação Conjunta",
             "heading": "",
-            "children": "<p>A portaria citada resulta da atuação conjunta entre a Secretaria Nacional de Políticas sobre Drogas (SENAD), vinculada ao Ministério da Justiça e Segurança Pública, e a Secretaria do Patrimônio da União (SPU), evidenciando a necessária cooperação entre o órgão de política criminal sobre drogas e o órgão gestor do patrimônio imobiliário federal.&nbsp;</p><p>No âmbito da SPU, os atos e medidas de incorporação do bem ao patrimônio da União, após o recebimento da respectiva sentença transitada em julgado, são normatizados pela IN 22/2017, em seus artigos 33 e 34.</p>"
+            "children": "<p>A portaria citada resulta da atuação conjunta entre a Secretaria Nacional de Políticas sobre Drogas (SENAD), vinculada ao Ministério da Justiça e Segurança Pública, e a Secretaria do Patrimônio da União (SPU), evidenciando a necessária cooperação entre o órgão de política criminal sobre drogas e o órgão gestor do patrimônio imobiliário federal. </p><p>No âmbito da SPU, os atos e medidas de incorporação do bem ao patrimônio da União, após o recebimento da respectiva sentença transitada em julgado, são normatizados pela IN 22/2017, em seus artigos 33 e 34.</p>"
           }
         }
       ]
@@ -908,8 +905,7 @@
             "icon": "alert-circle",
             "title": "Não confunda RAVI com usucapião",
             "heading": "",
-            "children": "<p>O RAVI pode ser confundido com a usucapião pela aparente similaridade no que tange a posse prolongada. Chegou, inclusive a ser chamado de forma imprópria, de \"usucapião administrativa\", denominação hoje abandonada pela própria SPU para evitar confusões interpretativas.&nbsp;</p><p><b>Anote:</b> A usucapião (art. 1.238 do Código Civil) é reconhecida pelo Poder Judiciário e tem <mark data-hl=\"terra\"><span data-term=\"natureza declaratória\" data-definition=\"A natureza &lt;b&gt;declaratória&lt;/b&gt; apenas reconhece uma situação jurídica que já existiu no passado ou existe no presente, sem alterar a realidade\">natureza declaratória:</span></mark>&nbsp;a propriedade já pertencia ao possuidor desde o instante em que se completou o prazo legal, e a sentença apenas certifica esse fato. O RAVI, ao contrário, tem <mark data-hl=\"green\"><span data-term=\"natureza constitutiva\" data-definition=\"A natureza &lt;b&gt;constitutiva&lt;/b&gt; cria, modifica ou extingue uma relação jurídica, gerando um estado novo a partir da decisão.\">natureza constitutiva</span></mark>.&nbsp;</p>",
-            "color": ""
+            "children": "<p>O RAVI pode ser confundido com a usucapião pela aparente similaridade no que tange a posse prolongada. Chegou, inclusive a ser chamado de forma imprópria, de \"usucapião administrativa\", denominação hoje abandonada pela própria SPU para evitar confusões interpretativas. </p><p><b>Anote:</b> A usucapião (art. 1.238 do Código Civil) é reconhecida pelo Poder Judiciário e tem <mark data-hl=\"terra\"><span data-term=\"natureza declaratória\" data-definition=\"A natureza &lt;b&gt;declaratória&lt;/b&gt; apenas reconhece uma situação jurídica que já existiu no passado ou existe no presente, sem alterar a realidade\">natureza declaratória:</span></mark> a propriedade já pertencia ao possuidor desde o instante em que se completou o prazo legal, e a sentença apenas certifica esse fato. O RAVI, ao contrário, tem <mark data-hl=\"green\"><span data-term=\"natureza constitutiva\" data-definition=\"A natureza &lt;b&gt;constitutiva&lt;/b&gt; cria, modifica ou extingue uma relação jurídica, gerando um estado novo a partir da decisão.\">natureza constitutiva</span></mark>. </p>"
           }
         },
         {
@@ -983,7 +979,7 @@
           "id": "b_mt1yiu3i_ehr0",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">É comum, na prática, que o imóvel sucedido nunca tenha sido registrado em nome da entidade extinta ou de suas antecessoras. Para essas hipóteses, a IN 22/2017 (art. 28) prevê as seguintes alternativas:&nbsp;</span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">abertura de matrícula com fundamento no art. 195-B da Lei nº 6.015/1973;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">processamento do já examinado registro por apossamento vintenário;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">transferência da mera posse — quando apenas esse direito tiver sido sucedido;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">reconhecimento da perda da posse, em caráter excepcional, quando não demonstrado o exercício efetivo do direito nos últimos vinte anos.</span></li></ul></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">É comum, na prática, que o imóvel sucedido nunca tenha sido registrado em nome da entidade extinta ou de suas antecessoras. Para essas hipóteses, a IN 22/2017 (art. 28) prevê as seguintes alternativas: </span></p><p><ul><li><span style=\"text-wrap-mode: initial; color: inherit;\">abertura de matrícula com fundamento no art. 195-B da Lei nº 6.015/1973;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">processamento do já examinado registro por apossamento vintenário;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">transferência da mera posse — quando apenas esse direito tiver sido sucedido;</span></li><li><span style=\"text-wrap-mode: initial; color: inherit;\">reconhecimento da perda da posse, em caráter excepcional, quando não demonstrado o exercício efetivo do direito nos últimos vinte anos.</span></li></ul></p>"
           }
         },
         {
@@ -1028,7 +1024,7 @@
           "id": "b_mt1xxo61_i5fb",
           "type": "prose",
           "props": {
-            "html": "<p>Arrematação e adjudicação são espécies de aquisição imobiliária pela via judicial, ambas vinculadas ao processo de execução. Nelas, o Poder Público figura como credor — o exequente — que busca a satisfação de seu crédito mediante a expropriação judicial de bem do devedor. </p><p>A diferença entre as duas está no adquirente. Na <b>arrematação</b>, o bem penhorado é alienado, em leilão judicial, a quem oferecer o maior lance; o adquirente pode ser o próprio credor ou terceiro interessado. Na <b>adjudicação</b>, é o próprio credor quem requer que o bem lhe seja transferido diretamente, pelo valor da avaliação, sem necessidade de leilão — hipótese frequente quando não há licitantes interessados, ou quando o exequente prefere, desde logo, ficar com o bem em pagamento de seu crédito.</p>"
+            "html": "<p>Arrematação e adjudicação são espécies de aquisição imobiliária pela via judicial, ambas vinculadas ao processo de execução. Nelas, o Poder Público figura como credor — o exequente — que busca a satisfação de seu crédito mediante a expropriação judicial de bem do devedor. </p><p>A diferença entre as duas está no adquirente. Na <b>arrematação</b>, o bem penhorado é alienado, em leilão judicial, a quem oferecer o maior lance; o adquirente pode ser o próprio credor ou terceiro interessado. Na <b>adjudicação</b>, é o próprio credor quem requer que o bem lhe seja transferido diretamente, pelo valor da avaliação, sem necessidade de leilão — hipótese frequente quando não há licitantes interessados ou quando o exequente prefere, desde logo, ficar com o bem em pagamento de seu crédito.</p>"
           }
         },
         {
@@ -1040,7 +1036,7 @@
           "id": "b9v0tyih",
           "type": "prose",
           "props": {
-            "html": "<p>O Código de Processo Civil disciplina a <b>adjudicação</b> no art. 876:&nbsp;</p>"
+            "html": "<p>O Código de Processo Civil disciplina a <b>adjudicação</b> no art. 876: </p>"
           }
         },
         {
@@ -1221,7 +1217,7 @@
           "id": "b_msulphdi_45pr",
           "type": "prose",
           "props": {
-            "html": "<p>Uma vez identificado o fundamento jurídico aplicável — aquisição da propriedade ou constituição de direito real —, resta uma etapa comum a quase todas as hipóteses examinadas. É a <b>formalização do ato</b> e, sempre que cabível, seu <b>registro perante o cartório de imóveis</b> competente. </p><p>Conforme você estudou no material sobre <a href=\"https://cgges-aprendizagem.github.io/pgip/m221/\" target=\"_blank\" rel=\"noopener noreferrer\">análise preventiva  de imóveis públicos</a>, o domínio de grande parte dos bens públicos decorre diretamente de disposição constitucional ou legal. Isso vale, notadamente, para os bens da União.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\"><mark>O registro, nesses casos, não é o fundamento do domínio</mark>. Isso não retira, porém, sua relevância: ele confere publicidade ao ato de aquisição ou de constituição do direito real.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">Ele também resguarda a segurança das relações jurídicas envolvendo o imóvel. Na constituição de direitos reais em favor de terceiros — </span><span style=\"text-wrap-mode: initial; color: inherit;\">como o aforamento, a CDRU e o direito de superfície</span><span style=\"text-wrap-mode: initial; color: inherit;\"> —, o registro costuma ser requisito de eficácia do direito perante terceiros, nos termos do art. 1.245 do Código Civil.</span></p>"
+            "html": "<p>Uma vez identificado o fundamento jurídico aplicável — aquisição da propriedade ou constituição de direito real —, resta uma etapa comum a quase todas as hipóteses examinadas. É a <b>formalização do ato</b> e, sempre que cabível, seu <b>registro perante o cartório de imóveis</b> competente. </p><p>Conforme você estudou no material sobre <a href=\"https://cgges-aprendizagem.github.io/pgip/m221/\" target=\"_blank\" rel=\"noopener noreferrer\">análise preventiva  de imóveis públicos</a>, o domínio de grande parte dos bens públicos decorre diretamente de disposição constitucional ou legal. Isso vale, notadamente, para os bens da União.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\"><mark>O registro, nesses casos, não é o fundamento do domínio</mark>. Isso não retira, porém, sua relevância: ele confere publicidade ao ato de aquisição ou de constituição do direito real. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Ele também resguarda a segurança das relações jurídicas envolvendo o imóvel. Na constituição de direitos reais em favor de terceiros — </span><span style=\"text-wrap-mode: initial; color: inherit;\">como o aforamento, a CDRU e o direito de superfície</span><span style=\"text-wrap-mode: initial; color: inherit;\"> —, o registro costuma ser requisito de eficácia do direito perante terceiros, nos termos do art. 1.245 do Código Civil.</span></p>"
           }
         },
         {
@@ -1265,8 +1261,8 @@
       "id": "b92rtx0w",
       "type": "pagefooter",
       "props": {
-        "code": "Formas de Aquisição e Constituição e Direitos Imobiliários<br>&nbsp;[M232]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "code": "Formas de Aquisição e Constituição e Direitos Imobiliários<br> [M232]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [

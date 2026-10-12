@@ -569,7 +569,7 @@
                       "title": "",
                       "color": "",
                       "bg": "",
-                      "body": "<p><b>Matrícula nº 15.432 aberta a partir da Transcrição nº 7.890 do Livro 3-H.&nbsp;</b></p><p>Para reconstruir a origem do imóvel, é necessário pesquisar a transcrição originária e, se for o caso, as transcrições anteriores que a antecederam, reconstituindo assim toda a cadeia dominial.</p>",
+                      "body": "<p><b>Matrícula nº 15.432 aberta a partir da Transcrição nº 7.890 do Livro 3-H. </b></p><p>Para reconstruir a origem do imóvel, é necessário pesquisar a transcrição originária e, se for o caso, as transcrições anteriores que a antecederam, reconstituindo assim toda a cadeia dominial.</p>",
                       "__pullDown": false
                     },
                     "children": []
@@ -1502,8 +1502,8 @@
       "id": "b8bfxxpk",
       "type": "pagefooter",
       "props": {
-        "code": "Registro de Imóveis e patrimonio publico [M233]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "code": "Registro de Imóveis e patrimonio pÚblico [M233]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
