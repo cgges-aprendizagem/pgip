@@ -133,12 +133,12 @@
               {
                 "icon": "sprout",
                 "title": "",
-                "text": "Reconhecimento do direito à terra da população dos assentamentos rurais consolidados, regularização a possa da terra."
+                "text": "Reconhecimento do direito à terra da população dos assentamentos rurais consolidados, regularização a posse da terra."
               },
               {
                 "icon": "drama",
                 "title": "",
-                "text": "Destinação de áreas para garantir o direito ao lazer, à cultura e manifestações culturais."
+                "text": "Destinação de áreas para garantir o direito ao lazer, à cultura e às manifestações culturais."
               },
               {
                 "icon": "apple",
@@ -158,7 +158,7 @@
               {
                 "icon": "circle-dollar-sign",
                 "title": "",
-                "text": "Identificação de imóveis com vocação estritamente voltada ao mercado imobiliário passíveis de serem colocadas no mercado como efeito regulatório, com vocação arrecadadora, para subsidiar projetos de interesse social."
+                "text": "Identificação de imóveis com vocação estritamente voltada ao mercado imobiliário passíveis de serem colocados no mercado como efeito regulatório, com vocação arrecadadora, para subsidiar projetos de interesse social."
               }
             ]
           }
@@ -194,7 +194,7 @@
           "id": "cz59vng4",
           "type": "prose",
           "props": {
-            "html": "<p>O cumprimento da função socioambiental dos imóveis públicos está vinculado ao uso e destinação destes bens de forma a proteger e reconhecer os direitos de diversos segmento da sociedade brasileira e, ao mesmo tempo, proteger o meio ambiente. Esses direitos são, por exemplo, o direito à moradia e à terra urbana e rural, bem como os direitos culturais da população. Portanto, para identificar o uso e destinação mais adequados dos bens imóveis públicos deve ser feita uma leitura conjugada e integrada da necessidade de proteger os direitos socioambientais com a legislação que trata do desenvolvimento urbano, da proteção ambiental, da política fundiária e do ordenamento territorial. Esses instrumentos definem critérios para o uso e ocupação do solo, para a proteção dos recursos naturais e para a promoção do desenvolvimento sustentável.</p><p>No âmbito da propriedade rural, especificamente, o cumprimento da função social da propriedade está expresso na contabilização do uso das terras públicas e devolutas com a política agrícola e com o Plano Nacional de Reforma Agrária, bem como com as políticas de turismo, especialmente ecoturismo.</p><p>Além disso, a função social da propriedade rural será garantida quando:</p><p><ol><li>&nbsp;houver um aproveitamento racional e adequado;</li><li>for utilizado adequadamente os recursos naturais disponíveis e dor preservado o meio ambiente;</li><li>forem observadas as disposições que regulam as relações de trabalho;</li><li>houver uma exploração que favoreça tanto o bem-estar dos proprietários como dos trabalhadores.</li></ol></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Esta leitura e interpretação abrangem o Estatuto da Cidade, a legislação ambiental, os instrumentos de política fundiária e os Planos Diretores Municipais. Esses instrumentos permitem que a utilização dos imóveis públicos seja orientada por objetivos coletivos e alinhada às estratégias de desenvolvimento definidas pela sociedade.</span></p>"
+            "html": "<p>O cumprimento da função socioambiental dos imóveis públicos está vinculado ao uso e destinação destes bens de forma a proteger e reconhecer os direitos de diversos segmentos da sociedade brasileira e, ao mesmo tempo, proteger o meio ambiente. Esses direitos são, por exemplo, o direito à moradia e à terra urbana e rural, bem como os direitos culturais da população. Portanto, para identificar o uso e destinação mais adequados dos bens imóveis públicos deve ser feita uma leitura conjugada e integrada da necessidade de proteger os direitos socioambientais com a legislação que trata do desenvolvimento urbano, da proteção ambiental, da política fundiária e do ordenamento territorial. Esses instrumentos definem critérios para o uso e ocupação do solo, para a proteção dos recursos naturais e para a promoção do desenvolvimento sustentável.</p><p>No âmbito da propriedade rural, a função social é tratada tanto pelo Estatuto da Terra quanto pela Constituição Federal.</p><p>O <b>Estatuto da Terra (Lei nº 4.504/1964)</b> estabelece que a propriedade da terra desempenha integralmente sua função social quando, simultaneamente:</p><p><ol><li>favorece o bem-estar dos proprietários, dos trabalhadores e de suas famílias;</li><li>mantém níveis satisfatórios de produtividade;</li><li>assegura a conservação dos recursos naturais; e</li><li>observa as disposições legais que regulam as justas relações de trabalho. </li></ol></p><p>A <b>Constituição Federal de 1988,</b> por sua vez, estabelece, no art. 186, que a função social da propriedade rural é cumprida quando são atendidos, simultaneamente:</p><p><ol><li>o aproveitamento racional e adequado;</li><li>a utilização adequada dos recursos naturais disponíveis e a preservação do meio ambiente;</li><li>a observância das disposições que regulam as relações de trabalho; e</li><li>a exploração que favoreça o bem-estar dos proprietários e dos trabalhadores.</li></ol></p><p>Embora utilizem formulações diferentes, as duas normas associam a função social da propriedade rural a dimensões econômicas, ambientais, sociais e trabalhistas, que devem ser consideradas de forma integrada.</p><p>Na prática, isso significa que a definição do uso e da destinação dos imóveis públicos exige, portanto, uma leitura integrada das dimensões social, ambiental, urbana, econômica e territorial e dos diferentes marcos legais aplicáveis. Essa articulação permite que a utilização desses bens seja orientada por objetivos coletivos e alinhada às estratégias de desenvolvimento definidas pela sociedade.</p>"
           }
         }
       ]
@@ -235,7 +235,7 @@
               {
                 "icon": "book-open-text",
                 "title": "",
-                "text": "Atender às exigências fundamentais de ordenação da cidade expressa no Plano Diretor."
+                "text": "Atender às exigências fundamentais de ordenação da cidade expressas no Plano Diretor."
               },
               {
                 "icon": "users-round",
@@ -298,7 +298,7 @@
                       },
                       {
                         "title": "",
-                        "text": "Não geram instalação de empreendimentos ou atividades que possam funcionar como pólos geradores de tráfego, sem a previsão da infraestrurua correspondente;"
+                        "text": "Não geram instalação de empreendimentos ou atividades que possam funcionar como pólos geradores de tráfego, sem a previsão da infraestrutura correspondente;"
                       }
                     ]
                   }
@@ -361,7 +361,7 @@
           "id": "cxcdtoq4",
           "type": "prose",
           "props": {
-            "html": "<p>De acordo com a Constituição Federal, é o Plano Diretor que define o conteúdo da função social da propriedade urbana. Ele é aprovado por lei municipal e determina o planejamento territorial dos municípios para os dez anos subsequentes, abrangendo tanto a área urbana com a área rural. </p><p>Ou seja, o que dá o significado concreto para a função social da propriedade em cada cidade é o Plano Diretor, regulamentando o tipo de uso que poderá ser dado em cada imóvel, o potencial construtivo em cada região das cidades, as áreas de expensão urbana, as áreas de proteção ambiental, as zonas de interesse social, entre outras regulamentações.</p><p>Mais do que um documento técnico, o Plano Diretor representa um pacto social construído pela comunidade local sobre o futuro do território. É nele que são estabelecidas as diretrizes para o uso e ocupação do solo, a proteção ambiental, a mobilidade urbana, a habitação, a infraestrutura e o desenvolvimento econômico.</p><p>Ao definir a destinação social, econômica e ambiental de cada parte do território do Municípios, o Plano Diretor garante terra urbana adequada para todas as atividades e para todos os segmentos sociais e prevê a utilização dos vazios urbanos (imóveis não utilizados ou subutilizados), bem como espaço para circulação, áreas para habitação popular, as áreas ocupadas por população de baixa renda passíveis de regularização etc.</p>"
+            "html": "<p>De acordo com a Constituição Federal, é o Plano Diretor que define o conteúdo da função social da propriedade urbana. Ele é aprovado por lei municipal e determina o planejamento territorial dos municípios para os dez anos subsequentes, abrangendo tanto a área urbana quanto a área rural. </p><p>Ou seja, o que dá o significado concreto para a função social da propriedade em cada cidade é o Plano Diretor, regulamentando o tipo de uso que poderá ser dado em cada imóvel, o potencial construtivo em cada região das cidades, as áreas de expansão urbana, as áreas de proteção ambiental, as zonas de interesse social, entre outras regulamentações.</p><p>Mais do que um documento técnico, o Plano Diretor representa um pacto social construído pela comunidade local sobre o futuro do território. É nele que são estabelecidas as diretrizes para o uso e ocupação do solo, a proteção ambiental, a mobilidade urbana, a habitação, a infraestrutura e o desenvolvimento econômico.</p><p>Ao definir a destinação social, econômica e ambiental de cada parte do território dos municípios, o Plano Diretor garante terra urbana adequada para todas as atividades e para todos os segmentos sociais e prevê a utilização dos vazios urbanos (imóveis não utilizados ou subutilizados), bem como espaço para circulação, áreas para habitação popular, as áreas ocupadas por população de baixa renda passíveis de regularização etc.</p>"
           }
         },
         {
@@ -380,7 +380,7 @@
           "id": "banl3nhe",
           "type": "prose",
           "props": {
-            "html": "<p>Tendo em vista a grande importância do Plano Diretor para a ordenação do território dos Municípios, o Estatuto da Cidade determina que a <b>participação popular é obrigatória</b> em seu processo de elaboração e aprovação. Trata-se de uma nova visão do planejamento urbano que rompe com a concepção tradicional de que lei deve ser elaborada somente por técnicos. A partir de então, se reconhece o papel fundamental a ser desempenhado pela sociedade civil, especialmente por meio das associações comunitárias, cooperativas e movimentos populares na construção do futuro das cidades. Os prefeitos, inclusive, podem incorrer em improbidade administrativa se não respeitarem a participação popular e a publicidade nos processos de elaboração do Plano Diretor.</p><p>O que a Constituição Federal de 1988 e o Estatuto da Cidade fizeram foi inserir a definição do direito da propriedade num processo político. Não há, portanto, um conteúdo prévio do direito da propriedade. É o processo político de elaboração das leis urbanísticas que vai determinar o conteúdo desse direito. E é a legislação urbanística e ambiental, sobretudo a de âmbito local e especialmente por meio do Plano Diretor Municipal, que vai dizer quando, em que condições e em que medida a propriedade pública (assim como a privada) cumpre sua função social.</p><p>Neste contexto, toda e qualquer lei urbanística e ambiental no Brasil – seja a lei dos perímetros municipais, a lei do zoneamento territorial e, sobretudo, a lei do Plano Diretor – tem a função de instituir o paradigma da função social da propriedade e da cidade. Esse é o grande momento do encontro entre interesse individuais e coletivos no território municipal.</p><p>Sendo assim, a utilização dos bens imóveis públicos, inseridos no âmbito do território do Município, deverá, sempre, observar as diretrizes do Plano Diretor.</p>"
+            "html": "<p>Tendo em vista a grande importância do Plano Diretor para a ordenação do território dos Municípios, o Estatuto da Cidade determina que a <b>participação popular é obrigatória</b> em seu processo de elaboração e aprovação. Trata-se de uma nova visão do planejamento urbano que rompe com a concepção tradicional de que lei deve ser elaborada somente por técnicos. A partir de então, se reconhece o papel fundamental a ser desempenhado pela sociedade civil, especialmente por meio das associações comunitárias, cooperativas e movimentos populares na construção do futuro das cidades. Os prefeitos, inclusive, podem incorrer em improbidade administrativa se não respeitarem a participação popular e a publicidade nos processos de elaboração do Plano Diretor.</p><p>O que a Constituição Federal de 1988 e o Estatuto da Cidade fizeram foi inserir a definição do direito de propriedade num processo político. Não há, portanto, um conteúdo prévio do direito da propriedade. É o processo político de elaboração das leis urbanísticas que vai determinar o conteúdo desse direito. E é a legislação urbanística e ambiental, sobretudo a de âmbito local e especialmente por meio do Plano Diretor Municipal, que vai dizer quando, em que condições e em que medida a propriedade pública (assim como a privada) cumpre sua função social.</p><p>Neste contexto, toda e qualquer lei urbanística e ambiental no Brasil – seja a lei dos perímetros municipais, a lei do zoneamento territorial e, sobretudo, a lei do Plano Diretor – tem a função de instituir o paradigma da função social da propriedade e da cidade. Esse é o grande momento do encontro entre interesses individuais e coletivos no território municipal.</p><p>Sendo assim, a utilização dos bens imóveis públicos, inseridos no âmbito do território do Município, deverá, sempre, observar as diretrizes do Plano Diretor.</p>"
           }
         },
         {
@@ -393,8 +393,9 @@
             "slot": "byhqb27d__slot",
             "collapse": "none",
             "title": "",
-            "children": "<p>A aplicação do conceito de função socioambiental ganhou destaque na gestão dos imóveis da União a partir dos anos 2000, quando a Secretaria do Patrimônio da União passou a incorporar de forma mais explícita objetivos relacionados à regularização fundiária, habitação de interesse social, proteção ambiental, desenvolvimento territorial e apoio a políticas públicas.</p><p>Essa experiência contribuiu para consolidar uma visão mais ampla do patrimônio público como instrumento de desenvolvimento, cidadania e sustentabilidade, influenciando debates e iniciativas em diferentes esferas da administração pública brasileira.</p>"
-          }
+            "body": "<p>A aplicação do conceito de função socioambiental ganhou destaque na gestão dos imóveis da União a partir dos anos 2000, quando a Secretaria do Patrimônio da União passou a incorporar de forma mais explícita objetivos relacionados à regularização fundiária, habitação de interesse social, proteção ambiental, desenvolvimento territorial e apoio a políticas públicas.</p><p>Essa experiência contribuiu para consolidar uma visão mais ampla do patrimônio público como instrumento de desenvolvimento, cidadania e sustentabilidade, influenciando debates e iniciativas em diferentes esferas da administração pública brasileira.</p>"
+          },
+          "children": []
         }
       ]
     },
@@ -403,7 +404,7 @@
       "type": "pagefooter",
       "props": {
         "code": "A função socioambiental dos imóveis públicos [M411]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [

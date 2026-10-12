@@ -575,7 +575,7 @@
               "id": "b13nxyuo",
               "type": "prose",
               "props": {
-                "html": "<p><b><span data-fs=\"h3\">Padronizando a linguagem da gestão patrimonial</span><br></b><span style=\"text-wrap-mode: initial; color: inherit;\"><span data-fs=\"h5\">A experiência do Comitê de Gestão do Conhecimento (ComGC/SPU)</span></span></p><p>A gestão de imóveis públicos envolve centenas de conceitos, instrumentos e regimes jurídicos que, muitas vezes, recebem denominações distintas ou são utilizados de forma inconsistente por diferentes órgãos e entes federativos, inclusive internamente nestes. Para enfrentar esse desafio, a Secretaria do Patrimônio da União (SPU) instituiu o Comitê de Gestão do Conhecimento (ComGC), responsável por, dentre outras atribuições, desenvolver e manter tabelas taxonômicas voltadas à padronização da linguagem técnico-administrativa aplicada à gestão patrimonial.</p><p>Essas taxonomias organizam conceitos, reduzem ambiguidades terminológicas e favorecem a interoperabilidade entre sistemas, a produção de estatísticas, a gestão do conhecimento e a elaboração de normas e documentos institucionais. Embora concebidas para a realidade da SPU, constituem importante referência para qualquer instituição que atue na gestão de imóveis públicos.</p><p>Entre os principais produtos desenvolvidos destacam-se:</p>"
+                "html": "<p><b><span data-fs=\"h3\">Padronizando a linguagem da gestão patrimonial</span><br></b><span style=\"text-wrap-mode: initial; color: inherit;\"><span data-fs=\"h5\">A experiência do Comitê de Gestão do Conhecimento (ComGC/SPU)</span></span></p><p>A gestão de imóveis públicos envolve centenas de conceitos, instrumentos e regimes jurídicos que, muitas vezes, recebem denominações distintas ou são utilizados de forma inconsistente por diferentes órgãos e entes federativos, inclusive internamente nesses órgãos e entes. Para enfrentar esse desafio, a Secretaria do Patrimônio da União (SPU) instituiu o Comitê de Gestão do Conhecimento (ComGC), responsável por, dentre outras atribuições, desenvolver e manter tabelas taxonômicas voltadas à padronização da linguagem técnico-administrativa aplicada à gestão patrimonial.</p><p>Essas taxonomias organizam conceitos, reduzem ambiguidades terminológicas e favorecem a interoperabilidade entre sistemas, a produção de estatísticas, a gestão do conhecimento e a elaboração de normas e documentos institucionais. Embora concebidas para a realidade da SPU, constituem importante referência para qualquer instituição que atue na gestão de imóveis públicos.</p><p>Entre os principais produtos desenvolvidos destacam-se:</p>"
               }
             },
             {
@@ -647,7 +647,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Regimes de destinação [M412]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
