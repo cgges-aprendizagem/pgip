@@ -1,16 +1,11 @@
 {
   "schema": 1,
   "meta": {
-    "title": "M134 - Orgaos de controle",
+    "title": "M134 - O Judiciário, o Ministério Público e os órgãos de controle na gestão do patrimônio imobiliário público",
     "lang": "pt-BR",
     "builderCredit": true,
     "toc": {
       "items": [
-        {
-          "id": "cwfxv49w",
-          "text": "<span style=\"font-weight: normal;\">Para começar:</span> por que este tema interessa a você?",
-          "hidden": false
-        },
         {
           "id": "ca67nb86",
           "text": "Quem é quem nesse cenário",
@@ -32,18 +27,8 @@
           "hidden": false
         },
         {
-          "id": "cwrj52x0",
-          "text": "Um novo instrumento: <span style=\"font-weight: normal;\">as Comissões de Soluções Fundiárias</span>",
-          "hidden": false
-        },
-        {
           "id": "cxt34gfn",
           "text": "Os grandes conflitos fundiários com entes públicos",
-          "hidden": false
-        },
-        {
-          "id": "cll6pvwh",
-          "text": "O olhar do controle: <span style=\"font-weight: normal;\">transparência e integridade</span> ",
           "hidden": false
         },
         {
@@ -84,18 +69,10 @@
       },
       "children": [
         {
-          "id": "cwfxv49w",
-          "type": "titulo",
-          "props": {
-            "text": "<span style=\"font-weight: normal;\">Para começar:</span> por que este tema interessa a você?",
-            "level": "h2"
-          }
-        },
-        {
           "id": "c9462nch",
           "type": "prose",
           "props": {
-            "html": "<p>Quem trabalha, ou pretende trabalhar, com a gestão de imóveis públicos logo descobre que as decisões sobre esses bens não são tomadas apenas dentro da repartição. Um prédio abandonado pode virar objeto de uma ação judicial movida pelo Ministério Público. Uma ordem de desocupação pode ser suspensa pelo Poder Judiciário. Um relatório do Tribunal de Contas da União pode colocar toda a política de gestão patrimonial na lista de riscos mais graves da administração federal.</p><p>Em outras palavras: o gestor de imóveis públicos atua em um ambiente de governança compartilhada, no qual o Poder Judiciário, o Ministério Público, as Defensorias e os órgãos de controle observam, cobram e, em certos casos, determinam providências sobre o patrimônio. Compreender como esses atores funcionam, quais instrumentos utilizam e quais limites a jurisprudência recente lhes impôs é uma competência essencial, tanto para evitar litígios quanto para dialogar bem quando eles acontecem.</p><p>Este texto apresenta esse cenário em três movimentos: primeiro, explica a decisão do STF que redefiniu as regras do jogo (o chamado Tema 698); depois, mostra casos reais e recentes (2020–2026) de atuação desses atores sobre imóveis públicos; por fim, descreve os novos instrumentos institucionais criados nesse período — como as Comissões de Soluções Fundiárias — e o papel dos órgãos de controle. Ao final, você encontrará um glossário com os termos jurídicos utilizados, questões para reflexão e as referências completas.</p>"
+            "html": "<p>Quem trabalha, ou pretende trabalhar, com a gestão de imóveis públicos logo descobre que a regularidade jurídica e as decisões sobre esses bens não são tomadas apenas dentro da repartição.&nbsp;</p><p>A formação fundiária brasileira foi marcada pela concentração da propriedade, pela ocupação informal do território, pela precariedade de registros e pela desigualdade no acesso à terra e à moradia. Ao longo do tempo, esse processo produziu situações de posse sem titulação, cadeias dominiais incompletas, sobreposição de registros, ocupações consolidadas em áreas públicas e privadas e conflitos envolvendo particulares, comunidades e diferentes entes governamentais.&nbsp;</p><p>Além disso, há um outro conjunto relevante de ações que decorre não propriamente de disputas sobre a propriedade, mas da demora ou da inação da Administração Pública. Cidadãos, empresas, comunidades e entidades recorrem ao Judiciário ou ao Ministério Público para obter análise, decisão ou conclusão de processos administrativos relacionados a imóveis públicos. A morosidade pode decorrer da própria complexidade dos casos, mas também de problemas estruturais recorrentes na gestão patrimonial: documentação histórica incompleta, cadastros desatualizados, ausência ou insuficiência de bases georreferenciadas, sistemas informatizados fragmentados, reduzida integração com registros cartoriais e insuficiência de pessoal e de capacidade tecnológica.&nbsp;&nbsp;</p><p>Essas dificuldades já foram identificadas, por exemplo, por órgãos de controle na gestão patrimonial federal e constituem desafios que, em diferentes proporções, podem alcançar os diversos níveis da Administração Pública. Por exemplo, um prédio abandonado pode virar objeto de uma ação judicial movida pelo Ministério Público. Uma ordem de desocupação pode ser suspensa pelo Poder Judiciário. Um relatório do Tribunal de Contas da União pode colocar toda a política de gestão patrimonial na lista de riscos mais graves da administração federal.&nbsp;</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Em outras palavras: o gestor de imóveis públicos atua em um ambiente de intensa interlocução entre Poder Judiciário, o Ministério Público, as Defensorias Públicas, os cartórios de registro de imóveis e os órgãos de controle interno e externo. Esses órgãos observam, cobram e, em certos casos, determinam providências sobre o patrimônio.&nbsp;</span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">Este material apresenta como esses atores funcionam, quais instrumentos utilizam e quais limites a jurisprudência recente lhes impôs. Compreender essa dinâmica  é uma competência essencial, tanto para evitar litígios quanto para dialogar bem quando eles acontecem.&nbsp;</span></p>"
           }
         }
       ]
@@ -132,11 +109,11 @@
             "items": [
               {
                 "title": "Poder Judiciário",
-                "content": "<p>Juízes e tribunais (estaduais, federais e o STF) que julgam ações envolvendo imóveis públicos — pedidos de reintegração de posse, ações que exigem a restauração de um prédio histórico e determinações relacionadas à destinação desses imóveis.</p>"
+                "content": "<p>Juízes e tribunais (estaduais, federais e o STF). Julgam demandas judiciais relacionadas ao patrimônio público são bastante diversificadas. Entre as mais frequentes encontram-se as ações possessórias, como manutenção e reintegração de posse; ações de usucapião, nas quais o Poder Público pode ser consultado sobre eventual domínio ou interesse na área; ações reivindicatórias e demarcatórias; desapropriações; ações envolvendo registros imobiliários; ações civis públicas; mandados de segurança; e ações destinadas a exigir que a Administração analise requerimentos, conclua processos ou adote providências relativas à regularização, destinação ou proteção de determinado imóvel.&nbsp;</p>"
               },
               {
                 "title": "Ministério Público (MP)",
-                "content": "Instituição autônoma que defende os interesses da sociedade. Existe o Ministério Público Federal (MPF), que atua sobre bens e temas federais, e os Ministérios Públicos estaduais. Seu principal instrumento nesse campo é a ação civil pública, uma ação judicial usada para proteger interesses coletivos, como o patrimônio público e cultural.",
+                "content": "Instituição autônoma que defende os interesses da sociedade. Existe o Ministério Público Federal (MPF), que atua sobre bens e temas federais, e os Ministérios Públicos estaduais. Sua atuação pode começar extrajudicialmente por meio de notícia de fato, procedimento preparatório, inquérito civil, requisição de informações, recomendação, audiência pública ou negociação de Termo de Ajustamento de Conduta – TAC.&nbsp;<p><span style=\"color: inherit; text-wrap-mode: initial;\">O inquérito civil possui natureza investigativa: serve à coleta de informações e evidências e não constitui, por si só, condenação do gestor. A recomendação ministerial também não equivale a sentença ou determinação de Tribunal de Contas. Já o TAC, quando celebrado, constitui título executivo extrajudicial e estabelece compromissos que podem ser exigidos judicialmente em caso de descumprimento.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">Quando a solução extrajudicial não é suficiente, o Ministério Público pode ajuizar Ação Civil Pública – ACP ou utilizar outros instrumentos processuais cabíveis.&nbsp;</span></p>",
                 "linkHref": "",
                 "linkLabel": "",
                 "linkButton": ""
@@ -158,13 +135,6 @@
               {
                 "title": "Órgãos centrais de controle interno ",
                 "content": "Como a Controladoria-Geral da União, as Controladorias-Gerais dos Estados e dos Municípios, as auditorias-gerais e as unidades centrais de controle interno, são órgãos que avaliam programas e apuram irregularidades.",
-                "linkHref": "",
-                "linkLabel": "",
-                "linkButton": ""
-              },
-              {
-                "title": "Conselho Nacional de Justiça (CNJ)",
-                "content": "Órgão que administra e normatiza o próprio Poder Judiciário. Como veremos, editou regras importantes sobre conflitos envolvendo imóveis ocupados.",
                 "linkHref": "",
                 "linkLabel": "",
                 "linkButton": ""
@@ -195,7 +165,7 @@
           "id": "cg1td2q6",
           "type": "prose",
           "props": {
-            "html": "<p>Na maior parte do tempo, as decisões sobre imóveis públicos são tomadas pela própria Administração (Poder Executivo). Cabe aos órgãos gestores decidir como caracterizar, conservar, utilizar, destinar ou alienar seus imóveis, sempre observando a legislação e o interesse público.</p><p>Entretanto, essas decisões raramente envolvem apenas aspectos técnicos. Um imóvel público pode interessar simultaneamente à política habitacional, à preservação ambiental, ao patrimônio cultural, ao desenvolvimento econômico, à implantação de equipamentos públicos ou à arrecadação de receitas. Em outras situações, pode estar ocupado, abandonado, deteriorado ou ser objeto de disputas entre diferentes instituições públicas ou grupos sociais.</p><p>Quando esses interesses entram em conflito, ou quando há indícios de ilegalidade, omissão administrativa ou ameaça a direitos coletivos, outros atores institucionais passam a participar desse processo. O Ministério Público pode questionar judicialmente determinada situação; a Defensoria Pública pode atuar na defesa de pessoas vulneráveis; os Tribunais de Contas e os órgãos de controle interno podem realizar auditorias e recomendar providências; e o Poder Judiciário pode ser chamado a solucionar o conflito.</p>"
+            "html": "<p>Na maior parte do tempo, as decisões sobre imóveis públicos são tomadas pela própria Administração (Poder Executivo). Cabe aos órgãos gestores decidir como caracterizar, conservar, utilizar, destinar ou alienar seus imóveis, sempre observando a legislação e o interesse público.</p><p>Entretanto, essas decisões raramente envolvem apenas aspectos técnicos. Um imóvel público pode interessar simultaneamente à política habitacional, à preservação ambiental, ao patrimônio cultural, ao desenvolvimento econômico, à implantação de equipamentos públicos ou à arrecadação de receitas. Em outras situações, pode estar ocupado, abandonado, deteriorado ou ser objeto de disputas entre particulares, diferentes instituições públicas ou grupos sociais.</p><p>Quando esses interesses entram em conflito, ou quando há indícios de ilegalidade, omissão administrativa ou ameaça a direitos coletivos, outros atores institucionais podem incidir nesse processo. O Ministério Público pode questionar judicialmente determinada situação; a Defensoria Pública pode atuar na defesa de pessoas vulneráveis; os Tribunais de Contas e os órgãos de controle interno podem realizar auditorias e recomendar providências; e o Poder Judiciário pode ser chamado a solucionar o conflito.</p>"
           }
         },
         {
@@ -263,7 +233,7 @@
           "id": "bp0t4xbe",
           "type": "prose",
           "props": {
-            "html": "<p>Esse cenário mudou com o julgamento, em 2023, do Recurso Extraordinário 684.612, que deu origem ao Tema 698 da repercussão geral — ou seja, uma tese que todos os juízes do país devem seguir em casos semelhantes. O caso concreto da área da saúde: uma ação civil pública do Ministério Público do Rio de Janeiro sobre as condições precárias do Hospital Municipal Salgado Filho, com pedidos de realização de concurso, contratação de pessoal e execução de obras. A relatoria original foi do ministro Ricardo Lewandowski, mas a tese vencedora foi redigida pelo ministro Roberto Barroso, em duas partes:</p>"
+            "html": "<p>Esse cenário mudou com o julgamento, em 2023, do Recurso Extraordinário 684.612, que deu origem ao Tema 698 da repercussão geral — ou seja, uma tese que todos os juízes do país devem seguir em casos semelhantes. O caso concreto que deu origem a novo entendimento do STF foi: uma ação civil pública do Ministério Público do Rio de Janeiro questionando as condições precárias do Hospital Municipal Salgado Filho, com pedidos de realização de concurso, contratação de pessoal e execução de obras. A relatoria original foi do ministro Ricardo Lewandowski, mas a tese vencedora foi redigida pelo ministro Roberto Barroso, em duas partes:</p>"
           }
         },
         {
@@ -315,7 +285,7 @@
           "id": "bad53jik",
           "type": "prose",
           "props": {
-            "html": "<p>Na prática, o STF trocou o modelo de \"comando e controle\" — ordens judiciais diretas sobre o que fazer — por um modelo dialogado, que a literatura jurídica chama de decisões estruturantes. O juiz reconhece o problema (por exemplo, o abandono grave de um imóvel), fixa metas e prazos, mas devolve ao Executivo a tarefa de planejar como resolver, respeitando a capacidade técnica e a visão de conjunto da administração.</p>"
+            "html": "<p>Na prática, o STF trocou o modelo de \"comando e controle\", ordens judiciais diretas sobre o que fazer, pelo que a literatura jurídica chama de decisões estruturantes. O juiz reconhece o problema (por exemplo, o abandono grave de um imóvel), fixa metas e prazos, mas devolve ao Executivo a tarefa de planejar como resolver, respeitando a capacidade técnica e a visão de conjunto da administração.</p>"
           }
         },
         {
@@ -835,174 +805,6 @@
       ]
     },
     {
-      "id": "bmutcnj4",
-      "type": "section",
-      "props": {
-        "width": "content",
-        "surface": "page",
-        "pad": "lg"
-      },
-      "children": [
-        {
-          "id": "cwrj52x0",
-          "type": "titulo",
-          "props": {
-            "text": "Um novo instrumento: <span style=\"font-weight: normal;\">as Comissões de Soluções Fundiárias</span>",
-            "level": "h2"
-          }
-        },
-        {
-          "id": "cdzc026y",
-          "type": "prose",
-          "props": {
-            "html": "<p>Conflitos envolvendo imóveis públicos nem sempre se limitam a disputas entre a Administração e um particular. Em algumas situações, especialmente quando envolvem ocupações coletivas urbanas ou rurais e populações em situação de vulnerabilidade, a solução exige diálogo entre diferentes instituições e a busca de alternativas que conciliem a proteção do patrimônio público e garantia de direitos.</p><p>Nesse contexto, foram criadas as <b>Comissões de Soluções Fundiárias</b>, estruturas instituídas no âmbito dos tribunais para apoiar o tratamento adequado dos conflitos fundiários coletivos. Seu papel não é substituir o juiz nem decidir o processo, mas reunir informações, promover o diálogo entre os envolvidos e buscar soluções consensuais sempre que possível, antes da adoção de medidas como despejos ou reintegrações de posse.</p><p>Embora a expressão \"conflito fundiário\" seja frequentemente associada ao meio rural, as Comissões também atuam em conflitos coletivos relacionados a imóveis urbanos. Para os gestores de imóveis públicos, compreender seu funcionamento é importante, pois esses conflitos podem envolver áreas pertencentes à União, aos estados ou aos municípios, exigindo atuação articulada com o Poder Judiciário e outras instituições.</p>"
-          }
-        },
-        {
-          "id": "bjue4caq",
-          "type": "titulo",
-          "props": {
-            "text": "De onde vieram?",
-            "level": "h3"
-          }
-        },
-        {
-          "id": "brib1rrk",
-          "type": "prose",
-          "props": {
-            "html": "<p>Em 2021, durante a pandemia de covid-19, no âmbito da <span data-term=\"ADPF\" data-definition=\"Arguição de Descumprimento de Preceito Fundamental\">ADPF</span> 828, que pedia proteção para famílias vulneráveis ameaçadas de remoção, o ministro Luís Roberto Barroso concedeu liminar suspendendo desocupações de imóveis ocupados antes da pandemia. Em 2022, uma nova decisão no mesmo processo determinou que todos os Tribunais de Justiça e Tribunais Regionais Federais instalassem Comissões de Conflitos Fundiários — e tornou obrigatórias, antes de qualquer ordem de desocupação coletiva, a inspeção judicial no local e a audiência de mediação.</p><p>O deslocamento é importante: a intervenção judicial deixou de ser apenas reativa (expedir o mandado de despejo) para se tornar preventiva e estrutural (entender o conflito no território antes de decidir).</p>"
-          }
-        },
-        {
-          "id": "bqum4itf",
-          "type": "pullquote",
-          "props": {
-            "variant": "block",
-            "fontSize": "body-lg",
-            "children": "<i>O desenho proposto pelo CNJ revela um esforço da administração judiciária de inserir o Poder Judiciário mais amplamente no debate e no planejamento das políticas públicas destinadas ao atendimento dos direitos de acesso à terra, à moradia e à cidade, uma vez que o Judiciário é também um ator importante, cujas decisões em conflitos fundiários coletivos impactam a distribuição de recursos e o planejamento das ações públicas. </i>",
-            "cite": "Fischer, Andrade e Alencar (p.324, 2025)"
-          }
-        },
-        {
-          "id": "bfjt7voq",
-          "type": "titulo",
-          "props": {
-            "text": "A regulamentação",
-            "level": "h3"
-          }
-        },
-        {
-          "id": "bpzjztks",
-          "type": "prose",
-          "props": {
-            "html": "<p>Em junho de 2023, o CNJ, por meio da Resolução CNJ nº 510/2023, transformou essa determinação em política permanente, criando <b>dois níveis de atuação</b>:</p>"
-          }
-        },
-        {
-          "id": "byq6b5jm",
-          "type": "columns",
-          "props": {
-            "count": 2,
-            "ratio": "equal",
-            "gap": "lg"
-          },
-          "children": [
-            {
-              "id": "bpuzrtse",
-              "type": "flashcard",
-              "props": {
-                "term": "Comissão Nacional de Soluções Fundiárias (CNSF)",
-                "description": "",
-                "definition": "<p>Funciona no CNJ, com um conselheiro e ao menos quatro magistrados. Define protocolos nacionais para ações de despejo ou reintegração de posse que atinjam moradia coletiva ou áreas produtivas de populações vulneráveis, e orienta as comissões regionais por meio de notas técnicas.</p>",
-                "icon": "file-spreadsheet",
-                "showIcon": true,
-                "useCoverImage": false,
-                "coverSlot": "",
-                "coverAlt": "",
-                "frontCue": "Clique para virar",
-                "backCue": "Clique para voltar",
-                "color": "var(--terra-600)"
-              }
-            },
-            {
-              "id": "b_msw6lkyg_3ftk",
-              "type": "flashcard",
-              "props": {
-                "term": "Comissões Regionais de Soluções Fundiárias (CRSF) ",
-                "description": "",
-                "definition": "<p>Instaladas em cada tribunal, funcionam como estrutura de apoio à solução pacífica desses conflitos: fazem visitas técnicas ao local, promovem audiências de mediação, produzem laudos multidisciplinares (com assistentes sociais, engenheiros, antropólogos, urbanistas) e se articulam com órgãos de habitação e assistência social.</p>",
-                "icon": "handshake",
-                "showIcon": true,
-                "useCoverImage": false,
-                "coverSlot": "",
-                "coverAlt": "",
-                "frontCue": "Clique para virar",
-                "backCue": "Clique para voltar",
-                "color": "var(--ochre-600)"
-              }
-            }
-          ]
-        },
-        {
-          "id": "bhc5j50j",
-          "type": "kicker",
-          "props": {
-            "icon": "scale",
-            "children": "O que as comissões significam para a gestão patrimonial"
-          }
-        },
-        {
-          "id": "b50a6sbq",
-          "type": "prose",
-          "props": {
-            "html": "<p>As comissões são o complemento operacional do Tema 698. O precedente define o modelo (reconhecer a omissão grave, fixar finalidades, devolver o plano ao Executivo); as comissões fornecem a estrutura para executá-lo de forma técnica e dialogada. </p><p>Para o gestor do patrimônio essas comissões implicam diferentes consequências. Por um lado, restringem a discricionariedade administrativa porque, ainda que sejam dialogadas, as soluções dependem da concordância do Poder Judiciário. Por outro lado, justamente por serem mediadas, tais soluções tendem a ser percebidas pelas partes como mais legítimas. </p>"
-          }
-        },
-        {
-          "id": "b3g8nh4l",
-          "type": "titulo",
-          "props": {
-            "text": "Desafios e controvérsias",
-            "level": "h4"
-          }
-        },
-        {
-          "id": "bw58uu2q",
-          "type": "accordion",
-          "props": {
-            "numbered": false,
-            "items": [
-              {
-                "title": " Sobrecarga e desvio de finalidade",
-                "content": "<p>Alguns tribunais passaram a encaminhar às comissões ações individuais, sem caráter coletivo. Em 2024, a Comissão Nacional aprovou notas técnicas exigindo decisão judicial fundamentada para a remessa de processos às comissões regionais, definindo sua estrutura mínima de funcionamento e a celeridade devida em ocupações recentes.</p>"
-              },
-              {
-                "title": "Questionamento no STF ",
-                "content": "A <span data-term=\"ADI 7425\" data-definition=\"Ação Direta de Inconstitucionalidade 7425\">ADI 7425</span>, proposta pela Confederação da Agricultura e Pecuária do Brasil (CNA), questiona dispositivos da Resolução que permitiriam às comissões agir de forma autônoma, sem decisão prévia do juiz da causa — um debate sobre os limites da atuação administrativa do Judiciário. Até julho de 2026, a ação aguardava julgamento de mérito no STF, sem decisão que suspendesse a resolução — na prática, as comissões seguem em pleno funcionamento, mas o desenho institucional ainda pode ser ajustado pelo Supremo.",
-                "linkHref": "",
-                "linkLabel": "",
-                "linkButton": ""
-              },
-              {
-                "title": "Falta de solução habitacional",
-                "content": "Em muitos casos as comissões conseguem evitar ou adiar o despejo, mas não encontram alternativa concreta de moradia, por falta de estoque de imóveis adequados ou de recursos nos programas habitacionais.",
-                "linkHref": "",
-                "linkLabel": "",
-                "linkButton": ""
-              },
-              {
-                "title": "Assimetria entre tribunais",
-                "content": "O grau de estruturação das comissões varia muito entre os 33 tribunais obrigados pela Resolução, alguns ainda operam sem estrutura mínima.",
-                "linkHref": "",
-                "linkLabel": "",
-                "linkButton": ""
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
       "id": "b445o9nd",
       "type": "section",
       "props": {
@@ -1056,161 +858,11 @@
       ]
     },
     {
-      "id": "bp9o6zk2",
-      "type": "section",
-      "props": {
-        "width": "content",
-        "surface": "none",
-        "pad": "lg"
-      },
-      "children": [
-        {
-          "id": "cll6pvwh",
-          "type": "titulo",
-          "props": {
-            "text": "O olhar do controle: <span style=\"font-weight: normal;\">transparência e integridade</span> ",
-            "level": "h2"
-          }
-        },
-        {
-          "id": "bbehde7e",
-          "type": "prose",
-          "props": {
-            "html": "<p>Enquanto o Judiciário e o Ministério Público atuam caso a caso, os órgãos de controle avaliam o sistema como um todo e o diagnóstico deles ajuda a entender por que há tanta judicialização. </p>"
-          }
-        },
-        {
-          "id": "bifbf6rr",
-          "type": "titulo",
-          "props": {
-            "text": "O controle externo: <span style=\"font-weight: normal;\">o diagnóstico dos tribunais de contas </span>",
-            "level": "h3"
-          }
-        },
-        {
-          "id": "cm906xpc",
-          "type": "prose",
-          "props": {
-            "html": "<p>O controle externo da gestão patrimonial é exercido pelos tribunais de contas — o TCU, no plano federal, e os tribunais de contas dos estados e dos municípios, nas demais esferas. As auditorias sobre patrimônio imobiliário têm apontado, com recorrência, o mesmo conjunto de fragilidades, que revelam os pontos de vulnerabilidade que o gestor, em qualquer ente, deve resolver:</p>"
-          }
-        },
-        {
-          "id": "bli74rvu",
-          "type": "feature",
-          "props": {
-            "columns": 2,
-            "card": true,
-            "accent": "var(--terra-600)",
-            "layout": "side",
-            "items": [
-              {
-                "icon": "info",
-                "title": "Fragilidade de informação",
-                "text": "Sistemas defasados e dados cadastrais pouco confiáveis comprometem toda a cadeia de gestão — do inventário à fiscalização e à avaliação dos imóveis. Sem saber, com segurança, o que se tem e em que condições, qualquer decisão de destinação fica vulnerável."
-              },
-              {
-                "icon": "house",
-                "title": "Fragilidade de utilização",
-                "text": "Imóveis desocupados permanecem sujeitos a abandono e depredação, gerando riscos ambientais e de segurança que, por consequência, implicam em gastos, trata-se de um desequilíbrio que resume o custo da ociosidade."
-              },
-              {
-                "icon": "landmark",
-                "title": "Fragilidade institucional",
-                "text": "As estruturas responsáveis pela gestão patrimonial demandam atualizações de fluxos, de procedimentos e tecnológicas para enfrentarem com eficiência o enorme desafio que é dar conta de todo o clico de gestão dos imóveis."
-              },
-              {
-                "icon": "file-search-corner",
-                "title": "Fragilidade de governança e transparência",
-                "text": "Planos de caracterização e fiscalização carecem de indicadores de efetividade, o monitoramento das carteiras é frágil e a prestação de contas à sociedade ainda é limitada."
-              }
-            ]
-          }
-        },
-        {
-          "id": "bc1uuyzj",
-          "type": "kicker",
-          "props": {
-            "icon": "landmark",
-            "children": "O caso federal ilustra a dinâmica"
-          }
-        },
-        {
-          "id": "b409lroc",
-          "type": "prose",
-          "props": {
-            "html": "<p>A gestão do patrimônio imobiliário figura na Lista de Alto Risco do Tribunal de Contas da União – TCU, com atualizações periódicas, e decisões recentes do tribunal determinaram aperfeiçoamentos, monitoramentos anuais e a ampliação da transparência sobre as destinações, justamente para permitir maior controle social do patrimônio. Diagnósticos da mesma natureza aparecem em auditorias de cortes de contas estaduais e distritais, como as realizadas pelos TCEs de Santa Catarina e da Bahia e pelo TCDF, que apontaram cadastros inconsistentes, imóveis sem registro, ausência de inventário e fiscalização deficiente —, o que sugere que as fragilidades não são idiossincrasias de um ente, mas traços recorrentes da gestão imobiliária pública</p>"
-          }
-        },
-        {
-          "id": "b7d372hs",
-          "type": "callout",
-          "props": {
-            "variant": "header",
-            "tone": "info",
-            "icon": "lightbulb",
-            "title": "Para pensar",
-            "heading": "",
-            "children": "<p>Note a conexão entre os números do controle e os casos reais apresentados anteriormente: cada imóvel público desocupado é, potencialmente, um gatilho de ocupação, ação civil pública ou ordem judicial. O diagnóstico dos tribunais de contas e a judicialização são duas faces do mesmo problema - a dificuldade estrutural de dar destinação tempestiva ao patrimônio.</p>"
-          }
-        },
-        {
-          "id": "b_mswbtdnh_sr91",
-          "type": "titulo",
-          "props": {
-            "text": "O controle interno: <span style=\"font-weight: normal;\">a atuação das controladorias</span>",
-            "level": "h3"
-          }
-        },
-        {
-          "id": "bgmz53yd",
-          "type": "prose",
-          "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Cada Poder e cada ente da Federação deve manter seu próprio sistema de controle interno (arts. 70 e 74 da Constituição). No Poder Executivo, essa função é exercida pelas controladorias: no nível federal, é a Controladoria-Geral da União; já os estados e municípios têm seus próprios órgãos de controle interno.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Essas instituições são responsáveis pela avaliação das ações dos gestores a respeito do patrimônio público e pelo incremento da transparência da gestão, por meio de auditoria, correição, prevenção da corrupção e ouvidoria. Na gestão imobiliária, a atuação do controle interno se manifesta em </span><b style=\"text-wrap-mode: initial;\">três frentes principais</b><span style=\"text-wrap-mode: initial; color: inherit;\">:</span></p>"
-          }
-        },
-        {
-          "id": "bej3saow",
-          "type": "markerlist",
-          "props": {
-            "variant": "ordered",
-            "icon": "check",
-            "accent": "var(--ochre-600)",
-            "items": [
-              {
-                "title": "Auditorias sobre a gestão dos imóveis",
-                "text": "As controladorias avaliam periodicamente como as unidades gestoras administram os bens sob sua responsabilidade, verificando, por exemplo, se imóveis cedidos estão ocupados regularmente, se os encargos das cessões são fiscalizados e se as carteiras estão adequadamente caracterizadas. Os achados alimentam planos de providências dos gestores, fechando o ciclo entre diagnóstico e correção.<br>"
-              },
-              {
-                "title": "Transparência ativa",
-                "text": "Os entes mantêm portais de transparência que publicam, entre outros dados, informações sobre seus imóveis, ocupantes e destinações — obrigação que decorre da Lei de Acesso à Informação (Lei nº 12.527/2011), aplicável a todos os entes federativos. Do lado do gestor patrimonial, painéis de dados abertos sobre os imóveis, seus ocupantes e a arrecadação permitem a qualquer cidadão, pesquisador ou órgão de controle acompanhar a gestão.<br>"
-              },
-              {
-                "title": "Integridade",
-                "text": "As controladorias coordenam as políticas de integridade de suas administrações, que exigem dos órgãos a identificação e o tratamento de riscos de fraude, corrupção e conflito de interesses. Decisões patrimoniais são sensíveis a esses riscos, e por isso devem estar mapeadas nos programas de integridade dos órgãos gestores."
-              }
-            ]
-          }
-        },
-        {
-          "id": "bxx5khix",
-          "type": "callout",
-          "props": {
-            "variant": "ear",
-            "tone": "warning",
-            "icon": "lightbulb",
-            "title": "",
-            "heading": "Por que transparência e integridade importam tanto aqui?",
-            "children": "<p>Imóvel público combina três ingredientes de risco:<b> ativos de alto valor, decisões descentralizadas (avaliações, cessões, permutas, alienações) e histórico de informação precária</b>. Nesse ambiente, a publicidade dos dados é essencial para reconhecer e adotar medidas contra o uso privado indevido do patrimônio, e é a condição para que o controle social funcione. Para o gestor, transparência não é obrigação acessória: é o que diferencia uma decisão patrimonial defensável de uma decisão sob suspeita.</p>"
-          }
-        }
-      ]
-    },
-    {
       "id": "bmih7fua",
       "type": "section",
       "props": {
         "width": "content",
-        "surface": "warm",
+        "surface": "page",
         "pad": "lg"
       },
       "children": [
@@ -1283,7 +935,7 @@
                 "c2": "Mediar conflitos possessórios coletivos com visitas técnicas, laudos multidisciplinares e articulação interinstitucional"
               },
               {
-                "c0": "Auditorias e Lista de Alto Risco",
+                "c0": "Auditorias de conformidade, financeira, contábil, operacional patrimonial",
                 "c1": "TCU, CGU e Tribunais de Contas e Controladorias de estados e municípios",
                 "c2": "Diagnosticar deficiências sistêmicas, determinar correções e monitorar programas de destinação"
               }
@@ -1304,7 +956,7 @@
         "kicker": "Para fechar",
         "kickerIcon": "check",
         "title": "Conclusão",
-        "body": "<p>Os casos e instrumentos apresentados revelam que o Poder Judiciário, o Ministério Público e os órgãos de controle se tornaram fortes influenciadores e, em situações de omissão grave, verdadeiros atores centrais, da gestão do patrimônio imobiliário público no Brasil. Sentenças determinam restaurações, audiências de mediação precedem desocupações, comissões articulam soluções estruturais e auditorias definem agendas de melhoria. Esse protagonismo tem méritos inegáveis: destravou conflitos que se arrastavam há décadas, protegeu populações vulneráveis e deu visibilidade pública a um problema que a rotina administrativa havia normalizado.</p><p>É preciso, porém, olhar criticamente para esse modelo, que carrega ao menos quatro ordens de problemas.</p>"
+        "body": "<p>Os casos e instrumentos apresentados revelam que o Poder Judiciário, o Ministério Público e os órgãos de controle se tornaram fortes influenciadores e, em situações de omissão grave, atores importantes da gestão do patrimônio imobiliário público no Brasil. Sentenças determinam restaurações, audiências de mediação precedem desocupações, comissões articulam soluções estruturais e auditorias definem agendas de melhoria. Esse protagonismo tem méritos inegáveis: destravou conflitos que se arrastavam há décadas, protegeu populações vulneráveis e deu visibilidade pública a um problema que a rotina administrativa havia normalizado.</p><p>É preciso, porém, olhar criticamente para esse modelo, que carrega ao menos quatro ordens de problemas.</p>"
       },
       "children": [
         {
@@ -1315,19 +967,19 @@
             "items": [
               {
                 "title": "Legitimidade e capacidade",
-                "content": "<p>Juízes, promotores e auditores não respondem eleitoralmente pelas escolhas alocativas que induzem, nem dispõem da visão orçamentária e territorial de conjunto que a gestão exige — exatamente a razão pela qual o próprio Tema 698 afasta o microgerenciamento judicial. Quando a intervenção externa define, na prática, onde o recurso escasso será aplicado, a decisão sai do circuito democrático-administrativo sem que ninguém passe a responder integralmente por ela.</p>"
+                "content": "<p>Juízes, promotores e auditores não respondem eleitoralmente pelas escolhas alocativas que induzem, nem dispõem da visão orçamentária e territorial de conjunto que a gestão exige.</p>"
               },
               {
                 "title": "Seletividade da judicialização",
-                "content": "<p>A intervenção ocorre nos casos que chegam ao processo, não necessariamente nos mais graves ou prioritários. O imóvel que conta com um promotor atento, uma comunidade organizada ou visibilidade na imprensa tende a \"furar a fila\" das prioridades definidas nas políticas públicas — o que pode aprofundar desigualdades entre territórios e entre grupos com diferentes capacidades de mobilização.</p>"
+                "content": "<p>A intervenção ocorre nos casos que chegam ao processo, não necessariamente nos mais graves ou prioritários. O imóvel que conta com um promotor atento, uma comunidade organizada ou visibilidade na imprensa tende a \"furar a fila\" das prioridades definidas nas políticas públicas, o que pode aprofundar desigualdades entre territórios e entre grupos com diferentes capacidades de mobilização.</p>"
               },
               {
                 "title": "Tempo e segurança jurídica",
-                "content": "<p>Gerir por processo judicial é caro e lento; multas diárias retiram recursos do mesmo orçamento que deveria financiar a solução; e a assimetria de estruturação entre tribunais e comissões — somada a controvérsias ainda abertas, produz tratamentos distintos para situações semelhantes, gerando insegurança para gestores e cidadãos.</p>"
+                "content": "<p>Gerir por processo judicial é caro e lento; multas diárias retiram recursos do mesmo orçamento que deveria financiar a solução; e a assimetria de estruturação entre tribunais e comissões, somada a controvérsias ainda abertas, pode produzir tratamentos distintos para situações semelhantes, gerando insegurança para gestores e cidadãos.</p>"
               },
               {
                 "title": "Risco de deslocamento de responsabilidade",
-                "content": "<p>Quanto mais o sistema de justiça e os órgãos de controle assumem a condução, menor pode ser o incentivo para o Executivo investir na própria capacidade de gestão — e o modelo estruturante do Tema 698 só funciona se houver, do outro lado, uma administração capaz de planejar. Há também um alerta simétrico para o controle: diagnósticos repetidos ano após ano, sem consequências práticas, correm o risco de se tornar ritual.</p>"
+                "content": "<p>Quanto mais o sistema de justiça e os órgãos de controle assumem a condução, menor a discricionariedade da administração pública e menor a capacidade de planejamento governamental.</p>"
               }
             ]
           }
@@ -1336,7 +988,7 @@
           "id": "b4btkm80",
           "type": "prose",
           "props": {
-            "html": "<p>A síntese para quem atua na área é dupla. De um lado, reconhecer e aproveitar o que esses atores trazem: indução de soluções, mediação qualificada, diagnóstico sistêmico e pressão por transparência. De outro, trabalhar para que a intervenção externa seja exceção — o que exige cadastro confiável, destinação tempestiva, planos documentados, dados públicos e integridade nas decisões patrimoniais. Onde a gestão é forte e transparente, o controle complementa; onde ela é frágil, o controle substitui, com todos os limites apontados acima.</p>"
+            "html": "<p>A síntese para quem atua na área é dupla. De um lado, reconhecer e aproveitar o que esses atores trazem: indução de soluções, mediação qualificada, diagnóstico sistêmico e pressão por transparência. De outro, trabalhar para que a intervenção externa seja exceção, o que exige cadastro confiável, destinação tempestiva, planos documentados, dados públicos e integridade nas decisões patrimoniais. Onde a gestão é forte e transparente, o controle complementa; onde ela é frágil, o controle substitui, com todos os limites apontados acima.</p>"
           }
         },
         {
@@ -1465,8 +1117,8 @@
       "id": "bzw6twbi",
       "type": "pagefooter",
       "props": {
-        "code": "Judiciario MP Controle_Gestao Patrimonio Imobiliario [M134]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "code": "O Judiciário, o Ministério Público e os órgãos de controle na gestão do patrimônio imobiliário público [M134]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [

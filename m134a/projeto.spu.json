@@ -1,0 +1,220 @@
+{
+  "schema": 1,
+  "meta": {
+    "title": "M134A - As Comissões de Soluções Fundiárias",
+    "lang": "pt-BR",
+    "builderCredit": true,
+    "toc": {
+      "items": []
+    }
+  },
+  "blocks": [
+    {
+      "id": "bilanyng",
+      "type": "masthead",
+      "props": {
+        "org": "SPU",
+        "program": "Programa Gestão de Imóveis Públicos"
+      }
+    },
+    {
+      "id": "b0u2ma74",
+      "type": "hero",
+      "props": {
+        "kicker": "Governança e regulação da propriedade pública no Brasil",
+        "kickerIcon": "landmark",
+        "title": "Um novo instrumento: <span style=\"font-weight: normal;\">as Comissões de Soluções Fundiárias</span>",
+        "byline": "",
+        "slot": "b0u2ma74__slot"
+      }
+    },
+    {
+      "id": "bmutcnj4",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "page",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "cdzc026y",
+          "type": "prose",
+          "props": {
+            "html": "<p>Conflitos envolvendo imóveis públicos nem sempre se limitam a disputas entre a Administração e um particular. Em algumas situações, especialmente quando envolvem ocupações coletivas urbanas ou rurais e populações em situação de vulnerabilidade, a solução exige diálogo entre diferentes instituições e a busca de alternativas que conciliem a proteção do patrimônio público e garantia de direitos.</p><p>Nesse contexto, foram criadas as <b>Comissões de Soluções Fundiárias</b>, estruturas instituídas no âmbito dos tribunais para apoiar o tratamento adequado dos conflitos fundiários coletivos. Seu papel não é substituir o juiz nem decidir o processo, mas reunir informações, promover o diálogo entre os envolvidos e buscar soluções consensuais sempre que possível, antes da adoção de medidas como despejos ou reintegrações de posse.</p><p>Embora a expressão \"conflito fundiário\" seja frequentemente associada ao meio rural, as Comissões também atuam em conflitos coletivos relacionados a imóveis urbanos. Para os gestores de imóveis públicos, compreender seu funcionamento é importante, pois esses conflitos podem envolver áreas pertencentes à União, aos estados ou aos municípios, exigindo atuação articulada com o Poder Judiciário e outras instituições.</p>"
+          }
+        },
+        {
+          "id": "bjue4caq",
+          "type": "titulo",
+          "props": {
+            "text": "De onde vieram?",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "brib1rrk",
+          "type": "prose",
+          "props": {
+            "html": "<p>Em 2021, durante a pandemia de covid-19, no âmbito da <span data-term=\"ADPF\" data-definition=\"Arguição de Descumprimento de Preceito Fundamental\">ADPF</span> 828, que pedia proteção para famílias vulneráveis ameaçadas de remoção, o ministro Luís Roberto Barroso concedeu liminar suspendendo desocupações de imóveis ocupados antes da pandemia. Em 2022, uma nova decisão no mesmo processo determinou que todos os Tribunais de Justiça e Tribunais Regionais Federais instalassem Comissões de Conflitos Fundiários — e tornou obrigatórias, antes de qualquer ordem de desocupação coletiva, a inspeção judicial no local e a audiência de mediação.</p><p>O deslocamento é importante: a intervenção judicial deixou de ser apenas reativa (expedir o mandado de despejo) para se tornar preventiva e estrutural (entender o conflito no território antes de decidir).</p>"
+          }
+        },
+        {
+          "id": "bqum4itf",
+          "type": "pullquote",
+          "props": {
+            "variant": "block",
+            "fontSize": "body-lg",
+            "children": "<i>O desenho proposto pelo CNJ revela um esforço da administração judiciária de inserir o Poder Judiciário mais amplamente no debate e no planejamento das políticas públicas destinadas ao atendimento dos direitos de acesso à terra, à moradia e à cidade, uma vez que o Judiciário é também um ator importante, cujas decisões em conflitos fundiários coletivos impactam a distribuição de recursos e o planejamento das ações públicas. </i>",
+            "cite": "Fischer, Andrade e Alencar (p.324, 2025)"
+          }
+        },
+        {
+          "id": "bfjt7voq",
+          "type": "titulo",
+          "props": {
+            "text": "A regulamentação",
+            "level": "h3"
+          }
+        },
+        {
+          "id": "bpzjztks",
+          "type": "prose",
+          "props": {
+            "html": "<p>Em junho de 2023, o CNJ, por meio da Resolução CNJ nº 510/2023, transformou essa determinação em política permanente, criando <b>dois níveis de atuação</b>:</p>"
+          }
+        },
+        {
+          "id": "byq6b5jm",
+          "type": "columns",
+          "props": {
+            "count": 2,
+            "ratio": "equal",
+            "gap": "lg"
+          },
+          "children": [
+            {
+              "id": "bpuzrtse",
+              "type": "flashcard",
+              "props": {
+                "term": "Comissão Nacional de Soluções Fundiárias (CNSF)",
+                "description": "",
+                "definition": "<p>Funciona no CNJ, com um conselheiro e ao menos quatro magistrados. Define protocolos nacionais para ações de despejo ou reintegração de posse que atinjam moradia coletiva ou áreas produtivas de populações vulneráveis, e orienta as comissões regionais por meio de notas técnicas.</p>",
+                "icon": "file-spreadsheet",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
+                "color": "var(--terra-600)"
+              }
+            },
+            {
+              "id": "b_msw6lkyg_3ftk",
+              "type": "flashcard",
+              "props": {
+                "term": "Comissões Regionais de Soluções Fundiárias (CRSF) ",
+                "description": "",
+                "definition": "<p>Instaladas em cada tribunal, funcionam como estrutura de apoio à solução pacífica desses conflitos: fazem visitas técnicas ao local, promovem audiências de mediação, produzem laudos multidisciplinares (com assistentes sociais, engenheiros, antropólogos, urbanistas) e se articulam com órgãos de habitação e assistência social.</p>",
+                "icon": "handshake",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
+                "color": "var(--ochre-600)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bhc5j50j",
+          "type": "kicker",
+          "props": {
+            "icon": "scale",
+            "children": "O que as comissões significam para a gestão patrimonial"
+          }
+        },
+        {
+          "id": "b50a6sbq",
+          "type": "prose",
+          "props": {
+            "html": "<p>As comissões são o complemento operacional do Tema 698. O precedente define o modelo (reconhecer a omissão grave, fixar finalidades, devolver o plano ao Executivo); as comissões fornecem a estrutura para executá-lo de forma técnica e dialogada. </p><p>Para o gestor do patrimônio essas comissões implicam diferentes consequências. Por um lado, restringem a discricionariedade administrativa porque, ainda que sejam dialogadas, as soluções dependem da concordância do Poder Judiciário. Por outro lado, justamente por serem mediadas, tais soluções tendem a ser percebidas pelas partes como mais legítimas. </p>"
+          }
+        },
+        {
+          "id": "b3g8nh4l",
+          "type": "titulo",
+          "props": {
+            "text": "Desafios e controvérsias",
+            "level": "h4"
+          }
+        },
+        {
+          "id": "bw58uu2q",
+          "type": "accordion",
+          "props": {
+            "numbered": false,
+            "items": [
+              {
+                "title": " Sobrecarga e desvio de finalidade",
+                "content": "<p>Alguns tribunais passaram a encaminhar às comissões ações individuais, sem caráter coletivo. Em 2024, a Comissão Nacional aprovou notas técnicas exigindo decisão judicial fundamentada para a remessa de processos às comissões regionais, definindo sua estrutura mínima de funcionamento e a celeridade devida em ocupações recentes.</p>"
+              },
+              {
+                "title": "Questionamento no STF ",
+                "content": "A <span data-term=\"ADI 7425\" data-definition=\"Ação Direta de Inconstitucionalidade 7425\">ADI 7425</span>, proposta pela Confederação da Agricultura e Pecuária do Brasil (CNA), questiona dispositivos da Resolução que permitiriam às comissões agir de forma autônoma, sem decisão prévia do juiz da causa — um debate sobre os limites da atuação administrativa do Judiciário. Até julho de 2026, a ação aguardava julgamento de mérito no STF, sem decisão que suspendesse a resolução — na prática, as comissões seguem em pleno funcionamento, mas o desenho institucional ainda pode ser ajustado pelo Supremo.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Falta de solução habitacional",
+                "content": "Em muitos casos as comissões conseguem evitar ou adiar o despejo, mas não encontram alternativa concreta de moradia, por falta de estoque de imóveis adequados ou de recursos nos programas habitacionais.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              },
+              {
+                "title": "Assimetria entre tribunais",
+                "content": "O grau de estruturação das comissões varia muito entre os 33 tribunais obrigados pela Resolução, alguns ainda operam sem estrutura mínima.",
+                "linkHref": "",
+                "linkLabel": "",
+                "linkButton": ""
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "bzw6twbi",
+      "type": "pagefooter",
+      "props": {
+        "code": "Um novo instrumento: as Comissões de Soluções Fundiárias [M134A]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
+        "license": true,
+        "licenseKind": "byncsa",
+        "credits": [
+          {
+            "role": "Conteúdo",
+            "name": "Ana Túlia de Macedo"
+          },
+          {
+            "role": "Revisão",
+            "name": "Claudson Moreira, Karina Bonilaure "
+          },
+          {
+            "role": "Design Educacional",
+            "name": "Luís Henrique Lindner"
+          },
+          {
+            "role": "Versão",
+            "name": "Agosto de 2026"
+          }
+        ]
+      }
+    }
+  ]
+}

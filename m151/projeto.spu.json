@@ -168,7 +168,7 @@
             "src": "",
             "fit": "contain",
             "size": "full",
-            "title": "OPCAO A",
+            "title": "",
             "caption": "As funções interagem permanentemente. Informações geradas em qualquer etapa alimentam as demais, retroalimentando o ciclo e permitindo novas demandas de caracterização, ingresso, avaliação, destinação, arrecadação, fiscalização e proteção dos imóveis públicos.",
             "credit": ""
           }
@@ -753,7 +753,7 @@
                 "icon": "message-circle-more",
                 "title": "saiba mais",
                 "heading": "",
-                "children": "<p>Contamos essa experiência no Eixo 4, no material <mark data-hl=\"petrol\">\"Patrimônio público como instrumento de políticas públicas: a experiência do Programa Imóvel da Gente\".&nbsp;</mark></p>"
+                "children": "<p>Contamos essa experiência no Eixo 4, no material <mark data-hl=\"petrol\">\"Patrimônio público como instrumento de políticas públicas: a experiência do Programa Imóvel da Gente\". </mark></p>"
               }
             }
           ]
