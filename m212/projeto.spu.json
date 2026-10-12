@@ -90,6 +90,7 @@
             "columns": 4,
             "card": true,
             "accent": "",
+            "layout": "top",
             "items": [
               {
                 "icon": "map-pin",
@@ -261,7 +262,7 @@
                         "text": ""
                       },
                       {
-                        "title": "Histórico de transmissões;",
+                        "title": "Histórico de transmissões",
                         "text": ""
                       }
                     ]
@@ -452,11 +453,12 @@
                 "columns": 1,
                 "card": false,
                 "accent": "var(--petrol-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "file-exclamation-point",
                     "title": "Cadastro e registro nem sempre coincidem.",
-                    "text": "Uma linha."
+                    "text": ""
                   },
                   {
                     "icon": "file-question-mark",
@@ -514,7 +516,7 @@
           "id": "cxiki8ks",
           "type": "prose",
           "props": {
-            "html": "<p>Ao longo da história, cadastro e registro imobiliário foram desenvolvidos de forma relativamente independente. <span style=\"text-wrap-mode: initial; color: inherit;\">Enquanto o cadastro foi estruturado para responder perguntas relacionadas ao território e às características físicas dos imóveis, o registro imobiliário foi concebido para garantir segurança jurídica às relações de propriedade, em especial a propriedade privada. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Essa separação histórica produziu uma consequência importante: <mark>muitas vezes os dados cadastrais e registrais não coincidem.</mark></span></p>"
+            "html": "<p>Ao longo da história, cadastro e registro imobiliário foram desenvolvidos de forma relativamente independente. <span style=\"text-wrap-mode: initial; color: inherit;\">Enquanto o cadastro foi estruturado para responder perguntas relacionadas ao território e às características físicas dos imóveis, o registro imobiliário foi concebido para garantir segurança jurídica às relações de propriedade, em especial à propriedade privada. </span><span style=\"text-wrap-mode: initial; color: inherit;\">Essa separação histórica produziu uma consequência importante: <mark>muitas vezes os dados cadastrais e registrais não coincidem.</mark></span></p>"
           }
         },
         {
@@ -537,6 +539,7 @@
                 "columns": 3,
                 "card": false,
                 "accent": "var(--petrol-600)",
+                "layout": "top",
                 "items": [
                   {
                     "icon": "building",
@@ -667,7 +670,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Evolução histórico-jurídica do sistema patrimonial imobiliário público e privado [M212]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
@@ -689,16 +692,6 @@
           }
         ]
       }
-    },
-    {
-      "id": "bzk0isfz",
-      "type": "section",
-      "props": {
-        "width": "content",
-        "surface": "none",
-        "pad": "lg"
-      },
-      "children": []
     }
   ]
 }

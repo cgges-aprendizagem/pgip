@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "meta": {
-    "title": "M211_Reconhecendo Imoveis Publicos_historico_conceitos_funcoes",
+    "title": "M211 - Reconhecendo Imoveis Publicos_historico_conceitos_funcoes",
     "lang": "pt-BR",
     "builderCredit": true,
     "toc": {
@@ -79,7 +79,7 @@
           "id": "b_mt0ugpy4_hfyf",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Em outras palavras, <mark>um bem público não nasce plenamente conhecido pela Administração</mark>.  O conhecimento patrimonial resulta de um processo contínuo de identificação, organização e interpretação de informações.</span></p><p>Sob essa ótica, reconhecer um imóvel público não significa apenas localizá-lo fisicamente ou identificá-lo em registros e cadastros. Significa compreender o conjunto de informações que explicam por que determinado bem integra o patrimônio público e quais características jurídicas, históricas e territoriais orientam a sua gestão.</p><p>É justamente esse processo de produção do conhecimento patrimonial que trataremos aqui. Você estudará&nbsp;a formação histórica do patrimônio imobiliário público brasileiro,&nbsp;os principais conceitos relacionados à caracterização patrimonial e&nbsp;como as informações produzidas ao longo desse processo subsidiam a incorporação, a gestão e a utilização dos imóveis públicos.</p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Em outras palavras, <mark>um bem público não nasce plenamente conhecido pela Administração</mark>.  O conhecimento patrimonial resulta de um processo contínuo de identificação, organização e interpretação de informações.</span></p><p>Sob essa ótica, reconhecer um imóvel público não significa apenas localizá-lo fisicamente ou identificá-lo em registros e cadastros. Significa compreender o conjunto de informações que explicam por que determinado bem integra o patrimônio público e quais características jurídicas, históricas e territoriais orientam a sua gestão.</p><p>É justamente esse processo de produção do conhecimento patrimonial que trataremos aqui. Você estudará a formação histórica do patrimônio imobiliário público brasileiro, os principais conceitos relacionados à caracterização patrimonial e como as informações produzidas ao longo desse processo subsidiam a incorporação, a gestão e a utilização dos imóveis públicos.</p>"
           }
         }
       ]
@@ -105,7 +105,7 @@
           "id": "cfqh64kh",
           "type": "prose",
           "props": {
-            "html": "<p>Reconhecer um imóvel público exige compreender informações que ultrapassam sua dimensão física, cadastral ou registral.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Não raramente, compreender determinado imóvel público exige que o gestor retorne alguns séculos no tempo para identificar a origem do domínio sobre determinada área, compreender as categorias jurídicas empregadas pelo ordenamento para diferenciá-la do patrimônio privado e interpretar informações produzidas em diferentes momentos históricos.&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Muitas das categorias jurídicas utilizadas atualmente para caracterizar os imóveis públicos foram construídas ao longo da formação do território nacional e continuam produzindo efeitos sobre sua gestão.&nbsp;</span><span style=\"color: inherit; text-wrap-mode: initial;\">Por isso, a história do patrimônio público brasileiro continua produzindo efeitos concretos sobre a forma como seus imóveis são reconhecidos pelo Estado no presente.&nbsp;</span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">Confira um pouco dessa história navegando pelas telas abaixo:</span></p>"
+            "html": "<p>Reconhecer um imóvel público exige compreender informações que ultrapassam sua dimensão física, cadastral ou registral. <span style=\"text-wrap-mode: initial; color: inherit;\">Não raramente, compreender determinado imóvel público exige que o gestor retorne alguns séculos no tempo para identificar a origem do domínio sobre determinada área, compreender as categorias jurídicas empregadas pelo ordenamento para diferenciá-la do patrimônio privado e interpretar informações produzidas em diferentes momentos históricos. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Muitas das categorias jurídicas utilizadas atualmente para caracterizar os imóveis públicos foram construídas ao longo da formação do território nacional e continuam produzindo efeitos sobre sua gestão. </span><span style=\"color: inherit; text-wrap-mode: initial;\">Por isso, a história do patrimônio público brasileiro continua produzindo efeitos concretos sobre a forma como seus imóveis são reconhecidos pelo Estado no presente. </span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">Confira um pouco dessa história navegando pelas telas abaixo:</span></p>"
           }
         }
       ]
@@ -156,7 +156,7 @@
                   "id": "cgidykq8",
                   "type": "prose",
                   "props": {
-                    "html": "<p>O processo de formação do patrimônio imobiliário público antecede a própria constituição do Estado nacional. Ainda no período colonial, o regime das sesmarias foi utilizado pela Coroa Portuguesa como instrumento de ocupação, exploração econômica e controle territorial das terras brasileiras, permitindo a concessão de extensas áreas aos particulares, condicionada ao cumprimento de determinadas obrigações relacionadas à sua utilização.</p>"
+                    "html": "<p>O processo de formação do patrimônio imobiliário público antecede a própria constituição do Estado nacional. Ainda no período colonial, o regime das sesmarias foi utilizado pela Coroa Portuguesa como instrumento de ocupação, exploração econômica e controle territorial das terras brasileiras, permitindo a concessão de extensas áreas aos particulares, condicionadas ao cumprimento de determinadas obrigações relacionadas à sua utilização.</p>"
                   }
                 },
                 {
@@ -355,8 +355,7 @@
             "icon": "external-link",
             "title": "",
             "heading": "",
-            "children": "<p>Os aspectos históricos aqui apresentados possuem caráter introdutório e destinam-se a contextualizar os processos contemporâneos de caracterização patrimonial. Para um estudo mais aprofundado sobre a formação do território e da propriedade pública no Brasil, recomenda-se a leitura dos materiais da competência \"Formação do território e da propriedade no Brasil\", integrante do Eixo 1 deste Programa de Aprendizagem.</p>",
-            "color": ""
+            "children": "<p>Os aspectos históricos aqui apresentados possuem caráter introdutório e destinam-se a contextualizar os processos contemporâneos de caracterização patrimonial. Para um estudo mais aprofundado sobre a formação do território e da propriedade pública no Brasil, recomenda-se a leitura dos materiais da competência \"Formação do território e da propriedade no Brasil\", integrante do Eixo 1 deste Programa de Aprendizagem.</p>"
           }
         },
         {
@@ -388,7 +387,7 @@
             "icon": "lightbulb",
             "title": "Reforçando",
             "heading": "",
-            "children": "<p>Os atuais procedimentos de caracterização patrimonial não surgiram de forma isolada. Eles representam o resultado de um longo processo de construção institucional destinado a permitir que o Estado conheça adequadamente o patrimônio sob sua responsabilidade.&nbsp;</p>"
+            "children": "<p>Os atuais procedimentos de caracterização patrimonial não surgiram de forma isolada. Eles representam o resultado de um longo processo de construção institucional destinado a permitir que o Estado conheça adequadamente o patrimônio sob sua responsabilidade. </p>"
           }
         }
       ]
@@ -500,7 +499,7 @@
             "accent": "var(--terra-600)",
             "items": [
               {
-                "title": "<span style=\"font-weight: normal;\">Todavia, reconhecer que determinado bem possui natureza imobiliária ainda não responde à pergunta:&nbsp;</span>",
+                "title": "<span style=\"font-weight: normal;\">Todavia, reconhecer que determinado bem possui natureza imobiliária ainda não responde à pergunta: </span>",
                 "text": "<span data-fs=\"body-lg\"><b><i>o que o torna integrante do patrimônio público?</i></b></span>"
               }
             ]
@@ -510,7 +509,7 @@
           "id": "b_mt1ndg7j_gi99",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">À primeira vista, pode parecer que um imóvel público corresponde simplesmente a um terreno ou edificação pertencente ao Estado. Embora intuitiva, essa compreensão é insuficiente diante da diversidade de bens que integram o patrimônio imobiliário público brasileiro (que compreende, entre outros, terras, praias, manguezais e águas públicas).</span></p><p>Em sentido amplo, podemos compreender um “<b>bem</b>” como <mark>toda utilidade material ou imaterial suscetível de integrar determinada relação jurídica</mark>. Os <b>imóveis</b> constituem apenas uma das espécies desse gênero mais amplo, caracterizando-se, em linhas gerais, pela <mark>impossibilidade de remoção sem alteração da sua substância ou destinação econômica e jurídica</mark>.&nbsp;</p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">À primeira vista, pode parecer que um imóvel público corresponde simplesmente a um terreno ou edificação pertencente ao Estado. Embora intuitiva, essa compreensão é insuficiente diante da diversidade de bens que integram o patrimônio imobiliário público brasileiro (que compreende, entre outros, terras, praias, manguezais e águas públicas).</span></p><p>Em sentido amplo, podemos compreender um “<b>bem</b>” como <mark>toda utilidade material ou imaterial suscetível de integrar determinada relação jurídica</mark>. Os <b>imóveis</b> constituem apenas uma das espécies desse gênero mais amplo, caracterizando-se, em linhas gerais, pela <mark>impossibilidade de remoção sem alteração da sua substância ou destinação econômica e jurídica</mark>. </p>"
           }
         },
         {
@@ -519,7 +518,7 @@
           "props": {
             "variant": "block",
             "fontSize": "auto",
-            "children": "<i>Os <b>bens imóveis públicos</b> correspondem àqueles pertencentes às pessoas jurídicas de direito público interno e submetidos ao regime jurídico que lhes é próprio.</i><p><span data-fs=\"body\" style=\"\"><span data-font=\"body\"><br>Essa é definição adotada pelo Código Civil. Porém, a doutrina e a jurisprudência frequentemente ampliam esse conceito para abranger também imóveis pertencentes a pessoas jurídicas de direito privado quando afetados diretamente à prestação de serviços públicos.</span></span></p>",
+            "children": "<p><i>Os <b>bens imóveis públicos</b> correspondem àqueles pertencentes às pessoas jurídicas de direito público interno e submetidos ao regime jurídico que lhes é próprio.</i></p><p><span data-fs=\"body\" style=\"\"><span data-font=\"body\"><br>Essa é a definição adotada pelo Código Civil. Porém, a doutrina e a jurisprudência frequentemente ampliam esse conceito para abranger também imóveis pertencentes a particulares quando afetados diretamente à prestação de serviços públicos.</span></span></p>",
             "cite": ""
           }
         },
@@ -539,7 +538,7 @@
           "id": "b_mt1ouwb7_cefy",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">É justamente nesse contexto que o conceito de </span><b style=\"text-wrap-mode: initial;\">caracterização patrimonial </b><span style=\"text-wrap-mode: initial;\">se faz relevante</span><span style=\"text-wrap-mode: initial; color: inherit;\">. Associá-la exclusivamente à produção de informações cadastrais relacionadas aos imóveis públicos é uma</span><span style=\"text-wrap-mode: initial; color: inherit;\">&nbsp;compreensão demasiadamente restritiva do fenômeno.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\"><br></span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">É justamente nesse contexto que o conceito de </span><b style=\"text-wrap-mode: initial;\">caracterização patrimonial </b><span style=\"text-wrap-mode: initial;\">se faz relevante</span><span style=\"text-wrap-mode: initial; color: inherit;\">. Associá-la exclusivamente à produção de informações cadastrais relacionadas aos imóveis públicos é uma</span><span style=\"text-wrap-mode: initial; color: inherit;\"> compreensão demasiadamente restritiva do fenômeno. </span><span style=\"text-wrap-mode: initial; color: inherit;\"><br></span></p>"
           }
         },
         {
@@ -626,7 +625,7 @@
           "id": "b_mss2umwc_trfo",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\"><b>Incorporação patrimonial</b> é&nbsp;o processo de ingresso formal do imóvel ao patrimônio do Estado. Assim como os demais, ela não se resume à criação de um número de cadastro perante o sistema governamental ou à simples lavratura de um termo de incorporação.</span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\"><b>Incorporação patrimonial</b> é o processo de ingresso formal do imóvel ao patrimônio do Estado. Assim como os demais, ela não se resume à criação de um número de cadastro perante o sistema governamental ou à simples lavratura de um termo de incorporação.</span></p>"
           }
         },
         {
@@ -638,15 +637,14 @@
             "icon": "alert-triangle",
             "title": "Incorporação patrimonial x incorporação imobiliária",
             "heading": "",
-            "children": "<p>A incorporação patrimonial aqui tratada não se confunde com a denominada “incorporação imobiliária”, instituto próprio do Direito Privado disciplinado pela Lei nº 4.591, de 16 de dezembro de 1964, voltado à construção e comercialização antecipada de unidades autônomas integrantes de edificações ou conjuntos imobiliários.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Enquanto a <b>incorporação imobiliária</b> possui natureza eminentemente negocial e se relaciona à atividade econômica desenvolvida no mercado imobiliário, a <b>incorporação patrimonial</b>&nbsp;se refere ao conjunto de procedimentos destinados ao ingresso formal de determinado imóvel no patrimônio público, permitindo ao Estado reconhecê-lo, individualizá-lo e produzir as informações necessárias à sua gestão.</span></p>",
-            "color": ""
+            "children": "<p>A incorporação patrimonial aqui tratada não se confunde com a denominada “incorporação imobiliária”, instituto próprio do Direito Privado disciplinado pela Lei nº 4.591, de 16 de dezembro de 1964, voltado à construção e comercialização antecipada de unidades autônomas integrantes de edificações ou conjuntos imobiliários. <span style=\"text-wrap-mode: initial; color: inherit;\">Enquanto a <b>incorporação imobiliária</b> possui natureza eminentemente negocial e se relaciona à atividade econômica desenvolvida no mercado imobiliário, a <b>incorporação patrimonial</b> se refere ao conjunto de procedimentos destinados ao ingresso formal de determinado imóvel no patrimônio público, permitindo ao Estado reconhecê-lo, individualizá-lo e produzir as informações necessárias à sua gestão.</span></p>"
           }
         },
         {
           "id": "b_mt1njnio_xbhk",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial;\">Para incorporar um imóvel ao patrimônio público, ele <mark>precisa ser reconhecido como uma unidade autônoma dos demais bens públicos</mark></span><span style=\"color: inherit; text-wrap-mode: initial;\">, além de ser juridicamente conhecido por terceiros – o que leva a necessidade de individualizá-lo e registrá-lo no cartório competente. A exceção são as áreas públicas insuscetíveis de registro, seja por sua natureza ou pela impossibilidade de apropriação, como é o caso das praias e dos espelhos d’água.</span></p><p>Perceba que as informações produzidas durante os processos de caracterização e incorporação patrimonial não possuem utilidade meramente descritiva ou cadastral.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Ao contrário, constituem importante instrumento para subsidiar futuras decisões relacionadas à destinação, regularização e gestão dos imóveis públicos. </span><span style=\"text-wrap-mode: initial;\"><mark>Quanto maior for a qualidade do conhecimento produzido sobre determinado bem, maiores serão as possibilidades de sua utilização em benefício do interesse coletivo</mark>.</span></p><p>Essa preocupação se torna ainda mais relevante quando reconhecemos que <mark>os imóveis públicos desempenham múltiplas funções na contemporaneidade</mark>. Mais do que representar ativos integrantes do patrimônio estatal, eles podem viabilizar políticas habitacionais, apoiar a proteção ambiental, contribuir para o ordenamento territorial e permitir a prestação de serviços públicos essenciais. </p><p>Justamente por desempenharem funções tão diversas, a caracterização e a incorporação patrimonial constituem pressupostos indispensáveis para que os imóveis públicos possam ser utilizados em conformidade com os interesses coletivos que justificam sua existência.</p>"
+            "html": "<p><span style=\"text-wrap-mode: initial;\">Para incorporar um imóvel ao patrimônio público, ele <mark>precisa ser reconhecido como um bem distinto dos demais bens públicos</mark></span><span style=\"color: inherit; text-wrap-mode: initial;\">, além de ser juridicamente conhecido por terceiros – o que leva à necessidade de individualizá-lo e registrá-lo no cartório competente. A exceção são as áreas públicas insuscetíveis de registro, seja por sua natureza ou pela impossibilidade de apropriação, como é o caso das praias e dos espelhos d’água.</span></p><p>Perceba que as informações produzidas durante os processos de caracterização e incorporação patrimonial não possuem utilidade meramente descritiva ou cadastral. <span style=\"text-wrap-mode: initial; color: inherit;\">Ao contrário, constituem importante instrumento para subsidiar futuras decisões relacionadas à destinação, regularização e gestão dos imóveis públicos. </span><span style=\"text-wrap-mode: initial;\"><mark>Quanto maior for a qualidade do conhecimento produzido sobre determinado bem, maiores serão as possibilidades de sua utilização em benefício do interesse coletivo</mark>.</span></p><p>Essa preocupação se torna ainda mais relevante quando reconhecemos que <mark>os imóveis públicos desempenham múltiplas funções na contemporaneidade</mark>. Mais do que representar ativos integrantes do patrimônio estatal, eles podem viabilizar políticas habitacionais, apoiar a proteção ambiental, contribuir para o ordenamento territorial e permitir a prestação de serviços públicos essenciais. </p><p>Justamente por desempenharem funções tão diversas, a caracterização e a incorporação patrimonial constituem pressupostos indispensáveis para que os imóveis públicos possam ser utilizados em conformidade com os interesses coletivos que justificam sua existência.</p>"
           }
         }
       ]
@@ -672,7 +670,7 @@
           "id": "cgwx5y0n",
           "type": "prose",
           "props": {
-            "html": "<p>Até aqui, você já pôde perceber que o reconhecimento dos imóveis públicos não decorre exclusivamente da existência de um registro imobiliário, de um cadastro governamental ou da simples identificação física de determinada área. Trata-se de&nbsp;</p>"
+            "html": "<p>Até aqui, você já pôde perceber que o reconhecimento dos imóveis públicos não decorre exclusivamente da existência de um registro imobiliário, de um cadastro governamental ou da simples identificação física de determinada área. Trata-se de </p>"
           }
         },
         {
@@ -723,8 +721,8 @@
       "id": "b1g5nqxo",
       "type": "pagefooter",
       "props": {
-        "code": "Reconhecendo Imoveis Publicos: histÓrico, conceitos e funçÕes [M211]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "code": "Reconhecendo ImÓveis PÚblicos: histÓrico, conceitos e funçÕes [M211]",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
