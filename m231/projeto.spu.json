@@ -182,7 +182,7 @@
             "fit": "contain",
             "size": "full",
             "title": "",
-            "caption": "<br>",
+            "caption": "",
             "credit": ""
           }
         }
@@ -209,14 +209,14 @@
           "id": "cqc02xao",
           "type": "prose",
           "props": {
-            "html": "<p>A gestão patrimonial depende da reunião de dados de diferentes naturezas, as quais analisadas em conjunto permitem compreender não apenas onde está localizado determinado imóvel, mas também quais são as suas características físicas, jurídicas e administrativas.</p>"
+            "html": "<p>A gestão patrimonial depende da reunião de dados de diferentes naturezas, os quais, analisados em conjunto, permitem compreender não apenas onde está localizado determinado imóvel, mas também quais são as suas características físicas, jurídicas e administrativas.</p>"
           }
         },
         {
           "id": "bhq5nuex",
           "type": "contentslider",
           "props": {
-            "hint": "<br>",
+            "hint": "",
             "accent": "var(--green-700)",
             "showTabNumbers": false,
             "slides": [
@@ -274,8 +274,7 @@
             "icon": "lightbulb",
             "title": "",
             "heading": "As informações produzidas sobre o imóvel não se esgotam no cadastro",
-            "children": "<p>Ao longo de seu ciclo de vida, diferentes processos da gestão patrimonial produzem <b>dados complementares</b>, vinculados ao imóvel cadastrado, que subsidiam atividades específicas da Administração Pública.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">É o caso das informações econômicas e financeiras, por exemplo, produzidas nos processos de avaliação e contabilização patrimoniais.&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Registros contábeis relacionados aos imóveis públicos dependem da existência de informações cadastrais <mark>confiáveis e permanentemente atualizadas</mark>, evidenciando a estreita integração entre o cadastro imobiliário e a contabilidade patrimonial.</span></p>",
-            "color": ""
+            "children": "<p>Ao longo de seu ciclo de vida, diferentes processos da gestão patrimonial produzem <b>dados complementares</b>, vinculados ao imóvel cadastrado, que subsidiam atividades específicas da Administração Pública. <span style=\"text-wrap-mode: initial; color: inherit;\">É o caso das informações econômicas e financeiras, por exemplo, produzidas nos processos de avaliação e contabilização patrimoniais. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Registros contábeis relacionados aos imóveis públicos dependem da existência de informações cadastrais <mark>confiáveis e permanentemente atualizadas</mark>, evidenciando a estreita integração entre o cadastro imobiliário e a contabilidade patrimonial.</span></p>"
           }
         },
         {
@@ -308,7 +307,7 @@
           "id": "cpjs75cy",
           "type": "prose",
           "props": {
-            "html": "<p>Cadastrar um imóvel público é um processo contínuo que inicia&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">no <b><span data-color=\"ochre-light\">reconhecimento do imóvel</span></b> pela Ad</span><span style=\"text-wrap-mode: initial; color: inherit;\">ministração Pública, mas<b> <span data-color=\"ochre-light\">não se encerra com o cadastramento</span></b>.&nbsp; Trata-se de um ciclo contínuo de produção e atualização dos dados patrimoniais, permitindo que o Estado disponha das informações necessárias para protegê-lo, administrá-lo e utilizá-lo de maneira mais eficiente.&nbsp;</span></p>"
+            "html": "<p>Cadastrar um imóvel público é um processo contínuo que se inicia com&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">o <b><span data-color=\"ochre-light\">reconhecimento do imóvel</span></b> pela Ad</span><span style=\"text-wrap-mode: initial; color: inherit;\">ministração Pública, mas<b> <span data-color=\"ochre-light\">não se encerra com o cadastramento</span></b>.  Trata-se de um ciclo contínuo de produção e atualização dos dados patrimoniais, permitindo que o Estado disponha das informações necessárias para protegê-lo, administrá-lo e utilizá-lo de maneira mais eficiente. </span></p>"
           }
         },
         {
@@ -335,7 +334,7 @@
             "title": "Validar",
             "color": "",
             "bg": "",
-            "body": "<p>As informações produzidas precisam ser <b>analisadas e validadas</b>. É nessa etapa que são verificadas eventuais inconsistências relacionadas, por exemplo, à localização do imóvel, à sua representação territorial ou às informações jurídicas e administrativas produzidas sobre o bem.  A qualidade dos dados inseridos no cadastro imobiliário influencia diretamente a qualidade das decisões patrimoniais posteriormente adotadas pela Administração Pública.&nbsp;</p>"
+            "body": "<p>As informações produzidas precisam ser <b>analisadas e validadas</b>. É nessa etapa que são verificadas eventuais inconsistências relacionadas, por exemplo, à localização do imóvel, à sua representação territorial ou às informações jurídicas e administrativas produzidas sobre o bem.  A qualidade dos dados inseridos no cadastro imobiliário influencia diretamente a qualidade das decisões patrimoniais posteriormente adotadas pela Administração Pública. </p>"
           },
           "children": []
         },
@@ -349,7 +348,7 @@
             "title": "Cadastrar",
             "color": "",
             "bg": "",
-            "body": "<p>Assim que validadas, as informações são <b>organizadas e registradas</b> no modelo cadastral adotado pelo órgão responsável pela gestão do patrimônio imobiliário.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Mas atenção, o processo não se encerra aqui.&nbsp;</span></p><p><span data-color=\"terra\"></span></p>"
+            "body": "<p>Assim que validadas, as informações são <b>organizadas e registradas</b> no modelo cadastral adotado pelo órgão responsável pela gestão do patrimônio imobiliário. <span style=\"text-wrap-mode: initial; color: inherit;\">Mas atenção, o processo não se encerra aqui. </span></p><p><span data-color=\"terra\"></span></p>"
           },
           "children": []
         },
@@ -363,7 +362,7 @@
             "title": "Atualizar",
             "color": "",
             "bg": "",
-            "body": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Lembre-se que as informações produzidas pelo cadastro imobiliário possuem uma finalidade prática bastante evidente: <b>subsidiar a tomada de decisões pela Administração Pública</b>. Por isso, além de corretamente identificadas, validadas e cadastradas, as informações precisam estar <b>atualizadas</b>.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Processos de destinação patrimonial, avaliações imobiliárias, reconhecimento contábil dos bens públicos, planejamento territorial e integração com outras bases governamentais de dados são alguns exemplos de atividades que dependem da <b>constante atualização das informações cadastrais</b>.&nbsp;</span></p>"
+            "body": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Lembre-se de que as informações produzidas pelo cadastro imobiliário possuem uma finalidade prática bastante evidente: <b>subsidiar a tomada de decisões pela Administração Pública</b>. Por isso, além de corretamente identificadas, validadas e cadastradas, as informações precisam estar <b>atualizadas</b>.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Processos de destinação patrimonial, avaliações imobiliárias, reconhecimento contábil dos bens públicos, planejamento territorial e integração com outras bases governamentais de dados são alguns exemplos de atividades que dependem da <b>constante atualização das informações cadastrais</b>. </span></p>"
           },
           "children": []
         }
@@ -410,7 +409,7 @@
           "id": "bthsg8gg",
           "type": "prose",
           "props": {
-            "html": "<p>Por essas razões, o modelo cadastral atualmente adotado pela União é resultado de um processo contínuo de aperfeiçoamento institucional, que incorporou importantes aprendizados da utilização dos&nbsp;<span data-term=\"sistemas legados\" title=\"Um sistema legado é um software ou infraestrutura tecnológica antigo e desatualizado.\">sistemas legados</span> desenvolvidos no âmbito da Secretaria do Patrimônio da União (SPU).</p>"
+            "html": "<p>Por essas razões, o modelo cadastral atualmente adotado pela União é resultado de um processo contínuo de aperfeiçoamento institucional, que incorporou importantes aprendizados da utilização dos <span data-term=\"sistemas legados\" title=\"Um sistema legado é um software ou infraestrutura tecnológica antigo e desatualizado.\">sistemas legados</span> desenvolvidos no âmbito da Secretaria do Patrimônio da União (SPU).</p>"
           }
         },
         {
@@ -425,7 +424,7 @@
           "id": "b_msjem8rr_7c6u",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Ao contrário dos </span><span data-term=\"sistemas legados\" title=\"Um sistema legado é um software ou infraestrutura tecnológica antigo e desatualizado.\" style=\"text-wrap-mode: initial; color: inherit;\">sistemas legados</span><span style=\"text-wrap-mode: initial; color: inherit;\">, que concentravam em um único cadastro informações produzidas por diferentes processos da gestão patrimonial, o <a href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/o-que-e-o-spunet-1\"><b>SPUnet</b></a> foi concebido a partir de uma nova arquitetura, orientada pelos macroprocessos de gestão e tendo o imóvel como objeto primário da gestão patrimonial e elemento integrador das informações produzidas pelos diferentes processos de gestão.&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Nesse modelo, o cadastro passa a representar o próprio imóvel, enquanto as informações relativas à destinação, avaliação, contabilidade, fiscalização, arrecadação de receitas e demais processos são produzidas e mantidas<mark data-hl=\"green\"> em módulos específicos</mark>, preservando sua rastreabilidade e favorecendo maior consistência dos dados.</span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Ao contrário dos </span><span data-term=\"sistemas legados\" title=\"Um sistema legado é um software ou infraestrutura tecnológica antigo e desatualizado.\" style=\"text-wrap-mode: initial; color: inherit;\">sistemas legados</span><span style=\"text-wrap-mode: initial; color: inherit;\">, que concentravam em um único cadastro informações produzidas por diferentes processos da gestão patrimonial, o <a href=\"https://www.gov.br/gestao/pt-br/assuntos/patrimonio-da-uniao/transformacao-digital/o-que-e-o-spunet-1\"><b>SPUnet</b></a> foi concebido a partir de uma nova arquitetura, orientada pelos macroprocessos de gestão e tendo o imóvel como objeto primário da gestão patrimonial e elemento integrador das informações produzidas pelos diferentes processos de gestão. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Nesse modelo, o cadastro passa a representar o próprio imóvel, enquanto as informações relativas à destinação, avaliação, contabilidade, fiscalização, arrecadação de receitas e demais processos são produzidas e mantidas<mark data-hl=\"green\"> em módulos específicos</mark>, preservando sua rastreabilidade e favorecendo maior consistência dos dados.</span></p>"
           }
         },
         {
@@ -437,7 +436,7 @@
             "fit": "contain",
             "size": "full",
             "title": "",
-            "caption": "<span data-fs=\"body\">Para atender a essa diversidade de situações, o sistema está estruturado em <b>blocos de funcionalidades (módulos)</b> dedicados aos diversos macroprocessos de gestão patrimonial: cadastro físico-cartorial; geoinformação; atendimento ao público; destinação de imóveis; avaliação; contabilização patrimonial; receitas patrimoniais; fiscalização e controle.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Essa arquitetura também reflete a opção por organizar as informações patrimoniais <mark>a partir dos processos de gestão</mark>, preservando o cadastro como representação do imóvel e permitindo que cada macroprocesso produza e mantenha atualizadas as informações sob sua responsabilidade.</span></span><span style=\"text-wrap-mode: initial; color: inherit;\"></span><p></p>",
+            "caption": "<p><span data-fs=\"body\">Para atender a essa diversidade de situações, o sistema está estruturado em <b>blocos de funcionalidades (módulos)</b> dedicados aos diversos macroprocessos de gestão patrimonial: cadastro físico-cartorial; geoinformação; atendimento ao público; destinação de imóveis; avaliação; contabilização patrimonial; receitas patrimoniais; fiscalização e controle. <span style=\"text-wrap-mode: initial; color: inherit;\">Essa arquitetura também reflete a opção por organizar as informações patrimoniais <mark>a partir dos processos de gestão</mark>, preservando o cadastro como representação do imóvel e permitindo que cada macroprocesso produza e mantenha atualizadas as informações sob sua responsabilidade.</span></span><span style=\"text-wrap-mode: initial; color: inherit;\"></span></p><p></p>",
             "credit": ""
           }
         },
@@ -466,8 +465,9 @@
             "slot": "behgc1h1__slot",
             "collapse": "none",
             "title": "",
-            "children": "<p>Adoção de um <b>modelo único de dados</b> para o cadastro dos imóveis públicos federais pertencentes ou utilizados pela União, suas autarquias e fundações públicas federais. Assim, mais do que reunir informações anteriormente dispersas em diferentes sistemas informatizados, o novo modelo cadastral integra dados literais e geoespaciais produzidos sobre os imóveis públicos, permitindo sua permanente atualização e utilização.</p>"
-          }
+            "body": "<p>Adoção de um <b>modelo único de dados</b> para o cadastro dos imóveis públicos federais pertencentes ou utilizados pela União, suas autarquias e fundações públicas federais. Assim, mais do que reunir informações anteriormente dispersas em diferentes sistemas informatizados, o novo modelo cadastral integra dados literais e geoespaciais produzidos sobre os imóveis públicos, permitindo sua permanente atualização e utilização.</p>"
+          },
+          "children": []
         },
         {
           "id": "b_msjg0ta1_qovl",
@@ -479,8 +479,9 @@
             "slot": "b_msjg0ta1_qovl__slot",
             "collapse": "none",
             "title": "",
-            "children": "<p><b>Integração com diferentes bases governamentais de dados e sistemas informatizados</b>, a exemplo do Sistema Eletrônico de Informações (SEI), do Sistema Integrado de Administração Financeira do Governo Federal (SIAFI) e das bases administradas pela Receita Federal do Brasil – promovendo maior interoperabilidade entre sistemas e a utilização compartilhada das informações produzidas pelos diferentes órgãos e entidades públicas.</p>"
-          }
+            "body": "<p><b>Integração com diferentes bases governamentais de dados e sistemas informatizados</b>, a exemplo do Sistema Eletrônico de Informações (SEI), do Sistema Integrado de Administração Financeira do Governo Federal (SIAFI) e das bases administradas pela Receita Federal do Brasil – promovendo maior interoperabilidade entre sistemas e a utilização compartilhada das informações produzidas pelos diferentes órgãos e entidades públicas.</p>"
+          },
+          "children": []
         },
         {
           "id": "b_msjg1p96_8juj",
@@ -492,8 +493,9 @@
             "slot": "b_msjg1p96_8juj__slot",
             "collapse": "none",
             "title": "",
-            "children": "<p><font color=\"#1c2420\"><b>Automação</b> de procedimentos patrimoniais, com espaço para a geração automática de contratos padronizados, controle do cumprimento das obrigações assumidas pelos destinatários dos imóveis públicos, automatização de operações relacionadas à contabilização patrimonial e possibilidade de produção de relatórios gerenciais.</font></p>"
-          }
+            "body": "<p><font color=\"#1c2420\"><b>Automação</b> de procedimentos patrimoniais, com espaço para a geração automática de contratos padronizados, controle do cumprimento das obrigações assumidas pelos destinatários dos imóveis públicos, automatização de operações relacionadas à contabilização patrimonial e possibilidade de produção de relatórios gerenciais.</font></p>"
+          },
+          "children": []
         },
         {
           "id": "b_msjg2l6o_4qyb",
@@ -505,14 +507,15 @@
             "slot": "b_msjg2l6o_4qyb__slot",
             "collapse": "none",
             "title": "",
-            "children": "<p><font color=\"#1c2420\">A incorporação da <b>geoinformação</b> como elemento estruturante do cadastro patrimonial permitiu que o imóvel passasse a ser representado por meio de uma base georreferenciada, sobre a qual se integram os demais atributos físicos, jurídicos e administrativos. Mais do que um módulo específico do sistema, essas soluções consolidam a geoinformação como componente estruturante do novo modelo cadastral e ampliam significativamente a capacidade de análise territorial, planejamento e tomada de decisão.</font></p><p><font color=\"#1c2420\">Para além da representação espacial dos imóveis públicos, <mark>o novo modelo permite conhecer, pela primeira vez, o próprio acervo cartográfico relacionado ao patrimônio imobiliário da União</mark>, identificando a tipologia, a qualidade e as características técnicas das informações geoespaciais produzidas sobre esses bens. Entre elas, destaca-se o <b>GeoVisão</b>, plataforma que integra informações patrimoniais e geoespaciais em ambiente cartográfico, permitindo visualizar imóveis públicos, consultar seus atributos, realizar análises espaciais e sobrepor diferentes camadas de informação territorial.</font></p>"
-          }
+            "body": "<p><font color=\"#1c2420\">A incorporação da <b>geoinformação</b> como elemento estruturante do cadastro patrimonial permitiu que o imóvel passasse a ser representado por meio de uma base georreferenciada, sobre a qual se integram os demais atributos físicos, jurídicos e administrativos. Mais do que um módulo específico do sistema, essas soluções consolidam a geoinformação como componente estruturante do novo modelo cadastral e ampliam significativamente a capacidade de análise territorial, planejamento e tomada de decisão.</font></p><p><font color=\"#1c2420\">Para além da representação espacial dos imóveis públicos, <mark>o novo modelo permite conhecer, pela primeira vez, o próprio acervo cartográfico relacionado ao patrimônio imobiliário da União</mark>, identificando a tipologia, a qualidade e as características técnicas das informações geoespaciais produzidas sobre esses bens. Entre elas, destaca-se o <b>GeoVisão</b>, plataforma que integra informações patrimoniais e geoespaciais em ambiente cartográfico, permitindo visualizar imóveis públicos, consultar seus atributos, realizar análises espaciais e sobrepor diferentes camadas de informação territorial.</font></p>"
+          },
+          "children": []
         },
         {
           "id": "b8cdri07",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Essas e outras soluções desenvolvidas pela SPU voltadas à produção, integração e disponibilização de informações geoespaciais aplicadas à gestão patrimonial, evidenciam uma estratégia contínua de fortalecimento da inteligência territorial. Trata-se de um importante avanço para a gestão patrimonial pública, que passa a reconhecer a geoinformação não apenas como elemento acessório do cadastro imobiliário, mas como informação estratégica para a compreensão do território e para a tomada de decisões administrativas</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A implantação desse novo modelo ocorre de forma gradual. Os imóveis de uso especial foram os primeiros a migrar para essa nova arquitetura cadastral, possibilitando validar o modelo e consolidar suas principais funcionalidades. O desafio atual consiste em expandir essa abordagem aos imóveis dominiais, promovendo a integração das diferentes bases patrimoniais em um cadastro único, georreferenciado e permanentemente atualizado.</span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Essas e outras soluções desenvolvidas pela SPU voltadas à produção, integração e disponibilização de informações geoespaciais aplicadas à gestão patrimonial, evidenciam uma estratégia contínua de fortalecimento da inteligência territorial. Trata-se de um importante avanço para a gestão patrimonial pública, que passa a reconhecer a geoinformação não apenas como elemento acessório do cadastro imobiliário, mas como informação estratégica para a compreensão do território e para a tomada de decisões administrativas.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A implantação desse novo modelo ocorre de forma gradual. Os imóveis de uso especial foram os primeiros a migrar para essa nova arquitetura cadastral, possibilitando validar o modelo e consolidar suas principais funcionalidades. O desafio atual consiste em expandir essa abordagem aos imóveis dominiais, promovendo a integração das diferentes bases patrimoniais em um cadastro único, georreferenciado e permanentemente atualizado.</span></p>"
           }
         }
       ]
@@ -547,7 +550,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Aspectos praticos do reconhecimento e cadastro [M231]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
