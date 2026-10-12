@@ -716,7 +716,7 @@
               "type": "kicker",
               "props": {
                 "icon": "merge",
-                "children": "Esses dados foram estão reunidos e sistematizados"
+                "children": "Esses dados foram reunidos e sistematizados"
               }
             }
           ]
@@ -733,7 +733,7 @@
           "id": "bx1d9jw2",
           "type": "prose",
           "props": {
-            "html": "<p>Como resultado do levantamento inicial, foram identificadas 237 áreas onde ações de regularização fundiária eram necessárias. O próprio relatório ressalta que se tratava de um universo provisório, que seria ampliado com o avanço do mapeamento.</p><p>Essas áreas estavam distribuídas por todas as unidades da Federação, alcançando 141 municípios e 20 capitais.</p>"
+            "html": "<p>Como resultado do levantamento inicial, foram identificadas 237 áreas onde ações de regularização fundiária eram necessárias. O próprio relatório ressalta que se tratava de um universo provisório, o qual seria ampliado com o avanço do mapeamento.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Essas áreas encontravam-se distribuídas por todas as unidades da Federação, alcançando 141 municípios e 20 capitais.</span></p>"
           }
         },
         {
@@ -1054,7 +1054,7 @@
             "icon": "book-open-check",
             "title": "",
             "heading": "O que esta etapa do estudo de caso mostra?",
-            "children": "<p>Na experiência da SPU, a construção de uma visão territorial começou pela coleta de informações existentes, passou por sua sistematização e espacialização e produziu um primeiro retrato das áreas, de suas diferentes situações e do estágio das ações de regularização.</p><p>Os números demonstram o impacto e a importância dessa pauta, assim como o papel de protagonismo da SPU nesse tema e evidenciam a necessidade de que as áreas da União sejam priorizadas nas seleções de recursos federais e no acesso transversal a outras políticas públicas que podem qualificar os territórios de intervenção como saúde, educação, cultura, lazer, esportes etc.</p>"
+            "children": "<p>Na experiência da SPU, a construção de uma visão territorial começou pela coleta de informações existentes, passou por sua sistematização e espacialização e produziu um primeiro retrato das áreas, de suas diferentes situações e do estágio das ações de regularização.</p><p>Os números demonstram o impacto e a importância dessa pauta, assim como o papel de protagonismo da SPU nesse tema e evidenciam a necessidade de que as áreas da União sejam priorizadas nas seleções de recursos federais e no acesso transversal a outras políticas públicas, como saúde, educação, cultura, lazer e esportes, que podem qualificar os territórios de intervenção.</p>"
           }
         }
       ]
@@ -1080,7 +1080,7 @@
           "id": "b_msutthr8_jbk6",
           "type": "prose",
           "props": {
-            "html": "<p>Conhecer o universo da regularização fundiária e localizar territorialmente as demandas é uma primeira etapa. Na experiência da SPU, essas informações também passaram a apoiar o planejamento e o acompanhamento das ações realizadas.</p><p>O relatório mostra que esse acompanhamento ocorre em situações distintas. Há áreas que permanecem sob gestão da SPU e ainda precisam avançar no processo de regularização; outras já destinadas a parceiros, nas quais é necessário acompanhar o desenvolvimento das ações até a titulação das famílias; e ainda, áreas em que a própria SPU realiza diretamente a titulação.</p>"
+            "html": "<p>Conhecer o universo da regularização fundiária e localizar territorialmente as demandas é uma primeira etapa. Na experiência da SPU, essas informações também passaram a apoiar o planejamento e o acompanhamento das ações realizadas.</p><p>O relatório mostra que esse acompanhamento ocorre em situações distintas. Há áreas que permanecem sob gestão da SPU e ainda precisam avançar no processo de regularização; outras já destinadas a parceiros, nas quais é necessário acompanhar o desenvolvimento das ações até a titulação das famílias; e ainda áreas em que a própria SPU realiza diretamente a titulação.</p>"
           }
         },
         {
@@ -1096,7 +1096,7 @@
               "id": "b4mp4693",
               "type": "prose",
               "props": {
-                "html": "<p>O mapeamento não serve apenas para localizar e conhecer as áreas públicas. Na experiência da SPU, a consolidação de um conjunto de áreas previamente identificadas e mapeadas também ampliou a capacidade de articulação institucional e de mobilização de recursos. A partir dessas informações, a Secretaria articulou com o Ministério das Cidades a destinação de recursos do Novo PAC exclusivamente para ações de regularização fundiária em áreas da União. A iniciativa foi formalizada pela <a href=\"https://www.in.gov.br/web/dou/-/portaria-interministerial-mcid/mgi-n-5-de-3-de-novembro-de-2025-671920924\">Portaria Interministerial MCID/MGI nº 5, de 3 de novembro de 2025</a>, e resultou na seleção de R$ 200 milhões da Ação Orçamentária 00SW — Apoio à Regularização Fundiária Urbana, do Programa Periferia Viva, com potencial de beneficiar cerca de 140 mil famílias. Esse exemplo mostra que<mark> a informação territorial organizada pode ultrapassar a função cadastral e se converter em instrumento de planejamento, priorização e articulação de políticas públicas</mark>. </p>"
+                "html": "<p>O mapeamento não serve apenas para localizar e conhecer as áreas públicas. Na experiência da SPU, a consolidação de um conjunto de áreas previamente identificadas e mapeadas também ampliou a capacidade de articulação institucional e de mobilização de recursos. A partir dessas informações, a Secretaria articulou com o Ministério das Cidades a destinação de recursos do Novo PAC exclusivamente para ações de regularização fundiária em áreas da União. A iniciativa foi formalizada pela <a href=\"https://www.in.gov.br/web/dou/-/portaria-interministerial-mcid/mgi-n-5-de-3-de-novembro-de-2025-671920924\">Portaria Interministerial MCID/MGI nº 5, de 3 de novembro de 2025</a>, resultando na seleção de R$ 200 milhões da Ação Orçamentária 00SW - Apoio à Regularização Fundiária Urbana, integrante do Programa Periferia Viva, com potencial para beneficiar cerca de 140 mil famílias. Esse exemplo mostra que<mark> a informação territorial organizada pode ultrapassar a função cadastral e se converter em instrumento de planejamento, priorização e articulação de políticas públicas</mark>. </p>"
               }
             },
             {
@@ -1174,7 +1174,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Geointeligência para a regularização fundiária [M434]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
