@@ -7,11 +7,6 @@
     "toc": {
       "items": [
         {
-          "id": "c5x9jj9w",
-          "text": "Por que este material importa?",
-          "hidden": false
-        },
-        {
           "id": "chd0n1zp",
           "text": "Antes de escolher a destinação: <span style=\"font-weight: normal;\">que valor público o imóvel pode gerar?</span>",
           "hidden": false
@@ -63,14 +58,6 @@
         "pad": "lg"
       },
       "children": [
-        {
-          "id": "c5x9jj9w",
-          "type": "titulo",
-          "props": {
-            "text": "Por que este material importa?",
-            "level": "h2"
-          }
-        },
         {
           "id": "cut1jo3a",
           "type": "prose",
@@ -152,7 +139,7 @@
           "id": "b3bryewv",
           "type": "prose",
           "props": {
-            "html": "<p>À primeira vista, parecem perguntas objetivas. Mas talvez a pergunta mais importante talvez seja outra:</p>"
+            "html": "<p>À primeira vista, parecem perguntas objetivas. Mas talvez a pergunta mais importante seja outra:</p>"
           }
         },
         {
@@ -195,7 +182,7 @@
           "id": "b_msuydyll_nehm",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Os imóveis públicos constituem<mark> recursos estratégicos</mark> de que o Estado dispõe para implementar políticas públicas e atuar sobre o território. São ativos capazes de promover desenvolvimento econômico, reduzir desigualdades regionais, organizar o território, proteger o meio ambiente, fomentar cadeias produtivas, induzir investimentos privados, viabilizar infraestrutura, assegurar políticas habitacionais, preservar patrimônios históricos e culturais, garantir segurança nacional e fortalecer a presença do Estado em regiões estratégicas. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\"><b>Sua importância transcende o próprio mercado imobiliário.</b> </span><span style=\"color: inherit; text-wrap-mode: initial;\">A gestão patrimonial não deve ser compreendida apenas como administração de propriedades, mas como parte da atuação do Estado na implementação de políticas públicas, na organização do território e na geração de valor para a sociedade.</span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">A literatura internacional demonstra que os Estados modernos deixam de tratar imóveis como meras instalações físicas para administrá-los como recursos estratégicos, alinhando eficiência operacional, sustentabilidade financeira e geração de valor público. Contudo, a gestão pública ainda enfrenta fragilidades críticas: inventários incompletos, ausência de visão estratégica e planejamento de longo prazo, escassez de dados qualificados e baixa articulação institucional. Tais gargalos comprometem a tomada de decisão, que se torna ainda mais desafiadora quando considerada a enorme diversidade do patrimônio imobiliário estatal.</span></p>"
+            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Os imóveis públicos constituem um dos maiores instrumentos de intervenção territorial de que dispõe o Estado. São ativos capazes de promover desenvolvimento econômico, reduzir desigualdades regionais, organizar o território, proteger o meio ambiente, fomentar cadeias produtivas, induzir investimentos privados, viabilizar infraestrutura, assegurar políticas habitacionais, preservar patrimônios históricos e culturais, garantir segurança nacional e fortalecer a presença do Estado em regiões estratégicas. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\"><b>Sua importância transcende o próprio mercado imobiliário.</b> </span><span style=\"color: inherit; text-wrap-mode: initial;\">A gestão patrimonial não deve ser compreendida apenas como administração de propriedades, mas como parte da atuação do Estado na implementação de políticas públicas, na organização do território e na geração de valor para a sociedade.</span></p><p><span style=\"color: inherit; text-wrap-mode: initial;\">A literatura internacional demonstra que os Estados modernos deixam de tratar imóveis como meras instalações físicas para administrá-los como recursos estratégicos, alinhando eficiência operacional, sustentabilidade financeira e geração de valor público. Contudo, a gestão pública ainda enfrenta fragilidades críticas: inventários incompletos, ausência de visão estratégica e planejamento de longo prazo, escassez de dados qualificados e baixa articulação institucional. Tais gargalos comprometem a tomada de decisão, que se torna ainda mais desafiadora quando considerada a enorme diversidade do patrimônio imobiliário estatal.</span></p>"
           }
         },
         {
@@ -245,14 +232,14 @@
             "icon": "house",
             "title": "",
             "heading": "",
-            "children": "<p></p><span data-fs=\"body-lg\"><p><span data-color=\"petrol\"></span></p></span><span data-font=\"display\"><span data-fs=\"body-lg\"><p><span data-color=\"petrol\">Cada imóvel possui limitações jurídicas, características físicas, contexto territorial, dinâmica econômica e potencialidades completamente distintas. Por isso, <mark>as possibilidades de destinação variam enormemente</mark>. </span></p><p></p></span><p></p></span><p><span style=\"color: inherit; text-wrap-mode: initial;\">Alguns imóveis possuem clara vocação para políticas habitacionais. Outros apresentam localização privilegiada para instalação de hospitais, escolas, universidades ou equipamentos administrativos. Há imóveis cuja melhor utilização pode ocorrer mediante concessões para exploração turística. Outros podem impulsionar polos logísticos, parques tecnológicos, áreas industriais ou projetos de infraestrutura. Existem imóveis cuja maior contribuição consiste na preservação ambiental ou na proteção de comunidades tradicionais. Há também aqueles cuja melhor alternativa pode ser sua alienação, especialmente quando não apresentam interesse público específico e quando o custo de sua manutenção supera os benefícios decorrentes de sua permanência no patrimônio estatal.</span></p><p><b>Por exemplo</b>: um imóvel localizado em região industrial consolidada pode apresentar maior potencial para atrair investimentos, gerar empregos e ampliar a arrecadação tributária. Já um edifício histórico, situado no centro da cidade, talvez gere maior valor se restaurado para atividades culturais do que alienado ao mercado.</p>"
+            "children": "<p></p><span data-fs=\"body-lg\"><p><span data-color=\"petrol\"></span></p></span><span data-font=\"display\"><span data-fs=\"body-lg\"><p><span data-color=\"petrol\">Cada imóvel possui limitações jurídicas, características físicas, contexto territorial, dinâmica econômica e potencialidades completamente distintas. Por isso, <mark>as possibilidades de destinação variam enormemente</mark>. </span></p><p></p></span><p></p></span><p><span style=\"color: inherit; text-wrap-mode: initial;\">Alguns imóveis possuem clara vocação para políticas habitacionais. Outros apresentam localização privilegiada para instalação de hospitais, escolas, universidades ou equipamentos administrativos. Há imóveis cuja melhor utilização pode ocorrer mediante concessões para exploração turística. Outros podem impulsionar polos logísticos, parques tecnológicos, áreas industriais ou projetos de infraestrutura. Existem imóveis cuja maior contribuição consiste na preservação ambiental ou na proteção de comunidades tradicionais. Há também aqueles cuja melhor alternativa pode ser sua alienação, especialmente quando não apresentam interesse público específico e quando o custo de sua manutenção supera os benefícios decorrentes de sua permanência no patrimônio estatal.</span></p>"
           }
         },
         {
           "id": "bp28ad5a",
           "type": "prose",
           "props": {
-            "html": "<p><mark data-hl=\"terra\">Nenhuma solução é universalmente correta.</mark> A alternativa mais adequada depende das características do imóvel, de sua inserção no território, das restrições existentes, das demandas da sociedade e dos objetivos das políticas públicas. </p>"
+            "html": "<p><mark data-hl=\"terra\">Nenhuma solução é universalmente correta.</mark> A alternativa mais adequada depende das características do imóvel, de sua inserção no território, das restrições existentes, das demandas da sociedade e dos objetivos das políticas públicas. Por isso, a destinação não deve partir de uma solução previamente escolhida para depois buscar um imóvel que nela se encaixe. É preciso compreender primeiro o imóvel e seu contexto, para então avaliar as possibilidades de utilização capazes de gerar maior valor público.</p>"
           }
         },
         {
@@ -267,7 +254,7 @@
           "id": "co7z3v33",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Se um imóvel público não deve ser destinado sem considerar a melhor geração de valor para a sociedade, tampouco deve ser mantido sem utilização indefinidamente apenas porque pertence ao Estado. A ausência de destinação também produz consequências.</span></p>"
+            "html": "<p>Durante muitos anos, consolidou-se uma percepção de que imóveis públicos desocupados deveriam, necessariamente, ser destinados à habitação social ou alienados para geração de receitas. Embora ambas as alternativas sejam importantes instrumentos de política pública, nenhuma delas pode ser considerada resposta automática para todos os casos.&nbsp;&nbsp;</p><p>Um imóvel localizado em região industrial consolidada pode, por exemplo, apresentar maior potencial para atrair investimentos, gerar empregos e ampliar a arrecadação tributária  do que para determinados outros usos. Da mesma forma, um edifício histórico situado no centro de uma cidade talvez gere maior valor quando restaurado para atividades culturais do que quando alienado ao mercado.&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">Esses exemplos não significam que uma alternativa seja, por princípio, superior a outra. Servem justamente para reforçar que a decisão depende do imóvel, do território e dos objetivos públicos envolvidos.&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Em sentido oposto, manter indefinidamente um imóvel sem utilização, apenas porque pertence ao Estado, dificilmente atende ao interesse público. A ausência de uma destinação também produz consequências.&nbsp;</span></p>"
           }
         },
         {
@@ -279,15 +266,14 @@
             "icon": "dollar-sign",
             "title": "Quanto custa um imóvel ocioso?",
             "heading": "",
-            "children": "<p>Imóveis ociosos representam custos de m<span style=\"text-wrap-mode: initial; color: inherit;\">anutenção,&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">de vigilância, d</span><span style=\"text-wrap-mode: initial; color: inherit;\">e deterioração,&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">jurídicos e&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">administrativos.&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Mas existe um custo frequentemente ignorado: o</span><span style=\"text-wrap-mode: initial; color: inherit;\">&nbsp;<b>custo de oportunidade</b>.&nbsp;</span></p>",
-            "color": ""
+            "children": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Imóveis ociosos representam custos de manutenção, vigilância, deterioração, além de custos jurídicos e administrativos.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Mas existe um custo frequentemente ignorado: o</span><span style=\"text-wrap-mode: initial; color: inherit;\"> <b>custo de oportunidade</b>.</span></p>"
           }
         },
         {
           "id": "buehg3l4",
           "type": "prose",
           "props": {
-            "html": "<p>Cada imóvel mantido sem destinação representa uma oportunidade negligenciada de produzir valor econômico, social ou ambiental. Ao manter um terreno vazio, pode-se deixar de gerar moradias. Ao manter fechado um edifício público, pode-se deixar de oferecer serviços. Ao conservar improdutiva uma área com potencial para investimentos, pode-se deixar de criar empregos. Ao manter imóveis sem estratégia de utilização, o Estado também pode deixar de arrecadar receitas capazes de financiar políticas públicas.</p>"
+            "html": "<p>Cada imóvel mantido sem destinação representa uma oportunidade desperdiçada de produzir valor econômico, social ou ambiental. Ao manter um terreno vazio, pode-se deixar de gerar moradias. Ao manter fechado um edifício público, pode-se deixar de oferecer serviços. Ao conservar improdutiva uma área com potencial para investimentos, pode-se deixar de criar empregos. Ao manter imóveis sem estratégia de utilização, o Estado também pode deixar de arrecadar receitas capazes de financiar políticas públicas.</p>"
           }
         },
         {
@@ -333,7 +319,7 @@
             "title": "",
             "color": "",
             "bg": "var(--sand-50)",
-            "body": "<p><br></p>"
+            "body": ""
           },
           "children": [
             {
@@ -345,7 +331,7 @@
                 "fit": "contain",
                 "size": "full",
                 "title": "",
-                "caption": "<br>",
+                "caption": "",
                 "credit": ""
               }
             },
@@ -353,7 +339,7 @@
               "id": "bjyl46ef",
               "type": "prose",
               "props": {
-                "html": "<p><span data-fs=\"h5\"><span data-fs=\"h4\">Com base no que você estudou até aqui, qual seria a melhor destinação para o imóvel público da imagem acima?&nbsp;</span></span></p>"
+                "html": "<p><span data-fs=\"h5\"><span data-fs=\"h4\">Com base no que você estudou até aqui, qual seria a melhor destinação para o imóvel público da imagem acima? </span></span></p>"
               }
             }
           ]
@@ -383,6 +369,12 @@
                 "description": "",
                 "definition": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Ainda não temos informações suficientes para decidir.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Precisamos conhecer o imóvel, seu contexto, as demandas, as restrições, os custos e os resultados esperados.</span></p>",
                 "icon": "home",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--slate-600)"
               }
             },
@@ -394,6 +386,12 @@
                 "description": "",
                 "definition": "<p>Ainda não temos informações suficientes para decidir.</p><p>Precisamos conhecer o imóvel, seu contexto, as demandas, as restrições, os custos e os resultados esperados.</p>",
                 "icon": "ferris-wheel",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--slate-600)"
               }
             },
@@ -405,6 +403,12 @@
                 "description": "",
                 "definition": "<p>Ainda não temos informações suficientes para decidir.</p><p>Precisamos conhecer o imóvel, seu contexto, as demandas, as restrições, os custos e os resultados esperados.</p>",
                 "icon": "circle-dollar-sign",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--slate-600)"
               }
             },
@@ -416,6 +420,12 @@
                 "description": "",
                 "definition": "<p>Ainda não temos informações suficientes para decidir.</p><p>Precisamos conhecer o imóvel, seu contexto, as demandas, as restrições, os custos e os resultados esperados.</p>",
                 "icon": "tree-deciduous",
+                "showIcon": true,
+                "useCoverImage": false,
+                "coverSlot": "",
+                "coverAlt": "",
+                "frontCue": "Clique para virar",
+                "backCue": "Clique para voltar",
                 "color": "var(--slate-600)"
               }
             }
@@ -444,69 +454,14 @@
           "id": "cflfb96h",
           "type": "prose",
           "props": {
-            "html": "<p>Reconhecer que não existe uma solução automática nos leva a um ponto central da destinação: <b>a<span style=\"text-wrap-mode: initial; color: inherit;\">&nbsp;resposta dificilmente será encontrada em critérios únicos.&nbsp;</span></b></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">É necessário analisar as características, as possibilidades de uso e o contexto de cada imóvel. Destinar é uma decisão resultante da interação de diversos fatores, envolvendo as seguintes dimensões:</span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Reconhecer que não existe uma solução automática nos leva a um ponto central da destinação: </span><b style=\"text-wrap-mode: initial;\">a<span style=\"text-wrap-mode: initial; color: inherit;\"> resposta dificilmente será encontrada em critérios únicos.</span></b></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">É necessário analisar as características, as possibilidades de uso e o contexto de cada imóvel. Destinar é uma decisão resultante da interação de diversos fatores, envolvendo as seguintes dimensões:</span></p><p><ul><li>Localização.&nbsp;</li><li>Características físicas.&nbsp;</li><li>Infraestrutura existente.&nbsp;</li><li>Demanda social.&nbsp;</li><li>Mercado imobiliário.&nbsp;</li><li>Potencial econômico.&nbsp;</li><li>Custos de manutenção.&nbsp;</li><li>Plano Diretor municipal.&nbsp;</li><li>Zoneamento urbano.&nbsp;</li><li>Função social da propriedade.&nbsp;</li><li>Interesse estratégico nacional.&nbsp;</li><li>Sustentabilidade ambiental.&nbsp;</li><li>Necessidades dos órgãos públicos.&nbsp;</li></ul></p>"
           }
-        },
-        {
-          "id": "bx2o33hp",
-          "type": "columns",
-          "props": {
-            "count": "2",
-            "ratio": "equal",
-            "gap": "sm"
-          },
-          "children": [
-            {
-              "id": "bqneenb7",
-              "type": "flashcard",
-              "props": {
-                "term": "Territorial e física",
-                "description": "",
-                "definition": "<p><ul><li>localização; </li><li>características físicas; </li><li>infraestrutura existente; </li><li>inserção e dinâmica territorial. </li></ul></p>",
-                "icon": "map-pinned",
-                "color": "var(--petrol-600)"
-              }
-            },
-            {
-              "id": "b_mst20yme_33ve",
-              "type": "flashcard",
-              "props": {
-                "term": "Jurídica e urbanística",
-                "description": "",
-                "definition": "<p></p><ul><li>regime jurídico e eventuais restrições aplicáveis ao imóvel; </li><li>Plano Diretor municipal; </li><li>zoneamento urbano; </li><li>demais regras de uso e ocupação do território. </li></ul><p></p>",
-                "icon": "scale",
-                "color": "var(--petrol-600)"
-              }
-            },
-            {
-              "id": "b_mst210mh_qeg3",
-              "type": "flashcard",
-              "props": {
-                "term": "Social, ambiental e institucional",
-                "description": "",
-                "definition": "<p></p><ul><li><span style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">demanda social; </span></li><li><span style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">função  socioambiental da propriedade pública; </span></li><li><span style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">sustentabilidade ambiental; </span></li><li><span style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">necessidades dos órgãos públicos; </span></li><li><span style=\"color: inherit; font-family: inherit; font-style: inherit; font-variant-ligatures: inherit; font-variant-caps: inherit; font-weight: inherit;\">interesse estratégico do Estado. </span> </li></ul><p></p>",
-                "icon": "sprout",
-                "color": "var(--petrol-600)"
-              }
-            },
-            {
-              "id": "b_mst211vv_rox6",
-              "type": "flashcard",
-              "props": {
-                "term": "Econômica",
-                "description": "",
-                "definition": "<p></p><ul><li>mercado imobiliário; </li><li>potencial econômico; </li><li>custos de manutenção; </li><li>potencial de geração de receitas e outros benefícios econômicos.</li></ul><p></p>",
-                "icon": "coins",
-                "color": "var(--petrol-600)"
-              }
-            }
-          ]
         },
         {
           "id": "b4v0slgs",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Cada um desses fatores pode influenciar a decisão. Um mesmo imóvel pode apresentar elevada rentabilidade financeira caso seja alugado. Outro poderá gerar maior benefício mediante alienação. Outro talvez jamais devesse deixar o patrimônio público.&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Há situações em que vender produz maior eficiência. Imagine um imóvel de elevado valor de mercado, sem utilização pública previsível, localizado em região cuja valorização atingiu maturidade e cuja manutenção impõe custos crescentes ao Estado.&nbsp;</span><span style=\"text-wrap-mode: initial; color: inherit;\">A alienação pode converter um ativo improdutivo em recursos financeiros imediatamente disponíveis para investimentos prioritários. Em outras circunstâncias, entretanto, vender significa abrir mão de uma fonte permanente de receitas.</span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Cada um desses fatores pode influenciar a decisão. Um mesmo imóvel pode apresentar elevada rentabilidade financeira caso seja alugado. Outro poderá gerar maior benefício mediante alienação. Outro talvez jamais devesse deixar o patrimônio público. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Há situações em que vender produz maior eficiência. Imagine um imóvel de elevado valor de mercado, sem utilização pública previsível, localizado em região cuja valorização atingiu maturidade e cuja manutenção impõe custos crescentes ao Estado. </span><span style=\"text-wrap-mode: initial; color: inherit;\">A alienação pode converter um ativo improdutivo em recursos financeiros imediatamente disponíveis para investimentos prioritários. Em outras circunstâncias, entretanto, vender significa abrir mão de uma fonte permanente de receitas.</span></p>"
           }
         },
         {
@@ -518,15 +473,14 @@
             "icon": "lightbulb",
             "title": "",
             "heading": "",
-            "children": "<p>Um edifício comercial bem localizado pode proporcionar rendimentos contínuos por décadas mediante locação, preservando simultaneamente o patrimônio estatal.</p>",
-            "color": ""
+            "children": "<p>Um edifício comercial bem localizado pode proporcionar rendimentos contínuos por décadas mediante locação, preservando simultaneamente o patrimônio estatal.</p>"
           }
         },
         {
           "id": "b_mst27tk9_75g5",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Do ponto de vista econômico, a decisão depende de variáveis como expectativa de valorização imobiliária, taxa de ocupação, custos de manutenção, fluxo de caixa esperado, necessidade imediata de recursos, risco de mercado e horizonte temporal da política pública.</span></p><p>Essas variáveis econômicas são importantes, mas representam apenas uma das dimensões da decisão. Uma alternativa economicamente atrativa, por exemplo, pode ser incompatível com as regras de uso do território ou com uma necessidade social prioritária. Da mesma forma, uma finalidade pública desejável pode encontrar limitações nas características físicas ou jurídicas do imóvel.</p><p>A destinação também precisa considerar os resultados sociais, ambientais, territoriais e institucionais que cada alternativa pode produzir. <span style=\"text-wrap-mode: initial; color: inherit;\">Portanto, a discussão não deve ser reduzida à dicotomia entre vender ou manter.&nbsp;</span><span style=\"color: inherit; text-wrap-mode: initial;\">A decisão resulta justamente da análise conjunta desses diferentes elementos.</span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Do ponto de vista econômico, a decisão depende de variáveis como expectativa de valorização imobiliária, taxa de ocupação, custos de manutenção, fluxo de caixa esperado, necessidade imediata de recursos, risco de mercado e horizonte temporal da política pública.</span></p><p>Essas variáveis econômicas são importantes, mas representam apenas uma das dimensões da decisão. Uma alternativa economicamente atrativa, por exemplo, pode ser incompatível com as regras de uso do território ou com uma necessidade social prioritária. Da mesma forma, uma finalidade pública desejável pode encontrar limitações nas características físicas ou jurídicas do imóvel.</p><p>A destinação também precisa considerar os resultados sociais, ambientais, territoriais e institucionais que cada alternativa pode produzir. <span style=\"text-wrap-mode: initial; color: inherit;\">Portanto, a discussão não deve ser reduzida à dicotomia entre vender ou manter. </span><span style=\"color: inherit; text-wrap-mode: initial;\">A decisão resulta justamente da análise conjunta desses diferentes elementos.</span></p>"
           }
         },
         {
@@ -647,7 +601,7 @@
           "id": "b_mst2yn2v_ycrg",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">O desafio da gestão patrimonial moderna consiste justamente em criar mecanismos capazes de comparar alternativas tão diferentes. </span></p><p>Para você que atua com a gestão de imóveis públicos, esse desafio exige olhar para além de um único critério ou de uma solução previamente definida. Significa reunir e compreender as diferentes informações disponíveis sobre o imóvel, seu contexto e as alternativas possíveis, reconhecendo que aspectos jurídicos, territoriais, sociais, ambientais, institucionais e econômicos podem influenciar a decisão.</p><p>Essa perspectiva não significa que, individualmente, seja responsável por definir a destinação do imóvel. As decisões são tomadas no âmbito das competências e dos processos próprios de cada instituição. Significa, porém, compreender a complexidade dessas escolhas e reconhecer os diferentes elementos que precisam ser considerados na análise e na atuação profissional.</p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">O desafio da gestão patrimonial moderna consiste justamente em criar mecanismos capazes de comparar alternativas tão diferentes. </span></p><p>Para você que atua com a gestão de imóveis públicos, esse desafio exige olhar para além de um único critério ou de uma solução previamente definida. Significa reunir e compreender as diferentes informações disponíveis sobre o imóvel, seu contexto e as alternativas possíveis, reconhecendo que aspectos jurídicos, territoriais, sociais, ambientais, institucionais, econômicos e políticos podem influenciar a decisão.</p><p>Essa perspectiva não significa que você, individualmente, seja responsável por definir a destinação do imóvel. As decisões são tomadas no âmbito das competências e dos processos próprios de cada instituição. Significa, porém, compreender a complexidade dessas escolhas e reconhecer os diferentes elementos que precisam ser considerados na análise e na atuação profissional.</p>"
           }
         }
       ]
@@ -727,7 +681,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Destinar um imóvel público: um problema imobiliário ou uma decisão de Estado? [M413] ",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
