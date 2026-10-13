@@ -8,12 +8,12 @@
       "items": [
         {
           "id": "cjd67he6",
-          "text": "Complexidade e desafios para fiscalização patrimonial",
+          "text": "Complexidade e desafios na fiscalização patrimonial",
           "hidden": false
         },
         {
           "id": "c3tzeubh",
-          "text": "Do Plano Anual de Fiscalização (PAF) e Plano Anual Estadual de Fiscalização",
+          "text": "Do Plano Anual de Fiscalização (PAF) e Plano Anual Estadual de Fiscalização (PAEF)",
           "hidden": false
         },
         {
@@ -76,7 +76,7 @@
           "id": "cjd67he6",
           "type": "titulo",
           "props": {
-            "text": "Complexidade e desafios para fiscalização patrimonial",
+            "text": "Complexidade e desafios na fiscalização patrimonial",
             "level": "h2"
           }
         },
@@ -92,7 +92,7 @@
           "id": "c52ysn4m",
           "type": "prose",
           "props": {
-            "html": "<p>Inicialmente, é importante discorrer brevemente sobre as particularidades, a dinâmica e o que deve ser levado em consideração dentro da atividade fiscalizatória (que engloba o planejamento, a execução e o pós-operação) e no Planejamento Anual de Fiscalização da SPU. </p><p>Um primeiro desafio está na própria diversidade do patrimônio a ser fiscalizado. Em termos qualitativos, precisamos levar em conta que há diferentes tipos de classificação de bens (dominial, especial e de uso comum) e, ainda, que há variadas caracterizações possíveis (terreno de marinha, terreno marginal, praia, rio, mar, ilha, <span data-term=\"próprios nacionais\" data-definition=\"Os próprios nacionais são imóveis pertencentes à União destinados ao uso de servidores públicos federais ou, com maior frequência, de militares da ativa e seus dependentes.\"><span data-color=\"terra\">próprios nacionais</span></span>, faixa de segurança etc.). Cada situação pode envolver especificidades técnicas, legais e jurídicas que precisam ser consideradas pela fiscalização. </p><p>Além das características do bem, é necessário conhecer sua situação na gestão patrimonial ou seja, se um determinado imóvel está demarcado, cadastrado, destinado ou gerando receitas patrimoniais. Essas informações precisam ser consideradas tanto no planejamento (priorização) quanto na execução em si da fiscalização, pois são determinantes para compreender as possibilidades e os limites da ação fiscalizatória. </p><p>Por exemplo, se um imóvel está em uma área dominial presumida da União, ou seja, sem demarcação homologada, a ação fiscalizatória tem restrições. Se o imóvel já está destinado, a atuação da fiscalização tem também determinados limites.</p>"
+            "html": "<p>Inicialmente, é importante discorrer brevemente sobre as particularidades, a dinâmica e os aspectos que devem ser considerados na atividade fiscalizatória (que engloba o planejamento, a execução e o pós-operação) e no Planejamento Anual de Fiscalização da SPU.</p><p>Um primeiro desafio está na própria diversidade do patrimônio a ser fiscalizado. Em termos qualitativos, precisamos levar em conta que há diferentes tipos de classificação de bens (dominial, especial e de uso comum) e, ainda, que há variadas caracterizações possíveis (terreno de marinha, terreno marginal, praia, rio, mar, ilha, <span data-term=\"próprios nacionais\" data-definition=\"Os próprios nacionais são imóveis pertencentes à União destinados ao uso de servidores públicos federais ou, com maior frequência, de militares da ativa e seus dependentes.\"><span data-color=\"terra\">próprios nacionais</span></span>, faixa de segurança etc.). Cada situação pode envolver especificidades técnicas, legais e jurídicas que precisam ser consideradas pela área de Fiscalização.&nbsp;</p><p>Além das características do bem, é necessário conhecer sua situação na gestão patrimonial, ou seja, se um determinado imóvel está demarcado, cadastrado, destinado ou gerando receitas patrimoniais. Essas informações precisam ser consideradas tanto no planejamento (priorização) quanto na execução em si da fiscalização, pois são determinantes para compreender as possibilidades e os limites da ação fiscalizatória. </p><p>Por exemplo, se um imóvel está em uma área dominial presumida da União, ou seja, sem demarcação homologada, a ação fiscalizatória tem restrições. Se o imóvel já está destinado, a atuação da fiscalização tem também determinados limites.</p>"
           }
         },
         {
@@ -119,7 +119,7 @@
           "id": "bnjkqq98",
           "type": "prose",
           "props": {
-            "html": "<p>Em termos quantitativos, nos deparamos com uma <mark>grande quantidade de imóveis</mark> da União em todo espaço territorial e marítimo nacional, com medidas e áreas variadas, tornando praticamente impossível conseguir fiscalizar todo esse patrimônio. Além disso, há uma infinidade de possíveis tipos de usos e destinações que podem ser verificadas sobre os bens imóveis da União (residencial, comercial, turística, agrícola, regularização fundiária, unidade de conservação, aquicultura, estrutura náutica, instalação portuária, serviços público, entre outros), o que configura outra camada de temas, desafios e diretrizes para SPU e para a fiscalização patrimonial, na medida em que um determinado tipo de uso pode ter uma regulamentação específica a ser observada.</p>"
+            "html": "<p>Em termos quantitativos, nos deparamos com uma grande quantidade de imóveis da União em todo espaço territorial e marítimo nacional, com medidas e áreas variadas, impondo desafios à capacidade de acompanhamento e fiscalização do patrimônio. Além disso, há uma infinidade de possíveis tipos de usos e destinações que podem ser verificadas sobre os bens imóveis da União (residencial, comercial, turística, agrícola, regularização fundiária, unidade de conservação, aquicultura, estrutura náutica, instalação portuária, serviços público, entre outros), o que configura outra camada de temas, desafios e diretrizes para SPU e para a fiscalização patrimonial, na medida em que um determinado tipo de uso pode ter uma regulamentação específica a ser observada.&nbsp; &nbsp;</p>"
           }
         },
         {
@@ -150,7 +150,7 @@
               "id": "b_mswmwwcy_ot99",
               "type": "prose",
               "props": {
-                "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A título de exemplo, no caso de uma instalação portuária pendente de regularização, há previsão específica de que a superintendência notificará o interessado para apresentar documentação visando à regularização, que, se não atendida, o interessado sujeitar-se-á às sanções previstas no </span><a href=\"https://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/del2398compilado.htm\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">Decreto-Lei nº 2.398, de 1987</a><span style=\"text-wrap-mode: initial; color: inherit;\">, e na </span><a href=\"https://www.planalto.gov.br/ccivil_03/leis/l9636compilado.htm\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">Lei nº 9.636, de 1998</a><span style=\"text-wrap-mode: initial; color: inherit;\">, conforme dispõe o artigo 30 da Portaria nº 7.145, 13 de julho de 2018.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">O exemplo mostra que conhecer o tipo de uso e a regulamentação aplicável é importante não apenas para executar a fiscalização, mas também para avaliar a demanda e as possibilidades de atuação administrativa.</span></p>"
+                "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">A título de exemplo, no caso de uma instalação portuária pendente de regularização, há previsão específica de que a superintendência notificará o interessado para apresentar documentação visando à regularização, que, se não atendida, o interessado sujeitar-se-á às sanções previstas no </span><a href=\"https://www.planalto.gov.br/ccivil_03/decreto-lei/1965-1988/del2398compilado.htm\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">Decreto-Lei nº 2.398, de 1987</a><span style=\"text-wrap-mode: initial; color: inherit;\">, e na </span><a href=\"https://www.planalto.gov.br/ccivil_03/leis/l9636compilado.htm\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-wrap-mode: initial;\">Lei nº 9.636, de 1998</a><span style=\"text-wrap-mode: initial; color: inherit;\">, conforme dispõe o artigo 30 da Portaria nº 7.145, de 13 de julho de 2018</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">O exemplo mostra que conhecer o tipo de uso e a regulamentação aplicável é importante não apenas para executar a fiscalização, mas também para avaliar a demanda e as possibilidades de atuação administrativa.</span></p>"
               }
             }
           ]
@@ -164,8 +164,7 @@
             "icon": "anchor",
             "title": "",
             "heading": "",
-            "children": "<p>Estas diversidades de tipologias, usos e destinações, além do grande número de imóveis da União, por si só já impõem um enorme desafio para a atividade de fiscalizatória da SPU, tanto para o planejamento quanto para a execução da fiscalização.</p>",
-            "color": ""
+            "children": "<p>Essa diversidade de tipologias, usos e destinações, somada ao grande número de imóveis da União, por si só já impõe um enorme desafio à atividade fiscalizatória da SPU, tanto no planejamento quanto na execução.</p>"
           }
         },
         {
@@ -180,7 +179,7 @@
           "id": "be796h08",
           "type": "prose",
           "props": {
-            "html": "<p>Há ainda outros desafios, principalmente no que se refere às <mark>restrições orçamentárias, operacionais e de efetivo</mark> para fazer frente às demandas de fiscalização relativas ao patrimônio imobiliário da União. </p><p>A realidade enfrentada pelas unidades descentralizadas no órgão é de um quadro reduzido de servidores para as diversas atividades. Quanto aos fiscais designados, muitos também realizam atividades de outras áreas da SPU. Importante salientar que mesmo dentro da área de fiscalização há atividades além da simples ida a campo e que demandam significativo tempo e esforço, como as análises processuais, busca de documentos e informações internas e externas, subsídios para resposta a outros órgãos e para defesa da União em processos judiciais. <mark>A fiscalização, portanto, não se resume à inspeção em campo. Cada ação pode exigir preparação, análise de informações e documentos, execução e providências posteriores</mark>.</p><p>Quando a atividade fiscalizatória exige determinadas qualificações, como o uso de geotecnologias e em inspeção predial, o quadro de profissionais disponíveis é ainda mais escasso.</p>"
+            "html": "<p>Há ainda outros desafios, principalmente no que se refere às <mark>restrições orçamentárias, operacionais e de efetivo</mark> para fazer frente às demandas de fiscalização relativas ao patrimônio imobiliário da União. </p><p>A realidade enfrentada pelas unidades descentralizadas no órgão envolve a necessidade de conciliar o quadro de servidores disponível com a diversidade e a abrangência das atividades sob sua responsabilidade. Quanto aos fiscais designados, muitos também realizam atividades de outras áreas da SPU. Além das atividades realizadas em campo, a atuação fiscalizatória compreende um conjunto de providências que demanda tempo e dedicação, incluindo a preparação das ações, o levantamento e a análise de informações e documentos, as diligências necessárias à adequada caracterização das situações identificadas e as providências decorrentes da fiscalização. Inserem-se nesse contexto, ainda, a análise processual, a busca de documentos e informações junto a fontes internas e externas, bem como a elaboração de subsídios para respostas a outros órgãos e para a defesa da União em processos judiciais.&nbsp;</p><p>Em determinadas ações fiscalizatórias, são requeridas qualificações técnicas específicas, como aquelas relacionadas ao uso de geotecnologias, havendo, nesses casos, maior restrição na disponibilidade de profissionais com as competências necessárias.&nbsp;</p>"
           }
         },
         {
@@ -195,7 +194,7 @@
           "id": "b2rny0y4",
           "type": "prose",
           "props": {
-            "html": "<p>Outro fator importante é a significativa quantidade de demandas que chegam constantemente de vários interessados internos e externos, relacionadas a várias situações, sendo que cada estado tem tipos de demandas que são mais recorrentes do que outras. Boa parte das ações de fiscalização da SPU acabam sendo direcionadas para atender a atores externos, como o Ministérios Público e o Judiciário.</p>"
+            "html": "<p>Outro fator importante é a significativa quantidade de demandas que chegam constantemente de vários interessados internos e externos, relacionadas a várias situações, sendo que cada estado tem tipos de demandas que são mais recorrentes do que outras. Boa parte das ações de fiscalização da SPU acaba sendo direcionada para atender a atores externos, como o Ministério Público e o Poder Judiciário.</p>"
           }
         },
         {
@@ -276,7 +275,7 @@
           "id": "c3tzeubh",
           "type": "titulo",
           "props": {
-            "text": "Do Plano Anual de Fiscalização (PAF) e Plano Anual Estadual de Fiscalização",
+            "text": "Do Plano Anual de Fiscalização (PAF) e Plano Anual Estadual de Fiscalização (PAEF)",
             "level": "h2"
           }
         },
@@ -292,7 +291,7 @@
           "id": "cigja5ny",
           "type": "prose",
           "props": {
-            "html": "<p>Anualmente, a SPU elabora o <b>Plano Anual de Fiscalização – PAF</b>, definindo os objetivos, diretrizes, estratégias metas para a fiscalização do patrimônio da União, além de informar o orçamento disponível.</p><p>O PAF funciona como o instrumento que orienta o planejamento anual da fiscalização em âmbito nacional. Mas, como vimos, as Superintendências lidam com realidades muito diferentes. Como combinar essas diretrizes gerais com as demandas e capacidades de cada unidade?</p><p>O planejamento é elaborado levando em consideração os fatores apresentados anteriormente: a diversidade e o quantitativo de imóveis da União, as diferentes demandas de fiscalização, o número de fiscais, as restrições orçamentárias, as capacidades operacionais e as particularidades de cada unidade regional.</p><p>Nesse sentido, a <mark>Secretaria estabelece no PAF as principais demandas para aquele ano e a meta em termos quantidade total de fiscalizações para cada Superintendência</mark>, sem, contudo, definir uma quantidade exata de fiscalizações para cada tipo de demanda. Essa definição ocorre em uma etapa posterior, pelas próprias Superintendências, que conhecem mais diretamente as demandas existentes em seu território e sua capacidade operacional para atendê-las.</p>"
+            "html": "<p>Anualmente, a SPU elabora o <b>Plano Anual de Fiscalização (PAF)</b>, que define os objetivos, as diretrizes, as estratégias e as metas para a fiscalização do patrimônio da União, além de informar o orçamento disponível.</p><p>O PAF funciona como o instrumento que orienta o planejamento anual da fiscalização em âmbito nacional. Mas, como vimos, as Superintendências lidam com realidades muito diferentes. Como combinar essas diretrizes gerais com as demandas e capacidades de cada unidade?</p><p>O planejamento é elaborado levando em consideração os fatores apresentados anteriormente: a diversidade e o quantitativo de imóveis da União, as diferentes demandas de fiscalização, o número de fiscais, as restrições orçamentárias, as capacidades operacionais e as particularidades de cada unidade regional.</p><p>Nesse sentido, a <mark>Secretaria estabelece no PAF as principais demandas para aquele ano e a meta em termos da quantidade total de fiscalizações para cada Superintendência</mark>, sem, contudo, definir uma quantidade exata de fiscalizações para cada tipo de demanda. Essa definição ocorre em uma etapa posterior, pelas próprias Superintendências, que conhecem mais diretamente as demandas existentes em seu território e sua capacidade operacional para atendê-las.</p>"
           }
         },
         {
@@ -412,7 +411,7 @@
           "id": "bjsbspqa",
           "type": "titulo",
           "props": {
-            "text": "Do PAF ao planejamento de cada Superintendência<br><br>",
+            "text": "<p>Do PAF ao planejamento de cada Superintendência</p><p></p>",
             "level": "h3"
           }
         },
@@ -428,7 +427,7 @@
           "id": "b58rsb4o",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Com o PAF elaborado e publicado, as Superintendências são instadas a seguir os objetivos, diretrizes e metas estabelecidas, bem como o teto orçamentário disponibilizado e a elaborar um Plano Anual Estadual de Fiscalização – PAEF com o cronograma das fiscalizações que serão realizadas para os diferentes tipos de demanda, submetendo-o à Unidade Central para aprovação.</span></p><p>O PAEF representa, assim, o desdobramento do planejamento nacional em cada unidade regional. É nesse momento que as Superintendências organizam concretamente sua programação, considerando as prioridades estabelecidas no PAF e as demandas e condições de execução existentes em cada estado.</p><p>Em síntese, o modelo de planejamento adotado pela SPU busca conciliar, de forma técnica e racional, as diversas demandas de fiscalização com a disponibilidade de recursos humanos, orçamentários e operacionais disponíveis, permitindo que cada Superintendência organize a execução das ações considerando sua realidade e suas necessidades concretas. </p><p>Priorizar determinadas ações não significa, portanto, desconsiderar as demais demandas. Trata-se de um mecanismo de gestão para direcionar os esforços disponíveis às situações consideradas mais relevantes, urgentes ou estratégicas, sem deixar de reconhecer a importância das ações de rotina e de caráter preventivo.</p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Com o PAF elaborado e publicado, as Superintendências são instadas a seguir os objetivos, diretrizes e metas estabelecidas, bem como o teto orçamentário disponibilizado, e a elaborar um Plano Anual Estadual de Fiscalização – PAEF com o cronograma das fiscalizações que serão realizadas para os diferentes tipos de demanda, submetendo-o à Unidade Central para aprovação.</span></p><p>O PAEF representa, assim, o desdobramento do planejamento nacional em cada unidade regional. É nesse momento que as Superintendências organizam concretamente sua programação, considerando as prioridades estabelecidas no PAF e as demandas e condições de execução existentes em cada estado.</p><p>Em síntese, o modelo de planejamento adotado pela SPU busca conciliar, de forma técnica e racional, as diversas demandas de fiscalização com a disponibilidade de recursos humanos, orçamentários e operacionais disponíveis, permitindo que cada Superintendência organize a execução das ações considerando sua realidade e suas necessidades concretas. </p><p>Priorizar determinadas ações não significa, portanto, desconsiderar as demais demandas. Trata-se de um mecanismo de gestão para direcionar os esforços disponíveis às situações consideradas mais relevantes, urgentes ou estratégicas, sem deixar de reconhecer a importância das ações de rotina e de caráter preventivo.</p>"
           }
         },
         {
@@ -441,7 +440,7 @@
             "slot": "bv3gjx34__slot",
             "collapse": "none",
             "title": "",
-            "body": "<p>Quer conhecer como essas diretrizes e prioridades aparecem no instrumento utilizado pela SPU?&nbsp;</p><p><a href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais-2/plano-anual-de-fiscalizacao-2025-secretaria-do-patrimonio-da-uniao-spu/\" target=\"_blank\" rel=\"noopener noreferrer\" data-btn=\"secondary\">Acesse aqui um exemplo de Plano Anual de Fiscalização</a></p>"
+            "body": "<p>Quer conhecer como essas diretrizes e prioridades aparecem no instrumento utilizado pela SPU? </p><p><a href=\"https://memoria-spu.gestao.gov.br/publicacoes-e-relatorios-institucionais-2/plano-anual-de-fiscalizacao-2025-secretaria-do-patrimonio-da-uniao-spu/\" target=\"_blank\" rel=\"noopener noreferrer\" data-btn=\"secondary\">Acesse aqui um exemplo de Plano Anual de Fiscalização</a></p>"
           },
           "children": []
         },
@@ -538,7 +537,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Priorizando demandas de fiscalização [M621]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
