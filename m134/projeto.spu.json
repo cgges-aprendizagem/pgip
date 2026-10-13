@@ -1111,34 +1111,9 @@
         "kicker": "Para fechar",
         "kickerIcon": "check",
         "title": "Conclusão",
-        "body": "<p>Os casos e instrumentos apresentados revelam que o Poder Judiciário, o Ministério Público e os órgãos de controle se tornaram fortes influenciadores e, em situações de omissão grave, atores importantes da gestão do patrimônio imobiliário público no Brasil. Sentenças determinam restaurações, audiências de mediação precedem desocupações, comissões articulam soluções estruturais e auditorias definem agendas de melhoria. Esse protagonismo tem méritos inegáveis: destravou conflitos que se arrastavam há décadas, protegeu populações vulneráveis e deu visibilidade pública a um problema que a rotina administrativa havia normalizado.</p><p>É preciso, porém, olhar criticamente para esse modelo, que carrega ao menos quatro ordens de problemas.</p>"
+        "body": "<p>Os casos e instrumentos apresentados revelam que o Poder Judiciário, o Ministério Público e os órgãos de controle se tornaram fortes influenciadores e, em situações de omissão grave, atores importantes da gestão do patrimônio imobiliário público no Brasil. Sentenças determinam restaurações, audiências de mediação precedem desocupações, comissões articulam soluções estruturais e auditorias definem agendas de melhoria. Esse protagonismo tem méritos inegáveis: destravou conflitos que se arrastavam há décadas, protegeu populações vulneráveis e deu visibilidade pública a um problema que a rotina administrativa havia normalizado.</p>"
       },
       "children": [
-        {
-          "id": "bddt021a",
-          "type": "accordion",
-          "props": {
-            "numbered": true,
-            "items": [
-              {
-                "title": "Legitimidade e capacidade",
-                "content": "<p>Juízes, promotores e auditores não respondem eleitoralmente pelas escolhas alocativas que induzem, nem dispõem da visão orçamentária e territorial de conjunto que a gestão exige.</p>"
-              },
-              {
-                "title": "Seletividade da judicialização",
-                "content": "<p>A intervenção ocorre nos casos que chegam ao processo, não necessariamente nos mais graves ou prioritários. O imóvel que conta com um promotor atento, uma comunidade organizada ou visibilidade na imprensa tende a \"furar a fila\" das prioridades definidas nas políticas públicas, o que pode aprofundar desigualdades entre territórios e entre grupos com diferentes capacidades de mobilização.</p>"
-              },
-              {
-                "title": "Tempo e segurança jurídica",
-                "content": "<p>Gerir por processo judicial é caro e lento; multas diárias retiram recursos do mesmo orçamento que deveria financiar a solução; e a assimetria de estruturação entre tribunais e comissões, somada a controvérsias ainda abertas, pode produzir tratamentos distintos para situações semelhantes, gerando insegurança para gestores e cidadãos.</p>"
-              },
-              {
-                "title": "Risco de deslocamento de responsabilidade",
-                "content": "<p>Quanto mais o sistema de justiça e os órgãos de controle assumem a condução, menor a discricionariedade da administração pública e menor a capacidade de planejamento governamental.</p>"
-              }
-            ]
-          }
-        },
         {
           "id": "b4btkm80",
           "type": "prose",
