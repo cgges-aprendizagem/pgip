@@ -57,7 +57,7 @@
           "id": "b3lrbruy",
           "type": "prose",
           "props": {
-            "html": "<p>Como assinalado em outros materiais do Programa, a gestão de imóveis públicos pressupõe a aplicação de mecanismos capazes de prevenir, identificar violações ao adequado uso, disposição, manutenção e conservação dos bens públicos. <mark data-hl=\"green\">Sem instrumentos adequados de controle, proteção e responsabilização, o patrimônio público fica sujeito à ocupação irregular, ao desvio de finalidade, à degradação física, à perda de receitas e ao comprometimento de sua função socioambiental</mark>.<mark data-hl=\"terra\"></mark></p><p>Apesar da relevância do tema, o ordenamento jurídico brasileiro não possui uma lei geral nacional dedicada especificamente às infrações e sanções administrativas aplicáveis à gestão de imóveis públicos. Diferentemente do que ocorre em áreas como meio ambiente, trânsito ou defesa do consumidor, as normas relacionadas ao controle e à proteção do patrimônio imobiliário encontram-se dispersas em diferentes diplomas legais, abrangendo regras patrimoniais, urbanísticas, ambientais, contratuais e processuais.</p><p>Essa dispersão normativa também se reflete na literatura especializada. Embora existam importantes contribuições da doutrina administrativista sobre poder de polícia, processo administrativo e sanções administrativas, são relativamente escassos os estudos voltados especificamente para a fiscalização e responsabilização no contexto da gestão de imóveis públicos. Como consequência, muitos órgãos acabam construindo suas práticas a partir da adaptação de conceitos desenvolvidos em outros campos do Direito Administrativo.</p><p>Diante desse cenário, o objetivo deste material é apresentar os principais conceitos, instrumentos relacionados às infrações e sanções administrativas na gestão de imóveis públicos. A proposta não é esgotar o tema nem substituir a legislação específica aplicável a cada ente ou órgão público. Buscamos oferecer uma referência introdutória que permita compreender os fundamentos da atuação administrativa voltada à proteção do patrimônio imobiliário público, facilitando a interpretação das normas específicas e apoiando a atuação dos profissionais que trabalham com fiscalização, controle e conformidade patrimonial.</p>"
+            "html": "<p>Como assinalado em outros materiais do Programa, a gestão de imóveis públicos pressupõe a aplicação de mecanismos capazes de prevenir, identificar violações ao adequado uso, disposição, manutenção e conservação dos bens públicos. <mark data-hl=\"green\">Sem instrumentos adequados de controle, proteção e responsabilização, o patrimônio público fica sujeito à ocupação irregular, ao desvio de finalidade, à degradação física, à perda de receitas e ao comprometimento de sua função socioambiental</mark>.<mark data-hl=\"terra\"></mark></p><p>Apesar da relevância do tema, o ordenamento jurídico brasileiro não possui uma lei federal dedicada exclusivamente às infrações e sanções administrativas na gestão de imóveis públicos. Diferentemente do direito ambiental ou de trânsito - estruturados em microssistemas consolidados, o controle do patrimônio imobiliário pauta-se na aplicação combinada de normas administrativas, contratuais e civis.</p><p>Essa dispersão normativa também se reflete na literatura especializada. Embora existam importantes contribuições da doutrina administrativista sobre poder de polícia, processo administrativo e sanções administrativas, são relativamente escassos os estudos voltados especificamente para a fiscalização e responsabilização no contexto da gestão de imóveis públicos. Como consequência, muitos órgãos acabam construindo suas práticas a partir da adaptação de conceitos desenvolvidos em outros campos do Direito Administrativo.</p><p>Diante desse cenário, o objetivo deste material é apresentar os principais conceitos e instrumentos relacionados às infrações e sanções administrativas na gestão de imóveis públicos. A proposta não é esgotar o tema nem substituir a legislação específica aplicável a cada ente ou órgão público. Buscamos oferecer uma referência introdutória que permita compreender os fundamentos da atuação administrativa voltada à proteção do patrimônio imobiliário público, facilitando a interpretação das normas específicas e apoiando a atuação dos profissionais que trabalham com fiscalização, controle e conformidade patrimonial.</p>"
           }
         },
         {
@@ -113,14 +113,14 @@
             "variant": "block",
             "fontSize": "auto",
             "children": "<i>Infração administrativa contra o patrimônio imobiliário público é toda <b>ação</b> ou <b>omissão</b> que importe em violação do adequado uso, disposição, manutenção e conservação do bem.</i>",
-            "cite": "as infrações administrativas poderão se perpetrar fora de bens imóveis públicos, desde que se caracterize o comprometimento da destinação original do bem público, do uso racional e de sua integridade física."
+            "cite": ""
           }
         },
         {
           "id": "cz66jnqw",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Diferentemente do que ocorre em áreas como meio ambiente, trânsito ou defesa do consumidor, o ordenamento jurídico brasileiro não dispõe de uma lei nacional que tipifique, de forma sistemática e uniforme, as infrações administrativas relacionadas à gestão de imóveis públicos.</span></p><p>Em regra, as legislações patrimoniais estabelecem competências, instrumentos de gestão e mecanismos de proteção dos bens públicos, mas raramente apresentam um rol detalhado de condutas infracionais e respectivas sanções. Em razão da inexistência de uma legislação nacional que tipifique as infrações patrimoniais aplicáveis aos imóveis públicos, sua caracterização normalmente decorre da violação de deveres relacionados ao uso, à ocupação, à conservação e à proteção desses bens. </p>"
+            "html": "<p>A legislação patrimonial estabelece competências, instrumentos de gestão, mecanismos de proteção dos bens públicos e, em determinados casos, hipóteses específicas de infrações, a exemplo da Lei nº 9.636/1998 e do Decreto-Lei nº 2.398/1987. Nesse contexto, a caracterização das infrações patrimoniais exige, frequentemente, a articulação entre normas que estabelecem deveres relacionados ao uso, à ocupação, à conservação e à proteção dos imóveis da União e aquelas que definem as respectivas consequências administrativas.&nbsp;</p>"
           }
         },
         {
@@ -128,7 +128,7 @@
           "type": "kicker",
           "props": {
             "icon": "megaphone",
-            "children": "podem ser consideradas infrações"
+            "children": "Podem configurar infrações, entre outras condutas&nbsp;"
           }
         },
         {
@@ -178,10 +178,6 @@
                   {
                     "title": "",
                     "text": "Prática de atos que comprometam o uso coletivo, a conservação, a proteção ou a gestão regular do bem público."
-                  },
-                  {
-                    "title": "",
-                    "text": "Descumprimento de obrigações impostas pela legislação ou por instrumentos de destinação e uso do imóvel. "
                   }
                 ]
               }
@@ -279,7 +275,7 @@
               "props": {
                 "term": "Materialidade ",
                 "description": "",
-                "definition": "<p>Materialidade diz respeito à comprovação da ocorrência dos fatos que configuram a infração. É preciso demonstrar, por meio dos elementos disponíveis, o que aconteceu, onde, quando e em quais circunstâncias, na medida necessária à caracterização da conduta.</p><p><br></p><p><br></p>",
+                "definition": "<p>Materialidade corresponde à comprovação da ocorrência dos fatos que podem configurar infração, mediante a identificação e o registro dos elementos necessários à sua adequada caracterização, tais como a existência da ocupação, construção, intervenção ou utilização irregular, sua localização, extensão, características e demais circunstâncias relevantes para o enquadramento na hipótese legal de infração.&nbsp;</p>",
                 "icon": "file-question-mark",
                 "showIcon": true,
                 "useCoverImage": false,
@@ -296,7 +292,7 @@
               "props": {
                 "term": "Autoria ",
                 "description": "",
-                "definition": "<p>Autoria corresponde à identificação de quem praticou ou pode ser juridicamente responsabilizado pela conduta. Identificar uma irregularidade em determinado imóvel, portanto, não significa necessariamente que já esteja identificado seu autor.</p><p><br></p><p><br></p>",
+                "definition": "<p>Autoria corresponde à identificação da pessoa física ou jurídica responsável pela ação ou omissão que deu causa à infração administrativa, seja por atuação direta ou por interposta pessoa. Sua caracterização deve estar fundamentada em elementos que demonstrem o vínculo do responsável com a conduta ou situação infracional.&nbsp;</p>",
                 "icon": "message-circle-question-mark",
                 "showIcon": true,
                 "useCoverImage": false,
@@ -709,7 +705,7 @@
           "id": "cnm8ygxz",
           "type": "prose",
           "props": {
-            "html": "<p><b>Não há uma resposta única</b>. As sanções dependem da legislação aplicável ao patrimônio e à situação analisada.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A regulamentação dos imóveis da União oferece um exemplo concreto de como essas consequências podem ser disciplinadas.</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Para as infrações contra o patrimônio da União, a IN SPU/MGI nº 304/2026 prevê expressamente<b> quatro sanções</b>, que podem ser aplicadas isolada ou cumulativamente, observadas as características da infração e as disposições da legislação aplicável. </span></p>"
+            "html": "<p><b>Não há uma resposta única</b>. As sanções dependem da legislação aplicável ao patrimônio e à situação analisada.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">A regulamentação dos imóveis da União oferece um exemplo concreto de como essas consequências podem ser disciplinadas.</span></p><p>Para as infrações contra o patrimônio da União, a IN SPU/MGI nº 304/2026 prevê, com base na Lei nº 9.636/1998 e no Decreto-Lei nº 2.398/1987, sanções que podem ser aplicadas isolada ou cumulativamente, observadas as características da infração e as disposições da legislação aplicável.&nbsp;</p>"
           }
         },
         {
@@ -730,7 +726,7 @@
                 "tabLabel": "Embargo",
                 "title": "<span data-fs=\"h3\">Embargo</span>",
                 "subtitle": "",
-                "description": "<p>Na regulamentação da SPU, o <b>embargo</b> consiste na determinação de paralisação imediata de obra, serviço ou atividade até que a União se manifeste sobre a regularidade da situação.</p><p>A medida pode ser aplicada quando houver inadequação da destinação, inobservância do interesse público, irregularidade de uso ou comprometimento da integridade física de imóvel da União. O auto de embargo não substitui o auto de infração, e o embargo pode ser aplicado cumulativamente com outras sanções previstas na IN.<br></p>",
+                "description": "<p>Na regulamentação da SPU, o embargo consiste na determinação da paralisação imediata de obras, serviços ou atividades em execução, até que haja manifestação da União sobre o reconhecimento de eventuais direitos do embargado sobre o imóvel ou sobre a regularidade das obras, serviços ou atividades.&nbsp;</p><p>A medida é aplicada quando verificada inadequada destinação, inobservância do interesse público, irregularidade de uso ou comprometimento da integridade física dos imóveis pertencentes ao patrimônio da União. O auto de embargo não substitui o auto de infração e pode ser aplicado cumulativamente com multa, demolição, remoção ou desocupação.&nbsp;</p>",
                 "linkHref": "",
                 "linkLabel": ""
               },
@@ -744,7 +740,7 @@
                 "tabLabel": "Multa",
                 "title": "<span data-fs=\"h3\">Multa</span>",
                 "subtitle": "",
-                "description": "<p>A multa é uma das sanções previstas para as infrações contra o patrimônio da União. Sua aplicação e cálculo devem observar os critérios estabelecidos na legislação patrimonial e na regulamentação específica.</p><p>Na IN nº 304/2026, a multa possui caráter pessoal: é aplicada ao responsável pela infração e não se transfere aos herdeiros ou sucessores. </p>",
+                "description": "<p>A multa é uma das sanções previstas para as infrações contra o patrimônio da União, aplicada ao responsável pela prática da infração. Sua incidência e seu cálculo devem observar os critérios estabelecidos na legislação patrimonial e na regulamentação específica.&nbsp;</p><p>Nos termos da IN SPU/MGI nº 304/2026, a responsabilidade pela multa é pessoal, de modo que a obrigação decorrente da sanção não se transfere aos herdeiros ou sucessores do infrator.&nbsp;</p>",
                 "linkHref": "",
                 "linkLabel": ""
               },
@@ -989,7 +985,7 @@
                 "icon": "pencil-line",
                 "title": "A experiência da SPU",
                 "heading": "",
-                "children": "<p>Na fiscalização dos imóveis da União, a IN SPU/MGI nº 304/2026 determina que o processo seja inicialmente instruído com ordem de fiscalização; relatório de fiscalização; auto de infração, notificação ou ambos, quando houver; croqui das condições e irregularidades apuradas, quando houver auto; relatório fotográfico ou imagem de satélite; e, quando aplicável, identificação da Linha de Preamar Médio (LPM) ou da Linha Média das Enchentes Ordinárias (LMEO). A norma exige ainda a comprovação da data da ciência quando houver auto de infração ou notificação. </p>"
+                "children": "<p>Na fiscalização dos imóveis da União, a IN SPU/MGI nº 304/2026 estabelece os documentos e elementos que devem instruir o processo, conforme a natureza da fiscalização e as medidas adotadas. Entre eles, incluem-se a Ordem de Fiscalização, o Relatório de Fiscalização, o Auto de Infração e/ou a Notificação, o croqui das condições e irregularidades constatadas, relatório fotográfico e imagens de satélite. Quando aplicável, devem ser apresentados também os elementos relativos à Linha de Preamar Médio (LPM) ou à Linha Média das Enchentes Ordinárias (LMEO).&nbsp;</p><p>Nos casos em que houver Auto de Infração ou Notificação, deve ser comprovada a respectiva ciência pelo interessado, observados os procedimentos estabelecidos na norma.&nbsp;</p>"
               }
             }
           ]
@@ -1103,7 +1099,7 @@
                 "icon": "pencil-line",
                 "title": "A experiência da SPU",
                 "heading": "",
-                "children": "<p>A SPU contém fluxogramas detalhados de defesa, julgamento e recurso que podem ser aproveitados como referência visual, mas precisam ser redesenhados e atualizados antes de sua utilização, pois refletem a regulamentação anterior. O Manual, por exemplo, apresenta julgamento motivado e fluxos de recurso em primeira e segunda instâncias.</p>"
+                "children": "<p>A SPU dispõe de fluxogramas detalhados sobre as etapas de defesa, julgamento e recurso, que podem ser aproveitados como referência visual para a sistematização dos procedimentos. Embora elaborados sob a regulamentação anterior, esses fluxos permanecem úteis, uma vez que a IN SPU/MGI nº 304/2026 não alterou a lógica das fases defensiva e recursal.&nbsp;</p>"
               }
             }
           ]
@@ -1233,7 +1229,7 @@
       "type": "pagefooter",
       "props": {
         "code": "Infrações e sanções administrativas [M622]",
-        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria de Patrimônio da União – SPU.",
+        "context": "Este material foi desenvolvido com fins educacionais para o Programa de Desenvolvimento Profissional em Gestão de Imóveis Públicos, da Secretaria do Patrimônio da União – SPU.",
         "license": true,
         "licenseKind": "byncsa",
         "credits": [
