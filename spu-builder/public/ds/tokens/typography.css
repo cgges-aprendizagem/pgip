@@ -1,0 +1,50 @@
+/* ============================================================
+   TYPOGRAPHY — display marcante + corpo humanista
+   ============================================================ */
+:root {
+  /* Famílias */
+  --font-display: 'Red Hat Display', 'Archivo', system-ui, sans-serif;
+  --font-body: 'Source Sans 3', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Spectral', Georgia, 'Times New Roman', serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* Escala de tamanhos (rem, base 16px) */
+  --fs-eyebrow: 0.78rem;   /* rótulos mono, caixa-alta */
+  --fs-caption: 0.84rem;   /* legendas, fontes de imagem */
+  --fs-small: 0.92rem;
+  --fs-body: 1.0625rem;    /* 17px — corpo confortável */
+  --fs-body-lg: 1.1875rem; /* 19px — lead / introdução */
+  --fs-h6: 1.0625rem;
+  --fs-h5: 1.3rem;
+  --fs-h4: 1.6rem;
+  --fs-h3: 2.05rem;
+  --fs-h2: 2.7rem;
+  --fs-h1: 3.5rem;
+  --fs-display: clamp(3rem, 6vw, 5rem); /* @kind font */
+
+  /* Altura de linha */
+  --lh-tight: 1.08;    /* @kind font */
+  --lh-snug: 1.22;     /* @kind font */
+  --lh-heading: 1.16;  /* @kind font */
+  --lh-body: 1.65;     /* @kind font */
+  --lh-relaxed: 1.8;   /* @kind font */
+
+  /* Pesos */
+  --fw-regular: 400;   /* @kind font */
+  --fw-medium: 500;    /* @kind font */
+  --fw-semibold: 600;  /* @kind font */
+  --fw-bold: 700;      /* @kind font */
+  --fw-black: 800;     /* @kind font */
+
+  /* Tracking */
+  --ls-display: -0.018em; /* @kind font */
+  --ls-heading: -0.012em; /* @kind font */
+  --ls-body: 0em;         /* @kind font */
+  --ls-eyebrow: 0.16em;   /* @kind font */
+  --ls-mono: 0.02em;      /* @kind font */
+
+  /* Medida de leitura */
+  --measure: 74ch;        /* @kind other */
+  --measure-narrow: 54ch; /* @kind other */
+  --measure-wide: 78ch;   /* @kind other */
+}

@@ -1,0 +1,12 @@
+/* ============================================================
+   SPU ENAP Aprendizagem — Design System
+   Ponto de entrada global. APENAS @imports (sem regras aqui).
+   Consumidores ligam somente este arquivo.
+   ============================================================ */
+@import url('tokens/fonts.css');
+@import url('tokens/colors.css');
+@import url('tokens/typography.css');
+@import url('tokens/spacing.css');
+@import url('tokens/elevation.css');
+@import url('tokens/motion.css');
+@import url('tokens/base.css');

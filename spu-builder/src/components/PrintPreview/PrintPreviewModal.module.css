@@ -1,0 +1,296 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  overflow: auto;
+  background: color-mix(in srgb, var(--ink-900) 18%, var(--sand-100));
+  padding: 72px 24px 32px;
+}
+
+.toolbar {
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+  width: min(760px, calc(100vw - 32px));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+}
+
+.toolbar strong,
+.toolbar span {
+  display: block;
+}
+
+.toolbar strong {
+  color: var(--text-strong);
+  font-size: var(--fs-small);
+}
+
+.toolbar span {
+  margin-top: 2px;
+  color: var(--text-muted);
+  font-size: var(--fs-caption);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+.actions button {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--text-body);
+  padding: var(--space-2) var(--space-3);
+  font: inherit;
+  font-size: var(--fs-caption);
+  cursor: pointer;
+}
+
+.actions button:first-child {
+  border-color: var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font-weight: var(--fw-semibold);
+}
+
+.sheet {
+  --spu-print-image-max-height: 89mm;
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  background: var(--color-page);
+  box-shadow: 0 18px 54px rgba(0, 0, 0, .2);
+  overflow-x: hidden;
+}
+
+.sheet :global(.spu-section),
+.sheet :global(.spu-fullbleed--bleed),
+.sheet :global(.spu-bleedimg--bleed),
+.sheet :global(.spu-panel--feature) {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transform: none !important;
+}
+
+.sheet :global(.spu-section__inner) {
+  max-width: 100% !important;
+}
+
+.sheet :global(.spu-fullbleed) {
+  border-radius: 0;
+}
+
+.sheet :global(.spu-bleedimg__parallax) {
+  background-attachment: scroll !important;
+}
+
+.sheet :global(.spu-pagetoc) {
+  display: none !important;
+}
+
+.sheet :global(.spu-figure),
+.sheet :global(.spu-map),
+.sheet :global(.spu-bleedimg),
+.sheet :global(.spu-reveal),
+.sheet :global(.spu-reveal-print figure),
+.sheet :global(.spu-examplecard__cover),
+.sheet :global(.spu-acc__media),
+.sheet :global(.spu-tl__media),
+.sheet :global(.spu-twi__media) {
+  break-inside: avoid;
+}
+
+.sheet :global(.spu-map__frame),
+.sheet :global(.spu-bleedimg__frame),
+.sheet :global(.spu-reveal),
+.sheet :global(.spu-reveal-print figure),
+.sheet :global(.spu-examplecard__cover),
+.sheet :global(.spu-acc__media),
+.sheet :global(.spu-tl__media),
+.sheet :global(.spu-twi__media) {
+  max-height: var(--spu-print-image-max-height) !important;
+  overflow: hidden;
+}
+
+.sheet :global(.spu-map__img),
+.sheet :global(.spu-bleedimg__frame img),
+.sheet :global(.spu-reveal img),
+.sheet :global(.spu-reveal-print img),
+.sheet :global(.spu-examplecard__cover img),
+.sheet :global(.spu-acc__media img),
+.sheet :global(.spu-tl__media img),
+.sheet :global(.spu-twi__media img),
+.sheet :global(.spu-map__frame image-slot),
+.sheet :global(.spu-bleedimg__frame image-slot),
+.sheet :global(.spu-reveal image-slot),
+.sheet :global(.spu-reveal-print image-slot),
+.sheet :global(.spu-examplecard__cover image-slot),
+.sheet :global(.spu-acc__media image-slot),
+.sheet :global(.spu-tl__media image-slot),
+.sheet :global(.spu-twi__media image-slot) {
+  max-height: var(--spu-print-image-max-height) !important;
+  object-fit: contain !important;
+}
+
+.sheet :global(.spu-figure__frame) {
+  max-height: none !important;
+  overflow: hidden;
+}
+
+.sheet :global(.spu-figure__frame img),
+.sheet :global(.spu-figure__frame > image-slot) {
+  width: 100% !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
+
+.sheet :global(image-slot:not([data-filled])),
+.sheet :global(.spu-carousel__slide:has(.spu-figure__frame > image-slot:not([data-filled]))),
+.sheet :global(.spu-figure:has(.spu-figure__frame > image-slot:not([data-filled]))),
+.sheet :global(.spu-acc__media:has(image-slot:not([data-filled]))),
+.sheet :global(.spu-tl__media:has(image-slot:not([data-filled]))) {
+  display: none !important;
+}
+
+/* A prévia A4 é exibida em tela, portanto replica aqui a expansão que o DS
+   aplica apenas dentro de @media print. */
+.sheet :global(.spu-flip) {
+  cursor: auto;
+  break-inside: avoid;
+}
+
+.sheet :global(.spu-flip__inner) {
+  transform: none !important;
+  min-height: 0 !important;
+}
+
+.sheet :global(.spu-flip__face) {
+  position: static !important;
+  transform: none !important;
+  backface-visibility: visible !important;
+  -webkit-backface-visibility: visible !important;
+  box-shadow: none;
+  opacity: 1 !important;
+}
+
+.sheet :global(.spu-flip__face--front) {
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  border-bottom: 0;
+}
+
+.sheet :global(.spu-flip__face--back) {
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+.sheet :global(.spu-flip__hint),
+.sheet :global(.spu-flip__cue) {
+  display: none !important;
+}
+
+.pageBreakBefore {
+  break-before: page;
+  page-break-before: always;
+}
+
+.answerKey,
+.richNotes {
+  max-width: var(--container-content);
+  margin: var(--space-8) auto 0;
+  padding: var(--space-4) 0 0;
+  border-top: 1px solid var(--color-border);
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-size: var(--fs-caption);
+}
+
+.answerKey p,
+.richNotes p {
+  margin: 0 0 var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.answerKey ol,
+.richNotes ol {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+.answerKey ol {
+  columns: 2;
+}
+
+.answerKey li,
+.richNotes li {
+  break-inside: avoid;
+  margin: 0 0 .25em;
+}
+
+.richNotes a {
+  color: var(--color-link);
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .backdrop {
+    padding: 88px 12px 24px;
+  }
+
+  .toolbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .sheet {
+    width: 100%;
+    min-height: 140vw;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  .backdrop {
+    position: static;
+    inset: auto;
+    overflow: visible;
+    padding: 0;
+    background: transparent;
+  }
+
+  .toolbar {
+    display: none;
+  }
+
+  .sheet {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding-block: 10mm;
+    box-sizing: border-box;
+    box-shadow: none;
+    background: transparent;
+  }
+
+}

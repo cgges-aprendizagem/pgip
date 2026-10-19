@@ -1,0 +1,138 @@
+/* ============================================================
+   COLORS — "Território Cívico"
+   Petróleo (institucional) · Terracota (acento quente) ·
+   Ocre/Ouro (secundário) · Areia (superfícies) · Ardósia (neutros)
+   ============================================================ */
+:root {
+  /* —— Petróleo / teal (primária institucional) —— */
+  --petrol-900: #0E2E2B;
+  --petrol-800: #133D39;
+  --petrol-700: #16433F;
+  --petrol-600: #1F5D5A;
+  --petrol-500: #2E7A75;
+  --petrol-400: #5BA39D;
+  --petrol-300: #87BEB9;
+  --petrol-200: #AFD4D0;
+  --petrol-100: #D6E8E6;
+  --petrol-50:  #EAF3F1;
+
+  /* —— Terracota (acento quente) —— */
+  --terra-800: #7E2F18;
+  --terra-700: #9E3D20;
+  --terra-600: #C4502E;
+  --terra-500: #D9633F;
+  --terra-400: #E5856A;
+  --terra-300: #ECA98E;
+  --terra-200: #F3C8B6;
+  --terra-100: #F7E0D5;
+  --terra-50:  #FBEFE8;
+
+  /* —— Ocre / ouro (secundária — herança Cívico) —— */
+  --ochre-800: #7E5610;
+  --ochre-700: #9A6A14;
+  --ochre-600: #C8922A;
+  --ochre-500: #D6A23C;
+  --ochre-400: #E0B45F;
+  --ochre-300: #EBC988;
+  --ochre-200: #F0DCAC;
+  --ochre-100: #F7EDD3;
+  --ochre-50:  #FBF5E6;
+
+  /* —— Verde (status sucesso / mapas) —— */
+  --green-700: #245C3D;
+  --green-600: #2F7D52;
+  --green-400: #5FA97E;
+  --green-100: #DDEEE2;
+
+  /* —— Ardósia (neutros frios) —— */
+  --slate-800: #2A343B;
+  --slate-700: #3A4750;
+  --slate-600: #5A6B7B;
+  --slate-500: #76858F;
+  --slate-400: #8C9AA6;
+  --slate-300: #B0BAC2;
+  --slate-200: #C9D2D9;
+  --slate-100: #E3E9ED;
+
+  /* —— Areia (neutros quentes / superfícies de destaque) —— */
+  --sand-300: #E0D2B8;
+  --sand-200: #EBE0CC;
+  --sand-100: #F4ECDD;
+  --sand-50:  #FBF7EF;
+
+  /* —— Nuvem (neutros quentes near-white / fundo de página — mais claros que sand-50) —— */
+  --cloud-200: #FCFAF5;
+  --cloud-100: #FDFBF7;
+  --cloud-50:  #FEFDFB;
+
+  /* —— Tinta (texto) —— */
+  --ink-900: #1C2420;
+  --ink-800: #232D28;
+  --ink-700: #2E3A36;
+  --ink-500: #515C57;
+  --ink-400: #6B756F;
+  --ink-300: #7E8884;
+
+  --white: #FFFFFF;
+
+  /* ============ SEMÂNTICOS ============ */
+  /* Superfícies / fundos — página fria-clara ("Nuvem neutra"), cards brancos */
+  --color-bg: var(--cloud-100);
+  --color-surface: var(--white);
+  /* Blocos de destaque: superfície quente-neutra (areia dessaturada) */
+  --color-surface-warm: #ECE4D3;           /* areia clara — boxes, reflexão, timeline, tabelas */
+  --color-surface-muted: #ECE4D3;          /* alias semântico para a superfície quente */
+  --color-surface-cool: var(--cloud-200);  /* superfície fria neutra */
+  --color-surface-sunken: var(--cloud-200);
+  --color-surface-inverse: var(--petrol-800);
+
+  /* Texto */
+  --text-strong: var(--ink-900);
+  --text-body: var(--ink-700);
+  --text-muted: var(--ink-500);
+  --text-faint: var(--ink-300);
+  --text-on-dark: #EDE7DA;
+  --text-on-dark-muted: rgba(237, 231, 218, 0.72);
+
+  /* Marca */
+  --color-primary: var(--petrol-600);
+  --color-primary-strong: var(--petrol-700);
+  --color-primary-hover: var(--petrol-700);
+  --color-primary-soft: var(--petrol-50);
+  --color-on-primary: #F2F8F7;
+
+  --color-accent: var(--terra-600);
+  --color-accent-strong: var(--terra-700);
+  --color-accent-soft: var(--terra-100);
+  --color-on-accent: #FCF2ED;
+
+  --color-secondary: var(--ochre-600);
+  --color-secondary-strong: var(--ochre-700);
+  --color-secondary-soft: var(--ochre-100);
+
+  /* Linhas e bordas */
+  --color-border: rgba(28, 36, 32, 0.12);
+  --color-border-strong: rgba(28, 36, 32, 0.22);
+  --color-border-light: rgba(28, 36, 32, 0.07);
+  --color-divider: var(--sand-200);
+
+  /* Links */
+  --color-link: var(--petrol-700);
+  --color-link-hover: var(--terra-700);
+
+  /* Estados / callouts semânticos (info, atenção, alerta, sucesso, nota) */
+  --status-info: var(--petrol-600);
+  --status-info-soft: var(--petrol-50);
+  --status-attention: var(--ochre-600);
+  --status-attention-soft: var(--ochre-100);
+  --status-warning: var(--terra-600);
+  --status-warning-soft: var(--terra-50);
+  --status-success: var(--green-600);
+  --status-success-soft: var(--green-100);
+  --status-note: var(--slate-600);
+  --status-note-soft: var(--slate-100);
+
+  /* Realce de seleção/foco */
+  --color-focus-ring: rgba(31, 93, 90, 0.45);
+  --color-selection: var(--ochre-200);
+}

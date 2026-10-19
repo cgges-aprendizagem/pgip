@@ -26,16 +26,41 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Configurar Node para o builder
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: spu-builder/package-lock.json
+
+      - name: Instalar dependências do builder
+        working-directory: spu-builder
+        run: npm ci
+
+      - name: Verificar e compilar o builder
+        working-directory: spu-builder
+        run: |
+          npm run lint
+          node scripts/test-project-images.mjs
+          npm run build
+
       - name: Gerar índice dos conteúdos
         run: node scripts/generate-index.mjs
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
 
+      - name: Preparar arquivos públicos
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='/.git/' --exclude='/.github/' --exclude='/_site/' --exclude='/spu-builder/' ./ _site/
+          mkdir -p _site/spu-builder
+          cp -a spu-builder/dist/. _site/spu-builder/
+
       - name: Preparar site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Publicar
         id: deployment

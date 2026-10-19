@@ -1,0 +1,140 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls-body);
+  color: var(--text-body);
+  background: var(--color-surface-sunken);
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font-family: inherit; }
+
+@page {
+  size: A4;
+  margin: 16mm 14mm;
+}
+
+@media print {
+  body.spu-print-preview-open [data-spu-app-shell] {
+    display: none !important;
+  }
+}
+
+.spu-figure__frame > image-slot {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 100% !important;
+}
+
+.spu-figure--small,
+.spu-figure--pequena {
+  width: min(100%, 340px);
+  margin-inline: auto;
+}
+
+.spu-figure--medium,
+.spu-figure--medio,
+.spu-figure--media {
+  width: min(100%, 560px);
+  margin-inline: auto;
+}
+
+.spu-figure--large,
+.spu-figure--wide,
+.spu-figure--ampla {
+  width: min(100%, 820px);
+  margin-inline: auto;
+}
+
+.spu-figure--total {
+  width: 100%;
+}
+
+.spu-block-title:is(h2) {
+  line-height: 1.06;
+}
+
+.spu-block-title .spu-richtext {
+  line-height: inherit;
+}
+
+.spu-content-slider__title .spu-richtext {
+  line-height: inherit;
+}
+
+.spu-richtext [data-term] {
+  position: relative;
+  display: inline-block;
+}
+
+.spu-term-pop {
+  position: fixed;
+  z-index: 10050;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 24px));
+  display: none;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--text-body);
+  box-shadow: var(--shadow-lg);
+  text-align: left;
+  font-size: var(--fs-small);
+  line-height: 1.5;
+}
+
+.spu-term-pop::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: var(--spu-term-arrow, 18px);
+  width: 11px;
+  height: 11px;
+  background: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.spu-term-pop[data-placement="bottom"]::after {
+  top: auto;
+  bottom: 100%;
+  transform: translate(-50%, 50%) rotate(225deg);
+}
+
+.spu-term-pop strong {
+  display: block;
+  margin-bottom: .25em;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+}
+
+.spu-term-pop__def p { margin: 0 0 .55em; }
+.spu-term-pop__def p:last-child { margin-bottom: 0; }
+
+/* Full-bleed escuro: negrito deve manter a cor clara herdada do texto. */
+.spu-conclusion .spu-richtext :is(strong, b) {
+  color: inherit;
+}
+
+.spu-accordion-blocks,
+.spu-embedded-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flow-block);
+  margin-top: var(--space-5);
+}
+
+.spu-term-pop.is-open {
+  display: block;
+}

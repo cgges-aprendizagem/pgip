@@ -1,0 +1,279 @@
+.root {
+  overflow-y: auto;
+  background: var(--color-surface-sunken);
+  position: relative;
+  padding-bottom: var(--space-32);
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  height: 40vh;
+  color: var(--text-faint);
+  font-size: var(--fs-body);
+  text-align: center;
+  padding: var(--space-6);
+}
+
+/* ── Folha (bloco de conteúdo) ── */
+.leafWrap {
+  position: relative;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+  transition: outline-color var(--dur-fast) var(--ease-out);
+}
+
+.leafWrap:hover { outline-color: var(--color-primary-soft); }
+.leafSelected { outline-color: var(--color-primary) !important; }
+
+/* A sobrelinha pertence visualmente ao conteúdo seguinte; neutraliza o gap
+   amplo da pilha e conserva apenas um respiro curto. */
+.stack > .leafCompactAfter:not(:last-child) {
+  margin-bottom: calc(-1 * var(--flow-block) + var(--space-2));
+}
+
+/* H3–H6 da pilha principal pertencem ao conteúdo seguinte. O seletor direto
+   impede que o ajuste alcance títulos internos de painéis, colunas e recursos. */
+.containerWrap:is([data-block-type='section'], [data-block-type='sectionslide'])
+  > :global(.spu-section)
+  > :global(.spu-section__inner)
+  > .stack
+  > .leafSubheadingAfter:not(:last-child) {
+  margin-bottom: calc(-1 * var(--flow-block) + var(--space-3));
+}
+
+/* A seção expansível distribui os filhos em duas pilhas próprias. Replica
+   nelas a aproximação de eyebrow e subtítulos usada pela seção comum. */
+.containerWrap[data-block-type='collapsiblesection']
+  :global(.spu-csection__always) > .leafCompactAfter:not(:last-child),
+.containerWrap[data-block-type='collapsiblesection']
+  :global(.spu-csection__body) > .leafCompactAfter:not(:last-child) {
+  margin-bottom: calc(-1 * var(--flow-block) + var(--space-2));
+}
+
+.containerWrap[data-block-type='collapsiblesection']
+  :global(.spu-csection__always) > .leafSubheadingAfter:not(:last-child),
+.containerWrap[data-block-type='collapsiblesection']
+  :global(.spu-csection__body) > .leafSubheadingAfter:not(:last-child) {
+  margin-bottom: calc(-1 * var(--flow-block) + var(--space-3));
+}
+
+/* ── Container (Section / Columns) ── */
+.containerWrap {
+  position: relative;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  cursor: pointer;
+  transition: outline-color var(--dur-fast) var(--ease-out);
+}
+
+.containerWrap:hover { outline-color: var(--color-secondary-soft); }
+.containerSelected { outline-color: var(--color-secondary) !important; }
+
+/* Pilha de filhos (Section) — gap do DS */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--flow-block);
+  min-height: 48px;
+}
+
+/* O wrapper da pilha já fornece o espaçamento. Remove margens externas dos
+   componentes para evitar a soma margin + gap no editor. Título e eyebrow
+   mantêm suas regras compactas próprias. */
+.stack > .leafWrap > div > :not(:global(.spu-block-title), :global(.spu-kicker)) {
+  margin-block: 0;
+}
+
+/* No canvas o wrapper da pilha é local; conserva o mesmo respiro que a
+   `.spu-blockstack` recebe no preview dentro do Card de exemplo. */
+.containerWrap[data-block-type='examplecard']
+  :global(.spu-examplecard__text) + .stack {
+  margin-top: var(--space-5);
+}
+
+.dropOver {
+  outline: 2px dashed var(--color-secondary);
+  outline-offset: -4px;
+  background: var(--color-secondary-soft);
+  border-radius: var(--radius-sm);
+}
+
+.dropIndicator {
+  position: relative;
+  height: 0;
+  z-index: 18;
+  pointer-events: none;
+}
+
+.dropIndicator::before {
+  content: "";
+  position: absolute;
+  left: var(--space-4);
+  right: var(--space-4);
+  top: -2px;
+  height: 4px;
+  border-radius: var(--radius-pill);
+  background: var(--color-secondary);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-secondary) 22%, transparent);
+}
+
+.dropIndicator span {
+  position: absolute;
+  left: var(--space-4);
+  top: -7px;
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-pill);
+  background: var(--color-secondary);
+  box-shadow: 0 0 0 4px var(--color-secondary-soft);
+}
+
+.emptyDrop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 96px;
+  padding: var(--space-5);
+  color: var(--text-faint);
+  font-size: var(--fs-caption);
+  text-align: center;
+  border: 1.5px dashed var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.hint {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-faint);
+  opacity: 0.7;
+}
+
+.embeddedBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  border-top: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  min-height: 72px;
+}
+
+.embeddedBlocks > .leafWrap,
+.embeddedBlocks > .containerWrap {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.emptyEmbeddedDrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 56px;
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--text-faint);
+  font-size: var(--fs-caption);
+}
+
+/* ── Handles sobrepostos ── */
+.handles {
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-2);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1);
+  box-shadow: var(--shadow-sm);
+}
+
+.tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: var(--ls-eyebrow);
+  color: var(--color-secondary-strong);
+  padding: 0 var(--space-1);
+}
+
+.handle,
+.handleDanger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 1;
+  transition: background var(--dur-fast) var(--ease-out);
+}
+
+.handle:hover { background: var(--color-surface-cool); color: var(--text-strong); }
+.handle:disabled { opacity: 0.3; cursor: default; background: var(--color-surface); }
+
+/* Camada de edição de hotspots */
+.hotspotLayer {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  cursor: crosshair;
+}
+
+.hotspotHandle {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--color-accent, #c96442);
+  color: #fff;
+  border: 2px solid #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: grab;
+  touch-action: none;
+}
+
+.hotspotHandle:active { cursor: grabbing; }
+
+.hotspotHint {
+  position: absolute;
+  left: 50%;
+  bottom: var(--space-3);
+  transform: translateX(-50%);
+  white-space: nowrap;
+  background: rgba(28, 36, 32, 0.82);
+  color: #fff;
+  font-size: 11px;
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-pill);
+  pointer-events: none;
+}
+.handleDanger { color: var(--status-attention); }
+.handleDanger:hover { background: var(--status-attention-soft); }
