@@ -42,6 +42,7 @@ jobs:
         run: |
           npm run lint
           node scripts/test-project-images.mjs
+          node scripts/test-published-project.mjs
           npm run build
 
       - name: Gerar índice dos conteúdos

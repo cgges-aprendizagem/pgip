@@ -21,7 +21,7 @@ const runtime = {
 };
 const context = vm.createContext({
   console, Blob, Uint8Array, atob, btoa, Number, JSON,
-  window: { __SPU_IMAGE_SLOT_RUNTIME: runtime },
+  window: { location: { href: 'https://example.com/pgip/spu-builder/' }, __SPU_IMAGE_SLOT_RUNTIME: runtime },
   localStorage: { setItem() {}, removeItem() {} },
   URL: { createObjectURL(blob) { downloaded = blob; return 'blob:test'; }, revokeObjectURL() {} },
   document: { createElement: () => ({ click() { downloadName = this.download; }, remove() {} }), body: { appendChild() {} } },

@@ -1,8 +1,11 @@
-const LEGACY_SLOT_KEY = 'spu_image_slots';
+import { projectStorageSuffix } from './publishedProject';
+
+const storageSuffix = projectStorageSuffix(window.location.href);
+const LEGACY_SLOT_KEY = 'spu_image_slots' + storageSuffix;
 const DB_NAME = 'spu_builder_assets';
 const DB_VERSION = 1;
 const STORE_NAME = 'state';
-const SLOT_RECORD = 'image_slots';
+const SLOT_RECORD = 'image_slots' + storageSuffix;
 
 let cached: string | null = null;
 let database: Promise<IDBDatabase> | null = null;

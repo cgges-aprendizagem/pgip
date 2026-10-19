@@ -28,12 +28,13 @@ import { PreviewModal } from './components/Preview/PreviewModal';
 import { PrintPreviewModal } from './components/PrintPreview/PrintPreviewModal';
 import { RichNotesModal } from './components/RichNotes/RichNotesModal';
 import { normalizeProjectContent } from './utils/projectCompat';
-import { clearImageSlots } from './utils/imageSlotStore';
+import { loadPublishedProject, projectStorageSuffix, publishedProjectLocation } from './utils/publishedProject';
+import { clearImageSlots, replaceImageSlots } from './utils/imageSlotStore';
 import type { Block } from './types/ds';
 import { updateRichNote, type RichNoteUpdate } from './utils/richNotes';
 import styles from './App.module.css';
 
-const AUTOSAVE_KEY = 'spu_builder_doc';
+const AUTOSAVE_KEY = 'spu_builder_doc' + projectStorageSuffix(window.location.href);
 type DropTarget = { parentId: string | null; index: number };
 
 // Em containers aninhados (accordion > colunas), o centro geométrico pode
@@ -69,6 +70,10 @@ class AppErrorBoundary extends Component<{ children: React.ReactNode }, { error:
 
 export default function App() {
   const ns = useDS();
+  const [startup, setStartup] = useState<'loading' | 'choose' | 'ready' | 'error'>('loading');
+  const [startupError, setStartupError] = useState('');
+  const [startupChoice, setStartupChoice] = useState<'saved' | 'published' | null>(null);
+  const [startupAttempt, setStartupAttempt] = useState(0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [previewing, setPreviewing] = useState(false);
   const [printPreviewing, setPrintPreviewing] = useState(false);
@@ -85,24 +90,47 @@ export default function App() {
 
   useEffect(() => {
     if (!ns) return;
-    try {
-      const saved = localStorage.getItem(AUTOSAVE_KEY);
-      if (saved) {
-        const doc = ns.BuilderExport.migrate(normalizeProjectContent(JSON.parse(saved)));
-        dispatch({ type: 'SET_DOC', doc });
-        return;
+    let cancelled = false;
+    const initialize = async () => {
+      setStartup('loading');
+      try {
+        const location = publishedProjectLocation(window.location.href);
+        const saved = localStorage.getItem(AUTOSAVE_KEY);
+        if (location && saved && startupChoice === null) {
+          setStartup('choose');
+          return;
+        }
+        if (location && startupChoice !== 'saved') {
+          const project = await loadPublishedProject(window.location.href, ns.BuilderExport);
+          if (cancelled) return;
+          await replaceImageSlots(project.imageSlots);
+          if (cancelled) return;
+          dispatch({ type: 'SET_DOC', doc: project.doc });
+        } else {
+          const doc = saved
+            ? ns.BuilderExport.migrate(normalizeProjectContent(JSON.parse(saved)))
+            : ns.BuilderExport.newDoc({ title: 'Rascunho' });
+          if (cancelled) return;
+          dispatch({ type: 'SET_DOC', doc });
+        }
+        setStartup('ready');
+      } catch (error) {
+        if (cancelled) return;
+        setStartupError(error instanceof Error ? error.message : 'Não foi possível abrir o material.');
+        setStartup('error');
       }
-    } catch {/* ignore */}
-    dispatch({ type: 'SET_DOC', doc: ns.BuilderExport.newDoc({ title: 'Rascunho' }) });
-  }, [ns]);
+    };
+    void initialize();
+    return () => { cancelled = true; };
+  }, [ns, startupChoice, startupAttempt]);
 
   useEffect(() => {
-    if (!ns || !state.doc.schema) return;
+    if (!ns || startup !== 'ready' || !state.doc.schema) return;
     const id = setTimeout(() => {
       localStorage.setItem(AUTOSAVE_KEY, ns.BuilderExport.serialize(state.doc));
     }, 400);
     return () => clearTimeout(id);
-  }, [ns, state.doc]);
+  }, [ns, state.doc, startup]);
 
   // Sincroniza o sumário (meta.toc.items) com os títulos H2 do documento,
   // preservando "hidden" por id. Sumário recolhido renderizado pelo DS.
@@ -300,11 +328,29 @@ export default function App() {
     return { parentId: null, index: overIndex + (after ? 1 : 0) };
   }
 
-  if (!ns) {
+  if (startup === 'choose') {
+    return <div className={styles.loading}>
+      <h1>Há um rascunho deste material neste navegador</h1>
+      <p>Você pode continuar o rascunho ou substituí-lo pela versão publicada.</p>
+      <button onClick={() => setStartupChoice('saved')}>Continuar meu rascunho</button>
+      <button onClick={() => setStartupChoice('published')}>Abrir versão publicada e substituir rascunho</button>
+      <a href="../">Voltar à biblioteca</a>
+    </div>;
+  }
+  if (startup === 'error') {
+    return <div className={styles.loading} role="alert">
+      <h1>Não foi possível abrir o material</h1>
+      <p>{startupError}</p>
+      <p>Seu rascunho local foi preservado.</p>
+      <button onClick={() => setStartupAttempt(value => value + 1)}>Tentar novamente</button>
+      <a href="../">Voltar à biblioteca</a>
+    </div>;
+  }
+  if (!ns || startup !== 'ready') {
     return (
       <div className={styles.loading}>
         <div className={styles.spinner} />
-        Carregando Design System…
+        {ns ? 'Carregando material e imagens…' : 'Carregando Design System…'}
       </div>
     );
   }

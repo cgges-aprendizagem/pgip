@@ -66,6 +66,7 @@ for (const name of entries) {
   modules.push({
     jsonHref: jsonFile ? `./${encodeURIComponent(name)}/${encodeURIComponent(jsonFile)}` : '',
     downloadName: preferredJson,
+    editHref: jsonFile ? `./spu-builder/?material=${encodeURIComponent(name.toLowerCase())}&arquivo=${encodeURIComponent(jsonFile)}` : '',
     modifiedAt,
     modifiedDate: dateFormatter.format(new Date(modifiedAt)),
     code: name.toUpperCase(),
@@ -87,6 +88,7 @@ const cards = modules.map((module) => `
           <div class="content-card__actions">
             <a class="content-card__action" href="${module.href}" aria-label="Abrir conteúdo ${escapeHtml(module.code)}">Abrir conteúdo <span aria-hidden="true">→</span></a>
             ${module.jsonHref ? `<a class="content-card__download" href="${module.jsonHref}" download="${module.downloadName}" aria-label="Baixar JSON para edição de ${escapeHtml(module.code)}">Baixar JSON para edição</a>` : '<span class="content-card__unavailable">JSON para edição indisponível</span>'}
+            ${module.editHref ? `<a class="content-card__download" href="${escapeHtml(module.editHref)}" aria-label="Editar ${escapeHtml(module.code)} no Builder">Editar no Builder</a>` : ''}
           </div>
           <small class="content-card__modified">Arquivos alterados em: <time datetime="${escapeHtml(module.modifiedAt)}">${escapeHtml(module.modifiedDate)}</time></small>
         </article>`).join('');

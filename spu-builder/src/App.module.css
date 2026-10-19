@@ -47,3 +47,10 @@
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
+
+.loading { padding: 1.5rem; text-align: center; }
+.loading h1 { max-width: 42rem; margin: 0; font-size: 1.5rem; color: var(--text-body); }
+.loading p { max-width: 42rem; margin: 0; line-height: 1.5; }
+.loading button { max-width: 100%; padding: .7rem 1rem; border: 1px solid var(--color-border); border-radius: .5rem; background: var(--color-surface); color: var(--text-body); font: inherit; cursor: pointer; }
+.loading button:hover { background: var(--color-surface-sunken); }
+.loading button:focus-visible, .loading a:focus-visible { outline: 3px solid var(--color-primary); outline-offset: 3px; }

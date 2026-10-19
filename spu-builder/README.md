@@ -78,3 +78,12 @@ O workflow de publicação do PGIP compila o editor e publica seu resultado em
 `https://cgges-aprendizagem.github.io/pgip/spu-builder/`.
 O PGIP é mantido de forma independente; o espelhamento de materiais foi desativado.
 Atualizações futuras do editor devem ser trazidas do repositório de origem.
+
+## Editar material publicado
+
+Na biblioteca, **Editar no Builder** abre `/spu-builder/?material=m121&arquivo=projetom121.spu.json`.
+O editor carrega o JSON e suas imagens. Nos JSONs antigos, as imagens são recuperadas
+do HTML publicado e convertidas em dados incorporados, preservando o enquadramento.
+Os rascunhos e suas imagens ficam separados por código do material neste navegador.
+Se já houver rascunho do mesmo material, o editor oferece continuar esse rascunho
+ou substituí-lo pela versão publicada. A edição não altera os arquivos no GitHub.

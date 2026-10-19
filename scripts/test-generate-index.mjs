@@ -36,7 +36,10 @@ try {
   const cards = [...html.matchAll(/<article class="content-card"[\s\S]*?<\/article>/g)].map(match => match[0]);
   assert.equal(cards.length, 5);
   assert.match(cards[0], /JSON para edição indisponível/);
-  assert.doesNotMatch(cards[0], /download=/);
+  assert.doesNotMatch(cards[0], /download=|Editar no Builder/);
+  assert.match(cards[1], /href="\.\/spu-builder\/\?material=m121&amp;arquivo=projetom121\.spu\.json"/);
+  assert.match(cards[2], /material=m134a&amp;arquivo=projetom134a\.spu\.json/);
+  assert.match(cards[3], /material=m212&amp;arquivo=projeto\.spu\.json/);
   assert.match(cards[1], /href="\.\/m121\/projetom121\.spu\.json" download="projetom121\.spu\.json"/);
   assert.match(cards[1], />19\/10\/2026<\/time>/);
   assert.match(cards[0], />01\/10\/2026<\/time>/);
