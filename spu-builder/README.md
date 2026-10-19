@@ -76,5 +76,5 @@ Esta pasta foi copiada de `luislindner/spu-builder`, commit
 `146db0624c56258211dfbe9deca6b5fc00e38d14` (inclui o PR #18).
 O workflow de publicação do PGIP compila o editor e publica seu resultado em
 `https://cgges-aprendizagem.github.io/pgip/spu-builder/`.
-A sincronização dos materiais preserva esta pasta e os workflows do PGIP.
+O PGIP é mantido de forma independente; o espelhamento de materiais foi desativado.
 Atualizações futuras do editor devem ser trazidas do repositório de origem.
