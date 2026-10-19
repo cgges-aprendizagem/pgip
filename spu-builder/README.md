@@ -87,3 +87,11 @@ do HTML publicado e convertidas em dados incorporados, preservando o enquadramen
 Os rascunhos e suas imagens ficam separados por código do material neste navegador.
 Se já houver rascunho do mesmo material, o editor oferece continuar esse rascunho
 ou substituí-lo pela versão publicada. A edição não altera os arquivos no GitHub.
+
+## Publicar versão atual no GitHub
+
+**Exportar → Publicar / atualizar no GitHub** prepara o mesmo pacote HTML com
+imagens e JSON editável, autentica a pessoa pelo GitHub App e pede a confirmação
+do material, pasta e conta antes de enviar. O rascunho é salvo antes do login.
+A implantação do serviço e seus secrets é descrita em `../publisher/README.md`.
+Enquanto o Worker não estiver configurado, a tela informa essa pendência.

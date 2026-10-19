@@ -32,6 +32,7 @@ if (execFileSync('git', ['rev-parse', '--is-shallow-repository'], { cwd: root, e
 const dateFormatter = new Intl.DateTimeFormat('pt-BR', { timeZone: 'America/Sao_Paulo' });
 const entries = await readdir(root);
 const modules = [];
+const materialVersions = {};
 
 for (const name of entries) {
   if (!/^m/i.test(name)) continue;
@@ -62,6 +63,11 @@ for (const name of entries) {
     cwd: root, encoding: 'utf8',
   }).trim();
   if (!modifiedAt) throw new Error(`Sem histórico de alterações para ${name}.`);
+  materialVersions[name.toLowerCase()] = {
+    directorySha: execFileSync('git', ['rev-parse', `HEAD:${name}`], { cwd: root, encoding: 'utf8' }).trim(),
+    jsonFile: jsonFile || null,
+    jsonSha: jsonFile ? execFileSync('git', ['rev-parse', `HEAD:${name}/${jsonFile}`], { cwd: root, encoding: 'utf8' }).trim() : null,
+  };
 
   modules.push({
     jsonHref: jsonFile ? `./${encodeURIComponent(name)}/${encodeURIComponent(jsonFile)}` : '',
@@ -259,4 +265,5 @@ const page = `<!doctype html>
 `;
 
 await writeFile(path.join(root, 'index.html'), page.replace(/^[ \t]+$/gm, ''), 'utf8');
+await writeFile(path.join(root, 'materials-state.json'), JSON.stringify(materialVersions, null, 2) + '\n', 'utf8');
 console.log(`Generated index.html with ${modules.length} published contents.`);

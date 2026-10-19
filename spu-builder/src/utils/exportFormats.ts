@@ -890,7 +890,7 @@ async function externalizeImages(files: Record<string, Uint8Array>, doc: Doc, qu
 }
 
 // ── 2) Pacote HTML + assets (.zip) ───────────────────────────────────────────
-export async function exportAssetsZip(doc: Doc, quality: ImageQuality = 'high') {
+export async function buildAssetsPackage(doc: Doc, quality: ImageQuality = 'high'): Promise<Record<string, Uint8Array>> {
   const [bundleJsRaw, stylesCss] = await Promise.all([
     fetchText(DS_BASE + '_ds_bundle.js'),
     inlineCss(DS_BASE + 'styles.css'),
@@ -909,7 +909,11 @@ export async function exportAssetsZip(doc: Doc, quality: ImageQuality = 'high') 
   files['assets/react.js'] = strToU8(react.react);
   files['assets/react-dom.js'] = strToU8(react.reactDom);
   files['assets/REACT_LICENSE.txt'] = strToU8(react.license);
-  download(safe(doc.meta.title) + '-html.zip', zipSync(files), 'application/zip');
+  return files;
+}
+
+export async function exportAssetsZip(doc: Doc, quality: ImageQuality = 'high') {
+  download(safe(doc.meta.title) + '-html.zip', zipSync(await buildAssetsPackage(doc, quality)), 'application/zip');
 }
 
 // ── 3) SCORM 1.2 não-avaliativo (.zip) ───────────────────────────────────────

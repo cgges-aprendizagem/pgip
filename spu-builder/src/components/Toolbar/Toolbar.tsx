@@ -3,7 +3,9 @@ import type { NS, Doc } from '../../types/ds';
 import { exportAssetsZip, exportScormZip, exportSelfContained, saveProject, type ImageQuality } from '../../utils/exportFormats';
 import { parseProjectFile } from '../../utils/projectFile';
 import { normalizeProjectContent } from '../../utils/projectCompat';
-import { replaceImageSlots } from '../../utils/imageSlotStore';
+import { projectStorageSuffix } from '../../utils/publishedProject';
+import { PublishModal } from '../Publish/PublishModal';
+import { replaceImageSlots, readImageSlots, writeImageSlots } from '../../utils/imageSlotStore';
 import { collectRichNotes } from '../../utils/richNotes';
 import styles from './Toolbar.module.css';
 
@@ -31,6 +33,7 @@ export function Toolbar({ ns, doc, canUndo, canRedo, onUndo, onRedo, onTitleChan
   const [exportOpen, setExportOpen] = useState(false);
   const [tocOpen, setTocOpen] = useState(false);
   const [clearOpen, setClearOpen] = useState(false);
+  const [publishOpen, setPublishOpen] = useState(() => new URL(window.location.href).searchParams.get('publicar') === '1');
   const [imageQuality, setImageQuality] = useState<ImageQuality>('high');
 
   const toc = doc.meta.toc || {};
@@ -87,6 +90,16 @@ export function Toolbar({ ns, doc, canUndo, canRedo, onUndo, onRedo, onTitleChan
 
   return (
     <header className={styles.root}>
+      {publishOpen && <PublishModal doc={doc} quality={imageQuality}
+        beforeLogin={async () => {
+          localStorage.setItem('spu_builder_doc' + projectStorageSuffix(window.location.href), ns.BuilderExport.serialize(doc));
+          await writeImageSlots(await readImageSlots());
+        }}
+        onClose={() => {
+          setPublishOpen(false);
+          const clean = new URL(window.location.href); clean.searchParams.delete('publicar');
+          window.history.replaceState(null, '', clean);
+        }} />}
       <div className={styles.left}>
         <span className={styles.logo}>SPU Builder</span>
         <input
@@ -203,6 +216,10 @@ export function Toolbar({ ns, doc, canUndo, canRedo, onUndo, onRedo, onTitleChan
               <button onClick={() => runExport('SCORM', (currentDoc) => exportScormZip(currentDoc, imageQuality))}>
                 <strong>SCORM 1.2</strong>
                 <span>ZIP para LMS, concluído ao abrir.</span>
+              </button>
+              <button onClick={() => { setExportOpen(false); setPublishOpen(true); }}>
+                <strong>Publicar / atualizar no GitHub</strong>
+                <span>Enviar a versão atual para o PGIP.</span>
               </button>
               <button onClick={() => { setExportOpen(false); onPrintPreview(); }}>
                 <strong>Prévia PDF</strong>

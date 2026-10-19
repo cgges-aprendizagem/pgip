@@ -72,7 +72,7 @@ export default function App() {
   const ns = useDS();
   const [startup, setStartup] = useState<'loading' | 'choose' | 'ready' | 'error'>('loading');
   const [startupError, setStartupError] = useState('');
-  const [startupChoice, setStartupChoice] = useState<'saved' | 'published' | null>(null);
+  const [startupChoice, setStartupChoice] = useState<'saved' | 'published' | null>(() => new URL(window.location.href).searchParams.get('publicar') === '1' ? 'saved' : null);
   const [startupAttempt, setStartupAttempt] = useState(0);
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [previewing, setPreviewing] = useState(false);
@@ -105,6 +105,7 @@ export default function App() {
           if (cancelled) return;
           await replaceImageSlots(project.imageSlots);
           if (cancelled) return;
+          localStorage.setItem('spu_published_revision' + projectStorageSuffix(window.location.href), JSON.stringify({ file: project.sourceFile, sha: project.sourceJsonSha, directorySha: project.sourceDirectorySha }));
           dispatch({ type: 'SET_DOC', doc: project.doc });
         } else {
           const doc = saved

@@ -1,10 +1,11 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { readFileSync } from 'node:fs';
 import vm from 'node:vm';
 import ts from 'typescript';
 
 const context = vm.createContext({
-  URL, Map, console,
+  URL, Map, console, crypto, TextEncoder, Uint8Array,
   DOMParser: class {
     parseFromString(html) {
       const match = html.match(/<script[^>]*id=["']spu-image-slots["'][^>]*>([\s\S]*?)<\/script>/);
@@ -41,9 +42,17 @@ const fetchJSON = async () => new Response(JSON.stringify({ ...doc, imageSlots: 
 let result = await loadPublishedProject(base + '?material=m121', builder, fetchJSON);
 assert.equal(result.doc.sanitized, true);
 assert.deepEqual(JSON.parse(result.imageSlots), embedded);
+const jsonText = JSON.stringify({ ...doc, imageSlots: embedded });
+const expectedSha = createHash('sha1').update(`blob ${Buffer.byteLength(jsonText)}\0`).update(jsonText).digest('hex');
+assert.equal(result.sourceJsonSha, expectedSha);
+result = await loadPublishedProject(base + '?material=m121', builder, async url => url.endsWith('materials-state.json')
+  ? Response.json({ m121: { jsonFile: 'projetom121.spu.json', jsonSha: expectedSha, directorySha: 'a'.repeat(40) } })
+  : new Response(jsonText));
+assert.equal(result.sourceDirectorySha, 'a'.repeat(40));
 const requests = [];
 const legacySlots = { figure: { u: 'assets/images/a.png', s: 2, x: 10, y: -5 }, repeated: 'assets/images/a.png' };
 result = await loadPublishedProject(base + '?material=m121', builder, async url => {
+  if (url.endsWith('materials-state.json')) return new Response('{}');
   requests.push(url);
   if (url.endsWith('.json')) return new Response(JSON.stringify(doc));
   if (url.endsWith('index.html')) return new Response(`<script id="spu-image-slots">${JSON.stringify(legacySlots)}</script>`);

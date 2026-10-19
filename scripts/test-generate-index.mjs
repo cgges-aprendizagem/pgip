@@ -33,6 +33,10 @@ try {
   commit('2026-10-21T12:00:00Z');
   execFileSync(process.execPath, ['scripts/generate-index.mjs'], { cwd: root });
   const html = await readFile(path.join(root, 'index.html'), 'utf8');
+  const manifest = JSON.parse(await readFile(path.join(root, 'materials-state.json'), 'utf8'));
+  assert.equal(manifest.m121.directorySha, git('rev-parse', 'HEAD:m121').trim());
+  assert.equal(manifest.m121.jsonSha, git('rev-parse', 'HEAD:m121/projetom121.spu.json').trim());
+  assert.equal(manifest.m112.jsonFile, null);
   const cards = [...html.matchAll(/<article class="content-card"[\s\S]*?<\/article>/g)].map(match => match[0]);
   assert.equal(cards.length, 5);
   assert.match(cards[0], /JSON para edição indisponível/);

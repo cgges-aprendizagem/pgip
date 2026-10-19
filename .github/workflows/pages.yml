@@ -43,7 +43,11 @@ jobs:
           npm run lint
           node scripts/test-project-images.mjs
           node scripts/test-published-project.mjs
+          node scripts/test-github-publisher.mjs
           npm run build
+
+      - name: Verificar serviço de publicação
+        run: node publisher/test-worker.mjs
 
       - name: Gerar índice dos conteúdos
         run: node scripts/generate-index.mjs
@@ -54,7 +58,7 @@ jobs:
       - name: Preparar arquivos públicos
         run: |
           mkdir -p _site
-          rsync -a --exclude='/.git/' --exclude='/.github/' --exclude='/_site/' --exclude='/spu-builder/' ./ _site/
+          rsync -a --exclude='/.git/' --exclude='/.github/' --exclude='/_site/' --exclude='/spu-builder/' --exclude='/publisher/' ./ _site/
           mkdir -p _site/spu-builder
           cp -a spu-builder/dist/. _site/spu-builder/
 

@@ -1,1 +1,6 @@
 _site/
+
+/publisher/.dev.vars*
+/publisher/.env*
+/publisher/.wrangler/
+/publisher/node_modules/
