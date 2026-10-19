@@ -6,7 +6,9 @@ const API = `https://api.github.com/repos/${REPO}`;
 const ORIGIN = new URL(BUILDER).origin;
 const COOKIE = '__Host-pgip-oauth';
 const MAX_REQUEST = 28 * 1024 * 1024;
-const MAX_FILES = 40;
+const MAX_FILES = 40; // Formato legado, mantido para abas já abertas.
+const MAX_UPLOAD_FILES = 100;
+const MAX_UPLOAD_FILE = 70 * 1024 * 1024;
 const MAX_DECODED = 20 * 1024 * 1024;
 const encoder = new TextEncoder();
 
@@ -37,7 +39,7 @@ export async function seal(value, env) {
 }
 export async function unseal(value, purpose, env) {
   try {
-    assert(typeof value === 'string' && value.length < 8000, 401, 'Entre novamente com o GitHub.');
+    assert(typeof value === 'string' && value.length < 64000, 401, 'Entre novamente com o GitHub.');
     const parts = value.split('.');
     assert(parts.length === 2, 401, 'Entre novamente com o GitHub.');
     const decoded = await crypto.subtle.decrypt({ name: 'AES-GCM', iv: from64(parts[0]) }, await key(env), from64(parts[1]));
@@ -69,7 +71,7 @@ async function github(url, token, method = 'GET', body, fetcher = fetch) {
     Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json',
     'X-GitHub-Api-Version': '2026-03-10', 'User-Agent': 'PGIP-Publisher',
     ...(body === undefined ? {} : { 'Content-Type': 'application/json' }),
-  }, ...(body === undefined ? {} : { body: JSON.stringify(body) }) });
+  }, ...(body === undefined ? {} : { body: body instanceof ReadableStream ? body : JSON.stringify(body) }) });
   if (!response.ok) {
     const conflict = method === 'PATCH' && [409, 422].includes(response.status);
     throw new HttpError(conflict ? 409 : response.status === 401 ? 401 : response.status === 403 || response.status === 404 ? 403 : 502,
@@ -99,14 +101,14 @@ async function snapshot(token, material, fetcher) {
   }
   return { head: ref.object.sha, tree: commit.tree.sha, materialSha: entry?.sha || 'missing', jsonShas };
 }
-async function session(request, env) {
+async function session(request, env, purpose = 'session') {
   const authorization = request.headers.get('Authorization') || '';
   assert(authorization.startsWith('Bearer '), 401, 'Entre com o GitHub para publicar.');
-  return unseal(authorization.slice(7), 'session', env);
+  return unseal(authorization.slice(7), purpose, env);
 }
-async function bodyJSON(request) {
+async function bodyJSON(request, maximum = MAX_REQUEST) {
   assert(request.headers.get('Content-Type')?.startsWith('application/json'), 415, 'Formato de envio inválido.');
-  assert(Number(request.headers.get('Content-Length') || 0) <= MAX_REQUEST, 413, 'O pacote é grande demais para a publicação direta. Use a exportação ZIP.');
+  assert(Number(request.headers.get('Content-Length') || 0) <= maximum, 413, 'O pacote é grande demais para a publicação direta. Use a exportação ZIP.');
   const reader = request.body?.getReader();
   assert(reader, 400, 'Pacote ausente.');
   const chunks = []; let length = 0;
@@ -114,7 +116,7 @@ async function bodyJSON(request) {
     const { done, value } = await reader.read();
     if (done) break;
     length += value.length;
-    if (length > MAX_REQUEST) { await reader.cancel(); throw new HttpError(413, 'O pacote é grande demais para a publicação direta. Use a exportação ZIP.'); }
+    if (length > maximum) { await reader.cancel(); throw new HttpError(413, 'O pacote é grande demais para a publicação direta. Use a exportação ZIP.'); }
     chunks.push(value);
   }
   const bytes = new Uint8Array(length); let offset = 0;
@@ -149,9 +151,54 @@ export function validatePackage(body) {
   assert(typeof html === 'string' && /<!doctype html/i.test(html), 400, 'A página HTML está ausente ou é inválida.');
   return body;
 }
+async function commitFiles(auth, body, current, tree, jsonSha, fetcher) {
+  const createdTree = await github(`${API}/git/trees`, auth.token, 'POST', { base_tree: current.tree, tree }, fetcher);
+  const commit = await github(`${API}/git/commits`, auth.token, 'POST', { message: `Atualizar ${body.material.toUpperCase()} pelo SPU Builder (${auth.login})`, tree: createdTree.sha, parents: [current.head] }, fetcher);
+  const committedRoot = await github(`${API}/git/trees/${createdTree.sha}`, auth.token, 'GET', undefined, fetcher);
+  const materialSha = committedRoot.tree.find(file => file.path === body.material)?.sha;
+  assert(!committedRoot.truncated && /^[a-f0-9]{40}$/.test(materialSha || ''), 502, 'Não foi possível conferir o pacote criado. A versão publicada não foi alterada.');
+  await github(`${API}/git/refs/heads/main`, auth.token, 'PATCH', { sha: commit.sha, force: false }, fetcher);
+  return json({ commit: `https://github.com/${REPO}/commit/${commit.sha}`, url: `https://cgges-aprendizagem.github.io/pgip/${body.material}/`, status: 'submitted', jsonSha, materialSha });
+}
+function checkVersion(body, current) {
+  assert(current.materialSha === body.expectedMaterialSha, 409, 'Este material foi alterado no GitHub após sua conferência. Abra a versão publicada antes de tentar novamente.');
+  if (body.source) assert(current.jsonShas[body.source.file] === body.source.sha, 409, 'O JSON mudou desde que você começou a editar. Abra a versão publicada antes de substituir o trabalho de outra pessoa.');
+  if (body.source?.directorySha) assert(body.source.directorySha === current.materialSha, 409, 'Os arquivos do material mudaram desde que você começou a editar. Abra a versão publicada antes de tentar novamente.');
+}
+export function validateUploadManifest(body) {
+  assert(body && /^m\d+[a-z]?$/.test(body.material), 400, 'Código do material inválido.');
+  assert(typeof body.title === 'string' && body.title.match(/\b(m\d+[a-z]?)\b/i)?.[1].toLowerCase() === body.material, 400, 'O título precisa corresponder ao código do material.');
+  assert(/^(missing|[a-f0-9]{40})$/.test(body.expectedMaterialSha || ''), 400, 'Confira a versão atual antes de publicar.');
+  assert(Array.isArray(body.files) && body.files.length > 0 && body.files.length <= MAX_UPLOAD_FILES, 400, 'O pacote pode conter até 100 arquivos.');
+  if (body.source) assert(typeof body.source.file === 'string' && /^[^/\\]+\.spu\.json$/.test(body.source.file) && !body.source.file.includes('..') && /^[a-f0-9]{40}$/.test(body.source.sha) && (!body.source.directorySha || /^[a-f0-9]{40}$/.test(body.source.directorySha)), 400, 'Versão de origem inválida.');
+  const paths = new Set();
+  const files = body.files.map(file => {
+    const allowed = typeof file?.path === 'string' && file.path.length <= 180 && (file.path === 'index.html' || file.path === `projeto${body.material}.spu.json` || /^assets\/[a-zA-Z0-9_./-]+$/.test(file.path));
+    assert(allowed && file.path.split('/').every(part => part && part !== '.' && part !== '..') && !paths.has(file.path), 400, 'Caminho inválido ou repetido.');
+    assert(Number.isSafeInteger(file.size) && file.size >= 0 && file.size <= MAX_UPLOAD_FILE, 413, 'Cada arquivo pode ter até 70 MB neste serviço.');
+    assert(/^[a-f0-9]{40}$/.test(file.sha || ''), 400, 'Identificação do arquivo inválida.');
+    paths.add(file.path);
+    return { path: file.path, size: file.size, sha: file.sha };
+  });
+  assert(paths.has('index.html') && paths.has(`projeto${body.material}.spu.json`), 400, 'O pacote precisa conter o HTML e o JSON editável.');
+  return { material: body.material, title: body.title, expectedMaterialSha: body.expectedMaterialSha, source: body.source ? { file: body.source.file, sha: body.source.sha, ...(body.source.directorySha ? { directorySha: body.source.directorySha } : {}) } : undefined, files };
+}
+function limitedBlobBody(request, size) {
+  const maximum = Math.ceil(size / 3) * 4 + 256;
+  assert(Number(request.headers.get('Content-Length') || 0) <= maximum, 413, 'O arquivo enviado é maior que o informado.');
+  assert(request.headers.get('Content-Type')?.startsWith('application/json') && request.body, 415, 'Formato de envio inválido.');
+  let count = 0;
+  return request.body.pipeThrough(new TransformStream({
+    transform(chunk, controller) {
+      count += chunk.byteLength;
+      assert(count <= maximum, 413, 'O arquivo enviado é maior que o informado.');
+      controller.enqueue(chunk);
+    },
+  }));
+}
 async function handle(request, env, fetcher) {
   const url = new URL(request.url);
-  if (url.pathname === '/health') return json({ service: 'PGIP Publisher', configured: Boolean(env.GITHUB_CLIENT_SECRET && env.SESSION_SECRET?.length >= 32) });
+  if (url.pathname === '/health') return json({ service: 'PGIP Publisher', configured: Boolean(env.GITHUB_CLIENT_SECRET && env.SESSION_SECRET?.length >= 32), uploadVersion: 2, maxFileMB: 70, maxPackageMB: null });
   if (url.pathname === '/') return new Response('PGIP Publisher. Abra o SPU Builder para publicar materiais.', { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
   assert(env.GITHUB_CLIENT_SECRET && env.SESSION_SECRET?.length >= 32, 503, 'O serviço de publicação ainda precisa ser configurado na Cloudflare.');
   const callback = `${url.origin}/auth/callback`;
@@ -186,7 +233,8 @@ async function handle(request, env, fetcher) {
     return redirect(target.href, clear);
   }
   checkOrigin(request);
-  const auth = await session(request, env);
+  const uploading = ['/publish/blob', '/publish/complete'].includes(url.pathname);
+  const auth = await session(request, env, uploading ? 'upload' : 'session');
   if (request.method === 'GET' && url.pathname === '/session') {
     await access(auth.token, fetcher);
     return json({ login: auth.login, repository: REPO, expiresAt: auth.exp });
@@ -197,6 +245,35 @@ async function handle(request, env, fetcher) {
     await access(auth.token, fetcher);
     const current = await snapshot(auth.token, code, fetcher);
     return json({ material: code, materialSha: current.materialSha, exists: current.materialSha !== 'missing', jsonShas: current.jsonShas });
+  }
+  if (request.method === 'POST' && url.pathname === '/publish/prepare') {
+    const body = validateUploadManifest(await bodyJSON(request, 64 * 1024));
+    await access(auth.token, fetcher);
+    const current = await snapshot(auth.token, body.material, fetcher);
+    checkVersion(body, current);
+    const upload = await seal({ ...body, purpose: 'upload', token: auth.token, login: auth.login, exp: Math.min(auth.exp, now() + 1800) }, env);
+    return json({ upload });
+  }
+  if (request.method === 'POST' && url.pathname === '/publish/blob') {
+    const body = validateUploadManifest(auth);
+    const index = url.searchParams.get('file');
+    assert(/^(0|[1-9]\d*)$/.test(index || ''), 400, 'Arquivo não informado.');
+    const file = body.files[Number(index)];
+    assert(file, 400, 'Arquivo fora do pacote autorizado.');
+    // Encaminha o corpo ao GitHub sem carregar o arquivo inteiro na memória
+    // ou converter suas imagens no Worker. O navegador prepara o base64.
+    const blob = await github(`${API}/git/blobs`, auth.token, 'POST', limitedBlobBody(request, file.size), fetcher);
+    assert(blob.sha === file.sha, 400, 'O arquivo recebido difere do pacote preparado. Tente enviar novamente.');
+    return json({ sha: blob.sha });
+  }
+  if (request.method === 'POST' && url.pathname === '/publish/complete') {
+    const body = validateUploadManifest(auth);
+    await access(auth.token, fetcher);
+    const current = await snapshot(auth.token, body.material, fetcher);
+    checkVersion(body, current);
+    const tree = body.files.map(file => ({ path: `${body.material}/${file.path}`, mode: '100644', type: 'blob', sha: file.sha }));
+    const jsonSha = body.files.find(file => file.path === `projeto${body.material}.spu.json`).sha;
+    return commitFiles(auth, body, current, tree, jsonSha, fetcher);
   }
   if (request.method === 'POST' && url.pathname === '/publish') {
     const body = validatePackage(await bodyJSON(request));
@@ -214,13 +291,7 @@ async function handle(request, env, fetcher) {
       if (file.path.endsWith('.spu.json')) jsonSha = blob.sha;
       tree.push({ path: `${body.material}/${file.path}`, mode: '100644', type: 'blob', sha: blob.sha });
     }
-    const createdTree = await github(`${API}/git/trees`, auth.token, 'POST', { base_tree: current.tree, tree }, fetcher);
-    const commit = await github(`${API}/git/commits`, auth.token, 'POST', { message: `Atualizar ${body.material.toUpperCase()} pelo SPU Builder (${auth.login})`, tree: createdTree.sha, parents: [current.head] }, fetcher);
-    const committedRoot = await github(`${API}/git/trees/${createdTree.sha}`, auth.token, 'GET', undefined, fetcher);
-    const materialSha = committedRoot.tree.find(file => file.path === body.material)?.sha;
-    assert(!committedRoot.truncated && /^[a-f0-9]{40}$/.test(materialSha || ''), 502, 'Não foi possível conferir o pacote criado. A versão publicada não foi alterada.');
-    await github(`${API}/git/refs/heads/main`, auth.token, 'PATCH', { sha: commit.sha, force: false }, fetcher);
-    return json({ commit: `https://github.com/${REPO}/commit/${commit.sha}`, url: `https://cgges-aprendizagem.github.io/pgip/${body.material}/`, status: 'submitted', jsonSha, materialSha });
+    return commitFiles(auth, body, current, tree, jsonSha, fetcher);
   }
   throw new HttpError(404, 'Endereço não encontrado.');
 }

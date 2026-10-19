@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict';
-import { dispatch, seal, unseal, validatePackage } from './worker.js';
+import { createHash } from 'node:crypto';
+import { dispatch, seal, unseal, validatePackage, validateUploadManifest } from './worker.js';
 
 const origin = 'https://cgges-aprendizagem.github.io';
 const host = 'https://pgip-publisher.example.workers.dev';
@@ -16,9 +17,12 @@ const files = [
   { path: 'assets/images/a.png', content: btoa('PNG-test') },
 ];
 const body = { material: 'm121', expectedMaterialSha: materialSha, source: { file: 'projetom121.spu.json', sha: jsonSha, directorySha: materialSha }, files };
+const blobSHA = bytes => createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
 let calls = [];
 const mock = async (url, options = {}) => {
-  calls.push({ url, method: options.method || 'GET', body: options.body ? JSON.parse(options.body) : null });
+  const streamed = options.body instanceof ReadableStream;
+  const payload = options.body ? streamed ? await new Response(options.body).json() : JSON.parse(options.body) : null;
+  calls.push({ url, method: options.method || 'GET', body: payload, streamed });
   assert.equal(options.headers.Authorization, 'Bearer test-user-token');
   if (url === repo) return Response.json({ permissions: { push: true } });
   if (url === `${repo}/git/ref/heads/main`) return Response.json({ object: { sha: head } });
@@ -26,7 +30,7 @@ const mock = async (url, options = {}) => {
   if (url === `${repo}/git/trees/${rootTree}`) return Response.json({ tree: [{ path: 'm121', type: 'tree', sha: materialSha }, { path: 'spu-builder', type: 'tree', sha: 'keep-builder' }] });
   if (url === `${repo}/git/trees/${materialSha}`) return Response.json({ tree: [{ path: 'projetom121.spu.json', type: 'blob', sha: jsonSha }, { path: 'custom-activity', type: 'tree', sha: 'keep-activity' }] });
   if (url === `${repo}/git/trees/${'f'.repeat(40)}`) return Response.json({ tree: [{ path: 'm121', type: 'tree', sha: '2'.repeat(40) }] });
-  if (url.endsWith('/git/blobs')) return Response.json({ sha: 'e'.repeat(40) }, { status: 201 });
+  if (url.endsWith('/git/blobs')) return Response.json({ sha: blobSHA(Buffer.from(payload.content, 'base64')) }, { status: 201 });
   if (url.endsWith('/git/trees')) return Response.json({ sha: 'f'.repeat(40) }, { status: 201 });
   if (url.endsWith('/git/commits')) return Response.json({ sha: '1'.repeat(40) }, { status: 201 });
   if (url.endsWith('/git/refs/heads/main')) return Response.json({ object: { sha: '1'.repeat(40) } });
@@ -80,6 +84,72 @@ result = await send(body, async (url, options) => url.endsWith('/git/refs/heads/
 assert.equal(result.status, 409);
 result = await send(body, async () => Response.json({ permissions: { push: false } }));
 assert.equal(result.status, 403);
+// Protocolo por arquivo: manifesto pequeno, conteúdo encaminhado por stream,
+// hashes conferidos e avanço da branch somente ao finalizar todo o pacote.
+const manifest = { ...body, title: document.meta.title, files: files.map(file => {
+  const bytes = Buffer.from(file.content, 'base64');
+  return { path: file.path, size: bytes.length, sha: blobSHA(bytes) };
+}) };
+const uploadRequest = (path, value, ticket = auth, fetcher = mock, extra = {}) => dispatch(new Request(host + path, {
+  method: 'POST', headers: { ...headers, Authorization: `Bearer ${ticket}`, ...extra }, body: JSON.stringify(value),
+}), env, fetcher);
+result = await dispatch(new Request(host + '/health'), env);
+assert.deepEqual(await result.json(), { service: 'PGIP Publisher', configured: true, uploadVersion: 2, maxFileMB: 70, maxPackageMB: null });
+validateUploadManifest(manifest);
+for (const path of ['../m122/index.html', 'assets/../../.github/workflows/pages.yml', 'assets//bad.js']) {
+  assert.throws(() => validateUploadManifest({ ...manifest, files: [...manifest.files, { path, size: 1, sha: jsonSha }] }));
+}
+// A soma de 360 MiB é aceita: não existe teto de tamanho total do material.
+validateUploadManifest({ ...manifest, files: [...manifest.files, ...['b', 'c', 'd'].map(name => ({ path: `assets/${name}.png`, size: 60 * 1024 * 1024, sha: jsonSha }))].map(file => ({ ...file, size: 60 * 1024 * 1024 })) });
+assert.throws(() => validateUploadManifest({ ...manifest, files: manifest.files.map(file => ({ ...file, size: 71 * 1024 * 1024 })) }));
+assert.throws(() => validateUploadManifest({ ...manifest, files: [...manifest.files, manifest.files[0]] }));
+calls = [];
+result = await uploadRequest('/publish/prepare', manifest);
+assert.equal(result.status, 200);
+const ticket = (await result.json()).upload;
+assert.ok(calls.every(call => call.method === 'GET'));
+assert.equal((await unseal(ticket, 'upload', env)).files.length, files.length);
+await assert.rejects(unseal(ticket, 'session', env));
+for (let i = 0; i < files.length; i++) {
+  result = await uploadRequest(`/publish/blob?file=${i}`, { content: files[i].content, encoding: 'base64' }, ticket);
+  assert.equal(result.status, 200);
+  assert.equal((await result.json()).sha, manifest.files[i].sha);
+}
+assert.ok(calls.filter(call => call.method === 'POST').every(call => call.url.endsWith('/git/blobs') && call.streamed));
+assert.ok(!calls.some(call => call.method === 'PATCH'));
+result = await uploadRequest('/publish/complete', {}, ticket);
+assert.equal(result.status, 200);
+assert.equal((await result.json()).jsonSha, manifest.files[1].sha);
+assert.equal(calls.filter(call => call.method === 'PATCH').length, 1);
+assert.deepEqual(calls.find(call => call.url.endsWith('/git/trees')).body.tree.map(file => file.sha), manifest.files.map(file => file.sha));
+calls = [];
+result = await uploadRequest('/publish/blob?file=0', { content: btoa('different'), encoding: 'base64' }, ticket);
+assert.equal(result.status, 400);
+result = await uploadRequest('/publish/blob?file=3', { content: '', encoding: 'base64' }, ticket);
+assert.equal(result.status, 400);
+result = await uploadRequest('/publish/blob?file=0', { content: files[0].content }, auth);
+assert.equal(result.status, 401);
+result = await uploadRequest('/publish/blob?file=0', {}, ticket, mock, { 'Content-Length': '100000' });
+assert.equal(result.status, 413);
+result = await uploadRequest('/publish/blob?file=0', { content: 'x'.repeat(5000) }, ticket);
+assert.equal(result.status, 413);
+assert.ok(!calls.some(call => call.method === 'PATCH'));
+// Fluxo fragmentado não é convertido em um grande objeto no Worker.
+const encoded = new TextEncoder().encode(JSON.stringify({ content: files[0].content, encoding: 'base64' }));
+const stream = new ReadableStream({ start(controller) { for (let i = 0; i < encoded.length; i += 7) controller.enqueue(encoded.slice(i, i + 7)); controller.close(); } });
+result = await dispatch(new Request(host + '/publish/blob?file=0', { method: 'POST', headers: { ...headers, Authorization: `Bearer ${ticket}` }, body: stream, duplex: 'half' }), env, mock);
+assert.equal(result.status, 200);
+calls = [];
+result = await uploadRequest('/publish/complete', {}, ticket, async (url, options) => url === `${repo}/git/trees/${rootTree}` ? Response.json({ tree: [{ path: 'm121', type: 'tree', sha: '9'.repeat(40) }] }) : url === `${repo}/git/trees/${'9'.repeat(40)}` ? Response.json({ tree: [] }) : mock(url, options));
+assert.equal(result.status, 409);
+assert.ok(calls.every(call => call.method === 'GET'));
+// Um blob ausente impede a árvore final, sem alterar a referência publicada.
+result = await uploadRequest('/publish/complete', {}, ticket, async (url, options) => url.endsWith('/git/trees') ? Response.json({}, { status: 422 }) : mock(url, options));
+assert.equal(result.status, 502);
+assert.ok(!calls.some(call => call.method === 'PATCH'));
+result = await uploadRequest('/publish/prepare', { ...manifest, expectedMaterialSha: '9'.repeat(40) });
+assert.equal(result.status, 409);
+
 // OAuth: cookie cifrado, state e PKCE; nenhum token cru volta ao navegador.
 result = await dispatch(new Request(host + '/auth/start?return=' + encodeURIComponent(origin + '/pgip/spu-builder/?material=m121')), env);
 assert.equal(result.status, 302);
@@ -115,4 +185,4 @@ assert.equal(returned.searchParams.get('material'), 'm121');
 assert.ok(!returned.href.includes('test-user-token'));
 const returnedAuth = new URLSearchParams(returned.hash.slice(1)).get('publish_session');
 assert.equal((await unseal(returnedAuth, 'session', env)).login, 'test-user');
-console.log('OK: OAuth/state/PKCE, sessão cifrada, CORS, permissões, caminhos, publicação atômica, preservação de arquivos e conflitos. Nenhuma chamada real ao GitHub.');
+console.log('OK: uploads por stream sem teto total, hashes, falhas parciais e finalização; OAuth/state/PKCE, sessão cifrada, CORS, permissões, caminhos, publicação atômica, preservação de arquivos e conflitos. Nenhuma chamada real ao GitHub.');

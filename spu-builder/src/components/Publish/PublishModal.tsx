@@ -13,6 +13,7 @@ export function PublishModal({ doc, quality, beforeLogin, onClose }: Props) {
   const [version, setVersion] = useState<MaterialVersion | null>(null);
   const [error, setError] = useState(initialPublishError);
   const [busy, setBusy] = useState(false);
+  const [progress, setProgress] = useState('');
   const [attempt, setAttempt] = useState(0);
   const [result, setResult] = useState<{ commit: string; url: string } | null>(null);
   const closeButton = useRef<HTMLButtonElement>(null);
@@ -27,10 +28,11 @@ export function PublishModal({ doc, quality, beforeLogin, onClose }: Props) {
     const check = async () => {
       setChecking(true); setVersion(null); setLogin('');
       try {
-        const health = await publisherAPI<{ configured: boolean }>('/health');
+        const health = await publisherAPI<{ configured: boolean; uploadVersion?: number }>('/health');
         if (cancelled) return;
-        setConfigured(health.configured === true);
+        setConfigured(health.configured === true && (health.uploadVersion || 0) >= 2);
         if (!health.configured) throw new Error('O serviço de publicação ainda precisa ser configurado na Cloudflare.');
+        if ((health.uploadVersion || 0) < 2) throw new Error('O serviço de publicação precisa ser atualizado na Cloudflare para receber arquivos grandes.');
         if (hasPublishSession()) {
           const user = await publisherAPI<{ login: string }>('/session');
           if (cancelled) return;
@@ -55,7 +57,7 @@ export function PublishModal({ doc, quality, beforeLogin, onClose }: Props) {
     if (!version || mismatch || conflict) return;
     setBusy(true); setError('');
     try {
-      const sent = await publishDocument(doc, quality, version, source);
+      const sent = await publishDocument(doc, quality, version, source, setProgress);
       setResult(sent);
       try { localStorage.setItem(`spu_published_revision_${code}`, JSON.stringify({ file: `projeto${code}.spu.json`, sha: sent.jsonSha, directorySha: sent.materialSha })); } catch { /* A atualização já foi concluída no GitHub. */ }
     } catch (err) { setError(err instanceof Error ? err.message : 'Não foi possível publicar.'); }
@@ -89,7 +91,7 @@ export function PublishModal({ doc, quality, beforeLogin, onClose }: Props) {
         {login && version && !conflict && <p>{version.exists ? 'Ao confirmar, a versão atual deste material será atualizada.' : 'Ao confirmar, será criada uma pasta para este novo material.'}</p>}
         <div className={styles.actions}>
           {!login ? <button onClick={() => void connect()} disabled={busy || checking || !configured || !code || mismatch}>Entrar com GitHub</button>
-            : <button onClick={() => void publish()} disabled={busy || checking || !version || conflict || mismatch || !code}>{busy ? 'Enviando arquivos…' : version?.exists ? `Atualizar ${code.toUpperCase()} no GitHub` : `Publicar ${code.toUpperCase()} no GitHub`}</button>}
+            : <button onClick={() => void publish()} disabled={busy || checking || !version || conflict || mismatch || !code}>{busy ? (progress || 'Preparando arquivos…') : version?.exists ? `Atualizar ${code.toUpperCase()} no GitHub` : `Publicar ${code.toUpperCase()} no GitHub`}</button>}
           {login && <button onClick={() => { disconnectPublisher(); setLogin(''); setVersion(null); setError(''); }} disabled={busy}>Sair da conta</button>}
           {!busy && !checking && <button onClick={() => { setError(''); setAttempt(value => value + 1); }}>Conferir novamente</button>}
         </div>
