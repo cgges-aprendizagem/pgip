@@ -76,11 +76,19 @@
     .content-card[data-track="2"] { --card-accent: #5a7655; }
     .content-card[data-track="4"] { --card-accent: #0f5b59; }
     .content-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--card-accent) 55%, var(--line)); box-shadow: var(--shadow); }
-    .content-card:focus-visible { outline: 3px solid color-mix(in srgb, var(--card-accent) 28%, transparent); outline-offset: 3px; }
+    .content-card a:focus-visible { outline: 3px solid color-mix(in srgb, var(--card-accent) 28%, transparent); outline-offset: 3px; }
     .content-card__code { align-self: flex-start; margin-bottom: 1.3rem; padding: .38rem .58rem; border-radius: 999px; background: color-mix(in srgb, var(--card-accent) 11%, transparent); color: var(--card-accent); font-size: .72rem; font-weight: 850; letter-spacing: .1em; }
     .content-card__title { font-size: 1.15rem; line-height: 1.3; font-weight: 760; letter-spacing: -.02em; }
     .content-card__description { display: -webkit-box; margin-top: .7rem; overflow: hidden; color: var(--muted); font-size: .88rem; line-height: 1.5; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
-    .content-card__action { display: flex; justify-content: space-between; gap: 1rem; margin-top: auto; padding-top: 1.5rem; color: var(--card-accent); font-size: .83rem; font-weight: 760; }
+    .content-card__action { display: flex; justify-content: space-between; gap: 1rem; padding: .3rem 0; color: var(--card-accent); font-size: .83rem; font-weight: 760; }
+
+    .content-card[hidden] { display: none; }
+    .content-card__actions { display: grid; gap: .45rem; margin-top: auto; padding-top: 1.5rem; }
+    .content-card__actions a { text-decoration: none; border-radius: .15rem; }
+    .content-card__actions a:hover { text-decoration: underline; }
+    .content-card__download { color: var(--card-accent); font-size: .8rem; padding: .3rem 0; }
+    .content-card__unavailable, .content-card__modified { color: var(--muted); font-size: .72rem; line-height: 1.5; }
+    .content-card__modified { margin-top: .85rem; }
 
     .empty { display: none; padding: 3rem 1rem; border: 1px dashed var(--line); border-radius: 1rem; color: var(--muted); text-align: center; }
     .empty.is-visible { display: block; }
@@ -118,7 +126,7 @@
       <div>
         <p class="eyebrow">Biblioteca</p>
         <h2>Materiais disponíveis</h2>
-        <p class="catalog-meta"><strong id="result-count">13</strong> conteúdos publicados</p>
+        <p class="catalog-meta"><strong id="result-count">38</strong> conteúdos publicados</p>
       </div>
       <div class="search">
         <label for="search">Buscar por código ou título</label>
@@ -127,84 +135,386 @@
     </div>
 
     <section class="catalog" id="catalog" aria-label="Conteúdos publicados">
-        <a class="content-card" href="./m112/" data-search="m112 breve histórico da propriedade no brasil, spu conteúdo didático: como a formação histórica da propriedade da terra no brasil ajuda a entender a gestão de imóveis públicos. linha do tempo interativa em quatro períodos." data-track="1">
+        <article class="content-card" data-search="m112 breve histórico da propriedade no brasil, spu conteúdo didático: como a formação histórica da propriedade da terra no brasil ajuda a entender a gestão de imóveis públicos. linha do tempo interativa em quatro períodos." data-track="1">
           <span class="content-card__code">M112</span>
           <span class="content-card__title">Breve histórico da propriedade no Brasil</span>
           <span class="content-card__description">Conteúdo didático: como a formação histórica da propriedade da terra no Brasil ajuda a entender a gestão de imóveis públicos. Linha do tempo interativa em quatro períodos.</span>
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m122/" data-search="m122 m122 - o patrimônio imobiliário público " data-track="1">
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m112/" aria-label="Abrir conteúdo M112">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <span class="content-card__unavailable">JSON para edição indisponível</span>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T22:02:22-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m121 m121 - bens imoveis publicos " data-track="1">
+          <span class="content-card__code">M121</span>
+          <span class="content-card__title">Bens imoveis publicos</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m121/" aria-label="Abrir conteúdo M121">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m121/projetom121.spu.json" download="projetom121.spu.json" aria-label="Baixar JSON para edição de M121">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-07T16:28:50-03:00">07/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m122 m122 - o patrimônio imobiliário público " data-track="1">
           <span class="content-card__code">M122</span>
           <span class="content-card__title">O patrimônio imobiliário público</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m131/" data-search="m131 m131 - arquitetura normativa da gestão de bens imóveis públicos no brasil " data-track="1">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m122/" aria-label="Abrir conteúdo M122">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m122/projetom122.spu.json" download="projetom122.spu.json" aria-label="Baixar JSON para edição de M122">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-07T16:29:29-03:00">07/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m131 m131 - arquitetura normativa da gestão de bens imóveis públicos no brasil " data-track="1">
           <span class="content-card__code">M131</span>
           <span class="content-card__title">Arquitetura normativa da gestão de bens imóveis públicos no Brasil</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m135/" data-search="m135 m135 - administração e governança de terras no brasil " data-track="1">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m131/" aria-label="Abrir conteúdo M131">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m131/projetom131.spu.json" download="projetom131.spu.json" aria-label="Baixar JSON para edição de M131">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T19:33:30-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m133 m133 - a gestão dos imóveis públicos no brasil ao longo do tempo " data-track="1">
+          <span class="content-card__code">M133</span>
+          <span class="content-card__title">A gestão dos imóveis públicos no Brasil ao longo do tempo</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m133/" aria-label="Abrir conteúdo M133">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m133/projetom133.spu.json" download="projetom133.spu.json" aria-label="Baixar JSON para edição de M133">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-07T16:29:29-03:00">07/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m134 m134 - o judiciário, o ministério público e os órgãos de controle na gestão do patrimônio imobiliário público " data-track="1">
+          <span class="content-card__code">M134</span>
+          <span class="content-card__title">O Judiciário, o Ministério Público e os órgãos de controle na gestão do patrimônio imobiliário público</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m134/" aria-label="Abrir conteúdo M134">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m134/projetom134.spu.json" download="projetom134.spu.json" aria-label="Baixar JSON para edição de M134">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-13T16:20:54-03:00">13/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m134a m134a - as comissões de soluções fundiárias " data-track="1">
+          <span class="content-card__code">M134A</span>
+          <span class="content-card__title">As Comissões de Soluções Fundiárias</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m134a/" aria-label="Abrir conteúdo M134A">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m134a/projetom134a.spu.json" download="projetom134a.spu.json" aria-label="Baixar JSON para edição de M134A">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:28:25-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m135 m135 - administração e governança de terras no brasil " data-track="1">
           <span class="content-card__code">M135</span>
           <span class="content-card__title">Administração e governança de terras no Brasil</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m151/" data-search="m151 m151 - conhecendo a gestão patrimonial imobiliária " data-track="1">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m135/" aria-label="Abrir conteúdo M135">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m135/projetom135.spu.json" download="projetom135.spu.json" aria-label="Baixar JSON para edição de M135">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-07T16:30:21-03:00">07/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m141 m141 - marcos balizadores da gestão territorial (video) " data-track="1">
+          <span class="content-card__code">M141</span>
+          <span class="content-card__title">Marcos balizadores da Gestão Territorial (video)</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m141/" aria-label="Abrir conteúdo M141">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m141/projetom141.spu.json" download="projetom141.spu.json" aria-label="Baixar JSON para edição de M141">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-07T16:30:21-03:00">07/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m142 m142 - o padrão de uso e ocupação do território brasileiro " data-track="1">
+          <span class="content-card__code">M142</span>
+          <span class="content-card__title">O padrão de uso e ocupação do território brasileiro</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m142/" aria-label="Abrir conteúdo M142">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m142/projetom142.spu.json" download="projetom142.spu.json" aria-label="Baixar JSON para edição de M142">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-07T16:30:21-03:00">07/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m151 m151 - conhecendo a gestão patrimonial imobiliária " data-track="1">
           <span class="content-card__code">M151</span>
           <span class="content-card__title">Conhecendo a gestão patrimonial imobiliária</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m152/" data-search="m152 m152 - noções básicas de registro imobiliário " data-track="1">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m151/" aria-label="Abrir conteúdo M151">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m151/projetom151.spu.json" download="projetom151.spu.json" aria-label="Baixar JSON para edição de M151">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:28:25-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m152 m152 - noções básicas de registro imobiliário " data-track="1">
           <span class="content-card__code">M152</span>
           <span class="content-card__title">Noções básicas de registro imobiliário</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m153/" data-search="m153 m153 - sistemas estruturantes " data-track="1">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m152/" aria-label="Abrir conteúdo M152">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m152/projetom152.spu.json" download="projetom152.spu.json" aria-label="Baixar JSON para edição de M152">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-07T16:30:21-03:00">07/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m153 m153 - sistemas estruturantes " data-track="1">
           <span class="content-card__code">M153</span>
           <span class="content-card__title">Sistemas estruturantes</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m212/" data-search="m212 m212 - evolução histórico-jurídica do sistema patrimonial imobiliário público e privado " data-track="2">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m153/" aria-label="Abrir conteúdo M153">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m153/projetom153.spu.json" download="projetom153.spu.json" aria-label="Baixar JSON para edição de M153">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-07T16:30:35-03:00">07/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m154 m154 - noções básicas de cartografia [vídeo] " data-track="1">
+          <span class="content-card__code">M154</span>
+          <span class="content-card__title">Noções básicas de Cartografia [vídeo]</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m154/" aria-label="Abrir conteúdo M154">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m154/projetom154.spu.json" download="projetom154.spu.json" aria-label="Baixar JSON para edição de M154">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-07T16:30:35-03:00">07/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m211 m211 - reconhecendo imóveis públicos: histórico, conceitos e funções " data-track="2">
+          <span class="content-card__code">M211</span>
+          <span class="content-card__title">Reconhecendo Imóveis Públicos: histórico, conceitos e funções</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m211/" aria-label="Abrir conteúdo M211">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m211/projetom211.spu.json" download="projetom211.spu.json" aria-label="Baixar JSON para edição de M211">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T21:51:10-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m212 m212 - evolução histórico-jurídica do sistema patrimonial imobiliário público e privado " data-track="2">
           <span class="content-card__code">M212</span>
           <span class="content-card__title">Evolução histórico-jurídica do sistema patrimonial imobiliário público e privado</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m221/" data-search="m221 m221 - análise preventiva de imóveis públicos " data-track="2">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m212/" aria-label="Abrir conteúdo M212">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m212/projetom212.spu.json" download="projetom212.spu.json" aria-label="Baixar JSON para edição de M212">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:36:13-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m221 m221 - análise preventiva de imóveis públicos " data-track="2">
           <span class="content-card__code">M221</span>
           <span class="content-card__title">Análise preventiva de imóveis públicos</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m231/" data-search="m231 m231 - aspectos praticos do reconhecimento e cadastro " data-track="2">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m221/" aria-label="Abrir conteúdo M221">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m221/projetom221.spu.json" download="projetom221.spu.json" aria-label="Baixar JSON para edição de M221">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:36:27-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m231 m231 - aspectos praticos do reconhecimento e cadastro " data-track="2">
           <span class="content-card__code">M231</span>
           <span class="content-card__title">Aspectos praticos do reconhecimento e cadastro</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m233/" data-search="m233 m233 - registro de imóveis e patrimonio publico " data-track="2">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m231/" aria-label="Abrir conteúdo M231">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m231/projetom231.spu.json" download="projetom231.spu.json" aria-label="Baixar JSON para edição de M231">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:37:26-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m232 m232 - formas de aquisicao e constituicao de direitos imobiliarios " data-track="2">
+          <span class="content-card__code">M232</span>
+          <span class="content-card__title">Formas de aquisicao e constituicao de direitos imobiliarios</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m232/" aria-label="Abrir conteúdo M232">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m232/projetom232.spu.json" download="projetom232.spu.json" aria-label="Baixar JSON para edição de M232">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:38:32-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m233 m233 - registro de imóveis e patrimonio publico " data-track="2">
           <span class="content-card__code">M233</span>
           <span class="content-card__title">Registro de Imóveis e patrimonio publico</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m411/" data-search="m411 m411 - a função socioambiental dos imóveis públicos " data-track="4">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m233/" aria-label="Abrir conteúdo M233">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m233/projetom233.spu.json" download="projetom233.spu.json" aria-label="Baixar JSON para edição de M233">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:38:32-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m311 m311 - avaliação de imóveis públicos: por que avaliar e para que serve? " data-track="3">
+          <span class="content-card__code">M311</span>
+          <span class="content-card__title">Avaliação de imóveis públicos: por que avaliar e para que serve?</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m311/" aria-label="Abrir conteúdo M311">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m311/projetom311.spu.json" download="projetom311.spu.json" aria-label="Baixar JSON para edição de M311">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:41:07-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m312 m312 - panorama e principais conceitos aplicados da administração pública " data-track="3">
+          <span class="content-card__code">M312</span>
+          <span class="content-card__title">Panorama e principais conceitos aplicados da Administração Pública</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m312/" aria-label="Abrir conteúdo M312">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m312/projetom312.spu.json" download="projetom312.spu.json" aria-label="Baixar JSON para edição de M312">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:41:07-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m321 m321 - o tripé da avaliação " data-track="3">
+          <span class="content-card__code">M321</span>
+          <span class="content-card__title">O tripé da avaliação</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m321/" aria-label="Abrir conteúdo M321">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m321/projetom321.spu.json" download="projetom321.spu.json" aria-label="Baixar JSON para edição de M321">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:41:07-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m411 m411 - a função socioambiental dos imóveis públicos " data-track="4">
           <span class="content-card__code">M411</span>
           <span class="content-card__title">A função socioambiental dos imóveis públicos</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
-        <a class="content-card" href="./m412/" data-search="m412 m412 - regimes de destinação " data-track="4">
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m411/" aria-label="Abrir conteúdo M411">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m411/projetom411.spu.json" download="projetom411.spu.json" aria-label="Baixar JSON para edição de M411">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:49:57-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m412 m412 - regimes de destinação " data-track="4">
           <span class="content-card__code">M412</span>
           <span class="content-card__title">Regimes de destinação</span>
-          
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m412/" aria-label="Abrir conteúdo M412">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m412/projetom412.spu.json" download="projetom412.spu.json" aria-label="Baixar JSON para edição de M412">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:49:57-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m413 m413 - destinar um imóvel público - um problema imobiliário ou uma decisão de estado " data-track="4">
+          <span class="content-card__code">M413</span>
+          <span class="content-card__title">Destinar um imóvel público - um problema imobiliário ou uma decisão de Estado</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m413/" aria-label="Abrir conteúdo M413">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m413/projetom413.spu.json" download="projetom413.spu.json" aria-label="Baixar JSON para edição de M413">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T21:47:14-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m421 m421 - destinação de imóveis públicos " data-track="4">
+          <span class="content-card__code">M421</span>
+          <span class="content-card__title">Destinação de imóveis públicos</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m421/" aria-label="Abrir conteúdo M421">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m421/projetom421.spu.json" download="projetom421.spu.json" aria-label="Baixar JSON para edição de M421">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:53:39-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m424 m424 - infraestrutura e desenvolvimento local " data-track="4">
+          <span class="content-card__code">M424</span>
+          <span class="content-card__title">Infraestrutura e desenvolvimento local</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m424/" aria-label="Abrir conteúdo M424">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m424/projetom424.spu.json" download="projetom424.spu.json" aria-label="Baixar JSON para edição de M424">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:53:39-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m433 m433 - regularização fundiária de povos e comunidades tradicionais " data-track="4">
+          <span class="content-card__code">M433</span>
+          <span class="content-card__title">Regularização Fundiária de Povos e Comunidades Tradicionais</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m433/" aria-label="Abrir conteúdo M433">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m433/projetom433.spu.json" download="projetom433.spu.json" aria-label="Baixar JSON para edição de M433">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:55:46-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m434 m434 - geointeligência para a regularização fundiária " data-track="4">
+          <span class="content-card__code">M434</span>
+          <span class="content-card__title">Geointeligência para a regularização fundiária</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m434/" aria-label="Abrir conteúdo M434">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m434/projetom434.spu.json" download="projetom434.spu.json" aria-label="Baixar JSON para edição de M434">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:55:46-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m451 m451 - gestão de contratos de destinação " data-track="4">
+          <span class="content-card__code">M451</span>
+          <span class="content-card__title">Gestão de contratos de destinação</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m451/" aria-label="Abrir conteúdo M451">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m451/projetom451.spu.json" download="projetom451.spu.json" aria-label="Baixar JSON para edição de M451">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:57:17-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m511 m511 - o patrimônio público como ativo estratégico " data-track="5">
+          <span class="content-card__code">M511</span>
+          <span class="content-card__title">O PATRIMÔNIO PÚBLICO COMO ATIVO ESTRATÉGICO</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m511/" aria-label="Abrir conteúdo M511">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m511/projetom511.spu.json" download="projetom511.spu.json" aria-label="Baixar JSON para edição de M511">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:59:20-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m512 v1_m512 - o patrimônio público vale mais do que seu preço? " data-track="5">
+          <span class="content-card__code">M512</span>
+          <span class="content-card__title">V1_M512 - O patrimônio público vale mais do que seu preço?</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m512/" aria-label="Abrir conteúdo M512">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m512/projetom512.spu.json" download="projetom512.spu.json" aria-label="Baixar JSON para edição de M512">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-02T13:42:12-03:00">02/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m521 m521 - fundamentos para compreender e gerir receitas provenientes de imóveis públicos " data-track="5">
+          <span class="content-card__code">M521</span>
+          <span class="content-card__title">Fundamentos para compreender e gerir receitas provenientes de imóveis públicos</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m521/" aria-label="Abrir conteúdo M521">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m521/projetom521.spu.json" download="projetom521.spu.json" aria-label="Baixar JSON para edição de M521">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:59:20-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m531 m531 - benchmarking modelos de gestão profissional de imóveis públicos " data-track="5">
+          <span class="content-card__code">M531</span>
+          <span class="content-card__title">Benchmarking modelos de gestão profissional de imóveis públicos</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m531/" aria-label="Abrir conteúdo M531">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m531/projetom531.spu.json" download="projetom531.spu.json" aria-label="Baixar JSON para edição de M531">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T20:59:20-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m611 m611 - por que fiscalizar e proteger o patrimônio público? " data-track="6">
+          <span class="content-card__code">M611</span>
+          <span class="content-card__title">Por que fiscalizar e proteger o patrimônio público?</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m611/" aria-label="Abrir conteúdo M611">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m611/projetom611.spu.json" download="projetom611.spu.json" aria-label="Baixar JSON para edição de M611">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T21:19:04-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m621 m621 - priorizando demandas de fiscalização " data-track="6">
+          <span class="content-card__code">M621</span>
+          <span class="content-card__title">Priorizando demandas de fiscalização</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m621/" aria-label="Abrir conteúdo M621">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m621/projetom621.spu.json" download="projetom621.spu.json" aria-label="Baixar JSON para edição de M621">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T21:19:04-03:00">12/10/2026</time></small>
+        </article>
+        <article class="content-card" data-search="m622 m622 - infrações e sanções administrativas " data-track="6">
+          <span class="content-card__code">M622</span>
+          <span class="content-card__title">Infrações e sanções administrativas</span>
+
+          <div class="content-card__actions">
+            <a class="content-card__action" href="./m622/" aria-label="Abrir conteúdo M622">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            <a class="content-card__download" href="./m622/projetom622.spu.json" download="projetom622.spu.json" aria-label="Baixar JSON para edição de M622">Baixar JSON para edição</a>
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="2026-10-12T21:19:18-03:00">12/10/2026</time></small>
+        </article>
     </section>
     <p class="empty" id="empty">Nenhum conteúdo encontrado para esta busca.</p>
   </main>
