@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Gerar índice dos conteúdos
         run: node scripts/generate-index.mjs

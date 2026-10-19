@@ -1,5 +1,6 @@
 import { readdir, readFile, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -24,6 +25,11 @@ function textFromHead(html, pattern) {
     .trim() || '';
 }
 
+// Datas do histórico Git, nunca do horário de checkout/publicação.
+if (execFileSync('git', ['rev-parse', '--is-shallow-repository'], { cwd: root, encoding: 'utf8' }).trim() === 'true') {
+  throw new Error('O índice precisa do histórico completo: use fetch-depth: 0 no checkout.');
+}
+const dateFormatter = new Intl.DateTimeFormat('pt-BR', { timeZone: 'America/Sao_Paulo' });
 const entries = await readdir(root);
 const modules = [];
 
@@ -46,7 +52,22 @@ for (const name of entries) {
   const title = rawTitle.replace(new RegExp(`^${name}\\s*[-–—:]\\s*`, 'i'), '').replace(/,\s*SPU$/i, '') || name.toUpperCase();
   const digits = name.match(/\d+/)?.[0] || '';
 
+  const files = await readdir(directory);
+  const preferredJson = `projeto${name.toLowerCase()}.spu.json`;
+  const jsonFile = files.includes(preferredJson) ? preferredJson
+    : files.includes('projeto.spu.json') ? 'projeto.spu.json'
+    : files.filter(file => file.endsWith('.spu.json')).length === 1
+      ? files.find(file => file.endsWith('.spu.json')) : undefined;
+  const modifiedAt = execFileSync('git', ['log', '-1', '--format=%cI', '--', `${name}/`], {
+    cwd: root, encoding: 'utf8',
+  }).trim();
+  if (!modifiedAt) throw new Error(`Sem histórico de alterações para ${name}.`);
+
   modules.push({
+    jsonHref: jsonFile ? `./${encodeURIComponent(name)}/${encodeURIComponent(jsonFile)}` : '',
+    downloadName: preferredJson,
+    modifiedAt,
+    modifiedDate: dateFormatter.format(new Date(modifiedAt)),
     code: name.toUpperCase(),
     description,
     href: `./${encodeURIComponent(name)}/`,
@@ -59,12 +80,16 @@ for (const name of entries) {
 modules.sort((a, b) => a.code.localeCompare(b.code, 'pt-BR', { numeric: true }));
 
 const cards = modules.map((module) => `
-        <a class="content-card" href="${module.href}" data-search="${escapeHtml(module.search)}" data-track="${escapeHtml(module.track)}">
+        <article class="content-card" data-search="${escapeHtml(module.search)}" data-track="${escapeHtml(module.track)}">
           <span class="content-card__code">${escapeHtml(module.code)}</span>
           <span class="content-card__title">${escapeHtml(module.title)}</span>
           ${module.description ? `<span class="content-card__description">${escapeHtml(module.description)}</span>` : ''}
-          <span class="content-card__action">Abrir conteúdo <span aria-hidden="true">→</span></span>
-        </a>`).join('');
+          <div class="content-card__actions">
+            <a class="content-card__action" href="${module.href}" aria-label="Abrir conteúdo ${escapeHtml(module.code)}">Abrir conteúdo <span aria-hidden="true">→</span></a>
+            ${module.jsonHref ? `<a class="content-card__download" href="${module.jsonHref}" download="${module.downloadName}" aria-label="Baixar JSON para edição de ${escapeHtml(module.code)}">Baixar JSON para edição</a>` : '<span class="content-card__unavailable">JSON para edição indisponível</span>'}
+          </div>
+          <small class="content-card__modified">Arquivos alterados em: <time datetime="${escapeHtml(module.modifiedAt)}">${escapeHtml(module.modifiedDate)}</time></small>
+        </article>`).join('');
 
 const page = `<!doctype html>
 <html lang="pt-BR">
@@ -144,11 +169,19 @@ const page = `<!doctype html>
     .content-card[data-track="2"] { --card-accent: #5a7655; }
     .content-card[data-track="4"] { --card-accent: #0f5b59; }
     .content-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--card-accent) 55%, var(--line)); box-shadow: var(--shadow); }
-    .content-card:focus-visible { outline: 3px solid color-mix(in srgb, var(--card-accent) 28%, transparent); outline-offset: 3px; }
+    .content-card a:focus-visible { outline: 3px solid color-mix(in srgb, var(--card-accent) 28%, transparent); outline-offset: 3px; }
     .content-card__code { align-self: flex-start; margin-bottom: 1.3rem; padding: .38rem .58rem; border-radius: 999px; background: color-mix(in srgb, var(--card-accent) 11%, transparent); color: var(--card-accent); font-size: .72rem; font-weight: 850; letter-spacing: .1em; }
     .content-card__title { font-size: 1.15rem; line-height: 1.3; font-weight: 760; letter-spacing: -.02em; }
     .content-card__description { display: -webkit-box; margin-top: .7rem; overflow: hidden; color: var(--muted); font-size: .88rem; line-height: 1.5; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
-    .content-card__action { display: flex; justify-content: space-between; gap: 1rem; margin-top: auto; padding-top: 1.5rem; color: var(--card-accent); font-size: .83rem; font-weight: 760; }
+    .content-card__action { display: flex; justify-content: space-between; gap: 1rem; padding: .3rem 0; color: var(--card-accent); font-size: .83rem; font-weight: 760; }
+
+    .content-card[hidden] { display: none; }
+    .content-card__actions { display: grid; gap: .45rem; margin-top: auto; padding-top: 1.5rem; }
+    .content-card__actions a { text-decoration: none; border-radius: .15rem; }
+    .content-card__actions a:hover { text-decoration: underline; }
+    .content-card__download { color: var(--card-accent); font-size: .8rem; padding: .3rem 0; }
+    .content-card__unavailable, .content-card__modified { color: var(--muted); font-size: .72rem; line-height: 1.5; }
+    .content-card__modified { margin-top: .85rem; }
 
     .empty { display: none; padding: 3rem 1rem; border: 1px dashed var(--line); border-radius: 1rem; color: var(--muted); text-align: center; }
     .empty.is-visible { display: block; }
@@ -223,5 +256,5 @@ const page = `<!doctype html>
 </html>
 `;
 
-await writeFile(path.join(root, 'index.html'), page, 'utf8');
+await writeFile(path.join(root, 'index.html'), page.replace(/^[ \t]+$/gm, ''), 'utf8');
 console.log(`Generated index.html with ${modules.length} published contents.`);
