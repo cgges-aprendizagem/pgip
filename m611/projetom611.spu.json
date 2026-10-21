@@ -29,6 +29,34 @@
           "author": "Laís Milena Rosa Corrêa",
           "notes": "",
           "format": "GitHub"
+        },
+        {
+          "id": "eaa9c43a-0f23-4b9e-92c5-7a0f16cc92fb",
+          "createdAt": "2026-10-21T18:47:01.045Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "JSON"
+        },
+        {
+          "id": "aadc0b50-006d-475f-a319-c4e03cdb0d6b",
+          "createdAt": "2026-10-21T18:47:07.149Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "JSON"
+        },
+        {
+          "id": "e3c16d6d-1d6c-4b14-9fcd-11dd3278a74d",
+          "createdAt": "2026-10-21T18:47:14.636Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "JSON"
+        },
+        {
+          "id": "2fe6d3c1-3388-4774-81fc-a6723146a28e",
+          "createdAt": "2026-10-21T18:47:24.493Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "GitHub"
         }
       ]
     }
@@ -503,7 +531,7 @@
             "name": "Danilo dos Santos Silva, Amanda Clarice Spiazzi Odia, Claudson Moreira Santos"
           },
           {
-            "role": "Adaptação e Revisão",
+            "role": "Revisão",
             "name": "Claudson Moreira, Andressa Thaís Schwingel, Karina Bonilaure"
           },
           {
@@ -514,7 +542,8 @@
             "role": "Versão",
             "name": "Agosto de 2026"
           }
-        ]
+        ],
+        "__pullUp": true
       }
     }
   ],
