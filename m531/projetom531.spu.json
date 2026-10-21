@@ -22,6 +22,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Isadora Tami Lemos Tsukumo",
+      "notes": "",
+      "history": [
+        {
+          "id": "f91656ac-126b-4d05-b941-11a911c6d1bb",
+          "createdAt": "2026-10-21T17:41:09.166Z",
+          "author": "Isadora Tami Lemos Tsukumo",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -39,7 +52,7 @@
       "props": {
         "kicker": "Modelos de negócio e inovação patrimonial",
         "kickerIcon": "compass",
-        "title": "Modelos de gestão profissional de imóveis públicos",
+        "title": "Modelos de gestão econômica de imóveis públicos",
         "byline": "Benchmarking nacional e internacional",
         "slot": "bmml5die__slot"
       }
