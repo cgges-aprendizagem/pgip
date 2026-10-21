@@ -4,9 +4,11 @@ import type { ImageQuality } from '../../utils/exportFormats';
 import { disconnectPublisher, hasPublishSession, initialPublishError, materialCode, originalSource, publishDocument, publisherAPI, publisherLogin, type MaterialVersion } from '../../utils/githubPublisher';
 import { publishedProjectLocation } from '../../utils/publishedProject';
 import styles from './PublishModal.module.css';
+import { VersionFields } from '../Toolbar/VersionFields';
+import { versionedDocument } from '../../utils/versioning';
 
-interface Props { doc: Doc; quality: ImageQuality; beforeLogin: () => Promise<void>; onClose: () => void }
-export function PublishModal({ doc, quality, beforeLogin, onClose }: Props) {
+interface Props { doc: Doc; quality: ImageQuality; beforeLogin: () => Promise<void>; onMetaChange: (patch: Record<string, unknown>) => void; onClose: () => void }
+export function PublishModal({ doc, quality, beforeLogin, onMetaChange, onClose }: Props) {
   const [checking, setChecking] = useState(true);
   const [configured, setConfigured] = useState(false);
   const [login, setLogin] = useState('');
@@ -57,7 +59,9 @@ export function PublishModal({ doc, quality, beforeLogin, onClose }: Props) {
     if (!version || mismatch || conflict) return;
     setBusy(true); setError('');
     try {
-      const sent = await publishDocument(doc, quality, version, source, setProgress);
+      const snapshot = versionedDocument(doc, 'GitHub');
+      const sent = await publishDocument(snapshot, quality, version, source, setProgress);
+      onMetaChange({ versioning: snapshot.meta.versioning });
       setResult(sent);
       try { localStorage.setItem(`spu_published_revision_${code}`, JSON.stringify({ file: `projeto${code}.spu.json`, sha: sent.jsonSha, directorySha: sent.materialSha })); } catch { /* A atualização já foi concluída no GitHub. */ }
     } catch (err) { setError(err instanceof Error ? err.message : 'Não foi possível publicar.'); }
@@ -67,7 +71,7 @@ export function PublishModal({ doc, quality, beforeLogin, onClose }: Props) {
     event.stopPropagation();
     if (event.key === 'Escape' && !busy) onClose();
     if (event.key === 'Tab') {
-      const focusable = Array.from(event.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled), a[href]'));
+      const focusable = Array.from(event.currentTarget.querySelectorAll<HTMLElement>('button:not(:disabled), a[href], input:not(:disabled), textarea:not(:disabled)'));
       const first = focusable[0]; const last = focusable[focusable.length - 1];
       if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
       if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
@@ -82,6 +86,7 @@ export function PublishModal({ doc, quality, beforeLogin, onClose }: Props) {
         <p><a href={result.commit} target="_blank" rel="noreferrer">Ver atualização no GitHub</a></p>
       </div> : <>
         <p>Envie o conteúdo atual, suas imagens e o JSON editável para o PGIP.</p>
+        <VersionFields meta={doc.meta} onChange={onMetaChange} disabled={busy} />
         <dl><dt>Repositório</dt><dd>cgges-aprendizagem/pgip</dd><dt>Material</dt><dd>{code ? code.toUpperCase() : 'Código ausente no título'}</dd><dt>Pasta</dt><dd>{code ? `${code}/` : '—'}</dd><dt>Imagens</dt><dd>{quality === 'compact' ? 'Compactas' : 'Alta qualidade'}</dd>{login && <><dt>Conta GitHub</dt><dd>{login}</dd></>}</dl>
         {!code && <p role="alert">Inclua o código no título do documento, por exemplo: M121 - Bens imóveis públicos.</p>}
         {mismatch && <p role="alert">O código do título difere do material aberto. Corrija o título antes de publicar.</p>}
@@ -91,7 +96,7 @@ export function PublishModal({ doc, quality, beforeLogin, onClose }: Props) {
         {login && version && !conflict && <p>{version.exists ? 'Ao confirmar, a versão atual deste material será atualizada.' : 'Ao confirmar, será criada uma pasta para este novo material.'}</p>}
         <div className={styles.actions}>
           {!login ? <button onClick={() => void connect()} disabled={busy || checking || !configured || !code || mismatch}>Entrar com GitHub</button>
-            : <button onClick={() => void publish()} disabled={busy || checking || !version || conflict || mismatch || !code}>{busy ? (progress || 'Preparando arquivos…') : version?.exists ? `Atualizar ${code.toUpperCase()} no GitHub` : `Publicar ${code.toUpperCase()} no GitHub`}</button>}
+            : <button onClick={() => void publish()} disabled={busy || checking || !version || conflict || mismatch || !code || !doc.meta.versioning?.author.trim()}>{busy ? (progress || 'Preparando arquivos…') : version?.exists ? `Atualizar ${code.toUpperCase()} no GitHub` : `Publicar ${code.toUpperCase()} no GitHub`}</button>}
           {login && <button onClick={() => { disconnectPublisher(); setLogin(''); setVersion(null); setError(''); }} disabled={busy}>Sair da conta</button>}
           {!busy && !checking && <button onClick={() => { setError(''); setAttempt(value => value + 1); }}>Conferir novamente</button>}
         </div>

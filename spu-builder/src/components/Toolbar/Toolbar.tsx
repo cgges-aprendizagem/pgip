@@ -8,6 +8,8 @@ import { PublishModal } from '../Publish/PublishModal';
 import { replaceImageSlots, readImageSlots, writeImageSlots } from '../../utils/imageSlotStore';
 import { collectRichNotes } from '../../utils/richNotes';
 import styles from './Toolbar.module.css';
+import { VersionFields } from './VersionFields';
+import { versionedDocument } from '../../utils/versioning';
 
 interface Props {
   ns: NS;
@@ -28,6 +30,7 @@ interface Props {
 export function Toolbar({ ns, doc, canUndo, canRedo, onUndo, onRedo, onTitleChange, onOpenDoc, onPreview, onPrintPreview, onRichNotes, onMetaChange, onClearDoc }: Props) {
   const { BuilderExport } = ns;
   const fileInput = useRef<HTMLInputElement>(null);
+  const [historyOpen, setHistoryOpen] = useState(false);
   const [exporting, setExporting] = useState(false);
   const [exportLabel, setExportLabel] = useState('');
   const [exportOpen, setExportOpen] = useState(false);
@@ -44,11 +47,18 @@ export function Toolbar({ ns, doc, canUndo, canRedo, onUndo, onRedo, onTitleChan
   const richNoteCount = richNotes.glossary.length + richNotes.links.length;
 
   const runExport = async (label: string, fn: (doc: Doc) => Promise<void>) => {
+    if (!doc.meta.versioning?.author.trim()) {
+      setExportOpen(true);
+      alert('Informe o responsável pela atualização no menu Exportar.');
+      return;
+    }
     setExporting(true);
     setExportLabel(label);
     setExportOpen(false);
     try {
-      await fn(doc);
+      const snapshot = versionedDocument(doc, label);
+      await fn(snapshot);
+      onMetaChange({ versioning: snapshot.meta.versioning });
     } catch (err) {
       console.error(err);
       alert('Não foi possível exportar. Tente novamente.');
@@ -90,7 +100,7 @@ export function Toolbar({ ns, doc, canUndo, canRedo, onUndo, onRedo, onTitleChan
 
   return (
     <header className={styles.root}>
-      {publishOpen && <PublishModal doc={doc} quality={imageQuality}
+      {publishOpen && <PublishModal doc={doc} quality={imageQuality} onMetaChange={onMetaChange}
         beforeLogin={async () => {
           localStorage.setItem('spu_builder_doc' + projectStorageSuffix(window.location.href), ns.BuilderExport.serialize(doc));
           await writeImageSlots(await readImageSlots());
@@ -144,6 +154,7 @@ export function Toolbar({ ns, doc, canUndo, canRedo, onUndo, onRedo, onTitleChan
             </div>
           )}
         </div>
+        <button className={styles.btn} onClick={() => setHistoryOpen(true)}>Histórico de versões</button>
         <button className={styles.btn} onClick={onRichNotes} title="Revisar termos de glossário e links">
           Termos e links {richNoteCount > 0 && <span className={styles.tocCount}>{richNoteCount}</span>}
         </button>
@@ -164,7 +175,8 @@ export function Toolbar({ ns, doc, canUndo, canRedo, onUndo, onRedo, onTitleChan
             {exporting ? `Exportando ${exportLabel}…` : 'Exportar'}
           </button>
           {exportOpen && (
-            <div className={styles.exportPop} onMouseLeave={() => setExportOpen(false)}>
+            <div className={styles.exportPop}>
+              <VersionFields meta={doc.meta} onChange={onMetaChange} disabled={exporting} />
               <label className={styles.exportOption}>
                 <input
                   type="checkbox"
@@ -236,6 +248,17 @@ export function Toolbar({ ns, doc, canUndo, canRedo, onUndo, onRedo, onTitleChan
           onChange={handleOpen}
         />
       </div>
+      {historyOpen && <div className={styles.modalBackdrop} onKeyDown={e => { if (e.key === 'Escape') setHistoryOpen(false); }}>
+        <section className={styles.historyDialog} role="dialog" aria-modal="true" aria-labelledby="version-history-title">
+          <h2 id="version-history-title">Histórico de versões</h2>
+          <button className={styles.btn} autoFocus onClick={() => setHistoryOpen(false)}>Fechar</button>
+          {!doc.meta.versioning?.history.length && <p>Nenhuma versão exportada registrada.</p>}
+          <ol>{[...(doc.meta.versioning?.history || [])].reverse().map(entry => <li key={entry.id}>
+            <strong>{entry.author}</strong> · {new Date(entry.createdAt).toLocaleString('pt-BR')} · {entry.format}
+            {entry.notes && <p>{entry.notes}</p>}
+          </li>)}</ol>
+        </section>
+      </div>}
       {clearOpen && (
         <div className={styles.modalBackdrop} role="presentation" onMouseDown={() => setClearOpen(false)}>
           <div className={styles.confirmDialog} role="dialog" aria-modal="true" aria-labelledby="clear-title" onMouseDown={(e) => e.stopPropagation()}>

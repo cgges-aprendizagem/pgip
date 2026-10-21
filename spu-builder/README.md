@@ -95,3 +95,9 @@ imagens e JSON editável, autentica a pessoa pelo GitHub App e pede a confirmaç
 do material, pasta e conta antes de enviar. O rascunho é salvo antes do login.
 A implantação do serviço e seus secrets é descrita em `../publisher/README.md`.
 Enquanto o Worker não estiver configurado, a tela informa essa pendência.
+
+## Metadados de versionamento
+
+No menu Exportar, informe o responsável (obrigatório) e as observações (opcionais). Cada exportação concluída registra um identificador, data/hora UTC, nome, observações e formato em `meta.versioning.history`. O responsável permanece preenchido; as observações são limpas após o sucesso. Falhas não acrescentam entradas ao rascunho.
+
+O botão Histórico de versões permite consultar esses registros no editor. Os metadados acompanham JSON, HTML autocontido, pacote HTML, SCORM e publicação no GitHub, sem aparecer no conteúdo renderizado. Projetos anteriores continuam abrindo com histórico vazio. A prévia PDF não registra uma exportação. O histórico contém registros declarados pelo editor, não assinaturas autenticadas nem cópias completas das versões anteriores.
