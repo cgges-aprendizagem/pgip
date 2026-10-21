@@ -18,6 +18,19 @@
         }
       ],
       "enabled": false
+    },
+    "versioning": {
+      "author": "Laís Milena Rosa Corrêa",
+      "notes": "",
+      "history": [
+        {
+          "id": "08f0762e-2aa5-4b4d-8263-cad7bb1b3721",
+          "createdAt": "2026-10-21T18:45:13.805Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -296,7 +309,7 @@
           "id": "c0pdwroq",
           "type": "prose",
           "props": {
-            "html": "<p>Os exemplos mostram que proteger um imóvel público não significa apenas reagir quando um dano já ocorreu. Ocupações irregulares, usos incompatíveis com a destinação, deterioração física e intervenções não autorizadas podem começar de forma pouco perceptível e se agravar ao longo do tempo.</p><p>Essas situações podem surgir de maneiras diferentes e nem sempre são percebidas quando começam. Quando não identificadas e acompanhadas, podem se consolidar ao longo do tempo, ampliando danos, conflitos, custos e prejuízos ao interesse coletivo. É justamente a existência desses riscos que torna necessário conhecer e acompanhar permanentemente a situação do patrimônio público.</p><p>As construções irregulares, incluindo obras, cercas ou outras benfeitorias, constituem uma das infrações mais recorrentes e preocupantes, sobretudo quando recaem sobre bens de uso comum do povo, como praias, margens de rios e outras áreas de livre acesso. Além de violarem o regime jurídico desses bens, tais benfeitorias restringem o acesso da coletividade e frequentemente provocam degradação ambiental.&nbsp;</p><p>Da mesma forma, o desvio de finalidade descaracteriza a destinação pública do imóvel, impedindo que ele cumpra os objetivos para os quais foi destinado.</p><p>Outro aspecto relevante refere-se à conservação do patrimônio. Imóveis públicos desocupados ou geridos de forma inadequada tendem a deteriorar-se rapidamente, depreciando-se e podendo representar riscos à integridade das edificações e à segurança da população. </p>"
+            "html": "<p>Os exemplos mostram que proteger um imóvel público não significa apenas reagir quando um dano já ocorreu. Ocupações irregulares, usos incompatíveis com a destinação, deterioração física e intervenções não autorizadas podem começar de forma pouco perceptível e se agravar ao longo do tempo.</p><p>Essas situações podem surgir de maneiras diferentes e nem sempre são percebidas quando começam. Quando não identificadas e acompanhadas, podem se consolidar ao longo do tempo, ampliando danos, conflitos, custos e prejuízos ao interesse coletivo. É justamente a existência desses riscos que torna necessário conhecer e acompanhar permanentemente a situação do patrimônio público.</p><p>As construções irregulares, incluindo obras, cercas ou outras benfeitorias, constituem uma das infrações mais recorrentes e preocupantes, sobretudo quando recaem sobre bens de uso comum do povo, como praias, margens de rios e outras áreas de livre acesso. Além de violarem o regime jurídico desses bens, tais benfeitorias restringem o acesso da coletividade e frequentemente provocam degradação ambiental. </p><p>Da mesma forma, o desvio de finalidade descaracteriza a destinação pública do imóvel, impedindo que ele cumpra os objetivos para os quais foi destinado.</p><p>Outro aspecto relevante refere-se à conservação do patrimônio. Imóveis públicos desocupados ou geridos de forma inadequada tendem a deteriorar-se rapidamente, depreciando-se e podendo representar riscos à integridade das edificações e à segurança da população. </p>"
           }
         },
         {
@@ -362,7 +375,7 @@
           "id": "b_mswgzdb3_glrl",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Isso significa que <mark data-hl=\"petrol\">fiscalização e gestão não são atividades separadas</mark>. Conhecer o que está acontecendo com um imóvel é condição para decidir o que precisa ser preservado, corrigido ou transformado.</span></p><p>Ao identificar precocemente situações que possam comprometer a integridade, a destinação ou a adequada utilização dos bens públicos, a fiscalização também contribui para o gerenciamento dos riscos relacionados ao patrimônio público, favorecendo a adoção de medidas preventivas e corretivas pela Administração.</p><p>A proteção do patrimônio público é uma função permanente da Administração Pública. Independentemente de o imóvel pertencer à União, a um estado, ao Distrito Federal ou a um município, sua gestão deve assegurar que o bem permaneça protegido e seja utilizado de acordo com sua finalidade e com o interesse coletivo.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Além de sua função preventiva e coercitiva, a fiscalização possui importante caráter pedagógico e dissuasório. Ao promover a conscientização acerca das responsabilidades relacionadas ao uso do patrimônio público, a fiscalização contribui para prevenir a reincidência de irregularidades e para desestimular novas ocupações em desconformidade com a legislação, fortalecendo a compreensão de que os bens públicos estão sujeitos a regras específicas de proteção, uso e preservação.&nbsp;</span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Assim, fiscalizar os bens imóveis públicos é assegurar que um patrimônio pertencente a toda a sociedade permaneça preservado em sua integridade física, respeitado em sua destinação legal e gerido de forma eficiente e transparente.</span></p>"
+            "html": "<p><span style=\"color: inherit; text-wrap-mode: initial;\">Isso significa que <mark data-hl=\"petrol\">fiscalização e gestão não são atividades separadas</mark>. Conhecer o que está acontecendo com um imóvel é condição para decidir o que precisa ser preservado, corrigido ou transformado.</span></p><p>Ao identificar precocemente situações que possam comprometer a integridade, a destinação ou a adequada utilização dos bens públicos, a fiscalização também contribui para o gerenciamento dos riscos relacionados ao patrimônio público, favorecendo a adoção de medidas preventivas e corretivas pela Administração.</p><p>A proteção do patrimônio público é uma função permanente da Administração Pública. Independentemente de o imóvel pertencer à União, a um estado, ao Distrito Federal ou a um município, sua gestão deve assegurar que o bem permaneça protegido e seja utilizado de acordo com sua finalidade e com o interesse coletivo.</p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Além de sua função preventiva e coercitiva, a fiscalização possui importante caráter pedagógico e dissuasório. Ao promover a conscientização acerca das responsabilidades relacionadas ao uso do patrimônio público, a fiscalização contribui para prevenir a reincidência de irregularidades e para desestimular novas ocupações em desconformidade com a legislação, fortalecendo a compreensão de que os bens públicos estão sujeitos a regras específicas de proteção, uso e preservação. </span></p><p><span style=\"text-wrap-mode: initial; color: inherit;\">Assim, fiscalizar os bens imóveis públicos é assegurar que um patrimônio pertencente a toda a sociedade permaneça preservado em sua integridade física, respeitado em sua destinação legal e gerido de forma eficiente e transparente.</span></p>"
           }
         },
         {
@@ -487,7 +500,7 @@
         "credits": [
           {
             "role": "Conteúdo",
-            "name": "Danilo dos Santos Silva, Amanda Clarice Spiazzi Odia"
+            "name": "Danilo dos Santos Silva, Amanda Clarice Spiazzi Odia, Claudson Moreira Santos"
           },
           {
             "role": "Adaptação e Revisão",
