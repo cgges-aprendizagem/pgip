@@ -20,7 +20,7 @@ const runtime = {
   replace: content => { slots = JSON.parse(content); },
 };
 const context = vm.createContext({
-  console, Blob, Uint8Array, atob, btoa, Number, JSON,
+  console, Blob, Uint8Array, atob, btoa, Number, JSON, crypto,
   window: { location: { href: 'https://example.com/pgip/spu-builder/' }, __SPU_IMAGE_SLOT_RUNTIME: runtime },
   localStorage: { setItem() {}, removeItem() {} },
   URL: { createObjectURL(blob) { downloaded = blob; return 'blob:test'; }, revokeObjectURL() {} },
@@ -61,6 +61,20 @@ for (const [title, expected] of [
 ]) {
   assert.equal(projectFileName({ ...doc, meta: { title } }), expected);
 }
+const { versionedDocument } = load('versioning');
+const { normalizeProjectContent } = load('projectCompat');
+assert.throws(() => versionedDocument(doc, 'JSON'), /responsável/);
+doc.meta.versioning = { author: '  Ana Silva  ', notes: 'Revisão <técnica>\nSegunda linha', history: [] };
+const snapshot = versionedDocument(doc, 'JSON');
+assert.equal(doc.meta.versioning.history.length, 0);
+assert.equal(snapshot.meta.versioning.history[0].author, 'Ana Silva');
+assert.equal(snapshot.meta.versioning.notes, '');
+assert.ok(!Number.isNaN(Date.parse(snapshot.meta.versioning.history[0].createdAt)));
+const second = versionedDocument({ ...snapshot, meta: { ...snapshot.meta, versioning: { ...snapshot.meta.versioning, notes: 'Ajuste' } } }, 'GitHub');
+assert.equal(second.meta.versioning.history.length, 2);
+assert.notEqual(second.meta.versioning.history[0].id, second.meta.versioning.history[1].id);
+doc.meta.versioning = JSON.parse(JSON.stringify(snapshot.meta.versioning));
+assert.deepEqual(normalizeProjectContent(JSON.parse(JSON.stringify(doc))).meta.versioning, doc.meta.versioning);
 const originalDoc = JSON.stringify(doc);
 const expectedSlots = { figure: slots.figure, nested: slots.nested };
 const json = await serializeProject(doc);
@@ -84,7 +98,9 @@ for (const exportZip of [exportAssetsZip, exportScormZip]) {
     assert.equal(files['projeto.spu.json'], undefined);
     const project = parseProjectFile(strFromU8(files['projetom121.spu.json']), 'projetom121.spu.json');
     assert.deepEqual(JSON.parse(project.imageSlots), expectedSlots);
+    assert.deepEqual(project.raw.meta.versioning, doc.meta.versioning);
     const html = strFromU8(files['index.html']);
+    assert.ok(html.includes('\\u003ctécnica>'));
     assert.match(html, /assets\/images\//);
     const imageFiles = Object.keys(files).filter(name => name.startsWith('assets/images/'));
     assert.equal(imageFiles.length, 2);
@@ -95,5 +111,6 @@ for (const exportZip of [exportAssetsZip, exportScormZip]) {
   }
 }
 await exportSelfContained(doc);
+assert.ok((await downloaded.text()).includes(JSON.stringify(doc.meta.versioning).replace(/</g, '\\u003c')));
 assert.match(await downloaded.text(), /data:image\/png;base64/);
 console.log('OK: standalone JSON, HTML/SCORM ZIPs (both qualities), fresh-editor restore, framing, nested slots, legacy JSON and self-contained HTML.');

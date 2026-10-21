@@ -132,7 +132,11 @@ function migrateCollapsibleSection(block: JsonRecord, props: JsonRecord) {
 export function normalizeProjectContent(raw: unknown): unknown {
   if (!isRecord(raw)) return raw;
 
+  // Version metadata is plain text: preserve it byte-for-byte on reimport.
+  const versioning = isRecord(raw.meta) ? raw.meta.versioning : undefined;
+  if (isRecord(raw.meta)) delete raw.meta.versioning;
   normalizeStrings(raw);
+  if (isRecord(raw.meta) && versioning !== undefined) raw.meta.versioning = versioning;
 
   const walk = (blocks: unknown[]) => {
     blocks.forEach((value) => {

@@ -45,7 +45,16 @@ export interface Block {
 
 export interface TocItem { id: string; text: string; hidden?: boolean }
 
+export interface VersionEntry {
+  id: string;
+  createdAt: string;
+  author: string;
+  notes: string;
+  format: string;
+}
+
 export interface DocMeta {
+  versioning?: { author: string; notes: string; history: VersionEntry[] };
   title: string;
   lang: string;
   builderCredit?: boolean;
