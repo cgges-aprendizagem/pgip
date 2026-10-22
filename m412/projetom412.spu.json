@@ -22,6 +22,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Guilherme Wiedman",
+      "notes": "",
+      "history": [
+        {
+          "id": "1dfe99d2-c28c-4b24-aef4-551b854c850b",
+          "createdAt": "2026-10-22T20:50:00.451Z",
+          "author": "Guilherme Wiedman",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -86,7 +99,7 @@
           "id": "bhq5d81u",
           "type": "prose",
           "props": {
-            "html": "<p>Apresentaremos, aqui, as principais classes de regimes de destinação aplicáveis aos imóveis públicos, explicando sua lógica, características e finalidades. A descrição detalhada de cada regime, bem como suas definições oficiais e fundamentos normativos, pode ser consultada na resolução e na tabela taxonômica reproduzidas ao final deste documento.</p>"
+            "html": "<p>Apresentaremos, aqui, as principais classes de regimes de destinação aplicáveis aos imóveis públicos, explicando sua lógica, características e finalidades. A descrição detalhada de cada regime, bem como suas definições oficiais e fundamentos normativos, pode ser consultada na resolução e na tabela taxonômica (TT) reproduzidas ao final deste documento.</p>"
           }
         }
       ]
