@@ -42,6 +42,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Laís Milena Rosa Corrêa",
+      "notes": "",
+      "history": [
+        {
+          "id": "45bf4ec6-a0ff-4293-b06f-93ac3bcef814",
+          "createdAt": "2026-10-22T18:38:09.472Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -1254,7 +1267,7 @@
         "credits": [
           {
             "role": "Conteúdo",
-            "name": "Ana Túlia de Macedo"
+            "name": "Ana Túlia de Macedo, Érico de Ávila Madruga"
           },
           {
             "role": "Revisão",
