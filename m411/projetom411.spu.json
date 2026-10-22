@@ -27,6 +27,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Guilherme Wiedman",
+      "notes": "",
+      "history": [
+        {
+          "id": "19945c47-2136-4fba-be19-c7f2c4af6df5",
+          "createdAt": "2026-10-22T19:12:29.089Z",
+          "author": "Guilherme Wiedman",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -133,7 +146,7 @@
               {
                 "icon": "sprout",
                 "title": "",
-                "text": "Reconhecimento do direito à terra da população dos assentamentos rurais consolidados, regularização a posse da terra."
+                "text": "Reconhecimento do direito à terra da população dos assentamentos rurais consolidados, regularização da posse da terra."
               },
               {
                 "icon": "drama",
@@ -317,7 +330,7 @@
                       },
                       {
                         "title": "",
-                        "text": "Respeitam os planos, programas e projetos de desenvolvimento urbano definidos pela população e associações representativas dos vários segmentos da comunidade por meio dos instrumentos da gestão democrática da cidade;"
+                        "text": ""
                       },
                       {
                         "title": "",
@@ -373,7 +386,7 @@
             "icon": "lightbulb",
             "title": "Você sabia?",
             "heading": "",
-            "children": "<p>Dada a sua importância, o Plano Diretor é obrigatório para as cidades:</p><p></p><ul><li>Com mais de 20 mil habitantes.</li><li>Pertencentes a regiões metropolitanas e aglomerados urbanos.</li><li>Em áreas de influência de empreendimentos com significativo impacto ambiental.</li><li>Que queiram aplicar os instrumentos de parcelamento, edificação e utilização compulsórios, IPTU progressivo no tempo e desapropriação sanção.</li></ul><p></p>"
+            "children": "<p>Dada a sua importância, o Plano Diretor é obrigatório para as cidades:</p><p></p><ul><li>Com mais de 20 mil habitantes.</li><li>Pertencentes a regiões metropolitanas e aglomerados urbanos.</li><li>Em áreas de influência de empreendimentos com significativo impacto ambiental.</li><li>Que queiram aplicar os instrumentos de parcelamento, edificação e utilização compulsórios, IPTU progressivo no tempo e desapropriação-sanção.</li></ul><p></p>"
           }
         },
         {
