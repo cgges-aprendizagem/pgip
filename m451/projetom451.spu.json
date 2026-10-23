@@ -22,6 +22,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Guilherme Wiedman",
+      "notes": "",
+      "history": [
+        {
+          "id": "fb017738-ad43-4d80-a080-911b5c2ec6b7",
+          "createdAt": "2026-10-23T19:05:42.266Z",
+          "author": "Guilherme Wiedman",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -549,7 +562,7 @@
                 "icon": "file-check",
                 "showIcon": true,
                 "useCoverImage": false,
-                "coverSlot": "",
+                "coverSlot": "c_mqajt7g__imageSlot",
                 "coverAlt": "",
                 "frontCue": "Clique para virar",
                 "backCue": "Clique para voltar",
@@ -566,7 +579,7 @@
                 "icon": "file-question-mark",
                 "showIcon": true,
                 "useCoverImage": false,
-                "coverSlot": "",
+                "coverSlot": "c_selew8y__imageSlot",
                 "coverAlt": "",
                 "frontCue": "Clique para virar",
                 "backCue": "Clique para voltar",
@@ -583,7 +596,7 @@
                 "icon": "file-sliders",
                 "showIcon": true,
                 "useCoverImage": false,
-                "coverSlot": "",
+                "coverSlot": "c_q7oddte__imageSlot",
                 "coverAlt": "",
                 "frontCue": "Clique para virar",
                 "backCue": "Clique para voltar",
@@ -596,7 +609,7 @@
           "id": "b9zrzqts",
           "type": "prose",
           "props": {
-            "html": "<p>Essa distinção ajuda o gestor a calibrar a resposta: um atraso documental pontual normalmente não justifica uma medida de mesma gravidade&nbsp;<span style=\"text-wrap-mode: initial; color: inherit;\">que um desvio de finalidade ou um dano patrimonial relevante.</span></p>"
+            "html": "<p>Essa distinção ajuda o gestor a calibrar a resposta: um atraso documental pontual normalmente não justifica uma medida de mesma gravidade <span style=\"text-wrap-mode: initial; color: inherit;\">que um desvio de finalidade ou um dano patrimonial relevante.</span></p>"
           }
         },
         {
@@ -718,7 +731,7 @@
           "id": "cu52pwv5",
           "type": "prose",
           "props": {
-            "html": "<p>Sistemas modernos podem atuar como instrumentos de governança, promovendo padronização, integração de dados, rastreabilidade dos atos administrativos e maior eficiência na gestão do ciclo de vida dos contratos.</p><p>Com essa perspectiva, a Secretaria do Patrimônio da União (SPU) desenvolveu o <b>Módulo de Gestão de Atos e Contratos (MGC)</b>, integrado ao SPUNet, como uma solução destinada a apoiar a formalização e a gestão dos instrumentos de destinação de imóveis da União. Desde sua concepção, o módulo foi estruturado para acompanhar todas as etapas do ciclo de vida contratual, desde a celebração até o monitoramento da execução, alterações, tratamento de inadimplementos e encerramento da relação jurídica.</p><p>A implementação foi iniciada pela primeira etapa desse ciclo (a celebração do contrato e a organização inicial da gestão), concentrando esforços na padronização dos instrumentos, na automação de procedimentos e na integração com as bases corporativas de informação. Essa estratégia permitiu estabelecer uma base sólida para a evolução futura da solução, que já se encontra preparada para incorporar funcionalidades voltadas ao acompanhamento da execução contratual, como notificações automáticas, gestão das comunicações com os destinatários, atualização cadastral dos responsáveis, controle de obrigações e outras ferramentas de monitoramento contínuo.</p><p>Embora desenvolvido para atender às especificidades da União, o MGC reúne práticas que podem inspirar outros órgãos e entidades públicas, especialmente no que se refere a utilização de modelos padronizados, a integração entre sistemas, a automação de atividades repetitivas e fortalecimento da governança contratual.</p>"
+            "html": "<p>Sistemas modernos podem atuar como instrumentos de governança, promovendo padronização, integração de dados, rastreabilidade dos atos administrativos e maior eficiência na gestão do ciclo de vida dos contratos.</p><p>Com essa perspectiva, a Secretaria do Patrimônio da União (SPU) desenvolveu o <b>Módulo de Gestão de Atos e Contratos (MGC)</b>, integrado ao SPUNet, como uma solução destinada a apoiar a formalização e a gestão dos instrumentos de destinação de imóveis da União. Desde sua concepção, o módulo foi estruturado para acompanhar todas as etapas do ciclo de vida contratual, desde a celebração até o monitoramento da execução, alterações, tratamento de inadimplementos e encerramento da relação jurídica.</p><p>A implementação foi iniciada pela primeira etapa desse ciclo (a celebração do contrato e a organização inicial da gestão), concentrando esforços na padronização dos instrumentos, na automação de procedimentos e na integração com as bases corporativas de informação. Essa estratégia permitiu estabelecer uma base sólida para a evolução futura da solução, que já se encontra preparada para incorporar funcionalidades voltadas ao acompanhamento da execução contratual, como notificações automáticas, gestão das comunicações com os destinatários, atualização cadastral dos responsáveis, controle de obrigações e outras ferramentas de monitoramento contínuo.</p><p>Embora desenvolvido para atender às especificidades da União, o MGC reúne práticas que podem inspirar outros órgãos e entidades públicas, especialmente no que se refere à utilização de modelos padronizados, à integração entre sistemas, à automação de atividades repetitivas e ao fortalecimento da governança contratual.</p>"
           }
         },
         {
