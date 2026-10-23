@@ -32,6 +32,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Guilherme Wiedman",
+      "notes": "",
+      "history": [
+        {
+          "id": "c9ba6c0f-3449-4103-a5bf-ccaf67a648c8",
+          "createdAt": "2026-10-23T15:38:56.049Z",
+          "author": "Guilherme Wiedman",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -67,7 +80,7 @@
           "id": "ceja5bkw",
           "type": "prose",
           "props": {
-            "html": "<p>Quando se analisa um pedido de destinação de imóvel público para implantação de um hospital, uma rodovia, um porto, uma ferrovia, um parque tecnológico ou uma usina de energia, é comum que a atenção se concentre nos aspectos dominiais, registrais ou jurídicos da área. Embora essenciais, esses elementos não esgotam a análise. Em muitos casos, a decisão patrimonial representa também uma decisão sobre o futuro do território, <b>influenciando a oferta de serviços públicos, a atração de investimentos, a geração de empregos, a integração regional e a qualidade de vida da população.</b></p><p>Essa perspectiva é desenvolvida em importantes referenciais sobre planejamento e desenvolvimento territorial, ainda que nem sempre voltados diretamente à gestão patrimonial, dos quais destacamos:</p>"
+            "html": "<p>Quando se analisa um pedido de destinação de imóvel público para implantação de um hospital, uma rodovia, um porto, uma ferrovia, um parque tecnológico ou uma usina de energia, é comum que a atenção se concentre nos aspectos dominiais, registrais ou jurídicos da área. Embora essenciais, esses elementos não esgotam a análise. Em muitos casos, a decisão patrimonial representa também uma decisão sobre o futuro do território, <b>influenciando a oferta de serviços públicos, a atração de investimentos, a geração de empregos, a integração regional e a qualidade de vida da população.</b></p><p>Essa perspectiva é amparada em importantes referenciais sobre planejamento e desenvolvimento territorial, ainda que nem sempre voltados diretamente à gestão patrimonial, entre os quais destacamos:</p>"
           }
         },
         {
@@ -329,7 +342,7 @@
           "id": "b89tur7l",
           "type": "prose",
           "props": {
-            "html": "<p>O artigo apresenta exemplos concretos dessa utilização. Ao tratar das terras públicas localizadas no litoral, destaca sua importância para o controle e a disponibilização de áreas destinadas a atividades portuárias e à proteção da costa. Também menciona a utilização de imóveis e terrenos da antiga Rede Ferroviária Federal S.A (RFFSA) na região portuária do Rio de Janeiro em projetos relacionados à revitalização urbana e à preparação da infraestrutura para grandes eventos. </p>"
+            "html": "<p>O artigo apresenta exemplos concretos dessa utilização. Ao tratar das terras públicas localizadas no litoral, destaca sua importância para o controle e a disponibilização de áreas destinadas a atividades portuárias e à proteção da costa. Também menciona a utilização de imóveis e terrenos da antiga Rede Ferroviária Federal S.A. (RFFSA) na região portuária do Rio de Janeiro em projetos relacionados à revitalização urbana e à preparação da infraestrutura para grandes eventos. </p>"
           }
         },
         {
