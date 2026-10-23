@@ -27,6 +27,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Guilherme Wiiedman",
+      "notes": "",
+      "history": [
+        {
+          "id": "a63c95c0-a4d0-4c39-b1a6-c29ddbbf923d",
+          "createdAt": "2026-10-23T18:37:38.930Z",
+          "author": "Guilherme Wiiedman",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -143,7 +156,7 @@
           "id": "cj41sj7u",
           "type": "prose",
           "props": {
-            "html": "<p>A regularização fundiária em imóveis públicos pode envolver situações bastante diferentes. No caso dos imóveis da União, essas diferenças estão relacionadas às características e à localização do imóvel, às formas de ocupação e ao público a ser beneficiado, que, em determinadas situações, está relacionado a políticas públicas conduzidas por outros órgãos. </p><p>Conhecer essas diferenças é importante para compreender a experiência apresentada neste material: antes de reunir e espacializar as informações, foi necessário reconhecer quais situações de regularização deveriam ser consideradas e como a SPU atua em cada uma delas.</p>"
+            "html": "<p>A regularização fundiária em imóveis públicos pode envolver situações bastante diferentes. No caso dos imóveis da União, essas diferenças estão relacionadas às características e à localização do imóvel, às formas de ocupação e ao público a ser beneficiado que, em determinadas situações, está relacionado a políticas públicas conduzidas por outros órgãos. </p><p>Conhecer essas diferenças é importante para compreender a experiência apresentada neste material: antes de reunir e espacializar as informações, foi necessário reconhecer quais situações de regularização deveriam ser consideradas e como a SPU atua em cada uma delas.</p>"
           }
         },
         {
