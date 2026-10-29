@@ -32,6 +32,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Guilherme Wiedman",
+      "notes": "",
+      "history": [
+        {
+          "id": "16ad0a1c-8c65-4886-ae23-1389711647fa",
+          "createdAt": "2026-10-29T22:23:17.742Z",
+          "author": "Guilherme Wiedman",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -391,7 +404,7 @@
           "id": "b_mtaepapv_qn9l",
           "type": "prose",
           "props": {
-            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Da mesma forma, instrumentos inovadores de gestão patrimonial, inclusive aqueles inspirados nas práticas de mercado, a exemplo dos Fundos de Investimento Imobiliário podem ampliar a eficiência da administração dos ativos e, consequentemente, a otimização da sua monetização. Entretanto, sua utilização tende a produzir resultados quando inserida em uma política consistente de gestão patrimonial, sustentada por informações confiáveis, planejamento estratégico e mecanismos efetivos de governança. Assim, <mark data-hl=\"petrol\">a inovação na gestão patrimonial deve ser compreendida como consequência do amadurecimento institucional, e não como solução isolada para problemas estruturais</mark> (ESPIRITO SANTO, 2024).</span></p>"
+            "html": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Da mesma forma, instrumentos inovadores de gestão patrimonial, como aqueles inspirados nas práticas de mercado (a exemplo dos Fundos de Investimento Imobiliário), podem ampliar a eficiência da administração dos ativos e, consequentemente, a otimização da sua monetização. Entretanto, sua utilização tende a produzir resultados quando inserida em uma política consistente de gestão patrimonial sustentada por informações confiáveis, planejamento estratégico e mecanismos efetivos de governança. Assim, <mark data-hl=\"petrol\">a inovação na gestão patrimonial deve ser compreendida como consequência do amadurecimento institucional, e não como solução isolada para problemas estruturais</mark> (ESPIRITO SANTO, 2024).</span></p>"
           }
         },
         {
