@@ -42,6 +42,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Guilherme Wiedman",
+      "notes": "",
+      "history": [
+        {
+          "id": "7ae21a5a-f5a6-4046-b6ba-b15338132752",
+          "createdAt": "2026-10-30T00:35:00.866Z",
+          "author": "Guilherme Wiedman",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -257,7 +270,7 @@
               },
               {
                 "title": "Venda",
-                "text": "Transmite, onerosamente, a propriedade de imóvel, em caráter definitivo e sem finalidade determinada, mediante pagamento de certo preço em dinheiro."
+                "text": "Transmite, onerosamente, a propriedade de imóvel, em caráter definitivo e sem finalidade específica, mediante pagamento de determinado valor em dinheiro."
               }
             ]
           }
