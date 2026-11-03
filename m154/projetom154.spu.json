@@ -6,6 +6,33 @@
     "builderCredit": true,
     "toc": {
       "items": []
+    },
+    "versioning": {
+      "author": "Lindner",
+      "notes": "",
+      "history": [
+        {
+          "id": "0eef2947-04a6-4958-a728-bd9d0a9f2004",
+          "createdAt": "2026-11-03T17:44:54.305Z",
+          "author": "Lindner",
+          "notes": "Atualização do Vídeo",
+          "format": "HTML"
+        },
+        {
+          "id": "8873bda1-a9da-4859-964e-8ed97ce03b44",
+          "createdAt": "2026-11-03T17:46:00.688Z",
+          "author": "Lindner",
+          "notes": "",
+          "format": "pacote"
+        },
+        {
+          "id": "7abd6c11-2b2e-4076-9576-97a8c90af9ec",
+          "createdAt": "2026-11-03T17:46:54.389Z",
+          "author": "Lindner",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -32,8 +59,8 @@
           "props": {
             "type": "video",
             "title": "Noções básicas de Cartografia aplicadas à Gestão de Imóveis Públicos",
-            "provider": "M154",
-            "url": "https://youtu.be/TGWB4pOIGqg"
+            "provider": "",
+            "url": "https://eduplay.rnp.br/app/video/embed/501323"
           }
         }
       ]
@@ -93,7 +120,7 @@
           },
           {
             "role": "Versão",
-            "name": "Julho de 2026"
+            "name": "Setembro de 2026"
           }
         ]
       }
