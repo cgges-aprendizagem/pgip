@@ -74,6 +74,13 @@
           "author": "Laís Milena Rosa Corrêa",
           "notes": "",
           "format": "GitHub"
+        },
+        {
+          "id": "5a92a7aa-d6a4-483c-a984-1f20cfae3a75",
+          "createdAt": "2026-11-05T19:01:03.494Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "GitHub"
         }
       ]
     }
@@ -148,7 +155,7 @@
             "items": [
               {
                 "title": "Poder Judiciário",
-                "content": "<p>Juízes e tribunais (estaduais, federais e o STF) julgam demandas judiciais relacionadas ao patrimônio público são bastante diversificadas. Entre as mais frequentes encontram-se as ações possessórias, como manutenção e reintegração de posse; ações de usucapião, nas quais o Poder Público pode ser consultado sobre eventual domínio ou interesse na área; ações reivindicatórias e demarcatórias; desapropriações; ações envolvendo registros imobiliários; ações civis públicas; mandados de segurança; e ações destinadas a exigir que a Administração analise requerimentos, conclua processos ou adote providências relativas à regularização, destinação ou proteção de determinado imóvel. </p>"
+                "content": "<p>Juízes e tribunais estaduais e federais, assim como o Supremo Tribunal Federal (STF), julgam demandas judiciais diversificadas relacionadas ao patrimônio público. Entre as mais frequentes encontram-se as ações possessórias, como manutenção e reintegração de posse; ações de usucapião, nas quais o Poder Público pode ser consultado sobre eventual domínio ou interesse na área; ações reivindicatórias e demarcatórias; desapropriações; ações envolvendo registros imobiliários; ações civis públicas; mandados de segurança; e ações destinadas a exigir que a Administração analise requerimentos, conclua processos ou adote providências relativas à regularização, destinação ou proteção de determinado imóvel. </p>"
               },
               {
                 "title": "Ministério Público (MP)",
