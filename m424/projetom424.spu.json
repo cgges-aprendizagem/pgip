@@ -44,6 +44,19 @@
           "hidden": false
         }
       ]
+    },
+    "versioning": {
+      "author": "Laís Milena Rosa Corrêa",
+      "notes": "",
+      "history": [
+        {
+          "id": "6379ebce-1c71-409a-b43a-0634e02b0d02",
+          "createdAt": "2026-11-10T19:19:55.940Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "GitHub"
+        }
+      ]
     }
   },
   "blocks": [
@@ -1347,7 +1360,7 @@
           "id": "c_m424_0068",
           "type": "prose",
           "props": {
-            "html": "<p>Identificar um imóvel adequado para determinada infraestrutura ou iniciativa de desenvolvimento é apenas parte do caminho. Para que ele possa ser utilizado, é necessário estabelecer juridicamente essa relação, definindo quem poderá usar o bem, para qual finalidade, em que condições e por quanto tempo.</p><p>As soluções variam conforme a situação e a legislação aplicável a cada patrimônio. Uma rede pode precisar apenas atravessar um imóvel; uma instalação pode demandar sua ocupação por longo período; outro órgão público pode precisar assumir sua utilização; ou um empreendimento privado pode necessitar de uma área pública para prestar determinado serviço. Necessidades diferentes podem exigir regimes de destinação diferentes.</p><p>No caso dos imóveis da União, essas relações são organizadas pela Tabela Taxonômica nº 02 - Regimes de Destinação (TT-02). A tabela classifica os regimes segundo a natureza da relação estabelecida e ajuda a padronizar seu registro nos sistemas patrimoniais.</p><p>Entre as situações relacionadas aos exemplos deste material, podemos encontrar:</p>"
+            "html": "<p>Identificar um imóvel adequado para determinada infraestrutura ou iniciativa de desenvolvimento é apenas parte do caminho. Para que ele possa ser utilizado, é necessário estabelecer juridicamente essa relação, definindo quem poderá usar o bem, para qual finalidade, em que condições e por quanto tempo.</p><p>As soluções variam conforme a situação e a legislação aplicável a cada patrimônio. Uma rede pode precisar apenas atravessar um imóvel; uma instalação pode demandar sua ocupação por longo período; outro órgão público pode precisar assumir sua utilização; ou um empreendimento privado pode necessitar de uma área pública para prestar determinado serviço. Necessidades diferentes podem exigir regimes de destinação diferentes.</p><p>No caso dos imóveis da União, essas relações são organizadas pela <a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt02\" target=\"_blank\" rel=\"noopener noreferrer\">Tabela Taxonômica nº 02</a> - Regimes de Destinação (TT-02). A<a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt02\" target=\"_blank\" rel=\"noopener noreferrer\"> tabela</a> classifica os regimes segundo a natureza da relação estabelecida e ajuda a padronizar seu registro nos sistemas patrimoniais.</p><p>Entre as situações relacionadas aos exemplos deste material, podemos encontrar:</p>"
           }
         },
         {
@@ -1407,7 +1420,7 @@
             "title": "Uma linguagem comum para classificar os regimes de destinação",
             "color": "",
             "bg": "",
-            "body": "<p>A Tabela Taxonômica nº 02 — Regimes de Destinação (TT-02) organiza os regimes utilizados na gestão dos imóveis da União em quatro grandes grupos:</p>"
+            "body": "<p>A <a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt02\" target=\"_blank\" rel=\"noopener noreferrer\">Tabela Taxonômica nº 02</a> — Regimes de Destinação (TT-02) organiza os regimes utilizados na gestão dos imóveis da União em quatro grandes grupos:</p>"
           },
           "children": [
             {
@@ -1441,7 +1454,7 @@
               "id": "c_m424_0065",
               "type": "prose",
               "props": {
-                "html": "<p>A tabela apresenta os regimes, seus conceitos e sua organização hierárquica, constituindo uma referência para compreender as diferentes formas pelas quais pode ser estabelecida a utilização dos imóveis da União.</p><p><a href=\"https://memoria-spu.gestao.gov.br/normas-e-documentos/resolucao-comgc-spu-mgi-no-5-de-24-de-outubro-de-2025/\">TABELA TAXONÔMICA 02 – REGIMES DE DESTINAÇÃO PATRIMONIAL IMOBILIÁRIA</a></p><p>Quer conhecer melhor essas possibilidades? O material <a href=\"https://cgges-aprendizagem.github.io/pgip/m412/\"><i>Como o Estado atribui função aos imóveis públicos: um guia dos regimes de destinação</i></a>, do Eixo 4, apresenta os principais regimes de destinação e explica as diferenças entre as relações jurídicas e os instrumentos utilizados para formalizá-las.</p>"
+                "html": "<p>A <a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt02\" target=\"_blank\" rel=\"noopener noreferrer\">tabela </a>apresenta os regimes, seus conceitos e sua organização hierárquica, constituindo uma referência para compreender as diferentes formas pelas quais pode ser estabelecida a utilização dos imóveis da União.</p><p><a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt02\" target=\"_blank\" rel=\"noopener noreferrer\">TABELA TAXONÔMICA 02 – REGIMES DE DESTINAÇÃO PATRIMONIAL IMOBILIÁRIA</a></p><p>Quer conhecer melhor essas possibilidades? O material <a href=\"https://cgges-aprendizagem.github.io/pgip/m412/\"><i>Como o Estado atribui função aos imóveis públicos: um guia dos regimes de destinação</i></a>, do Eixo 4, apresenta os principais regimes de destinação e explica as diferenças entre as relações jurídicas e os instrumentos utilizados para formalizá-las.</p>"
               }
             }
           ]
