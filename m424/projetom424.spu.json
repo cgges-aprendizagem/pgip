@@ -62,6 +62,13 @@
           "author": "Laís Milena Rosa Corrêa",
           "notes": "",
           "format": "GitHub"
+        },
+        {
+          "id": "b8718d9f-0ec0-4c86-84de-081bf3dbcefb",
+          "createdAt": "2026-11-10T20:49:09.445Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "GitHub"
         }
       ]
     }
@@ -1240,7 +1247,7 @@
                 "items": [
                   {
                     "title": "Como organizar essa diversidade de usos de maneira que seja possível registrar, recuperar e analisar essas informações?",
-                    "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Na Secretaria do Patrimônio da União (SPU), essa necessidade levou à adoção da <a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt01\" target=\"_blank\" rel=\"noopener noreferrer\">Tabela Taxonômica de Tipos de Uso Imobiliário</a>. A classificação estabelece uma linguagem padronizada para registrar a finalidade para a qual os imóveis são utilizados, permitindo organizar as informações patrimoniais e recuperá-las segundo critérios comuns. Sua versão atualizada foi estabelecida pela </span><a href=\"https://memoria-spu.gestao.gov.br/normas-e-documentos/resolucao-comgc-spu-mgi-no-3-de-03-de-outubro-de-2025/\" style=\"text-wrap-mode: initial;\">Resolução ComGC/SPU/MGI nº 3, de 3 de outubro de 2025</a><span style=\"text-wrap-mode: initial; color: inherit;\">, e disponibilizada publicamente pela SPU.</span></p><p>Essa padronização tem uma utilidade que vai além do mero registro em sistema. Quando as destinações são classificadas segundo as políticas e atividades que apoiam, os dados patrimoniais podem ser recuperados e analisados também sob a perspectiva das políticas públicas. Torna-se possível, por exemplo, identificar quais imóveis foram destinados para infraestrutura energética, saneamento, transportes ou atividades produtivas e acompanhar essas utilizações de forma sistemática. A classificação contribui, assim, para aproximar a informação sobre o patrimônio da informação sobre aquilo que o patrimônio ajuda a realizar.</p><p>Alguns usos relacionados à infraestrutura e ao desenvolvimento local na citada classificação:</p>",
+                    "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Na Secretaria do Patrimônio da União (SPU), essa necessidade levou à adoção da Tabela Taxonômica de Tipos de Uso Imobiliário. A classificação estabelece uma linguagem padronizada para registrar a finalidade para a qual os imóveis são utilizados, permitindo organizar as informações patrimoniais e recuperá-las segundo critérios comuns. Sua versão atualizada foi estabelecida pela </span><a href=\"https://memoria-spu.gestao.gov.br/normas-e-documentos/resolucao-comgc-spu-mgi-no-3-de-03-de-outubro-de-2025/\" style=\"text-wrap-mode: initial;\">Resolução ComGC/SPU/MGI nº 3, de 3 de outubro de 2025</a><span style=\"text-wrap-mode: initial; color: inherit;\">, e disponibilizada publicamente pela SPU.</span></p><p>Essa padronização tem uma utilidade que vai além do mero registro em sistema. Quando as destinações são classificadas segundo as políticas e atividades que apoiam, os dados patrimoniais podem ser recuperados e analisados também sob a perspectiva das políticas públicas. Torna-se possível, por exemplo, identificar quais imóveis foram destinados para infraestrutura energética, saneamento, transportes ou atividades produtivas e acompanhar essas utilizações de forma sistemática. A classificação contribui, assim, para aproximar a informação sobre o patrimônio da informação sobre aquilo que o patrimônio ajuda a realizar.</p><p>Alguns usos relacionados à infraestrutura e ao desenvolvimento local na citada classificação:</p>",
                     "blocks": [
                       {
                         "id": "b_mu22g46w_mt4v",
