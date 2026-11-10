@@ -55,6 +55,13 @@
           "author": "Laís Milena Rosa Corrêa",
           "notes": "",
           "format": "GitHub"
+        },
+        {
+          "id": "fdf3c6be-bc53-4e90-82b0-95272cd50a32",
+          "createdAt": "2026-11-10T20:46:43.566Z",
+          "author": "Laís Milena Rosa Corrêa",
+          "notes": "",
+          "format": "GitHub"
         }
       ]
     }
@@ -1233,7 +1240,7 @@
                 "items": [
                   {
                     "title": "Como organizar essa diversidade de usos de maneira que seja possível registrar, recuperar e analisar essas informações?",
-                    "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Na Secretaria do Patrimônio da União (SPU), essa necessidade levou à adoção da Tabela Taxonômica de Tipos de Uso Imobiliário. A classificação estabelece uma linguagem padronizada para registrar a finalidade para a qual os imóveis são utilizados, permitindo organizar as informações patrimoniais e recuperá-las segundo critérios comuns. Sua versão atualizada foi estabelecida pela </span><a href=\"https://memoria-spu.gestao.gov.br/normas-e-documentos/resolucao-comgc-spu-mgi-no-3-de-03-de-outubro-de-2025/\" style=\"text-wrap-mode: initial;\">Resolução ComGC/SPU/MGI nº 3, de 3 de outubro de 2025</a><span style=\"text-wrap-mode: initial; color: inherit;\">, e disponibilizada publicamente pela SPU.</span></p><p>Essa padronização tem uma utilidade que vai além do mero registro em sistema. Quando as destinações são classificadas segundo as políticas e atividades que apoiam, os dados patrimoniais podem ser recuperados e analisados também sob a perspectiva das políticas públicas. Torna-se possível, por exemplo, identificar quais imóveis foram destinados para infraestrutura energética, saneamento, transportes ou atividades produtivas e acompanhar essas utilizações de forma sistemática. A classificação contribui, assim, para aproximar a informação sobre o patrimônio da informação sobre aquilo que o patrimônio ajuda a realizar.</p><p>Alguns usos relacionados à infraestrutura e ao desenvolvimento local na citada classificação:</p>",
+                    "content": "<p><span style=\"text-wrap-mode: initial; color: inherit;\">Na Secretaria do Patrimônio da União (SPU), essa necessidade levou à adoção da <a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt01\" target=\"_blank\" rel=\"noopener noreferrer\">Tabela Taxonômica de Tipos de Uso Imobiliário</a>. A classificação estabelece uma linguagem padronizada para registrar a finalidade para a qual os imóveis são utilizados, permitindo organizar as informações patrimoniais e recuperá-las segundo critérios comuns. Sua versão atualizada foi estabelecida pela </span><a href=\"https://memoria-spu.gestao.gov.br/normas-e-documentos/resolucao-comgc-spu-mgi-no-3-de-03-de-outubro-de-2025/\" style=\"text-wrap-mode: initial;\">Resolução ComGC/SPU/MGI nº 3, de 3 de outubro de 2025</a><span style=\"text-wrap-mode: initial; color: inherit;\">, e disponibilizada publicamente pela SPU.</span></p><p>Essa padronização tem uma utilidade que vai além do mero registro em sistema. Quando as destinações são classificadas segundo as políticas e atividades que apoiam, os dados patrimoniais podem ser recuperados e analisados também sob a perspectiva das políticas públicas. Torna-se possível, por exemplo, identificar quais imóveis foram destinados para infraestrutura energética, saneamento, transportes ou atividades produtivas e acompanhar essas utilizações de forma sistemática. A classificação contribui, assim, para aproximar a informação sobre o patrimônio da informação sobre aquilo que o patrimônio ajuda a realizar.</p><p>Alguns usos relacionados à infraestrutura e ao desenvolvimento local na citada classificação:</p>",
                     "blocks": [
                       {
                         "id": "b_mu22g46w_mt4v",
@@ -1548,6 +1555,458 @@
           }
         ]
       }
+    },
+    {
+      "id": "bqxyjs0m",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "bn8xopj8",
+          "type": "contentslider",
+          "props": {
+            "hint": "Explore os slides",
+            "accent": "",
+            "showTabNumbers": true,
+            "slides": [
+              {
+                "showImage": true,
+                "slot": "bn8xopj8__slides_0_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "",
+                "label": "Etiqueta",
+                "tabLabel": "Slide 1",
+                "title": "Título do slide",
+                "subtitle": "Subtítulo opcional",
+                "description": "<p>Descrição opcional do conteúdo.</p>",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "bn8xopj8__slides_1_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "",
+                "label": "",
+                "tabLabel": "Slide 2",
+                "title": "Outro título de slide",
+                "subtitle": "",
+                "description": "",
+                "linkHref": "",
+                "linkLabel": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "biwztsuk",
+          "type": "contentslider",
+          "props": {
+            "hint": "Explore os slides",
+            "accent": "",
+            "showTabNumbers": true,
+            "slides": [
+              {
+                "showImage": true,
+                "slot": "biwztsuk__slides_0_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "",
+                "label": "Etiqueta",
+                "tabLabel": "Slide 1",
+                "title": "Título do slide",
+                "subtitle": "Subtítulo opcional",
+                "description": "<p>Descrição opcional do conteúdo.</p>",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "biwztsuk__slides_1_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "",
+                "label": "",
+                "tabLabel": "Slide 2",
+                "title": "Outro título de slide",
+                "subtitle": "",
+                "description": "",
+                "linkHref": "",
+                "linkLabel": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "bk7dt9xy",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "bk7dt9xy__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "b6thrmr3",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "b6thrmr3__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "bfmowfsm",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "bfmowfsm__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "bb4sbc58",
+          "type": "imagereveal",
+          "props": {
+            "beforeLabel": "Antes",
+            "afterLabel": "Depois",
+            "beforeSlot": "bb4sbc58__beforeSlot",
+            "afterSlot": "bb4sbc58__afterSlot",
+            "heightMode": "original",
+            "caption": ""
+          }
+        },
+        {
+          "id": "bt6oar29",
+          "type": "imagereveal",
+          "props": {
+            "beforeLabel": "Antes",
+            "afterLabel": "Depois",
+            "beforeSlot": "bt6oar29__beforeSlot",
+            "afterSlot": "bt6oar29__afterSlot",
+            "heightMode": "original",
+            "caption": ""
+          }
+        },
+        {
+          "id": "b3xzh81g",
+          "type": "accordion",
+          "props": {
+            "numbered": true,
+            "items": [
+              {
+                "title": "Pergunta?",
+                "content": "<p>Resposta.</p>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bku1qhag",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "bku1qhag__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "by3j3umt",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "by3j3umt__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "bs51t8n7",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "bs51t8n7__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "bnupytsk",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo prático",
+            "icon": "map-pin",
+            "color": "",
+            "slot": "bnupytsk__slot",
+            "collapse": "none",
+            "title": "Título do exemplo",
+            "body": "<p>Descrição do caso.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "bfb241vu",
+          "type": "timeline",
+          "props": {
+            "eras": [
+              {
+                "label": "Período",
+                "period": "ano–ano",
+                "color": "var(--petrol-600)",
+                "milestones": [
+                  {
+                    "date": "Ano",
+                    "title": "Marco",
+                    "content": "<p>O que aconteceu.</p>"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "bufbmx5x",
+          "type": "accordion",
+          "props": {
+            "numbered": true,
+            "items": [
+              {
+                "title": "Pergunta?",
+                "content": "<p>Resposta.</p>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "bpfl2qpr",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "bpfl2qpr__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "b2v0q2gn",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "b2v0q2gn__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "bclbptv5",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "bclbptv5__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "boasafqz",
+          "type": "flashcard",
+          "props": {
+            "term": "Título do flashcard",
+            "description": "Uma descrição curta para apresentar o conteúdo.",
+            "definition": "<p>Use este espaço para desenvolver o conteúdo do verso.</p>",
+            "icon": "building",
+            "showIcon": true,
+            "useCoverImage": false,
+            "coverSlot": "boasafqz__coverSlot",
+            "coverAlt": "",
+            "frontCue": "Clique para virar",
+            "backCue": "Clique para voltar",
+            "color": "var(--petrol-600)"
+          }
+        },
+        {
+          "id": "bj2bs71d",
+          "type": "contentslider",
+          "props": {
+            "hint": "Explore os slides",
+            "accent": "",
+            "showTabNumbers": true,
+            "slides": [
+              {
+                "showImage": true,
+                "slot": "bj2bs71d__slides_0_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "",
+                "label": "Etiqueta",
+                "tabLabel": "Slide 1",
+                "title": "Título do slide",
+                "subtitle": "Subtítulo opcional",
+                "description": "<p>Descrição opcional do conteúdo.</p>",
+                "linkHref": "",
+                "linkLabel": ""
+              },
+              {
+                "showImage": false,
+                "slot": "bj2bs71d__slides_1_slot",
+                "alt": "",
+                "caption": "",
+                "labelIcon": "",
+                "label": "",
+                "tabLabel": "Slide 2",
+                "title": "Outro título de slide",
+                "subtitle": "",
+                "description": "",
+                "linkHref": "",
+                "linkLabel": ""
+              }
+            ]
+          }
+        },
+        {
+          "id": "b5vcltnd",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo prático",
+            "icon": "map-pin",
+            "color": "",
+            "slot": "b5vcltnd__slot",
+            "collapse": "none",
+            "title": "Título do exemplo",
+            "body": "<p>Descrição do caso.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "burn7o3m",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo prático",
+            "icon": "map-pin",
+            "color": "",
+            "slot": "burn7o3m__slot",
+            "collapse": "none",
+            "title": "Título do exemplo",
+            "body": "<p>Descrição do caso.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "b3vudfww",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo prático",
+            "icon": "map-pin",
+            "color": "",
+            "slot": "b3vudfww__slot",
+            "collapse": "none",
+            "title": "Título do exemplo",
+            "body": "<p>Descrição do caso.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "b71a2c66",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo prático",
+            "icon": "map-pin",
+            "color": "",
+            "slot": "b71a2c66__slot",
+            "collapse": "none",
+            "title": "Título do exemplo",
+            "body": "<p>Descrição do caso.</p>"
+          },
+          "children": []
+        },
+        {
+          "id": "bh5bcasn",
+          "type": "examplecard",
+          "props": {
+            "label": "Exemplo prático",
+            "icon": "map-pin",
+            "color": "",
+            "slot": "bh5bcasn__slot",
+            "collapse": "none",
+            "title": "Título do exemplo",
+            "body": "<p>Descrição do caso.</p>"
+          },
+          "children": []
+        }
+      ]
     }
   ],
   "imageSlots": {
