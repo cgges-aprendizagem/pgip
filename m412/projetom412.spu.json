@@ -40,6 +40,13 @@
           "author": "Lais Milena Rosa Correa",
           "notes": "",
           "format": "GitHub"
+        },
+        {
+          "id": "0927e9c4-a96c-4ee3-a708-b15c496e235b",
+          "createdAt": "2026-11-19T12:12:05.399Z",
+          "author": "Lais Milena Rosa Correa",
+          "notes": "",
+          "format": "GitHub"
         }
       ]
     }
@@ -77,7 +84,7 @@
           "id": "c2bph20x",
           "type": "prose",
           "props": {
-            "html": "<p>Os imóveis públicos podem ser utilizados para as mais diversas finalidades: sediar órgãos governamentais, apoiar políticas públicas, promover regularização fundiária, viabilizar empreendimentos econômicos, proteger comunidades tradicionais, gerar receitas ou mesmo ser transferidos definitivamente a outros entes ou particulares. Embora essas situações sejam frequentemente tratadas de forma genérica como “destinações”, elas envolvem relações jurídicas bastante distintas, com diferentes níveis de estabilidade, direitos conferidos aos destinatários, formas de remuneração, prazos, possibilidades de revogação e requisitos legais.</p><p>Compreender essas diferenças é fundamental para selecionar o mecanismo mais adequado a cada contexto e garantir segurança jurídica, transparência e coerência na gestão patrimonial. Entretanto, a diversidade de normas, nomenclaturas e práticas administrativas adotadas pelos diferentes entes federativos pode dificultar a comunicação entre profissionais e gerar interpretações divergentes sobre institutos aparentemente semelhantes.</p><p>Nesse contexto, iniciativas de padronização conceitual assumem papel estratégico. A organização sistemática dos regimes de destinação permite classificar os instrumentos existentes segundo sua natureza jurídica e seus efeitos patrimoniais, facilitando a produção de normas, o desenvolvimento de sistemas de informação, a gestão do conhecimento e o intercâmbio de experiências entre instituições. A <b>Tabela Taxonômica de Regimes de Destinação Imobiliária</b><b></b> elaborada no âmbito da Secretaria do Patrimônio da União representa uma contribuição relevante nesse sentido e serve como referência para este material, cuja versão integral é apresentada em anexo. </p><p>Antes de prosseguir, convém distinguir dois conceitos fundamentais aqui adotados:</p>"
+            "html": "<p>Os imóveis públicos podem ser utilizados para as mais diversas finalidades: sediar órgãos governamentais, apoiar políticas públicas, promover regularização fundiária, viabilizar empreendimentos econômicos, proteger comunidades tradicionais, gerar receitas ou mesmo ser transferidos definitivamente a outros entes ou particulares. Embora essas situações sejam frequentemente tratadas de forma genérica como “destinações”, elas envolvem relações jurídicas bastante distintas, com diferentes níveis de estabilidade, direitos conferidos aos destinatários, formas de remuneração, prazos, possibilidades de revogação e requisitos legais.</p><p>Compreender essas diferenças é fundamental para selecionar o mecanismo mais adequado a cada contexto e garantir segurança jurídica, transparência e coerência na gestão patrimonial. Entretanto, a diversidade de normas, nomenclaturas e práticas administrativas adotadas pelos diferentes entes federativos pode dificultar a comunicação entre profissionais e gerar interpretações divergentes sobre institutos aparentemente semelhantes.</p><p>Nesse contexto, iniciativas de padronização conceitual assumem papel estratégico. A organização sistemática dos regimes de destinação permite classificar os instrumentos existentes segundo sua natureza jurídica e seus efeitos patrimoniais, facilitando a produção de normas, o desenvolvimento de sistemas de informação, a gestão do conhecimento e o intercâmbio de experiências entre instituições. A <b><a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt02\" target=\"_blank\" rel=\"noopener noreferrer\">Tabela Taxonômica de Regimes de Destinação Imobiliária</a></b><b></b> elaborada no âmbito da Secretaria do Patrimônio da União representa uma contribuição relevante nesse sentido e serve como referência para este material, cuja versão integral é apresentada em anexo. </p><p>Antes de prosseguir, convém distinguir dois conceitos fundamentais aqui adotados:</p>"
           }
         },
         {
@@ -644,7 +651,7 @@
             "icon": "bookmark",
             "title": "Atenção",
             "heading": "Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02)",
-            "children": "<p>Para aprofundar o estudo, recomenda-se a leitura da Resolução que institui a <a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt02\" target=\"_blank\" rel=\"noopener noreferrer\">Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02)</a>, reproduzida integralmente ao final deste material. O documento apresenta as definições oficiais, fundamentos legais, instrumentos de formalização e demais atributos de cada regime, constituindo importante referência para a padronização conceitual e a gestão dos imóveis públicos.</p><p><b>Acesse aqui a TT-02</b></p>"
+            "children": "<p>Para aprofundar o estudo, recomenda-se a leitura da Resolução que institui a <a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt02\" target=\"_blank\" rel=\"noopener noreferrer\">Tabela Taxonômica de Regimes de Destinação Imobiliária (TT-02)</a>, reproduzida integralmente ao final deste material. O documento apresenta as definições oficiais, fundamentos legais, instrumentos de formalização e demais atributos de cada regime, constituindo importante referência para a padronização conceitual e a gestão dos imóveis públicos.</p><p><b><a href=\"https://spu-projetoseprocessos.github.io/tabelas-taxonomicas-spu/#tt02\" target=\"_blank\" rel=\"noopener noreferrer\">Acesse aqui a TT-02</a></b></p>"
           }
         },
         {
