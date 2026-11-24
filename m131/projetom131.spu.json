@@ -44,13 +44,20 @@
       ]
     },
     "versioning": {
-      "author": "Isadora Tami Lemos Tsukumo",
+      "author": "Lais Milena Rosa Correa",
       "notes": "",
       "history": [
         {
           "id": "cbf0edd6-9e7b-4c1c-a5b6-d851448057de",
           "createdAt": "2026-10-21T17:24:59.666Z",
           "author": "Isadora Tami Lemos Tsukumo",
+          "notes": "",
+          "format": "GitHub"
+        },
+        {
+          "id": "35ac1f87-021f-4e26-afee-5c787d9d73f7",
+          "createdAt": "2026-11-24T21:28:11.196Z",
+          "author": "Lais Milena Rosa Correa",
           "notes": "",
           "format": "GitHub"
         }
@@ -880,7 +887,7 @@
           "id": "cwhzmis9",
           "type": "prose",
           "props": {
-            "html": "<p>A Secretaria do Patrimônio da União (SPU) mantém um repositório institucional que, dentre outros elementos, reúne normas legais e infralegais aplicadas à gestão dos imóveis da União, como leis, decretos, portarias e outros atos normativos.</p><p>Essa coleção integra o MemóriaSPU, repositório institucional de conhecimento da SPU criado para reunir, preservar e dar acesso a conteúdos relacionados à trajetória e à atuação do órgão.</p><p><a href=\"https://memoria-spu.gestao.gov.br/normas-e-documentos/\" target=\"_blank\" rel=\"noopener noreferrer\" data-btn=\"primary\">Consulte a coleção de normas aplicadas à gestão dos imóveis da União</a></p>"
+            "html": "<p>A Secretaria do Patrimônio da União (SPU) mantém um repositório institucional que, dentre outros elementos, reúne normas legais e infralegais aplicadas à gestão dos imóveis da União, como leis, decretos, portarias e outros atos normativos.</p><p>Essa coleção integra o MemóriaSPU, repositório institucional de conhecimento da SPU criado para reunir, preservar e dar acesso a conteúdos relacionados à trajetória e à atuação do órgão.</p><p><a href=\"https://memoria-spu.gestao.gov.br/legislacao-e-normativos/?orderby=date&amp;perpage=48&amp;view_mode=memoria-spu-card&amp;paged=1&amp;order=ASC&amp;fetch_only_meta=382624%2C382626%2C382692%2C11%2C55735%2C17&amp;fetch_only=\" target=\"_blank\" rel=\"noopener noreferrer\">Consulte a coleção de normas aplicadas à gestão dos imóveis da União</a></p>"
           }
         }
       ]
@@ -937,6 +944,31 @@
           }
         ]
       }
+    },
+    {
+      "id": "bwqfwgo2",
+      "type": "section",
+      "props": {
+        "width": "content",
+        "surface": "none",
+        "pad": "lg"
+      },
+      "children": [
+        {
+          "id": "b15flvci",
+          "type": "panel",
+          "props": {
+            "variant": "box",
+            "kicker": "Destaque",
+            "kickerIcon": "map-pin",
+            "title": "Título do bloco",
+            "color": "",
+            "bg": "",
+            "body": "<p>Conteúdo do bloco.</p>"
+          },
+          "children": []
+        }
+      ]
     }
   ],
   "imageSlots": {
